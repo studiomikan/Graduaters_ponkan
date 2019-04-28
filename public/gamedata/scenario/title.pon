@@ -1,7 +1,110 @@
 # タイトル画面
+*title_start
 
-;image lay: 0, file: "image/bg-title.png", visible: true
+# 設定
+;loadsound buf: 2, file: "sound/se01.ogg"
+;historyopt enabled: false
+;rclick enabled: false
 
+# タイトルロゴ
+;pretrans
+;image lay: 1, file: "image/logo-title.png", visible: true, x: 295, y: 251
+;trans time: 1000
+;waittrans canskip: false
+;move {
+  lay: 1,
+  time: 1000,
+  path: [{x: 36, y: 251, alpha: 1}],
+  ease: "both"
+}
+;wait time: 500, canskip: false
 
+# 背景
+;pretrans
+;image lay: 0, file: "image/bg-title.png", visible: true, x: 0, y: 0
+;trans time: 1000
+;waittrans canskip: false
 
+# ボタン
+;mesopt {
+  lay: "2-5",
+  fontsize: 36, lineheight: 36,
+  margint: 0, marginr: 0, marginb: 0, marginl: 0,
+}
+
+;imagebutton lay: 2, x: 0, y: 0, imagefile: "image/btn-newgame.png", label: "newgame",
+;imagebutton lay: 3, x: 0, y: 0, imagefile: "image/btn-loadgame.png", label: "loadgame",
+;imagebutton lay: 4, x: 0, y: 0, imagefile: "image/btn-config.png", label: "config",
+;imagebutton lay: 5, x: 0, y: 0, imagefile: "image/btn-exit.png", label: "exit",
+;layopt lay: 2, width: 220, height: 40, visible: true, alpha: 0, x: 1280, y: 220+80*0,
+;layopt lay: 3, width: 220, height: 40, visible: true, alpha: 0, x: 1280, y: 220+80*1
+;layopt lay: 4, width: 220, height: 40, visible: true, alpha: 0, x: 1280, y: 220+80*2
+;layopt lay: 5, width: 220, height: 40, visible: true, alpha: 0, x: 1280, y: 220+80*3
+;move lay: 2, time: 500, ease: "out", path: [{x: 1280-260, y: 220+80*0, alpha: 1}], delay: 0
+;move lay: 3, time: 500, ease: "out", path: [{x: 1280-260, y: 220+80*1, alpha: 1}], delay: 200
+;move lay: 4, time: 500, ease: "out", path: [{x: 1280-260, y: 220+80*2, alpha: 1}], delay: 400
+;move lay: 5, time: 500, ease: "out", path: [{x: 1280-260, y: 220+80*3, alpha: 1}], delay: 600
+;lockbuttons
+;waitmove canskip: false
+
+*unlockbuttons
+;unlockbuttons
 ;s
+
+
+# Load Game
+*loadgame
+;lockbuttons
+;playsound buf: 2
+;call file: "script/load.pon"
+;jump label: "unlockbuttons"
+
+# Config
+*config
+;lockbuttons
+;playsound buf: 2
+;call file: "script/config.pon"
+;jump label: "unlockbuttons"
+
+# Exit
+*exit
+;lockbuttons
+---
+try {
+  window.close();
+} catch (e) {
+  // 握りつぶす
+}
+---
+;jump label: "unlockbuttons"
+
+
+# New Game
+*newgame
+;lockbuttons
+;playsound buf: 2
+
+;pretrans
+;layopt lay: "all", visible: false
+;freeimage lay: "all",
+;clearbuttons lay: "all"
+;clearcolor lay: "all"
+
+## ホワイトアウト
+;layopt lay: 0, x: 0, y: 0, width: 1280, height: 720, visible: true
+;fillcolor lay:0, color: 0xFFFFFF, alpha: 1
+;trans time: 2000
+;waittrans canskip: true
+
+## ブラックアウト
+;pretrans
+;layopt lay: 0, x: 0, y: 0, width: 1280, height: 720, visible: true
+;fillcolor lay:0, color: 0x000000, alpha: 1
+;trans time: 2000
+;waittrans canskip: true
+
+
+;historyopt enabled: true
+;rclick enabled: true, jump: false, call: false
+;s
+

@@ -10,13 +10,13 @@
 ;pretrans
 ;image lay: 1, file: "image/logo-tool.png", visible: true, x: 436, y: 290
 ;trans time: 1000
-;waittrans canskip: false
-;wait time: 1500, canskip: true
+;waittrans canskip: true
+;wait time: 1000, canskip: true
 ;pretrans
 ;layopt lay: 1, visible: false, x: 0, y: 0
 ;freeimage lay: 1
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 
 # タイトル画面
 ;jump file: "scenario/title.pon"

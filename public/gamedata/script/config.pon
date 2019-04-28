@@ -1,7 +1,7 @@
 # コンフィグ画面
 *config_start
 ;tempsave num: 0
-;historyopt enabled: false
+;historyopt enabled: false, output: false
 # ;screenshot
 ;rclick enabled: false
 ;backlay
@@ -276,7 +276,10 @@ for (var i = 2; i < ponkan.soundBuffers.length; i++) {
   ponkan.soundBuffers[i].volume = s.seVolume / 20;
 }
 ---
+;lockbuttons page: "fore"
+;lockbuttons page: "back"
 ;trans method: "crossfade", time: 200
-;historyopt enabled: true
+;waittrans canskip: false
+;historyopt enabled: true, output: true
 ;return
 

@@ -1,7 +1,7 @@
 # ロード画面
 *load_start
 ;tempsave num: 0
-;historyopt enabled: false
+;historyopt enabled: false, output: false
 ;screenshot
 ;rclick enabled: false
 ;backlay
@@ -270,7 +270,10 @@ PAGE:
 #=========================================================================================
 *exit
 ;tempload num: 0, sound: false, toback: true
+;lockbuttons page: "fore"
+;lockbuttons page: "back"
 ;trans method: "crossfade", time: 200
-;historyopt enabled: true
+;waittrans canskip: false
+;historyopt enabled: true, output: true
 ;return
 
