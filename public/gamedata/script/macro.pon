@@ -1,3 +1,17 @@
 # マクロ定義
 
+;macro name: "systembutton"
+  ;layopt lay: "&tv.layer.systembutton", visible: "&mp.visible"
+;endmacro
+
+;macro name: "showmeslay"
+  ;layopt lay: "message", visible: true
+  ;layopt lay: "&tv.layer.systembutton", visible: true
+;endmacro
+
+;macro name: "hidemeslay"
+  ;layopt lay: "message", visible: false
+  ;layopt lay: "&tv.layer.systembutton", visible: false
+;endmacro
+
 ;return

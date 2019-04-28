@@ -61,14 +61,14 @@ tv.layer = {
 ;layopt {
   "lay": "message",
   "x": 20,
-  "y": "&576-20-200",
-  "width": "&1024-20-20-500",
+  "y": 720-20-200,
+  "width": 1280-20-20,
   "height": 200,
-  "visible": true
+  "visible": false
 }
 ;messageopt {
   "lay": "message",
-  "fontfamily": ["mplus-1p-regular", "monospace"],
+  "fontfamily": ["mplus-1m-regular", "monospace"],
   "fontsize": 24,
   "weight": "normal",
   "color": "0xFFFFFF",
