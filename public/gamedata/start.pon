@@ -6,6 +6,10 @@
 ;freeimage lay: "all", page: "fore"
 ;wait time: 500, canskip: false
 
+# テスト用
+;jump file: "scenario/01.pon"
+;s
+
 # サークルロゴ表示
 ;pretrans
 ;image lay: 1, file: "image/logo-tool.png", visible: true, x: 436, y: 290

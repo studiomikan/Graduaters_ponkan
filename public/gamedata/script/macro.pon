@@ -4,14 +4,31 @@
   ;layopt lay: "&tv.layer.systembutton", visible: "&mp.visible"
 ;endmacro
 
-;macro name: "showmeslay"
-  ;layopt lay: "message", visible: true
+;macro name: "show_meslay"
+  ;layopt lay: "mes", visible: true
   ;layopt lay: "&tv.layer.systembutton", visible: true
 ;endmacro
 
-;macro name: "hidemeslay"
-  ;layopt lay: "message", visible: false
+;macro name: "hide_meslay"
+  ;layopt lay: "mes", visible: false
   ;layopt lay: "&tv.layer.systembutton", visible: false
 ;endmacro
+
+# メッセージレイヤ等を青に設定する
+# 操作対象は裏レイヤ
+;macro name: "set_to_blue"
+  ;currentpage page: "fore"
+  ;layopt lay: "mes", x: 0, y: (720-200)
+  ;clearcolor lay: "mes"
+  ;image lay: "mes", file: "image/message-base1.png", visible: true
+  ;mesopt {
+    lay: "mes",
+    marginl: (1280-790)/2,
+    marginr: (1280-790)/2,
+    margint: 75
+  }
+  ;currentpage page: "fore"
+;endmacro
+
 
 ;return

@@ -106,5 +106,7 @@ try {
 
 ;historyopt enabled: true
 ;rclick enabled: true, jump: false, call: false
+
+;jump file: "scenario/01.pon"
 ;s
 
