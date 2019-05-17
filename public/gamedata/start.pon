@@ -6,6 +6,40 @@
 ;freeimage lay: "all", page: "fore"
 ;wait time: 500, canskip: false
 
+# 背景
+;layalias name: "base", lay: "0"
+;layopt lay: "base", x: 0, y: 0
+
+# 発言者の名前
+;layalias name: "speaker", lay: "24"
+;layopt lay: "speaker", x: 150, y: 720-180, width: 200, height: 40, visible: true
+;messageopt {
+  "lay": "speaker",
+  "fontfamily": ["mplus-1m-regular", "monospace"],
+  "fontsize": 28,
+  "weight": "normal",
+  "color": "0xFFFFFF",
+  "lineheight": 24,
+  "linepitch": 5,
+  "align": "center",
+  "shadow": true,
+  "shadowalpha": 0.7,
+  "shadowangle": 0.5,
+  "shadowblur": 5,
+  "shadowcolor": "0x000000",
+  "shadowdistance": 2,
+  "edgewidth": 0,
+  "edgecolor": "0x000000",
+  "autoreturn": true,
+  "margint": 5,
+  "marginr": 0,
+  "marginb": 0,
+  "marginl": 0
+}
+
+# 設定を背景にも適用
+;backlay
+
 # テスト用
 ;jump file: "scenario/01.pon"
 ;s

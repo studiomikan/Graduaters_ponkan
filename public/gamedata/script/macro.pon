@@ -30,5 +30,22 @@
   ;currentpage page: "fore"
 ;endmacro
 
+# 発言者の名前を出力
+;macro name: "echo_name"
+  ;ch lay: "speaker", text: "&mp.name"
+;endmacro
+
+;macro name: "kenji"
+  ;echo_name name: "健二"
+;endmacro
+
+;macro name: "asuka"
+  ;echo_name name: "明日香"
+;endmacro
+
+;macro name: "yuuki"
+  ;echo_name name: "優希"
+;endmacro
+
 
 ;return
