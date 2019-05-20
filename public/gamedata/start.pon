@@ -1,17 +1,29 @@
 # ゲームの開始スクリプト
-|game_start_mark:グラディエイターズ！
-;call file: "script/init_system.pon"
 
 ;freeimage lay: "all", page: "back"
 ;freeimage lay: "all", page: "fore"
+;call file: "script/init_system.pon"
+
+|game_start_mark:グラディエイターズ！
 ;wait time: 500, canskip: false
 
-# 背景
+# エイリアス
 ;layalias name: "base", lay: "0"
+;layalias name: "speaker", lay: "24"
+;layalias name: "telop", lay: "1"
+;layalias name: "asuka", lay: "2"
+;layalias name: "yuuki", lay: "3"
+;layalias name: "filter", lay: "4"
+
+;bufalias name: "bgm", buf: 0
+;bufalias name: "system", buf: 1
+;bufalias name: "se", buf: 2
+;bufalias name: "se2", buf: 3
+
+# 背景
 ;layopt lay: "base", x: 0, y: 0
 
 # 発言者の名前
-;layalias name: "speaker", lay: "24"
 ;layopt lay: "speaker", x: 150, y: 720-180, width: 200, height: 40, visible: true
 ;messageopt {
   "lay": "speaker",

@@ -102,7 +102,7 @@ try {
 ;fillcolor lay:0, color: 0x000000, alpha: 1
 ;trans time: 2000
 ;waittrans canskip: true
-
+;wait time: 2000, canskip: false
 
 ;historyopt enabled: true
 ;rclick enabled: true, jump: false, call: false

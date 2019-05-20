@@ -1,4 +1,6 @@
+#-------------------------------------------------------------------
 # マクロ定義
+#-------------------------------------------------------------------
 
 ;macro name: "systembutton"
   ;layopt lay: "&tv.layer.systembutton", visible: "&mp.visible"
@@ -14,25 +16,55 @@
   ;layopt lay: "&tv.layer.systembutton", visible: false
 ;endmacro
 
-# メッセージレイヤ等を青に設定する
-# 操作対象は裏レイヤ
-;macro name: "set_to_blue"
-  ;currentpage page: "fore"
-  ;layopt lay: "mes", x: 0, y: (720-200)
-  ;clearcolor lay: "mes"
-  ;image lay: "mes", file: "image/message-base1.png", visible: true
+#-------------------------------------------------------------------
+# メッセージレイヤ等をオレンジ/青に設定する
+# 操作対象はデフォルトで表ページ
+#-------------------------------------------------------------------
+;macro name: "set_to_orange"
+  -tv.meslay_bgcolor = 0xCA5D00;
+  -tv.page = mp.page == "back" ? "back" : "fore";
+  ;currentpage page: "&tv.page"
+  ;layopt lay: "mes", page: "&tv.page", x: 0, y: (720-200)
+  ;clearcolor lay: "mes", page: "&tv.page"
+  ;image lay: "mes", page: "&tv.page", file: "image/message-base1.png"
   ;mesopt {
     lay: "mes",
+    page: "&tv.page",
     marginl: (1280-790)/2,
     marginr: (1280-790)/2,
     margint: 75
   }
-  ;currentpage page: "fore"
+  ;call file: "script/system_button.pon"
 ;endmacro
 
-# 発言者の名前を出力
+;macro name: "set_to_blue"
+  -tv.meslay_bgcolor = 0x1B3D9D;
+  -tv.page = mp.page == "back" ? "back" : "fore";
+  ;currentpage page: "&tv.page"
+  ;layopt lay: "mes", page: "&tv.page", x: 0, y: (720-200)
+  ;clearcolor lay: "mes", page: "&tv.page"
+  ;image lay: "mes", page: "&tv.page", file: "image/message-base2.png"
+  ;mesopt {
+    lay: "mes",
+    page: "&tv.page",
+    marginl: (1280-790)/2,
+    marginr: (1280-790)/2,
+    margint: 75
+  }
+  ;call file: "script/system_button.pon"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 発言者の名前
+#-------------------------------------------------------------------
 ;macro name: "echo_name"
+  ;clear lay: "speaker"
   ;ch lay: "speaker", text: "&mp.name"
+;endmacro
+
+;macro name: "noname"
+  ;clear lay: "speaker"
 ;endmacro
 
 ;macro name: "kenji"
@@ -47,5 +79,115 @@
   ;echo_name name: "優希"
 ;endmacro
 
+
+#-------------------------------------------------------------------
+# 行末
+#-------------------------------------------------------------------
+;macro name: "endpage"
+  ;p
+  ;clear
+;endmacro
+
+
+#-------------------------------------------------------------------
+# メッセージレイヤー表示切り替え
+#-------------------------------------------------------------------
+;macro name: "fadein_meslay"
+  ;clear lay: "mes"
+  ;clear lay: "speaker"
+  ;pretrans
+  ;show_meslay
+  ;trans time: "200"
+  ;waittrans canskip: "false"
+;endmacro
+
+;macro name: "fadeout_meslay"
+  ;pretrans
+  ;hide_meslay
+  ;trans time: "200"
+  ;waittrans canskip: "false"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出 ミニテロップイン -> アウト
+#-------------------------------------------------------------------
+;macro name: "minitelop"
+  # イン
+  ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
+  ;layopt lay: "telop", alpha: 0
+  ;move lay: "telop", time: 500, path: [{x: 788, y: 562, alpha: 1}], ease: "out"
+  ;waitmove canskip: false
+  ;wait time: 1000, canskip: false
+  # アウト
+  ;move lay: "telop", time: 500, path: [{x: 788-20, y: 562, alpha: 0}], ease: "out"
+  ;waitmove canskip: false
+  ;freeimage lay: "telop"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 効果音再生
+#-------------------------------------------------------------------
+;macro name: "playse"
+  ---
+    tv.file = "sound/se" + mp.num + ".ogg"
+    tv.loop = mp.loop != null ? mp.loop : false
+  ---
+  ;loadsound buf: "se", "file": "&tv.file"
+  ;soundopt buf: "se", volume: 1, loop: "&tv.loop"
+  ;playsound buf: "se"
+;endmacro
+
+;macro name: "stopse"
+  ;stopsound buf: "se"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# トランジション：ホワイトアウト
+#-------------------------------------------------------------------
+;macro name: "whiteout"
+  ;pretrans
+  ;freeimage lay: "base"
+  ;clearcolor lay: "base"
+  ;fillcolor lay: "base", color: "0xFFFFFF", alpha: 1
+  ;layopt lay: "base", visible: true
+  ;trans time: 1500
+  ;waittrans canskip: true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# トランジション：ブラックアウト
+#-------------------------------------------------------------------
+;macro name: "blackout"
+  ;pretrans
+  ;freeimage lay: "base"
+  ;clearcolor lay: "base"
+  ;fillcolor lay: "base", color: "0x000000", alpha: 1
+  ;layopt lay: "base", visible: true
+  ;trans time: 1500
+  ;waittrans canskip: true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# トランジション：移動
+#-------------------------------------------------------------------
+;macro name: "trans_move"
+  ;pretrans
+  ;freeimage lay: "base"
+  ;clearcolor lay: "base"
+  ;if exp: "mp.bg == 'black' || mp.bg == 'white'"
+    -tv.bgcolor = mp.bg == 'black' ? 0x000000 : 0xFFFFFF
+    ;fillcolor lay: "base", color: "&tv.bgcolor", alpha: 1
+  ;else
+    ;image lay: "base", file: "&'image/bg-' + mp.bg + '.png'"
+  ;endif
+  ;layopt lay: "base", visible: true
+  ;trans time: 1000, method: "univ", rule: "rule/move.png"
+  ;waittrans "canskip": true
+;endmacro
 
 ;return
