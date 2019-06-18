@@ -12,6 +12,11 @@
 #■オープニング
 #☆オープニング演出
 
+# 画像をキャッシュしておく
+;image lay: "op1", file: "image/op-text01.png", x: (1280-217)/2, y: (720-20)/2, visible: false
+;image lay: "op2", file: "image/op-text02.png", x: (1280-134)/2, y: (720-20)/2, visible: false
+
+# BGM再生
 ;playbgm num: "003"
 ;fillcolor lay: "base", color: "0x000000", alpha: 1
 ;layopt lay: "all", visible: false
@@ -19,14 +24,14 @@
 
 # Produced by スタジオ蜜柑
 ;pretrans
-;image lay: "op", file: "image/op-text01.png", x: (1280-217)/2, y: (720-20)/2, visible: true
+;layopt lay: "op1", visible: true
 ;trans time: 1500
 ;waittrans canskip: false
 
 ;wait time: 2000, canskip: false
 
 ;pretrans
-;layopt lay: "op", visible: false
+;layopt lay: "op1", visible: false
 ;trans time: 1500
 ;waittrans canskip: false
 
@@ -34,14 +39,14 @@
 
 # Graduaters!
 ;pretrans
-;image lay: "op", file: "image/op-text02.png", x: (1280-134)/2, y: (720-20)/2, visible: true
+;layopt lay: "op2", visible: true
 ;trans time: 1500
 ;waittrans canskip: false
 
 ;wait time: 2000, canskip: false
 
 ;pretrans
-;layopt lay: "op", visible: false
+;layopt lay: "op2", visible: false
 ;trans time: 1500
 ;waittrans canskip: false
 
@@ -51,13 +56,16 @@
 ;trans time: 1500
 ;waittrans canskip: false
 
+# 画像リリース
+;freeimage lay: "op1,op2"
+
+*endOP
+
 # 屋上をフェード
 ;pretrans
 ;image lay: "base", file: "image/bg-roof.png", visible: true
 ;trans time: 1500
 ;waittrans canskip: false
-
-*endOP
 
 #■現在　かくれんぼ開始
 
@@ -66,7 +74,6 @@
 #☆フレームカラー　オレンジ
 ;set_to_orange
 
-
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -74,510 +81,500 @@
 「……で、だ」
 ;endpage
 
-;s
+;asuka num: 1
+「うん？」
+;endpage
 
-[fadeInAsuka num=1 pos=center time=500]
-*save2_1|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「うん？」[per]
-*save2_2|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「結局何がしたかったんだ？」[per]
-[asuka num=2 pos=center]
-*save2_3|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「え、お祝いだよ？」[per]
-*save2_4|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「なんのお祝いだよ」[per]
-[asuka num=2 pos=center]
-*save2_5|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「卒業の。おめでとうって言ったじゃん」[per]
-*save2_6|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「あぁ言ったな、確かに言った」[per]
-[asuka num=2 pos=center]
-*save2_7|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「うん」[per]
-*save2_8|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「しかしなんだって今日、卒業式当日の夜、しかもこの時間なんだ明日香さん？」[per]
-[asuka num=2 pos=center]
-*save2_9|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「だってこれから忙しくなるし、今日は宿直の先生もいないし」[per]
-*save2_10|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「はぁ……まぁいいけど」[per]
-*save2_11|かくれんぼ開始
-[afterLoad]
-[voidChar]　こいつ――[ruby text="み　ど"]御[ruby text="　う"]堂[ruby text=あ]明[ruby text=す]日[ruby text=か]香は、いわゆる俺の幼なじみだ。[per]
-*save2_12|かくれんぼ開始
-[afterLoad]
-[voidChar]　ガキのころからの付き合いで、物心つく前から一緒に遊んでいた。[per]
-*save2_13|かくれんぼ開始
-[afterLoad]
-[voidChar]　そのままずっと同じ学校に進学し続け、気がついたら腐った縁でがっしりくっついてしまっていた。[per]
-*save2_14|かくれんぼ開始
-[afterLoad]
-[voidChar]　ホントね、もう。腐れ縁の幼なじみの頼みじゃなかったら、こんな無茶苦茶な呼び出し聞くかってんだ。[per]
-*save2_15|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「ってか明日香。せめて呼び出すときは場所くらい書いとけよ」[per]
-[asuka num=1 pos=center]
-*save2_16|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「え、ちゃんと書いてたじゃん」[per]
-*save2_17|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「学校とだけ書かれても、どこかわかんねぇだろ。アバウトすぎだ」[per]
-[asuka num=2 pos=center]
-*save2_18|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「うーん。まぁでも来たし、健二」[per]
-*save2_19|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「たまたまだ。もし見つけられなかったらどうすんだよ」[per]
-*save2_20|かくれんぼ開始
-[afterLoad]
-[voidChar]　もしかしたら教室の可能性だってあったのだ。まぁ結果オーライといえばそうなのだが。[per]
-[asuka num=2 pos=center]
-*save2_21|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「まーいいじゃん。結果オーライってことで」[per]
-*save2_22|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「コンチクショウ。たしかにその通りなんだが」[per]
-[asuka num=5 pos=center]
-*save2_23|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「うん。サンキュね、健二」[per]
-*save2_24|かくれんぼ開始
-[afterLoad]
-[voidChar]　どきっとする。[per]
-*save2_25|かくれんぼ開始
-[afterLoad]
-[voidChar]　明日香は時々、というかしょっちゅう、こうやって無防備に笑う。[per]
-*save2_26|かくれんぼ開始
-[afterLoad]
-[voidChar]　子供のような、見てるこっちもうれしくなるような、とびきりの笑顔。[per]
-*save2_27|かくれんぼ開始
-[afterLoad]
-[voidChar]　あー、くそ。普段は捻くれてるくせに、いきなりだからな。特に今日は久しぶりだったから……[per]
-*save2_28|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「な、なんでお礼なんだよ気持ち悪い。新手の嫌がらせか」[per]
-[asuka num=2 pos=center]
-*save2_29|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「んー、来てくれたからかな」[per]
-*save2_30|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「なんだよそれ。ここはデパートか？　俺は記念すべき１００万人目のお客様か？」[per]
-[asuka num=1 pos=center]
-*save2_31|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「だって健二、最近は来てなかったじゃない」[per]
-*save2_32|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「え？　ちょ、それどういう意味だ？」[per]
-*save2_33|かくれんぼ開始
-[afterLoad]
-[voidChar]　確かに、俺が夜の学校に来るのは久しぶりだが……[per]
-*save2_34|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「お前まさか、今でも来てたのか？」[per]
-[asuka num=2 pos=center]
-*save2_35|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「うん。来てたよ」[per]
-*save2_36|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「一人で？」[per]
-[asuka num=2 pos=center]
-*save2_37|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「うん」[per]
-[asuka num=2 pos=center]
-*save2_38|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「月明かりがきれいな夜とかは、美術室から忍び込んで教室で宿題したり、こうやって屋上に来たりしてたんだ」[per]
+;kenji
+「結局何がしたかったんだ？」
+;endpage
 
-[fadeOutAsuka]
+;asuka num: 2
+「え、お祝いだよ？」
+;endpage
 
-*save2_39|かくれんぼ開始
-[afterLoad]
-[voidChar]　そう言って、明日香はフェンスの方へと歩いてゆく。[per]
-*save2_40|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「……馬鹿だなお前。俺はてっきり、もう来てないものだと思ってたぞ」[per]
-*save2_41|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「実は来てたんだよー。ずーーーっとね」[per]
-*save2_42|かくれんぼ開始
-[afterLoad]
-[voidChar]　明日香がフェンスに手をかける。[per]
-*save2_43|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「健二！　こっからだと寮がよく見えるよ。ほらほら」[per]
-*save2_44|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「はいはい」[per]
+;kenji
+「なんのお祝いだよ」
+;endpage
+
+;asuka num: 2
+「卒業の。おめでとうって言ったじゃん」
+;endpage
+
+;kenji
+「あぁ言ったな、確かに言った」
+;endpage
+
+;asuka num: 2
+「うん」
+;endpage
+
+;kenji
+「しかしなんだって今日、卒業式当日の夜、しかもこの時間なんだ明日香さん？」
+;endpage
+
+;asuka num: 2
+「だってこれから忙しくなるし、今日は宿直の先生もいないし」
+;endpage
+
+;kenji
+「はぁ……まぁいいけど」
+;endpage
+
+;noname
+こいつ―、御堂明日香は、いわゆる俺の幼なじみだ。
+;endpage
+
+
+;noname
+それこそお互いにオシメをしていたころからの付き合いで、物心つく前から一緒に遊んでいた。
+;endpage
+
+;noname
+そのままずっと同じ学校に進学し続けて、こうして同じ高校を卒業した腐れ縁だ。
+;endpage
+
+;noname
+ホントね、もう。腐れ縁の幼なじみの頼みじゃなかったら、こんな無茶苦茶な呼び出し聞いたりしない。
+;endpage
+
+;kenji
+「というか明日香、せめて呼び出すときは場所くらい書いとけよ」
+;endpage
+
+;asuka num: 1
+「え、ちゃんと書いてたじゃん」
+;endpage
+
+;kenji
+「学校とだけ書かれても、どこかわかんないだろ。アバウトすぎだ」
+;endpage
+
+;asuka num: 2
+「うーん。まぁでも、ちゃんと来れたし、健二」
+;endpage
+
+;kenji
+「たまたまだろうが。もし見つけられなかったらどうすんだよ」
+;endpage
+
+;asuka num: 2
+「まぁまぁ、いいじゃん結果オーライってことで」
+;endpage
+
+;kenji
+「いやまぁ、たしかにその通りなんだが」
+;endpage
+
+;asuka num: 5
+「でしょ。サンキュね、健二」
+;endpage
+
+;noname
+どきっとする。
+;endpage
+
+;noname
+明日香は時々、というかしょっちゅう、こうやって無防備に笑う。
+;endpage
+
+;noname
+子供のような、見てるこっちもうれしくなるような、そんな笑顔。
+;endpage
+
+;noname
+普段は捻くれてるくせに、こうやっていきなり素顔を見せる幼馴染に、俺はいつも振り回されてばかりだった。
+;endpage
+
+;kenji
+「な、なんでお礼なんだよ、気持ち悪い」
+;endpage
+
+;asuka num: 2
+「んー、ちゃんと来てくれたからかな」
+;endpage
+
+;kenji
+「なんだそれ……」
+;endpage
+
+;asuka num: 1
+「だって健二、最近は来てなかったじゃない」
+;endpage
+
+;kenji
+「え？　ちょっとまて、それどういう意味だ？」
+;endpage
+
+;noname
+確かに、俺が夜の学校に来るのは久しぶりだけど……
+;endpage
+
+;kenji
+「お前……まさか、今でも来てたのか？」
+;endpage
+
+;asuka num: 2
+「うん。来てたよ」
+;endpage
+
+;kenji
+「一人で？」
+;endpage
+
+;asuka num: 2
+「うん。しばらく来てない時期もあったけど……でもほら、あたしらにとってはさ、やっぱ夜の学校って特別じゃん」
+;endpage
+
+;asuka num: 2
+「月が明るい日とかにはさ、忍び込んで教室で宿題したり、こうやって屋上に来たりしてたんだよ」
+;endpage
+
+;asuka_out
+
+;noname
+そう言って、明日香はフェンスの方へと歩いていく。
+;endpage
+
+;kenji
+「……バカだなお前。俺はてっきり、もうとっくにやめたもんだと思ってたぞ」
+;endpage
+
+;asuka
+「実は来てたんだよー。ずーーーっとね」
+;endpage
+
+;noname
+明日香がフェンスに手をかける。
+;endpage
+
+;asuka
+「健二！　こっからだと寮がよく見えるよ。ほらほら」
+;endpage
+
+;kenji
+「はいはい」
+;endpage
+;noname
 
 #○フェード　黒
-[cb storage=black]
+;cb_fade bg: "black"
 
-*save2_45|かくれんぼ開始
-[afterLoad]
-[voidChar]　俺も明日香の隣へ並ぶ。明日香の言うとおり、俺や明日香の暮らす学生寮がよく見えた。まだ９時前ということもあって、ほとんどの部屋には明かりがついていている。[per]
-*save2_46|かくれんぼ開始
-[afterLoad]
-[voidChar]　それなりの大きさのあるうちの学生寮は、全校生徒の約半数が共同生活を営んでいる。[per]
-*save2_47|かくれんぼ開始
-[afterLoad]
-[voidChar]　暮らしはそこそこ快適。娯楽も、麻雀・トランプ・オセロあたりは毎日ロビーで誰かしらがやっていて困ることもない。[per]
-*save2_48|かくれんぼ開始
-[afterLoad]
-[voidChar]　そういった感じで、割と見ず知らずの人間とも適度に付き合ったりする。現代社会ではなかなか模範的なコミュニティが形成されているのが、うちの寮だ。[per]
-*save2_49|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「こうやって寮を眺めながら、あー健二の部屋は電気付いてるなー、まだ起きてるんだなー、来ないのかなー、暑いな寒いなーってやってたの」[per]
-*save2_50|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「あと、健二は麻雀やってるのかなー、トランプかなー、オセロかなー、将棋かなー、とかも考えてたかも」[per]
-*save2_51|かくれんぼ開始
-[afterLoad]
-[voidChar]　………………[per]
-*save2_52|かくれんぼ開始
-[afterLoad]
-[voidChar]　さっきから、もしやとは思っていたが……[per]
+;noname
+俺も明日香の隣へ並ぶ。明日香の言うとおり、俺や明日香の暮らす学生寮がよく見えた。まだ９時前ということもあって、ほとんどの部屋には明かりがついていている。
+;endpage
+
+;noname
+それなりの大きさのあるうちの学生寮は、全校生徒の約半数が共同生活を営んでいる。
+;endpage
+
+;noname
+暮らしはそこそこ快適。娯楽も、麻雀・トランプ・オセロあたりは毎日ロビーで誰かしらがやっていて困ることもない。
+;endpage
+
+;noname
+そういった感じで、割と見ず知らずの人間とも適度に付き合ったりする。現代社会ではなかなか模範的なコミュニティが形成されているのが、うちの寮だ。
+;endpage
+
+;asuka
+「こうやって寮を眺めながら、あー健二の部屋は電気付いてるなー、まだ起きてるんだなー、来ないのかなー、暑いな寒いなーってやってたの」
+;endpage
+
+;asuka
+「あと、健二は麻雀やってるのかなー、トランプかなー、オセロかなー、将棋かなー、とかも考えてたかも」
+;endpage
+
+;noname
+………………
+;endpage
 
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 
-*save2_53|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「なぁ、実は結構怒ってたり？」[per]
-[fadeInAsuka num=1 pos=center time=500]
-*save2_54|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「なにを？」[per]
-*save2_55|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「いや、俺ずっと来てなかったから、怒ってんのかなーと」[per]
-[asuka num=2 pos=center]
-*save2_56|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「そんな、怒ってるわけないじゃん、馬鹿だなぁ健二は」[per]
-[asuka num=1 pos=center]
-*save2_57|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「あはははははは」[per]
-*save2_58|かくれんぼ開始
-[afterLoad]
-[voidChar]　う、嘘だ、顔が笑ってねーよこいつ！[per]
-*save2_59|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「す、すまん。なんとなく来づらかったと言いますか……」[per]
-[asuka num=2 pos=center]
-*save2_60|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「あはは、わかってるって。本気で言ってるわけじゃないし、そんな気にしないで」[per]
-*save2_61|かくれんぼ開始
-[afterLoad]
-[voidChar]　ほっ。[per]
-*save2_62|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「いや、でも、その……す、すんましぇん」[per]
-[asuka num=5 pos=center]
-*save2_63|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「いいってもう。今日来てくれたから」[per]
-*save2_64|かくれんぼ開始
-[afterLoad]
-[voidChar]　そう言って明日香はまたにっこりと笑い、それから空を見上げた。[per]
-*save2_65|かくれんぼ開始
-[afterLoad]
-[voidChar]　俺もそれにならう。[per]
-[asuka num=2 pos=center]
-*save2_66|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「月がきれいだねー」[per]
-*save2_67|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「あー、まぁな。ってかこっぱずかしい台詞だなオイ」[per]
-[asuka num=5 pos=center]
-*save2_68|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「いーじゃんいーじゃん、情緒あふれてるでしょ、あたし」[per]
-*save2_69|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「はいはいそーですね」[per]
-[asuka num=3 pos=center]
-*save2_70|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「あぁー、なにその反応。適当すぎ」[per]
-*save2_71|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「いーだろ別に、月見てるんだよ、月」[per]
+;kenji
+「なぁ、実は結構怒ってたり？」
+;endpage
 
-[fadeOutAsuka]
+;asuka num: 1
+「なにを？」
+;endpage
 
-*save2_72|かくれんぼ開始
-[afterLoad]
-[voidChar]　文句を言う明日香を無視して、まぶしく光る丸い月を見上げる。[per]
-*save2_73|かくれんぼ開始
-[afterLoad]
-[voidChar]　今夜は満月……だろうか。つい一年前まではよくここから月を眺めていたけど、俺には分からなかった。そういうことに詳しかった友人は、今ここにいない。[per]
-*save2_74|かくれんぼ開始
-[afterLoad]
-[voidChar]　結構明るいから満月かな……なんて考えていると、[per]
-[fadeInAsuka num=2 pos=center time=500]
-*save2_75|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「よーし」[per]
-*save2_76|かくれんぼ開始
-[afterLoad]
-[voidChar]　明日香がこっちに向き直って、[per]
-[asuka num=5 pos=center]
-*save2_77|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「かくれんぼしよう、健二！」[per]
-*save2_78|かくれんぼ開始
-[afterLoad]
-[voidChar]　突拍子もないことを言い出した。[per]
-*save2_79|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「はぁ？　かくれんぼ？」[per]
-[asuka num=2 pos=center]
-*save2_80|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「そう、かくれんぼ。昔はよくやったでしょ」[per]
-*save2_81|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「昔って、それ一体いつごろの話だよ」[per]
-[asuka num=1 pos=center]
-*save2_82|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「うーん、小学生くらい？」[per]
-*save2_83|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「昔すぎだろ。ゥン年前じゃねーか」[per]
-[asuka num=5 pos=center]
-*save2_84|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「いいじゃん、かくれんぼしようよかくれんぼ」[per]
-*save2_85|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「嫌だ。何がうれしくてかくれんぼなんか」[per]
-[asuka num=1 pos=center]
-*save2_86|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「えー、いーじゃんやろーよー。せっかく夜の学校に忍び込んだんだから、何かしないと損じゃんか」[per]
-*save2_87|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「俺たちもう大人だろ？　アダルトだろ？　かくれんぼなんてチルドレンの遊びだろーが」[per]
-[asuka num=5 pos=center]
-*save2_88|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「いいからいいから」[per]
-*save2_89|かくれんぼ開始
-[afterLoad]
-[voidChar]　そう言って俺の腕をとり、フェンスから引き離す。[per]
-*save2_90|かくれんぼ開始
-[afterLoad]
-[voidChar]　まったく……こういう強引なところも昔から変わってない。[per]
-[asuka num=2 pos=center]
-*save2_91|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「んじゃあ鬼を決めよう！」[per]
-*save2_92|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「Ｂｏｏｏｏ！　強引だー、横暴だ―、職権乱用だー、国民にも政治介入の場をー」[per]
+;kenji
+「いや、俺がずっと来てなかったから、怒ってんのかなーと」
+;endpage
+
+;asuka num: 2
+「そんな、怒ってるわけないじゃん、馬鹿だなぁ健二は」
+;endpage
+
+;asuka num: 1
+「あはははははは」
+;endpage
+
+;noname
+う、嘘だ、顔が笑ってねーよこいつ！
+;endpage
+
+;kenji
+「す、すまん。なんとなく来づらかったと言いますか……」
+;endpage
+
+;asuka num: 2
+「あはは、わかってるって。本気で言ってるわけじゃないし、そんな気にしないで」
+;endpage
+
+;noname
+ほっ。
+;endpage
+
+;kenji
+「いや、でも、その……悪かった」
+;endpage
+
+;asuka num: 5
+「いいってもう。今日来てくれたから、それでチャラだよ」
+;endpage
+
+;noname
+そう言って明日香はまたにっこりと笑い、それから空を見上げた。
+;endpage
+
+;noname
+俺もそれにならう。
+;endpage
+
+;asuka num: 2
+「月がきれいだねー」
+;endpage
+
+;kenji
+「あー、まぁな。ってかこっぱずかしい台詞だなオイ」
+;endpage
+
+;asuka num: 5
+「いーじゃんいーじゃん、情緒あふれてるでしょ、あたし」
+;endpage
+
+;kenji
+「はいはいそーですね」
+;endpage
+
+;asuka num: 3
+「あぁー、なにその反応。適当すぎ」
+;endpage
+
+;kenji
+「いーだろ別に、月見てるんだよ、月」
+;endpage
+
+;asuka_out
+
+;noname
+文句を言う明日香を無視して、まぶしく光る丸い月を見上げる。
+;endpage
+
+;noname
+今夜は満月……だと思うけど、確信は持てなかった。つい一年前まではよくここから月を眺めていたけど、俺には分からなかった。そういうことに詳しかった友人は、今ここにいない。
+;endpage
+
+;noname
+結構明るいから満月かな……なんて考えていると、
+;endpage
+
+;asuka num: 2
+「よーし」
+;endpage
+
+;noname
+明日香がこっちに向き直って、
+;endpage
+
+;asuka num: 5
+「かくれんぼしよう、健二！」
+;endpage
+
+;noname
+突拍子もないことを言い出した。
+;endpage
+
+;kenji
+「はぁ？　かくれんぼ？」
+;endpage
+
+;asuka num: 2
+「そう、かくれんぼ。昔はよくやったでしょ」
+;endpage
+
+;kenji
+「昔って、それ一体いつごろの話だよ」
+;endpage
+
+;asuka num: 1
+「うーん、小学生くらい？」
+;endpage
+
+;kenji
+「いや昔すぎだろ」
+;endpage
+
+;asuka num: 5
+「いいじゃん、かくれんぼしようよかくれんぼ」
+;endpage
+
+;kenji
+「嫌だ。何がうれしくてかくれんぼなんか」
+;endpage
+
+;asuka num: 1
+「えー、いーじゃんやろーよー。せっかく夜の学校に忍び込んだんだから、何かしないと損じゃん」
+;endpage
+
+;kenji
+「なにがうれしくてわざわざ学校でかくれんぼしなくちゃならんのだ」
+;endpage
+
+;asuka num: 5
+「いいからいいから」
+;endpage
+
+;noname
+そう言って俺の腕をとり、フェンスから引き離す。
+;endpage
+
+;noname
+まったく……こういう強引なところも昔から変わってない。
+;endpage
+
+;asuka num: 2
+「んじゃあ鬼を決めよう！」
+;endpage
+
+;kenji
+「ぶーぶー。強引だー、横暴だー、民衆の意見も取り入れろー」
+;endpage
+
 #どうせやる羽目になるだろうが、とりあえず異議を唱えておく。俺のプライドのために。
-[asuka num=2 pos=center]
-*save2_93|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「じゃあとりあえずじゃんけんで決めようか」[per]
-*save2_94|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「無視か。そして本当にやるのか。断固ストライキする」[per]
-[asuka num=1 pos=center]
-*save2_95|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「さっきから何言ってるの？　ほら早く」[per]
-*save2_96|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「はい」[per]
-*save2_97|かくれんぼ開始
-[afterLoad]
-[voidChar]　結局は逆らえない俺。し、尻に敷かれてなんかないもん！　ないんだから！[per]
-[asuka num=2 pos=center]
-*save2_98|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「負けた方が鬼ねー」[per]
-*save2_99|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「おぅけぇーＧＡＹＳ、かかってきなー」[per]
-[asuka num=3 pos=center]
-*save2_100|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「いくよー、じゃーんけーん」[per]
-[asuka num=3 pos=center]
-*save2_101|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「ぽんっ！」[per]
-*save2_102|かくれんぼ開始
-[afterLoad]
-[voidChar]　はい負けたー。[per]
-*save2_103|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「もちろん三回勝負だよな？」[per]
-[asuka num=1 pos=center]
-*save2_104|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「そんなわけないじゃん」[per]
-*save2_105|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「えー」[per]
-[asuka num=3 pos=center]
-*save2_106|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「えーじゃない。あたしがルールだ」[per]
-*save2_107|かくれんぼ開始
-[afterLoad]
-[voidChar]　うわ何だこいつ、マリーアントワネットもびっくりのわがままさだ。[per]
-*save2_108|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「俺が鬼かよ……」[per]
-[asuka num=2 pos=center]
-*save2_109|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「よーし。じゃ、あたし隠れるから、５分たったら探索開始ね」[per]
-*save2_110|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「りょーかいですマリーアスカネット様」[per]
-[asuka num=5 pos=center]
-*save2_111|かくれんぼ開始
-[afterLoad]
-[drawName name="明日香"]
-「ちゃんと５分待ってからねー！」[per]
 
-[fadeOutAsuka]
+;asuka num: 2
+「じゃあ、じゃんけんで決めようか」
+;endpage
 
-*save2_112|かくれんぼ開始
-[afterLoad]
-[voidChar]　そう言って、明日香はとっとと屋上からいなくなってしまった。[per]
-*save2_113|かくれんぼ開始
-[afterLoad]
-[drawName name="健二"]
-「元気だなぁ、あいつ。まるで犬だな。明日香犬って犬種あるんじゃないのか？　ないか」[per]
-*save2_114|かくれんぼ開始
-[afterLoad]
-[voidChar]　ヒマになった俺は、明日香がそうしていたようにフェンスにもたれて、俺たちの寮をぼーっと眺めた。[per]
-*save2_115|かくれんぼ開始
-[afterLoad]
-[voidChar]　今ごろの時間は、多くの生徒がロビーでトランプやら麻雀やらやってることだろう。しかし俺はかくれんぼ。格差社会ここに極まりだコンチクショウ。[per]
-*save2_116|かくれんぼ開始
-[afterLoad]
-[voidChar]　明日香が突拍子もないことを言いだし、俺は渋りながらもそれに付き合う。その形は、昔から変わらない。[per]
-*save2_117|かくれんぼ開始
-[afterLoad]
-[voidChar]　その内容がいつもおもしろいことならいいのだが、明日香の場合は……まぁ、おもしろいのとおもしろくないのが半々くらいだな。[per]
-*save2_118|かくれんぼ開始
-[afterLoad]
-[voidChar]　今回のかくれんぼは……現時点ではおもしろくない方だ。まぁ二人きりのかくれんぼがおもしろくなるとは思えないが、幼なじみとして最後までつきあってやろう。[per]
-*save2_119|かくれんぼ開始
-[afterLoad]
-[voidChar]　そういえば、そもそも夜の学校に忍び込むというのも、明日香が言い出したことだった――[per]
+;kenji
+「無視かよ。そして本当にやるのか。断固反対する」
+;endpage
+
+;asuka num: 1
+「さっきから何言ってるの？　ほら早く」
+;endpage
+
+;kenji
+「はい」
+;endpage
+
+;noname
+結局は逆らえない俺。尻に敷かれてるんじゃないと思いたい。
+;endpage
+
+;asuka num: 2
+「負けた方が鬼ねー」
+;endpage
+
+;kenji
+「かかってきなー」
+;endpage
+
+;asuka num: 3
+「いくよー、じゃーんけーん」
+;endpage
+
+;asuka num: 3
+「ぽんっ！」
+;endpage
+
+;noname
+はい負けたー。
+;endpage
+
+;kenji
+「もちろん三回勝負だよな？」
+;endpage
+
+;asuka num: 1
+「そんなわけないじゃん」
+;endpage
+
+;kenji
+「えー」
+;endpage
+
+;asuka num: 3
+「えーじゃない。あたしがルールだ」
+;endpage
+
+;noname
+うわ何だこいつ。びっくりするほどワガママだ。
+;endpage
+
+;kenji
+「俺が鬼かよ……」
+;endpage
+
+;asuka num: 2
+「よーし。じゃ、あたし隠れるから、５分たったら探索開始ね」
+;endpage
+
+;kenji
+「りょーかい」
+;endpage
+
+;asuka num: 5
+「ちゃんと５分待ってからねー！」
+;endpage
+
+;asuka_out
+
+;noname
+そう言って、明日香はとっとと屋上からいなくなってしまった。
+;endpage
+
+;kenji
+「元気だなぁ、あいつ。まるで犬だな」
+;endpage
+
+;noname
+ヒマになった俺は、明日香がそうしていたようにフェンスにもたれて、俺たちの寮をぼーっと眺めた。
+;endpage
+
+;noname
+今ごろの時間は、多くの生徒がロビーでトランプやら麻雀やらやってることだろう。しかし俺はかくれんぼ。格差を感じる。
+;endpage
+
+;noname
+明日香が突拍子もないことを言いだし、俺は渋々とそれに付き合う。その形は、昔から変わらない。
+;endpage
+
+;noname
+その内容がいつも楽しいことならいいのだが、明日香の場合は……まぁ、半々くらいだな。
+;endpage
+
+;noname
+今回のかくれんぼは……二人きりのかくれんぼが楽しいとは思えないが、幼なじみとして最後までつきあってやろう。
+;endpage
+
+;noname
+……そういえば、そもそも夜の学校に忍び込むというのも、明日香が言い出したことだった――
+;endpage
 
 #☆メッセージフレーム　アウト
-[fadeOutMessageFrame]
-#☆テロップ　イン
-[telopIn]
-#△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
-#○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;fadeout_meslay
 
-[jump storage=3.ks]
+#△ＢＧＭフェードアウト
+;fadeoutbgm
+
+#○フェード　黒
+#;cb_fade bg: "black"
+
+#☆テロップ
+;telop
+
+;jump file: "scenario/03.pon"

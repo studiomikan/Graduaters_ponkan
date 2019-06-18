@@ -14,7 +14,8 @@
 ;layalias name: "asuka", lay: "2"
 ;layalias name: "yuuki", lay: "3"
 ;layalias name: "filter", lay: "4"
-;layalias name: "op", lay: "5"
+;layalias name: "op1", lay: "5"
+;layalias name: "op2", lay: "6"
 
 ;bufalias name: "bgm", buf: 0
 ;bufalias name: "system", buf: 1
@@ -55,7 +56,7 @@
 
 # テスト
 ;waitclick
-;jump file: "scenario/02.pon"
+;jump file: "scenario/03.pon"
 ;s
 
 # サークルロゴ表示
