@@ -61,6 +61,7 @@
 ;macro name: "echo_name"
   ;clear lay: "speaker"
   ;ch lay: "speaker", text: "&mp.name"
+  ;layopt lay: "speaker", visible: true
 ;endmacro
 
 ;macro name: "noname"
@@ -97,6 +98,7 @@
   ;clear lay: "speaker"
   ;pretrans
   ;show_meslay
+  ;noname
   ;trans time: "200"
   ;waittrans canskip: "false"
 ;endmacro
@@ -104,6 +106,7 @@
 ;macro name: "fadeout_meslay"
   ;pretrans
   ;hide_meslay
+  ;noname
   ;trans time: "200"
   ;waittrans canskip: "false"
 ;endmacro
@@ -113,6 +116,7 @@
 # 演出 ミニテロップイン -> アウト
 #-------------------------------------------------------------------
 ;macro name: "minitelop"
+  ;layopt lay: "all", visible: false
   # イン
   ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
   ;layopt lay: "telop", alpha: 0
@@ -131,8 +135,8 @@
 #-------------------------------------------------------------------
 ;macro name: "playse"
   ---
-    tv.file = "sound/se" + mp.num + ".ogg"
-    tv.loop = mp.loop != null ? mp.loop : false
+    tv.file = "sound/se" + mp.num + ".ogg";
+    tv.loop = mp.loop != null ? mp.loop : false;
   ---
   ;loadsound buf: "se", "file": "&tv.file"
   ;soundopt buf: "se", volume: 1, loop: "&tv.loop"
@@ -143,6 +147,38 @@
   ;stopsound buf: "se"
 ;endmacro
 
+#-------------------------------------------------------------------
+# BGM再生
+#-------------------------------------------------------------------
+;macro name: "playbgm"
+  ---
+    tv.file = "sound/bgm" + mp.num + ".ogg";
+  ---
+  ;loadsound buf: "bgm", "file": "&tv.file"
+  ;soundopt buf: "bgm", volume: 1, loop: true
+  ;playsound buf: "bgm"
+;endmacro
+
+;macro name: "stopbgm"
+  ;stopsound buf: "bgm"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# キャラクター表示関係
+#-------------------------------------------------------------------
+;macro name: "loadchara"
+  ---
+    tv.file = "image/chara/" + mp.name + "0" + mp.num + ".png";
+    tv.visible = mp.visible != null ? mp.visible : true;
+    switch (tv.name) {
+      case "asuka": tv.lay = "asuka"; break;
+      case "yuuki": tv.lay = "yuuki"; break;
+      default: tv.lay = "asuka"; break;
+    }
+  ---
+  ;image lay: "&tv.lay", file: "&tv.file", x: (1280-467)/2, y: 20, visible: "&tv.visible"
+;endmacro
 
 #-------------------------------------------------------------------
 # トランジション：ホワイトアウト
@@ -152,9 +188,11 @@
   ;freeimage lay: "base"
   ;clearcolor lay: "base"
   ;fillcolor lay: "base", color: "0xFFFFFF", alpha: 1
+  ;layopt lay: "all", visible: false
   ;layopt lay: "base", visible: true
   ;trans time: 1500
   ;waittrans canskip: true
+  ;stoptrans
 ;endmacro
 
 
@@ -166,6 +204,7 @@
   ;freeimage lay: "base"
   ;clearcolor lay: "base"
   ;fillcolor lay: "base", color: "0x000000", alpha: 1
+  ;layopt lay: "all", visible: false
   ;layopt lay: "base", visible: true
   ;trans time: 1500
   ;waittrans canskip: true
@@ -173,9 +212,22 @@
 
 
 #-------------------------------------------------------------------
-# トランジション：移動
+# 背景変更：フェード
 #-------------------------------------------------------------------
-;macro name: "trans_move"
+;macro name: "cb_fade"
+  ;pretrans
+  ;freeimage lay: "base"
+  ;clearcolor lay: "base"
+  ;image lay: "base", file: "&'image/bg-' + mp.bg + '.png'", visible: true
+  ;trans time: 1000, method: "crossfade"
+  ;waittrans "canskip": true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 背景変更：移動
+#-------------------------------------------------------------------
+;macro name: "cb_move"
   ;pretrans
   ;freeimage lay: "base"
   ;clearcolor lay: "base"
@@ -189,5 +241,8 @@
   ;trans time: 1000, method: "univ", rule: "rule/move.png"
   ;waittrans "canskip": true
 ;endmacro
+
+
+
 
 ;return

@@ -30,7 +30,6 @@
 一つ目は、寮の自室の本棚、辞書のケースの中にあるＤＶＤ。
 ;endpage
 
-;noname
 親からの少ない仕送りをやりくりし、少しずつだが確実に増やしていった秘蔵のコレクションだ。
 ;endpage
 
@@ -106,14 +105,14 @@
 ;endpage
 
 ;noname
-チクショウ。安全なのは間違いないが、よりによって今日、しかもこんな時間に呼び出すとは、あいつも何を考えてるんだ。
+ちくしょう、よりによって今日、しかもこんな時間に呼び出すとは、あいつも何を考えてるんだ。
 ;endpage
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
 #○移動　廊下
-;trans_move bg: "hall"
+;cb_move bg: "hall"
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -123,19 +122,16 @@
 ;endpage
 
 ;noname
-待ち合わせの時間まであと少しあるはずだが、あいつは遅刻に厳しい。
-;endpage
-
-;noname
-遅れようものなら俺の意見なんて片っ端から無視、きっととんでもない注文をつけてくるに違いないのだ。
+待ち合わせの時間まであと少しあるはずだが、安心はできない。
+少しでも遅れようものなら、どうせ俺の言いわけなんて全部無視して、とんでもない注文をつけてくるに違いないのだ。
 ;endpage
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
 #○移動　廊下
-;trans_move bg: "black"
-;trans_move bg: "hall"
+;cb_move bg: "black"
+;cb_move bg: "hall"
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -145,23 +141,15 @@
 ;endpage
 
 ;noname
-廊下を抜け、階段を二段とばしで駆け上がる。
+廊下を抜け、階段を二段とばしで駆け上がる。限界の近い両足に力をこめ、上を目指す。
 ;endpage
 
 ;noname
-限界の近い両足に力をこめ、上を目指す。
+呼び出しのメールに気づいてから、寮長の目をごまかして寮を抜けだし、ここへ来るまでほぼ全力疾走だ。
 ;endpage
 
 ;noname
-呼び出しのメールに気づいたのがついさっき。寮長の目をごまかして寮を抜けだし、ここへ来るまでほぼ全力疾走だ。
-;endpage
-
-;noname
-肺がきしむ。
-;endpage
-
-;noname
-両足はすでに乳酸漬けだ。
+日頃の運動不足もたたって、体が悲鳴を上げていた。
 ;endpage
 
 ;kenji
@@ -169,7 +157,7 @@
 ;endpage
 
 ;noname
-でも、それでも、急ぐ、急ぐ、急ぐ――
+それでも、急ぐ、急ぐ、急ぐ――
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -186,30 +174,38 @@
 あいつがいるとしたら、おそらく四階のさらに上。
 ;endpage
 
-;kenji
-「屋、上……！」
-;endpage
-
 ;noname
-四階の階段に作られた、立ち入り禁止の柵を跳び越える。
+階段に作られた立ち入り禁止の柵を跳び越える。
 ;endpage
 
 ;noname
 残りの階段を一気に駆け上がり、屋上へのドアを開けた――
 ;endpage
 
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
 #△止まる
 ;stopse
 
 #△屋上ドア
-;playse num: "11"
-# TODO se10も同時再生。合成しておく。
-;playse num: "11"
+;playse num: "10"
 
-#○フェード　白
+#○フェード　白（屋上、明日香）
+;pretrans
+;layopt lay: "filter", x: 0, y: 0, width: 1280, height: 720, visible: true
+;image lay: "base", file: "image/bg-roof.png"
+;loadchara name: "asuka", num: 2
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 1.0
+;trans time: 1000
+;waittrans canskip: false
 
 #☆;ウェイト　１０００
 ;wait time: 1000, canskip: false
+
+#☆メッセージフレーム　イン
+;fadein_meslay
 
 ;noname
 ドアを開けたとたん、視界が真っ白に染まる。
@@ -230,13 +226,33 @@
 「健二」
 ;endpage
 
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
 #☆視界回復　７５パーセント
+;pretrans
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.75
+;trans time: 1000
+;waittrans canskip: false
+
+#☆メッセージフレーム　イン
+;fadein_meslay
 
 ;noname
 視界が徐々に戻ってゆく。
 ;endpage
 
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
 #☆視界回復　５０パーセント
+;pretrans
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.5
+;trans time: 1000
+;waittrans canskip: false
+
+#☆メッセージフレーム　イン
+;fadein_meslay
 
 ;noname
 そして彼女は、そこにいた。
@@ -251,11 +267,11 @@
 ;endpage
 
 ;noname
-――ああ、やけに廊下が明るいと思ったら。
+ああ、やけに廊下が明るいと思ったら。
 ;endpage
 
 ;noname
-今夜は、月がこんなにきれいじゃないか――
+今夜も、あの日と同じような、大きな満月が浮かんでいた。
 ;endpage
 
 #☆視界回復　終了
@@ -268,4 +284,5 @@
 ;blackout
 
 #☆ジャンプ
+;jump file: "scenario/02.pon"
 ;s

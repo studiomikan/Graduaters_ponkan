@@ -2,7 +2,7 @@
 *title_start
 
 # 設定
-;loadsound buf: 2, file: "sound/se01.ogg"
+;loadsound buf: "system", file: "sound/se01.ogg"
 ;historyopt enabled: false
 ;rclick enabled: false
 
@@ -55,23 +55,29 @@
 # Load Game
 *loadgame
 ;lockbuttons
-;playsound buf: 2
+;soundopt buf: "system", volume: 1, loop: false
+;playsound buf: "system", loop: false
 ;call file: "script/load.pon"
 ;jump label: "unlockbuttons"
 
 # Config
 *config
 ;lockbuttons
-;playsound buf: 2
+;soundopt buf: "system", volume: 1, loop: false
+;playsound buf: "system", loop: false
 ;call file: "script/config.pon"
 ;jump label: "unlockbuttons"
 
 # Exit
 *exit
 ;lockbuttons
+;soundopt buf: "system", volume: 1, loop: false
+;playsound buf: "system", loop: false
 ---
 try {
-  window.close();
+  if (window.confirm("ゲームを終了しますか？")) {
+    window.close();
+  }
 } catch (e) {
   // 握りつぶす
 }
@@ -82,7 +88,8 @@ try {
 # New Game
 *newgame
 ;lockbuttons
-;playsound buf: 2
+;soundopt buf: "system", volume: 1, loop: false
+;playsound buf: "system", loop: false
 
 ;pretrans
 ;layopt lay: "all", visible: false
