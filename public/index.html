@@ -5,7 +5,7 @@
     <title>グラディエイターズ！</title>
     <style>
       @font-face {
-        font-family: 'mplus-1m-regular';
+        font-family: 'mplus';
         src: url('./fonts/mplus-1m-regular.woff') format('woff')
       }
       html, body {
@@ -65,7 +65,8 @@
             y: 130,
             width: 900,
             height: 500,
-            textFontFamily: ["mplus-1m-regular"],
+            textFontFamily: ["mplus"],
+            textFontWeight: "normal",
             textFontSize: 26,
             textLineHeight: 26,
             textLinePitch: 7,
@@ -118,7 +119,7 @@
       });
       WebFont.load({
         classes: false,
-        custom: { families: ["mplus-1m-regular"] },
+        custom: { families: ["mplus"] },
         active: function() {
           console.log("WebFont: ", "active.");
           ponkan.start();

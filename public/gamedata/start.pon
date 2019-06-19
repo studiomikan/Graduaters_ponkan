@@ -1,5 +1,10 @@
 # ゲームの開始スクリプト
 
+---
+ponkan.scaleMode = Ponkan3.ScaleMode.FIXED;
+ponkan.setFixedScaleSize(1280, 720);
+---
+
 ;freeimage lay: "all", page: "back"
 ;freeimage lay: "all", page: "fore"
 ;call file: "script/init_system.pon"
@@ -26,10 +31,10 @@
 ;layopt lay: "base", x: 0, y: 0, width: 1280, height: 720
 
 # 発言者の名前
-;layopt lay: "speaker", x: 150, y: 720-180, width: 200, height: 40, visible: true
+;layopt lay: "speaker", x: 200, y: 720-180, width: 200, height: 40, visible: true, autohide: true
 ;messageopt {
   "lay": "speaker",
-  "fontfamily": ["mplus-1m-regular", "monospace"],
+  "fontfamily": ["mplus", "メイリオ", "monospace"],
   "fontsize": 28,
   "weight": "normal",
   "color": "0xFFFFFF",
@@ -37,18 +42,18 @@
   "linepitch": 5,
   "align": "center",
   "shadow": true,
-  "shadowalpha": 0.7,
+  "shadowalpha": 0.4,
   "shadowangle": 0.5,
-  "shadowblur": 5,
+  "shadowblur": 2,
   "shadowcolor": "0x000000",
-  "shadowdistance": 2,
-  "edgewidth": 0,
+  "shadowdistance": 3,
+  "edgewidth": 1,
   "edgecolor": "0x000000",
   "autoreturn": true,
-  "margint": 5,
+  "margint": 0,
   "marginr": 0,
   "marginb": 0,
-  "marginl": 0
+  "marginl": 0,
 }
 
 # 設定を背景にも適用
@@ -56,7 +61,7 @@
 
 # テスト
 ;waitclick
-;jump file: "scenario/03.pon"
+;jump file: "scenario/01.pon"
 ;s
 
 # サークルロゴ表示

@@ -12,10 +12,29 @@ tv.system.config= {
   // 背景画像
   bg: "image/config.png",
 
+  // ボタン用レイヤの一覧
+  btnLayList: [
+    tv.layer.config + 1,
+    tv.layer.config + 2,
+    tv.layer.config + 3,
+    tv.layer.config + 4,
+    tv.layer.config + 5,
+    tv.layer.config + 6,
+    tv.layer.config + 7,
+    tv.layer.config + 8,
+    tv.layer.config + 9
+  ].join(","),
+
   // ボタン用レイヤ
-  btnLay: tv.layer.config + 1,
-  // テキスト用レイヤ
-  textLay: tv.layer.config + 2,
+  closeLay: tv.layer.config + 1,
+  unreadTextLay: tv.layer.config + 2,
+  readTextLay: tv.layer.config + 3,
+  autoModeLay: tv.layer.config + 4,
+  skipModeLay: tv.layer.config + 5,
+  bgmLay: tv.layer.config + 6,
+  seLay: tv.layer.config + 7,
+  systemLay: tv.layer.config + 8,
+  scaleModeLay: tv.layer.config + 9,
 
   // トランジションの時間
   transTime: 200,
@@ -25,8 +44,8 @@ tv.system.config= {
 # 初期値設定
 ---
 tv.system.config.selected = {
-  unreadTextSpeed: 20 - Math.floor(20 * ponkan.unreadTextSpeed / 400),
-  readTextSpeed: 20 - Math.floor(20 * ponkan.readTextSpeed / 400),
+  unreadTextSpeed: 20 - Math.floor(20 * ponkan.unreadTextSpeed / 100),
+  readTextSpeed: 20 - Math.floor(20 * ponkan.readTextSpeed / 100),
   autoModeSpeed: 20 - Math.floor(20 * ponkan.autoModeInterval / 10000),
   skipMode: ponkan.canSkipUnreadPart ? 1 : 0,
   bgmVolume: Math.floor(20 * ponkan.getSoundBuffer(0).volume / 1),
@@ -56,24 +75,10 @@ tv.system.config.selected = {
 ;layopt lay: "&tv.layer.config", visible: true
 
 # ボタン用レイヤの設定
-;layopt lay: "&tv.system.config.btnLay", x: 0, y: 0, width: 1280, height: 720, visible: true
-;mesopt lay: "&tv.system.config.btnLay", color: 0x000000, fontsize: 20, lineheight: 20, color: 0x000000
-;clear lay: "&tv.system.config.btnLay"
-;clearbuttons lay: "&tv.system.config.btnLay"
-
-# テキスト用レイヤの設定
-;layopt lay: "&tv.system.config.textLay", x:0, y: 0, width: 1280, height: 720, visible: true
-;meslay lay: "&tv.system.config.textLay"
-;clear lay: "&tv.system.config.textLay"
-;mesopt {
-  fontfamily: ["mplus-1p-regular", "monospace"],
-  fontsize: 18,
-  lineheight: 18,
-  align: "left",
-  color: 0x000000,
-  autoreturn: false,
-  margint: 0, marginr: 0, marginb: 0, marginl: 0
-}
+;layopt lay: "&tv.system.config.btnLayList", x: 0, y: 0, width: 1280, height: 24, visible: true
+;mesopt lay: "&tv.system.config.btnLayList", color: 0x000000, fontsize: 20, lineheight: 20, color: 0x000000
+;clear lay: "&tv.system.config.btnLayList"
+;clearbuttons lay: "&tv.system.config.btnLayList"
 
 # ボタンをロック
 ;lockbuttons page: "fore"
@@ -85,107 +90,113 @@ tv.system.config.selected = {
 # ボタンの設置
 -tv.startX = 423;
 
+
+;nowait
 # 未読スピード
--tv.y = 170; tv.varName = "unreadTextSpeed";
-;call label: "draw_value_buttons"
-# 既読スピード
--tv.y = 210; tv.varName = "readTextSpeed";
-;call label: "draw_value_buttons"
-# オートモードスピード
--tv.y = 250; tv.varName = "autoModeSpeed";
-;call label: "draw_value_buttons"
-# スキップ
----
-tv.jump = !(tv.system.config.selected.skipMode == 0);
-tv.label = tv.jump ? "draw" : "unlock_config_buttons";
-tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
----
-;textbutton {
-  lay: "&tv.system.config.btnLay",
-  text: "既読のみ", x: "&tv.startX", y: 290,
-  width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
-  exp:"tv.system.config.selected.skipMode = 0", jump: "&tv.jump", label: "&tv.label",
-}
----
-tv.jump = !(tv.system.config.selected.skipMode == 1);
-tv.label = tv.jump ? "draw" : "unlock_config_buttons";
-tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
----
-;textbutton {
-  lay: "&tv.system.config.btnLay",
-  text: "すべて", x: "&tv.startX + 130", y: 290,
-  width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
-  exp:"tv.system.config.selected.skipMode = 1", jump: "&tv.jump", label: "&tv.label",
-}
+;call label: "draw_unread_text_buttons"
 
-# BGM
--tv.y = 415; tv.varName = "bgmVolume";
-;call label: "draw_value_buttons"
-# SE
--tv.y = 455; tv.varName = "seVolume";
-;call label: "draw_value_buttons"
-# システム
--tv.y = 495; tv.varName = "systemVolume";
-;call label: "draw_value_buttons"
-
-# スケーリング
----
-tv.jump = !(tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FULLSCREEN);
-tv.label = tv.jump ? "draw" : "unlock_config_buttons";
-tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
-tv.exp = "tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FULLSCREEN";
----
-;textbutton {
-  lay: "&tv.system.config.btnLay",
-  text: "フルスクリーン", x: "&tv.startX", y: 608,
-  width: 170, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
-  exp: "&tv.exp", jump: "&tv.jump", label: "&tv.label",
-}
----
-tv.jump = !(tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FIT);
-tv.label = tv.jump ? "draw" : "unlock_config_buttons";
-tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
-tv.exp = "tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FIT";
----
-;textbutton {
-  lay: "&tv.system.config.btnLay",
-  text: "ウィンドウサイズ", x: "&tv.startX + 180", y: 608,
-  width: 190, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
-  exp: "&tv.exp", jump: "&tv.jump", label: "&tv.label",
-}
-
----
-tv.resolutions = [
-  [1280, 720],
-  [1920, 1080]
-];
----
-;for loops: "&tv.resolutions.length", indexvar: "i"
-  ---
-  tv.x = tv.startX + 380 + (130 * tv.i);
-  tv.width = tv.resolutions[tv.i][0];
-  tv.height = tv.resolutions[tv.i][1];
-  tv.text = `${tv.width}x${tv.height}`;
-  tv.jump = !(tv.system.config.selected.fixedScaleWidth === tv.width &&
-              tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FIXED);
-  tv.label = tv.jump ? "draw" : "unlock_config_buttons";
-  tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
-  tv.exp = `tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FIXED;
-            tv.system.config.selected.fixedScaleWidth = ${tv.width};
-            tv.system.config.selected.fixedScaleHeight = ${tv.height};`;
-  ---
-  ;textbutton {
-    lay: "&tv.system.config.btnLay",
-    text: "&tv.text", x: "&tv.x", y: 608,
-    width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
-    exp: "&tv.exp", jump: "&tv.jump", label: "&tv.label",
-  }
-;endfor
+## 未読スピード
+#-tv.y = 170; tv.varName = "unreadTextSpeed";
+#;call label: "draw_value_buttons"
+#
+## 既読スピード
+#-tv.y = 210; tv.varName = "readTextSpeed";
+#;call label: "draw_value_buttons"
+## オートモードスピード
+#-tv.y = 250; tv.varName = "autoModeSpeed";
+#;call label: "draw_value_buttons"
+## スキップ
+#---
+#tv.jump = !(tv.system.config.selected.skipMode == 0);
+#tv.label = tv.jump ? "draw" : "unlock_config_buttons";
+#tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
+#---
+#;textbutton {
+#  lay: "&tv.system.config.btnLay",
+#  text: "既読のみ", x: "&tv.startX", y: 290,
+#  width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
+#  exp:"tv.system.config.selected.skipMode = 0", jump: "&tv.jump", label: "&tv.label",
+#}
+#---
+#tv.jump = !(tv.system.config.selected.skipMode == 1);
+#tv.label = tv.jump ? "draw" : "unlock_config_buttons";
+#tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
+#---
+#;textbutton {
+#  lay: "&tv.system.config.btnLay",
+#  text: "すべて", x: "&tv.startX + 130", y: 290,
+#  width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
+#  exp:"tv.system.config.selected.skipMode = 1", jump: "&tv.jump", label: "&tv.label",
+#}
+#
+## BGM
+#-tv.y = 415; tv.varName = "bgmVolume";
+#;call label: "draw_value_buttons"
+## SE
+#-tv.y = 455; tv.varName = "seVolume";
+#;call label: "draw_value_buttons"
+## システム
+#-tv.y = 495; tv.varName = "systemVolume";
+#;call label: "draw_value_buttons"
+#
+## スケーリング
+#---
+#tv.jump = !(tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FULLSCREEN);
+#tv.label = tv.jump ? "draw" : "unlock_config_buttons";
+#tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
+#tv.exp = "tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FULLSCREEN";
+#---
+#;textbutton {
+#  lay: "&tv.system.config.btnLay",
+#  text: "フルスクリーン", x: "&tv.startX", y: 608,
+#  width: 170, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
+#  exp: "&tv.exp", jump: "&tv.jump", label: "&tv.label",
+#}
+#---
+#tv.jump = !(tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FIT);
+#tv.label = tv.jump ? "draw" : "unlock_config_buttons";
+#tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
+#tv.exp = "tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FIT";
+#---
+#;textbutton {
+#  lay: "&tv.system.config.btnLay",
+#  text: "ウィンドウサイズ", x: "&tv.startX + 180", y: 608,
+#  width: 190, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
+#  exp: "&tv.exp", jump: "&tv.jump", label: "&tv.label",
+#}
+#
+#---
+#tv.resolutions = [
+#  [1280, 720],
+#  [1920, 1080]
+#];
+#---
+#;for loops: "&tv.resolutions.length", indexvar: "i"
+#  ---
+#  tv.x = tv.startX + 380 + (130 * tv.i);
+#  tv.width = tv.resolutions[tv.i][0];
+#  tv.height = tv.resolutions[tv.i][1];
+#  tv.text = `${tv.width}x${tv.height}`;
+#  tv.jump = !(tv.system.config.selected.fixedScaleWidth === tv.width &&
+#              tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FIXED);
+#  tv.label = tv.jump ? "draw" : "unlock_config_buttons";
+#  tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
+#  tv.exp = `tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FIXED;
+#            tv.system.config.selected.fixedScaleWidth = ${tv.width};
+#            tv.system.config.selected.fixedScaleHeight = ${tv.height};`;
+#  ---
+#  ;textbutton {
+#    lay: "&tv.system.config.btnLay",
+#    text: "&tv.text", x: "&tv.x", y: 608,
+#    width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
+#    exp: "&tv.exp", jump: "&tv.jump", label: "&tv.label",
+#  }
+#;endfor
 
 
 # コンフィグ画面の閉じるボタン
 ;imagebutton {
-  lay:       "&tv.system.config.btnLay",
+  lay:       "&tv.system.config.closeLay",
   imagefile: "image/close_button.png",
   x:         "&1280 - 30 - 24",
   y:         23,
@@ -201,7 +212,7 @@ tv.resolutions = [
 
 *unlock_config_buttons
 # ボタンのロックを解除
-;unlockbuttons lay: "&tv.system.config.btnLay"
+;unlockbuttons lay: "&tv.system.config.btnLayList"
 # 右クリックで画面を終了
 ;rclick jump: true, label: "exit", enabled: true
 
@@ -213,6 +224,36 @@ if (ponkan.scaleMode === Ponkan3.ScaleMode.FIXED) {
                            tv.system.config.selected.fixedScaleHeight);
 }
 ---
+;s
+
+#=========================================================================================
+# 未読テキストの設定ボタンを描画
+#=========================================================================================
+*draw_unread_text_buttons
+---
+tv.values = [
+  200, 200, 200, 200, 200,
+  200, 200, 200, 200, 200,
+  200, 200, 200, 200, 200,
+  200, 200, 10, 5, 0,
+];
+tv.currentValue = ponkan.unreadTextSpeed;
+---
+;for loops: 21, inexvar: "i"
+  ;textbutton {
+    lay:    "&tv.system.config.unreadTextLay",
+    x:      "&tv.x",
+    y:      "&tv.y",
+    width:  24,
+    height: 24,
+    bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"],
+    bgalphas: "&tv.bgalphas",
+    exp:    "&tv.exp",
+    jump:   "&tv.jump",
+    label:  "&tv.label",
+  }
+;endfor
+;return
 ;s
 
 
@@ -266,8 +307,8 @@ tv.x = tv.startX;
 # 値を適用
 ---
 var s = tv.system.config.selected;
-ponkan.unreadTextSpeed = 400 - s.unreadTextSpeed * 20;
-ponkan.readTextSpeed = 400 - s.readTextSpeed * 20;
+ponkan.unreadTextSpeed = 100 - s.unreadTextSpeed * 20;
+ponkan.readTextSpeed = 100 - s.readTextSpeed * 20;
 ponkan.autoModeInterval = 10000 - s.autoModeSpeed * 500;
 ponkan.canSkipUnreadPart = (s.skipMode == 1);
 ponkan.getSoundBuffer(0).volume = s.bgmVolume / 20;

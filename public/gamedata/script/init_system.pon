@@ -16,31 +16,31 @@ tv.layerCount = 40
 // 各画面で使用するレイヤーの指定
 tv.layer = {
   // メッセージレイヤ
-  message: 20,
+  message: 10,
   // 行末グリフ
-  line: 21,
+  line: 11,
   // ページ末グリフ
-  page: 22,
+  page: 12,
   // オートモード状態表示
-  auto: 23,
+  auto: 13,
 
   // システムボタン
-  systembutton: 25,
+  systembutton: 15,
 
   // セーブ画面
   // 注意：組み込みのセーブ画面はここで指定したレイヤーを含めて3レイヤー使用する。
   //       たとえば20を指定した場合、20〜22
-  save: 26,
+  save: 16,
 
   // ロード画面
   // 注意：組み込みのロード画面はここで指定したレイヤーを含めて3レイヤー使用する。
   //       たとえば20を指定した場合、20〜22
-  load: 29,
+  load: 16,
 
   // コンフィグ画面
-  // 注意：組み込みのコンフィグ画面はここで指定したレイヤーを含めて3レイヤー使用する。
-  //       たとえば20を指定した場合、20〜22
-  config: 32,
+  // 注意：組み込みのコンフィグ画面はここで指定したレイヤーを含めて9レイヤー使用する。
+  //       たとえば20を指定した場合、20〜28
+  config: 16,
 
   // ダイアログ
   dialog: 39,
@@ -68,7 +68,7 @@ tv.layer = {
 }
 ;messageopt {
   "lay": "message",
-  "fontfamily": ["mplus-1m-regular", "monospace"],
+  "fontfamily": ["mplus", "メイリオ", "monospace"],
   "fontsize": 24,
   "weight": "normal",
   "color": "0xFFFFFF",
@@ -76,12 +76,12 @@ tv.layer = {
   "linepitch": 5,
   "align": "left",
   "shadow": true,
-  "shadowalpha": 0.7,
+  "shadowalpha": 0.4,
   "shadowangle": 0.5,
-  "shadowblur": 5,
+  "shadowblur": 2,
   "shadowcolor": "0x000000",
-  "shadowdistance": 2,
-  "edgewidth": 0,
+  "shadowdistance": 3,
+  "edgewidth": 1,
   "edgecolor": "0x000000",
   "autoreturn": true,
   "margint": 10,
@@ -91,7 +91,6 @@ tv.layer = {
 }
 ;fillcolor "lay": "mes", "color": "0x4286f4", "alpha": 0.7
 ;textspeed "unread": 20, "read": 20
-
 
 
 # 行末グリフの設定
@@ -123,13 +122,16 @@ let frames = tv.pageBreakFrames = [];
 for (var i = 0; i < 16; i++) { frames.push({"x": 24 * i, "y": 0}); }
 for (var i = 1; i < 15; i++) { frames.push({"x": 360 - 24 * i, "y": 0}); }
 ---
-;pbglyph "lay": "&tv.layer.page", "pos": "eol"
+;pbglyph {
+  "lay": "&tv.layer.page",
+  "pos": "absolute",
+  "x": 1050,
+  "y": 720 - 50,
+}
 ;image {
   "lay": "pagebreak",
   "file": "image/pagebreak.png",
   "visible": false,
-  "x": 0,
-  "y": 0
 }
 ;frameanim {
   "lay": "pagebreak",
@@ -139,19 +141,18 @@ for (var i = 1; i < 15; i++) { frames.push({"x": 360 - 24 * i, "y": 0}); }
   "height": 24,
   "frames": "&tv.pageBreakFrames"
 }
+
 #=============================================
 # オートモード表示レイヤの設定
 #=============================================
 ;automodeopt "lay": "&tv.layer.auto"
 ;layopt {
   "lay": "automode",
-  "x": 0,
-  "y": 0,
-  "width": 50,
-  "height": 50,
+  "x": 10,
+  "y": 8,
   "visible": false
 }
-;fillcolor "lay": "automode", "color": "0x00FFFF", "alpha": 1.0
+;image "lay": "automode", "file": "image/automode.png"
 
 
 #=============================================

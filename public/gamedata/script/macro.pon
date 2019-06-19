@@ -21,7 +21,7 @@
 # 操作対象はデフォルトで表ページ
 #-------------------------------------------------------------------
 ;macro name: "set_to_orange"
-  -tv.meslay_bgcolor = 0xCA5D00;
+  -tv.meslay_color_mode = "orange";
   -tv.page = mp.page == "back" ? "back" : "fore";
   ;currentpage page: "&tv.page"
   ;layopt lay: "mes", page: "&tv.page", x: 0, y: (720-200)
@@ -30,15 +30,15 @@
   ;mesopt {
     lay: "mes",
     page: "&tv.page",
-    marginl: (1280-790)/2,
-    marginr: (1280-790)/2,
-    margint: 75
+    marginl: (1280-800)/2,
+    marginr: (1280-800)/2,
+    margint: 65,
   }
   ;call file: "script/system_button.pon"
 ;endmacro
 
 ;macro name: "set_to_blue"
-  -tv.meslay_bgcolor = 0x1B3D9D;
+  -tv.meslay_color_mode = "blue";
   -tv.page = mp.page == "back" ? "back" : "fore";
   ;currentpage page: "&tv.page"
   ;layopt lay: "mes", page: "&tv.page", x: 0, y: (720-200)
@@ -49,7 +49,7 @@
     page: "&tv.page",
     marginl: (1280-790)/2,
     marginr: (1280-790)/2,
-    margint: 75
+    margint: 65,
   }
   ;call file: "script/system_button.pon"
 ;endmacro

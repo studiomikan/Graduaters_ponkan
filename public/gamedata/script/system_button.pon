@@ -1,128 +1,124 @@
 # システムボタンの初期化
 
 ---
-if (tv.meslay_bgcolor != null) {
-  tv.bgcolor = tv.meslay_bgcolor;
+if (tv.meslay_color_mode == "blue") {
+  tv.systembutton_image_prefix = "sysbtn2";
 } else {
-  tv.bgcolor = 0xCA5D00;
+  tv.systembutton_image_prefix = "sysbtn1";
 }
+
 
 tv.systembutton = {
   color:        0xFFFFFF,
-  bgcolors:     [tv.bgcolor, tv.bgcolor, tv.bgcolor],
-  bgalphas:     [0.5, 0.7, 0.9],
-  x:            1280-(110*6)-24-10,
-  y:            720-175,
-  width:        100,
-  height:       24,
-  marginr:      10,
+  x:            1280-230,
+  y:            720-170,
+  width:        300,
+  height:       300,
 
   buttons: [
     {
-      text:  "Save",
-      file:  "script/save.pon",
-      label: "save_start",
-      exp:   ""
+      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-save.png`,
+      x:          108,
+      y:          (26 + 5) * 0,
+      file:       "script/save.pon",
+      label:      "save_start",
+      exp:        ""
     },
     {
-      text:  "Load",
-      file:  "script/load.pon",
-      label: "load_start",
-      exp:   ""
+      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-load.png`,
+      x:          108,
+      y:          (26 + 5) * 1,
+      file:       "script/load.pon",
+      label:      "load_start",
+      exp:        ""
     },
     {
-      text:  "Skip",
-      file:  "script/system_button.pon",
-      label: "act_skip",
-      exp:   ""
+      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-config.png`,
+      x:          108,
+      y:          (26 + 5) * 2,
+      file:      "script/config.pon",
+      label:     "config_start",
+      exp:       ""
     },
     {
-      text:  "Auto",
-      file:  "script/system_button.pon",
-      label: "act_auto",
-      exp:   ""
+      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-log.png`,
+      x:          108,
+      y:          (26 + 5) * 3,
+      file:       "script/system_button.pon",
+      label:      "act_log",
+      exp:        ""
     },
     {
-      text:  "Log",
-      file:  "script/system_button.pon",
-      label: "act_log",
-      exp:   ""
+      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-title.png`,
+      x:          108,
+      y:          (26 + 5) * 4,
+      file:       "script/system_button.pon",
+      label:      "act_title",
+      exp:        ""
     },
     {
-      text:  "Config",
-      file:  "script/config.pon",
-      label: "config_start",
-      exp:   ""
+      imagefile:  "image/sysbtn/sysbtn-auto.png",
+      x:          0,
+      y:          0,
+      file:       "script/system_button.pon",
+      label:      "act_auto",
+      exp:        ""
     },
     {
-      text:  "x",
-      file:  "script/system_button.pon",
-      label: "act_close",
-      exp:   "",
-      width:  24,
-      height: 24,
+      imagefile:  "image/sysbtn/sysbtn-skip.png",
+      x:          32,
+      y:          0,
+      file:       "script/system_button.pon",
+      label:      "act_skip",
+      exp:        ""
+    },
+    {
+      imagefile:  "image/sysbtn/sysbtn-close.png",
+      x:          70,
+      y:          0,
+      file:       "script/system_button.pon",
+      label:      "act_close",
+      exp:        "",
     },
   ]
 }
 ---
 
-# 親レイヤ指定
+# 親レイヤの設定
 ;clear lay: "&tv.layer.systembutton"
 ;layopt {
   lay:          "&tv.layer.systembutton",
   x:            "&tv.systembutton.x",
   y:            "&tv.systembutton.y",
-  width:        "&(tv.systembutton.width + tv.systembutton.marginr) * tv.systembutton.buttons.length",
+  width:        "&tv.systembutton.width",
   height:       "&tv.systembutton.height",
   visible:      false,
   autohide:     true,
 }
-;messageopt  {
-  lay:          "&tv.layer.systembutton",
-  align:        "center",
-  margint:      0,
-  fontfamily:   ["mplus-1p-regular", "monospace"],
-  lineheight:   16, fontsize:     16,
-  fontweight:   "normal",
-  color:        "&tv.systembutton.color",
-  margint:      2,
-  marginr:      2,
-  marginb:      2,
-  marginl:      2,
-}
-
----
----
 
 - tv.x = 0
 ;for loops: "&tv.systembutton.buttons.length", indexvar: "i"
   ---
-  tv.x = (tv.systembutton.width + tv.systembutton.marginr) * tv.i;
   tv.button = tv.systembutton.buttons[tv.i];
   tv.width = tv.button.width ? tv.button.width : tv.systembutton.width;
   tv.height = tv.button.height ? tv.button.height : tv.systembutton.height;
   ---
-  ;textbutton {
+  ;imagebutton {
     lay:          "&tv.layer.systembutton",
-    text:         "&tv.button.text",
-    x:            "&tv.x",
-    y:            0,
-    width:        "&tv.width",
-    height:       "&tv.height",
-    bgcolors:     "&tv.systembutton.bgcolors",
-    bgalphas:     "&tv.systembutton.bgalphas",
+    x:            "&tv.button.x",
+    y:            "&tv.button.y",
+    imagefile:    "&tv.button.imagefile",
     exp:          "&tv.button.exp",
     jump:         false,
     call:         true,
     file:         "&tv.button.file",
     label:        "&tv.button.label",
-    system:       true
+    system:       true,
   }
 ;endfor
 
 ;return countpage: true
 ;s
-
 
 # セーブ
 *act_save
@@ -157,5 +153,10 @@ tv.systembutton = {
 # メッセージレイヤを隠す
 *act_close
 ;hidemessages
+;return
+
+# タイトルに戻る
+*act_title
+-alert("TODO タイトルに戻る");
 ;return
 
