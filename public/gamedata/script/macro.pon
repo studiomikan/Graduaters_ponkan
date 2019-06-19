@@ -185,6 +185,94 @@
   ;wait time: 1500, canskip: false
 ;endmacro
 
+#-------------------------------------------------------------------
+# 演出 ラジオ
+#-------------------------------------------------------------------
+;macro name: "radio_mes_jump1"
+  ;move {
+    lay: "mes",
+    time: "250",
+    path: [
+      {x: (1280-560)/2, y: (720-315)/2 - 50, alpha: 1},
+      {x: (1280-560)/2, y: (720-315)/2, alpha: 1},
+      {x: (1280-560)/2, y: (720-315)/2 - 50, alpha: 1},
+      {x: (1280-560)/2, y: (720-315)/2, alpha: 1},
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_combo1"
+  ;move {
+    lay: "mes",
+    time: "250",
+    ease: "out",
+    type: "catmullrom",
+    path: [
+      {x: 50, y: 50, alpha: 1},
+      {x: 1280-50, y: 50, alpha: 1},
+      {x: 50, y: 720-315-50, alpha: 1},
+      {x: 1280-50, y: 720-315-50, alpha: 1},
+      {x: (1280-560)/2, y: (720-315)/2, alpha: 1},
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_top"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out"
+    path: [
+      {x: (1280-560)/2, y: (720-315)/2 - 50, alpha: 1}
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_right"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out"
+    path: [
+      {x: 1280-560-50, y: (720-315)/2, alpha: 1}
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_bottom"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out"
+    path: [
+      {x: (1280-560)/2, y: 720-315-50, alpha: 1}
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_left"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out"
+    path: [
+      {x: 50, y: (720-315)/2, alpha: 1}
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_center"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out"
+    path: [
+      {x: (1280-560)/2, y: (720-315)/2, alpha: 1}
+    ],
+  }
+;endmacro
+
+
 
 #-------------------------------------------------------------------
 # 効果音再生
