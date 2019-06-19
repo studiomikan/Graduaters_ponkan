@@ -1,137 +1,137 @@
 ;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
+;	Graduaters!　～グラディエイターズ！～
 ;
 
 *start
 
-;�����W�I�S
+;■ラジオ４
 
 [wait time=1000 canskip=false]
-*save|�O���W���G�C�g�E�W���o���@�@�@�@�@�@
+*save|グラジュエイト・ジョバン　　　　　　
 
-;�����W�I���b�Z�[�W�@�C��
+;☆ラジオメッセージ　イン
 [fadeInRadioMessage]
 
-*save18_0|�O���W���G�C�g�E�W���o��
+*save18_0|グラジュエイト・ジョバン
 [afterLoad]
 [voidChar][quake time=500 timemode=ms hmax=10 vmax=50]
 [playse storage=SE20 buf=1 loop=false][font size=30]
-�u�c�i�W���o���́I�@�w�O���f�B�G�C�g�E�W���p���x�I�v[per]
+「ＤＪジョバンの！　『グラディエイト・ジャパン』！」[per]
 
-;���a�f�l�Q
+;△ＢＧＭ２
 [bgmopt volume=100][playbgm storage=bgm002]
 
-*save18_1|�O���W���G�C�g�E�W���o��
+*save18_1|グラジュエイト・ジョバン
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u���[�č������n�܂�܂����A�Y�߂鏭�N�����̖����w�O���f�B�G�C�g�E�W���p���x�I�@�����肷��̂͂��Ȃ��݉��[�A�c�i�W���o���Ł[���I�v[per]
-*save18_2|�O���W���G�C�g�E�W���o��
+「さーて今日も始まりました、悩める少年少女の味方『グラディエイト・ジャパン』！　お送りするのはおなじみ俺ー、ＤＪジョバンでーす！」[per]
+*save18_2|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u��[��[�ŋ߂��O�������q�ǂ���H�@�K�b�R�I����ċC���������肵�Ă˂������H�v[per]
-*save18_3|�O���W���G�C�g�E�W���o��
+[voidChar]「やーやー最近お前たち調子どうよ？　ガッコ終わって気ぃ抜けたりしてねぇかぁ？」[per]
+*save18_3|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u����Ȃ��O�����ɃW���o�������肪���[�����t������Ă�邩��A���̌������ۂ����Ď����������Ă�[��������[�I�v[per]
-*save18_4|�O���W���G�C�g�E�W���o��
+[voidChar]「そんなお前たちにジョバンがありがたーい言葉をくれてやるから、耳の穴かっぽじって耳かきもしてよーく聞けよー！」[per]
+*save18_4|グラジュエイト・ジョバン
 [afterLoad]
 [voidChar][quake time=500 timemode=ms hmax=10 vmax=50]
 [playse storage=SE20 buf=1 loop=false][font size=30]
-�u���Ƃ��߂łƂ����R���`�N�V���E�I�v[deffont]
+「卒業おめでとうだコンチクショウ！」[deffont]
 [per]
-*save18_5|�O���W���G�C�g�E�W���o��
+*save18_5|グラジュエイト・ジョバン
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u�́[���I�@���Ă��ƂłˁA�n�܂�܂������ǂˁA�Ȃ񂩂�����ƒp������W���o���I�@����[��I�@������I�v[per]
-*save18_6|�O���W���G�C�g�E�W���o��
+「はーい！　ってことでね、始まりましたけどね、なんかちょっと恥ずいよジョバン！　いやーん！　あぁん！」[per]
+*save18_6|グラジュエイト・ジョバン
 [afterLoad]
 [voidChar][upMessageFrame]
-�u����オ���Ă��܂��������ف[�[���I�v[per]
-*save18_7|�O���W���G�C�g�E�W���o��
+「盛り上がってきましたぁっほーーい！」[per]
+*save18_7|グラジュエイト・ジョバン
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�a���@�������@�������I�@�l�ԒN�����l�Ɍ����Ȃ��閧�������Ă���ƁA�W���o���v���񂾂�ˁv[per]
-*save18_8|�O���W���G�C�g�E�W���o��
+「Ｂｙ　ｔｈｅ　ｗａｙ！　人間誰しも人に言えない秘密を持っていると、ジョバン思うんだよね」[per]
+*save18_8|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u���R�W���o���ɂ��A�F�X�閧���Ă̂�����킯���v[per]
-*save18_9|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar][jumpMessageFrame]
-�u�����͂��̔閧���E���E�J�I�@�����Ⴄ��[�I�v[per]
-*save18_10|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar][playse storage=SE22 buf=1 loop=false]�u��ځI�v[per]
-*save18_11|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar]�u�W���o���̃G���c�u�c�̉B���ꏊ�́[�c�c�����P�[�X�̒����[�I�@�������[���I�v[per]
-*save18_12|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar]�u�����^���������Ƃ��͂ǂ�ǂ�s�d�k�����I�@���X�i�[�̂��O��Ȃ�^�_�ɂ��Ă�낤����ˁ[���A�����Ă��h���{�E�I�v[per]
-*save18_13|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar][playse storage=SE22 buf=1 loop=false]�u��ځI�v[per]
-*save18_14|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar]�u���̓W���o���̓J�i�d�`�Ȃ񂾂x�n�I�@�����[���I�@�h�@�������f���@�j���I�@���ĂȃJ���W�I�v[per]
-*save18_15|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar]�u���₱�̔N�ɂȂ��Ēp���������񂾂��ǂˁA�ŋ߂�����ƍ����������ȁ[�Ǝv���Ă�񂾂�[�v[per]
-*save18_16|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar]�u�����̂��ėx���ĉj����m�����W���o���ɂȂ��Ă݂���[�I�@������ق��I�v[per]
-*save18_17|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar][playse storage=SE22 buf=1 loop=false]�u�O�ځI�v[per]
-*save18_18|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar]�u�W���o���A��Ȗ�Ȋw�Z�ɔE�э���ł��񂾂�A����}�W�I�@�R�����������ăo�����猋�\���o�C�H�@��w�H�@�����Ȃ����v[per]
-*save18_19|�O���W���G�C�g�E�W���o��
-[afterLoad]
-[voidChar]�u����[��̊w�Z�Ƃ����͕̂s�v�c�Ȃ���ŁA�Ȃ�Ƃ������������R�ƃZ���`�����^���ȋC���ɂȂ����Ⴄ�̂�ˁ[�A���炢�₾��I�z�z�v[per]
-*save18_20|�O���W���G�C�g�E�W���o��
+[voidChar]「当然ジョバンにも、色々秘密ってのがあるわけだ」[per]
+*save18_9|グラジュエイト・ジョバン
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u��Ȗ�ȏW�܂�s�v�c�ȎO�l�g�̘b�́A�܂��܂��@���������b���Ă��������҂��Ƃ���I�@�`�F�P���I�v[per]
-*save18_21|�O���W���G�C�g�E�W���o��
+「今日はその秘密を大・公・開！　しちゃうよー！」[per]
+*save18_10|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar][playse storage=SE22 buf=1 loop=false]�u�����Ďl�ځI�v[per]
-*save18_22|�O���W���G�C�g�E�W���o��
+[voidChar][playse storage=SE22 buf=1 loop=false]「一つ目！」[per]
+*save18_11|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u���낻��ˁA�����ˁA���̃��W�I�͑��Ƃ��悤�Ǝv���񂾂�ˁ[�v[per]
-*save18_23|�O���W���G�C�g�E�W���o��
+[voidChar]「ジョバンのエロＤＶＤの隠し場所はー……辞書ケースの中だー！　おぅけーい！」[per]
+*save18_12|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u����������l�H�@�A�_���g�H�@���낻�뎩�����Ȃ��ƂˁA�����Ȃ��̂ˁA���Ԃ�v[per]
-*save18_24|�O���W���G�C�g�E�W���o��
+[voidChar]「レンタルしたいときはどんどんＴＥＬヨロ！　リスナーのお前らならタダにしてやろうじゃねーか、持ってけドロボウ！」[per]
+*save18_13|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u�����܂��A�F�X�ꂵ�����ƂƂ��A�y�������ƂƂ��A�y�������ƂƂ����ɂ��y�������ƂƂ��A�����ς��F�X�҂������Ă�Ƃ͎v���񂾂��ǂˁv[per]
-*save18_25|�O���W���G�C�g�E�W���o��
+[voidChar][playse storage=SE22 buf=1 loop=false]「二つ目！」[per]
+*save18_14|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u�ł��܂��A�ׂɂ��Ă����l�������łˁA����ȉ��ɂ��v[per]
-*save18_26|�O���W���G�C�g�E�W���o��
+[voidChar]「実はジョバンはカナヅチなんだＹＯ！　いえーい！　Ｉ　ｃａｎ’ｔ　泳ぐ！　ってなカンジ！」[per]
+*save18_15|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u�p�������Ȃ���A���[��[�̂͑��Ƃ��悤���Ȃ��ƁB���ւցv[per]
-*save18_27|�O���W���G�C�g�E�W���o��
+[voidChar]「いやこの年になって恥ずかしいんだけどね、最近ちょっと克服したいなーと思ってるんだよー」[per]
+*save18_16|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u�܂��ˁA���Ƃ��Ƃ��̃��W�I���ˁA���̎��Ȗ����Ƃ������A�����Ƃ������A�܂����_����܂݂����Ȃ��񂾂�������ˁA����Ȃ̂Ȃ��Ă�����Ă������R���`�N�V���E���Ăˁv[per]
-*save18_28|�O���W���G�C�g�E�W���o��
+[voidChar]「いつか歌って踊って泳げるＮｅｗジョバンになってみせるゼ！　いやっほう！」[per]
+*save18_17|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u���Ă��ƂŁA�������[�����Ԃ��肪�Ƃ��������܁[�B����Ȃ�W���o���A����ɂ��͐��E�I�v[per]
-*save18_29|�O���W���G�C�g�E�W���o��
+[voidChar][playse storage=SE22 buf=1 loop=false]「三つ目！」[per]
+*save18_18|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u�ł��܂��A���܂ɂ͎v���o���Ăق����ȁ[�Ȃ�āB����A�����񂩁B�v���o���Ȃ������������B���ށv[per]
-*save18_30|�O���W���G�C�g�E�W���o��
+[voidChar]「ジョバン、夜な夜な学校に忍び込んでたんだよ、うんマジ！　コレもしかしてバレたら結構ヤバイ？　停学？　そりゃないか」[per]
+*save18_19|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u�܂��Ƃɂ����I�@�����Łw�O���f�B�G�C�g�E�W���p���x�͏I�����Ă������I�@���܂ł��肪�Ƃ��������܂������ĂȁI�v[per]
-*save18_31|�O���W���G�C�g�E�W���o��
+[voidChar]「いやー夜の学校というのは不思議なもんで、なんというかこう自然とセンチメンタルな気分になっちゃうのよねー、あらいやだわオホホ」[per]
+*save18_20|グラジュエイト・ジョバン
 [afterLoad]
-[voidChar]�u�܂�����܂ŁB�O�b�o�C�u���U�[�I�v[per]
+[voidChar][jumpMessageFrame]
+「夜な夜な集まる不思議な三人組の話は、まぁまた機会があったら話してやっから期待しとけよ！　チェケラ！」[per]
+*save18_21|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar][playse storage=SE22 buf=1 loop=false]「そして四つ目！」[per]
+*save18_22|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「そろそろね、俺もね、このラジオは卒業しようと思うんだよねー」[per]
+*save18_23|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「俺ももう大人？　アダルト？　そろそろ自立しないとね、いけないのね、たぶん」[per]
+*save18_24|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「そりゃまぁ、色々苦しいこととか、楽しいこととか、楽しいこととか他にも楽しいこととか、いっぱい色々待ちうけてるとは思うんだけどね」[per]
+*save18_25|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「でもまぁ、隣にいてくれる人がいるんでね、こんな俺にも」[per]
+*save18_26|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「恥ずかしながら、こーゆーのは卒業しようかなっと。うへへ」[per]
+*save18_27|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「まぁね、もともとこのラジオもね、俺の自己満足というか、逃げというか、まぁ精神安定剤みたいなもんだったからね、こんなのなくてもやっていけるわコンチクショウってね」[per]
+*save18_28|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「ってことで、けっこー長い間ありがとうございまー。さよならジョバン、こんにちは世界！」[per]
+*save18_29|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「でもまぁ、たまには思い出してほしいなーなんて。いや、いかんか。思い出さない方がいいか。うむ」[per]
+*save18_30|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「まぁとにかく！　今日で『グラディエイト・ジャパン』は終わりってこった！　今までありがとうございましたってな！」[per]
+*save18_31|グラジュエイト・ジョバン
+[afterLoad]
+[voidChar]「また会う日まで。グッバイブラザー！」[per]
 
-;�����W�I���b�Z�[�W�@�A�E�g
+;☆ラジオメッセージ　アウト
 [fadeOutMessageFrame]
 [eval exp="f.flagLetter = false"]
-;���e���b�v�@�C��
+;☆テロップ　イン
 [telopIn]
-;���a�f�l�t�F�[�h�A�E�g
+;△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;○フェードアウト　１０００　ｆ　黒
 [FadeOutBlack time=1000 canskip=false]
 
 [jump storage=19.ks]

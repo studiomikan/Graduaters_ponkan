@@ -1,204 +1,263 @@
-;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
-;
-;	���݁F�莆��ʖځA�ߋ���z
-;		����@������
-;		�w�������͎O�N�̋����ł���A�������Ăˁ[�x
-;		�Ƃ肠��������́A����ꂽ�Ƃ���ɎO�N�̋�����ڎw��
-;		�����ɂ͂܂��莆��
-;		�w�������͂���ς�A�����̖������₵���v���Ă��܂��܂��x
-;		�w�ł��A���񂪂��邩�炪��΂��Ă���܂����x
-;		�w�D�󂿂����A�����������̂����ˁx
-;		�w���͔��p���B����΂��Ăˁx
+#
+#	Graduaters!　～グラディエイターズ！～
+#
+#	現在：手紙二通目、過去回想
+#		健二　明日香
+#		『あたしは三年の教室ですよ、早くきてねー』
+#		とりあえず健二は、言われたとおりに三年の教室を目指す
+#		そこにはまた手紙が
+#		『あたしはやっぱり、自分の命がいやしく思えてしまいます』
+#		『でも、健二がいるからがんばってこれました』
+#		『優希ちゃんも、そうだったのかもね』
+#		『次は美術室。がんばってね』
 
 *start
 
-;�����݁F�莆��ʖځA�ߋ���z
+#■現在：手紙二通目、過去回想
 
-*save|��ʖڂ̎莆�@�@�@�@�@�@�@�@�@�@�@�@
 
-;���~�j���S�P
 
-;���t���[���J���[�@�I�����W
+#☆ミニロゴ１
+[intermission1]
+#☆フレームカラー　オレンジ
+[changeMessageFrameColor color=orange]
+#○フェード　教室
+[cb storage=class]
+#△ＢＧＭ１
+[bgmopt volume=100][playbgm storage=bgm001]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-;���t�F�[�h�@����
 
-;���a�f�l�P
 
-;�����b�Z�[�W�t���[���@�C��
+;noname
+『あたしは３年の教室にいるよ、早くきてねー』
+;endpage
 
 
-*save12_0|��ʖڂ̎莆
+;noname
+明日香からの手紙は、そんなくだけた文章で終わっていた。いやホントふざけてる。
+;endpage
 
-�@�w�������͂R�N�̋����ɂ����A������per]
-*save12_1|��ʖڂ̎莆
 
-�@����������̎莆�́A����Ȃ����������͂ŏI����Ă����B�������Ă�B[per]
-*save12_2|��ʖڂ̎莆
+;kenji
+「結局なんなんだ、この手紙は」
+;endpage
 
-[drawName name="����"]
-�u���ǂȂ�Ȃ񂾁A���̎莆r]
-*save12_3|��ʖڂ̎莆
 
-�@�܂��l���Ă��d���Ȃ��B�ǂ����A���������w���x�ƌ��������Ƃ͂ǂ��]��ł����͂߂ɂȂ�c�Ȃ��ݒk�j�B[per]
-*save12_4|��ʖڂ̎莆
+;noname
+まぁ考えても仕方ない。どうせ、明日香が『やる』と言ったことはどう転んでもやるはめになるんだから（幼なじみ談）。
+;endpage
 
-�@�Ƃ肠���������Ă���Ƃ���ɂR�N�̋����Ɍ��낤�B[per]
-*save12_5|��ʖڂ̎莆
 
-�@���͂��ĉ߂�������������per]
+;noname
+とりあえず書いてあるとおりに３年の教室に向かうが吉だろう。
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���ړ��@�L��
+;noname
+俺はかつて過ごした教室を後にした。
+;endpage
 
-;���ړ��@�L��
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○移動　廊下
+[cb2 storage=hall]
+#○移動　廊下
+[cb2 storage=hall]
+#○移動　教室
+[cb2 storage=class]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-;���ړ��@����
+#△教室ドア
+[playse storage=SE08 buf=1 loop=false]
 
-;�����b�Z�[�W�t���[���@�C��
 
 
-;�������h�A
+;noname
+最初に明日香を見つけた教室に再びやってくる。
+;endpage
 
 
-*save12_6|��ʖڂ̎莆
+;kenji
+「んー、やっぱりいないかー」
+;endpage
 
-�@�ŏ��ɖ������������������ɍĂсB[per]
-*save12_7|��ʖڂ̎莆
 
-[drawName name="����"]
-�u��[�A����ς肢�Ȃ���r]
-*save12_8|��ʖڂ̎莆
+;noname
+まぁ最初からいないような気はしていたので、そう落ち込むこともない。
+;endpage
 
-�@�܂��ŏ����炢�Ȃ��悤�ȋC�͂��Ă����̂ŁA���������Ȃ��B[per]
-*save12_9|��ʖڂ̎莆
 
-�@�����Ă�͂�Ƃ������A���Â������̋���̏�ɂ́A����Ɠ����t�@���V�u����Ă����B[per]
-*save12_10|��ʖڂ̎莆
+;noname
+そしてやはりというか、薄暗い教室の教卓の上には、先程と同じファンシーレターが置かれていた。
+;endpage
 
-�@���͎莆���E���グ�A����̂����߂��̐ȁB[per]
-*save12_11|��ʖڂ̎莆
 
-[drawName name="����"]
-�u����Ȃ񂾂����A�u���ׂ���������B���Ɏ��܂肫����v[per]
-*save12_12|��ʖڂ̎莆
+;noname
+俺は手紙を拾い上げ、教卓のすぐ近くの席に腰かけた。
+;endpage
 
-�@�͂ݏo�������ȏ����m�[�g��炪�G�ɓ������č�[per]
-*save12_13|��ʖڂ̎莆
 
-�@�ނ������̂ŁA�͂ݏo�Ă��镪�͋���̏�ɏo���Ă������B������ˁA����ł��B[per]
-*save12_14|��ʖڂ̎莆
+;kenji
+「うわなんだこいつ、置き勉しすぎだろ。机に収まりきってねぇじゃん」
+;endpage
 
-�@�������Ă���J�G���̃V�[���𔍂����āA��܂�̎莆����肽�B[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;noname
+はみ出した教科書やらノートやらが膝に当たって座りにくい。
+;endpage
 
 
-;���莆
+;noname
+むかついたので、はみ出ている分は教卓の上に出しておいた。やったね、これで普通に座れるよ。
+;endpage
 
-*save12_15|��ʖڂ̎莆
 
-�@�͂��A��߂̎莆�ł��B�悭����lr]
+;noname
+封をしているカエルのシールを剥がして、二つ折りの手紙を取り出して開いた。
+;endpage
 
-;*save12_16|��ʖڂ̎莆
+#☆メッセージフレーム　アウト
+;fadeout_mes
 
-�@�ł��������͂��܂���B�R���Ă��B[lr]
+#☆手紙
+[FadeInMessageFrame2]
 
-;*save12_17|��ʖڂ̎莆
 
-�@���āA���̎莆�͂R�N�̋����ɒu����Ă����[lr]
+;noname
+はい、二つめの手紙です。よく見けたね！[lr]
 
-;*save12_18|��ʖڂ̎莆
+#
 
-�@���ǁA�R�N�Ԃ����Ɠ����N���X�������ˁB�Ȃ�Ƃ������A�����܂ł���ƕ��ꉏ��ʂ�z���ĂȋC�����܂��B[lr]
+;noname
+でもあたしはいません。嘘ついてごめんねー。[lr]
 
-;*save12_19|��ʖڂ̎莆
+#
 
-�@�������͂����ƈꏏ��lr]
+;noname
+さて、この手紙は３年の教室に置かれているはずです。[lr]
 
-;*save12_20|��ʖڂ̎莆
+#
 
-�@�q���̂��납��ꏏ�ɂ��āA���Z����񂪁c�c����̂��Z����񂪎��񂶂���Ă���͈ꏏ�ł����B[lr]
+;noname
+結局、３年間ずっと同じクラスだったね。なんというか、ここまでくると腐れ縁を通り越しているような気もします。[lr]
 
-;*save12_21|��ʖڂ̎莆
+#
 
-�@���̎��̂̂��ƁA����͂ǂꂭ�炢�o���āH[lr]
+;noname
+私たちはずっと一緒でした。[lr]
 
-;*save12_22|��ʖڂ̎莆
+#
 
-�@����͍��ł��j���Ȃ��܂܂����A�����Ƃ����������悭�o���Ďv���܂��B[lr]
+;noname
+子供のころから一緒にいて、お兄ちゃんが……健二のお兄ちゃんが死んじゃってからは、もっと一緒でした。[lr]
 
-;*save12_23|��ʖڂ̎莆
+#
 
-�@���������A�ŏ��͂����C�ɓ���̂��|���������ǁA�ł����̊Ԃɂ������܂����B[per]
-*save12_24|��ʖڂ̎莆
+;noname
+あの事故のこと、健二はどれくらい覚えていますか？[lr]
 
-�@�ڂɌ�����悤�ȁw���̖̂��c�x�́A���ꂭ�炢���������B[lr]
+#
 
-;*save12_25|��ʖڂ̎莆
+;noname
+健二は今でも泳げないままだし、きっとあたしよりもよく覚えてるんだと思います。[lr]
 
-�@�ł��A��������������A�ڂɌ����Ȃ��Ƃ���ł͂����Ƃ�������̖��c�⏝��Ǝv���܂��B[lr]
+#
 
-;*save12_26|��ʖڂ̎莆
+;noname
+あたしも、最初はお風呂に入るのも怖かったけど、でもいつの間にか入れるようになりました。
+;endpage
 
-�@���̎��̂̌�A����͂������Ɂw�������̂�������Ȃ��x���Č��܂����ˁB[lr]
 
-;*save12_27|��ʖڂ̎莆
+;noname
+目に見えるような『事故の名残』は、それくらいだった気がします。[lr]
 
-�@�ł��������͂���ς�A�����̖������₵���v���Ă��܂��܂��B�����ǌ��񂪎x���Ă��ꂪ��΂��Ă���܂����B[lr]
+#
 
-;*save12_28|��ʖڂ̎莆
+;noname
+でも、健二もあたしも、目に見えないところではもっとたくさんの名残や傷を抱えてると思います。[lr]
 
-�@������������A�D�󂿂��������������̂��Ȃ��B[lr]
+#
 
-;*save12_29|��ʖڂ̎莆
+;noname
+あの事故の後、健二はあたしに『明日香のせいじゃない』って言ってくれましたね。[lr]
 
-�@���͔��p���B���Ȃ炸����lr]
+#
 
-;�������܂Ŏ莆
+;noname
+でもあたしはやっぱり、自分の命がいやしく思えてしまいます。だけど健二が支えてくれたから、がんばってこれました。[lr]
 
+#
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;noname
+もしかしたら、優希ちゃんもそうだったのかなと思います。[lr]
 
-;���ړ��@�L��
+#
 
-;������
+;noname
+次は美術室。かならず見つけて。[lr]
 
-;�����b�Z�[�W�t���[���@�C��
+#☆ここまで手紙
+[eval exp='f.flagLetter = false#']
 
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○移動　廊下
+[cb2 storage=hall]
+#△走る
+[playse storage=SE13 buf=2 loop=true]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-*save12_30|��ʖڂ̎莆
 
-�@�莆��ǂݏI���Ă����ɁA���͔��p���Ɍ����āB[per]
-*save12_31|��ʖڂ̎莆
 
-�@���̔n���B�Ȃɂ��w�����̖������₵���x���A�w���񂪎x���āx���B[per]
-*save12_32|��ʖڂ̎莆
+;noname
+手紙を読み終えてすぐに、俺は美術室に向けて走っていた。
+;endpage
 
-�@�������̖����y���Ȃ�Ă��Ƃ͐�΂ɂȂ����A�x���Ă�����Ă���̂͂ނ��������B[per]
-*save12_33|��ʖڂ̎莆
 
-�@���ꂾ���ꏏ�ɂ��Ȃ���A�������̂��Ƃ��������킩���Ă��Ȃ�������o����B[per]
-*save12_34|��ʖڂ̎莆
+;noname
+あの馬鹿。なにが『自分の命がいやしい』だ、『健二が支えてくれたから』だ。
+;endpage
 
-�@���Ă������܂������̂���A�������ځB��̂��ɂȂ���񂾁H[per]
-*save12_35|��ʖڂ̎莆
 
-�@�����������������̍D�����ȃz���g�A�U��񂳂�鉴�̐g�ɂ��Ȃ��Ă݂���Ă񂾂ȂǂƐS�̒��Ōy����@���Ȃ���A����ł������Ŕ��p����ڎw�����B[per]
-*save12_36|��ʖڂ̎莆
+;noname
+明日香の命が軽いなんてことは絶対にないし、支えてもらっているのはむしろ俺のほうだった。
+;endpage
 
-�@����������A��er]
 
-;���~�܂�
+;noname
+あれだけ一緒にいながら、明日香のことを少しもわかっていなかった自分に怒りを覚える。
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���a�f�l�t�F�[�h�A�E�g
+;noname
+っていうかまだ続くのかよ、かくれんぼ。一体いつになったら見つかるんだ？
+;endpage
 
-;���e���b�v�@�C��
 
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;noname
+明日香もこういうの好きだなホント、振り回される俺の身にもなってみろってんだなどと心の中で軽口を叩きながら、それでも身体は全力疾走で美術室を目指した。
+;endpage
 
+
+;noname
+ちっくしょ、足痛ぇ。
+;endpage
+
+#△止まる
+[stopse buf=2]
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#△ＢＧＭフェードアウト
+[fadeoutbgm time=1000]
+#☆テロップ　イン
+[telopIn]
+#○フェードアウト　１０００　ｆ　黒
+[FadeOutBlack time=1000 canskip=false]
+
+[jump storage=13.ks]
 
 

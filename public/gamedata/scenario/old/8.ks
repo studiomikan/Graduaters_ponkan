@@ -1,710 +1,710 @@
 ;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
+;	Graduaters!　～グラディエイターズ！～
 ;
-;	�ߋ��F�D��Ƃ̌𗬁A���E�̘b�A�������̒a�����̘b
-;		����@�D��
-;		�D��Ƃ̑����̂Ȃ��b�B
-;		�������̒a�����̘b�ɂȂ�A�w�Z�Ńp�[�e�B�����邱�Ƃ�񑩂���B
-;		��b�̒��ŗD��́A�����͂��̉��ォ�痎���Ă������Ƃ����B
-;		�����Č���́A�D��̒��ɂ���Z�ւ̍߂̈ӎ��Ǝ��E��]�ɋC�t���B
-;		���̖�A����͋v���Ԃ�ɌZ�̖��������̂������B
+;	過去：優希との交流、自殺の話、明日香の誕生日の話
+;		健二　優希
+;		優希との他愛のない話。
+;		明日香の誕生日の話になり、学校でパーティをすることを約束する。
+;		会話の中で優希は、自分はこの屋上から落ちてもいいという。
+;		そして健二は、優希の中にある兄への罪の意識と自殺願望に気付く。
+;		その夜、健二は久しぶりに兄の夢を見たのだった。
 
 *start
 
-;���ߋ��F�D��Ƃ̌𗬁A���E�̘b�A�������̒a�����̘b
+;■過去：優希との交流、自殺の話、明日香の誕生日の話
 
-*save|�D��Ɖ���@�@�@�@�@�@�@�@�@�@�@�@�@
+*save|優希と屋上　　　　　　　　　　　　　
 
-;���~�j���S�P
+;☆ミニロゴ１
 [intermission1]
-;���t���[���J���[�@��
+;☆フレームカラー　青
 [changeMessageFrameColor color=blue]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save8_0|�D��Ɖ���
+*save8_0|優希と屋上
 [afterLoad]
-[voidChar]�@�����͓��j���Ƃ������ƂŁA�V���̋A��̉��͓��ɂ��邱�Ƃ��Ȃ��q�}�����Ă��܂��A�X�ɏo�����̂̋����̂������̂œK���ȓX���Ђ₩���ĉ߂������B[per]
-*save8_1|�D��Ɖ���
+[voidChar]　今日は日曜日ということで、天下の帰宅部の俺は特にすることもなくヒマをもてあまし、街に出たものの金欠のだったので適当な店をひやかして過ごした。[per]
+*save8_1|優希と屋上
 [afterLoad]
-[voidChar]�@�[�H��A���̃J�[�e����߂悤�Ƃ����Ƃ������͌������ꂢ�Ȃ��ƂɋC�Â��āA���͂Ȃ�ƂȂ��w�Z�̉����ڎw�����B[per]
+[voidChar]　夕食後、寮のカーテンを閉めようとしたとき今日は月がきれいなことに気づいて、俺はなんとなく学校の屋上を目指した。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;������h�A
+;△屋上ドア
 [playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
-;���t�F�[�h�A�E�g�@��
+;○フェードアウト　白
 [FadeOutWhite]
-;���t�F�[�h�@����
+;○フェード　屋上
 [cb storage=roof]
-;���a�f�l�R
+;△ＢＧＭ３
 [bgmopt volume=100][playbgm storage=bgm003]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save8_2|�D��Ɖ���
+*save8_2|優希と屋上
 [afterLoad]
-[voidChar]�@���ѕt�����h�A�������J����ƁA�����ɂ͂������傫�Ȍ����������B[per]
-*save8_3|�D��Ɖ���
+[voidChar]　さび付いたドアを押し開けると、そこにはいつもより大きな月があった。[per]
+*save8_3|優希と屋上
 [afterLoad]
-[voidChar]�@�������΂����t��Y��Ă���ƁA[per]
+[voidChar]　俺がしばし言葉を忘れていると、[per]
 [fadeInYuuki num=2 pos=center time=500]
-*save8_4|�D��Ɖ���
+*save8_4|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����΂�́A��ւ���v[per]
-*save8_5|�D��Ɖ���
+[drawName name="優希"]
+「こんばんは、常磐くん」[per]
+*save8_5|優希と屋上
 [afterLoad]
-[voidChar]�@�Ă̒�Ƃ������A����ς艮��ɂ����D�󂪂�����֐U������������B[per]
-*save8_6|�D��Ɖ���
+[voidChar]　案の定というか、やっぱり屋上にいた優希がこちらへ振り向かえった。[per]
+*save8_6|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�����A�D��B����ς藈�Ă��̂��v[per]
+[drawName name="健二"]
+「うい、優希。やっぱり来てたのか」[per]
 [yuuki num=2 pos=center]
-*save8_7|�D��Ɖ���
+*save8_7|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����B�����͂��傤�ǖ����Ȃ񂾂�v[per]
-*save8_8|�D��Ɖ���
+[drawName name="優希"]
+「うん。今日はちょうど満月なんだよ」[per]
+*save8_8|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u����ς�ȁB�O�����邩��������A�������Ǝv���ė��Ă݂��񂾁v[per]
+[drawName name="健二"]
+「やっぱりな。外が明るかったから、そうかと思って来てみたんだ」[per]
 
 [yuuki num=5 pos=center]
 
-*save8_9|�D��Ɖ���
+*save8_9|優希と屋上
 [afterLoad]
-[voidChar]�@���������ƁA�D��͂��ꂵ�����ɖڂ��ׂ߂ď΂����B[per]
-*save8_10|�D��Ɖ���
+[voidChar]　そう言うと、優希はうれしそうに目を細めて笑った。[per]
+*save8_10|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�D��͍������V�̊ϑ����v[per]
+[drawName name="健二"]
+「優希は今日も天体観測か」[per]
 [yuuki num=2 pos=center]
-*save8_11|�D��Ɖ���
+*save8_11|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����B�Ƃ������A�����͂��������ˁB���ƁA���j���v[per]
-*save8_12|�D��Ɖ���
+[drawName name="優希"]
+「うん。というより、今日はお月見だね。あと、お祝い」[per]
+*save8_12|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���j���H�@�Ȃ�́H�v[per]
+[drawName name="健二"]
+「お祝い？　なんの？」[per]
 [yuuki num=2 pos=center]
-*save8_13|�D��Ɖ���
+*save8_13|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�Z����̒a�����B�����Ȃ񂾁v[per]
-*save8_14|�D��Ɖ���
+[drawName name="優希"]
+「兄さんの誕生日。今日なんだ」[per]
+*save8_14|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�����A�Ȃ�قǁc�c�v[per]
+[drawName name="健二"]
+「ああ、なるほど……」[per]
 
 [fadeOutYuuki]
 
-*save8_15|�D��Ɖ���
+*save8_15|優希と屋上
 [afterLoad]
-[voidChar]�@�����炱���Ō������Ă��̂��B[per]
-*save8_16|�D��Ɖ���
+[voidChar]　だからここで月を見てたのか。[per]
+*save8_16|優希と屋上
 [afterLoad]
-[voidChar]�@�D��͉��̌��t�ɕԎ������Ȃ���A�܂���������֌����Ă����B[per]
-*save8_17|�D��Ɖ���
+[voidChar]　優希は俺の言葉に返事をしながら、また視線を上へ向けていた。[per]
+*save8_17|優希と屋上
 [afterLoad]
-[voidChar]�@�Z���D���������V�̊ϑ������Ȃ���A��l�ŌZ�̒a�������j���B[per]
-*save8_18|�D��Ɖ���
+[voidChar]　兄が好きだった天体観測をしながら、一人で兄の誕生日を祝う。[per]
+*save8_18|優希と屋上
 [afterLoad]
-[voidChar]�@�����ɂ́A���������������Ί�Ƃ͐����΂́A�D��̒��̈Â�����������悤�Ɏv�����B[per]
-*save8_19|�D��Ɖ���
+[voidChar]　そこには、今しがた見せた笑顔とは正反対の、優希の中の暗い部分があるように思った。[per]
+*save8_19|優希と屋上
 [afterLoad]
-[voidChar]�@��������܂ł̗D��́A��̂ǂ�Ȋ�Ō��𒭂߂Ă����̂��낤���B[per]
-*save8_20|�D��Ɖ���
+[voidChar]　俺が来るまでの優希は、一体どんな顔で月を眺めていたのだろうか。[per]
+*save8_20|優希と屋上
 [afterLoad]
-[voidChar]�@�����������ꂢ�Ȗ����Ȃ񂾂���A�y����Ō��Ă����񂾂����炢���ȁA�z���g�B[per]
-*save8_21|�D��Ɖ���
+[voidChar]　せっかくきれいな満月なんだから、楽しんで見ていたんだったらいいな、ホント。[per]
+*save8_21|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�ł������̂��H�@�a�����Ȃ�A���Z����ƈꏏ�ɉ߂������ق����悩�����񂶂�v[per]
+[drawName name="健二"]
+「でもいいのか？　誕生日なら、お兄さんと一緒に過ごしたほうがよかったんじゃ」[per]
 [fadeInYuuki num=1 pos=center time=500]
-*save8_22|�D��Ɖ���
+*save8_22|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���[��B����ł��������ǁA�ق�A�a�@���Ĕ��܂肱�݂͌����֎~������B�a����������A�Ƃ������̂͂�����Ƃˁv[per]
-*save8_23|�D��Ɖ���
+[drawName name="優希"]
+「うーん。それでもいいけど、ほら、病院って泊まりこみは原則禁止だから。誕生日だから、とかいうのはちょっとね」[per]
+*save8_23|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���[�A�܂��������ɂ������v[per]
+[drawName name="健二"]
+「あー、まぁたしかにそうか」[per]
 [yuuki num=2 pos=center]
-*save8_24|�D��Ɖ���
+*save8_24|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����B����ɁA���Ԃ͂����ƌZ����ƈꏏ�ɉ߂��������B�\�񕪂ɌZ�F�s���Ă���������v�v[per]
-*save8_25|�D��Ɖ���
+[drawName name="優希"]
+「うん。それに、昼間はちゃんと兄さんと一緒に過ごしたし。十二分に兄孝行してきたから大丈夫」[per]
+*save8_25|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�������B���[����A�D��̒a�������Ă��Ȃ񂾁H�v[per]
+[drawName name="健二"]
+「そうか。そーいや、優希の誕生日っていつなんだ？」[per]
 [yuuki num=2 pos=center]
-*save8_26|�D��Ɖ���
+*save8_26|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���͂R������B����������߂���������ˁv[per]
-*save8_27|�D��Ɖ���
+[drawName name="優希"]
+「私は３月だよ。だからもう過ぎちゃったね」[per]
+*save8_27|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u����c�O�B�����������j�����Ă�낤�Ǝv�����̂Ɂv[per]
+[drawName name="健二"]
+「あら残念。せっかくお祝いしてやろうと思ったのに」[per]
 [yuuki num=2 pos=center]
-*save8_28|�D��Ɖ���
+*save8_28|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���肪�ƁB�܂��O���ɂȂ����炨�肢����ˁv[per]
-*save8_29|�D��Ɖ���
+[drawName name="優希"]
+「ありがと。また三月になったらお願いするね」[per]
+*save8_29|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�܂����Ƃ��A�Ƃт�����̃v���[���g��p�ӂ��Ƃ��B�Q���[�g���ʂ�����݂Ƃ��v[per]
+[drawName name="健二"]
+「まかせとけ、とびっきりのプレゼントを用意しとく。２メートルぬいぐるみとか」[per]
 [yuuki num=5 pos=center]
-*save8_30|�D��Ɖ���
+*save8_30|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���[�A���������̂͂���Ȃ������v[per]
-*save8_31|�D��Ɖ���
+[drawName name="優希"]
+「あー、そういうのはいらないかも」[per]
+*save8_31|優希と屋上
 [afterLoad]
-[voidChar]�@�D�󂪁A�܂��j�R�j�R�Ə΂��B�Ⴂ�g���ƍ��킹�āA�{���̎q���̂悤���B[per]
-*save8_32|�D��Ɖ���
+[voidChar]　優希が、またニコニコと笑う。低い身長と合わせて、本当の子供のようだ。[per]
+*save8_32|優希と屋上
 [afterLoad]
-[voidChar]�@�{�l�̑O�ł́i���ɐg���̂��Ƃ́j�����􂯂Ă������Ȃ����B[per]
-*save8_33|�D��Ɖ���
+[voidChar]　本人の前では（特に身長のことは）口が裂けても言えないが。[per]
+*save8_33|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���[����A�������̒a�����������������ȁv[per]
+[drawName name="健二"]
+「そーいや、明日香の誕生日がもうすぐだな」[per]
 [yuuki num=2 pos=center]
-*save8_34|�D��Ɖ���
+*save8_34|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���A�����������������Ă��v[per]
-*save8_35|�D��Ɖ���
+[drawName name="優希"]
+「あ、明日香ちゃんも言ってた」[per]
+*save8_35|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�����B���N�͂ǂ��������ȁc�c�v[per]
+[drawName name="健二"]
+「ああ。今年はどうすっかな……」[per]
 [yuuki num=2 pos=center]
-*save8_36|�D��Ɖ���
+*save8_36|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���N�͂ǂ�Ȃ��j�������́H�v[per]
-*save8_37|�D��Ɖ���
+[drawName name="優希"]
+「去年はどんなお祝いしたの？」[per]
+*save8_37|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���N���c�c���������̃��r�[�ŃP�[�L�H�ׂ��c�c�����H�v[per]
+[drawName name="健二"]
+「去年か……たしか寮のロビーでケーキ食べた……だけ？」[per]
 [yuuki num=1 pos=center]
-*save8_38|�D��Ɖ���
+*save8_38|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�����A���������ꂾ���H�v[per]
-*save8_39|�D��Ɖ���
+[drawName name="優希"]
+「えぇ、たったそれだけ？」[per]
+*save8_39|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u��Ȃ��ƌ��������āA�������������N�������������A���̂����邱�Ƃ͊�{�I�ɂm�f�����v[per]
+[drawName name="健二"]
+「んなこと言ったって、俺も明日香も年中金欠族だし、金のかかることは基本的にＮＧだぞ」[per]
 [yuuki num=1 pos=center]
-*save8_40|�D��Ɖ���
+*save8_40|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�܂��A�������������A�������Ȃ����Ă����̂��킩�邯�ǁc�c�v[per]
+[drawName name="優希"]
+「まぁ、私も寮生だし、お金がないっていうのもわかるけど……」[per]
 
 [fadeOutYuuki]
 
-*save8_41|�D��Ɖ���
+*save8_41|優希と屋上
 [afterLoad]
-[voidChar]�@�D��͏����l����悤�Ɍ��Ɏ�����ĂĂ��ނ��ƁA�Ȃɂ��v�������悤�Ƀp�b�Ɗ������[per]
+[voidChar]　優希は少し考えるように口に手をあててうつむくと、なにか思いついたようにパッと顔をあげ[per]
 [fadeInYuuki num=5 pos=center time=500]
-*save8_42|�D��Ɖ���
+*save8_42|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u��ւ���A�����������̒a�����p�[�e�B�����܂��傤�v[per]
-*save8_43|�D��Ɖ���
+[drawName name="優希"]
+「常磐くん、明日香ちゃんの誕生日パーティをしましょう」[per]
+*save8_43|優希と屋上
 [afterLoad]
-[voidChar]�@�ƁA�h��Ō������B[per]
-*save8_44|�D��Ɖ���
+[voidChar]　と、敬語で言った。[per]
+*save8_44|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�p�[�e�B�H�v[per]
+[drawName name="健二"]
+「パーティ？」[per]
 [yuuki num=5 pos=center]
-*save8_45|�D��Ɖ���
+*save8_45|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����B��������������A�w�Z�ł�낤��I�v[per]
-*save8_46|�D��Ɖ���
+[drawName name="優希"]
+「うん。せっかくだから、学校でやろうよ！」[per]
+*save8_46|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�w�Z�ł��āc�c�ǂ����̋����؂��̂��H�@��Ȃ��Ƃł���́H�v[per]
+[drawName name="健二"]
+「学校でって……どっかの教室借りるのか？　んなことできんの？」[per]
 [yuuki num=2 pos=center]
-*save8_47|�D��Ɖ���
+*save8_47|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u������A��ɏ���Ɏg���́v[per]
-*save8_48|�D��Ɖ���
+[drawName name="優希"]
+「ううん、夜に勝手に使うの」[per]
+*save8_48|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�����A�Ȃ�قǁv[per]
-*save8_49|�D��Ɖ���
+[drawName name="健二"]
+「ああ、なるほど」[per]
+*save8_49|優希と屋上
 [afterLoad]
-[voidChar]�@��̊w�Z�ł̂��E�ђa�����p�[�e�B�B[per]
-*save8_50|�D��Ɖ���
+[voidChar]　夜の学校でのお忍び誕生日パーティ。[per]
+*save8_50|優希と屋上
 [afterLoad]
-[voidChar]�@�Ȃ�قǁA�Ȃ��Ȃ����Ȃ͂��炢����Ȃ����B[per]
+[voidChar]　なるほど、なかなか粋なはからいじゃないか。[per]
 [yuuki num=5 pos=center]
-*save8_51|�D��Ɖ���
+*save8_51|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�P�[�L�Ƃ��َq�������ς������āA�O�l�ł��j�����悤�v[per]
-*save8_52|�D��Ɖ���
+[drawName name="優希"]
+「ケーキとお菓子をいっぱい買って、三人でお祝いしよう」[per]
+*save8_52|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�P�[�L�Ƃ��َq���āA�P�[�L�͂��َq����Ȃ��̂��H�v[per]
-*save8_53|�D��Ɖ���
+[drawName name="健二"]
+「ケーキとお菓子って、ケーキはお菓子じゃないのか？」[per]
+*save8_53|優希と屋上
 [afterLoad]
-[voidChar]�@�����ӂƋ^������ɂ���ƁA�D�󂪂߂��炵����������߂��B[per]
+[voidChar]　俺がふと疑問を口にすると、優希がめずらしく顔をしかめた。[per]
 [yuuki num=3 pos=center]
-*save8_54|�D��Ɖ���
+*save8_54|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�Ⴄ��A�S�R�Ⴄ��A���ƃX�b�|�����炢�Ⴄ��A�������ƋT���炢�Ⴄ��v[per]
-*save8_55|�D��Ɖ���
+[drawName name="優希"]
+「違うよ、全然違うよ、月とスッポンくらい違うよ、うさぎと亀くらい違うよ」[per]
+*save8_55|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�ցA�ց[�A�����Ȃ̂��v[per]
-*save8_56|�D��Ɖ���
+[drawName name="健二"]
+「へ、へー、そうなのか」[per]
+*save8_56|優希と屋上
 [afterLoad]
-[voidChar]�@�ǂ���珗�̎q�ɂƂ��Ă͌��ƃX�b�|���炵���B�܂��킩���ł��Ȃ����ǁB[per]
+[voidChar]　どうやら女の子にとっては月とスッポンらしい。まぁわからんでもないけど。[per]
 [yuuki num=2 pos=center]
-*save8_57|�D��Ɖ���
+*save8_57|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�Ƃɂ����A�����������̒a�����́A�w�Z�ł��j�����悤�ˁv[per]
-*save8_58|�D��Ɖ���
+[drawName name="優希"]
+「とにかく、明日香ちゃんの誕生日は、学校でお祝いしようね」[per]
+*save8_58|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�����A�������ȁB�����Ɩ���������낱�ԁv[per]
+[drawName name="健二"]
+「ああ、そうだな。きっと明日香もよろこぶ」[per]
 [yuuki num=2 pos=center]
-*save8_59|�D��Ɖ���
+*save8_59|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����A�������Ƃ����ȁv[per]
+[drawName name="優希"]
+「うん、そうだといいな」[per]
 
 [fadeOutYuuki]
 
-*save8_60|�D��Ɖ���
+*save8_60|優希と屋上
 [afterLoad]
-[voidChar]�@�D��͂��������ƁA�����h�~�p�̃t�F���X�𗣂�A��l�����Ă䂭�B[per]
-*save8_61|�D��Ɖ���
+[voidChar]　優希はそう言うと、落下防止用のフェンスを離れ、一人歩いてゆく。[per]
+*save8_61|優希と屋上
 [afterLoad]
-[voidChar]�@�����Ă����ނ�ɁA����̓�����̏�A�����^���N�ւƑ����͂�����o��n�߂��B[per]
-*save8_62|�D��Ɖ���
+[voidChar]　そしておもむろに、屋上の入り口の上、貯水タンクへと続くはしごを登り始めた。[per]
+*save8_62|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�ȁA�����A�Ȃɂ���Ă񂾗D��A���Ԃˁ[���v[per]
-*save8_63|�D��Ɖ���
+[drawName name="健二"]
+「な、おい、なにやってんだ優希、あぶねーぞ」[per]
+*save8_63|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���C����B���������āA���ꂭ�炢�Ȃ����ł��ނ��v[per]
-*save8_64|�D��Ɖ���
+[drawName name="優希"]
+「平気だよ。落ちたって、これくらいなら怪我ですむし」[per]
+*save8_64|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���₢��A�w����ł��ށx����Ȃ��āw���䂵�Ă��܂��x����I�v[per]
-*save8_65|�D��Ɖ���
+[drawName name="健二"]
+「いやいや、『怪我ですむ』じゃなくて『怪我してしまう』だろ！」[per]
+*save8_65|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���v����[�v[per]
-*save8_66|�D��Ɖ���
+[drawName name="優希"]
+「大丈夫だよー」[per]
+*save8_66|優希と屋上
 [afterLoad]
-[voidChar]�@������������Ă��邠�����ɁA�D��͏�܂œo�肫���Ă��܂����B[per]
-*save8_67|�D��Ɖ���
+[voidChar]　ぐだぐだやっているあいだに、優希は上まで登りきってしまった。[per]
+*save8_67|優希と屋上
 [afterLoad]
-[voidChar]�@��������ɂ�����A�͂����o������c�c�����Ƃ��낪�D���Ȃ񂾂낤���H[per]
-*save8_68|�D��Ɖ���
+[voidChar]　いつも屋上にいたり、はしご登ったり……高いところが好きなんだろうか？[per]
+*save8_68|優希と屋上
 [afterLoad]
-[voidChar]�@���ꂾ�A�܂�ŉ����B[per]
-*save8_69|�D��Ɖ���
+[voidChar]　あれだ、まるで煙だ。[per]
+*save8_69|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���A�w�n���Ɖ��͍����Ƃ��낪�D���x�Ƃ��v���Ă��ł���v[per]
-*save8_70|�D��Ɖ���
+[drawName name="優希"]
+「今、『馬鹿と煙は高いところが好き』とか思ってたでしょ」[per]
+*save8_70|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���A����A�v���ĂȂ����A����A�v���ĂȂ��v[per]
-*save8_71|�D��Ɖ���
+[drawName name="健二"]
+「い、いや、思ってないぞ、うん、思ってない」[per]
+*save8_71|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�܂��������ǁB��ւ�����A�������o���Ă��Ȃ�v[per]
-*save8_72|�D��Ɖ���
+[drawName name="優希"]
+「まぁいいけど。常磐くんも、こっち登ってきなよ」[per]
+*save8_72|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�����A������A�������v[per]
-*save8_73|�D��Ɖ���
+[drawName name="健二"]
+「ええ、いいよ、狭いし」[per]
+*save8_73|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�������炢������v[per]
-*save8_74|�D��Ɖ���
+[drawName name="優希"]
+「いいからいいから」[per]
+*save8_74|優希と屋上
 [afterLoad]
-[voidChar]�@���������Ǝ菵������D��B[per]
-*save8_75|�D��Ɖ���
+[voidChar]　早く来いと手招きする優希。[per]
+*save8_75|優希と屋上
 [afterLoad]
-[voidChar]�@�͂��A���傤���Ȃ����c�c[per]
-*save8_76|�D��Ɖ���
+[voidChar]　はぁ、しょうがないか……[per]
+*save8_76|優希と屋上
 [afterLoad]
-[voidChar]�@���Ă������������A���̎q�ɋt�炦�Ȃ��̎��Ȃ̂��H�@���[�A���ꂩ�A�W�F���g�����������炩�B���ӂӁB[per]
-*save8_77|�D��Ɖ���
+[voidChar]　っていうか何だ俺、女の子に逆らえない体質なのか？　あー、あれか、ジェントルメンだからか。うふふ。[per]
+*save8_77|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�͂₭�[�v[per]
-*save8_78|�D��Ɖ���
+[drawName name="優希"]
+「はやくー」[per]
+*save8_78|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�킩��܂����}�h���A�[���v[per]
+[drawName name="健二"]
+「わかりましたマドモアゼル」[per]
 
-;���Y�[���@����
+;○ズーム　屋上
 [zoomInRoof]
 
-*save8_79|�D��Ɖ���
+*save8_79|優希と屋上
 [afterLoad]
-[voidChar]�@�y���L���͂���ĎK�т����͂�����o��A�ꏊ�������č����Ă����D��ׂ̗ɍ������낷�B[per]
-*save8_80|�D��Ɖ���
+[voidChar]　ペンキがはがれて錆びついたはしごを登り、場所をあけて座っていた優希の隣に腰を下ろす。[per]
+*save8_80|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�ق�A��������̂ق����A���������߂���v[per]
-*save8_81|�D��Ɖ���
+[drawName name="優希"]
+「ほら、ここからのほうが、月が少し近いよ」[per]
+*save8_81|優希と屋上
 [afterLoad]
-[voidChar]�@�̈����ō������D��͂�����Ǝŋ��������������Ō����āA�܂Ԃ������炢�̖������w�����B[per]
-*save8_82|�D��Ɖ���
+[voidChar]　体育座りで座った優希はちょっと芝居がかった口調で言って、まぶしいくらいの満月を指さす。[per]
+*save8_82|優希と屋上
 [afterLoad]
-[voidChar]�@��������ɂȂ���āA�ڂ��ׂ߂Č�������B[per]
-*save8_83|�D��Ɖ���
+[voidChar]　俺もそれにならって、目を細めて月を見る。[per]
+*save8_83|優希と屋上
 [afterLoad]
-[voidChar]�@�������܂ł������ォ��A���̏ꏊ�܂łQ���[�g��������ƁB[per]
-*save8_84|�D��Ɖ���
+[voidChar]　さっきまでいた屋上から、この場所まで２メートルちょっと。[per]
+*save8_84|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�ł����[�c�c�v[per]
-*save8_85|�D��Ɖ���
+[drawName name="健二"]
+「でっけー……」[per]
+*save8_85|優希と屋上
 [afterLoad]
-[voidChar]�@�C�̂����Ƃ킩���Ă��邯�ǁA���̍��̕������������邭�Ȃ����悤�Ɋ�����B[per]
-*save8_86|�D��Ɖ���
+[voidChar]　気のせいとわかっているけど、その差の分だけ月が明るくなったように感じる。[per]
+*save8_86|優希と屋上
 [afterLoad]
-[voidChar]�@���Ă������c�c[per]
-*save8_87|�D��Ɖ���
+[voidChar]　っていうか……[per]
+*save8_87|優希と屋上
 [afterLoad]
-[drawName name="����"]
-		�i���A�߂����ėD�󂳂�I�j[per]
-*save8_88|�D��Ɖ���
+[drawName name="健二"]
+		（ち、近いって優希さん！）[per]
+*save8_88|優希と屋上
 [afterLoad]
-[voidChar]�@���Ƃ��������Ă邵�A����Ȃ񂩂��������Ƃ������I�C�I[per]
-*save8_89|�D��Ɖ���
+[voidChar]　肩とか当たってるし、うわなんかいい匂いとかするよオイ！[per]
+*save8_89|優希と屋上
 [afterLoad]
-[voidChar]�@���ڂŗׂ̗D����̂�������ƁA�Ȃ�Ƃ����܂�����Ō������Ă����B[per]
-*save8_90|�D��Ɖ���
+[voidChar]　横目で隣の優希をのぞき見ると、なんともすました顔で月を見ていた。[per]
+*save8_90|優希と屋上
 [afterLoad]
-[voidChar]�@������A������ƃJ���C�C�Ƃ��v���Ă��܂����B[per]
-*save8_91|�D��Ɖ���
+[voidChar]　いかん、ちょっとカワイイとか思ってしまった。[per]
+*save8_91|優希と屋上
 [afterLoad]
-[voidChar]�@���[�A���ł��L���ȁ[�B���Ă����q�̐O���ĂȂ�ł���ȂɂՂ��Ղ��Ȃ񂾂�[�ȁ[�B[per]
-*save8_92|�D��Ɖ���
+[voidChar]　あー、おでこ広いなー。ってか女子の唇ってなんであんなにぷりんぷりんなんだろーなー。[per]
+*save8_92|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�˂���ւ���v[per]
-*save8_93|�D��Ɖ���
+[drawName name="優希"]
+「ねぇ常磐くん」[per]
+*save8_93|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�́A�n�C�Ȃ�ł��傤���I�v[per]
-*save8_94|�D��Ɖ���
+[drawName name="健二"]
+「は、ハイなんでしょうか！」[per]
+*save8_94|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�c�c�H�@�Ȃ�ł���ȂɍQ�ĂĂ�́H�v[per]
-*save8_95|�D��Ɖ���
+[drawName name="優希"]
+「……？　なんでそんなに慌ててるの？」[per]
+*save8_95|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���A�����A�Ȃ�ł��Ȃ��ł��B���C�ɂȂ���Ȃ��Łv[per]
-*save8_96|�D��Ɖ���
+[drawName name="健二"]
+「あ、いえ、なんでもないです。お気になさらないで」[per]
+*save8_96|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�ςȂ́v[per]
-*save8_97|�D��Ɖ���
+[drawName name="優希"]
+「変なの」[per]
+*save8_97|優希と屋上
 [afterLoad]
-[voidChar]�@�ɂ�����Ə΂��D��B[per]
-*save8_98|�D��Ɖ���
+[voidChar]　にっこりと笑う優希。[per]
+*save8_98|優希と屋上
 [afterLoad]
-[voidChar]�@���͍Q�ĂĎ��������炵���B����[�A����ΐԂ��Ȃ��Ă�Ȃ���B[per]
-*save8_99|�D��Ɖ���
+[voidChar]　俺は慌てて視線をそらした。うわー、今絶対赤くなってんなこれ。[per]
+*save8_99|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u��Ղ�����Ă��A�D���Ȑl�Ƃ�����́H�v[per]
-*save8_100|�D��Ɖ���
+[drawName name="優希"]
+「常盤くんってさ、好きな人とかいるの？」[per]
+*save8_100|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�ցH�v[per]
-*save8_101|�D��Ɖ���
+[drawName name="健二"]
+「へ？」[per]
+*save8_101|優希と屋上
 [afterLoad]
-[voidChar]�@�ˑR�̎���ɁA�Ԕ����ȕԎ������Ă��܂����B[per]
-*save8_102|�D��Ɖ���
+[voidChar]　突然の質問に、間抜けな返事をしてしまった。[per]
+*save8_102|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�D���Ȑl���āA���ꂩ�B�D���D������񈤂��Ă��[��̍D���Ȑl���v[per]
-*save8_103|�D��Ɖ���
+[drawName name="健二"]
+「好きな人って、あれか。好き好きやんやん愛してるわーんの好きな人か」[per]
+*save8_103|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�Ȃɂ���B�D���Ȑl�͍D���Ȑl�ł���v[per]
-*save8_104|�D��Ɖ���
+[drawName name="優希"]
+「なにそれ。好きな人は好きな人でしょ」[per]
+*save8_104|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u����A���́A�����Ȃ蕷����Ă�����񂾂��ǁc�c�v[per]
-*save8_105|�D��Ɖ���
+[drawName name="健二"]
+「いや、その、いきなり聞かれても困るんだけど……」[per]
+*save8_105|優希と屋上
 [afterLoad]
-[voidChar]�@�������Ƃ��[��[�֌W�Ȃ񂾂�ƗF�l�ɂ��炩��ꂽ���Ƃ͉��x�����邪�A���ۂ̂Ƃ���͂����̗c�Ȃ��݂��B[per]
-*save8_106|�D��Ɖ���
+[voidChar]　明日香とそーゆー関係なんだろと友人にからかわれたことは何度もあるが、実際のところはただの幼なじみだ。[per]
+*save8_106|優希と屋上
 [afterLoad]
-[voidChar]�@����܂��A�C�ɂȂ��ĂȂ��킯����Ȃ��c�c���āA�ȂɌ����Ă�񂾉��B[per]
-*save8_107|�D��Ɖ���
+[voidChar]　いやまぁ、気になってないわけじゃない……って、なに言ってるんだ俺。[per]
+*save8_107|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����ς薾���������ƕt�������Ă�́H�v[per]
-*save8_108|�D��Ɖ���
+[drawName name="優希"]
+「やっぱり明日香ちゃんと付き合ってるの？」[per]
+*save8_108|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���A���A����A�������Ƃ͗c�Ȃ��݂��Ă����Łv[per]
-*save8_109|�D��Ɖ���
+[drawName name="健二"]
+「え、あ、いや、明日香とは幼なじみってだけで」[per]
+*save8_109|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���A�����Ȃ񂾁v[per]
-*save8_110|�D��Ɖ���
+[drawName name="優希"]
+「あ、そうなんだ」[per]
+*save8_110|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u������A�܂��A�ʂɍD���Ȑl�Ƃ��͂��Ȃ����v[per]
-*save8_111|�D��Ɖ���
+[drawName name="健二"]
+「だから、まぁ、別に好きな人とかはいないぞ」[per]
+*save8_111|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�Ӂ[��c�c�v[per]
-*save8_112|�D��Ɖ���
+[drawName name="優希"]
+「ふーん……」[per]
+*save8_112|優希と屋上
 [afterLoad]
-[voidChar]�@�D�󂪂Ȃɂ��₢�l�߂�悤�ɁA���̓����̂������ށB[per]
-*save8_113|�D��Ɖ���
+[voidChar]　優希がなにか問い詰めるように、俺の瞳をのぞき込む。[per]
+*save8_113|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���A���������D��͂��Ȃ��̂���A���[��[�l�v[per]
-*save8_114|�D��Ɖ���
+[drawName name="健二"]
+「そ、そう言う優希はいないのかよ、そーゆー人」[per]
+*save8_114|優希と屋上
 [afterLoad]
-[voidChar]�@�p���������ƌ��߂����������Ď��������炵�Ȃ���A���͗D��ɖ₢�������B[per]
-*save8_115|�D��Ɖ���
+[voidChar]　恥ずかしさと後ろめたさを感じて視線をそらしながら、俺は優希に問いかけた。[per]
+*save8_115|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u���[��A�������Ȃ��c�c���Ȃ��A���ȁv[per]
-*save8_116|�D��Ɖ���
+[drawName name="優希"]
+「うーん、そうだなぁ……いない、かな」[per]
+*save8_116|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�ցA�ւ��B�������v[per]
-*save8_117|�D��Ɖ���
+[drawName name="健二"]
+「へ、へぇ。そっか」[per]
+*save8_117|優希と屋上
 [afterLoad]
-[voidChar]�@���������D��͖ق荞��ł��܂����B[per]
-*save8_118|�D��Ɖ���
+[voidChar]　それっきり優希は黙り込んでしまった。[per]
+*save8_118|優希と屋上
 [afterLoad]
-[voidChar]�@�D���Ȑl�˂��B[per]
-*save8_119|�D��Ɖ���
+[voidChar]　好きな人ねぇ。[per]
+*save8_119|優希と屋上
 [afterLoad]
-[voidChar]�@�����̈�ԋ߂��ɂ���̂́A�ԈႢ�Ȃ����������낤�B�Ȃ񂽂��Ă��݂��I�V�������Ă������납��̕t���������B[per]
-*save8_120|�D��Ɖ���
+[voidChar]　今俺の一番近くにいるのは、間違いなく明日香だろう。なんたってお互いオシメをしていたころからの付き合いだ。[per]
+*save8_120|優希と屋上
 [afterLoad]
-[voidChar]�@���������܂�ɂ������ꏏ�ɂ������āA�D�����Ƃ��������Ƃ��悭�킩��Ȃ��Ȃ��Ă��܂��Ă���B[per]
-*save8_121|�D��Ɖ���
+[voidChar]　しかしあまりにも長く一緒にいすぎて、好きだとか嫌いだとかよくわからなくなってしまっている。[per]
+*save8_121|優希と屋上
 [afterLoad]
-[voidChar]�@��؂��ƕ������΁A��������؂Ȃ̂����B[per]
-*save8_122|�D��Ɖ���
+[voidChar]　大切かと聞かれれば、もちろん大切なのだが。[per]
+*save8_122|優希と屋上
 [afterLoad]
-[voidChar]�@�����Ė������̎��ƂȂ�ƁA���Ԃ�D��Ȃ񂶂�Ȃ����낤���B[per]
-*save8_123|�D��Ɖ���
+[voidChar]　そして明日香の次となると、たぶん優希なんじゃないだろうか。[per]
+*save8_123|優希と屋上
 [afterLoad]
-[voidChar]�@�D��͖T�ڂ���݂Ă����\���킢�����A���i�����Ĉ����Ȃ��A�Ǝv���B[per]
-*save8_124|�D��Ɖ���
+[voidChar]　優希は傍目からみても結構かわいいし、性格だって悪くない、と思う。[per]
+*save8_124|優希と屋上
 [afterLoad]
-[voidChar]�@���Ă������A�Ȃ񂾂���B�����������ƗD��Ŗ����Ă�݂�������Ȃ����B���͂���ȗD�_�s�f����Ȃ����B�f���ĂȂ����B[per]
-*save8_125|�D��Ɖ���
+[voidChar]　っていうか、なんだこれ。俺が明日香と優希で迷ってるみたいじゃないか。俺はそんな優柔不断じゃないぞ。断じてないぞ。[per]
+*save8_125|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�˂���ւ���A������Ƃ߂Ă�v[per]
-*save8_126|�D��Ɖ���
+[drawName name="優希"]
+「ねぇ常磐くん、ちょっとつめてよ」[per]
+*save8_126|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���H�v[per]
+[drawName name="健二"]
+「え？」[per]
 
-;���h��
+;☆揺れ
 [quake time=500 timemode=ms hmax=10 vmax=50]
 [quake time=500 timemode=ms hmax=10 vmax=50]
-;���҂��h��
+;☆待ち揺れ
 [wq canskip=false]
 
-*save8_127|�D��Ɖ���
+*save8_127|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u����A����A�Ȃɂ���񂾂�D��v[per]
-*save8_128|�D��Ɖ���
+[drawName name="健二"]
+「ちょ、おわ、なにするんだよ優希」[per]
+*save8_128|優希と屋上
 [afterLoad]
-[voidChar]�@�D�󂪂����Ȃ艴��g�̂��Ɖ����Ă����B[per]
-*save8_129|�D��Ɖ���
+[voidChar]　優希がいきなり俺を身体ごと押してきた。[per]
+*save8_129|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�����ċ������A��ւ��񂭂�����������v[per]
-*save8_130|�D��Ɖ���
+[drawName name="優希"]
+「だって狭いし、常磐くんくっつきすぎだよ」[per]
+*save8_130|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u����A���傤���Ȃ����닷���񂾂���v[per]
-*save8_131|�D��Ɖ���
+[drawName name="健二"]
+「しょ、しょうがないだろ狭いんだから」[per]
+*save8_131|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�����A���́I�v[per]
+[drawName name="優希"]
+「もう、この！」[per]
 
-;���h��
+;☆揺れ
 [quake time=500 timemode=ms hmax=10 vmax=50]
 [quake time=500 timemode=ms hmax=10 vmax=50]
-;���҂��h��
+;☆待ち揺れ
 [wq canskip=false]
 
-*save8_132|�D��Ɖ���
+*save8_132|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u��A��߂���āI�@������I�@��������āI�v[per]
-*save8_133|�D��Ɖ���
+[drawName name="健二"]
+「や、やめろって！　落ちる！　落ちるって！」[per]
+*save8_133|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u����Ă��[���[���[���[�v[per]
+[drawName name="優希"]
+「離れてくーだーさーいー」[per]
 
-;���h��
+;☆揺れ
 [quake time=500 timemode=ms hmax=10 vmax=50]
 [quake time=500 timemode=ms hmax=10 vmax=50]
-;���҂��h��
+;☆待ち揺れ
 [wq canskip=false]
 
-*save8_134|�D��Ɖ���
+*save8_134|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u����A���������ɂ��Ă���D��I�@���A�}�W�ŁA�����A���킟�I�v[per]
+[drawName name="健二"]
+「ちょ、いい加減にしてくれ優希！　え、マジで、おい、うわぁ！」[per]
 
-;����h��
+;☆大揺れ
 [quake time=700 timemode=ms hmax=50 vmax=100]
-;���҂��h��
+;☆待ち揺れ
 [wq canskip=false]
 
-*save8_135|�D��Ɖ���
+*save8_135|優希と屋上
 [afterLoad]
-[voidChar]�@�D��ɑ̓����肳���悤�ɂ��āA���͂Q���[�g���̍������痎����������B[per]
-*save8_136|�D��Ɖ���
+[voidChar]　優希に体当たりされるようにして、俺は２メートルの高さから落下させられる。[per]
+*save8_136|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���ā`�`�c�c�Ȃɂ��񂾂�D��I�v[per]
-*save8_137|�D��Ɖ���
+[drawName name="健二"]
+「って～～……なにすんだよ優希！」[per]
+*save8_137|優希と屋上
 [afterLoad]
-[voidChar]�@�����炾�������A����͂Ȃ����A����ɂ��Ă���肷�����B[per]
+[voidChar]　足からだったし、怪我はないが、それにしてもやりすぎだ。[per]
 [fadeInYuuki num=1 pos=center time=500]
-*save8_138|�D��Ɖ���
+*save8_138|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�ӂ񂾁A��ւ��񂪂����Ȃ��񂾂�B����������j���j�����Ă邩��B�ǂ����g�Ȃ��Ƃł��l���Ă���ł���v[per]
-*save8_139|�D��Ɖ���
+[drawName name="優希"]
+「ふんだ、常磐くんがいけないんだよ。さっきからニヤニヤしてるから。どうせＨなことでも考えてたんでしょ」[per]
+*save8_139|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u�ȁA���������肾�B����Ȃ��Ƃ��ĂȂ��v[per]
+[drawName name="健二"]
+「な、言いがかりだ。そんなことしてない」[per]
 [yuuki num=1 pos=center]
-*save8_140|�D��Ɖ���
+*save8_140|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�ǂ������ȁ[�v[per]
-*save8_141|�D��Ɖ���
+[drawName name="優希"]
+「どうだかなー」[per]
+*save8_141|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���܁A�Ⴄ���āI�@�����A���̂��I�v[per]
+[drawName name="健二"]
+「おま、違うって！　くそ、このやろ！」[per]
 
-;���a�f�l�t�F�[�h�A�E�g
+;△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 [fadeOutYuuki]
 
-*save8_142|�D��Ɖ���
+*save8_142|優希と屋上
 [afterLoad]
-[voidChar]�@���͂͂����𒆒��܂œo���āA�D��̘r�������ς�B[per]
-*save8_143|�D��Ɖ���
+[voidChar]　俺ははしごを中程まで登って、優希の腕を引っぱる。[per]
+*save8_143|優希と屋上
 [afterLoad]
-[voidChar]�@�D�󂪁w����[�x�Ƃ������Ē�R���āc�c�ƁA�Ȃ�͂��������̂ɁA�D��͂܂�������R���Ȃ������B[per]
-*save8_144|�D��Ɖ���
+[voidChar]　優希が『きゃー』とか言って抵抗して……と、なるはずだったのに、優希はまったく抵抗しなかった。[per]
+*save8_144|優希と屋上
 [afterLoad]
-[voidChar]�@���܂�̎艞���̂Ȃ��B[per]
-*save8_145|�D��Ɖ���
+[voidChar]　あまりの手応えのなさ。[per]
+*save8_145|優希と屋上
 [afterLoad]
-[voidChar]�@�����^���N�̑��͂��̐g���댯������t�F���X�͑��݂����A���������������D��������΁A�D��͒n��ւƗ������邾�낤�B[per]
-*save8_146|�D��Ɖ���
+[voidChar]　貯水タンクの側はその身を危険から守るフェンスは存在せず、今俺が少し強く優希を押せば、優希は地上へと落下するだろう。[per]
+*save8_146|優希と屋上
 [afterLoad]
-[voidChar]�@���̗l�q��z�����āA���͗D��̘r�����񂾂܂܌ł܂�B[per]
-*save8_147|�D��Ɖ���
+[voidChar]　その様子を想像して、俺は優希の腕をつかんだまま固まる。[per]
+*save8_147|優希と屋上
 [afterLoad]
-[voidChar]�@����ȉ������āA�D�󂪏΂��B�����āA[per]
+[voidChar]　そんな俺を見て、優希が笑う。そして、[per]
 [fadeInYuuki num=2 pos=center time=500]
-*save8_148|�D��Ɖ���
+*save8_148|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u������A���Ƃ��Ă��v[per]
-*save8_149|�D��Ɖ���
+[drawName name="優希"]
+「いいよ、落としても」[per]
+*save8_149|優希と屋上
 [afterLoad]
-[voidChar]�@����Ȃ��Ƃ��������B[per]
-*save8_150|�D��Ɖ���
+[voidChar]　そんなことを言った。[per]
+*save8_150|優希と屋上
 [afterLoad]
-[drawName name="����"]
-�u���A�������낢��k���ȁB��������k�ɕ������Ȃ����A�}�h���A�[���v[per]
+[drawName name="健二"]
+「お、おもしろい冗談だな。しかし冗談に聞こえないぞ、マドモアゼル」[per]
 [yuuki num=2 pos=center]
-*save8_151|�D��Ɖ���
+*save8_151|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�����񂾁v[per]
-*save8_152|�D��Ɖ���
+[drawName name="優希"]
+「いいんだ」[per]
+*save8_152|優希と屋上
 [afterLoad]
-[voidChar]�@�D��͊w�Z�ł����Ƃ������ʒu�ŁA�����������Ɍ�����Ί�̂܂܂Ō����B[per]
+[voidChar]　優希は学校でもっとも高い位置で、いつも俺たちに見せる笑顔のままで言う。[per]
 [yuuki num=2 pos=center]
-*save8_153|�D��Ɖ���
+*save8_153|優希と屋上
 [afterLoad]
-[drawName name="�D��"]
-�u�����񂾁v[per]
-*save8_154|�D��Ɖ���
+[drawName name="優希"]
+「いいんだ」[per]
+*save8_154|優希と屋上
 [afterLoad]
-[voidChar]�@�Ί�B����ł킩���Ă��܂����B�m�M���Ă��܂����B[per]
-*save8_155|�D��Ɖ���
+[voidChar]　笑顔。それでわかってしまった。確信してしまった。[per]
+*save8_155|優希と屋上
 [afterLoad]
-[voidChar]�@���܂ł̏Ί炪�A����Ɠ������̂��������ƂɁB[per]
-*save8_156|�D��Ɖ���
+[voidChar]　今までの笑顔が、それと同じものだったことに。[per]
+*save8_156|優希と屋上
 [afterLoad]
-[voidChar]�@���̗��ɂ́A���Ԃ̗D�󂪉B����Ă��邱�ƂɁB[per]
-*save8_157|�D��Ɖ���
+[voidChar]　その裏には、昼間の優希が隠されていることに。[per]
+*save8_157|優希と屋上
 [afterLoad]
-[voidChar]�@�D�󂪂��������ɂ���̂́A�������邽�߂Ȃ񂩂���Ȃ��Ƃ������ƂɁB[per]
-*save8_158|�D��Ɖ���
+[voidChar]　優希がいつもここにいるのは、星を見るためなんかじゃないということに。[per]
+*save8_158|優希と屋上
 [afterLoad]
-[voidChar]�@�ޏ��̒��ɂ���A�Z�ւ��܍߂̈ӎ��ƁA����̖��ւ̌������ɁB[per]
-*save8_159|�D��Ɖ���
+[voidChar]　彼女の中にある、兄への贖罪の意識と、自らの命への嫌悪感に。[per]
+*save8_159|優希と屋上
 [afterLoad]
-[voidChar]�@���͋C�Â��Ă��܂����\�\[per]
+[voidChar]　俺は気づいてしまった――[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���t�F�[�h�A�E�g�@�P�O�O�O�@��
+;○フェードアウト　１０００　黒
 [FadeOutBlack time=1000]
-;���Y�[���@�I��
+;○ズーム　終了
 [endZoom]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save8_160|�D��Ɖ���
+*save8_160|優希と屋上
 [afterLoad]
-[voidChar]�@���̓��A���͋v���Ԃ�ɁA�Z�̖����݂��B[per]
-*save8_161|�D��Ɖ���
+[voidChar]　その日、俺は久しぶりに、兄の夢をみた。[per]
+*save8_161|優希と屋上
 [afterLoad]
-[voidChar]�@�Z�͏΂��Ă�������ǂ��A���͂��������ꂵ�������������B[per]
-*save8_162|�D��Ɖ���
+[voidChar]　兄は笑っていたけれども、俺はただただ苦しいだけだった。[per]
+*save8_162|優希と屋上
 [afterLoad]
-[voidChar]�@�\�\���������̂��A��������Ȃ���΂悩�����̂ɁB[per]
+[voidChar]　――助かったのが、自分じゃなければよかったのに。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���e���b�v�@�C��
+;☆テロップ　イン
 [telopIn]
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;○フェードアウト　１０００　ｆ　黒
 [FadeOutBlack time=1000 canskip=false]
 
-;���W�����v
+;☆ジャンプ
 [jump storage=9.ks]

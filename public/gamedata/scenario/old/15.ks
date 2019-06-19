@@ -1,182 +1,182 @@
 ;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
+;	Graduaters!　～グラディエイターズ！～
 ;
-;	���݁F�莆�O�ʖځA�ߋ���z
-;		����@������
-;		���p���ŁA�O�ʖڂ̎莆����ɓ���錒��B
-;		�w�D�󂿂��̂��Z����̘b�𕷂����Ƃ��A�т����肵�܂����x
-;		�w�����āA�������B�ƂƂĂ����Ă�������x
-;		�w���̂ɂ����āA�D�󂿂������΂������Z����x
-;		�w�M��鎄�����΂��Ă��ꂽ�A����̂��Z�����x
-;		�w���̂̌��ǂŁA�����Ȃ����𕉂����D��̂��Z����x
-;		�w�����āA����̂��Z�����x
-;		�w�ƂĂ����Ă���Ƃ͎v���܂��񂩁H�x
+;	現在：手紙三通目、過去回想
+;		健二　明日香
+;		美術室で、三通目の手紙を手に入れる健二。
+;		『優希ちゃんのお兄さんの話を聞いたとき、びっくりしました』
+;		『だって、あたし達ととても似ていたから』
+;		『事故にあって、優希ちゃんをかばったお兄さん』
+;		『溺れる私をかばってくれた、健二のお兄ちゃん』
+;		『事故の後遺症で、癒えない傷を負った優希のお兄さん』
+;		『そして、健二のお兄ちゃん』
+;		『とても似ているとは思いませんか？』
 
 *start
 
-;�����݁F�莆�O�ʖځA�ߋ���z
+;■現在：手紙三通目、過去回想
 
-*save|�O�ʖڂ̎莆�@�@�@�@�@�@�@�@�@�@�@�@
+*save|三通目の手紙　　　　　　　　　　　　
 
-;���~�j���S�P
+;☆ミニロゴ１
 [intermission1]
-;���t���[���J���[�@�I�����W
+;☆フレームカラー　オレンジ
 [changeMessageFrameColor color=orange]
-;������
+;△走る
 [playse storage=SE13 buf=2 loop=true]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-;���������ɗc������̉�z�Ƃ�����Ă���������
-*save15_0|�O�ʖڂ̎莆
+;■■ここに幼少時代の回想とか入れてもいいかも
+*save15_0|三通目の手紙
 [afterLoad]
-[voidChar]�@���[�����΁A���Z�O�N�̏t�Ɍv�����T�O���[�g�����̃^�C���͉��b���������H[per]
-*save15_1|�O�ʖڂ̎莆
+[voidChar]　そーいえば、高校三年の春に計った５０メートル走のタイムは何秒だっけか？[per]
+*save15_1|三通目の手紙
 [afterLoad]
-[voidChar]�@���ς�����Ə�̂��������̃^�C���������C�����邯�ǁA�����Y��Ă��܂����B[per]
-*save15_2|�O�ʖڂ̎莆
+[voidChar]　平均ちょっと上のそこそこのタイムだった気がするけど、もう忘れてしまった。[per]
+*save15_2|三通目の手紙
 [afterLoad]
-[voidChar]�@������A����Ȃ��Ƃ͂ǂ��ł������B�Ƃɂ����S�͂ő���B[per]
+[voidChar]　いかん、そんなことはどうでもいい。とにかく全力で走る。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���ړ��@�L��
+;○移動　廊下
 [cb2 storage=hall]
-;���ړ��@�L��
+;○移動　廊下
 [cb2 storage=hall]
-;���ړ��@��
+;○移動　黒
 [cb2 storage=black]
-;���~�܂�
+;△止まる
 [stopse buf=2]
-;�������h�A
+;△教室ドア
 [playse storage=SE08 buf=1 loop=false]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save15_3|�O�ʖڂ̎莆
+*save15_3|三通目の手紙
 [afterLoad]
-[drawName name="����"]
-�u�������I�v[per]
-*save15_4|�O�ʖڂ̎莆
+[drawName name="健二"]
+「明日香！」[per]
+*save15_4|三通目の手紙
 [afterLoad]
-[voidChar]�@�����Ă����������̂܂܂ɁA���p���̃h�A���J���B[per]
-*save15_5|�O�ʖڂ̎莆
+[voidChar]　走ってきた勢いそのままに、美術室のドアを開く。[per]
+*save15_5|三通目の手紙
 [afterLoad]
-[voidChar]�@�c�c�c�c�Ԏ��͂Ȃ��B[per]
-*save15_6|�O�ʖڂ̎莆
+[voidChar]　…………返事はない。[per]
+*save15_6|三通目の手紙
 [afterLoad]
-[voidChar]�@�d�C�c�c�͂����Ȃ��B�ڂ������܂ł͎莆���������Ȃ��B[per]
-*save15_7|�O�ʖڂ̎莆
+[voidChar]　電気……はつけられない。目が慣れるまでは手紙も見つけられない。[per]
+*save15_7|三通目の手紙
 [afterLoad]
-[voidChar]�@�ڂ����B[per]
-*save15_8|�O�ʖڂ̎莆
+[voidChar]　目を閉じる。[per]
+*save15_8|三通目の手紙
 [afterLoad]
-[drawName name="����"]
-�u�͂��c�c�͂��c�c�͂��c�c���A�ӂ��c�c�v[per]
-*save15_9|�O�ʖڂ̎莆
+[drawName name="健二"]
+「はぁ……はぁ……はぁ……っ、ふぅ……」[per]
+*save15_9|三通目の手紙
 [afterLoad]
-[voidChar]�@�R�O�b���P�����A�ċz�����������܂ňÂ��Ɋ��炵����A�������Ɩڂ��J����B[per]
-*save15_10|�O�ʖڂ̎莆
+[voidChar]　３０秒か１分か、呼吸が落ち着くまで暗さに慣らした後、ゆっくりと目を開ける。[per]
+*save15_10|三通目の手紙
 [afterLoad]
-[voidChar]�@���炽�߂Č��܂킵�����p���̕��i�̒��ŁA�ٍʂ���J�G���̃L�����N�^�[�����ɓ\��t�����Ă����B[per]
-*save15_11|�O�ʖڂ̎莆
+[voidChar]　あらためて見まわした美術室の風景の中で、異彩を放つカエルのキャラクターが黒板に貼り付けられていた。[per]
+*save15_11|三通目の手紙
 [afterLoad]
-[drawName name="����"]
-�u�������傤�A�܂��������ڑ��s���B�����������ꂽ���������v[per]
-*save15_12|�O�ʖڂ̎莆
+[drawName name="健二"]
+「ちくしょう、まだかくれんぼ続行か。いいかげん疲れたぞ明日香」[per]
+*save15_12|三通目の手紙
 [afterLoad]
-[voidChar]�@���΂œ\��t����ꂽ�J�G�����~�o���A�莆�����o���c�c�o���˂��B�����Č����˂�����B[per]
-*save15_13|�O�ʖڂ̎莆
+[voidChar]　磁石で貼り付けられたカエルを救出し、手紙を取り出す……出せねぇ。だって見えねぇもん。[per]
+*save15_13|三通目の手紙
 [afterLoad]
-[voidChar]�@�L���֏o�悤�B[per]
+[voidChar]　廊下へ出よう。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���ړ��@�L��
+;○移動　廊下
 [cb2 storage=hall]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save15_14|�O�ʖڂ̎莆
+*save15_14|三通目の手紙
 [afterLoad]
-[voidChar]�@��������̉��ŕ������J���A�莆�����o���B�Ȃ񂩃r�����ĉ����������ǋC�ɂ��Ȃ��B[per]
-*save15_15|�O�ʖڂ̎莆
+[voidChar]　月明かりの下で封筒を開け、手紙を取り出す。なんかビリって音がしたけど気にしない。[per]
+*save15_15|三通目の手紙
 [afterLoad]
-[voidChar]�@�O�ʖڂ̎莆�͓�ʖڂ܂łƈႢ�A���˂ȕ��͂Ŏn�܂��Ă����B[per]
+[voidChar]　三通目の手紙は二通目までと違い、唐突な文章で始まっていた。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
 
-;���莆
+;☆手紙
 [FadeInMessageFrame2]
-*save15_16|�O�ʖڂ̎莆
+*save15_16|三通目の手紙
 [afterLoad]
-[voidChar]�@�ŏ��ɗD�󂿂��̂��Z����̘b�𕷂����Ƃ��A�������т����肵���B�������Ǝ��Ă�������B[lr]
+[voidChar]　最初に優希ちゃんのお兄さんの話を聞いたとき、すごくびっくりした。あたしと似ていたから。[lr]
 
-*save15_17|�O�ʖڂ̎莆
+*save15_17|三通目の手紙
 [afterLoad]
-[voidChar]�@���̂ɂ����ėD�󂿂������΂������Z����B[lr]
+[voidChar]　事故にあって優希ちゃんをかばったお兄さん。[lr]
 
-*save15_18|�O�ʖڂ̎莆
+*save15_18|三通目の手紙
 [afterLoad]
-[voidChar]�@�M��鎄�������Ă��ꂽ����Ƃ��Z�����B[lr]
+[voidChar]　溺れる私を助けてくれた健二とお兄ちゃん。[lr]
 
-*save15_19|�O�ʖڂ̎莆
+*save15_19|三通目の手紙
 [afterLoad]
-[voidChar]�@���̂̌��ǂŖ����Ȃ����𕉂����D�󂿂��̂��Z����B[lr]
+[voidChar]　事故の後遺症で癒えない傷を負った優希ちゃんのお兄さん。[lr]
 
-*save15_20|�O�ʖڂ̎莆
+*save15_20|三通目の手紙
 [afterLoad]
-[voidChar]�@�����āA����̂��Z�����B[lr]
+[voidChar]　そして、健二のお兄ちゃん。[lr]
 
-*save15_21|�O�ʖڂ̎莆
+*save15_21|三通目の手紙
 [afterLoad]
-[voidChar]�@�ƂĂ����Ă���Ƃ͎v���܂��񂩁H[lr]
+[voidChar]　とても似ているとは思いませんか？[lr]
 
-;�������܂Ŏ莆
+;☆ここまで手紙
 [eval exp='f.flagLetter = false;']
 
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
-*save15_22|�O�ʖڂ̎莆
+*save15_22|三通目の手紙
 [afterLoad]
-[voidChar]�@�����Ď莆�́A�����o���Ɠ��������˂ɏI����Ă����B[per]
-*save15_23|�O�ʖڂ̎莆
+[voidChar]　そして手紙は、書き出しと同じく唐突に終わっていた。[per]
+*save15_23|三通目の手紙
 [afterLoad]
-[voidChar]�@�����炭���ꂪ�Ō�̎莆���낤�B���������̎��ʂ̂ǂ��ɂ��A���̍s����͏����Ă��Ȃ������B[per]
-*save15_24|�O�ʖڂ̎莆
+[voidChar]　おそらくこれが最後の手紙だろう。しかしその紙面のどこにも、次の行き先は書いていなかった。[per]
+*save15_24|三通目の手紙
 [afterLoad]
-[voidChar]�@�ł��܂��A���Ȃ��B�������������炢�����c���Ă��Ȃ��B[per]
+[voidChar]　でもまぁ、問題ない。もうあそこくらいしか残っていない。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���ړ��@��
+;○移動　黒
 [cb2 storage=black]
-;������
+;△走る
 [playse storage=SE13 buf=2 loop=true]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save15_25|�O�ʖڂ̎莆
+*save15_25|三通目の手紙
 [afterLoad]
-[voidChar]�@����o���B�����A�����ɂ��B�r���ɂ��B�����͂₽��Ƒ����Ă΂��肾�B�A��ŉ^���s���Ȃ񂾂���A����������Ǝ�������Ă���R���`�N�V���E�B[per]
-*save15_26|�O�ʖڂ̎莆
+[voidChar]　走り出す。あぁ、足が痛い。腕も痛い。今日はやたらと走ってばかりだ。帰宅部で運動不足なんだから、もうちょっと手加減してくれコンチクショウ。[per]
+*save15_26|三通目の手紙
 [afterLoad]
-[voidChar]�@�g�̂ɂނ��ł��ĊK�i�����B[per]
-*save15_27|�O�ʖڂ̎莆
+[voidChar]　身体にむち打って階段を上る。[per]
+*save15_27|三通目の手紙
 [afterLoad]
-[voidChar]�@�҂��Ă떾�����A�������Ă�邩��ȁI[per]
-*save15_28|�O�ʖڂ̎莆
+[voidChar]　待ってろ明日香、今助けてやるからな！[per]
+*save15_28|三通目の手紙
 [afterLoad]
-[voidChar]�@�Ȃ񂿂āB[per]
+[voidChar]　なんちて。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���~�܂�
+;△止まる
 [stopse buf=2]
-;���e���b�v�@�C��
+;☆テロップ　イン
 [telopIn]
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;○フェードアウト　１０００　ｆ　黒
 [FadeOutBlack time=1000 canskip=false]
 
 [jump storage=16.ks]

@@ -1,166 +1,166 @@
 ;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
+;	Graduaters!　～グラディエイターズ！～
 ;
 
 *start
 
-;�����W�I�Q
+;■ラジオ２
 
-*save|�O���f�B�G�C�g�E�W���p���Q�@�@�@�@�@
+*save|グラディエイト・ジャパン２　　　　　
 
 [wait time=1000 canskip=false]
-;�����W�I���b�Z�[�W�@�C��
+;☆ラジオメッセージ　イン
 [fadeInRadioMessage]
 
-*save9_0|�O���f�B�G�C�g�E�W���p���Q
+*save9_0|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u�R���r�j��T���Ă�Ƃ��ɁA�������Ɍ����Ă��܂������Ɓ[�I�v[per]
-*save9_1|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「コンビニを探してるときに、つい相方に言ってしまったことー！」[per]
+*save9_1|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u�R���r�j�ƌ����΁A�T�[�N���j�A�t�@�~���[�}�[�g�A���ƃ��[�V��������ȁI�v[per]
-*save9_2|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「コンビニと言えば、サークルＫ、ファミリーマート、あとローションだよな！」[per]
+*save9_2|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][upMessageFrame]
-�u���ꃍ�[�\������I�v[per]
-*save9_3|�O���f�B�G�C�g�E�W���p���Q
+「それローソンだろ！」[per]
+*save9_3|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u�c�c�c�c�c�c�v[per]
-*save9_4|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「………………」[per]
+*save9_4|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][replaceMessageFrame]
 [font size=15]
-�u����ׁA�X�x�����v[deffont]
+「やっべ、スベった」[deffont]
 [per]
-*save9_5|�O���f�B�G�C�g�E�W���p���Q
+*save9_5|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][quake time=500 timemode=ms hmax=10 vmax=50]
 [playse storage=SE20 buf=1 loop=false][font size=30]
-�u�c�i�W���[�[�[�[�o���́I�@�w�O���f�B�G�C�g�E�W���p���x�I�I�v[deffont]
+「ＤＪジョーーーーバンの！　『グラディエイト・ジャパン』！！」[deffont]
 [per]
-;���a�f�l�Q
+;△ＢＧＭ２
 [bgmopt volume=100][playbgm storage=bgm002]
-*save9_6|�O���f�B�G�C�g�E�W���p���Q
+*save9_6|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][moveComboMessage]
-�u�������[�炽������[��@�������[�炽������[��v[per]
-*save9_7|�O���f�B�G�C�g�E�W���p���Q
+「たったーらたらったー♪　たったーらたらったー♪」[per]
+*save9_7|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u�́[���݂Ȃ��񂱂�΂�́A����������Ă��܂����w�O���f�B�G�C�g�E�W���p���x�̂����ԂŁ[���I�v[per]
-*save9_8|�O���f�B�G�C�g�E�W���p���Q
+「はーいみなさんこんばんは、今日もやってきました『グラディエイト・ジャパン』のお時間でーす！」[per]
+*save9_8|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u���������ł��������ł��m�点�Ł[���B���T���炱�́w�O���f�B�G�C�g�E�W���p���x�́A�w�O���r�A�G�C�g�E�A�����J�x�Ƀ^�C�g����ύX���܁[���I�v[per]
-*save9_9|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「さっそくですがここでお知らせでーす。来週からこの『グラディエイト・ジャパン』は、『グラビアエイト・アメリカ』にタイトルを変更しまーす！」[per]
+*save9_9|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][upMessageFrame]
-�u�R�Ł[���I�v[per]
-*save9_10|�O���f�B�G�C�g�E�W���p���Q
+「嘘でーす！」[per]
+*save9_10|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�́[�����Ƃ������ƂłˁA�݂���x���ꂽ���ȁH�@�ˁ[�A�Ƃ��Ă��������낢�ˁ[�A���܁[�݂���Ă񂾃R���`�N�V���E�I�v[per]
-*save9_11|�O���f�B�G�C�g�E�W���p���Q
+「はーいっということでね、みんな騙されたかな？　ねー、とってもおもしろいねー、ざまーみろってんだコンチクショウ！」[per]
+*save9_11|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u���Ă��ƂŃW���o���v���񂾂��ǂˁ[�A�l�Ԃ��Ă͈̂ӎ������ɐl���������鐶�����Ȃ񂾂Ǝv���񂾂ˁ[�v[per]
-*save9_12|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「ってことでジョバン思うんだけどねー、人間ってのは意識せずに人を傷つけられる生き物なんだと思うんだねー」[per]
+*save9_12|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][moveMessageFrame lr=left ud=down]
-�u�Ⴆ�΂����Ɉ�l�̗c���������Ƃ����[�B������ޏ��͊w�Z�Ŏg���N���������ƂɖY��Ă��Ă��܂����񂾁[�B������ς����I�@���̋S���t��������S�@���Ƃ����Ă���ɈႢ�ȁ[���I�@�s���`���c���[�I�v[per]
-*save9_13|�O���f�B�G�C�g�E�W���p���Q
+「例えばここに一人の幼女が居たとするよー。ある日彼女は学校で使うクレヨンを家に忘れてきてしまったんだー。さぁ大変だぁ！　あの鬼教師がおしり百叩きとかしてくるに違いなーい！　ピンチだ幼女ー！」[per]
+*save9_13|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][moveMessageFrame lr=right ud=up]
-�u�����[�����S�����܂��A�����������̓x�X�g�t�����Y�Ɏ؂��΂����񂾁[�B�c���ׂ͗̏n���ɃN���������؂�܂����[�B�����[���I�@�����Ŏ����������[�I�v[per]
-*save9_14|�O���f�B�G�C�g�E�W���p���Q
+「しかーし安心したまえ、こういう時はベストフレンズに借りればいいんだー。幼女は隣の熟女にクレヨンを借りましたー。しかーし！　ここで事件発生だー！」[per]
+*save9_14|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�ȁ[��ƁA�c���͏n���̃N��������܂��Ă��܂����̂��[�I�@�����Ȃ�č������ȐԂ��N�������I�@�������m�[�v���u�����I�@���C���Ȃ��������Ƃ�b���Ən���͂����ɋ����Ă���܂����[�v[per]
-*save9_15|�O���f�B�G�C�g�E�W���p���Q
+「なーんと、幼女は熟女のクレヨンを折ってしまったのだー！　おぉなんて高そうな赤いクレヨン！　しかしノープロブレム！　悪気がなかったことを話すと熟女はすぐに許してくれましたー」[per]
+*save9_15|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][upMessageFrame]
-�u�n���͖{���ɑS�R�C�ɂ��Ă��Ȃ������[�B�������c���͏n���ɂƂĂ������ڂ��������[�B�c���ƂĂ��\����Ȃ��[�A�߂����[�A�n����������݂ăv�`�߂����Ȃ����Ⴄ�[�v[per]
-*save9_16|�O���f�B�G�C�g�E�W���p���Q
+「熟女は本当に全然気にしていなかったー。しかし幼女は熟女にとても引け目を感じたー。幼女とても申し訳ないー、悲しいー、熟女もそれをみてプチ悲しくなっちゃうー」[per]
+*save9_16|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][quake time=500 timemode=ms hmax=10 vmax=50]
 [font size=30]
-[playse storage=SE20 buf=1 loop=false]�u������Ȃ񂾂��Ęb�[�I�v[deffont]
+[playse storage=SE20 buf=1 loop=false]「だからなんだって話ー！」[deffont]
 [per]
-*save9_17|�O���f�B�G�C�g�E�W���p���Q
+*save9_17|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u���[�Č����ق���Ă����Ƃ���ōs���Ă݂�[�I�@�ӂ����̃R�[�i�[�I�v[per]
-*save9_18|�O���f�B�G�C�g�E�W���p���Q
+「さーて口もほぐれてきたところで行ってみよー！　ふつおたのコーナー！」[per]
+*save9_18|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][moveMessageFrame lr=right ud=down]
-�u���Ȃ݂ɂӂ������Ă̂́w���ʂ̂��ւ�x�̗��Ȃ񂾂��u���U�[�A�o���Ƃ��ȁI�@���A�m���Ă�H�@���������v[per]
-*save9_19|�O���f�B�G�C�g�E�W���p���Q
+「ちなみにふつおたってのは『普通のお便り』の略なんだぜブラザー、覚えときな！　え、知ってる？　あっそう」[per]
+*save9_19|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�ł͍ŏ��̂��ւ�[�I�@�q�m�w���ʃ��C�_�[�P�O�Q���x���[��I�@�������肪�Ɓ[�I�v[per]
-*save9_20|�O���f�B�G�C�g�E�W���p���Q
+「では最初のお便りー！　ＲＮ『仮面ライダー１０２号』さーん！　いつもありがとー！」[per]
+*save9_20|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u�w�W���o�����񂱂�΂�݁x�́[������΂�݁I�@�w�l�͐���A�F�l������R�[���Șb�𕷂��Ă��܂��܂����x�v[per]
-*save9_21|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「『ジョバンさんこんばんみ』はーいこんばんみ！　『僕は先日、友人から偶然深刻な話を聞いてしまいました』」[per]
+*save9_21|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][upMessageFrame]
-[playse storage=SE24 buf=1 loop=false]�u�ȁA�Ȃ񂾂��ā[�I�I�v[playse storage=SE24 buf=1 loop=false][per]
-*save9_22|�O���f�B�G�C�g�E�W���p���Q
+[playse storage=SE24 buf=1 loop=false]「な、なんだってー！！」[playse storage=SE24 buf=1 loop=false][per]
+*save9_22|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�w���̓��e�̓v���C�x�[�g�Ɋւ��邱�ƂȂ̂ŕ����܂����A�Ȃ񂾂�������Ɛ[�������Ėl�̕��������Ă��܂��܂����x�Ȃ�قǂȂ�قǁv[per]
-*save9_23|�O���f�B�G�C�g�E�W���p���Q
+「『その内容はプライベートに関することなので伏せますが、なんだかちょっと深刻すぎて僕の方が困ってしまいました』なるほどなるほど」[per]
+*save9_23|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u�w�W���o������ɂ́A���������o���A����܂����H�@�������Ȃ�A�ǂ��Ώ����܂������H�@�����Ă��������x�v[per]
-*save9_24|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「『ジョバンさんには、こういう経験、ありますか？　あったなら、どう対処しましたか？　教えてください』」[per]
+*save9_24|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u��[�Ȃ�قǂˁ[�A�܂蕷���Ă͂����Ȃ����Ƃ𕷂��Ă��܂����Ƃ������Ƃ��ˁ[�B���[��������W���o���ɂ������[���������o���I�v[per]
-*save9_25|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「んーなるほどねー、つまり聞いてはいけないことを聞いてしまったということだねー。うーんもちろんジョバンにもあるよーこういう経験！」[per]
+*save9_25|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u���[��[�Ƃ����ċC�܂�����ˁ[�A�ȁ[�񂩂��������������Ƃ��������ɂȂ��ˁ[�A�����炻�������Ƃ��ˁ[�A�W���o���͂��������̂��[�v[per]
-*save9_26|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「こーゆーときって気まずいよねー、なーんかこっちが悪いことした感じになるよねー、だからそういうときねー、ジョバンはこう言うのさー」[per]
+*save9_26|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][playse storage=SE20 buf=1 loop=false][font size=30]
-�u���A�}�p���v���o�����I�v[deffont]
+「あ、急用を思い出した！」[deffont]
 [per]
-*save9_27|�O���f�B�G�C�g�E�W���p���Q
+*save9_27|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][upMessageFrame]
-[playse storage=SE21 buf=1 loop=false]�u�����đ����ē�����΂��������������[���I�@���������̂�헪�I�P�ނƌĂԂ񂾂��[�A�l�͂�������ƌĂԂ񂾂��[�I�v[per]
-*save9_28|�O���f�B�G�C�g�E�W���p���Q
+[playse storage=SE21 buf=1 loop=false]「そして走って逃げればもう完璧おぅけーい！　こういうのを戦略的撤退と呼ぶんだぜー、人はそれを愛と呼ぶんだぜー！」[per]
+*save9_28|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�Ƃ܂���k�͂��Ă����[�I�@���[��[�̂𕷂����܂����Ȃ�A�����閧�ɂ���`��������ƃW���o���v���񂾂�[�v[per]
-*save9_29|�O���f�B�G�C�g�E�W���p���Q
+「とまぁ冗談はさておきー！　そーゆーのを聞いちまったなら、それを秘密にする義務があるとジョバン思うんだよー」[per]
+*save9_29|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u����̎q�͌N�����炱���b���Ă��ꂽ�̂�������Ȃ����[�A���Ȃ炻�̊��҂𗠐؂���������炾�߂����[���ʃ��C�_�[�P�O�Q�����[��I�v[per]
-*save9_30|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「相手の子は君だからこそ話してくれたのかもしれないしー、漢ならその期待を裏切っちゃったらだめだぜー仮面ライダー１０２号くーん！」[per]
+*save9_30|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u������I�@�N�͔閧�ɂ��Ȃ��獡�܂Œʂ葊�肵��Ă΂����ƃW���o���͎v�����R���`�N�V���E�I�v[per]
-*save9_31|�O���f�B�G�C�g�E�W���p���Q
-[afterLoad]
-[voidChar][jumpMessageFrame]
-�u�R�Ł[���I�v[per]
-*save9_32|�O���f�B�G�C�g�E�W���p���Q
+[voidChar]「だから！　君は秘密にしながら今まで通り相手しれてばいいとジョバンは思うぜコンチクショウ！」[per]
+*save9_31|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u�Ƃ����̂��R�Ł[���I�v[per]
-*save9_33|�O���f�B�G�C�g�E�W���p���Q
+「嘘でーす！」[per]
+*save9_32|グラディエイト・ジャパン２
 [afterLoad]
-[voidChar]�u�́[���A���Ă��Ƃłq�m�w���ʃ��C�_�[�P�O�Q���x���񂩂�̂��ւ�ł����[�I�@�b�l�̌�̓{�C�X�h���}�w������E�T�M�Ɣg���W���o���x�����͂����邺�[�I�@���g��������Ȃ�I�v[per]
-*save9_34|�O���f�B�G�C�g�E�W���p���Q
+[voidChar][jumpMessageFrame]
+「というのも嘘でーす！」[per]
+*save9_33|グラディエイト・ジャパン２
+[afterLoad]
+[voidChar]「はーい、ってことでＲＮ『仮面ライダー１０２号』さんからのお便りでしたー！　ＣＭの後はボイスドラマ『恋するウサギと波乗りジョバン』をお届けするぜー！　周波数いじるなよ！」[per]
+*save9_34|グラディエイト・ジャパン２
 [afterLoad]
 [voidChar][font size=30]
-[playse storage=SE20 buf=1 loop=false]�u�`�F�P���I�v[deffont]
+[playse storage=SE20 buf=1 loop=false]「チェケラ！」[deffont]
 [per]
 
-;�����W�I���b�Z�[�W�@�A�E�g
+;☆ラジオメッセージ　アウト
 [fadeOutMessageFrame]
 [eval exp="f.flagLetter = false"]
-;���e���b�v�@�C��
+;☆テロップ　イン
 [telopIn]
-;���a�f�l�t�F�[�h�A�E�g
+;△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;○フェードアウト　１０００　ｆ　黒
 [FadeOutBlack time=1000 canskip=false]
 
 
-;���W�����v
+;☆ジャンプ
 [jump storage=10.ks]

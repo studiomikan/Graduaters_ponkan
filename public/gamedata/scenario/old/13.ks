@@ -1,148 +1,148 @@
 ;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
+;	Graduaters!　～グラディエイターズ！～
 ;
-;	�ߋ��F�D��̖{���̘b
-;		����@�D��
-;		����́A�D��̌Z���{���͎��̂ŏ��Q�𕉂��c���ލs���Ă��邱�Ƃ�m��B
+;	過去：優希の本当の話
+;		健二　優希
+;		健二は、優希の兄が本当は事故で傷害を負い幼児退行していることを知る。
 
 *start
 
-;���ߋ��F�D��̖{���̘b
+;■過去：優希の本当の話
 
-*save|�D��̖{���̘b�@�@�@�@�@�@�@�@�@�@�@
+*save|優希の本当の話　　　　　　　　　　　
 
-;���~�j���S�P
+;☆ミニロゴ１
 [intermission1]
-;���t���[���J���[�@��
+;☆フレームカラー　青
 [changeMessageFrameColor color=blue]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save13_0|�D��̖{���̘b
+*save13_0|優希の本当の話
 [afterLoad]
-[voidChar]�@���̓��͂����ƈႢ�A���͌������邱�ƈȊO�̖ړI�������ĉ����ڎw���Ă����B[per]
-*save13_1|�D��̖{���̘b
+[voidChar]　その日はいつもと違い、俺は月を見ること以外の目的を持って屋上を目指していた。[per]
+*save13_1|優希の本当の話
 [afterLoad]
-[voidChar]�@�����ǂ�����p������E�э��݁A���łɌ��̊J���Ă�������֑����h�A���J����B[per]
+[voidChar]　いつもどおり美術室から忍び込み、すでに鍵の開いていた屋上へ続くドアを開ける。[per]
 
-;������h�A
+;△屋上ドア
 [playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
-;���t�F�[�h�A�E�g�@��
+;○フェードアウト　白
 [FadeOutWhite]
-;���t�F�[�h�@����
+;○フェード　屋上
 [cb storage=roof]
-;���a�f�l�P
+;△ＢＧＭ１
 [bgmopt volume=100][playbgm storage=bgm001]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save13_2|�D��̖{���̘b
+*save13_2|優希の本当の話
 [afterLoad]
-[voidChar]�@��u�̖ڂ���܂��̌�A��������n���B[per]
-*save13_3|�D��̖{���̘b
+[voidChar]　一瞬の目くらましの後、屋上を見渡す。[per]
+*save13_3|優希の本当の話
 [afterLoad]
-[voidChar]�@����̉J�̂���������̏��͂Ƃ���ǂ낱�G��Ă��āA���ꂪ���̖�����𔽎˂��Ă܂Ԃ��������B[per]
-*save13_4|�D��̖{���̘b
+[voidChar]　昨日の雨のせいか屋上の床はところどろこ濡れていて、それが月の明かりを反射してまぶしかった。[per]
+*save13_4|優希の本当の話
 [afterLoad]
-[voidChar]�@�����܂�̌������A�����Ɠ����ꏊ�ɖړI�̐l���������āA���͕��݊�����B[per]
-*save13_5|�D��̖{���̘b
+[voidChar]　水たまりの向こう、いつもと同じ場所に目的の人物を見つけて、俺は歩み寄った。[per]
+*save13_5|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�������A�D��v[per]
+[drawName name="健二"]
+「おっす、優希」[per]
 [fadeInYuuki num=2 pos=center time=500]
-*save13_6|�D��̖{���̘b
+*save13_6|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u����΂�́A��ւ���B�������ˁA�����͖�������Ȃ���v[per]
-*save13_7|�D��̖{���̘b
+[drawName name="優希"]
+「こんばんは、常磐くん。珍しいね、今日は満月じゃないよ」[per]
+*save13_7|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u����A�����Ȃ̂��B����ɂ��Ă͖��邢�ȁB����ς菰���G��Ă邹�����v[per]
+[drawName name="健二"]
+「あれ、そうなのか。それにしては明るいな。やっぱり床が濡れてるせいか」[per]
 [yuuki num=2 pos=center]
-*save13_8|�D��̖{���̘b
+*save13_8|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u����B�����̉���A����܂萅�͂��悭�Ȃ��݂������ˁB�J�R��Ƃ����v�Ȃ̂��ȁv[per]
-*save13_9|�D��̖{���̘b
+[drawName name="優希"]
+「うん。ここの屋上、あんまり水はけよくないみたいだね。雨漏りとか大丈夫なのかな」[per]
+*save13_9|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�����A���������R���N���̌����ł��J�R����Ă���̂��H�v[per]
+[drawName name="健二"]
+「さぁ、そもそもコンクリの建物でも雨漏りってすんのか？」[per]
 [yuuki num=1 pos=center]
-*save13_10|�D��̖{���̘b
+*save13_10|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u���[��A�����m��Ȃ��v[per]
-*save13_11|�D��̖{���̘b
+[drawName name="優希"]
+「うーん、私も知らない」[per]
+*save13_11|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u���Ⴀ�Ƃ肠�������v�Ȃ񂶂�ˁH�@�J�R�肵�Ă�Ƃ��Ȃ�Č������ƂȂ����v[per]
+[drawName name="健二"]
+「じゃあとりあえず大丈夫なんじゃね？　雨漏りしてるとこなんて見たことないし」[per]
 [yuuki num=2 pos=center]
-*save13_12|�D��̖{���̘b
+*save13_12|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u�������ˁv[per]
-*save13_13|�D��̖{���̘b
+[drawName name="優希"]
+「そうだね」[per]
+*save13_13|優希の本当の話
 [afterLoad]
-[voidChar]�@�����Ȃ���A�D��͉���̓��������˂���B���Ԃ�A�������̎p��T���Ă���̂��낤�B[per]
+[voidChar]　言いながら、優希は屋上の入り口を一瞥する。たぶん、明日香の姿を探しているのだろう。[per]
 [yuuki num=1 pos=center]
-*save13_14|�D��̖{���̘b
+*save13_14|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u�����͈�l�Ȃ́H�v[per]
-*save13_15|�D��̖{���̘b
+[drawName name="優希"]
+「今日は一人なの？」[per]
+*save13_15|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u���[�A�������͊ς����h���}�����邻�����v[per]
+[drawName name="健二"]
+「あー、明日香は観たいドラマがあるそうだ」[per]
 [yuuki num=2 pos=center]
-*save13_16|�D��̖{���̘b
+*save13_16|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u�����Ȃ񂾁B���̏��̎q�̊Ԃŗ��s���Ă�h���}�����邩��A���ꂩ�ȁv[per]
-*save13_17|�D��̖{���̘b
+[drawName name="優希"]
+「そうなんだ。寮の女の子の間で流行ってるドラマがあるから、それかな」[per]
+*save13_17|優希の本当の話
 [afterLoad]
-[voidChar]�@����A�K���ɂł����グ�Č����������Ȃ̂ɁA����Ȃ�ɐ^�����̂��闝�R�ɂȂ����݂������B[per]
-*save13_18|�D��̖{���̘b
+[voidChar]　あら、適当にでっち上げて言っただけなのに、それなりに真実味のある理由になったみたいだ。[per]
+*save13_18|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�ւ��A�D��͊ςȂ��Ă������̂��H�@���̃h���}�v[per]
+[drawName name="健二"]
+「へぇ、優希は観なくてもいいのか？　そのドラマ」[per]
 [yuuki num=2 pos=center]
-*save13_19|�D��̖{���̘b
+*save13_19|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u���[��A�܂��A�ςĂ������񂾂��ǁA�����͂������̋C������������v[per]
-*save13_20|�D��̖{���̘b
+[drawName name="優希"]
+「うーん、まぁ、観てもいいんだけど、今日はこっちの気分だったから」[per]
+*save13_20|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�������A����Ȃ炢���񂾂��ǁv[per]
-*save13_21|�D��̖{���̘b
+[drawName name="健二"]
+「そうか、それならいいんだけど」[per]
+*save13_21|優希の本当の話
 [afterLoad]
-[voidChar]�@�D��̌����w�������̋C���x�Ƃ����̂́A�v�͂�������n��𒭂߂邱�ƂŁA�܂�͂����������ƂȂ̂��낤�B[per]
-*save13_22|�D��̖{���̘b
+[voidChar]　優希の言う『こっちの気分』というのは、要はここから地上を眺めることで、つまりはそういうことなのだろう。[per]
+*save13_22|優希の本当の話
 [afterLoad]
-[voidChar]�@���͌������グ�邽�߂ɉ����K��A�D��͒n��������낷���߂ɉ���֒ʂ��B�܂����������Đ����΂̓�l���B[per]
-*save13_23|�D��̖{���̘b
+[voidChar]　俺は月を見上げるために屋上を訪れ、優希は地上を見下ろすために屋上へ通う。まったくもって正反対の二人だ。[per]
+*save13_23|優希の本当の話
 [afterLoad]
-[voidChar]�@�܂������Ɍ����ẮA�������グ��̂��ړI�ł͂Ȃ��̂�����ǁB[per]
-*save13_24|�D��̖{���̘b
+[voidChar]　まぁ今日に限っては、月を見上げるのが目的ではないのだけれど。[per]
+*save13_24|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�D��v[per]
-*save13_25|�D��̖{���̘b
+[drawName name="健二"]
+「優希」[per]
+*save13_25|優希の本当の話
 [afterLoad]
-[voidChar]�@���炾��Ɛ��Ԙb�����Ă��Ă��x���Ȃ��Ă��܂����A���������{��ɓ��邱�Ƃɂ��悤�B[per]
-*save13_26|�D��̖{���̘b
+[voidChar]　だらだらと世間話をしていても遅くなってしまうし、さっそく本題に入ることにしよう。[per]
+*save13_26|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u����������Ɨp���������āA���Ԃɕa�@�ɍs���Ă����񂾁B�����̋߂��̑�a�@�v[per]
+[drawName name="健二"]
+「今日ちょっと用事があって、昼間に病院に行ってきたんだ。ここの近くの大病院」[per]
 [yuuki num=1 pos=center]
-*save13_27|�D��̖{���̘b
+*save13_27|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u���ׁH�v[per]
-*save13_28|�D��̖{���̘b
+[drawName name="優希"]
+「風邪？」[per]
+*save13_28|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u����A��������Ȃ����ǁA�܂����R�͂ǂ������Ă����񂾁B�c�c���̂Ƃ��ɁA���O�̂��Z��������������񂾁v[per]
+[drawName name="健二"]
+「いや、そうじゃないけど、まぁ理由はどうだっていいんだ。……そのときに、お前のお兄さんを見かけたんだ」[per]
 
 [fadeOutMessageFrame]
 [fadeoutbgm time=700]
@@ -150,24 +150,24 @@
 [fadeInMessageFrame]
 ;[fadeOutYuuki]
 
-*save13_29|�D��̖{���̘b
+*save13_29|優希の本当の話
 [afterLoad]
-[voidChar]�@���m�ɂ́A�a�@�ɍs�������łɁA���[������Ɗ�Ƃ����Ă݂����ȁ[�ȂǂƎv���āA�킴�킴��t�ŕ������̂��B[per]
-*save13_30|�D��̖{���̘b
+[voidChar]　正確には、病院に行ったついでに、あーちょっと顔とか見てみたいなーなどと思って、わざわざ受付で聞いたのだ。[per]
+*save13_30|優希の本当の話
 [afterLoad]
-[voidChar]�@��t�ŕa���������Ă��炢�A�a���̃i�[�X�X�e�[�V�����ŕ����ԍ��𕷂����Ƃ��A�Ō�t�̐l�ɋ����ꂽ�B�Ȃ�ł��A�D��̂��Z�����K�˂�l�͗D��ȊO�ɂقƂ�ǂ��Ȃ��炵���B[per]
-*save13_31|�D��̖{���̘b
+[voidChar]　受付で病棟を教えてもらい、病棟のナースステーションで部屋番号を聞いたとき、看護師の人に驚かれた。なんでも、優希のお兄さんを訪ねる人は優希以外にほとんどいないらしい。[per]
+*save13_31|優希の本当の話
 [afterLoad]
-[voidChar]�@�������Ĉē����Ă�����������ɂ����̂́A�܂�Ŏq���̂悤��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]�l[ruby text=�E]��[ruby text=�E]�j[ruby text=�E]���������B[per]
-*save13_32|�D��̖{���̘b
+[voidChar]　そうして案内してもらった部屋にいたのは、まるで子供のように[ruby text=・]泣[ruby text=・]き[ruby text=・]わ[ruby text=・]め[ruby text=・]く[ruby text=・]大[ruby text=・]人[ruby text=・]の[ruby text=・]男[ruby text=・]性だった。[per]
+*save13_32|優希の本当の話
 [afterLoad]
-[voidChar]�@�a���ɓ���ƁA�ނ͌��m��ʉ��ɂ��т��A������悤�Ƀx�b�h�ɉB�ꂽ�B���悻��l�Ƃ͎v���Ȃ��d���������B[per]
-*save13_33|�D��̖{���̘b
+[voidChar]　病室に入ると、彼は見知らぬ俺におびえ、逃げるようにベッドに隠れた。およそ大人とは思えない仕草だった。[per]
+*save13_33|優希の本当の話
 [afterLoad]
-[voidChar]�@�����ăV�[�c����炾�����o���āA�ނ͂����������B�w���Z�����A������H�x�\�\[per]
-*save13_34|�D��̖{���̘b
+[voidChar]　そしてシーツから顔だけを出して、彼はこう言った。『お兄ちゃん、だぁれ？』――[per]
+*save13_34|優希の本当の話
 [afterLoad]
-[voidChar]�@���_�N��ɂ��ĂR�ΑO��B���������ꂸ�A�C�ɂ���Ȃ����Ƃ�����΋�����߂��A���܂�����Ƃ������̂ɖڊo�߂Ă��Ȃ�[ruby text=�E]�q[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]��[ruby text=�E]�l�B���^�����A�D��̂��Z���񂾂����B[per]
+[voidChar]　精神年齢にして３歳前後。お箸も握れず、気にくわないことがあれば泣きわめき、いまだ自我というものに目覚めていない[ruby text=・]子[ruby text=・]供[ruby text=・]の[ruby text=・]よ[ruby text=・]う[ruby text=・]な[ruby text=・]大[ruby text=・]人。正真正銘、優希のお兄さんだった。[per]
 
 [fadeOutMessageFrame]
 [cb storage=roof]
@@ -175,115 +175,115 @@
 
 
 [fadeInYuuki num=5 pos=center time=500]
-*save13_35|�D��̖{���̘b
+*save13_35|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u�������B�т����肵���H�v[per]
-*save13_36|�D��̖{���̘b
+[drawName name="優希"]
+「そっか。びっくりした？」[per]
+*save13_36|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�����A�͂��߂͊ԈႦ�����Ǝv�����B�܂��A�����������Ƃ�����̂����Ĕ[���������ǂ��v[per]
+[drawName name="健二"]
+「ああ、はじめは間違えたかと思った。まぁ、こういうこともあるのかって納得したけども」[per]
 [yuuki num=2 pos=center]
-*save13_37|�D��̖{���̘b
+*save13_37|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u�������B�����������Ƃ��Ă���񂾂ˁA�c���Ȃ��ƂɁv[per]
-*save13_38|�D��̖{���̘b
+[drawName name="優希"]
+「そっか。ああいうことってあるんだね、残酷なことに」[per]
+*save13_38|優希の本当の話
 [afterLoad]
-[voidChar]�@�D�󂪁A���𒙐��^���N����˂����Ƃ����Ƃ��̕\��ɂȂ�B[per]
-*save13_39|�D��̖{���̘b
+[voidChar]　優希が、俺を貯水タンクから突き落としたときの表情になる。[per]
+*save13_39|優希の本当の話
 [afterLoad]
-[voidChar]�@�߂����̂Ƃ��₵���̂Ƃ��Ⴄ�A�ꂵ���ƌ����΂���̕\��B[per]
+[voidChar]　悲しいのとも寂しいのとも違う、苦しいと言わんばかりの表情。[per]
 [yuuki num=2 pos=center]
-*save13_40|�D��̖{���̘b
+*save13_40|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u���̓��́A�Ƒ��ŎԂŏo�����āA���̋A�肾�����B�����炾�������Q�N�O���ȁv[per]
+[drawName name="優希"]
+「あの日は、家族で車で出かけて、その帰りだった。今からだいたい２年前かな」[per]
 [yuuki num=2 pos=center]
-*save13_41|�D��̖{���̘b
+*save13_41|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u���ʏՓ˂��钼�O�ɁA�Z����͎������΂��ďd���𕉂����B�������Ŏ��́A�����Ƃ͂����Ȃ��������ǂ�����Ƃ�������ł��񂾁v[per]
+[drawName name="優希"]
+「正面衝突する直前に、兄さんは私をかばって重傷を負った。おかげで私は、無傷とはいかなかったけどちょっとした怪我ですんだ」[per]
 [yuuki num=2 pos=center]
-*save13_42|�D��̖{���̘b
+*save13_42|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u�Z����͂��ꂩ��R���ԁA�����̋��Ԃ����܂�����B�ӎ������߂����Ƃ��ɂ͂��������Ȃ��Ă��B�Z����͋L���������āA���̐S�������q���ɂȂ��Ă��܂����v[per]
+[drawName name="優希"]
+「兄さんはそれから３日間、生死の狭間をさまよった。意識を取り戻したときにはもうああなってた。兄さんは記憶を失って、その心だけが子供になってしまった」[per]
 [yuuki num=2 pos=center]
-*save13_43|�D��̖{���̘b
+*save13_43|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u����A�܂��A���̂̌��ǂ��Ă���ˁB�悭����b�v[per]
-*save13_44|�D��̖{���̘b
+[drawName name="優希"]
+「うん、まぁ、事故の後遺症ってやつだね。よくある話」[per]
+*save13_44|優希の本当の話
 [afterLoad]
-[voidChar]�@�����܂Ō����āA�D��̕\������̂��炩�����̂ɖ߂�B[per]
+[voidChar]　そこまで言って、優希の表情がいつものやわらかいものに戻る。[per]
 [yuuki num=5 pos=center]
-*save13_45|�D��̖{���̘b
+*save13_45|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u�Ƃ܂��A����Ȃ��񂶂��ȁv[per]
-*save13_46|�D��̖{���̘b
+[drawName name="優希"]
+「とまぁ、そんなかんじかな」[per]
+*save13_46|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�Ȃ�قǂˁc�c���܂�ȁv[per]
+[drawName name="健二"]
+「なるほどね……すまんな」[per]
 [yuuki num=2 pos=center]
-*save13_47|�D��̖{���̘b
+*save13_47|優希の本当の話
 [afterLoad]
-[drawName name="�D��"]
-�u������A�ʂɁv[per]
+[drawName name="優希"]
+「いいよ、別に」[per]
 
 [fadeOutYuuki]
 
-*save13_48|�D��̖{���̘b
+*save13_48|優希の本当の話
 [afterLoad]
-[voidChar]�@���ɑ΂��āw���܂�x�ŁA���ɑ΂��āw������x�Ȃ̂��킩��Ȃ���b�B���R��b�͂���ȏ�i�W���Ȃ������B[per]
-*save13_49|�D��̖{���̘b
+[voidChar]　何に対して『すまん』で、何に対して『いいよ』なのかわからない会話。当然会話はそれ以上進展しなかった。[per]
+*save13_49|優希の本当の話
 [afterLoad]
-[voidChar]�@��������͂Ȃ������B�����ƗD��͂���Ȃ��̂���Ȃ��ƌ����Ǝv�����B[per]
-*save13_50|�D��̖{���̘b
+[voidChar]　同情するつもりはなかった。きっと優希はそんなものいらないと言うと思った。[per]
+*save13_50|優希の本当の話
 [afterLoad]
-[voidChar]�@����A����������Ɠ���ė~���������̂�������Ȃ����A����ŗD��̂Ȃɂ����ς��Ƃ͎v���Ȃ������B���̈����ۂ�����A���e�̎��ƌZ�̕a�ɂ��Ȃ��킯���Ȃ��̂��B[per]
-*save13_51|�D��̖{���̘b
+[voidChar]　いや、もしかすると同情して欲しかったのかもしれないが、それで優希のなにかが変わるとは思えなかった。俺の安っぽい同情が、両親の死と兄の病にかなうわけがないのだ。[per]
+*save13_51|優希の本当の話
 [afterLoad]
-[voidChar]�@�\�\�{���ɂ������H�@�Ȃɂ��ł��邱�Ƃ͂Ȃ��̂��H[per]
-*save13_52|�D��̖{���̘b
+[voidChar]　――本当にそうか？　なにかできることはないのか？[per]
+*save13_52|優希の本当の話
 [afterLoad]
-[voidChar]�@�Ȃɖ₢�����Ă��A�����͕Ԃ��Ă��Ȃ��B[per]
-*save13_53|�D��̖{���̘b
+[voidChar]　己に問いかけても、答えは返ってこない。[per]
+*save13_53|優希の本当の話
 [afterLoad]
-[voidChar]�@����ȂƂ��A�W���o���Ȃ�ǂ��������Ă���邾�낤���c�c[per]
-*save13_54|�D��̖{���̘b
+[voidChar]　こんなとき、ジョバンならどう解決してくれるだろうか……[per]
+*save13_54|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u��c�c�v[per]
-*save13_55|�D��̖{���̘b
+[drawName name="健二"]
+「ん……」[per]
+*save13_55|優希の本当の話
 [afterLoad]
-[voidChar]�@���������������ӂ����B����̉J�̎��C���܂񂾁A�g�̂ɂ܂Ƃ����悤�Ȃ˂΂��������B�C�����������B[per]
-*save13_56|�D��̖{���̘b
+[voidChar]　すこし強い風がふいた。昨日の雨の湿気を含んだ、身体にまとわりつくようなねばっこい風。気持ちが悪い。[per]
+*save13_56|優希の本当の話
 [afterLoad]
-[voidChar]�@���͏����Ƒ��ꂵ���������āA�㒅�̃{�^������O�����B[per]
-*save13_57|�D��̖{���̘b
+[voidChar]　俺は暑さと息苦しさを感じて、上着のボタンを一つ外した。[per]
+*save13_57|優希の本当の話
 [afterLoad]
-[drawName name="����"]
-�u�c�c���ق��v[per]
-*save13_58|�D��̖{���̘b
+[drawName name="健二"]
+「……こほっ」[per]
+*save13_58|優希の本当の話
 [afterLoad]
-[voidChar]�@�ςȊP���o���B�A�Ɉ�a����������B�����������畗�ׂ��Ђ����̂�������Ȃ��B���[�₾�ȁ[�A�a�@���Č����Ȃ񂾂�ȁ[�B[per]
-*save13_59|�D��̖{���̘b
+[voidChar]　変な咳が出た。喉に違和感を感じる。もしかしたら風邪をひいたのかもしれない。あーやだなー、病院って嫌いなんだよなー。[per]
+*save13_59|優希の本当の話
 [afterLoad]
-[voidChar]�@�~�J�ɂȂ����牮��ɗ��ɂ����Ȃ�Ȃ��Ƃ��l���Ȃ���A���͒������ԁA�D��Ɠ�l�Ō������グ�ĉ߂������B[per]
-*save13_60|�D��̖{���̘b
+[voidChar]　梅雨になったら屋上に来にくくなるなぁとか考えながら、俺は長い時間、優希と二人で月を見上げて過ごした。[per]
+*save13_60|優希の本当の話
 [afterLoad]
-[voidChar]�@���g���͂��̂܂܂ŁB�`�F�P���B[per]
+[voidChar]　周波数はそのままで。チェケラ。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���a�f�l�t�F�[�h�A�E�g
+;△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
-;���e���b�v�@�C��
+;☆テロップ　イン
 [telopIn]
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;○フェードアウト　１０００　ｆ　黒
 [FadeOutBlack time=1000 canskip=false]
 
-;���W�����v
+;☆ジャンプ
 [jump storage=14.ks]

@@ -1,236 +1,236 @@
 ;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
+;	Graduaters!　～グラディエイターズ！～
 ;
 
 *start
 
-;�����݁@�`��
+;■現在　冒頭
 
-*save|�I�[�v�j���O
+*save|オープニング
 
-;���E�F�C�g�@���@�Q�O�O�O
+;☆ウェイト　ｆ　２０００
 [wait time=2000 canskip=false]
 
-;���t���[���J���[�@�I�����W
+;☆フレームカラー　オレンジ
 [changeMessageFrameColor color=orange]
 
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
-*save1_0|�I�[�v�j���O
+*save1_0|オープニング
 [afterLoad]
-[voidChar]�@�l�ԁA�N�����l�Ɍ����Ȃ��閧�������Ă���ƁA���͎v���B[per]
-*save1_1|�I�[�v�j���O
+[voidChar]　人間、誰しも人に言えない秘密を持っていると、俺は思う。[per]
+*save1_1|オープニング
 [afterLoad]
-[voidChar]�@���͂��̎q�̂��Ƃ��D���Ȃ񂾁[�Ƃ��A������ƈ������Ƃ������Ƃ���[�Ƃ��A�܂����������́B[per]
-*save1_2|�I�[�v�j���O
+[voidChar]　実はあの子のことが好きなんだーとか、ちょっと悪いことしたことあるーとか、まぁそういうの。[per]
+*save1_2|オープニング
 [afterLoad]
-[voidChar]�@���̐��������낤�Ə��Ȃ��낤�ƁA���e���[�����낤�Ƃǂ��ł��������Ƃ��낤�ƁA���̐l�ɂƂ��Ă͂���Ȃ�ɑ厖�����炱���閧�ɂ��Ă���킯���B[per]
-*save1_3|�I�[�v�j���O
+[voidChar]　その数が多かろうと少なかろうと、内容が深刻だろうとどうでもいいことだろうと、その人にとってはそれなりに大事だからこそ秘密にしているわけだ。[per]
+*save1_3|オープニング
 [afterLoad]
-[voidChar]�@�Ƃ����킯�ŁA���R�Ȃ��牴�A[ruby text="�Ɓ@��"]��[ruby text="�@��"]��[ruby text="�@�@���@��"]��[ruby text="�@�@��"]��ɂ��A�閧���Ă̂�����B[per]
-*save1_4|�I�[�v�j���O
+[voidChar]　というわけで、当然ながら俺、[ruby text="と　き"]常[ruby text="　わ"]磐[ruby text="　　け　ん"]健[ruby text="　　じ"]二にも、秘密ってのがある。[per]
+*save1_4|オープニング
 [afterLoad]
-[voidChar]�@��ڂ́A���̎����̖{�I�A�����̃P�[�X�̒��ɂ���c�u�c�B[per]
-*save1_5|�I�[�v�j���O
+[voidChar]　一つ目は、寮の自室の本棚、辞書のケースの中にあるＤＶＤ。[per]
+*save1_5|オープニング
 [afterLoad]
-[voidChar]�@�e����̏��Ȃ��d�������肭�肵�A�����������m���ɑ��₵�Ă������鑠�̃R���N�V�������B[per]
-*save1_6|�I�[�v�j���O
+[voidChar]　親からの少ない仕送りをやりくりし、少しずつだが確実に増やしていった秘蔵のコレクションだ。[per]
+*save1_6|オープニング
 [afterLoad]
-[voidChar]�@���܂ɗ��̈��F�ǂ����؂�Ă������肷��B�����͓񔑎O���łQ�O�O�~�B�����^�����͎��̂c�u�c�̍w�������ƂȂ�̂ŁA���Ƃ݂�ȐϋɓI�Ɏ؂�ɗ���B[per]
-*save1_7|�I�[�v�j���O
+[voidChar]　たまに寮の悪友どもが借りていったりする。料金は二泊三日で２００円。レンタル料は次のＤＶＤの購入資源となるので、割とみんな積極的に借りに来る。[per]
+*save1_7|オープニング
 [afterLoad]
-[voidChar]�@��ڂ́A���̓J�i�d�`�ŉj���Ȃ����ƁB[per]
-*save1_8|�I�[�v�j���O
+[voidChar]　二つ目は、実はカナヅチで泳げないこと。[per]
+*save1_8|オープニング
 [afterLoad]
-[voidChar]�@�ꉞ����������Ă����ƁA�q���̂���A�Ƒ��ŊC�ɗ��Ă������͂��ڂ�Ď��ɂ������̂��B[per]
-*save1_9|�I�[�v�j���O
+[voidChar]　一応言い訳をしておくと、子供のころ、家族で海に来ていた俺はおぼれて死にかけたのだ。[per]
+*save1_9|オープニング
 [afterLoad]
-[voidChar]�@����}�W�ŁB�R�ł���k�ł��Ȃ��A�ۈ���ӎ����Ȃ������Ƃ������狰�낵���B�悭���ȂȂ������ȉ��B[per]
-*save1_10|�I�[�v�j���O
+[voidChar]　いやマジで。嘘でも冗談でもなく、丸一日意識がなかったというから恐ろしい。よく死ななかったな俺。[per]
+*save1_10|オープニング
 [afterLoad]
-[voidChar]�@�ŁA���ꂩ��Ƃ������́A�����ς�j���Ȃ��Ȃ����Ƃ����킯���B[per]
-*save1_11|�I�[�v�j���O
+[voidChar]　で、それからというもの、さっぱり泳げなくなったというわけだ。[per]
+*save1_11|オープニング
 [afterLoad]
-[voidChar]�@���R������Ƃ͂����A���̔N��ŉj���Ȃ����Ă����̂͌��\�p���������B�K���A�����̊w�Z�ł͐��j�̎��Ƃ͂Ȃ��̂ŁA�Ȃ�Ƃ��O�N�ԉB���ʂ����Ƃ��ł����B[per]
-*save1_12|�I�[�v�j���O
+[voidChar]　理由があるとはいえ、この年齢で泳げないっていうのは結構恥ずかしい。幸い、うちの学校では水泳の授業はないので、なんとか三年間隠し通すことができた。[per]
+*save1_12|オープニング
 [afterLoad]
-[voidChar]�@�����ĎO�ځB[per]
-*save1_13|�I�[�v�j���O
+[voidChar]　そして三つ目。[per]
+*save1_13|オープニング
 [afterLoad]
-[voidChar]�@���͊��Ƃ�������イ�A�w�����𔲂��o���āA��̊w�Z�ɔE�э���ł���\�\[per]
+[voidChar]　俺は割としょっちゅう、学生寮を抜け出して、夜の学校に忍び込んでいる――[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;��;�e���b�v�@�C��
-;��;�e���b�v�@�A�E�g
-;���~�j���S�P
+;☆;テロップ　イン
+;☆;テロップ　アウト
+;☆ミニロゴ１
 [intermission1]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save1_14|�I�[�v�j���O
+*save1_14|オープニング
 [afterLoad]
-[voidChar]�@������߂āA����̗l�q�����������B�l�̋C�z�͂Ȃ��������B[per]
-*save1_15|�I�[�v�j���O
+[voidChar]　息を潜めて、周りの様子をうかがう。人の気配はなさそうだ。[per]
+*save1_15|オープニング
 [afterLoad]
-[voidChar]�@�����͌ߌ�X�������O�B��������������A���E�����S���A�������B[per]
-*save1_16|�I�[�v�j���O
+[voidChar]　時刻は午後９時少し前。寮も門限をすぎ、教職員も全員帰宅したころ。[per]
+*save1_16|オープニング
 [afterLoad]
-[voidChar]�@[playse storage=SE15 buf=1 loop=false]��K�̔��p���̑����K�^�K�^�Ɨh�炵�Č����J���A�w�Z�֔E�э��ށB[per]
-*save1_17|�I�[�v�j���O
+[voidChar]　[playse storage=SE15 buf=1 loop=false]一階の美術室の窓をガタガタと揺らして鍵を開け、学校へ忍び込む。[per]
+*save1_17|オープニング
 [afterLoad]
-[voidChar]�@�����͏h���̐搶�����Ȃ��͂��Ȃ̂ŁA�E�э��݂�������Έ��S���B[per]
-*save1_18|�I�[�v�j���O
+[voidChar]　今日は宿直の先生もいないはずなので、忍び込みさえすれば安全だ。[per]
+*save1_18|オープニング
 [afterLoad]
-[voidChar]�@���S�Ȃ̂����c�c[per]
+[voidChar]　安全なのだが……[per]
 
-;������
+;△走る
 [playse storage=SE13 buf=2 loop=true]
 
-*save1_19|�I�[�v�j���O
+*save1_19|オープニング
 [afterLoad]
-[drawName name="����"]
-�u�͂��A�͂��A�͂��c�c�v[per]
-*save1_20|�I�[�v�j���O
+[drawName name="健二"]
+「はぁ、はぁ、はぁ……」[per]
+*save1_20|オープニング
 [afterLoad]
-[voidChar]�@�`�N�V���E�B���S�Ȃ̂͊ԈႢ�Ȃ����A���ɂ���č����A����������Ȏ��ԂɌĂяo���Ƃ́A�����������l���Ă�񂾁B[per]
+[voidChar]　チクショウ。安全なのは間違いないが、よりによって今日、しかもこんな時間に呼び出すとは、あいつも何を考えてるんだ。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���ړ��@�L��
+;○移動　廊下
 [cb2 storage=hall]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save1_21|�I�[�v�j���O
+*save1_21|オープニング
 [afterLoad]
-[voidChar]�@���p�����o�āA�L���𑖂�B[per]
-*save1_22|�I�[�v�j���O
+[voidChar]　美術室を出て、廊下を走る。[per]
+*save1_22|オープニング
 [afterLoad]
-[voidChar]�@�҂����킹�̎��Ԃ܂ł��Ə�������͂������A�����͒x���Ɍ������B[per]
-*save1_23|�I�[�v�j���O
+[voidChar]　待ち合わせの時間まであと少しあるはずだが、あいつは遅刻に厳しい。[per]
+*save1_23|オープニング
 [afterLoad]
-[voidChar]�@�x��悤���̂Ȃ牴�̈ӌ��Ȃ�ĕЂ��[���疳���A�����ƂƂ�ł��Ȃ����������Ă���ɈႢ�Ȃ��̂��B[per]
+[voidChar]　遅れようものなら俺の意見なんて片っ端から無視、きっととんでもない注文をつけてくるに違いないのだ。[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���ړ��@�L��
+;○移動　廊下
 [cb2 storage=hall]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save1_24|�I�[�v�j���O
+*save1_24|オープニング
 [afterLoad]
-[drawName name="����"]
-�u�͂��A�͂��A�͂��c�c�v[per]
-*save1_25|�I�[�v�j���O
+[drawName name="健二"]
+「はぁ、はぁ、はぁ……」[per]
+*save1_25|オープニング
 [afterLoad]
-[voidChar]�@�L���𔲂��A�K�i���i�Ƃ΂��ŋ삯�オ��B[per]
-*save1_26|�I�[�v�j���O
+[voidChar]　廊下を抜け、階段を二段とばしで駆け上がる。[per]
+*save1_26|オープニング
 [afterLoad]
-[voidChar]�@���E�̋߂������ɗ͂����߁A���ڎw���B[per]
-*save1_27|�I�[�v�j���O
+[voidChar]　限界の近い両足に力をこめ、上を目指す。[per]
+*save1_27|オープニング
 [afterLoad]
-[voidChar]�@�Ăяo���̃��[���ɋC�Â����̂����������B�����̖ڂ����܂����ė��𔲂������A�����֗���܂łقڑS�͎������B[per]
-*save1_28|�I�[�v�j���O
+[voidChar]　呼び出しのメールに気づいたのがついさっき。寮長の目をごまかして寮を抜けだし、ここへ来るまでほぼ全力疾走だ。[per]
+*save1_28|オープニング
 [afterLoad]
-[voidChar]�@�x�������ށB[per]
-*save1_29|�I�[�v�j���O
+[voidChar]　肺がきしむ。[per]
+*save1_29|オープニング
 [afterLoad]
-[voidChar]�@�����͂��łɓ��_�Ђ����B[per]
-*save1_30|�I�[�v�j���O
+[voidChar]　両足はすでに乳酸漬けだ。[per]
+*save1_30|オープニング
 [afterLoad]
-[drawName name="����"]
-�u�͂��A�͂��A�͂��c�c�v[per]
-*save1_31|�I�[�v�j���O
+[drawName name="健二"]
+「はぁ、はぁ、はぁ……」[per]
+*save1_31|オープニング
 [afterLoad]
-[voidChar]�@�ł��A����ł��A�}���A�}���A�}���\�\[per]
+[voidChar]　でも、それでも、急ぐ、急ぐ、急ぐ――[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;☆メッセージフレーム　アウト
 [fadeOutMessageFrame]
-;���ړ��@��
+;○移動　黒
 [cb2 storage=black]
-;�����b�Z�[�W�t���[���@�C��
+;☆メッセージフレーム　イン
 [fadeInMessageFrame]
 
-*save1_32|�I�[�v�j���O
+*save1_32|オープニング
 [afterLoad]
-[voidChar]�@���Ԃ�A�����ɂ͂��Ȃ����낤�B[per]
-*save1_33|�I�[�v�j���O
+[voidChar]　たぶん、教室にはいないだろう。[per]
+*save1_33|オープニング
 [afterLoad]
-[voidChar]�@����������Ƃ�����A�����炭�l�K�̂���ɏ�B[per]
-*save1_34|�I�[�v�j���O
+[voidChar]　あいつがいるとしたら、おそらく四階のさらに上。[per]
+*save1_34|オープニング
 [afterLoad]
-[drawName name="����"]
-�u���A��c�c�I�v[per]
-*save1_35|�I�[�v�j���O
+[drawName name="健二"]
+「屋、上……！」[per]
+*save1_35|オープニング
 [afterLoad]
-[voidChar]�@�l�K�̊K�i�ɍ��ꂽ�A��������֎~�̍�𒵂щz����B[per]
-*save1_36|�I�[�v�j���O
+[voidChar]　四階の階段に作られた、立ち入り禁止の柵を跳び越える。[per]
+*save1_36|オープニング
 [afterLoad]
-[voidChar]�@�c��̊K�i����C�ɋ삯�オ��A����ւ̃h�A���J�����\�\[per]
+[voidChar]　残りの階段を一気に駆け上がり、屋上へのドアを開けた――[per]
 
-;���~�܂�
+;△止まる
 [stopse buf=2]
-;������h�A
+;△屋上ドア
 [playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
-;���t�F�[�h�@��
+;○フェード　白
 [cb storage=white]
-;��;�E�F�C�g�@�P�O�O�O
+;☆;ウェイト　１０００
 [wait time=2000 canskip=false]
 
-*save1_37|�I�[�v�j���O
+*save1_37|オープニング
 [afterLoad]
-[voidChar]�@�h�A���J�����Ƃ���A���E���^�����ɐ��܂�B[per]
+[voidChar]　ドアを開けたとたん、視界が真っ白に染まる。[per]
 
-*save1_38|�I�[�v�j���O
+*save1_38|オープニング
 [afterLoad]
-[voidChar]�@[playse storage=SE09 buf=1 loop=false]�p���b�I[per]
-*save1_39|�I�[�v�j���O
+[voidChar]　[playse storage=SE09 buf=1 loop=false]パンッ！[per]
+*save1_39|オープニング
 [afterLoad]
-[voidChar]�@���̉��́c�N���b�J�[�H[per]
-*save1_40|�I�[�v�j���O
+[voidChar]　この音は…クラッカー？[per]
+*save1_40|オープニング
 [afterLoad]
-[drawName name="������"]
-�u����v[per]
+[drawName name="明日香"]
+「健二」[per]
 
-;�����E�񕜁@�V�T�p�[�Z���g
+;☆視界回復　７５パーセント
 [whiteView opacity=192 storage=chara_A02]
 
-*save1_41|�I�[�v�j���O
+*save1_41|オープニング
 [afterLoad]
-[voidChar]�@���E�����X�ɖ߂��Ă䂭�B[per]
+[voidChar]　視界が徐々に戻ってゆく。[per]
 
-;�����E�񕜁@�T�O�p�[�Z���g
+;☆視界回復　５０パーセント
 [whiteView opacity=128 storage=chara_A02]
 
-*save1_42|�I�[�v�j���O
+*save1_42|オープニング
 [afterLoad]
-[voidChar]�@�����Ĕޏ��́A�����ɂ����B[per]
-*save1_43|�I�[�v�j���O
+[voidChar]　そして彼女は、そこにいた。[per]
+*save1_43|オープニング
 [afterLoad]
-[drawName name="������"]
-�u���Ƃ��߂łƂ��A����v[per]
+[drawName name="明日香"]
+「卒業おめでとう、健二」[per]
 
-*save1_44|�I�[�v�j���O
+*save1_44|オープニング
 [afterLoad]
-[voidChar]�@�܂Ԃ����āA�������̊炪�悭�����Ȃ��B[per]
-*save1_45|�I�[�v�j���O
+[voidChar]　まぶしくて、明日香の顔がよく見えない。[per]
+*save1_45|オープニング
 [afterLoad]
-[voidChar]�@�\�\�����A�₯�ɘL�������邢�Ǝv������B[per]
-*save1_46|�I�[�v�j���O
+[voidChar]　――ああ、やけに廊下が明るいと思ったら。[per]
+*save1_46|オープニング
 [afterLoad]
-[voidChar]�@����́A��������Ȃɂ��ꂢ����Ȃ����\�\[per]
+[voidChar]　今夜は、月がこんなにきれいじゃないか――[per]
 
-;�����E�񕜁@�I��
+;☆視界回復　終了
 [endWhiteView]
 
-;���t�F�[�h�A�E�g�@�P�T�O�O�@���@��
+;○フェードアウト　１５００　ｆ　白
 [FadeOutWhite time=1500 canskip=false]
 
-;���t�F�[�h�A�E�g�@�P�T�O�O�@���@��
+;○フェードアウト　１５００　ｆ　黒
 [FadeOutBlack time=1500 canskip=false]
 
-;���W�����v
+;☆ジャンプ
 [jump storage=2.ks]
 [s]

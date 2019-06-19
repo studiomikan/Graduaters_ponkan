@@ -1,718 +1,967 @@
-;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
-;
-;	�ߋ��F�D��̎��E
-;		����@�D��
-;		����͗D��̌Z�����񂾂Ƃ����\�����ɂ���B
-;		����ȗ\������������͉����ڎw���B
-;		�����ɂ����D��́A����ɍŌ�̎�������āA���̐�������B
-;
+#
+#	Graduaters!　～グラディエイターズ！～
+#
+#	過去：優希の自殺
+#		健二　優希
+#		健二は優希の兄が死んだという噂を耳にする。
+#		いやな予感がした健二は屋上を目指す。
+#		そこにいた優希は、健二に最後の質問をして、この世を去る。
+#
 
 *start
 
-;���ߋ��F�D��̎��E
-*save|�D��@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@
+#■過去：優希の自殺
 
-;���~�j���S�P
 
-;���t���[���J���[�@��
+#☆ミニロゴ１
+[intermission1]
+#☆フレームカラー　青
+[changeMessageFrameColor color=blue]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-;�����b�Z�[�W�t���[���@�C��
 
 
-*save16_0|�D��
+;noname
+最近ここに来るときはあまり楽しいことがないな、と俺は思った。
+;endpage
 
-�@�ŋ߂����ɗ���Ƃ��͂��܂�y�������Ƃ��Ȃ��ȁA���B[per]
-*save16_1|�D��
 
-�@�����ʂ��Ă���a�@���玩�]�Ԃ�������΂��ĂP�O���B���̎��]�Ԓu���ꂩ�璼�ݔ��p���O�B[per]
-*save16_2|�D��
+;noname
+いつも通っている病院から自転車をかっ飛ばして１０分。寮の自転車置き場から直接来て、現在美術室前。
+;endpage
 
-�@�Â��ɂ��v���ɑ����J���A��̊w�Z�ɍ~per]
-*save16_3|�D��
 
-�@�}���Ȃ���΁B�ڂ�����Ȃ��܂܈����per]
+;noname
+[playse storage=SE15 buf=1 loop=false]静かにかつ迅速に窓を開け、夜の学校に降り立つ。
+;endpage
 
-;���R��΂�
 
-*save16_4|�D��
+;noname
+急がなければ。目が慣れないまま一歩踏み出す。
+;endpage
 
-[drawName name="����"]
-�u�����Ă��I]
-*save16_5|�D��
+#△蹴飛ばす
 
-�@�����Ȃɂ��R��΂��Ă��܂����B�X[per]
-*save16_6|�D��
 
-�@���p�̔��l���t�i����搶�E�����j�ɐS�̒��Ŏӂ�A���p�����B[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;kenji
+「いってぇ！」
+;endpage
 
-;���ړ��@�L��
 
-;������
+;noname
+早速なにやら蹴飛ばしてしまった。スネ痛ぇ……
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+美術の美人教師（立川先生・既婚）に心の中で謝りつつ、美術室を飛び出した。
+;endpage
 
-*save16_7|�D��
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○移動　廊下
+[cb2 storage=hall]
+#△走る
+[playse storage=SE13 buf=2 loop=true]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-[drawName name="����"]
-�u�������A�A��Ȃ߂�Ȃ�R���`�N�Vper]
-*save16_8|�D��
 
-�@���ɂ��J�N���Ɣ��������ȕG�𕱂���������B[per]
-*save16_9|�D��
 
-�@�����������X�����Ă��d���Ȃ����ǁA����Ȃ��ƂȂ畁�i����񂾂����I[per]
+;kenji
+「くっそ、帰宅部なめるなよコンチクショウ！」
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���ړ��@�L��
+;noname
+今にもカクンと抜けそうな膝を奮い立たせるように叫ぶ。
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+あぁもう今更言っても仕方ないけど、こんなことなら普段から運動しとくんだった！
+;endpage
 
-*save16_10|�D��
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○移動　廊下
+[cb2 storage=hall]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-[drawName name="����"]
-�u�͂��c�c�͂��c�c�͂��c�cr]
-*save16_11|�D��
 
-�@�K�i���i��΂��ŋ삯�オr]
-*save16_12|�D��
 
-�@�}���B
+;kenji
+「はぁ……はぁ……はあ……！」
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���ړ��@�L��
+;noname
+階段を二段飛ばしで駆け上がる。
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+急げ。
+;endpage
 
-*save16_13|�D��
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○移動　廊下
+[cb2 storage=hall]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-�@���܂��܍s�����a�@�ŁA���܂��ܘb�𕷂����B�Ȃ�ł����������A���@���҂��a�������э~�莩�E�����炵���B���̂����ł���������Ă����B[per]
-*save16_14|�D��
 
-�@�ŏ��͗D�󂪔�э~�肽�̂��Ǝv���Ђ���Ƃ������A�D��Ȃ�w�Z�̂͂����B����������Ȃ�A�肽�̂��H[per]
-*save16_15|�D��
 
-�@�猩�m��̊Ō�t�̂��΂���̌��������O�́A�\�z�ʂ肽�B[per]
-*save16_16|�D��
+;noname
+たまたま行った病院で、たまたま話を聞いた。なんでもついさっき、入院患者が病室から飛び降り自殺したらしい。そのせいで入り口付近が封鎖されていた。
+;endpage
 
-�@��э~�肽�̂́A�O�}[ruby text="�E"]��[ruby te"]��B[per]
-*save16_17|�D��
 
-�@�D��̂��Z����]
+;noname
+最初は優希が飛び降りたのかと思いひやっとしたが、優希なら学校のはずだ。しかしそれなら、誰が飛び降りたのか？
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���ړ��@�L��
+;noname
+顔見知りの看護師のおばさんの言った名前は、予想通りの名前だった。
+;endpage
 
-;���ړ��@��
 
-;�����b�Z�[�W�t���[���@�C��
+;noname
+飛び降りたのは、三笠[ruby text="・"]く[ruby text="・"]ん。
+;endpage
 
 
-*save16_18|�D��
+;noname
+優希のお兄さん。
+;endpage
 
-�@��������֎~�̍���A����̃n�[�h���̂悤�ɁB[per]
-*save16_19|�D��
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○移動　廊下
+[cb2 storage=hall]
+#○移動　黒
+[cb2 storage=black]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-[drawName name="����"]
-		
-�u���ł��I]
-*save16_20|�D��
 
-�@�򂪐����悭�|���B�������傤�A���������Ђ������B[per]
-*save16_21|�D��
 
-�@�����A���Ə����A���̊K�i�����[per]
-*save16_22|�D��
+;noname
+立ち入り禁止の柵を、陸上のハードルのように飛び越える。
+;endpage
 
-�@�΂��G���m�Ɋ�������B�A��Ȃ�per]
-*save16_23|�D��
 
-�@�Ō�̗͂��ӂ肵�ڂ�悤�ɂ��Ĉ�C�ɓo��؂�A�v���؂�h�\�\[per]
+;kenji
+		[quake time=500 timemode=ms hmax=10 vmax=50]
+「あでっ！」
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���~�܂�
+;noname
+柵が勢いよく倒れる。ちくしょう、抜き足がひっかかっちまった。
+;endpage
 
-;������h�A
 
-;���t�F�[�h�A�E�g�@�P�T�O�O�@���@��
+;noname
+くそ、あと少し、この階段を上りきれば――
+;endpage
 
-;���t�F�[�h�@���@����
 
+;noname
+笑う膝小僧に喝を入れる。帰宅部なめるなよ。
+;endpage
 
-;���Y�[���@����
 
-;�����b�Z�[�W�t���[���@�C��
+;noname
+最後の力をふりしぼるようにして一気に登り切り、思い切りドアを開けた――
+;endpage
 
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#△止まる
+[stopse buf=2]
+#△屋上ドア
+[playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
+#○フェードアウト　１５００　ｆ　白
+[FadeOutWhite time=1500 canskip=false]
+#○フェード　ｆ　屋上
+[cb storage=roof canskip=false]
 
-*save16_24|�D��
+#○ズーム　屋上
+[zoomInRoof]
+#☆メッセージフレーム　イン
+;fadein_mes
 
-�@�����Ă�͂�ޏ��\�\�D��́A�����^���N��[per]
-*save16_25|�D��
 
-�@�悩�����A�Ԃɍ������B�������܂����S�B[per]
-*save16_26|�D��
 
-�@�r���ċz�ƐS���𖳗������������悤�ɐ[�ċz���A�����̏Ί炫�����B[per]
-*save16_27|�D��
+;noname
+そしてやはり彼女――優希は、貯水タンクの側にいた。
+;endpage
 
-[drawName name="����"]
-�u�c�c�D��v
 
-*save16_28|�D��
+;noname
+よかった、間に合った。しかしまだ安心はできない。
+;endpage
 
-[drawName name="�D��"]
-�u����B�҂��Ă�]
-*save16_29|�D��
 
-[drawName name="����"]
-�u�҂��Ă��c�c�H]
+;noname
+荒い呼吸と心臓を無理矢理落ち着けるように深呼吸し、いつもの笑顔の優希と向き合う。
+;endpage
 
-*save16_30|�D��
 
-[drawName name="�D��"]
-�u����B��ւ���Ȃ�A���Ă����Ǝv��[per]
-*save16_31|�D��
+;kenji
+「……優希」
+;endpage
+[fadeInYuuki num=2 pos=center time=500]
 
-[drawName name="����"]
-�u�c�c����A���Ȃ�������ǂ�������肾��[per]
 
-*save16_32|�D��
+;yuuki
+「うん。待ってた」
+;endpage
 
-[drawName name="�D��"]
-�u���v�A�����Ǝ��Ԍ��߂đ҂��Ă�����B�ق�A���܂ő҂��Ă��畗�����ˁv[per]
-*save16_33|�D��
 
-[drawName name="����"]
-�u���[�A�܂����ׂ͂悭�Ȃ��ȁA��er]
+;kenji
+「待ってた……？」
+;endpage
+[yuuki num=2 pos=center]
 
-*save16_34|�D��
 
-[drawName name="�D��"]
-�u����ˁA���ׂЂ���������炵���[per]
-*save16_35|�D��
+;yuuki
+「うん。常磐くんなら、来てくれると思ってたから」
+;endpage
 
-[drawName name="����"]
-�u�������ȁA���Ă������͂�����per]
 
-*save16_36|�D��
+;kenji
+「……いや、来なかったらどうするつもりだったんだよ」
+;endpage
+[yuuki num=2 pos=center]
 
-[drawName name="�D��"]
-�u�Z����A���񂶂������r]
-*save16_37|�D��
 
-�@��b�̗�����Ԃ��؂��āA�D��͏Ί�ŌZ�̎�[per]
-*save16_38|�D��
+;yuuki
+「大丈夫、ちゃんと時間決めて待ってたから。ほら、朝まで待ってたら風邪ひいちゃうしね」
+;endpage
 
-[drawName name="����"]
-�u�����A�������a�@�ŕ�er]
 
-*save16_39|�D��
+;kenji
+「あー、まぁ風邪はよくないな、風邪は」
+;endpage
+[yuuki num=5 pos=center]
 
-[drawName name="�D��"]
-�u�������H�@���̎��Ԃ͖ʉ�͂��ĂȂ��͂���[per]
-*save16_40|�D��
 
-[drawName name="����"]
-�u�c�c�c�c�c�c�v
+;yuuki
+「だよね、風邪ひいちゃったらしんどいもんね」
+;endpage
 
-*save16_41|�D��
 
-[drawName name="�D��"]
-�u�܂��������B��Ղ���ɂ����낢�날����Ă��Ƃ��낤����A�F���͂��Ȃ��ˁB�ł��Ȃ�b���������ȁv[per]
-*save16_42|�D��
+;kenji
+「そうだな、ってか今日はすこし寒いな」
+;endpage
+[yuuki num=5 pos=center]
 
-[drawName name="����"]
-�u�ǂ����ĂȂ�r]
 
-*save16_43|�D��
+;yuuki
+「兄さん、死んじゃったんだ」
+;endpage
 
-[drawName name="�D��"]
-�u����H]
-*save16_44|�D��
 
-[drawName name="����"]
-�u�ǂ����Ă��Z���񂪔�э~���B������������Ȃ����B���Z����̐S�͐��^�����̎q�����A��тȂ�ĂȂ��͂����v[per]
-*save16_45|�D��
+;noname
+会話の流れをぶち切って、優希は笑顔で兄の死を語った。
+;endpage
 
-�@�����A���������̂��B���̂̌��ǂŎO�Ύ��ɂȂ��Ă���D��̂��Z���񂪁A����̈ӎu�Ŕ�э~�̂͂��蓾�Ȃ��B[per]
-*save16_46|�D��
 
-�@�����I�Ȏ��̂̉\�����[������Ȃ����A�Ō�w�̂��΂���́w���̂��������x�ł͂Ȃ��w���E�����x�ƌ������B����Ȃ�ɂĂ����������̂��낤�B[per]
-*save16_47|�D��
+;kenji
+「ああ、さっき病院で聞いた」
+;endpage
+[yuuki num=1 pos=center]
 
-�@����ɁA�ނ̕a�󂩂�a���̑��͏�ɕ����Ă��āA�h�Ɨp�̃O�b�Y�Ȃǂ��g���ă��b�N���B[per]
-*save16_48|�D��
 
-�@�܂�ނ́A���̃��b�N���O���A�����J���A��񂾂Ƃ�����[per]
+;yuuki
+「さっき？　この時間は面会はしてないはずだけど……」
+;endpage
 
-*save16_49|�D��
 
-[drawName name="�D��"]
-�u����A�������ˁB�O�Ύ��͎��E���Ȃ��B�Z����͎��v[per]
-*save16_50|�D��
+;kenji
+「………………」
+;endpage
+[yuuki num=2 pos=center]
 
-[drawName name="����"]
-�u���Ⴀ�ǂ���r]
 
-*save16_51|�D��
+;yuuki
+「まぁいっか。常盤くんにもいろいろあるってことだろうから、詮索はしないね。でも、知ってるなら話が早いかな」
+;endpage
 
-[drawName name="�D��"]
-�u�ł��ˁA�����̈ӎu�Ŕ�э~�肿������񂾂�A�Zper]
-*save16_52|�D��
 
-�@�����̈ӎu�Ŕ�э~��r]
-*save16_53|�D��
+;kenji
+「どうしてなんだ？」
+;endpage
+[yuuki num=1 pos=center]
 
-�@�܂肻��́A�O�Ύ��ł͂Ȃ���l�������Ƃ�per]
-*save16_54|�D��
 
-�@���Z����́A�a���̑�����g�𓊂��o�����Ƃ��A���C�ɖ߂��Ă����Ƃ̂��B[per]
-*save16_55|�D��
+;yuuki
+「うん？」
+;endpage
 
-[drawName name="����"]
-�u�ł��ǂ����Ă����er]
 
-*save16_56|�D��
+;kenji
+「どうしてお兄さんが飛び降りる。おかしいじゃないか。お兄さんの心は正真正銘の子供だ、飛び降りる理由なんてないはずだ」
+;endpage
 
-[drawName name="�D��"]
-�u�����ˁA������������񂾁B�Zper]
-*save16_57|�D��
 
-[drawName name="����"]
-�u���������āA��er]
+;noname
+そう、おかしいのだ。事故の後遺症で三歳児になっている優希のお兄さんが、自らの意志で飛び降りるなんてのはあり得ない。
+;endpage
 
-*save16_58|�D��
 
-[drawName name="�D��"]
-�u���͍��A���ɂ����񂾂��āB���e�͎��񂶂�������ǁA�ł��Z���񂪂��邩�玀�ʂ킯�ɂ͂����Ȃ��˂��āB������Ƌ�s����������񂾁B�����������񂶂�Ȃ����ȁv[per]
-*save16_59|�D��
+;noname
+偶発的な事故の可能性もゼロじゃないが、看護婦のおばさんは『事故があった』ではなく『自殺した』と言った。それなりに根拠があってそう言ったのだろう。
+;endpage
 
-[drawName name="����"]
-�u����́c�c���̂��Ƃ�r]
 
-*save16_60|�D��
+;noname
+それに、彼の病状から病室の窓は常に閉じられていて、防犯用のグッズなどを使ってロックもかけていた。
+;endpage
 
-[drawName name="�D��"]
-�u��������]
-*save16_61|�D��
 
-�@���ꂶ�Ⴀ�A����������������K���O�ɁA�D��������̂��B[per]
-*save16_62|�D��
+;noname
+つまり彼は、そのロックを外し、鍵を開け、飛んだということになる。
+;endpage
+[yuuki num=2 pos=center]
 
-�@�����ĕa���Ŗ{�l��O�ɂ��Ė{�S�����炵�A���Z����͑ς�����Ȃ��Ȃ����B[per]
-*save16_63|�D��
 
-[drawName name="����"]
-�u�ˑR���C�ɖ߂���āA����Ȃ��Ƃ��Ă���per]
+;yuuki
+「うん、そうだね。三歳児は自殺しない。兄さんは自殺できない」
+;endpage
 
-*save16_64|�D��
 
-[drawName name="�D��"]
-�u�킩��Ȃ��B�Z����̗c���ލs�́A���_�I�Ȃ��̂Ɛg�̓I�Ȃ��́A�����̌������l��������Č����Ă��B�����狭���V���b�΁A���邢�́v[per]
+;kenji
+「じゃあどうして」
+;endpage
+[yuuki num=2 pos=center]
 
 
+;yuuki
+「でもね、自分の意志で飛び降りちゃったんだよ、兄さんは」
+;endpage
 
-*save16_65|�D��
 
-�@�܂肱�����B���Z����́A���̂ŕ���������Ƃ����g�̓I�ȏ��ƁA���e��S�������Ƃ������_�I�ȏ��𓯎��ɕ����A���g����鉯�������q���ɂȂ����B[per]
-*save16_66|�D��
+;noname
+自分の意志で飛び降りた。
+;endpage
 
-�@�q���ɂȂ邱�ƂŁA���Ȃ��Ƃ����Ȃ��ƂƂ��ė�������K�v���Ȃ��Ȃ�B�����ł��Ȃ��Ȃ�B�킩��Ȃ���Ȃ��B���ɍ����I�B[per]
-*save16_67|�D��
 
-�@�������ނɂ��ǂ����Ɏ��䂪�c���Ă����̂��B�����A���̖��ł���D��Ɂw���e�̎��x�Ɓw���̎��E��]�x�Ƃ������e�𓊁A���̎��͑ł��ӂ��ꂽ�B[per]
-*save16_68|�D��
+;noname
+つまりそれは、三歳児ではなく大人だったということ。
+;endpage
 
-�@�����������ނɐ����Ă����p�͂Ȃ��B�����łȂ��Ă��A���̐��_�͔敾���Ă䂫�A���Ă����Ƃ��낤�B[per]
-*save16_69|�D��
 
-�@�l�Ɏ��Ȃ�A�c���ꂽ�l�̋ꂵ�݂ɂ͂���قǂ̏d[per]
-*save16_70|�D��
+;noname
+お兄さんは、病室の窓から身を投げ出したとき、正気に戻っていたということなのか。
+;endpage
 
-�@���������̌��ʂł́A��per]
 
-*save16_71|�D��
+;kenji
+「でもどうしてそんな急に」
+;endpage
+[yuuki num=2 pos=center]
 
-[drawName name="�D��"]
-�u�����E�����������r]
-*save16_72|�D��
 
-�@�D�󂪁A����̌Z�����ɒǂ���������̂悤�ł�per]
-*save16_73|�D��
+;yuuki
+「私がね、言っちゃったんだ。兄さんに」
+;endpage
 
-[drawName name="����"]
-�u�Ⴄ�B�D��̂��������r]
 
-*save16_74|�D��
+;kenji
+「言ったって、なにを」
+;endpage
+[yuuki num=2 pos=center]
 
-[drawName name="�D��"]
-�u���肪�Ƃ��B�ł��ˁA�ǂ����ɂ��Ă��_��per]
-*save16_75|�D��
 
-�@��͂�Ί�̂܂܂ŁA�ޏ��͌�r]
+;yuuki
+「私は今、死にたいんだって。両親は死んじゃったけど、でも兄さんがいるから死ぬわけにはいかないねって。ちょっと愚痴っちゃったんだ。それがきっかけだったんじゃないかな」
+;endpage
 
-*save16_76|�D��
 
-[drawName name="�D��"]
-�u���A�����Ǝ���ł��܂��������Ďv���Ă��B���ǎ��˂Ȃ������̂́A�Z���񂪂�������B���̎��̂Ŏ������𕉂����Z���񂪁v[per]
+;kenji
+「それは……いつのことだ？」
+;endpage
+[yuuki num=2 pos=center]
 
-*save16_77|�D��
 
-[drawName name="�D��"]
-�u���ɂƂ��ČZ����͑��g�ł����Ȃ������B���͔�ї��������̂ɁA�������Z���񂪎��̑�����������ƈ����Ĕ�΂��Ă���Ȃ������B�a���֍s���������Ă��B�Ȃ�Ő����Ă�̂��āv[per]
+;yuuki
+「今日だよ」
+;endpage
 
-*save16_78|�D��
 
-[drawName name="�D��"]
-�u�������̂��Ƃ��邽�тɁA�������΂��ď������Z���񂪁A�����̋]���𖳑ʂɂ���̂��Ǝ���ӂ߂Ă���悤�Ɋ����āA�Ō�̂��Ă����ݏo���Ȃ������v[per]
+;noname
+それじゃあ、今日俺があそこを訪れる前に、優希もそこに来ていたのか。
+;endpage
 
-*save16_79|�D��
 
-[drawName name="�D��"]
-�u�Z����ɂ͐����Ă��ė~�����Ƃ��v�������A�E�������قǎז����Ƃ��v�����B�������Ă邯�����̂���ˁv[per]
-*save16_80|�D��
+;noname
+そして病室で本人を前にして本心をさらし、お兄さんは耐えきれなくなって飛び降りた。
+;endpage
 
-[drawName name="����"]
-�u�������ȁcr]
 
-*save16_81|�D��
+;kenji
+「突然正気に戻るって、そんなことってあるのか？」
+;endpage
+[yuuki num=2 pos=center]
 
-[drawName name="�D��"]
-�u�ł����ɂȂ��Ďv����A�Z������ꂵ�������񂾂��āB���R����ˁA���ƂȂ�ɂ��ς��Ȃ�����B�ł����͋C�Â��ȂÂ��Ȃ��ӂ�����Ă��v[per]
 
+;yuuki
+「わからない。兄さんの幼児退行は、精神的なものと身体的なもの、両方の原因が考えられるって言ってた。だから強いショックをうければ、あるいは」
+;endpage
 
+[fadeOutYuuki]
 
-*save16_82|�D��
 
-�@�Ί�Řb��������D��ɑς���ꂸ�A���͎���[per]
-*save16_83|�D��
 
-�@�w���킢����]
-*save16_84|�D��
+;noname
+つまりこうだ。お兄さんは、事故で負った怪我という身体的な傷と、両親を亡くしたという精神的な傷を同時に負い、自身を守るために、記憶を失い子供になった。
+;endpage
 
-�@�Ȃ�Ė��ӔC�Ȍ��t�B�Ȃ�Ĉ����ۂ�����B����ȋC�����Ȃ�ĕ��������Ȃ��A���Ȃ��B[per]
-*save16_85|�D��
 
-�@�ޏ��������Ԃ��͎̂��ӂƌ���ŁA�����ē���͂�����㉟��������̂ɂ̂�����B[per]
-*save16_86|�D��
+;noname
+子供になることで、嫌なことを嫌なこととして理解する必要がなくなる。理解できなくなる。わからなければ何も怖くない。実に合理的。
+;endpage
 
-�@�w���킢�����ȗDr]
-*save16_87|�D��
 
-�@�w���킢�����Ȃ��Zer]
-*save16_88|�D��
+;noname
+しかし彼にもどこかに自我が残っていたのか。今日、実の妹である優希に『両親の死』と『妹の自殺願望』という爆弾を投げつけられ、その守りは打ち砕かれた。
+;endpage
 
-�@�w���킢������r]
-*save16_89|�D��
 
-�@�w���킢�����Ȗ���r]
-*save16_90|�D��
+;noname
+守りを失った彼に生きていく術はない。今日でなくても、その精神は疲弊してゆき、いずれ朽ち果てたことだろう。
+;endpage
 
-�@�Ⴄ�A����Ȃ��Ƃ��v���Ă͂����Ȃ��B���ɂ���Ȃ�Ę_�O���B�ԓx�ɏo���Ă͂����Ȃ��B���R�ɐU�镑�����Ă͂����Ȃ��B[per]
-*save16_91|�D��
 
-�@��������Ȃ��Ƃ��v���΁A�ޏ��͂����ƁA���B[per]
-*save16_92|�D��
+;noname
+人に死なれ、残された人の苦しみにはそれほどの重みがある。
+;endpage
 
-�@���̂����ŁA�܂��Aer]
-*save16_93|�D��
 
-[drawName name="����"]
-�u�D��A�������̑O�Ō������Ί�͉R�������̂��H�@���▾�����Ɖ߂����āA�y���̂��H�v[per]
+;noname
+しかしこの結果では、まるで……
+;endpage
+[fadeInYuuki num=1 pos=center time=500]
 
-*save16_94|�D��
 
-[drawName name="�D��"]
-�u�y����������B�ł��y�����Ȃ������B���͂���ȂɊy�����̂ɁA�Z����͍����a�@�ň�l����B���������͎���ł��܂������Ȃ�ċꂵ��������A�������ˁv[per]
-*save16_add1|�D��
+;yuuki
+「私が殺しちゃったんだ」
+;endpage
 
-�@�y�����������ǁA�y�����Ȃ������B���̋C�����͂��B[per]
-*save16_95|�D��
 
-�@�l�Ԃ́A���������̊���𓯎��Ɏ�����[per]
-*save16_96|�D��
+;noname
+優希が、自らの兄を死に追いやったかのようではないか。
+;endpage
 
-�@�y��������ǂ܂�er]
-*save16_97|�D��
 
-�@�D�������ǌ���]
-*save16_98|�D��
+;kenji
+「違う。優希のせいじゃない」
+;endpage
+[yuuki num=5 pos=center]
 
-�@�����Ă邯�Ǒ���er]
-*save16_99|�D��
 
-�@�����ĂĂق������ǎ����per]
-*save16_100|�D��
+;yuuki
+「ありがとう。でもね、どっちにしてもダメなんだ」
+;endpage
 
-�@����Ȗ����͏��������悭����b�ŁA�����Ă�����������͕��ʂ̊�����������A�d���B���񂵋���̂͊ȒP����Ȃ��B[per]
-*save16_101|�D��
 
-[drawName name="����"]
-�u���߂��D��A�ق�ƁA���ꂾ���̓_er]
-*save16_102|�D��
+;noname
+やはり笑顔のままで、彼女は言う。
+;endpage
+[yuuki num=2 pos=center]
 
-�@�ǂ�������A�ޏ��̂��̊�����������邱�H[per]
-*save16_103|�D��
 
-�@�����A�ޏ��ɂȂɂ������΂����̂���[per]
-*save16_104|�D��
+;yuuki
+「私、ずっと死んでしまいたいって思ってた。けど死ねなかったのは、兄さんがいたから。あの事故で私をかばって、傷を負った兄さんが」
+;endpage
+[yuuki num=2 pos=center]
 
-�@���͂Ȃɂ������΂����񂾁H�@�Ȃɂ�`����΂����H�@�ǂ�����Δނ�H[per]
-*save16_105|�D��
 
-�@���͂܂��������Ȃ��̂��H�@�݂��݂����E���H[per]
-*save16_106|�D��
+;yuuki
+「私にとって兄さんは足枷でしかなかった。私は飛び立ちたいのに、傷ついた兄さんが私の足をしっかりと握って飛ばせてくれなかった。病室へ行くたび私はいらだってた。なんで生きてるのって」
+;endpage
+[yuuki num=2 pos=center]
 
-�@��������͂����A��er]
 
-*save16_107|�D��
+;yuuki
+「私が死のうとするたびに、私をかばって傷ついた兄さんが、自分の犠牲を無駄にするのかと私を責めているように感じて、最後の一歩がどうしても踏み出せなかった」
+;endpage
+[yuuki num=2 pos=center]
 
-[drawName name="�D��"]
-�u��Ղ���]
-*save16_add2|�D��
 
-�@�D�󂪉��ɁA�ƂĂ��₳����������er]
-*save16_108|�D��
+;yuuki
+「兄さんには生きていて欲しいとも思ったし、殺したいほど邪魔だとも思った。矛盾してるけど、そういうものだよね」
+;endpage
 
-[drawName name="����"]
-�u�����A�Ȃ񂾗Dr]
 
-*save16_109|�D��
+;kenji
+「そうだな……」
+;endpage
+[yuuki num=2 pos=center]
 
-[drawName name="�D��"]
-�u�����킩���Ă邩�������per]
-*save16_110|�D��
 
-�@�����j��Ԃ�߂Ȃ���A�D���er]
+;yuuki
+「でも今になって思うよ、兄さんも苦しかったんだって。当然だよね、私となんにも変わらないもん。でも私は気づけなかった。気づかないふりをしてた」
+;endpage
 
-*save16_111|�D��
+[fadeOutYuuki]
 
-[drawName name="�D��"]
-�u�D���ł��B�������Ă����er]
-;�E�F�C�g�@���o
 
-*save16_112|�D��
 
-�@�\�\�ˑR�̍����ɁA�v�l���~�܂�r]
-*save16_113|�D��
+;noname
+笑顔で話し続ける優希に耐えられず、俺は視線をそらす。
+;endpage
 
-�@���̂��Ƃ��A�Dr]
-*save16_114|�D��
 
-[drawName name="����"]
-�u����A��k����r]
+;noname
+『かわいそう』
+;endpage
 
-*save16_115|�D��
 
-[drawName name="�D��"]
-�u��k�Ȃ񂩂���Ȃ���B�{r]
-*save16_116|�D��
+;noname
+なんて無責任な言葉。なんて安っぽい同情。こんな気持ちなんて抱きたくない、思ってはいけない。
+;endpage
 
-[drawName name="����"]
-�u�c�c�c�c�c�c�v
 
-*save16_117|�D��
+;noname
+彼女を押しつぶすのは自責と後悔で、そして同情はそれを後押しするものに他ならないのだから。
+;endpage
 
-[drawName name="�D��"]
-�u��Ղ���ւ̑z����[ruby text=����]�Ƃɐ����āv[per]
-*save16_118|�D��
 
-�@����́A�����𐿂��҂̌��tper]
-*save16_119|�D��
+;noname
+『かわいそうな優希』
+;endpage
 
-�@�����w�͂��x�ƌ����΁A�D��͋������̂��H�@�v���Ƃǂ܂�̂ɁH[per]
-*save16_120|�D��
 
-�@���͗D��̖����x�������̂��H�@���͗D��̂��Ƃ��H[per]
-*save16_121|�D��
+;noname
+『かわいそうなお兄さん』
+;endpage
 
-�@�D��͌��\����ǂ����H�@���̉R�̓o��[per]
-*save16_122|�D��
 
-�@�R�H�@�R���ĉ�����B
-*save16_123|�D��
+;noname
+『かわいそうな俺』
+;endpage
 
-�@�����A�������A�Ȃ�قǂ�[per]
-*save16_124|�D��
 
-�@���́\]
-*save16_125|�D��
+;noname
+『かわいそうな明日香』
+;endpage
 
-[drawName name="����"]
-�u�c�c���߂�v
-*save16_126|�D��
 
-�@�󂯓�����Ȃ��B�R�͂��Ȃ��B�ǂ����ޏ��ɂ̓o����B�o����ԁB[per]
-*save16_127|�D��
+;noname
+違う、そんなことを思ってはいけない。口にするなんて論外だ。態度に出してはいけない。自然に振る舞うならまず考えてはいけない。
+;endpage
 
-�@�ł��A���������󂯓���Ȃ�������A���\[per]
-*save16_128|�D��
 
-[drawName name="�D��"]
-�u���肪�Ƃ��A���������Ǝv�����B��Ղ���͂��������l������ˁB������D�������A����v[per]
+;noname
+俺がそんなことを思えば、彼女はきっと、飛んでしまう。
+;endpage
 
-*save16_add3|�D��
 
-[drawName name="�D��"]
-�u���肪�Ƃ�]
-*save16_129|�D��
+;noname
+俺のせいで、また、人が。
+;endpage
 
-�@����ň�Ԃ̏�r]
 
-;��;�D��@�A�E�g
+;kenji
+「優希、俺たちの前で見せた笑顔は嘘だったのか？　俺や明日香と過ごして、楽しくなかったのか？」
+;endpage
+[fadeInYuuki num=1 pos=center time=500]
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���ۓ�
+;yuuki
+「楽しかったよ。でも楽しくなかった。私はこんなに楽しいのに、兄さんは今も病院で一人きり。しかも私は死んでしまいたいなんて思ってる。苦しかったよ、すごくね」
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+楽しかったけど、楽しくなかった。その気持ちはよくわかった。
+;endpage
 
-*save16_130|�D��
 
-�@��΂�]
+;noname
+人間は、相反する二つの感情を同時に持つことができる。
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���ۓ�
+;noname
+楽しいけれどつまらない。
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+好きだけど嫌い。
+;endpage
 
-*save16_131|�D��
 
-�@�Ȃ񂩂�΂�]
+;noname
+愛してるけど憎んでる。
+;endpage
 
-;�����b�Z�[�W�t���[���@�A�E�g
 
-;���ۓ�
+;noname
+生きててほしいけど死んでほしい。
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+そんな矛盾は常日頃からよくある話で、そしてそういう感情は普通の感情よりも強く、重い。そんな感情を消し去るのは簡単じゃない。
+;endpage
 
-*save16_132|�D��
 
-�@�D�󂪉����王�����Or]
-*save16_133|�D��
+;kenji
+「だめだ優希、ほんと、それだけはダメだ」
+;endpage
 
-�@�����ɉ��͑���or]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;noname
+どうしたら、彼女のその感情を消し去ることができる？
+;endpage
 
-;���ۓ�
 
-;���ۓ�
+;noname
+もう、彼女になにを言えばいいのかわからない。
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+俺はなにを言えばいいんだ？　なにを伝えればいい？　どうすれば彼女は救われる？
+;endpage
 
-*save16_134|�D��
 
-�@�D�󂪗�����L����]
-*save16_135|�D��
+;noname
+俺はまた助けられないのか？　みすみす見殺しにするのか？
+;endpage
 
-�@���؂������ɗ͂�����Ȃ��B�����ƃX���B[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;noname
+何かあるはずだ、何か――
+;endpage
+[yuuki num=5 pos=center]
 
-;���ۓ�
 
-;���ۓ�
+;yuuki
+「常盤くん」
+;endpage
 
-;���ۓ�
 
-;�����b�Z�[�W�t���[���@�C��
+;noname
+優希が俺に、とてもやさしい声をかける。
+;endpage
 
 
-*save16_136|�D��
+;kenji
+「ああ、なんだ優希」
+;endpage
+[yuuki num=5 pos=center]
 
-[drawName name="����"]
-�u�D�󂢂��������I�I]
-*save16_137|�D��
 
-�@�_�����A����ȏ�̓_�����A������A���ʁA��߂�A���ʁA�_������߂�뎀�\�\[per]
-;�D��		�u���悤�Ȃ�A���̉Ƒ��B��������A���ꂳ��A���Z�����c�c�����Ă��悤�Ȃ�A�Ƒ��ɂȂ��Ăق��������l�B�݂�ȁA�����Ă�v
-*save16_138|�D��
+;yuuki
+「もうわかってるかもしれないけど」
+;endpage
 
-[drawName name="�D��"]
-�u�o�C�o�C�A�݂�ȁB�����Ă��]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;noname
+少し頬を赤らめながら、優希は言う。
+;endpage
+[yuuki num=5 pos=center]
 
-;���t�F�[�h�A�E�g�@�P�T�O�O�@���@��
 
-;���Y�[���@�I��
+;yuuki
+「好きです。つきあってくれるかな」
+;endpage
+#ウェイト　演出
+[wait time=500 canskip=false]
 
-;�����b�Z�[�W�t���[���@�C��
 
+;noname
+――突然の告白に、思考が止まった。
+;endpage
 
-*save16_139|�D��
 
-�@�ޏ��̐g�̂��łւƓ����o����r]
-*save16_140|�D��
+;noname
+俺のことが、好き？
+;endpage
 
-�@�ޏ��𔛂���̂͂����A����er]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;kenji
+「じょ、冗談だろ？」
+;endpage
+[yuuki num=2 pos=center]
 
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
 
-;������
+;yuuki
+「冗談なんかじゃないよ。本気」
+;endpage
 
-;�����b�Z�[�W�t���[���@�C��
 
+;kenji
+「………………」
+;endpage
+[yuuki num=2 pos=center]
 
-*save16_141|�D��
 
-�@�������Ĕޏ��\�\�O�}�D��͂��̐���per]
-*save16_142|�D��
+;yuuki
+「常盤くんへの想いを[ruby text=かて]糧に生きてもいいかな」
+;endpage
 
-�@��������N�O�A�܂������̎c��er]
 
-;���t�F�[�h�@��
+;noname
+それは、許しを請う者の言葉だった。
+;endpage
 
 
-*save16_143|�D��
+;noname
+俺が『はい』と言えば、優希は許されるのか？　思いとどまるのか？　本当に？
+;endpage
 
-�@�D��̎��͌Z�̎��Ƌ��ɁA�����̒����ɏ������f[per]
-*save16_144|�D��
 
-�@�w�Z���S���x
-*save16_145|�D��
+;noname
+俺は優希の命を支えきれるのか？　俺は優希のことが好きなのか？
+;endpage
 
-�@�w�N���X���ł����߂̉\r]
-*save16_146|�D��
 
-�@���߂͐F�X�ȉ\����ь��������A����������Ɖ������Ȃ��������̂悤�ɉ\�͐Â܂�A�߂��Ă������B[per]
-*save16_147|�D��
+;noname
+優希は結構するどいぞ？　その嘘はバレないのか？
+;endpage
 
-�@�l�̎��Ȃ�āA����ۂǐg�߂���Ȃ���΁A��per]
 
-;���t�F�[�h�@��
+;noname
+嘘？　嘘って何だよ。
+;endpage
 
 
-*save16_148|�D��
+;noname
+ああ、そうか、なるほどつまり俺は――
+;endpage
 
-�@�����ĉ��̓I�o�P��|����Ȃ��Ȃ�A��Ɋw�Z�ɔE�э��ނ��B[per]
 
-;�����b�Z�[�W�t���[���@�A�E�g
+;noname
+俺は――
+;endpage
 
-;���e���b�v�@�C��
 
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;kenji
+「……ごめん」
+;endpage
 
 
-;�E�F�C�g
+;noname
+受け入れられない。嘘はつけない。どうせ彼女にはバレる。バレれば彼女は飛ぶ。
+;endpage
 
 
-;���W�����v
+;noname
+でも、そもそも受け入れなかったら、そのときは――
+;endpage
+
+
+;yuuki
+「ありがとう、そう言うと思った。常盤くんはそういう人だからね。だから好きになったんだし、うん」
+;endpage
+[yuuki num=5 pos=center]
+
+
+;yuuki
+「ありがとう」
+;endpage
+
+
+;noname
+今夜で一番の笑顔。
+;endpage
+
+#□#優希　アウト
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#☆鼓動
+[heartbeat]
+#☆メッセージフレーム　イン
+;fadein_mes
+
+
+
+;noname
+やばい。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#☆鼓動
+[heartbeat]
+#☆メッセージフレーム　イン
+;fadein_mes
+
+
+
+;noname
+なんかやばい。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#☆鼓動
+[heartbeat]
+#☆メッセージフレーム　イン
+;fadein_mes
+
+
+
+;noname
+優希が俺から視線を外す。
+;endpage
+
+
+;noname
+同時に俺は走り出す。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#☆鼓動
+[heartbeat]
+#☆鼓動
+[heartbeat]
+#☆メッセージフレーム　イン
+;fadein_mes
+
+
+
+;noname
+優希が両手を広げる。
+;endpage
+
+
+;noname
+疲れ切った足に力が入らない。もっとスピードを出せ。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#☆鼓動
+[heartbeat]
+#☆鼓動
+[heartbeat]
+#☆鼓動
+[heartbeat]
+#☆メッセージフレーム　イン
+;fadein_mes
+
+
+
+;kenji
+「優希いいぃぃぃ！！」
+;endpage
+
+
+;noname
+ダメだ、それ以上はダメだ、落ちる、死ぬ、やめろ、死ぬ、ダメだやめろやめろやめろ死――
+;endpage
+#優希		「さようなら、私の家族。お父さん、お母さん、お兄ちゃん……そしてさようなら、家族になってほしかった人。みんな、愛してる」
+
+
+;yuuki
+「バイバイ、みんな。愛してるよ」
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○フェードアウト　１５００　ｆ　白
+[FadeOutWhite time=1500 canskip=false]
+#○ズーム　終了
+[endZoom]
+#☆メッセージフレーム　イン
+;fadein_mes
+
+
+
+;noname
+彼女の身体が闇へと投げ出される。
+;endpage
+
+
+;noname
+彼女を縛るものはもう、何もない。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#○フェードアウト　１０００　ｆ　黒
+[FadeOutBlack time=1000 canskip=false]
+#△落下
+[playse storage=SE19 buf=1 loop=false]
+#☆メッセージフレーム　イン
+;fadein_mes
+
+
+
+;noname
+そうして彼女――三笠優希はこの世を去った。
+;endpage
+
+
+;noname
+今から約一年前、まだ寒さの残る初春。
+;endpage
+
+#○フェード　白
+[cb storage=white]
+
+
+
+;noname
+優希の死は兄の死と共に、翌日の朝刊に小さく掲載された。
+;endpage
+
+
+;noname
+『兄妹心中』
+;endpage
+
+
+;noname
+『クラス内でいじめの可能性』
+;endpage
+
+
+;noname
+初めは色々な噂が飛び交ったが、数日もすると何事もなかったかのように噂は静まり、みな日常に戻っていった。
+;endpage
+
+
+;noname
+人の死なんて、よっぽど身近じゃなければ、その程度。
+;endpage
+
+#○フェード　黒
+[cb storage=black]
+
+
+
+;noname
+そして俺はオバケを怖がらなくなり、夜に学校に忍び込むことをやめた。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_mes
+#☆テロップ　イン
+[telopIn]
+#○フェードアウト　１０００　ｆ　黒
+[FadeOutBlack time=1000 canskip=false]
+
+#ウェイト
+[wait time=500 canskip=false]
+
+#☆ジャンプ
+[jump storage=17.ks]
+
 

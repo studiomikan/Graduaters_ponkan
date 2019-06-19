@@ -1,165 +1,165 @@
 ;
-;	Graduaters!�@�`�O���f�B�G�C�^�[�Y�I�`
+;	Graduaters!　～グラディエイターズ！～
 ;
 
 *start
 
-;�����W�I�P
+;■ラジオ１
 
-*save|�O���f�B�G�C�g�E�W���p���P�@�@�@�@�@
+*save|グラディエイト・ジャパン１　　　　　
 
 [wait time=1000 canskip=false]
-;�����W�I���b�Z�[�W�@�C��
+;☆ラジオメッセージ　イン
 [fadeInRadioMessage]
 
-*save4_0|�O���f�B�G�C�g�E�W���p���P
+*save4_0|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u������A���鏭�N���A���鏭���ɏo��܂����[�v[per]
-*save4_1|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「ある日、ある少年が、ある少女に出会いましたー」[per]
+*save4_1|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���N�̎�̓G���c�u�c�W�߁[�B�����̎�͂����ځ[���Ɖ߂������Ɓ[�v[per]
-*save4_2|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「少年の趣味はエロＤＶＤ集めー。少女の趣味はただぼーっと過ごすことー」[per]
+*save4_2|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u��l�͋���ȏo����o�ā[�A����Ɏ䂩�ꍇ�����炨�����납�������ǁ[�A���[������������Ȃ��Ƃ͂Ȃ������[�v[per]
-*save4_3|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「二人は強烈な出会いを経てー、強烈に惹かれ合ったらおもしろかったけどー、だーがしかしそんなことはなかったー」[per]
+*save4_3|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���N�̋���Ȏ���������m�����Ƃ��[�A�����͏��N���������Ă����������[�v[per]
-*save4_4|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「少年の強烈な趣味を少女が知ったときー、少女は少年を見据えてこう言ったー」[per]
+*save4_4|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][playse storage=SE20 buf=1 loop=false][font size=30]
-�u���т͂ˁ[��v[deffont]
+「無毛はねーわ」[deffont]
 [per]
 
-;���a�f�l�Q
+;△ＢＧＭ２
 [bgmopt volume=100][playbgm storage=bgm002]
 
-*save4_5|�O���f�B�G�C�g�E�W���p���P
+*save4_5|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u�c�i�W���o���́[�I�I�@�O���f�B�G�C�g�E�W���p���I�I�v[per]
-*save4_6|�O���f�B�G�C�g�E�W���p���P
+「ＤＪジョバンのー！！　グラディエイト・ジャパン！！」[per]
+*save4_6|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�͂��͂��F���񂱂�΂�́[�A����������Ă܂���܂����w�O���f�B�G�C�g�E�W���p���x�̂����ԂŁ[���v[per]
-*save4_7|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「はいはい皆さんこんばんはー、今日もやってまいりました『グラディエイト・ジャパン』のお時間でーす」[per]
+*save4_7|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][moveComboMessage]
-�u���炨��n�߂񂼁[�A�ꔭ�������Ă̌Z�������A���C�N���Ƃ��������҂�ˁ\�������A�������ƃ��W�I�̑O�ɏW�܂�R���`�N�V���E�I�v[wm canskip=false][per]
-*save4_8|�O���f�B�G�C�g�E�W���p���P
+「おらおら始めんぞー、一発抜きたての兄ちゃんも、メイク落としたすっぴんね―ちゃんも、さっさとラジオの前に集まれコンチクショウ！」[wm canskip=false][per]
+*save4_8|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���͂�����̂́[�I�@����Ƃ��݂͂�Ȃ̃A�C�h���I�@�܂�����Ƃ��͗����Z�M�I�@�܂�����Ƃ��͉��l�^��D���e���I�@�������Ă��̎��̂́I�v[per]
-*save4_9|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「お届けするのはー！　あるときはみんなのアイドル！　またあるときは頼れる兄貴！　またあるときは下ネタ大好き親父！　しかしてその実体は！」[per]
+*save4_9|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][quake time=500 timemode=ms hmax=10 vmax=50]
 [playse storage=SE20 buf=1 loop=false][font size=30]
-�u�c�i�W���[�[�[�[�[�D�o���I�I�v[per]
-*save4_10|�O���f�B�G�C�g�E�W���p���P
+「ＤＪジョーーーーーゥバン！！」[per]
+*save4_10|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u�ց[���A���Ă��ƂłˁA�������n�܂�܂������W�I�w�O���f�B�G�C�g�E�W���p���x���͂�����̂͂��Ȃ��݂c�i�W���o���Ł[���v[per]
-*save4_11|�O���f�B�G�C�g�E�W���p���P
+「へーい、ってことでね、今日も始まりましたラジオ『グラディエイト・ジャパン』お届けするのはおなじみＤＪジョバンでーす」[per]
+*save4_11|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���[�A���X�i�[�̂��O��ŋ߂ǂ���H�@�w���̓K�b�R�͂��܂��ă����h�N�Z�\�Ƃ������Ă񂶂�ˁ[����[�ȁ[�H�@���[�H�v[per]
-*save4_12|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「えー、リスナーのお前ら最近どうよ？　学生はガッコはじまってメンドクセ―とか言ってんじゃねーだろーなー？　えー？」[per]
+*save4_12|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���ǂȁ[�A����������Ă�邼�[�A���肪���������t�������Ă�邩��A���̌������ۂ����Ă��łɎ��������Ă�[�[�[����������[�H�v[per]
-*save4_13|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「けどなー、一つだけ言ってやるぞー、ありがたいお言葉を言ってやるから、耳の穴かっぽじってついでに耳かきしてよーーーっく聞けよー？」[per]
+*save4_13|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][quake time=500 timemode=ms hmax=10 vmax=50]
 [playse storage=SE20 buf=1 loop=false][font size=30]
-�u���܂������ȕ��K�L�ǂ����I�I�v[deffont]
+「あまったれんな糞ガキどもが！！」[deffont]
 [per]
-*save4_14|�O���f�B�G�C�g�E�W���p���P
+*save4_14|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u���[�A�Ƃ����킯�łˁA���������s���Ă݂܂��傤�A�ӂ����̃R�[�i�[�I�I�v[per]
-*save4_15|�O���f�B�G�C�g�E�W���p���P
+「えー、というわけでね、さっそく行ってみましょう、ふつおたのコーナー！！」[per]
+*save4_15|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���[���̃R�[�i�[�ł̓��X�i�[�݂̂Ȃ��܂���͂������ւ���]�X�A���[�����߂�ǂ���������J�b�g�ˁA�͂��v[per]
-*save4_16|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「えーこのコーナーではリスナーのみなさまから届いたお便りを云々、あーもうめんどくさいからカットね、はい」[per]
+*save4_16|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][jumpMessageFrame]
-[playse storage=SE22 buf=1 loop=false]�u����ł͂܂���ʖڂ̂��ւ�I�@���Ⴖ���I�v[per]
-*save4_17|�O���f�B�G�C�g�E�W���p���P
+[playse storage=SE22 buf=1 loop=false]「それではまず一通目のお便り！　じゃじゃん！」[per]
+*save4_17|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][moveMessageFrame lr=right ud=down]
-�u���A���������΃W���o�����ăV���p���Ɏ��ĂˁH�@�c�i�V���p���I�@���[�A����܂������悭�˂��ȁv[per]
-*save4_18|�O���f�B�G�C�g�E�W���p���P
+「あ、そういえばジョバンってショパンに似てね？　ＤＪショパン！　あー、あんまかっこよくねぇな」[per]
+*save4_18|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�ǁ[���c�i�W���o���ł��I�v[per]
-*save4_19|�O���f�B�G�C�g�E�W���p���P
+「どーもＤＪジョバンです！」[per]
+*save4_19|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�ŏ��̂��ւ�́A�q�m�w���ʃ��C�_�[�P�O�Q���x���񂩂�̂��ւ�Ł[�����I�v[per]
-*save4_20|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「最初のお便りは、ＲＮ『仮面ライダー１０２号』さんからのお便りでーっす！」[per]
+*save4_20|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�w�W���o�����񂱂�΂�́x�́[������΂�́w�l�͍ŋ߂�����ƈ������Ƃ��Ă��܂��x���[�������ƁA�^�o�R�H�@�������H�@�V���i�[�H�@�w����͖�̊w�Z�ɔE�э��ނ��Ƃł��x�����A�Ȃ񂾂���Ȃ��Ƃ���v[per]
-*save4_21|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「『ジョバンさんこんばんは』はーいこんばんは『僕は最近ちょっと悪いことしています』おー悪いこと、タバコ？　万引き？　シンナー？　『それは夜の学校に忍び込むことです』けっ、なんだそんなことかよ」[per]
+*save4_21|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�w�����̊w�Z�͂�����ƌÂ��w�Z�Ȃ̂ŁA���̌����ȒP�ɊJ�������ł��x�Ȃ�قǁA������̋��܂���[ruby text="�Ђ�"]�J�����w�Z�Ȃ񂾂ȁI�@���A[ruby text="�Ђ�"]�J�������̎q�������ς����肷��H�@�n�[�����H�v[per]
-*save4_22|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「『うちの学校はちょっと古い学校なので、窓の鍵を簡単に開けられるんです』なるほど、来るもの拒まずの[ruby text="ひら"]開けた学校なんだな！　え、[ruby text="ひら"]開けた女の子もいっぱいたりする？　ハーレム？」[per]
+*save4_22|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�w��������������E�э���ŁA�l�̊�������������Ƃ��A����ŗV�񂾂肵�Ă��܂��x�ӂ�ӂ�w�ł��l�͖{���͂���Ȃ��Ƃ������Ȃ���ł��x�v[per]
-*save4_23|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「『そういう窓から忍び込んで、人の机をあさったりとか、屋上で遊んだりしています』ふんふん『でも僕は本当はこんなことしたくないんです』」[per]
+*save4_23|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][upMessageFrame]
-[playse storage=SE24 buf=1 loop=false]�u�ȁA�Ȃ񂾂��ā[�I�I�v[per]
-*save4_24|�O���f�B�G�C�g�E�W���p���P
+[playse storage=SE24 buf=1 loop=false]「な、なんだってー！！」[per]
+*save4_24|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u�w�c�Ȃ��݂̏��̎q�ɁA���������s�����s�����Ƌ�����āA�d���Ȃ����Ă����Ă�̂ł��B�c�Ȃ��݂͋����Ȑ��i�ŁA�l�͂����U��񂳂�č����Ă��܂��x�v[per]
-*save4_25|�O���f�B�G�C�g�E�W���p���P
+「『幼なじみの女の子に、いいじゃん行こう行こうと脅されて、仕方なくついていってるのです。幼なじみは強引な性格で、僕はいつも振り回されて困っています』」[per]
+*save4_25|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�Ȃ�قǂȂ�قǁA�I�C�R�����傢�W�����v���Ă݂��A�����������Ă񂶂��悱���ȃN�Y���Ċ֌W�Ȃ񂾂ȁA�Ȃ�قǂȂ�قǁv[per]
-*save4_26|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「なるほどなるほど、オイコラちょいジャンプしてみろや、おぉ金もってんじゃんよこしなクズって関係なんだな、なるほどなるほど」[per]
+*save4_26|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�w�W���o������A�c�Ȃ��݂̂����˔��q���Ȃ��v�����ɐU��񂳂�Ȃ����߂ɂ͂ǂ������炢���ł��傤���H�x�Ƃ�[�ˁA���k�̂��ւ�Ł[���v[per]
-*save4_27|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「『ジョバンさん、幼なじみのいう突拍子もない思いつきに振り回されないためにはどうしたらいいでしょうか？』とゆーね、相談のお便りでーす」[per]
+*save4_27|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][downMessageFrame]
-�u�́[�A�Ȃ�قǂˁ[�A�C�P�C�P�C���̗c�Ȃ��݂ˁ[�B���[�Ɖ��ʃ��C�_�[�P�O�Q������͂��ꂪ���Ȃ񂾂ˁ[�v[per]
-*save4_28|�O���f�B�G�C�g�E�W���p���P
+「はー、なるほどねー、イケイケ気質の幼なじみねー。えーと仮面ライダー１０２号さんはそれが嫌なんだねー」[per]
+*save4_28|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][replaceMessageFrame]
-�u��[�����Ⴀ�W���o�����Y�o�b�ƃA�h�o�C�X�����Ⴄ��[�I�@�����ˁA�}�X�R�~�������Ƃ����e����Ƃ��݂����ɃY�o�b�ƁI�v[per]
-*save4_29|�O���f�B�G�C�g�E�W���p���P
+「よーしじゃあジョバンがズバッとアドバイスしちゃうよー！　もうね、マスコミが政治家を糾弾するときみたいにズバッと！」[per]
+*save4_29|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][playse storage=SE20 buf=1 loop=false][font size=30]
-�u������߂�v[deffont]
+「あきらめろ」[deffont]
 [per]
-*save4_30|�O���f�B�G�C�g�E�W���p���P
+*save4_30|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][playse storage=SE21 buf=1 loop=false][jumpMessageFrame]
-�u�͂��������[�I�@������ӂ������[�I�v[per]
-*save4_31|�O���f�B�G�C�g�E�W���p���P
+「はいかいけーつ！　いやっふぉおおー！」[per]
+*save4_31|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���₾���ĂˁA���������w�c�Ȃ��݁x���Ă̂͂ˁA�A���Ȃ́A�X�e�[�^�X�Ȃ́A�킩��H�@�N�͐��܂ꂽ�Ƃ����瑼�̐l�������ɂ���́A�ˁH�@�Ȃ̂ɂ��[�A���[��[�ґ���Ă悭�Ȃ���A����v[per]
-*save4_32|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「いやだってね、だいたい『幼なじみ』ってのはね、アレなの、ステータスなの、わかる？　君は生まれたときから他の人より一歩先にいんの、ね？　なのにさー、そーゆー贅沢ってよくないよ、うん」[per]
+*save4_32|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u�ق�N�ɂ��̐S�����肪���������[�H�@�N���X�̂�炩��w���O��t�������Ă�́x�Ƃ��w���̎q�Љ�Ă����x�Ƃ��ȁ[�A��Ȃ��ƒm�邩��R���`�N�V���E�v[per]
-*save4_33|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「ほら君にもの心当たりがあるっしょー？　クラスのやつらから『お前ら付き合ってんの』とか『あの子紹介してくれよ』とかなー、んなこと知るかよコンチクショウ」[per]
+*save4_33|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][jumpMessageFrame]
-�u�́[���I�@�Ƃ������ƂłˁA�������Y�o�b�Ɖ��������������W���o���I�@���O��������Y�݂��������炶��񂶂�񉞕債�Ă����[�I�@���Ă���Ȃ��Ƃ��̃��W�I�I������܂�����I�v[per]
-*save4_34|�O���f�B�G�C�g�E�W���p���P
+「はーい！　ということでね、今日もズバッと解決しちゃったよジョバン！　お前らも何か悩みがあったらじゃんじゃん応募してくれよー！　してくれないとこのラジオ終わっちまうから！」[per]
+*save4_34|グラディエイト・ジャパン１
 [afterLoad]
-[voidChar]�u���ꂶ��[�ЂƂ܂��b�l�����A���g���͂��̂܂܂�[ruby text="��"]�S[ruby text="��"]�U[ruby text="�V"]�S[ruby text="�N"]�X�v[per]
-*save4_35|�O���f�B�G�C�g�E�W���p���P
+[voidChar]「それじゃーひとまずＣＭだぁ、周波数はこのままで[ruby text="ヨ"]４[ruby text="ロ"]６[ruby text="シ"]４[ruby text="ク"]９」[per]
+*save4_35|グラディエイト・ジャパン１
 [afterLoad]
 [voidChar][font size=30]
-[playse storage=SE20 buf=1 loop=false]�u�V�F�L�_���I�I�v[deffont]
+[playse storage=SE20 buf=1 loop=false]「シェキダン！！」[deffont]
 [per]
 
-;�����W�I���b�Z�[�W�@�A�E�g
+;☆ラジオメッセージ　アウト
 [fadeOutMessageFrame]
 [eval exp="f.flagLetter = false"]
 
-;���e���b�v�@�C��
+;☆テロップ　イン
 [telopIn]
 ;[telopIn]
-;���a�f�l�t�F�[�h�A�E�g
+;△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
-;���t�F�[�h�A�E�g�@�P�O�O�O�@���@��
+;○フェードアウト　１０００　ｆ　黒
 [FadeOutBlack time=1000 canskip=false]
 
-;���W�����v
+;☆ジャンプ
 [jump storage=5.ks]
