@@ -61,7 +61,9 @@ ponkan.setFixedScaleSize(1280, 720);
 
 # テスト
 ;waitclick
-;jump file: "scenario/01.pon"
+;set_to_blue
+;fadein_meslay
+;jump file: "scenario/03.pon", label: "test"
 ;s
 
 # サークルロゴ表示

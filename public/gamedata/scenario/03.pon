@@ -998,6 +998,8 @@
 開いてる……？
 ;endpage
 
+*test
+
 ;noname
 俺はドアノブを捻ったまま、身体全体で押すようにして、屋上のドアを開けた――
 ;endpage
@@ -1009,7 +1011,13 @@
 ;playse num: "10"
 
 #○フェードアウト　１０００　ｆ　白
-;cb_fade bg: "white"
+;pretrans
+;layopt lay: "filter", x: 0, y: 0, width: 1280, height: 720, visible: true
+;image lay: "base", file: "image/bg-roof.png", visible: true
+;loadchara name: "yuuki", num: 1
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 1.0
+;trans time: 1000
+;waittrans canskip: false
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -1030,6 +1038,10 @@
 #白さちょっともどり
 #☆視界回復２　８０パーセント
 #[whiteView opacity=204 storage=chara_B01]
+;pretrans
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.80
+;trans time: 1000
+;waittrans canskip: false
 
 ;noname
 視界が戻っていく。
@@ -1037,7 +1049,10 @@
 
 #白ささらにちょっと戻り
 #☆視界回復２　４０パーセント
-#[whiteView opacity=102 storage=chara_B01]
+;pretrans
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.40
+;trans time: 1000
+;waittrans canskip: false
 
 ;noname
 そして、戻った視界の先、屋上には、
@@ -1045,8 +1060,10 @@
 
 #☆視界回復２０パーセント
 #[whiteView opacity=0 storage=chara_B01]
-#☆視界回復　終了
-#[endWhiteView]
+;pretrans
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.20
+;trans time: 1000
+;waittrans canskip: false
 
 ;noname
 見知らぬ女の子がいた。
@@ -1060,17 +1077,26 @@
 女の子は驚いた表情のまま、ゆっくりと答える。
 ;endpage
 
-;yuuki? num: 1
+;yuuki num: 1
 「み、三笠……三笠優希です」
 ;endpage
-
-;yuuki_out
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
 #○フェードアウト　１０００　白
-;cb_fade bg: "white"
+;pretrans
+;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 1.0
+;fillcolor lay: "base", color: 0xFFFFFF, alpha: 1.0
+;trans time: 1000
+;waittrans canskip: false
+
+;layopt lay: "yuuki", page: "fore", visible: false
+;layopt lay: "yuuki", page: "back", visible: false
+;layopt lay: "filter", page: "fore", visible: false
+;layopt lay: "filter", page: "back", visible: false
+;clearcolor lay: "filter", page: "fore"
+;clearcolor lay: "filter", page: "back"
 
 #○フェードアウト　１０００　黒
 ;cb_fade bg: "black"

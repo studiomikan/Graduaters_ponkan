@@ -200,7 +200,7 @@
   ---
     tv.file = "image/chara/" + mp.name + "0" + mp.num + ".png";
     tv.visible = mp.visible != null ? mp.visible : true;
-    switch (tv.name) {
+    switch (mp.name) {
       case "asuka": tv.lay = "asuka"; break;
       case "yuuki": tv.lay = "yuuki"; break;
       default: tv.lay = "asuka"; break;
@@ -264,42 +264,13 @@
   ;waittrans
 ;endmacro
 
-# 明日香の立ち絵を表示
-# num: 画像の番号。1～5
-# ;macro name: "fg_asuka"
-#   ---
-#     var currentFg = ponkan.getLayers({lay: "asuka"})[0].imageFilePath;
-#     if (currentFg == null) {
-#       tv.action = "fadein";
-#     } else {
-#       var match = currentFg.match(/asuka[0-9][0-9]\.png/);
-#       if (match == null) {
-#         tv.action = "fadein";
-#       } else {
-#         var newFile = "asuka0" + mp.num + ".png";
-#         if (newFile == match[0]) {
-#           tv.action = "none"; // 現在表示している立ち絵のままでOKなので何もしない
-#         } else {
-#           tv.action = "change";
-#         }
-#       }
-#     }
-#     console.log("fg_asuka action:", tv.action);
-#   ---
-#   ;if exp: "tv.action == 'change'"
-#     # 立ち絵入れ替え
-#     ;pretrans
-#     ;loadchara name: "asuka", num: "&mp.num", visible: true
-#     ;trans time: 200
-#     ;waittrans
-#   ;elsif exp: "tv.action == 'fadein'"
-#     # 新規フェードイン
-#     ;pretrans
-#     ;loadchara name: "asuka", num: "&mp.num", visible: true
-#     ;trans time: 500
-#     ;waittrans
-#   ;endif
-# ;endmacro
+# 立ち絵を即アウト
+;macro name: "unloadchar"
+  ---
+    tv.lay = mp.name;
+  ---
+  ;layopt lay: "&tv.lay", visible: false
+;endmacro
 
 # 明日香の立ち絵と名前を表示
 ;macro name: "asuka"
