@@ -1,7 +1,9 @@
 # システムボタンの初期化
 
 ---
-if (tv.meslay_color_mode == "blue") {
+if (tv.meslay_mode == "orange") {
+  tv.systembutton_image_prefix = "sysbtn1";
+} else if (tv.meslay_mode == "blue") {
   tv.systembutton_image_prefix = "sysbtn2";
 } else {
   tv.systembutton_image_prefix = "sysbtn1";

@@ -21,7 +21,7 @@
 # 操作対象はデフォルトで表ページ
 #-------------------------------------------------------------------
 ;macro name: "set_to_orange"
-  -tv.meslay_color_mode = "orange";
+  -tv.meslay_mode = "orange";
   -tv.page = mp.page == "back" ? "back" : "fore";
   ;currentpage page: "&tv.page"
   ;layopt lay: "mes", page: "&tv.page", x: 0, y: (720-200)
@@ -38,7 +38,7 @@
 ;endmacro
 
 ;macro name: "set_to_blue"
-  -tv.meslay_color_mode = "blue";
+  -tv.meslay_mode = "blue";
   -tv.page = mp.page == "back" ? "back" : "fore";
   ;currentpage page: "&tv.page"
   ;layopt lay: "mes", page: "&tv.page", x: 0, y: (720-200)
@@ -54,6 +54,28 @@
   ;call file: "script/system_button.pon"
 ;endmacro
 
+;macro name: "set_to_radio_orange"
+  -tv.meslay_mode = "radio_orange";
+  -tv.page = mp.page == "back" ? "back" : "fore";
+  ;currentpage page: "&tv.page"
+  ;layopt lay: "mes", page: "&tv.page", x: (1280-560)/2, y: (720-315)/2
+  ;clearcolor lay: "mes", page: "&tv.page"
+  ;image lay: "mes", page: "&tv.page", file: "image/message-base3.png"
+  ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 10,
+  ;call file: "script/system_button.pon"
+;endmacro
+
+;macro name: "set_to_radio_blue"
+  -tv.meslay_mode = "radio_blue";
+  -tv.page = mp.page == "back" ? "back" : "fore";
+  ;currentpage page: "&tv.page"
+  ;layopt lay: "mes", page: "&tv.page", x: (1280-560)/2, y: (720-315)/2
+  ;clearcolor lay: "mes", page: "&tv.page"
+  ;image lay: "mes", page: "&tv.page", file: "image/message-base4.png"
+  ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 10,
+  ;call file: "script/system_button.pon"
+;endmacro
+
 
 #-------------------------------------------------------------------
 # 発言者の名前
@@ -66,10 +88,21 @@
 
 ;macro name: "noname"
   ;clear lay: "speaker"
+  -tv.speaking = false;
+;endmacro
+
+;macro name: "joban"
+  ;clear lay: "speaker"
+  -tv.speaking = true;
+  ;ch text: "「"
+  ;indent
 ;endmacro
 
 ;macro name: "kenji"
   ;echo_name name: "健二"
+  -tv.speaking = true;
+  ;ch text: "「"
+  ;indent
 ;endmacro
 
 #;macro name: "asuka"
@@ -85,6 +118,10 @@
 # 行末
 #-------------------------------------------------------------------
 ;macro name: "endpage"
+  ;if exp: "tv.speaking"
+    ;ch text: "」"
+    ;endindent
+  ;endif
   ;p
   ;clear
 ;endmacro
@@ -278,6 +315,9 @@
     ;chara_in name: "asuka", num: "&mp.num"
   ;endif
   ;echo_name name: "明日香"
+  -tv.speaking = true;
+  ;ch text: "「"
+  ;indent
 ;endmacro
 
 # 明日香の立ち絵の名前を非表示に
@@ -292,6 +332,9 @@
     ;chara_in name: "yuuki", num: "&mp.num"
   ;endif
   ;echo_name name: "優希"
+  -tv.speaking = true;
+  ;ch text: "「"
+  ;indent
 ;endmacro
 
 # 優希の立ち絵の名前を非表示に
@@ -306,6 +349,9 @@
     ;chara_in name: "yuuki", num: "&mp.num"
   ;endif
   ;echo_name name: "？？"
+  -tv.speaking = true;
+  ;ch text: "「"
+  ;indent
 ;endmacro
 
 
