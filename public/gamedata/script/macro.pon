@@ -58,10 +58,10 @@
   -tv.meslay_mode = "radio_orange";
   -tv.page = mp.page == "back" ? "back" : "fore";
   ;currentpage page: "&tv.page"
-  ;layopt lay: "mes", page: "&tv.page", x: (1280-560)/2, y: (720-315)/2
+  ;layopt lay: "mes", page: "&tv.page", x: (1280-640)/2, y: (720-360)/2
   ;clearcolor lay: "mes", page: "&tv.page"
   ;image lay: "mes", page: "&tv.page", file: "image/message-base3.png"
-  ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 10,
+  ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30,
   ;call file: "script/system_button.pon"
 ;endmacro
 
@@ -69,10 +69,10 @@
   -tv.meslay_mode = "radio_blue";
   -tv.page = mp.page == "back" ? "back" : "fore";
   ;currentpage page: "&tv.page"
-  ;layopt lay: "mes", page: "&tv.page", x: (1280-560)/2, y: (720-315)/2
+  ;layopt lay: "mes", page: "&tv.page", x: (1280-640)/2, y: (720-360)/2
   ;clearcolor lay: "mes", page: "&tv.page"
   ;image lay: "mes", page: "&tv.page", file: "image/message-base4.png"
-  ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 10,
+  ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30,
   ;call file: "script/system_button.pon"
 ;endmacro
 
@@ -93,9 +93,10 @@
 
 ;macro name: "joban"
   ;clear lay: "speaker"
-  -tv.speaking = true;
-  ;ch text: "「"
-  ;indent
+  -tv.speaking = false;
+  #-tv.speaking = true;
+  #;ch text: "「"
+  #;indent
 ;endmacro
 
 ;macro name: "kenji"
@@ -191,12 +192,13 @@
 ;macro name: "radio_mes_jump1"
   ;move {
     lay: "mes",
-    time: "250",
+    time: "75",
+    ease: "out",
     path: [
-      {x: (1280-560)/2, y: (720-315)/2 - 50, alpha: 1},
-      {x: (1280-560)/2, y: (720-315)/2, alpha: 1},
-      {x: (1280-560)/2, y: (720-315)/2 - 50, alpha: 1},
-      {x: (1280-560)/2, y: (720-315)/2, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
     ],
   }
 ;endmacro
@@ -209,10 +211,10 @@
     type: "catmullrom",
     path: [
       {x: 50, y: 50, alpha: 1},
-      {x: 1280-50, y: 50, alpha: 1},
+      {x: 1280-640-50, y: 50, alpha: 1},
       {x: 50, y: 720-315-50, alpha: 1},
-      {x: 1280-50, y: 720-315-50, alpha: 1},
-      {x: (1280-560)/2, y: (720-315)/2, alpha: 1},
+      {x: 1280-640-50, y: 720-360-50, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
     ],
   }
 ;endmacro
@@ -221,10 +223,9 @@
   ;move {
     lay: "mes",
     time: "200",
-    ease: "out"
-    path: [
-      {x: (1280-560)/2, y: (720-315)/2 - 50, alpha: 1}
-    ],
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: (720-360)/2-50, alpha: 1} ],
   }
 ;endmacro
 
@@ -232,10 +233,9 @@
   ;move {
     lay: "mes",
     time: "200",
-    ease: "out"
-    path: [
-      {x: 1280-560-50, y: (720-315)/2, alpha: 1}
-    ],
+    ease: "out",
+    type: "liner",
+    path: [ {x: 1280-640-50, y: (720-360)/2, alpha: 1} ],
   }
 ;endmacro
 
@@ -243,10 +243,9 @@
   ;move {
     lay: "mes",
     time: "200",
-    ease: "out"
-    path: [
-      {x: (1280-560)/2, y: 720-315-50, alpha: 1}
-    ],
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: 720-360-50, alpha: 1} ],
   }
 ;endmacro
 
@@ -254,10 +253,9 @@
   ;move {
     lay: "mes",
     time: "200",
-    ease: "out"
-    path: [
-      {x: 50, y: (720-315)/2, alpha: 1}
-    ],
+    ease: "out",
+    type: "liner",
+    path: [ {x: 50, y: (720-360)/2, alpha: 1} ],
   }
 ;endmacro
 
@@ -265,10 +263,9 @@
   ;move {
     lay: "mes",
     time: "200",
-    ease: "out"
-    path: [
-      {x: (1280-560)/2, y: (720-315)/2, alpha: 1}
-    ],
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: (720-360)/2, alpha: 1} ],
   }
 ;endmacro
 
