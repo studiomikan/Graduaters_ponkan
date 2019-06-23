@@ -3,10 +3,9 @@
 ---
 ponkan.scaleMode = Ponkan3.ScaleMode.FIXED;
 ponkan.setFixedScaleSize(1280, 720);
+tv.meslay_mode = "orange";
 ---
 
-;freeimage lay: "all", page: "back"
-;freeimage lay: "all", page: "fore"
 ;call file: "script/init_system.pon"
 
 |game_start_mark:グラディエイターズ！
@@ -60,23 +59,24 @@ ponkan.setFixedScaleSize(1280, 720);
 ;backlay
 
 # テスト
-;waitclick
+#;waitclick
 #;set_to_blue
 #;fadein_meslay
-;jump file: "scenario/04.pon"
+#;jump file: "scenario/04.pon"
+;jump file: "scenario/01.pon"
 ;s
 
 # サークルロゴ表示
-#;pretrans
-#;image lay: 1, file: "image/logo-tool.png", visible: true, x: 436, y: 290
-#;trans time: 1000
-#;waittrans canskip: true
-#;wait time: 1000, canskip: true
-#;pretrans
-#;layopt lay: 1, visible: false, x: 0, y: 0
-#;freeimage lay: 1
-#;trans time: 1000
-#;waittrans canskip: true
+;pretrans
+;image lay: 1, file: "image/logo-tool.png", visible: true, x: 436, y: 290
+;trans time: 1000
+;waittrans canskip: true
+;wait time: 1000, canskip: true
+;pretrans
+;layopt lay: 1, visible: false, x: 0, y: 0
+;freeimage lay: 1
+;trans time: 1000
+;waittrans canskip: true
 
 # タイトル画面
 ;jump file: "scenario/title.pon"

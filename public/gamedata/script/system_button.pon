@@ -1,93 +1,174 @@
 # システムボタンの初期化
 
 ---
-if (tv.meslay_mode == "orange") {
-  tv.systembutton_image_prefix = "sysbtn1";
-} else if (tv.meslay_mode == "blue") {
-  tv.systembutton_image_prefix = "sysbtn2";
-} else {
-  tv.systembutton_image_prefix = "sysbtn1";
+// ボタン用画像の切り替え
+switch (tv.meslay_mode) {
+  case "orange":
+  case "radio_orange":
+    tv.systembutton_image_prefix = "sysbtn1";
+    break;
+  case "blue":
+  case "radio_blue":
+    tv.systembutton_image_prefix = "sysbtn2";
+    break;
 }
 
-
-tv.systembutton = {
-  color:        0xFFFFFF,
-  x:            1280-230,
-  y:            720-170,
-  width:        300,
-  height:       300,
-
-  buttons: [
-    {
-      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-save.png`,
-      x:          108,
-      y:          (26 + 5) * 0,
-      file:       "script/save.pon",
-      label:      "save_start",
-      exp:        ""
-    },
-    {
-      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-load.png`,
-      x:          108,
-      y:          (26 + 5) * 1,
-      file:       "script/load.pon",
-      label:      "load_start",
-      exp:        ""
-    },
-    {
-      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-config.png`,
-      x:          108,
-      y:          (26 + 5) * 2,
-      file:      "script/config.pon",
-      label:     "config_start",
-      exp:       ""
-    },
-    {
-      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-log.png`,
-      x:          108,
-      y:          (26 + 5) * 3,
-      file:       "script/system_button.pon",
-      label:      "act_log",
-      exp:        ""
-    },
-    {
-      imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-title.png`,
-      x:          108,
-      y:          (26 + 5) * 4,
-      file:       "script/system_button.pon",
-      label:      "act_title",
-      exp:        ""
-    },
-    {
-      imagefile:  "image/sysbtn/sysbtn-auto.png",
-      x:          0,
-      y:          0,
-      file:       "script/system_button.pon",
-      label:      "act_auto",
-      exp:        ""
-    },
-    {
-      imagefile:  "image/sysbtn/sysbtn-skip.png",
-      x:          32,
-      y:          0,
-      file:       "script/system_button.pon",
-      label:      "act_skip",
-      exp:        ""
-    },
-    {
-      imagefile:  "image/sysbtn/sysbtn-close.png",
-      x:          70,
-      y:          0,
-      file:       "script/system_button.pon",
-      label:      "act_close",
-      exp:        "",
-    },
-  ]
+// ボタン位置、処理内容の設定
+if (tv.meslay_mode.match(/radio/)) {
+  // ラジオ用のボタン
+  tv.systembutton = {
+    x:            1280 - 570 - 10,
+    y:            720 - 65,
+    width:        570,
+    height:       60,
+    buttons: [
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-save.png`,
+        x:          (110 + 5) * 0,
+        y:          30,
+        file:       "script/save.pon",
+        label:      "save_start",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-load.png`,
+        x:          (110 + 5) * 1,
+        y:          30,
+        file:       "script/load.pon",
+        label:      "load_start",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-config.png`,
+        x:          (110 + 5) * 2,
+        y:          30,
+        file:      "script/config.pon",
+        label:     "config_start",
+        exp:       ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-log.png`,
+        x:          (110 + 5) * 3,
+        y:          30,
+        file:       "script/system_button.pon",
+        label:      "act_log",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-title.png`,
+        x:          (110 + 5) * 4,
+        y:          30,
+        file:       "script/system_button.pon",
+        label:      "act_title",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-auto.png",
+        x:          480,
+        y:          0,
+        file:       "script/system_button.pon",
+        label:      "act_auto",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-skip.png",
+        x:          480 + 32,
+        y:          0,
+        file:       "script/system_button.pon",
+        label:      "act_skip",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-close.png",
+        x:          480 + 70,
+        y:          0,
+        file:       "script/system_button.pon",
+        label:      "act_close",
+        exp:        "",
+      },
+    ]
+  }
+} else {
+  // 通常時のボタン
+  tv.systembutton = {
+    x:            1280-230,
+    y:            720-170,
+    width:        300,
+    height:       300,
+    buttons: [
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-save.png`,
+        x:          108,
+        y:          (26 + 5) * 0,
+        file:       "script/save.pon",
+        label:      "save_start",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-load.png`,
+        x:          108,
+        y:          (26 + 5) * 1,
+        file:       "script/load.pon",
+        label:      "load_start",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-config.png`,
+        x:          108,
+        y:          (26 + 5) * 2,
+        file:      "script/config.pon",
+        label:     "config_start",
+        exp:       ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-log.png`,
+        x:          108,
+        y:          (26 + 5) * 3,
+        file:       "script/system_button.pon",
+        label:      "act_log",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-title.png`,
+        x:          108,
+        y:          (26 + 5) * 4,
+        file:       "script/system_button.pon",
+        label:      "act_title",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-auto.png",
+        x:          0,
+        y:          0,
+        file:       "script/system_button.pon",
+        label:      "act_auto",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-skip.png",
+        x:          32,
+        y:          0,
+        file:       "script/system_button.pon",
+        label:      "act_skip",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-close.png",
+        x:          70,
+        y:          0,
+        file:       "script/system_button.pon",
+        label:      "act_close",
+        exp:        "",
+      },
+    ]
+  }
 }
 ---
 
 # 親レイヤの設定
 ;clear lay: "&tv.layer.systembutton"
+;freeimage lay: "&tv.layer.systembutton"
+;clearbuttons lay: "&tv.layer.systembutton"
 ;layopt {
   lay:          "&tv.layer.systembutton",
   x:            "&tv.systembutton.x",
