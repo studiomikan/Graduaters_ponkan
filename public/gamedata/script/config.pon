@@ -277,10 +277,11 @@ tv.varName = "systemVolume";
 
 
 # コンフィグ画面の閉じるボタン
+;layopt lay: "&tv.system.config.btnLayMap.close", x: 0, y: 0, width: 1280, height: 100
 ;imagebutton {
   lay:       "&tv.system.config.btnLayMap.close",
   imagefile: "image/close_button.png",
-  x:         "&1280 - 30 - 24",
+  x:         1280-30-24,
   y:         23,
   jump:      true,
   label:     "exit"
@@ -378,17 +379,57 @@ var indexToValue = function(varName) {
   return tv.system.config.values[varName][index];
 };
 var s = tv.system.config.selected;
-ponkan.unreadTextSpeed = indexToValue("unreadTextSpeed");
-ponkan.readTextSpeed = indexToValue("readTextSpeed");
-ponkan.autoModeInterval = indexToValue("autoModeSpeed");
-ponkan.canSkipUnreadPart = (s.skipMode == 1);
-ponkan.getSoundBuffer("bgm").volume2 = indexToValue("bgmVolume");
-ponkan.getSoundBuffer("se").volume2 = indexToValue("seVolume");
-ponkan.getSoundBuffer("system").volume2 = indexToValue("systemVolume");
+ponkan.unreadTextSpeed                  = sv.config.unreadTextSpeed = indexToValue("unreadTextSpeed");
+ponkan.readTextSpeed                    = sv.config.readTextSpeed   = indexToValue("readTextSpeed");
+ponkan.autoModeInterval                 = sv.config.autoModeSpeed   = indexToValue("autoModeSpeed");
+ponkan.canSkipUnreadPart                = sv.config.skipMode        = (s.skipMode == 1);
+ponkan.getSoundBuffer("bgm").volume2    = sv.config.bgmVolume       = indexToValue("bgmVolume");
+ponkan.getSoundBuffer("se").volume2     = sv.config.seVolume        = indexToValue("seVolume");
+ponkan.getSoundBuffer("system").volume2 = sv.config.systemVolume    = indexToValue("systemVolume");
+sv.config.scaleMode        = tv.system.config.selected.scaleMode;
+sv.config.fixedScaleWidth  = tv.system.config.selected.fixedScaleWidth;
+sv.config.fixedScaleHeight = tv.system.config.selected.fixedScaleHeight;
 ---
+;savesysvar
 ;lockbuttons page: "fore"
 ;lockbuttons page: "back"
 ;trans method: "crossfade", time: 200
 ;waittrans canskip: false
 ;historyopt enabled: true, output: true
+;return
+
+
+#=========================================================================================
+# コンフィグ関係の復元
+#=========================================================================================
+*restore_config_values
+;if exp: "sv.config == null"
+  ---
+    sv.config = {
+      unreadTextSpeed:  10,
+      readTextSpeed:    10,
+      autoModeSpeed:    5000,
+      skipMode:         0,
+      bgmVolume:        100,
+      seVolume:         100,
+      systemVolume:     100,
+      scaleMode:        Ponkan3.ScaleMode.FIT,
+      fixedScaleWidth:  1280,
+      fixedScaleHeight: 720,
+    };
+  ---
+;endif
+---
+ponkan.unreadTextSpeed = sv.config.unreadTextSpeed;
+ponkan.readTextSpeed = sv.config.readTextSpeed;
+ponkan.autoModeInterval = sv.config.autoModeSpeed
+ponkan.canSkipUnreadPart = (sv.config.skipMode == 1);
+ponkan.getSoundBuffer("bgm").volume2 = sv.config.bgmVolume;
+ponkan.getSoundBuffer("se").volume2 = sv.config.seVolume;
+ponkan.getSoundBuffer("system").volume2 = sv.config.systemVolume;
+ponkan.scaleMode = sv.config.scaleMode;
+if (ponkan.scaleMode === Ponkan3.ScaleMode.FIXED) {
+  ponkan.setFixedScaleSize(sv.config.fixedScaleWidth, sv.config.fixedScaleHeight);
+}
+---
 ;return

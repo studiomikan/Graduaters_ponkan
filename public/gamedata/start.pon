@@ -6,11 +6,6 @@ ponkan.setFixedScaleSize(1280, 720);
 tv.meslay_mode = "orange";
 ---
 
-;call file: "script/init_system.pon"
-
-|game_start_mark:グラディエイターズ！
-;wait time: 500, canskip: false
-
 # エイリアス
 ;layalias name: "base", lay: "0"
 ;layalias name: "speaker", lay: "24"
@@ -20,11 +15,17 @@ tv.meslay_mode = "orange";
 ;layalias name: "filter", lay: "4"
 ;layalias name: "op1", lay: "5"
 ;layalias name: "op2", lay: "6"
-
 ;bufalias name: "bgm", buf: 0
 ;bufalias name: "system", buf: 1
 ;bufalias name: "se", buf: 2
 ;bufalias name: "se2", buf: 3
+
+;call file: "script/init_system.pon"
+;call file: "script/config.pon", label: "restore_config_values"
+
+|game_start_mark:グラディエイターズ！
+;wait time: 500, canskip: false
+
 
 # 背景
 ;layopt lay: "base", x: 0, y: 0, width: 1280, height: 720
