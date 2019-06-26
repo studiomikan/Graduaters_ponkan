@@ -2,7 +2,7 @@
 *save_start
 ;tempsave num: 0
 ;historyopt enabled: false, output: false
-;screenshot
+;lockscreenshot
 ;rclick enabled: false
 ;backlay
 
@@ -259,6 +259,7 @@ PAGE:
 ;lockbuttons page: "back"
 ;trans method: "crossfade", time: 200
 ;waittrans canskip: false
+;unlockscreenshot
 ;historyopt enabled: true, output: true
 ;return
 

@@ -83,6 +83,8 @@
 ;macro name: "echo_name"
   ;clear lay: "speaker"
   ;ch lay: "speaker", text: "&mp.name"
+  ;hch text: "&'【' + mp.name + '】'"
+  ;hbr
   ;layopt lay: "speaker", visible: true
 ;endmacro
 
@@ -93,36 +95,17 @@
 
 ;macro name: "joban"
   ;clear lay: "speaker"
-  -tv.speaking = false;
-  #-tv.speaking = true;
-  #;ch text: "「"
-  #;indent
 ;endmacro
 
 ;macro name: "kenji"
   ;echo_name name: "健二"
-  -tv.speaking = true;
-  ;ch text: "「"
-  ;indent
 ;endmacro
-
-#;macro name: "asuka"
-#  ;echo_name name: "明日香"
-#;endmacro
-#
-#;macro name: "yuuki"
-#  ;echo_name name: "優希"
-#;endmacro
 
 
 #-------------------------------------------------------------------
 # 行末
 #-------------------------------------------------------------------
 ;macro name: "endpage"
-  ;if exp: "tv.speaking"
-    ;ch text: "」"
-    ;endindent
-  ;endif
   ;p
   ;hbr
   ;clear
@@ -176,9 +159,9 @@
   ;pretrans
   ;layopt lay: "all", visible: false
   ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
-  ;trans time: 1000
+  ;trans time: 2000
   ;waittrans canskip: false
-  ;wait time: 1500, canskip: false
+  ;wait time: 200, canskip: false
   # アウト
   ;pretrans
   ;layopt lay: "telop", visible: false
@@ -401,9 +384,6 @@
     ;chara_in name: "asuka", num: "&mp.num"
   ;endif
   ;echo_name name: "明日香"
-  -tv.speaking = true;
-  ;ch text: "「"
-  ;indent
 ;endmacro
 
 # 明日香の立ち絵の名前を非表示に
@@ -418,9 +398,6 @@
     ;chara_in name: "yuuki", num: "&mp.num"
   ;endif
   ;echo_name name: "優希"
-  -tv.speaking = true;
-  ;ch text: "「"
-  ;indent
 ;endmacro
 
 # 優希の立ち絵の名前を非表示に
@@ -435,9 +412,6 @@
     ;chara_in name: "yuuki", num: "&mp.num"
   ;endif
   ;echo_name name: "？？"
-  -tv.speaking = true;
-  ;ch text: "「"
-  ;indent
 ;endmacro
 
 

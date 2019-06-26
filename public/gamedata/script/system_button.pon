@@ -92,7 +92,7 @@ if (tv.meslay_mode.match(/radio/)) {
   // 通常時のボタン
   tv.systembutton = {
     x:            1280-230,
-    y:            720-170,
+    y:            720-165,
     width:        300,
     height:       300,
     buttons: [

@@ -20,8 +20,17 @@ tv.meslay_mode = "orange";
 ;bufalias name: "se", buf: 2
 ;bufalias name: "se2", buf: 3
 
+# システム初期化
 ;call file: "script/init_system.pon"
 ;call file: "script/config.pon", label: "restore_config_values"
+
+# コマンドショートカット
+;macro name: "cmd_speak"
+  ;ch text: "「"
+  ;indent
+;endmacro
+;commandshortcut ch: "「", command: "cmd_speak"
+
 
 |game_start_mark:グラディエイターズ！
 ;wait time: 500, canskip: false
