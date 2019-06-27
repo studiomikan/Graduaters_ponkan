@@ -15,7 +15,7 @@
 #△ＢＧＭ３
 [bgmopt volume=100][playbgm storage=bgm003]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -166,7 +166,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #フェードアウト
 [fadeOutBlack time=2000 canskip=false]
 

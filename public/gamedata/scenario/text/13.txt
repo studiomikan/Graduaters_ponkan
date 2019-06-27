@@ -16,7 +16,7 @@
 #☆フレームカラー　青
 [changeMessageFrameColor color=blue]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -38,7 +38,7 @@
 #△ＢＧＭ１
 [bgmopt volume=100][playbgm storage=bgm001]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -184,10 +184,10 @@
 「いや、そうじゃないけど、まぁ理由はどうだっていいんだ。……そのときに、お前のお兄さんを見かけたんだ」
 ;endpage
 
-;fadeout_mes
+;fadeout_meslay
 [fadeoutbgm time=700]
 [fadeoutblack time=700]
-;fadein_mes
+;fadein_meslay
 #[fadeOutYuuki]
 
 
@@ -221,9 +221,9 @@
 精神年齢にして３歳前後。お箸も握れず、気にくわないことがあれば泣きわめき、いまだ自我というものに目覚めていない[ruby text=・]子[ruby text=・]供[ruby text=・]の[ruby text=・]よ[ruby text=・]う[ruby text=・]な[ruby text=・]大[ruby text=・]人。正真正銘、優希のお兄さんだった。
 ;endpage
 
-;fadeout_mes
+;fadeout_meslay
 [cb storage=roof]
-;fadein_mes
+;fadein_meslay
 
 
 [fadeInYuuki num=5 pos=center time=500]
@@ -369,7 +369,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 #☆テロップ　イン

@@ -20,7 +20,7 @@
 #○フェード　屋上
 [cb storage=roof]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -44,13 +44,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　黒
 [cb2 storage=black]
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 #△歩く
 [playse storage=SE12 buf=2 loop=true]
 
@@ -118,11 +118,11 @@
 #△止まる
 [stopse buf=2]
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -151,13 +151,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　教室
 [cb2 storage=class]
 #△教室ドア
 [playse storage=SE08 buf=1 loop=false]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 #△ＢＧＭ３
 [bgmopt volume=100][playbgm storage=bgm003]
 
@@ -383,12 +383,12 @@
 #△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆ＢＧＭ３
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -438,7 +438,7 @@
 
 #移動。四階から廊下＞黒＞廊下＞黒？
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #○移動　廊下
@@ -448,7 +448,7 @@
 #○移動　黒
 [cb2 storage=black]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -536,7 +536,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #○フェードアウト　１０００　ｆ　黒

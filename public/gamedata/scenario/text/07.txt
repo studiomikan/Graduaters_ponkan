@@ -15,7 +15,7 @@
 #☆フレームカラー　オレンジ
 [changeMessageFrameColor color=orange]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 #△歩く
 [playse storage=SE12 buf=2 loop=true]
 
@@ -50,13 +50,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-#;fadeout_mes
+#;fadeout_meslay
 #△教室ドア
 [playse storage=SE08 buf=1 loop=false]
 #○フェード　教室
 #[cb storage=class]
 #☆メッセージフレーム　イン
-#;fadein_mes
+#;fadein_meslay
 
 [fadeInAsuka num=2 pos=center time=500]
 
@@ -119,7 +119,7 @@
 #△ＢＧＭ１
 [bgmopt volume=100][playbgm storage=bgm001]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 [fadeInAsuka num=2 pos=center time=500]
 
@@ -283,7 +283,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 [image layer=1 page=fore storage=chara_A01 visible=true pos=center]
@@ -292,7 +292,7 @@
 #☆テロップ　アウト
 [telopOut]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 [asuka num=1 pos=center]
 
@@ -407,7 +407,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #△ＢＧＭフェードアウト

@@ -15,7 +15,7 @@
 [changeMessageFrameColor color=orange]
 
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 ;noname
@@ -88,13 +88,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆#テロップ　イン
 #☆#テロップ　アウト
 #☆ミニロゴ１
 [intermission1]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -137,11 +137,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -160,11 +160,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -208,11 +208,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　黒
 [cb2 storage=black]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 

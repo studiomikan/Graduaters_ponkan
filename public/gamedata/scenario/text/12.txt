@@ -26,7 +26,7 @@
 #△ＢＧＭ１
 [bgmopt volume=100][playbgm storage=bgm001]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -60,7 +60,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #○移動　廊下
@@ -68,7 +68,7 @@
 #○移動　教室
 [cb2 storage=class]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 #△教室ドア
 [playse storage=SE08 buf=1 loop=false]
@@ -120,7 +120,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 
 #☆手紙
 [FadeInMessageFrame2]
@@ -203,13 +203,13 @@
 [eval exp='f.flagLetter = false#']
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #△走る
 [playse storage=SE13 buf=2 loop=true]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -250,7 +250,7 @@
 #△止まる
 [stopse buf=2]
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 #☆テロップ　イン

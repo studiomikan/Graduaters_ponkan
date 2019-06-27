@@ -27,7 +27,7 @@
 #☆フレームカラー　青
 [changeMessageFrameColor color=blue]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -160,7 +160,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 #☆テロップ　イン
@@ -172,7 +172,7 @@
 #△ＢＧＭ３
 [bgmopt volume=100][playbgm storage=bgm003]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 [fadeInYuuki num=2 pos=center time=500]
 
@@ -472,11 +472,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -581,11 +581,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　教室
 [cb2 storage=class]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 #△教室ドア
 [playse storage=SE08 buf=1 loop=false]
 
@@ -724,13 +724,13 @@
 #△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #○移動　黒
 [cb2 storage=black]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -1087,7 +1087,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 #○移動　屋上
@@ -1095,7 +1095,7 @@
 #△ＢＧＭ１
 [bgmopt volume=100][playbgm storage=bgm001]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 [fadeInAsuka num=1 pos=left time=500]
 
@@ -1568,7 +1568,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #△ＢＧＭフェードアウト

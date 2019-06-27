@@ -20,7 +20,7 @@
 #☆フレームカラー　青
 [changeMessageFrameColor color=blue]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -34,7 +34,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△屋上ドア
 [playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
 #○フェードアウト　白
@@ -44,7 +44,7 @@
 #△ＢＧＭ３
 [bgmopt volume=100][playbgm storage=bgm003]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -911,13 +911,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○フェードアウト　１０００　黒
 [FadeOutBlack time=1000]
 #○ズーム　終了
 [endZoom]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -936,7 +936,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #○フェードアウト　１０００　ｆ　黒

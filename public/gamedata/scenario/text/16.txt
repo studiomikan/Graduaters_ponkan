@@ -18,7 +18,7 @@
 #☆フレームカラー　青
 [changeMessageFrameColor color=blue]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -60,13 +60,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #△走る
 [playse storage=SE13 buf=2 loop=true]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -85,11 +85,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -108,11 +108,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -141,13 +141,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #○移動　黒
 [cb2 storage=black]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -182,7 +182,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△止まる
 [stopse buf=2]
 #△屋上ドア
@@ -195,7 +195,7 @@
 #○ズーム　屋上
 [zoomInRoof]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -782,11 +782,11 @@
 #□#優希　アウト
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -795,11 +795,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -808,11 +808,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -826,13 +826,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -846,7 +846,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆鼓動
@@ -854,7 +854,7 @@
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -874,13 +874,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○フェードアウト　１５００　ｆ　白
 [FadeOutWhite time=1500 canskip=false]
 #○ズーム　終了
 [endZoom]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -894,13 +894,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○フェードアウト　１０００　ｆ　黒
 [FadeOutBlack time=1000 canskip=false]
 #△落下
 [playse storage=SE19 buf=1 loop=false]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -952,7 +952,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #○フェードアウト　１０００　ｆ　黒

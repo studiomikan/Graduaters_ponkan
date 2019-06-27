@@ -18,7 +18,7 @@
 #☆フレームカラー　青
 [changeMessageFrameColor color=blue]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -147,13 +147,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #△ＢＧＭ１
 [bgmopt volume=100][playbgm storage=bgm001]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -258,11 +258,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　教室
 [cb2 storage=class]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 #△教室ドア
 [playse storage=SE08 buf=1 loop=false]
 
@@ -767,7 +767,7 @@
 #□#明日香　アウト
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #□#明日香　０　アウト
@@ -777,7 +777,7 @@
 #△ＢＧＭ１
 [bgmopt volume=100][playbgm storage=bgm001]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 [fadeInAsuka num=1 pos=center time=500]
 
@@ -954,11 +954,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -1116,13 +1116,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△ＢＧＭフェードアウト
 [fadeoutbgm time=1000]
 #○フェードアウト　黒
 [FadeOutBlack]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -1297,13 +1297,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△屋上ドア
 [playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
 #○フェードアウト　１０００　ｆ　白
 [FadeOutWhite time=1000 canskip=false]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -1368,13 +1368,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○フェードアウト　１０００　白
 [FadeOutWhite time=1000]
 #○フェードアウト　１０００　黒
 [FadeOutBlack time=1000]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -1388,7 +1388,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #○フェードアウト　１０００　ｆ　黒

@@ -26,7 +26,7 @@
 #○フェード　廊下
 [cb storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -50,7 +50,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #○移動　廊下
@@ -58,7 +58,7 @@
 #○移動　黒
 [cb2 storage=black]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -67,7 +67,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△止まる
 [stopse buf=2]
 #△屋上ドア
@@ -75,7 +75,7 @@
 #○フェードアウト　１５００　ｆ　白
 [FadeOutWhite time=1500 canskip=false]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -84,13 +84,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○フェード　屋上
 [cb storage=roof]
 #○ズーム　屋上
 [zoomInRoof]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -179,11 +179,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -192,11 +192,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -215,11 +215,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 [asuka num=2 pos=center]
 
@@ -239,11 +239,11 @@
 「お兄ちゃん、死んでないんだよね」
 ;endpage
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆鼓動
 [heartbeat]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 ;noname
@@ -299,13 +299,13 @@
 
 #[fadeOutAsuka]
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○フェードアウト　黒
 [FadeOutBlack]
 #○ズーム　終了
 [endZoom]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -625,10 +625,10 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-#;fadeout_mes
+#;fadeout_meslay
 [FadeOutWhite canskip=false]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -641,7 +641,7 @@
 そんなこと、決まってる。
 ;endpage
 
-#;fadeout_mes
+#;fadeout_meslay
 #○フェード　ズーム屋上
 	[backlay]
 	[myZoom storage=roof layer=0  page=back visible=true top=-50 left=-100 wr=2.0 hr=2.0]
@@ -649,7 +649,7 @@
 	[trans method=crossfade time=1000]
 	[wt canskip=false]
 	[eval exp="f.flagZoom = true"]
-#;fadein_mes
+#;fadein_meslay
 
 
 
@@ -782,7 +782,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○フェードアウト　１５００　ｆ　白
 [FadeOutWhite time=1500 canskip=false]
 #○ズーム　終了
@@ -799,7 +799,7 @@
 #○フェード　屋上
 [cb storage=roof]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -1216,7 +1216,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #☆テロップ　イン
 [telopIn]
 #ＢＧＭフェードアウト

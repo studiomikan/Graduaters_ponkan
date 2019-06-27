@@ -222,7 +222,7 @@
 ;endpage
 
 #☆ラジオメッセージ　アウト
-;fadeout_mes
+;fadeout_meslay
 [eval exp="f.flagLetter = false"]
 
 #☆テロップ　イン

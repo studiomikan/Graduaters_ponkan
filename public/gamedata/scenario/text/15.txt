@@ -25,7 +25,7 @@
 #△走る
 [playse storage=SE13 buf=2 loop=true]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 #■■ここに幼少時代の回想とか入れてもいいかも
 
@@ -45,7 +45,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #○移動　廊下
@@ -57,7 +57,7 @@
 #△教室ドア
 [playse storage=SE08 buf=1 loop=false]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -116,11 +116,11 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　廊下
 [cb2 storage=hall]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -134,7 +134,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 
 #☆手紙
 [FadeInMessageFrame2]
@@ -172,7 +172,7 @@
 [eval exp='f.flagLetter = false#']
 
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 ;noname
@@ -190,13 +190,13 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #○移動　黒
 [cb2 storage=black]
 #△走る
 [playse storage=SE13 buf=2 loop=true]
 #☆メッセージフレーム　イン
-;fadein_mes
+;fadein_meslay
 
 
 
@@ -220,7 +220,7 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-;fadeout_mes
+;fadeout_meslay
 #△止まる
 [stopse buf=2]
 #☆テロップ　イン
