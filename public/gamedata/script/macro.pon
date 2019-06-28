@@ -8,11 +8,13 @@
 
 ;macro name: "show_meslay"
   ;layopt lay: "mes", visible: true
+  ;layopt lay: "speaker", visible: true
   ;layopt lay: "&tv.layer.systembutton", visible: true
 ;endmacro
 
 ;macro name: "hide_meslay"
   ;layopt lay: "mes", visible: false
+  ;layopt lay: "speaker", visible: false
   ;layopt lay: "&tv.layer.systembutton", visible: false
 ;endmacro
 
@@ -121,7 +123,7 @@
   ;pretrans
   ;show_meslay
   ;noname
-  ;trans time: "200"
+  ;trans time: "300"
   ;waittrans canskip: "false"
 ;endmacro
 
@@ -129,7 +131,7 @@
   ;pretrans
   ;hide_meslay
   ;noname
-  ;trans time: "200"
+  ;trans time: "300"
   ;waittrans canskip: "false"
 ;endmacro
 
