@@ -1,8 +1,8 @@
 # ゲームの開始スクリプト
 
 ---
-ponkan.scaleMode = Ponkan3.ScaleMode.FIXED;
-ponkan.setFixedScaleSize(1280, 720);
+// ponkan.scaleMode = Ponkan3.ScaleMode.FIXED;
+// ponkan.setFixedScaleSize(1280, 720);
 tv.meslay_mode = "orange";
 ---
 
@@ -22,7 +22,6 @@ tv.meslay_mode = "orange";
 
 # システム初期化
 ;call file: "script/init_system.pon"
-;call file: "script/config.pon", label: "restore_config_values"
 
 # コマンドショートカット
 ;macro name: "cmd_speak"

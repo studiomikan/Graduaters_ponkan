@@ -6,6 +6,18 @@
 
 ---
 if (tv.system == null) tv.system = {};
+
+var valueToIndex = function(varName, value) {
+  var values = tv.system.config.values[varName];
+  for (var i = 0; i < values.length; i++) {
+    var v1 = values[i];
+    if (v1 == value) {
+      return i;
+    }
+  }
+  return values.length - 1;
+};
+
 tv.system.config= {
   // 背景画像
   bg: "image/config.png",
@@ -48,34 +60,56 @@ tv.system.config= {
     seVolume:        [ 0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00 ],
     systemVolume:    [ 0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.00 ],
   },
+  valueNames: [
+    "unreadTextSpeed",
+    "readTextSpeed",
+    "autoModeSpeed",
+    "skipMode",
+    "bgmVolume",
+    "seVolume",
+    "systemVolume",
+    "scaleMode",
+    "fixedScaleWidth",
+    "fixedScaleHeight",
+  ],
+  getValue: {
+    unreadTextSpeed:  function() { return valueToIndex("unreadTextSpeed", ponkan.userUnreadTextSpeed); },
+    readTextSpeed:    function() { return valueToIndex("readTextSpeed", ponkan.userReadTextSpeed); },
+    autoModeSpeed:    function() { return valueToIndex("autoModeSpeed", ponkan.autoModeInterval); },
+    skipMode:         function() { return ponkan.canSkipUnreadPart ? 1 : 0; },
+    bgmVolume:        function() { return valueToIndex("bgmVolume", ponkan.getSoundBuffer("bgm").gvolume); },
+    seVolume:         function() { return valueToIndex("seVolume", ponkan.getSoundBuffer("se").gvolume); },
+    systemVolume:     function() { return valueToIndex("seVolume", ponkan.getSoundBuffer("system").gvolume); },
+    scaleMode:        function() { return ponkan.scaleMode; },
+    fixedScaleWidth:  function() { return ponkan.fixedScaleWidth; },
+    fixedScaleHeight: function() { return ponkan.fixedScaleHeight; },
+  },
+  setValue: {
+    unreadTextSpeed:  function(value) { ponkan.userUnreadTextSpeed = value; },
+    readTextSpeed:    function(value) { ponkan.userReadTextSpeed = value; },
+    autoModeSpeed:    function(value) { ponkan.autoModeInterval = value; },
+    skipMode:         function(value) { ponkan.canSkipUnreadPart = value; },
+    bgmVolume:        function(value) { ponkan.getSoundBuffer("bgm").gvolume = value; },
+    seVolume:         function(value) { ponkan.getSoundBuffer("se").gvolume = value; },
+    systemVolume:     function(value) { ponkan.getSoundBuffer("system").gvolume = value; },
+    scaleMode: function(mode, width, height) {
+      ponkan.scaleMode = mode;
+      if (ponkan.scaleMode === Ponkan3.ScaleMode.FIXED) {
+        ponkan.setFixedScaleSize(width, height);
+      }
+    },
+  },
+  onSelect: function(varName, index) {
+    var value = tv.system.config.values[varName][index];
+    // console.log("onSelect", varName, index, value);
+    tv.system.config.setValue[varName](value);
+    tv.system.config.drawTarget = [varName];
+  },
 };
 ---
 
 # 初期値設定
 ---
-var valueToIndex = function(varName, value) {
-  var values = tv.system.config.values[varName];
-  for (var i = 0; i < values.length; i++) {
-    var v1 = values[i];
-    if (v1 == value) {
-      return i;
-    }
-  }
-  return values.length - 1;
-};
-tv.system.config.selected = {
-  unreadTextSpeed:  valueToIndex("unreadTextSpeed", ponkan.unreadTextSpeed),
-  readTextSpeed:    valueToIndex("readTextSpeed", ponkan.readTextSpeed),
-  autoModeSpeed:    valueToIndex("autoModeSpeed", ponkan.autoModeInterval),
-  skipMode:         ponkan.canSkipUnreadPart ? 1 : 0,
-  bgmVolume:        valueToIndex("bgmVolume", ponkan.getSoundBuffer("bgm").volume2),
-  seVolume:         valueToIndex("seVolume", ponkan.getSoundBuffer("se").volume2),
-  systemVolume:     valueToIndex("systemVolume", ponkan.getSoundBuffer("system").volume2),
-  scaleMode:        ponkan.scaleMode,
-  fixedScaleWidth:  ponkan.fixedScaleWidth,
-  fixedScaleHeight: ponkan.fixedScaleHeight,
-};
-//console.log("tv.system.config.selected", tv.system.config.selected);
 tv.system.config.drawTarget = [
   "base",
   "initlayers",
@@ -159,7 +193,7 @@ tv.varName = "autoModeSpeed";
 # スキップ
 ;if exp: "tv.system.config.drawTarget.indexOf('skipMode') >= 0"
   ---
-  tv.jump = !(tv.system.config.selected.skipMode == 0);
+  tv.jump = !(tv.system.config.getValue.skipMode() == 0);
   tv.label = tv.jump ? "draw" : "unlock_config_buttons";
   tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
   ---
@@ -170,11 +204,11 @@ tv.varName = "autoModeSpeed";
     lay: "&tv.system.config.btnLayMap.skipMode",
     text: "既読のみ", x: 0, y: 0,
     width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
-    exp:"tv.system.config.selected.skipMode = 0; tv.system.config.drawTarget = ['skipMode'];",
+    exp:"tv.system.config.setValue.skipMode(0); tv.system.config.drawTarget = ['skipMode'];",
     jump: "&tv.jump", label: "&tv.label",
   }
   ---
-  tv.jump = !(tv.system.config.selected.skipMode == 1);
+  tv.jump = !(tv.system.config.getValue.skipMode() == 1);
   tv.label = tv.jump ? "draw" : "unlock_config_buttons";
   tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
   ---
@@ -182,7 +216,7 @@ tv.varName = "autoModeSpeed";
     lay: "&tv.system.config.btnLayMap.skipMode",
     text: "すべて", x: 130, y: 0,
     width: 120, height: 24, bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.bgalphas",
-    exp:"tv.system.config.selected.skipMode = 1; tv.system.config.drawTarget = ['skipMode'];",
+    exp:"tv.system.config.setValue.skipMode(1); tv.system.config.drawTarget = ['skipMode'];",
     jump: "&tv.jump", label: "&tv.label",
   }
 ;endif
@@ -215,13 +249,13 @@ tv.varName = "systemVolume";
 ;endif
 
 
-## スケーリング
+### スケーリング
 ;if exp: "tv.system.config.drawTarget.indexOf('scaleMode') >= 0"
   ---
-  tv.jump = !(tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FULLSCREEN);
+  tv.jump = !(tv.system.config.getValue.scaleMode() === Ponkan3.ScaleMode.FULLSCREEN);
   tv.label = tv.jump ? "draw" : "unlock_config_buttons";
   tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
-  tv.exp = "tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FULLSCREEN; tv.system.config.drawTarget = ['scaleMode'];";
+  tv.exp = "tv.system.config.setValue.scaleMode(Ponkan3.ScaleMode.FULLSCREEN); tv.system.config.drawTarget = ['scaleMode'];";
   ---
   ;layopt lay: "&tv.system.config.btnLayMap.scaleMode", x: "&tv.startX", y: 608
   ;clear lay: "&tv.system.config.btnLayMap.scaleMode"
@@ -233,10 +267,10 @@ tv.varName = "systemVolume";
     exp: "&tv.exp", jump: "&tv.jump", label: "&tv.label",
   }
   ---
-  tv.jump = !(tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FIT);
+  tv.jump = !(tv.system.config.getValue.scaleMode() === Ponkan3.ScaleMode.FIT);
   tv.label = tv.jump ? "draw" : "unlock_config_buttons";
   tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
-  tv.exp = "tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FIT; tv.system.config.drawTarget = ['scaleMode'];";
+  tv.exp = "tv.system.config.setValue.scaleMode(Ponkan3.ScaleMode.FIT); tv.system.config.drawTarget = ['scaleMode'];";
   ---
   ;textbutton {
     lay: "&tv.system.config.btnLayMap.scaleMode",
@@ -256,13 +290,11 @@ tv.varName = "systemVolume";
     tv.width = tv.resolutions[tv.i][0];
     tv.height = tv.resolutions[tv.i][1];
     tv.text = `${tv.width}x${tv.height}`;
-    tv.jump = !(tv.system.config.selected.fixedScaleWidth === tv.width &&
-                tv.system.config.selected.scaleMode === Ponkan3.ScaleMode.FIXED);
+    tv.jump = !(tv.system.config.getValue.fixedScaleWidth() === tv.width &&
+                tv.system.config.getValue.scaleMode() === Ponkan3.ScaleMode.FIXED);
     tv.label = tv.jump ? "draw" : "unlock_config_buttons";
     tv.bgalphas = tv.jump ? [0.5, 0.7, 0.9] : [1, 1, 1];
-    tv.exp = `tv.system.config.selected.scaleMode = Ponkan3.ScaleMode.FIXED;
-              tv.system.config.selected.fixedScaleWidth = ${tv.width};
-              tv.system.config.selected.fixedScaleHeight = ${tv.height};
+    tv.exp = `tv.system.config.setValue.scaleMode(Ponkan3.ScaleMode.FIXED, ${tv.width}, ${tv.height});
               tv.system.config.drawTarget = ["scaleMode"];`;
     ---
     ;textbutton {
@@ -299,15 +331,6 @@ tv.varName = "systemVolume";
 ;unlockbuttons lay: "&tv.system.config.btnLayList"
 # 右クリックで画面を終了
 ;rclick jump: true, label: "exit", enabled: true
-
-# 解像度の変更はボタン押下直後に反映せず、このタイミングまで遅延させて変更する
----
-ponkan.scaleMode = tv.system.config.selected.scaleMode;
-if (ponkan.scaleMode === Ponkan3.ScaleMode.FIXED) {
-  ponkan.setFixedScaleSize(tv.system.config.selected.fixedScaleWidth,
-                           tv.system.config.selected.fixedScaleHeight);
-}
----
 ;s
 
 
@@ -320,14 +343,6 @@ if (ponkan.scaleMode === Ponkan3.ScaleMode.FIXED) {
 ---
 tv.x = tv.startX;
 tv.lay = tv.system.config.btnLayMap[tv.varName];
-
-if (tv.system.config.onSelect == null) {
-  tv.system.config.onSelect = function(varName, index) {
-    tv.system.config.selected[varName] = index;
-    tv.system.config.drawTarget = [varName];
-  };
-}
-
 ---
 ;layopt lay: "&tv.lay", x: 0, y: "&tv.y", visible: true
 ;clear lay: "&tv.lay"
@@ -335,7 +350,8 @@ if (tv.system.config.onSelect == null) {
 ;for loops: 21, indexvar: "i"
   ---
   tv.exp = `tv.system.config.onSelect("${tv.varName}", ${tv.i});`;
-  if (tv.system.config.selected[tv.varName] == tv.i) {
+  var value = tv.system.config.getValue[tv.varName]();
+  if (value == tv.i) {
     tv.bgalphas = [1, 1, 1];
     tv.jump = false;
     tv.label = null;
@@ -368,67 +384,11 @@ if (tv.system.config.onSelect == null) {
 # コンフィグ画面を終わる
 #=========================================================================================
 *exit
-;tempload num: 0, sound: false, toback: true
-
-# 値を適用
----
-var indexToValue = function(varName) {
-  var index = tv.system.config.selected[varName];
-  // console.log("indexToValue", varName, index);
-  return tv.system.config.values[varName][index];
-};
-var s = tv.system.config.selected;
-ponkan.unreadTextSpeed                  = sv.config.unreadTextSpeed = indexToValue("unreadTextSpeed");
-ponkan.readTextSpeed                    = sv.config.readTextSpeed   = indexToValue("readTextSpeed");
-ponkan.autoModeInterval                 = sv.config.autoModeSpeed   = indexToValue("autoModeSpeed");
-ponkan.canSkipUnreadPart                = sv.config.skipMode        = (s.skipMode == 1);
-ponkan.getSoundBuffer("bgm").volume2    = sv.config.bgmVolume       = indexToValue("bgmVolume");
-ponkan.getSoundBuffer("se").volume2     = sv.config.seVolume        = indexToValue("seVolume");
-ponkan.getSoundBuffer("system").volume2 = sv.config.systemVolume    = indexToValue("systemVolume");
-sv.config.scaleMode        = tv.system.config.selected.scaleMode;
-sv.config.fixedScaleWidth  = tv.system.config.selected.fixedScaleWidth;
-sv.config.fixedScaleHeight = tv.system.config.selected.fixedScaleHeight;
----
 ;savesysvar
+;tempload num: 0, sound: false, toback: true
 ;lockbuttons page: "fore"
 ;lockbuttons page: "back"
 ;trans method: "crossfade", time: 200
 ;waittrans canskip: false
 ;historyopt enabled: true, output: true
-;return
-
-
-#=========================================================================================
-# コンフィグ関係の復元
-#=========================================================================================
-*restore_config_values
-;if exp: "sv.config == null"
-  ---
-    sv.config = {
-      unreadTextSpeed:  10,
-      readTextSpeed:    10,
-      autoModeSpeed:    5000,
-      skipMode:         0,
-      bgmVolume:        100,
-      seVolume:         100,
-      systemVolume:     100,
-      scaleMode:        Ponkan3.ScaleMode.FIT,
-      fixedScaleWidth:  1280,
-      fixedScaleHeight: 720,
-    };
-  ---
-;endif
----
-ponkan.unreadTextSpeed = sv.config.unreadTextSpeed;
-ponkan.readTextSpeed = sv.config.readTextSpeed;
-ponkan.autoModeInterval = sv.config.autoModeSpeed
-ponkan.canSkipUnreadPart = (sv.config.skipMode == 1);
-ponkan.getSoundBuffer("bgm").volume2 = sv.config.bgmVolume;
-ponkan.getSoundBuffer("se").volume2 = sv.config.seVolume;
-ponkan.getSoundBuffer("system").volume2 = sv.config.systemVolume;
-ponkan.scaleMode = sv.config.scaleMode;
-if (ponkan.scaleMode === Ponkan3.ScaleMode.FIXED) {
-  ponkan.setFixedScaleSize(sv.config.fixedScaleWidth, sv.config.fixedScaleHeight);
-}
----
 ;return
