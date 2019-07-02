@@ -21,1238 +21,1048 @@
 #■過去：優希との交流、オバケの話、家族の話
 
 
-
-#☆ミニロゴ１
-[intermission1]
 #☆フレームカラー　青
-[changeMessageFrameColor color=blue]
+;set_to_blue
+
 #☆メッセージフレーム　イン
 ;fadein_meslay
-
-
 
 ;noname
 時刻は午後９時前、いつも通りの時間。
 ;endpage
 
-
 ;noname
 ガタガタ……ガタガタ……
 ;endpage
 
-
+;playse num: "14"
 ;kenji
 「……よし、開いた」
 ;endpage
 
 
-
+;playse num: "15"
 ;noname
-[playse storage=SE15 buf=1 loop=false]開いた窓から美術室に滑り込み、すばやく窓を閉める。
+開いた窓から美術室に滑り込み、すばやく窓を閉める。
 ;endpage
-
 
 ;kenji
 「ふぅ」
 ;endpage
 
-
 ;noname
-とりあえず一息つく。
+安心感から、溜息が漏れた。
 ;endpage
 
-
 ;noname
-今日は寮を抜け出すときに、あやうく寮長に見つかるところだった。いやほんとにやばかった。
+寮を抜け出すとき、あやうく寮長に見つかるところだった。
+いや本当にやばかった。うちの寮長マッチョすぎんだろ。
+なんなんだあれ、ホント。超こえーよ。
 ;endpage
-
-
-;noname
-ってかうちの寮長マッチョすぎんだろ。なんなんだあれ、ホント。超こえーよ。
-;endpage
-
 
 ;kenji
-「っていうかこれ、バレたらどうなるんだろうな」
+「……これ、バレたらどうなるんだろうな」
 ;endpage
 
-
-[drawName name="？？"]
-「さぁ、多分停学まではならないんじゃないかな？」
+;yuuki?
+「さぁ、停学まではいかないんじゃないかな？」
 ;endpage
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
+;playbgm num: "002"
 
-
-
+;playse num: "20"
+;quake time:500, x: 10, y: 50
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false]「どわああぁぁぁあ！！　で、でたぁぁああ！！？」
+「うわああぁぁぁあ！　でたぁぁああ！！？」
 ;endpage
 
-
-[drawName name="？？"]
+;yuuki?
 「そ、そんなに驚かなくても」
 ;endpage
 
-
 ;kenji
-「悪霊退散！　悪霊退散！　さぁきやがれ生き霊！　成仏しやがれ！　今すぐ冥福とか祈っちゃうぞコンチクショウ！　お悔やみ申し上げます！」
+「悪霊退散！　悪霊退散！　成仏しやがれ！
+今すぐ冥福とか祈っちゃうぞ！」
 ;endpage
 
-
-[drawName name="？？"]
+;yuuki?
 「あの、常磐くん？」
 ;endpage
 
-
 ;kenji
-「おおおオバケなんて怖くないぞ、おおおお悔やみ申し上げます！」
+「オバケなんて怖くないぞ！　喝！」
 ;endpage
 
-
-[drawName name="？？"]
+;yuuki?
 「と、常磐くん？」
 ;endpage
 
-
 ;kenji
-「って、あれ……三笠？」
+「って……あれ……三笠？」
 ;endpage
 
+;yuuki_in num: 2
 
 ;noname
-よくよく見てみると、すぐ側に三笠が立っているのがかろうじて見えた。
+よくよく見てみると、すぐ側に三笠が立っているのが
+かろうじて見えた。
 ;endpage
-[fadeInYuuki num=2 pos=center time=500]
 
-
-;yuuki
+;yuuki num: 2
 「はい、三笠です。こんばんは、常盤くん」
 ;endpage
-
 
 ;kenji
 「あ、おう、こんばんは」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「………………」
 ;endpage
-
 
 ;kenji
 「………………」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuki num: 1
 「常磐くん、オバケ苦手なの？」
 ;endpage
 
+;kenji
+「………………」
+;endpage
+
+;yuuki num: 1
+「………………」
+;endpage
 
 ;kenji
-「言わないでくれぇ……」
+「……秘密♪」
 ;endpage
+
+;yuuki num: 1
+「………………」
+;endpage
+
+;kenji
+「……はい、苦手です…………」
+;endpage
+
+;yuuki num: 1
+「……とりあえず、出よっか」
+;endpage
+
+;kenji
+「はい…………」
+;endpage
+
+;yuuki_out
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
-#☆テロップ　イン
-[telopIn]
+;fadeoutbgm
 #☆#ウェイト　５００
-[wm canskip=false]
+;wm canskip: false
 #○移動　教室
-[cb2 storage=class]
+;cb_move bg: "class"
 #△ＢＧＭ３
-[bgmopt volume=100][playbgm storage=bgm003]
+;playbgm num: "003"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-[fadeInYuuki num=2 pos=center time=500]
-
-
-;yuuki
+;yuuki num: 2
 「落ち着いた？」
 ;endpage
-
 
 ;kenji
 「なんとか……」
 ;endpage
 
-
 ;noname
-美術室は暗いし怖いので、俺たちはすぐ隣の教室に移動していた。
+美術室は暗いし怖いので、
+俺たちはすぐ隣の教室に移動していた。
 ;endpage
 
-
 ;noname
-空き教室で鍵も開いてたし、机も椅子もあったので、ありがたく座らせてもらっている。
+空き教室で鍵も開いてたし、机も椅子もあったので、
+ありがたく座らせてもらっている。
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「常磐くん、見かけによらずオバケとか苦手なんだね」
 ;endpage
 
-
 ;kenji
-「うう、それを言わないでくれ……」
+「まぁ、その、ほんの少し！
+少しだけだけな」
 ;endpage
-[yuuki num=5 pos=center]
 
-
-;yuuki
+;yuuki num: 5
 「ちょっとかわいいかも」
 ;endpage
-
 
 ;noname
 そう言って彼女は笑った。
 ;endpage
 
-
 ;noname
-彼女……三笠優希とは、あの夜に出会ってからも何度か会うことがあった。
+彼女……三笠優希とは、
+あの夜に出会ってからも何度か会うことがあった。
 ;endpage
 
-
 ;noname
-同じ２年なのでもちろん昼間にも見かけるのだが、俺と明日香の教室は二階、彼女の教室は一つ上の三階なので会う機会は少ない。
+ただ、俺と明日香のクラスは２階、
+三笠のクラスは一つ上の３階なので、会う機会は少ない。
+なので、昼間よりもむしろ夜の校舎で会う確率が高かった。
 ;endpage
 
-
 ;noname
-寮で偶然会ったときも、昼間の彼女はどこか暗い雰囲気で……少し、話しかけづらいのだ。
+もちろん、寮でばったり出くわすこともあったが……
+学校でも寮でも、昼間の彼女にはどこか影を感じて、
+話しかけるのはためらわれた。
 ;endpage
 
-
 ;noname
-そういうわけで、こうして夜の学校で話をするほうが頻度は高かった。
+なにか事情があるのかもしれない。
+しかし、それを聞けるほど、仲が深まっているわけでもない。
+そもそも根掘り葉掘り聞くのも気が引けた。
 ;endpage
-
 
 ;kenji
 「かわいいって……あんまりうれしくないな、それ」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「そう？　私としては、褒め言葉のつもりなんだけど」
 ;endpage
 
-
 ;kenji
-「男としては、『かわいい』よりは『かっこいい』と言ってもらいたいわけですよ」
+「男としては、『かわいい』よりは『かっこいい』と
+言ってもらいたいわけですよ」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「オバケが怖い男の子はかっこよくはないと思うけどなー」
 ;endpage
 
-
 ;kenji
-「う、それは言うなって言っただろ……」
+「う……、それは言うなって言っただろ……」
 ;endpage
-
 
 ;noname
-俺が落ち込んだようにすると、三笠はまたクスッと笑う。
+俺が落ち込んだ様子を見せると、三笠はまたクスッと笑う。
 ;endpage
-
 
 ;kenji
-「あ、あんまり笑わないでくれ」
-;endpage
-[yuuki num=2 pos=center]
-
-
-;yuuki
-「ごめんね、つい。かわいっくて」
+「あ、あんまり笑うなよ」
 ;endpage
 
+;yuuki num: 2
+「ごめんね、つい。かわいくって」
+;endpage
 
 ;kenji
-「かわいいは禁止だ。っていうか三笠、わかってて言ってるだろ」
-;endpage
-[yuuki num=5 pos=center]
-
-
-;yuuki
-「あ、バレちゃった？」
+「かわいいは禁止だ。
+っていうか三笠、わかってて言ってるだろ」
 ;endpage
 
+;yuuki num: 5
+「あ、バレた？」
+;endpage
 
 ;kenji
 「まったく……」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
-「相当苦手なんだね、オバケ」
+;yuuki num: 2
+「ほんとに苦手なんだね、オバケ」
 ;endpage
-
 
 ;kenji
-「ぶっちゃけ超怖い。学校中に塩まいて清めたい。年に一回お祓いとか呼びたい」
+「ぶっちゃけ超怖い。
+学校中に塩まいて清めたい。毎年お祓いとか呼びたい」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuki num: 1
 「そんなに？」
 ;endpage
-
 
 ;kenji
 「ああ」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
-「ふーん……何か理由とかあるの？　ほら、昔オバケに会ったことあるーとか」
+;yuuki num: 1
+「ふーん……何か理由とかあるの？
+ほら、昔オバケに会ったことあるーとか」
 ;endpage
-
 
 ;kenji
-「理由ねぇ……しいて言えば、怖いから苦手だ。っていうか、怖いものは怖い」
+「理由ねぇ……」
 ;endpage
-[yuuki num=1 pos=center]
 
+;noname
+理由なら、無くもない。けど……
+やっぱり、それを説明するほど、三笠と仲が良いわけでもない。
+人間関係の構築にはそれなりに時間が必要だ。
+;endpage
 
-;yuuki
+;kenji
+「……怖いものは怖い」
+;endpage
+
+;yuuki num: 5
 「なるほど」
 ;endpage
-
 
 ;kenji
 「……三笠は平気そうだな」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuki num: 1
 「オバケ？」
 ;endpage
-
 
 ;kenji
 「ああ。さっきも取り乱してなかったし」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
-「あれは常磐くんが取り乱しちゃってたから、私はかえって冷静に」
+;yuuki num: 2
+「あれは常磐くんが取り乱しちゃってたから、
+私はかえって冷静に」
 ;endpage
-
 
 ;kenji
-「あー、なるほど」
+「……なるほど」
 ;endpage
-
 
 ;noname
-それほど俺は間抜けだったということだ。しょぼん。
-;endpage
-[yuuki num=2 pos=center]
-
-
-;yuuki
-「うん。でも、オバケとか別に怖くはないかな」
+それほど俺は間抜けだったということだ。
+しょんぼりする。
 ;endpage
 
+;yuuki num: 2
+「うん。でも、別にオバケは怖くないかな」
+;endpage
 
 ;kenji
-「そうなのか……暗い場所とか平気なのか？」
+「そうなのか……暗い場所とかも平気？」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「うん」
 ;endpage
 
-
 ;noname
-ううむ、これではどちらが女の子かわからないではないか……
+ううむ、これではどちらが女子かわからない……
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuki num: 1
 「そういえば、今日は御堂さんは一緒じゃないの？」
 ;endpage
-
 
 ;kenji
 「どうも先に行ったみたいで。どっかで見かけなかったか？」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuki num: 1
 「さぁ、私も今来たばかりだから……」
 ;endpage
 
+;kenji
+「そっか。探さねーとなー……まったく、世話のかかる」
+;endpage
+
+;noname
+やっぱり教室だろうか？
+それか、もしかしたら屋上か。
+;endpage
 
 ;kenji
-「そっか。捜さねーとなー……まったく、世話のかかる」
+「……っていうか、『今日は夜に学校行く』とだけ言ってきて、
+場所も時間も全く指定なしってのはどうなんだ、あいつ……」
 ;endpage
 
-
-;noname
-んー、やっぱり教室だろうか？　もしかしたら屋上かもしれないな……
-;endpage
-
-
-;noname
-っていうか、今日は夜に学校行くとだけ伝えといて、場所やら時間やらは全く指示なしというのはどーゆーことなんだアイツ。
-;endpage
-[yuuki num=5 pos=center]
-
-
-;yuuki
+;yuuki num: 5
 「ね、私も一緒に行っていいかな」
 ;endpage
-
 
 ;kenji
 「え？」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「迷惑だったら、別にいいんだけど」
 ;endpage
-
 
 ;kenji
 「あー……」
 ;endpage
 
-
 ;noname
-確かに、夜の学校を一人で、というのはちょっと怖いかもしれない。じゃなかった、夜の学校を女の子一人っていうのは危ないよな、うん。
+拒む理由は、特にない。
+それに、夜の学校を一人で、というのにも少し抵抗があった。
+我ながら情けないとは思うが。
 ;endpage
-
 
 ;kenji
 「まぁ、別にいいけど」
 ;endpage
-[yuuki num=5 pos=center]
 
-
-;yuuki
+;yuuki num: 5
 「ありがと！」
 ;endpage
 
-
 ;kenji
-「たぶん、俺らの教室か屋上にいると思う。とりあえず教室に行ってみよう」
+「たぶん、俺らの教室か屋上にいると思う。
+とりあえず教室に行ってみよう」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「うん」
 ;endpage
+
+;yuuki_out
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
-
-
 
 ;noname
 三笠と連れだって、夜の廊下を歩く。
 ;endpage
 
-
 ;kenji
 「三笠は、今日も星を見に来たのか？」
 ;endpage
-[fadeInYuuki num=2 pos=center time=500]
 
-
-;yuuki
+;yuuki num: 2
 「うん。もう習慣だからね」
 ;endpage
 
-
 ;kenji
-「っていうか、星を見るだけなら寮の屋上でいいんじゃねーの？」
-;endpage
-[yuuki num=2 pos=center]
-
-
-;yuuki
-「学校の屋上の方が、寮の屋上より高いんだ。宿直の先生のいないときは、だいたいこっちに来てるかな」
+「っていうか、星を見るだけなら寮の屋上でいいんじゃないの？」
 ;endpage
 
+;yuuki num: 2
+「学校の屋上の方が、寮の屋上より高いんだよね。
+寮みたいに洗濯物が干してたりもしないし。だから
+宿直の先生のいないときは、だいたいこっちに来てるかな」
+;endpage
 
 ;kenji
 「ふーん……」
 ;endpage
 
-
 ;noname
-初めて会った日、三笠は星を眺めるために屋上にいたらしい。
+初めて会った日。
+三笠は、星を眺めるために屋上にいたらしい。
 ;endpage
 
-
 ;noname
-俺と明日香が来ていない日にも、しょっちゅう来ているのだそうだ。つまりここの常連。かわいいフリしてこの子わりとやります。
+俺と明日香が来ていない日にも、
+しょっちゅう忍び込んでいる常習犯だそうだ。
+かわいいフリしてこの子わりとやります。
 ;endpage
-
 
 ;kenji
-「俺、星とか全然知らねーなー。昔住んでたとこはあんま星見えなかったし」
-;endpage
-[yuuki num=2 pos=center]
-
-
-;yuuki
-「あ、私の実家もここから近いんだけど、ここもよく見えるというほどじゃないよ」
+「俺、星とか全然知らねーなぁ。
+昔住んでたとこは、あんまり星とか見えなかったし」
 ;endpage
 
+;yuuki num: 2
+「あ、私の実家もここから近いんだけど、
+ここもよく見えるというほどじゃないよ」
+;endpage
 
 ;kenji
 「あれ、そうなのか」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
-「ちゃんと目星をつけて捜さないと、明るい星でも見つけられなかったりするかな」
+;yuuki num: 2
+「ちゃんと目星をつけて捜さないと、
+明るい星でも見つけられなかったりするかな」
 ;endpage
-
 
 ;kenji
 「三笠は星座とか好きなんだな」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
-「星座……も好きだけど、むしろ星を眺めること自体が好きかな。兄さんがそうだったから、その影響で」
+;yuuki num: 1
+「星座……も好きだけど。
+それよりも、ただ星を眺めること自体が好きかな。
+兄さんがそうだったから、その影響で」
 ;endpage
-
 
 ;kenji
 「あ、お兄さんがいるのか」
 ;endpage
-[yuuki num=5 pos=center]
 
-
-;yuuki
-「うん。四つ上の兄で、すっごくかっこいいんだ」
+;yuuki num: 5
+「うん。四つ上の兄で、イケメン」
 ;endpage
-
 
 ;noname
 三笠が、にっこりと笑う。
 ;endpage
 
-
 ;noname
 その表情から、お兄さんを慕っているのがよく分かった。
 ;endpage
 
-
 ;noname
-兄妹ってのもいいのかもしれないなと、自慢の兄の話をする三笠を眺めながら俺は思った。
+自慢の兄の話をする三笠を眺めながら、
+兄妹ってのもいいのかもしれないと、ぼんやりと思った。
 ;endpage
+
+;yuuki_out
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　教室
-[cb2 storage=class]
+;cb_move bg: "black"
+;cb_move bg: "class"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 #△教室ドア
-[playse storage=SE08 buf=1 loop=false]
-
-
+;playse num: "08"
 
 ;kenji
 「こらっ、そこで何してる！」
 ;endpage
 
-
 ;noname
-しーーーーん。
+………………
 ;endpage
-[fadeInYuuki num=1 pos=center time=500]
 
-
-;yuuki
+;yuuki num: 1
 「……いないみたいだね」
 ;endpage
 
-
 ;kenji
-「んー、ここにいないとなると、後は屋上か……って、なんだこれ」
+「んー、ここにいないとなると、後は屋上か……
+って、なんだこれ」
 ;endpage
 
-[fadeOutYuuki]
-
-
+;yuuki_out
 
 ;noname
-暗がりの中でよく見てみると、黒板になにやら文字が書かれている。
+暗がりの中でよく見てみると、黒板になにやら文字が書かれていた。
 ;endpage
 
-[backlay]
-[image layer=1 page=back storage=chara_A05 pos=center visible=true opacity=128]
-[trans method=crossfade time=400]
-[wt]
-
-
+;pretrans
+;clear_name
+;loadchara name: "asuka", num: 2
+;layopt lay: "asuka", alpha: 0.75, visible: true
+;trans time: 1000
+;waittrans canskip: false
 
 ;asuka
 『見たいドラマがあるので今日は帰ります。明日香』
 ;endpage
 
-[backlay]
-[layopt layer=1 page=back visible=false opacity=255]
-[trans method=crossfade time=400]
-[wt]
+;pretrans
+;clear_name
+;layopt lay: "asuka", alpha: 1, visible: false
+;trans time: 500
+;waittrans canskip: false
 
-
-
+;quake time: 500, y: 10, x: 50
+;playse num: "20"
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false]「ふ、ふざけんなー！」
+「ふ、ふざけんなー！」
 ;endpage
-[fadeInYuuki num=1 pos=center time=500]
 
-
-;yuuki
+;yuuki num: 1
 「か、帰っちゃったんだ、御堂さん」
 ;endpage
 
-
 ;kenji
-「あいつ、自分で呼び出しといて、勝手に帰るとはどういう了見だドチクショウ。明日みっちりねっちり文句を言ってやる。昨日レンタルした新作ビデオも貸してやるもんか」
+「あいつ、自分で呼び出しといて、勝手に帰るとはどういう
+了見だチクショー。明日みっちりねっちり文句を言ってやる。
+昨日レンタルした新作ビデオも貸してやるもんか」
 ;endpage
-[yuuki num=5 pos=center]
 
-
-;yuuki
+;yuuki num: 5
 「あ、あはは」
 ;endpage
 
+;kenji
+「あーもう、骨折り損だよまったく」
+;endpage
+
+;yuuki num: 1
+「そうだねぇ。御堂さんいないなら、もう帰る？」
+;endpage
 
 ;kenji
-「あーもうちくしょう、骨折り損だまったく」
+「あー、うーん。どうすっかな」
 ;endpage
-[yuuki num=1 pos=center]
-
-
-;yuuki
-「そうだねぇ。もう帰る？」
-;endpage
-
-
-;kenji
-「え？　あー、うーん。どうすっかな」
-;endpage
-
 
 ;noname
 明日香がいないなら、ここにいる理由はない。
 ;endpage
 
-
 ;noname
-しかし三笠はこれから屋上だろう。なら、それにつきあうのも悪くないかもしれない。たまには天体観測としゃれこもうか。
+しかし三笠はこれから屋上だろう。
+なら、それにつきあうのも悪くないかもしれない。
+たまには天体観測としゃれこもう。
 ;endpage
 
-
 ;noname
-仲良くなりたいという下心もちょびっとだけあったりするけど。
+……三笠と仲良くなりたいという下心も、
+ちょびっとだけあったりするけど。
+ちょっぴりな。
 ;endpage
-
-
-;noname
-ちょっぴりだよ？
-;endpage
-
 
 ;kenji
-「そうだな、せっかく来たんだし、屋上に星でも見に行こうかな」
+「せっかく来たんだし、屋上に付き合うよ」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「あ、じゃあ一緒に行こっか」
 ;endpage
-
 
 ;kenji
 「ああ」
 ;endpage
 
-
 ;noname
-三笠がうれしそうに笑った。ちょっとかわいいじゃねーかコンチクショウ。
+三笠がうれしそうに笑った。
+昼間の様子とは打って変わって、明るい女の子に見えた。
+かわいいじゃねーか……
 ;endpage
 
-
 ;noname
-俺は動揺を悟られないように、彼女の少し前を歩いて屋上を目指した。
+動揺を悟られないように、
+彼女の少し前を歩いて屋上を目指した。
 ;endpage
 
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
-#○移動　廊下
-[cb2 storage=hall]
-#○移動　黒
-[cb2 storage=black]
+#○移動　廊下->黒
+;cb_move bg: "black"
+;cb_move bg: "hall"
+;cb_move bg: "black"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-
-
 ;noname
-その音に気がついたのは、屋上へ続く階段を上っているときだった。
+その音に気がついたのは、
+屋上へ続く階段を上っているときだった。
 ;endpage
-
 
 ;kenji
 「………………」
 ;endpage
 
-
 ;yuuki
 「常盤くん？　どうかした？」
 ;endpage
-
 
 ;kenji
 「なにか聞こえないか？」
 ;endpage
 
-
 ;yuuki
 「え？　……ううん、特になにも」
 ;endpage
-
 
 ;kenji
 「いや、聞こえた。足音みたいな……」
 ;endpage
 
 #△歩く
-[playse storage=SE12 buf=2 loop=true]
-
-
+;playse num: "12", loop: true
 
 ;noname
 カツン……カツン……カツン……
 ;endpage
 
 #△止まる
-[stopse buf=2]
-
-
+;stopse
 
 ;kenji
 「……今の」
 ;endpage
 
-
 ;yuuki
 「……御堂さん？」
 ;endpage
 
+;kenji
+「かもしれないけど……」
+;endpage
+
+;yuuki
+「じゃあ……宿直の先生？」
+;endpage
 
 ;kenji
-「かもしれないが……」
+「今日は居ないはず……」
 ;endpage
 
 #△歩く
-[playse storage=SE12 buf=2 loop=true]
-
-
+;playse num: "12", loop: true
 
 ;noname
 カツン……カツン……カツン……
 ;endpage
 
 #△止まる
-[stopse buf=2]
-
-
+;stopse
 
 ;kenji
 「な、なんか近づいてきてないか？」
 ;endpage
 
-
 ;yuuki
-「う、うん……！」
+「う、うん……とりあえず逃げよう！」
 ;endpage
 
 #△走る
-[playse storage=SE13 buf=2 loop=true]
-
-
+;playse num: "13", loop: true
 
 ;noname
 カツン……カツン……カツン……！
 ;endpage
 
-
 ;kenji
 「三笠！」
 ;endpage
 
-
 ;yuuki
-「う、上へ！」
+「お、屋上なら大丈夫なはず！」
 ;endpage
-
 
 ;noname
 二人して屋上へ向けて走る！
 ;endpage
 
 #△止まる
-[stopse buf=2]
-#△走る
-[playse storage=SE13 buf=2 loop=true]
-
-
+;stopse
 
 ;noname
 カツン……！　カツン……！　カツン……！
 ;endpage
 
-
 ;yuuki
 「も、もうそこまで来てる！」
 ;endpage
 
-
 ;kenji
-「……！」
+「逃げろ！　逃げろ！」
 ;endpage
 
 #△止まる
-[stopse buf=2]
-
-
+;stopse
 
 ;noname
-瞬間、今まさに階段を蹴ろうとした足に、何かがしがみついてきた！
+とにかく屋上を目指し、必死で足を動かす。
 ;endpage
 
+;noname
+その時、今まさに階段を蹴ろうとした足に、
+何かがしがみついてきた！
+;endpage
 
 ;kenji
 「っ―――――――！！！？！？」
 ;endpage
 
-
 ;noname
-恐怖で声が出ない。
+あまりの恐怖で声が出ない。
 ;endpage
 
-
 ;noname
-喉がカラカラだ、呼吸すらできない、暗闇では前も見えない、全身の筋肉が硬直して――
+喉がカラカラだ、みっともなく騒ぐどころか、呼吸すらできない。
+こんな暗闇では前も見えない――
 ;endpage
-[fadeInAsuka num=5 pos=center time=500]
 
-
-;asuka
+;asuka num: 5
 「健二！」
 ;endpage
 
-
 ;noname
-俺の足にしがみついたまま、得体の知れないソレがコトバヲシャベッタ……！
+俺の足にしがみついたまま、
+得体の知れないソレが言葉を喋った！
 ;endpage
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
+;playbgm num: "002"
 
-
-
+;quake time: 500, y: 10, x: 50
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[font size=30]
-「う、うきゃああああぁぁぁああアーメン！！」[deffont]
-
+「う、うきゃああああぁぁぁああ！！」
 ;endpage
-[asuka num=5 pos=center]
 
-
-;asuka
+;asuka num: 5
 「健二。あたし、明日香」
 ;endpage
-
 
 ;kenji
 「う、あ、あれ？」
 ;endpage
 
-
 ;yuuki
 「み、御堂さん？」
 ;endpage
-[asuka num=2 pos=center]
 
-
-;asuka
+;asuka num: 2
 「優希ちゃん、こんにちは。あ、違った、こんばんはだ」
 ;endpage
-
 
 ;yuuki
 「こ、こんばんは」
 ;endpage
 
-
 ;kenji
 「あ、あ、あああああ……」
 ;endpage
-[asuka num=1 pos=center]
 
-
-;asuka
+;asuka num: 1
 「ん？　どうしたの、健二？」
 ;endpage
 
-
+;playse num: "20"
+;quake time: 500, y:10, x: 50
 ;kenji
-[playse storage=SE20 buf=1 loop=false]
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[font size=30]
-「あああああ明日香ーー！！！」[deffont]
-
+「あああああ明日香ーー！！！」
 ;endpage
-[asuka num=3 pos=center]
 
-
-;asuka
+;asuka num: 3
 「っ、もう、大きな声出さないでよ。びっくりしたでしょ」
 ;endpage
 
-
 ;kenji
-「びっくりしたのはこっちだ！　お、おま、冗談にもほどがあるぞ！　めちゃめちゃびっくりしちゃったじゃねーかコンチクショウ！」
+「びっくりしたのはこっちだ！
+お、おま、冗談にもほどがあるぞ！
+めちゃめちゃびっくりしちゃったじゃねーかチクショー！」
 ;endpage
-[asuka num=5 pos=center]
 
-
-;asuka
+;asuka num: 5
 「めんごめんご」
 ;endpage
 
-
 ;kenji
-「めんご言うな！　死語だ馬鹿たれ！」
+「めんご言うな！　死語だバカ！」
 ;endpage
-[asuka num=1 pos=center]
 
-
-;asuka
+;asuka num: 1
 「あんまり怒ってるとハゲるよ、健二」
 ;endpage
 
-
 ;kenji
-「怒らせたのは誰だっ！　てか気にしてるんだからあんまり言うなー！」
+「怒らせたのは誰だっ！
+てか気にしてるんだからあんまり言うなー！」
 ;endpage
-
 
 ;yuuki
 「と、常磐くん、あんまり叫ぶと、外まで聞こえちゃうよ」
 ;endpage
-[asuka num=5 pos=center]
 
-
-;asuka
+;asuka num: 5
 「そうだよ、見つかっちゃうじゃん。静かにしないと」
 ;endpage
-
 
 ;kenji
 「ぜーはー、ぜーはー……」
 ;endpage
 
-
 ;noname
-確かに、誰かに見つかったらまずいのは間違いないので、しょうがなく黙る。
+確かに、誰かに見つかったらまずいのは間違いないので、
+しょうがなく黙る。
 ;endpage
 
-
 ;noname
-深呼吸して怒りを静める。（ついでに気持ちを落ち着かせる。あくまでついでだ）
+深呼吸して怒りを静める。
+（ついでに気持ちを落ち着かせる。あくまでもついでだ）
 ;endpage
-
 
 ;kenji
 「はぁ……明日香、お前帰ったんじゃなかったのかよ」
 ;endpage
-[asuka num=5 pos=center]
 
-
-;asuka
-「いやそれがさー、寮の共用テレビ調子悪いみたいで見れなくってさー」
+;asuka num: 5
+「いやそれがさー、
+寮の共用テレビ、調子悪いみたいで見れなくってさー」
 ;endpage
-
 
 ;kenji
 「うそつけ。どうせ俺を驚かそうと思ってやったんだろ」
 ;endpage
-[asuka num=2 pos=center]
 
-
-;asuka
+;asuka num: 2
 「うん」
 ;endpage
 
-
 ;kenji
-「あっさり認めるなよ……」
+「少しは隠そうとしろ！」
 ;endpage
-[asuka num=5 pos=center]
 
-
-;asuka
+;asuka num: 5
 「てへっ」
 ;endpage
-
 
 ;kenji
 「てへっじゃねーよバカチン」
 ;endpage
-[asuka num=2 pos=center]
 
-
-;asuka
+;asuka num: 2
 「優希ちゃんは今日も屋上？」
 ;endpage
-
 
 ;yuuki
 「あ、うん、そうだけど」
 ;endpage
-[asuka num=5 pos=center]
 
-
-;asuka
+;asuka num: 5
 「いいねー、天体観測いいねー、行こう行こう！」
 ;endpage
-
 
 ;yuuki
 「う、うん」
 ;endpage
 
-[fadeOutAsuka]
-
-
+;asuka_out
 
 ;kenji
 「あ、こら！　置いていくな！」
 ;endpage
 
-
 ;noname
-一人だと怖ぇじゃねーかよぉ。
+一人だと怖いだろうが！
 ;endpage
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○移動　屋上
-[cb2 storage=roof]
+;cb_move bg: "roof"
 #△ＢＧＭ１
-[bgmopt volume=100][playbgm storage=bgm001]
+;playbgm num: "001"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-[fadeInAsuka num=1 pos=left time=500]
-
-
-;asuka
+;asuka_left num: 1
 「うーん、ねぇ優希ちゃん、星とか全然見えないんだけど……」
 ;endpage
-[fadeInYuuki num=1 pos=right time=500]
 
-
-;yuuki
+;yuuki_right num: 1
 「そうだね……今日は月が明るいから、星は見えないかも」
 ;endpage
-[asuka num=1 pos=left]
 
-
-;asuka
+;asuka_left num: 1
 「そっかー、ちょっと残念」
 ;endpage
-
 
 ;kenji
 「これ、満月なのか？」
 ;endpage
-[yuuki num=1 pos=right]
 
-
-;yuuki
+;yuuki_right num: 1
 「えーっと……うん、多分そう」
 ;endpage
-[asuka num=2 pos=left]
 
-
-;asuka
+;asuka_left num: 2
 「へー。優希ちゃんはやっぱり詳しいの？　星座とか、天体のこと」
 ;endpage
-[yuuki num=2 pos=right]
 
-
-;yuuki
+;yuuki_right num: 2
 「それなりには詳しいと思うよ。兄さんが詳しかったから」
 ;endpage
-[asuka num=1 pos=left]
 
-
-;asuka
+;asuka_left num: 1
 「兄？　お兄さんがいるの？」
 ;endpage
-
 
 ;kenji
 「四つ上の兄が居るそうだぞ。俺と同じくらいイケメンだってさ」
 ;endpage
-[asuka num=2 pos=left]
 
-
-;asuka
+;asuka_left num: 2
 「じゃあ、そのお兄さんに教えてもらったんだ」
 ;endpage
-[yuuki num=2 pos=right]
 
-
-;yuuki
+;yuuki_right num: 2
 「兄さんは天体好きで、昔は夜になると一緒に星を見たりとかしてたんだ」
 ;endpage
-[asuka num=1 pos=left]
 
-
-;asuka
+;asuka_left num: 1
 「昔は？　今はもうやらないんだ」
 ;endpage
-[yuuki num=2 pos=right]
 
-
-;yuuki
+;yuuki_right num: 2
 「うん。兄さんが入院しちゃってるから……」
 ;endpage
-
 
 ;kenji
 「え……入院？」
 ;endpage
-[yuuki num=1 pos=right]
 
-
-;yuuki
+;yuuki_right num: 1
 「えっと、ちょっと怪我をして、それで入院してるの」
 ;endpage
-[asuka num=1 pos=left]
 
-
-;asuka
+;asuka_left num: 1
 「あ、そうなんだ……えと、ごめん」
 ;endpage
-[yuuki num=5 pos=right]
 
-
-;yuuki
+;yuuki_right num: 5
 「あはは、謝らなくてもいいよ」
 ;endpage
 
-[fadeOutBoth]
-
-
+;both_out
 
 ;noname
 そう言って笑ったものの、それきり三笠は黙り込んでしまった。
 ;endpage
 
-
 ;noname
 俺と明日香は、どうやら聞いてはいけないことだったらしいと気づいて、しかしどうすることもできず、ただ三人で空を眺める。
 ;endpage
-
 
 ;noname
 なるほど、兄の話は優希の中では話したい内容Ｎｏ１かつタブーでもあるみたいだな。
 ;endpage
 
-
 ;noname
 ちらっと横目で三笠を盗み見るが、その表情からは怒ってるのか悲しんでいるのかよくわからなかった。よーするに、気まずい。ごっつ気まずい。
 ;endpage
-
 
 ;asuka
 「……健二」
 ;endpage
 
-
 ;kenji
 「……なんだ？」
 ;endpage
-
 
 ;asuka
 「優希ちゃんのこと元気づけてあげてよ。健二ならできるでしょ？」
 ;endpage
 
-
 ;kenji
 「んなこと言われても……元気づけろったって、一体どうしろと？　ギャグでもかますか？」
 ;endpage
-
 
 ;asuka
 「こんなときにボケなくていいよもう。いいから、頼んだよ」
 ;endpage
 
-
 ;kenji
 「あ、おい、待てって明日香！」
 ;endpage
-[fadeInAsuka num=5 pos=right time=500]
 
-
-;asuka
+;asuka_right num: 5
 「優希ちゃん！　あたし、見たいドラマあるから帰るね！　また明日！」
 ;endpage
 [fadeInYuuki num=1 pos=left time=500]

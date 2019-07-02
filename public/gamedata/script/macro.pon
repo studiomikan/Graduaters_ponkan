@@ -90,17 +90,23 @@
   ;layopt lay: "speaker", visible: true
 ;endmacro
 
+;macro name: "clear_name"
+  ;clear lay: "speaker"
+;endmacro
+
 ;macro name: "noname"
   ;clear lay: "speaker"
-  -tv.speaking = false;
+  ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
 ;macro name: "joban"
   ;clear lay: "speaker"
+  ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
 ;macro name: "kenji"
   ;echo_name name: "健二"
+  ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
 
@@ -111,6 +117,7 @@
   ;p
   ;hbr
   ;clear
+  ;delcmdsc ch: "\n"
 ;endmacro
 
 
@@ -122,7 +129,7 @@
   ;clear lay: "speaker"
   ;pretrans
   ;show_meslay
-  ;noname
+  ;clear_name
   ;trans time: "300"
   ;waittrans canskip: "false"
 ;endmacro
@@ -130,7 +137,7 @@
 ;macro name: "fadeout_meslay"
   ;pretrans
   ;hide_meslay
-  ;noname
+  ;clear_name
   ;trans time: "300"
   ;waittrans canskip: "false"
 ;endmacro
@@ -322,8 +329,9 @@
 ;macro name: "chara_in"
   ---
     var lay = tv.lay = mp.name;
-    var current = ponkan.getLayers({lay: lay})[0].imageFilePath;
-    if (current == null) {
+    var layer = ponkan.getLayers({lay: lay})[0];
+    var current = layer.imageFilePath;
+    if (current == null || !layer.visible) {
       tv.action = "fadein";
     } else {
       var reg = null;
@@ -386,11 +394,19 @@
     ;chara_in name: "asuka", num: "&mp.num"
   ;endif
   ;echo_name name: "明日香"
+  ;cmdsc ch: "\n", command: "br"
+;endmacro
+
+# 明日香の立ち絵を表示（名前なし）
+;macro name: "asuka_in"
+  ;if exp: "mp.num != null"
+    ;chara_in name: "asuka", num: "&mp.num"
+  ;endif
 ;endmacro
 
 # 明日香の立ち絵の名前を非表示に
 ;macro name: "asuka_out"
-  ;noname
+  ;clear_name
   ;chara_out name: "asuka"
 ;endmacro
 
@@ -400,11 +416,19 @@
     ;chara_in name: "yuuki", num: "&mp.num"
   ;endif
   ;echo_name name: "優希"
+  ;cmdsc ch: "\n", command: "br"
+;endmacro
+
+# 優希の立ち絵を表示（名前なし）
+;macro name: "yuuki_in"
+  ;if exp: "mp.num != null"
+    ;chara_in name: "yuuki", num: "&mp.num"
+  ;endif
 ;endmacro
 
 # 優希の立ち絵の名前を非表示に
 ;macro name: "yuuki_out"
-  ;noname
+  ;clear_name
   ;chara_out name: "yuuki"
 ;endmacro
 
@@ -414,6 +438,7 @@
     ;chara_in name: "yuuki", num: "&mp.num"
   ;endif
   ;echo_name name: "？？"
+  ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
 
