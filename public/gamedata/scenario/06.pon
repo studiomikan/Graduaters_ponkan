@@ -1067,326 +1067,252 @@
 ;endpage
 [fadeInYuuki num=1 pos=left time=500]
 
-
 ;yuuki
 「え、あ、御堂さん？」
 ;endpage
-[asuka num=2 pos=right]
 
-
-;asuka
+;asuka_right num: 2
 「健二！　優希ちゃんに変なことしたらだめよ！」
 ;endpage
-
 
 ;kenji
 「するか馬鹿！」
 ;endpage
 
-[fadeOutBoth]
-
-
+;both_out
 
 ;noname
 明日香は早口にそれだけ言って、返事も待たずにドアの向こうへと消えてしまった。
 ;endpage
 
-
 ;kenji
 「……まるで台風だな」
 ;endpage
-[fadeInYuuki num=5 pos=center time=500]
 
-
-;yuuki
+;yuuki num: 5
 「あはは、そうだね」
 ;endpage
-
 
 ;noname
 そう言う三笠の顔は、もう落ち込んでいなかった。
 ;endpage
 
-
 ;noname
 なんだよ、俺なんもしてないじゃん。やっぱこういうのはお前の方が向いてるんだよ、明日香。
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「私の兄さんが入院してるのは、私のせいなの」
 ;endpage
-
 
 ;kenji
 「え？」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「一年前、家族で外食して、その帰り。交通事故にあったの」
 ;endpage
-
 
 ;kenji
 「交通事故……」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「私たちの乗る車に、反対車線の車が正面から向かってきて……お父さんはハンドルを切って、お母さんは悲鳴を上げて、そして兄さんは、私をかばうように抱きしめてくれた」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「そのおかげで、私だけは助かった。でも兄さんは大怪我して、今もまだ、入院したままなの」
 ;endpage
-
 
 ;kenji
 「………………」
 ;endpage
 
-
 ;noname
 突然の事故。兄以外の家族を亡くし、その兄も自分のせいで入院したきり。お涙ちょうだいの三流ドラマみたいな展開。
 ;endpage
-
 
 ;noname
 昼間の学校での彼女が暗い雰囲気なのは、つまりそういうことか。
 ;endpage
 
-
 ;noname
 なるほど、こうして明るく話してくれること自体が、滅多にないことなのかもしれない。
 ;endpage
-[yuuki num=5 pos=center]
 
-
-;yuuki
+;yuuki num: 5
 「あ、でも、入院してるといっても、別に寝たきりとかじゃないんだ。それなりに元気で、お話とかもできるし」
 ;endpage
-
 
 ;kenji
 「そうか」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「……ごめんね。こんな話してもおもしろくなかったね。人に話すことでもないし……」
 ;endpage
-
 
 ;kenji
 「いいや、聞けてよかった。三笠、自分のことあんま話さないし」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuki num: 1
 「……それって、私のこと知りたいってこと？」
 ;endpage
-
 
 ;kenji
 「うん？　まぁそういうこと……なのか？」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+;yuuki num: 2
 「なんか告白みたいだね」
 ;endpage
-
 
 ;kenji
 「え、あ、そんなつもりじゃなくってだな！　ただ友達として……」
 ;endpage
-[yuuki num=5 pos=center]
 
-
-;yuuki
+;yuuki num: 5
 「あはは、わかってるよ。でも、あんまり言ってると、勘違いしちゃう、かも？」
 ;endpage
-
 
 ;kenji
 「ご、ごめん……」
 ;endpage
-[yuuki num=5 pos=center]
 
-
-;yuuki
+;yuuki num: 5
 「謝らなくていいよ」
 ;endpage
-
 
 ;noname
 三笠が笑顔になる。うむ、元気１００倍だな。
 ;endpage
 
-
 ;noname
 優希が笑うので、なんとなく俺も上機嫌になる。
 ;endpage
 
-
 ;kenji
 「俺にも、兄がいたんだ」
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuki num: 1
 「え？」
 ;endpage
-
 
 ;noname
 やべ、勢いでつい言ってしまった。よくない流れ。さっさと切ろうこの話。
 ;endpage
 
-
 ;kenji
 「だから、なんとなくだけどわかる」
 ;endpage
 
-
 ;noname
 あー、なんて無責任な発言だろう。ダメだ、ダメダメだ。ごめん三笠。
 ;endpage
-[yuuki num=1 pos=center]
 
-
-;yuuki
+;yuuk num: 1
 「そっか。常磐くん、話、聞いてくれてありがとう」
 ;endpage
-
 
 ;kenji
 「ああ、どういたしまして」
 ;endpage
-[yuuki num=2 pos=center]
 
-
-;yuuki
+yuuki num: 2
 「私、そろそろ帰るね。おやすみなさい」
 ;endpage
-
 
 ;kenji
 「おやすみ、三笠」
 ;endpage
 
-[fadeOutYuuki]
-
-
+;yuuki_out
 
 ;noname
 三笠が一人、屋上を後にする。
 ;endpage
-
 
 ;noname
 ほれみろ、さっさと帰っちまったじゃんか。まったく。
 ;endpage
 
 #○フェード　黒
-[cb storage=black]
-
-
+;cb_fade bg: "black"
 
 ;kenji
 「…………………」
 ;endpage
 
-
 ;noname
 誰もいなくなった屋上で、空を見上げる。
 ;endpage
-
 
 ;noname
 三笠と、彼女をかばって重傷を負ったというお兄さん。
 ;endpage
 
-
 ;noname
-少し話しただけでも、彼女が兄を慕っているのがよくわかった。
+少し話をしただけでも、彼女が兄を慕っているのがよくわかった。
 ;endpage
-
 
 ;noname
 三笠はすごくいい奴だ。たぶんお兄さんも、そんな三笠が大切で、そして三笠も、そんなお兄さんのことが大切なんだろう。
 ;endpage
 
-
 ;noname
 だからこその、悲しみと痛み。
 ;endpage
-
 
 ;noname
 ――助かったのが、自分じゃなければよかったのに。
 ;endpage
 
-
 ;kenji
 「なんて、三笠がそんなことを考えるわけないか」
 ;endpage
-
 
 ;noname
 口に出して言ってみたけれど、やっぱり否定する。たとえ三笠でも、そう思わずにはいられないだろうな、と。
 ;endpage
 
-
 ;noname
 落下事故防止用のフェンスにもたれかかり、太陽のない空を見上げる。満月が俺の網膜をやさしく焼く。
 ;endpage
-
 
 ;noname
 月にしろ太陽にしろ、光に照らされるということは必ず影ができるということだ。
 ;endpage
 
-
 ;noname
 誰しもそういう影――嘘とか過去とか秘密とか、そーゆーもんを持ってると俺は思う。もちろん俺だって例外じゃない。
 ;endpage
-
 
 ;noname
 そういう影の部分にこそ、その人の人間味というか、本当に思ってるとととかが現れるんじゃねーのかなーなんて。
 ;endpage
 
-
 ;noname
-ガラにもなくマジメに考えながら、俺はポケットから無駄に多機能な音楽プレイヤー（３５０００円）を取り出し、同じく取り出したメモリーカードを差し込んだ。
+ガラにもなくマジメに考えながら、
+俺はポケットから無駄に多機能な音楽プレイヤーを取り出して、
+お気に入りの曲の入ったSDカードを差し込んだ。
 ;endpage
 
-
 ;noname
-気分転換しまっしょい。
+こんな時は、音楽を聴くとか、大声でも出すとか、
+気分転換するに限る。
 ;endpage
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg: "black"
 
 #☆ジャンプ
-[jump storage=7.ks]
-
-
+;jump file: "scenario/7.pon"
