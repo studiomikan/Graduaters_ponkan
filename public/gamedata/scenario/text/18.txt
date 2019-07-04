@@ -15,13 +15,13 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;quake time: 500, x: 10, y: 5
+;playse num: "20"[font size=30]
 「ＤＪジョバンの！　『グラディエイト・ジャパン』！」
 ;endpage
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
+;playbgm num:"002"
 
 
 
@@ -42,8 +42,8 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;quake time: 500, x: 10, y: 5
+;playse num: "20"[font size=30]
 「卒業おめでとうだコンチクショウ！」[deffont]
 
 ;endpage
@@ -79,7 +79,7 @@
 
 
 ;noname
-[playse storage=SE22 buf=1 loop=false]「一つ目！」
+;playse num: "22"「一つ目！」
 ;endpage
 
 
@@ -94,7 +94,7 @@
 
 
 ;noname
-[playse storage=SE22 buf=1 loop=false]「二つ目！」
+;playse num: "22"「二つ目！」
 ;endpage
 
 
@@ -114,7 +114,7 @@
 
 
 ;noname
-[playse storage=SE22 buf=1 loop=false]「三つ目！」
+;playse num: "22"「三つ目！」
 ;endpage
 
 
@@ -135,7 +135,7 @@
 
 
 ;noname
-[playse storage=SE22 buf=1 loop=false]「そして四つ目！」
+;playse num: "22"「そして四つ目！」
 ;endpage
 
 
@@ -192,12 +192,12 @@
 ;fadeout_meslay
 [eval exp="f.flagLetter = false"]
 #☆テロップ　イン
-[telopIn]
+;telop
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
-[jump storage=19.ks]
+;jump file: "scenario/19.pon"
 
 

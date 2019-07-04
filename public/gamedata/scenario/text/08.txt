@@ -16,9 +16,9 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　青
-[changeMessageFrameColor color=blue]
+;set_to_blue
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -36,13 +36,13 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△屋上ドア
-[playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
+;playse num: "11"
 #○フェードアウト　白
-[FadeOutWhite]
+;cb_fade bg:"white"
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 #△ＢＧＭ３
-[bgmopt volume=100][playbgm storage=bgm003]
+;playbgm num:"003"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -56,7 +56,7 @@
 ;noname
 俺がしばし言葉を忘れていると、
 ;endpage
-[fadeInYuuki num=2 pos=center time=500]
+;yuuki num: 2
 
 
 ;yuuki
@@ -72,7 +72,7 @@
 ;kenji
 「うい、優希。やっぱり来てたのか」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -84,7 +84,7 @@
 「やっぱりな。外が明るかったから、そうかと思って来てみたんだ」
 ;endpage
 
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 
@@ -96,7 +96,7 @@
 ;kenji
 「優希は今日も天体観測か」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -107,7 +107,7 @@
 ;kenji
 「お祝い？　なんの？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -119,7 +119,7 @@
 「ああ、なるほど……」
 ;endpage
 
-[fadeOutYuuki]
+;yuuki_out
 
 
 
@@ -156,7 +156,7 @@
 ;kenji
 「でもいいのか？　誕生日なら、お兄さんと一緒に過ごしたほうがよかったんじゃ」
 ;endpage
-[fadeInYuuki num=1 pos=center time=500]
+;yuuki num: 1
 
 
 ;yuuki
@@ -167,7 +167,7 @@
 ;kenji
 「あー、まぁたしかにそうか」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -178,7 +178,7 @@
 ;kenji
 「そうか。そーいや、優希の誕生日っていつなんだ？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -189,7 +189,7 @@
 ;kenji
 「あら残念。せっかくお祝いしてやろうと思ったのに」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -200,7 +200,7 @@
 ;kenji
 「まかせとけ、とびっきりのプレゼントを用意しとく。２メートルぬいぐるみとか」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -221,7 +221,7 @@
 ;kenji
 「そーいや、明日香の誕生日がもうすぐだな」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -232,7 +232,7 @@
 ;kenji
 「ああ。今年はどうすっかな……」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -243,7 +243,7 @@
 ;kenji
 「去年か……たしか寮のロビーでケーキ食べた……だけ？」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -254,21 +254,21 @@
 ;kenji
 「んなこと言ったって、俺も明日香も年中金欠族だし、金のかかることは基本的にＮＧだぞ」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
 「まぁ、私も寮生だし、お金がないっていうのもわかるけど……」
 ;endpage
 
-[fadeOutYuuki]
+;yuuki_out
 
 
 
 ;noname
 優希は少し考えるように口に手をあててうつむくと、なにか思いついたようにパッと顔をあげ
 ;endpage
-[fadeInYuuki num=5 pos=center time=500]
+;yuuki num: 5
 
 
 ;yuuki
@@ -284,7 +284,7 @@
 ;kenji
 「パーティ？」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -295,7 +295,7 @@
 ;kenji
 「学校でって……どっかの教室借りるのか？　んなことできんの？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -316,7 +316,7 @@
 ;noname
 なるほど、なかなか粋なはからいじゃないか。
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -332,7 +332,7 @@
 ;noname
 俺がふと疑問を口にすると、優希がめずらしく顔をしかめた。
 ;endpage
-[yuuki num=3 pos=center]
+;yuuki num: 3
 
 
 ;yuuki
@@ -348,7 +348,7 @@
 ;noname
 どうやら女の子にとっては月とスッポンらしい。まぁわからんでもないけど。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -359,14 +359,14 @@
 ;kenji
 「ああ、そうだな。きっと明日香もよろこぶ」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「うん、そうだといいな」
 ;endpage
 
-[fadeOutYuuki]
+;yuuki_out
 
 
 
@@ -709,10 +709,10 @@
 ;endpage
 
 #☆揺れ
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[quake time=500 timemode=ms hmax=10 vmax=50]
+;quake time: 500, x: 10, y: 5
+;quake time: 500, x: 10, y: 5
 #☆待ち揺れ
-[wq canskip=false]
+;waitquake
 
 
 
@@ -741,10 +741,10 @@
 ;endpage
 
 #☆揺れ
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[quake time=500 timemode=ms hmax=10 vmax=50]
+;quake time: 500, x: 10, y: 5
+;quake time: 500, x: 10, y: 5
 #☆待ち揺れ
-[wq canskip=false]
+;waitquake
 
 
 
@@ -758,10 +758,10 @@
 ;endpage
 
 #☆揺れ
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[quake time=500 timemode=ms hmax=10 vmax=50]
+;quake time: 500, x: 10, y: 5
+;quake time: 500, x: 10, y: 5
 #☆待ち揺れ
-[wq canskip=false]
+;waitquake
 
 
 
@@ -770,9 +770,9 @@
 ;endpage
 
 #☆大揺れ
-[quake time=700 timemode=ms hmax=50 vmax=100]
+;quake time: 700, x: 50, y: 10
 #☆待ち揺れ
-[wq canskip=false]
+;waitquake
 
 
 
@@ -789,7 +789,7 @@
 ;noname
 足からだったし、怪我はないが、それにしてもやりすぎだ。
 ;endpage
-[fadeInYuuki num=1 pos=center time=500]
+;yuuki num: 1
 
 
 ;yuuki
@@ -800,7 +800,7 @@
 ;kenji
 「な、言いがかりだ。そんなことしてない」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -813,8 +813,8 @@
 ;endpage
 
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
-[fadeOutYuuki]
+;fadeoutbgm
+;yuuki_out
 
 
 
@@ -846,7 +846,7 @@
 ;noname
 そんな俺を見て、優希が笑う。そして、
 ;endpage
-[fadeInYuuki num=2 pos=center time=500]
+;yuuki num: 2
 
 
 ;yuuki
@@ -862,7 +862,7 @@
 ;kenji
 「お、おもしろい冗談だな。しかし冗談に聞こえないぞ、マドモアゼル」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -873,7 +873,7 @@
 ;noname
 優希は学校でもっとも高い位置で、いつも俺たちに見せる笑顔のままで言う。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -913,7 +913,7 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェードアウト　１０００　黒
-[FadeOutBlack time=1000]
+;cb_fade bg:"black"
 #○ズーム　終了
 [endZoom]
 #☆メッセージフレーム　イン
@@ -938,11 +938,11 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
 #☆ジャンプ
-[jump storage=9.ks]
+;jump file: "scenario/09.pon"
 
 

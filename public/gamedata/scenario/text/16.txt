@@ -14,9 +14,9 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　青
-[changeMessageFrameColor color=blue]
+;set_to_blue
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -33,7 +33,7 @@
 
 
 ;noname
-[playse storage=SE15 buf=1 loop=false]静かにかつ迅速に窓を開け、夜の学校に降り立つ。
+;playse num: "15"静かにかつ迅速に窓を開け、夜の学校に降り立つ。
 ;endpage
 
 
@@ -62,9 +62,10 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #△走る
-[playse storage=SE13 buf=2 loop=true]
+;playse num: "13" loop: true
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -87,7 +88,8 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -110,7 +112,8 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -143,9 +146,10 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　黒
-[cb2 storage=black]
+;cb_move bg: "black"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -157,7 +161,7 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
+		;quake time: 500, x: 10, y: 5
 「あでっ！」
 ;endpage
 
@@ -184,13 +188,13 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△止まる
-[stopse buf=2]
+;stopse
 #△屋上ドア
-[playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
+;playse num: "11"
 #○フェードアウト　１５００　ｆ　白
 [FadeOutWhite time=1500 canskip=false]
 #○フェード　ｆ　屋上
-[cb storage=roof canskip=false]
+;cb_fade bg: "roof canskip=false"
 
 #○ズーム　屋上
 [zoomInRoof]
@@ -217,7 +221,7 @@
 ;kenji
 「……優希」
 ;endpage
-[fadeInYuuki num=2 pos=center time=500]
+;yuuki num: 2
 
 
 ;yuuki
@@ -228,7 +232,7 @@
 ;kenji
 「待ってた……？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -239,7 +243,7 @@
 ;kenji
 「……いや、来なかったらどうするつもりだったんだよ」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -250,7 +254,7 @@
 ;kenji
 「あー、まぁ風邪はよくないな、風邪は」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -261,7 +265,7 @@
 ;kenji
 「そうだな、ってか今日はすこし寒いな」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -277,7 +281,7 @@
 ;kenji
 「ああ、さっき病院で聞いた」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -288,7 +292,7 @@
 ;kenji
 「………………」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -299,7 +303,7 @@
 ;kenji
 「どうしてなんだ？」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -330,7 +334,7 @@
 ;noname
 つまり彼は、そのロックを外し、鍵を開け、飛んだということになる。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -341,7 +345,7 @@
 ;kenji
 「じゃあどうして」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -367,7 +371,7 @@
 ;kenji
 「でもどうしてそんな急に」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -378,7 +382,7 @@
 ;kenji
 「言ったって、なにを」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -389,7 +393,7 @@
 ;kenji
 「それは……いつのことだ？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -410,14 +414,14 @@
 ;kenji
 「突然正気に戻るって、そんなことってあるのか？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「わからない。兄さんの幼児退行は、精神的なものと身体的なもの、両方の原因が考えられるって言ってた。だから強いショックをうければ、あるいは」
 ;endpage
 
-[fadeOutYuuki]
+;yuuki_out
 
 
 
@@ -449,7 +453,7 @@
 ;noname
 しかしこの結果では、まるで……
 ;endpage
-[fadeInYuuki num=1 pos=center time=500]
+;yuuki num: 1
 
 
 ;yuuki
@@ -465,7 +469,7 @@
 ;kenji
 「違う。優希のせいじゃない」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -476,25 +480,25 @@
 ;noname
 やはり笑顔のままで、彼女は言う。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「私、ずっと死んでしまいたいって思ってた。けど死ねなかったのは、兄さんがいたから。あの事故で私をかばって、傷を負った兄さんが」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「私にとって兄さんは足枷でしかなかった。私は飛び立ちたいのに、傷ついた兄さんが私の足をしっかりと握って飛ばせてくれなかった。病室へ行くたび私はいらだってた。なんで生きてるのって」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「私が死のうとするたびに、私をかばって傷ついた兄さんが、自分の犠牲を無駄にするのかと私を責めているように感じて、最後の一歩がどうしても踏み出せなかった」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -505,14 +509,14 @@
 ;kenji
 「そうだな……」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「でも今になって思うよ、兄さんも苦しかったんだって。当然だよね、私となんにも変わらないもん。でも私は気づけなかった。気づかないふりをしてた」
 ;endpage
 
-[fadeOutYuuki]
+;yuuki_out
 
 
 
@@ -574,7 +578,7 @@
 ;kenji
 「優希、俺たちの前で見せた笑顔は嘘だったのか？　俺や明日香と過ごして、楽しくなかったのか？」
 ;endpage
-[fadeInYuuki num=1 pos=center time=500]
+;yuuki num: 1
 
 
 ;yuuki
@@ -645,7 +649,7 @@
 ;noname
 何かあるはずだ、何か――
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -661,7 +665,7 @@
 ;kenji
 「ああ、なんだ優希」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -672,7 +676,7 @@
 ;noname
 少し頬を赤らめながら、優希は言う。
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -695,7 +699,7 @@
 ;kenji
 「じょ、冗談だろ？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -706,7 +710,7 @@
 ;kenji
 「………………」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -767,7 +771,7 @@
 ;yuuki
 「ありがとう、そう言うと思った。常盤くんはそういう人だからね。だから好きになったんだし、うん」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -896,9 +900,9 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 #△落下
-[playse storage=SE19 buf=1 loop=false]
+;playse num: "19"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -914,7 +918,7 @@
 ;endpage
 
 #○フェード　白
-[cb storage=white]
+;cb_fade bg: "white"
 
 
 
@@ -943,7 +947,7 @@
 ;endpage
 
 #○フェード　黒
-[cb storage=black]
+;cb_fade bg: "black"
 
 
 
@@ -954,14 +958,14 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
 #ウェイト
 [wait time=500 canskip=false]
 
 #☆ジャンプ
-[jump storage=17.ks]
+;jump file: "scenario/17.pon"
 
 

@@ -35,13 +35,13 @@
 
 
 ;noname
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;playse num: "20"[font size=30]
 「無毛はねーわ」[deffont]
 
 ;endpage
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
+;playbgm num:"002"
 
 
 
@@ -68,8 +68,8 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;quake time: 500, x: 10, y: 5
+;playse num: "20"[font size=30]
 「ＤＪジョーーーーーゥバン！！」
 ;endpage
 
@@ -91,8 +91,8 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;quake time: 500, x: 10, y: 5
+;playse num: "20"[font size=30]
 「あまったれんな糞ガキどもが！！」[deffont]
 
 ;endpage
@@ -111,7 +111,7 @@
 
 ;noname
 [jumpMessageFrame]
-[playse storage=SE22 buf=1 loop=false]「それではまず一通目のお便り！　じゃじゃん！」
+;playse num: "22"「それではまず一通目のお便り！　じゃじゃん！」
 ;endpage
 
 
@@ -149,7 +149,7 @@
 
 ;noname
 [upMessageFrame]
-[playse storage=SE24 buf=1 loop=false]「な、なんだってー！！」
+;playse num: "24"「な、なんだってー！！」
 ;endpage
 
 
@@ -182,14 +182,14 @@
 
 
 ;noname
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;playse num: "20"[font size=30]
 「あきらめろ」[deffont]
 
 ;endpage
 
 
 ;noname
-[playse storage=SE21 buf=1 loop=false][jumpMessageFrame]
+;playse num: "21"[jumpMessageFrame]
 「はいかいけーつ！　いやっふぉおおー！」
 ;endpage
 
@@ -217,7 +217,7 @@
 
 ;noname
 [font size=30]
-[playse storage=SE20 buf=1 loop=false]「シェキダン！！」[deffont]
+;playse num: "20"「シェキダン！！」[deffont]
 
 ;endpage
 
@@ -226,14 +226,14 @@
 [eval exp="f.flagLetter = false"]
 
 #☆テロップ　イン
-[telopIn]
-#[telopIn]
+;telop
+#;telop
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
 #☆ジャンプ
-[jump storage=5.ks]
+;jump file: "scenario/05.pon"
 
 

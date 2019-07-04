@@ -13,7 +13,7 @@
 [fadeInRadioMessage]
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
+;playbgm num:"002"
 
 
 ;noname
@@ -22,8 +22,8 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;quake time: 500, x: 10, y: 5
+;playse num: "20"[font size=30]
 「ＤＪジョーーーーバンの！　『グラディエイト・ジャパン』！！」[deffont]
 
 ;endpage
@@ -36,9 +36,9 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
+;quake time: 500, x: 10, y: 5
 [upMessageFrame]
-[playse storage=SE20 buf=1 loop=false]「ぉ伝えするのはー、みんなのーアイドルぅー！　ＤＪえぇぇぇジョォオオオオオバンッ！」
+;playse num: "20"「ぉ伝えするのはー、みんなのーアイドルぅー！　ＤＪえぇぇぇジョォオオオオオバンッ！」
 ;endpage
 
 
@@ -48,7 +48,7 @@
 ;endpage
 
 
-[playse storage=SE21 buf=1 loop=false]
+;playse num: "21"
 ;noname
 [jumpMessageFrame]
 「冗談でーす！」
@@ -90,7 +90,7 @@
 
 
 ;noname
-[playse storage=SE24 buf=1 loop=false]「『お父さんは、お星様になったんだって』」
+;playse num: "24"「『お父さんは、お星様になったんだって』」
 ;endpage
 
 
@@ -101,9 +101,9 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
+;quake time: 500, x: 10, y: 5
 [font size=30]
-[playse storage=SE20 buf=1 loop=false]「だからなんだって話ー！」[deffont]
+;playse num: "20"「だからなんだって話ー！」[deffont]
 
 ;endpage
 
@@ -130,9 +130,9 @@
 
 
 ;noname
-[quake time=500 timemode=ms hmax=10 vmax=50]
+;quake time: 500, x: 10, y: 5
 [font size=30]
-[playse storage=SE20 buf=1 loop=false]「そんなんわかるか！」[deffont]
+;playse num: "20"「そんなんわかるか！」[deffont]
 
 ;endpage
 
@@ -160,7 +160,7 @@
 
 
 ;noname
-[playse storage=SE20 buf=1 loop=false][font size=30]
+;playse num: "20"[font size=30]
 「ゲッダン！」[deffont]
 
 ;endpage
@@ -170,14 +170,14 @@
 ;fadeout_meslay
 [eval exp="f.flagLetter = false"]
 #☆テロップ　イン
-[telopIn]
+;telop
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
 
 #☆ジャンプ
-[jump storage=15.ks]
+;jump file: "scenario/15.pon"
 
 

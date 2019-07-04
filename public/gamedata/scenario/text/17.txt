@@ -18,13 +18,13 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　オレンジ
-[changeMessageFrameColor color=orange]
+;set_to_orange
 #△走る
-[playse storage=SE13 buf=2 loop=true]
+;playse num: "13" loop: true
 #○フェード　廊下
-[cb storage=hall]
+;cb_fade bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -52,11 +52,13 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　黒
-[cb2 storage=black]
+;cb_move bg: "black"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -69,9 +71,9 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△止まる
-[stopse buf=2]
+;stopse
 #△屋上ドア
-[playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
+;playse num: "11"
 #○フェードアウト　１５００　ｆ　白
 [FadeOutWhite time=1500 canskip=false]
 #☆メッセージフレーム　イン
@@ -86,7 +88,7 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 #○ズーム　屋上
 [zoomInRoof]
 #☆メッセージフレーム　イン
@@ -112,7 +114,7 @@
 ;noname
 死。
 ;endpage
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -123,7 +125,7 @@
 ;kenji
 「なんだよ」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -134,7 +136,7 @@
 ;kenji
 「もうそれは聞いたぞ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -155,7 +157,7 @@
 ;kenji
 「さぁ帰るぞ明日香。優希のまねごとなんていいからさ。もう夜も遅いだろ、寮に帰って風呂入って寝ようぜ、なぁ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -171,7 +173,7 @@
 ;noname
 しかし、明日香はゆっくりと首を横に振った。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -221,7 +223,7 @@
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -232,7 +234,7 @@
 ;kenji
 「……なにを」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -274,7 +276,7 @@
 ;noname
 夢は終わり、後に残るのは、つらい現実。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -285,7 +287,7 @@
 ;kenji
 「生きてる。今でもまだ生きてる」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -297,11 +299,11 @@
 「…………あぁ……」
 ;endpage
 
-#[fadeOutAsuka]
+#;asuka_out
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェードアウト　黒
-[FadeOutBlack]
+;cb_fade bg:"black"
 #○ズーム　終了
 [endZoom]
 #☆メッセージフレーム　イン
@@ -386,7 +388,7 @@
 #○フェード　ズーム屋上
 [fadeInZoomRoof]
 
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -397,7 +399,7 @@
 ;kenji
 「お前、見たのか」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -433,7 +435,7 @@
 ;noname
 しかしそれは、俺が感じている以上に、明日香が感じているはずだ。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -444,7 +446,7 @@
 ;kenji
 「ない。ずっとあのままだ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -455,7 +457,7 @@
 ;kenji
 「可能性は限りなくゼロだそうだ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -466,7 +468,7 @@
 ;kenji
 「お前のせいじゃない、明日香。違う、絶対に」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -512,7 +514,7 @@
 ;noname
 あるいは、そう、すべてを振り切って飛んでしまうかのどちらか。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -523,7 +525,7 @@
 ;kenji
 「わからない。明日死ぬかもしれないし、あと何年も生きるかもしれない」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -534,7 +536,7 @@
 ;kenji
 「明日香、そこ危ないだろ、下に降りてこい。帰ろう」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -550,7 +552,7 @@
 ;noname
 何が大丈夫だというのだろう。こんな言葉じゃダメだ。こんなんじゃまた、明日香を救えない。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -561,7 +563,7 @@
 ;kenji
 「違う。明日香のせいじゃない。最初に飛び込んで、無様にもお前を助けられなかった俺が悪い。お前が気負う必要はないんだ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -607,7 +609,7 @@
 ;noname
 この上明日香まで助けられないのか、俺は。馬鹿な、そんなこと許されない。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -696,8 +698,8 @@
 ;noname
 そうすれば、きっと俺たちは幸せになれるから。
 ;endpage
-[asuka num=2 pos=center]
-#[fadeInAsuka num=2 pos=center]
+;asuka num: 2
+#;asuka num: 2
 
 
 ;asuka
@@ -708,7 +710,7 @@
 ;kenji
 「なんだよ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -744,7 +746,7 @@
 ;noname
 ただ一言、好きだと伝えればよかった。それができなかったのは、優希の死を目の当たりにした恐れがあったからだ。
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -788,16 +790,16 @@
 #○ズーム　終了
 [endZoom]
 #☆テロップ　イン
-[telopIn]
+;telop
 [wm canskip=false]
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 #☆ミニロゴ１
-[intermission1]
+
 #△ＢＧＭ３
-[bgmopt volume=100][playbgm storage=bgm003]
+;playbgm num:"003"
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -806,7 +808,7 @@
 ;kenji
 「……ってゆーか、馬鹿？」
 ;endpage
-[fadeInAsuka num=5 pos=center time=500]
+;asuka num: 5
 
 
 ;asuka
@@ -817,7 +819,7 @@
 ;noname
 あまりの高さに腰を抜かしたらしい明日香を、半ば引きずり下ろすようにして助ける。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -828,7 +830,7 @@
 ;kenji
 「はいはい、ほんっと馬鹿だなお前。ってか恥ずかしいこと言うな馬鹿」
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
@@ -839,7 +841,7 @@
 ;kenji
 「うっさい。馬鹿に馬鹿と言って何が悪い」
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
@@ -850,7 +852,7 @@
 ;kenji
 「な、ばっかお前、惚れてるとか恥ずかしいこと言うなよ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -871,7 +873,7 @@
 ;kenji
 「な、そ、そりゃあお前、さっき言った通りだ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -882,7 +884,7 @@
 ;kenji
 「ぐっ……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -895,7 +897,7 @@
 「……好きだ」[deffont]
 
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -906,7 +908,7 @@
 ;kenji
 「ぐっ……す……す……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -915,11 +917,11 @@
 
 
 ;kenji
-		[playse storage=SE20 buf=1 loop=false][font size=30]
+		;playse num: "20"[font size=30]
 「すきやき」[deffont]
 
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
@@ -928,10 +930,10 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE17 buf=1 loop=false]「ひぎぃ！」
+		;quake time: 500, x: 10, y: 5
+;playse num: "17"「ひぎぃ！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -940,11 +942,11 @@
 
 
 ;kenji
-		[playse storage=SE22 buf=1 loop=false][font size=30]
+		;playse num: "22"[font size=30]
 「好きだ！」[deffont]
 
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -960,7 +962,7 @@
 ;noname
 俺はそっぽを向いた。恥ずい。あれだけごまかしても恥ずい。無理。マジ勘弁。
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -971,7 +973,7 @@
 ;kenji
 「照れてなんかねぇよ馬鹿」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -982,7 +984,7 @@
 ;kenji
 「うっせ、かわいいとか言うなコンチクショウ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1003,7 +1005,7 @@
 ;noname
 それにまぁ、こういうのも悪くない。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1014,7 +1016,7 @@
 ;kenji
 「ん？」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1026,7 +1028,7 @@
 明日香が、貯水タンクを見ながら言った。
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -1088,7 +1090,7 @@
 ;kenji
 「俺、思うんだけど」
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -1099,7 +1101,7 @@
 ;kenji
 「俺たちって結構苦労してきたじゃん」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1110,13 +1112,13 @@
 ;kenji
 「今まで苦労して、これからだって苦労するんだから、少しくらい[ruby text=むく]報われたっていいと思うんだ。ってか報われないとやってらんねぇじゃん。だから、いいに決まってる」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
 「うん」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1142,7 +1144,7 @@
 ;noname
 多分、何も変わらない。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1159,7 +1161,7 @@
 「ああ、帰ろう」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -1181,7 +1183,7 @@
 ;noname
 ふと思い立って、先を歩く明日香を呼び止める。
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -1198,16 +1200,16 @@
 「卒業おめでとう、明日香。これからもよろしく。あと、好きだぞ」
 ;endpage
 [delName]
-[asuka num=2 pos=center time=1000][wm canskip=false]
-[asuka num=5 pos=center time=1000][wm canskip=false]
-[asuka num=5 pos=center]
+;asuka num: 2[wm canskip=false]
+;asuka num: 5[wm canskip=false]
+;asuka num: 5
 
 
 ;asuka
 「ばーか！」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -1218,14 +1220,14 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #ＢＧＭフェードアウト
-[fadeoutbgm time=2000]
+;fadeoutbgm
 #○フェードアウト　１５００　ｆ　黒
 [FadeOutBlack time=1500 canskip=false]
 #エンディング
 [call storage=ed.ks]
 #ジャンプ
-[jump storage=18.ks]
+;jump file: "scenario/18.pon"
 
 

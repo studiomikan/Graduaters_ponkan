@@ -14,11 +14,11 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　オレンジ
-[changeMessageFrameColor color=orange]
+;set_to_orange
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -46,13 +46,14 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　黒
-[cb2 storage=black]
+;cb_move bg: "black"
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 #△歩く
-[playse storage=SE12 buf=2 loop=true]
+;playse num: "12" loop: true
 
 
 
@@ -116,11 +117,12 @@
 ;endpage
 
 #△止まる
-[stopse buf=2]
+;stopse
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -147,19 +149,20 @@
 
 
 ;noname
-[playse storage=SE14 buf=1 loop=false]っと。よし、開いた。
+;playse num: "14"っと。よし、開いた。
 ;endpage
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　教室
-[cb2 storage=class]
+;cb_move bg: "black"
+;cb_move bg: "class"
 #△教室ドア
-[playse storage=SE08 buf=1 loop=false]
+;playse num: "08"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 #△ＢＧＭ３
-[bgmopt volume=100][playbgm storage=bgm003]
+;playbgm num:"003"
 
 
 
@@ -196,7 +199,7 @@
 ;kenji
 「そしてこうもあっさり見つかるとは思わなかったぞ、明日香」
 ;endpage
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -212,7 +215,7 @@
 ;kenji
 「プロとか無いから。というかお前の隠れ方がおそまつなだけだから」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -223,7 +226,7 @@
 ;noname
 いやまぁ見つけられないのは困るが、かくれんぼってそういう譲り合いのゲームだっただろうか。俺の記憶では違うんだが。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -234,7 +237,7 @@
 ;kenji
 「でも次は俺が隠れる番だろ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -245,14 +248,14 @@
 ;kenji
 「別にやる気はないけど。嫌って言ってもどーせ聞かないだろ、明日香は」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
 「わかってんじゃん！」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -269,7 +272,7 @@
 ;kenji
 「明日香ー？」
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -280,7 +283,7 @@
 ;noname
 って、おい、その台詞は……
 ;endpage
-[asuka num=4 pos=center]
+;asuka num: 4
 
 
 ;asuka
@@ -291,7 +294,7 @@
 ;kenji
 「ま、まてまてまてーぃ！」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -299,7 +302,7 @@
 ;endpage
 
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 
 
 
@@ -308,17 +311,17 @@
 ;endpage
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
+;playbgm num:"002"
 
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false][font size=30]
+		;quake time: 500, x: 10, y: 5
+;playse num: "20"[font size=30]
 「そりゃあ俺が今日した挨拶じゃねーか！」[deffont]
 
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -329,7 +332,7 @@
 ;kenji
 「う、うっせー、別にそんなつもりは……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -340,7 +343,7 @@
 ;kenji
 「っ、お前だって、『この一年は本当に楽しかったです、ありがとうございました』だけってのは、ちょっと簡単すぎないか？」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -351,7 +354,7 @@
 ;kenji
 「そ、そうなのか……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -362,7 +365,7 @@
 ;kenji
 「そ、その話はもういいだろ！　次は俺が隠れる番だからな！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -373,7 +376,7 @@
 ;kenji
 「ちゃんと５分待ってからだぞ！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -381,11 +384,12 @@
 ;endpage
 
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆ＢＧＭ３
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -440,13 +444,16 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　黒
-[cb2 storage=black]
+;cb_move bg: "black"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -457,7 +464,7 @@
 ;endpage
 
 #△教室ドア
-[playse storage=SE08 buf=1 loop=false]
+;playse num: "08"
 
 
 
@@ -538,10 +545,10 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]"
+;cb_fade bg:"black", canskip: false"
 
-[jump storage=6.ks]
+;jump file: "scenario/06.pon"
 
 

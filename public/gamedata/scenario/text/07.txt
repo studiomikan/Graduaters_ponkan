@@ -11,13 +11,13 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　オレンジ
-[changeMessageFrameColor color=orange]
+;set_to_orange
 #☆メッセージフレーム　イン
 ;fadein_meslay
 #△歩く
-[playse storage=SE12 buf=2 loop=true]
+;playse num: "12" loop: true
 
 
 
@@ -41,7 +41,7 @@
 ;endpage
 
 #△止まる
-[stopse buf=2]
+;stopse
 
 
 
@@ -52,13 +52,13 @@
 #☆メッセージフレーム　アウト
 #;fadeout_meslay
 #△教室ドア
-[playse storage=SE08 buf=1 loop=false]
+;playse num: "08"
 #○フェード　教室
-#[cb storage=class]
+#;cb_fade bg: "class"
 #☆メッセージフレーム　イン
 #;fadein_meslay
 
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -79,13 +79,13 @@
 ;noname
 ……よし、これなら、黙っていれば見つからないかもしれない。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
 「………………えー、こほん」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -96,13 +96,13 @@
 ;noname
 え……作文？　二年ってことは去年か？　そんなもん書いたっけ？
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
 「僕の将来の夢は、一人で泳げるようになることです。僕は去年、溺れてしまってから泳げません。なので、将来は上手に泳げるようになりたいです」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -115,13 +115,14 @@
 ;endpage
 
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #△ＢＧＭ１
-[bgmopt volume=100][playbgm storage=bgm001]
+;playbgm num:"001"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -130,10 +131,10 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
+		;quake time: 500, x: 10, y: 5
 「だ、だからってそんなもん引っぱり出してくるんじゃねぇよ！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -144,7 +145,7 @@
 ;kenji
 「来ちゃった☆じゃねーよ。絶対わざとだろ。計画的犯行だろ。酒のつまみだとか思ってるだろ」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -155,7 +156,7 @@
 ;kenji
 「いや、小学２年生はそんなこと考えないだろ……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -166,7 +167,7 @@
 ;kenji
 「かわいい言うな。っていうか、なんで明日香がそんなの持ってるんだよ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -177,7 +178,7 @@
 ;kenji
 「そういうの、窃盗って言って罪になるんだぜ……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -188,7 +189,7 @@
 ;kenji
 「めんご言うな。死語だ馬鹿たれ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -197,11 +198,11 @@
 
 
 ;kenji
-		[playse storage=SE22 buf=1 loop=false][font size=30]
+		;playse num: "22"[font size=30]
 「めんごくん？！　擬人化？！」[deffont]
 
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -212,7 +213,7 @@
 ;kenji
 「うゎでか！　そんなマスコットかわいくねぇよ！」
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
@@ -223,7 +224,7 @@
 ;kenji
 「めんごくんなのに……めんご使おうよ……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -234,7 +235,7 @@
 ;kenji
 「ですよねー」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -245,7 +246,7 @@
 ;kenji
 「いや、もういいから」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -256,17 +257,17 @@
 ;kenji
 「その話題掘りかえすのかよ……泳げませんがなにか問題でも」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
 「幽霊は克服できたのにねー。犬でも犬かきで泳げるし、つまり健二は犬以下ってこと？　うちのクロより下ってことだね！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
-	[playse storage=SE22 buf=1 loop=false][font size=30]
+	;playse num: "22"[font size=30]
 「やーいやーい！」[deffont]
 
 ;endpage
@@ -275,7 +276,7 @@
 ;kenji
 「子供かお前は……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -285,7 +286,7 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 [image layer=1 page=fore storage=chara_A01 visible=true pos=center]
 [eval exp="f.o_char1Storage = f.char1Storage"]
 [eval exp="f.char1Storage = 'chara_A01'"]
@@ -294,7 +295,7 @@
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -305,7 +306,7 @@
 ;kenji
 「そうだな。でもま、変なところに隠れて見つけてもらえなかったらアレだし」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -316,7 +317,7 @@
 ;kenji
 「で、どうすんの？　まだ続けんの？」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -327,7 +328,7 @@
 ;kenji
 「はいはい、じゃあここで待ってればいいんだな」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -338,14 +339,14 @@
 ;kenji
 「あいよ」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
 「きっかり５分だからねー！」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -353,14 +354,14 @@
 最後に念をおしてから、明日香は廊下を走っていった。
 ;endpage
 
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 
 ;noname
 と、思ったら帰って来た。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -371,14 +372,14 @@
 ;kenji
 「なんだ？」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
 「泳げないの、健二の場合はしょうがないんだから、気にしなくていいと思うよ。さっきは変に言っちゃってごめんね。じゃ！」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -409,12 +410,12 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
-[jump storage=8.ks]
+;jump file: "scenario/08.pon"
 
 

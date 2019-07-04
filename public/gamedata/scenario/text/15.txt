@@ -19,11 +19,11 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　オレンジ
-[changeMessageFrameColor color=orange]
+;set_to_orange
 #△走る
-[playse storage=SE13 buf=2 loop=true]
+;playse num: "13" loop: true
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -47,15 +47,17 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #○移動　黒
-[cb2 storage=black]
+;cb_move bg: "black"
 #△止まる
-[stopse buf=2]
+;stopse
 #△教室ドア
-[playse storage=SE08 buf=1 loop=false]
+;playse num: "08"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -118,7 +120,8 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -192,9 +195,9 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　黒
-[cb2 storage=black]
+;cb_move bg: "black"
 #△走る
-[playse storage=SE13 buf=2 loop=true]
+;playse num: "13" loop: true
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -222,12 +225,12 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△止まる
-[stopse buf=2]
+;stopse
 #☆テロップ　イン
-[telopIn]
+;telop
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
-[jump storage=16.ks]
+;jump file: "scenario/16.pon"
 
 

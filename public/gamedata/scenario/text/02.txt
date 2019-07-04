@@ -19,7 +19,7 @@
 
 
 #○フェード　２０００　ｆ　屋上
-[cb storage=roof canskip=false time=2000]
+;cb_fade bg: "roof canskip=false time=2000"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -28,7 +28,7 @@
 ;kenji
 「……で、だ」
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -39,7 +39,7 @@
 ;kenji
 「結局何がしたかったんだ？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -50,7 +50,7 @@
 ;kenji
 「なんのお祝いだよ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -61,7 +61,7 @@
 ;kenji
 「あぁ言ったな、確かに言った」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -72,7 +72,7 @@
 ;kenji
 「しかしなんだって今日、卒業式当日の夜、しかもこの時間なんだ明日香さん？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -108,7 +108,7 @@
 ;kenji
 「ってか明日香。せめて呼び出すときは場所くらい書いとけよ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -119,7 +119,7 @@
 ;kenji
 「学校とだけ書かれても、どこかわかんねぇだろ。アバウトすぎだ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -135,7 +135,7 @@
 ;noname
 もしかしたら教室の可能性だってあったのだ。まぁ結果オーライといえばそうなのだが。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -146,7 +146,7 @@
 ;kenji
 「コンチクショウ。たしかにその通りなんだが」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -177,7 +177,7 @@
 ;kenji
 「な、なんでお礼なんだよ気持ち悪い。新手の嫌がらせか」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -188,7 +188,7 @@
 ;kenji
 「なんだよそれ。ここはデパートか？　俺は記念すべき１００万人目のお客様か？」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -209,7 +209,7 @@
 ;kenji
 「お前まさか、今でも来てたのか？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -220,20 +220,20 @@
 ;kenji
 「一人で？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
 「うん」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
 「月明かりがきれいな夜とかは、美術室から忍び込んで教室で宿題したり、こうやって屋上に来たりしてたんだ」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -267,7 +267,7 @@
 ;endpage
 
 #○フェード　黒
-[cb storage=black]
+;cb_fade bg: "black"
 
 
 
@@ -311,14 +311,14 @@
 ;endpage
 
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 
 
 
 ;kenji
 「なぁ、実は結構怒ってたり？」
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -329,13 +329,13 @@
 ;kenji
 「いや、俺ずっと来てなかったから、怒ってんのかなーと」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
 「そんな、怒ってるわけないじゃん、馬鹿だなぁ健二は」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -351,7 +351,7 @@
 ;kenji
 「す、すまん。なんとなく来づらかったと言いますか……」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -367,7 +367,7 @@
 ;kenji
 「いや、でも、その……す、すんましぇん」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -383,7 +383,7 @@
 ;noname
 俺もそれにならう。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -394,7 +394,7 @@
 ;kenji
 「あー、まぁな。ってかこっぱずかしい台詞だなオイ」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -405,7 +405,7 @@
 ;kenji
 「はいはいそーですね」
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
@@ -417,7 +417,7 @@
 「いーだろ別に、月見てるんだよ、月」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -434,7 +434,7 @@
 ;noname
 結構明るいから満月かな……なんて考えていると、
 ;endpage
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -445,7 +445,7 @@
 ;noname
 明日香がこっちに向き直って、
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -461,7 +461,7 @@
 ;kenji
 「はぁ？　かくれんぼ？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -472,7 +472,7 @@
 ;kenji
 「昔って、それ一体いつごろの話だよ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -483,7 +483,7 @@
 ;kenji
 「昔すぎだろ。ゥン年前じゃねーか」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -494,7 +494,7 @@
 ;kenji
 「嫌だ。何がうれしくてかくれんぼなんか」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -505,7 +505,7 @@
 ;kenji
 「俺たちもう大人だろ？　アダルトだろ？　かくれんぼなんてチルドレンの遊びだろーが」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -521,7 +521,7 @@
 ;noname
 まったく……こういう強引なところも昔から変わってない。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -533,7 +533,7 @@
 「Ｂｏｏｏｏ！　強引だー、横暴だ―、職権乱用だー、国民にも政治介入の場をー」
 ;endpage
 #どうせやる羽目になるだろうが、とりあえず異議を唱えておく。俺のプライドのために。
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -544,7 +544,7 @@
 ;kenji
 「無視か。そして本当にやるのか。断固ストライキする」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -560,7 +560,7 @@
 ;noname
 結局は逆らえない俺。し、尻に敷かれてなんかないもん！　ないんだから！
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -571,13 +571,13 @@
 ;kenji
 「おぅけぇーＧＡＹＳ、かかってきなー」
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
 「いくよー、じゃーんけーん」
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
@@ -593,7 +593,7 @@
 ;kenji
 「もちろん三回勝負だよな？」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -604,7 +604,7 @@
 ;kenji
 「えー」
 ;endpage
-[asuka num=3 pos=center]
+;asuka num: 3
 
 
 ;asuka
@@ -620,7 +620,7 @@
 ;kenji
 「俺が鬼かよ……」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -631,14 +631,14 @@
 ;kenji
 「りょーかいですマリーアスカネット様」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
 「ちゃんと５分待ってからねー！」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -684,12 +684,12 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
-[jump storage=3.ks]
+;jump file: "scenario/03.pon"
 
 

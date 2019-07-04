@@ -17,9 +17,9 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　青
-[changeMessageFrameColor color=blue]
+;set_to_blue
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -30,23 +30,23 @@
 ;endpage
 
 #△ＢＧＭ３
-[bgmopt volume=100][playbgm storage=bgm003]
+;playbgm num:"003"
 #○フェード　教室
-[cb storage=class]
+;cb_fade bg: "class"
 
-[fadeInAsuka num=5 pos=left time=500]
+;asuka num: 5
 
 
 ;asuka
 「ありがとう、健二、優希ちゃん」
 ;endpage
-[fadeInYuuki num=5 pos=right time=500]
+;yuuki num: 5
 
 
 ;yuuki
 「おめでとう、明日香ちゃん」
 ;endpage
-[asuka num=5 pos=left]
+;asuka_left num: 5
 
 
 ;asuka
@@ -57,7 +57,7 @@
 ;kenji
 「また一つおばさんに近づいたな、明日香」
 ;endpage
-[asuka num=1 pos=left]
+;asuka_left num: 1
 
 
 ;asuka
@@ -93,13 +93,13 @@
 ;noname
 それでも優希は『少ない』と言っていたが……
 ;endpage
-[yuuki num=5 pos=right]
+;yuuki_right num: 5
 
 
 ;yuuki
 「ほら、ケーキ食べよう、明日香ちゃん！」
 ;endpage
-[asuka num=5 pos=left]
+;asuka_left num: 5
 
 
 ;asuka
@@ -110,7 +110,7 @@
 ;kenji
 「太るぞ貴様らー」
 ;endpage
-[yuuki num=1 pos=right][asuka num=1 pos=left]
+;yuuki_right num: 1;asuka_left num: 1
 
 
 [drawName name="優希・明日香"]
@@ -164,7 +164,7 @@
 ;noname
 あとはもう少し俺にやさしくしてほしいと思うのは贅沢なのでしょうか。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -183,9 +183,9 @@
 
 
 ;kenji
-		[playse storage=SE22 buf=1 loop=false]「１番常磐健二、脱ぎます！」
+		;playse num: "22"「１番常磐健二、脱ぎます！」
 ;endpage
-[fadeInAsuka num=3 pos=center time=500]
+;asuka num: 3
 
 
 ;asuka
@@ -196,8 +196,8 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE17 buf=1 loop=false]「ひぎぃっ！」
+		;quake time: 500, x: 10, y: 5
+;playse num: "17"「ひぎぃっ！」
 ;endpage
 
 
@@ -214,12 +214,12 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 [layopt layer=1 page=fore visible=false]
 #☆テロップ　アウト
 [telopOut]
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -245,9 +245,9 @@
 ;endpage
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
+;playbgm num:"002"
 
-[fadeInAsuka num=5 pos=left time=500]
+;asuka num: 5
 
 
 ;asuka
@@ -258,7 +258,7 @@
 ;kenji
 「なんだよ～」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
@@ -269,7 +269,7 @@
 ;kenji
 「え～、い～よ～」
 ;endpage
-[fadeInYuuki num=5 pos=right time=500]
+;yuuki num: 5
 
 
 ;yuuki
@@ -285,13 +285,13 @@
 ;noname
 ぴょん！　ぴょん！
 ;endpage
-[yuuki num=5 pos=right]
+;yuuki_right num: 5
 
 
 ;yuuki
 「わーすごいすごーい！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
@@ -302,7 +302,7 @@
 ;kenji
 「え～やだよ～」
 ;endpage
-[asuka num=4 pos=left]
+;asuka_left num: 4
 
 
 ;asuka
@@ -313,7 +313,7 @@
 ;kenji
 「しょうがねぇなぁ、聞くぜ～、ちょお聞くぜ～」
 ;endpage
-[asuka num=4 pos=left]
+;asuka_left num: 4
 
 
 ;asuka
@@ -324,7 +324,7 @@
 ;kenji
 「あぁ～？　俺ほどのイケメンに対してブサイクとはなんだ～このやろ～」
 ;endpage
-[asuka num=5 pos=left]
+;asuka_left num: 5
 
 
 ;asuka
@@ -333,40 +333,40 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE18 buf=1 loop=false]「へぶしっ！」
+		;quake time: 500, x: 10, y: 5
+;playse num: "18"「へぶしっ！」
 ;endpage
-[yuuki num=5 pos=right]
+;yuuki_right num: 5
 
 
 ;yuuki
 「あはは、へぶしだってー、あたしコカコーラ派ー」
 ;endpage
-[asuka num=5 pos=left]
+;asuka_left num: 5
 
 
 ;asuka
 「優希っち、コーラはペプシに決まってるでしょ～が～」
 ;endpage
-[yuuki num=1 pos=right]
+;yuuki_right num: 1
 
 
 ;yuuki
 「えー、コカコーラの方がおいしーよー」
 ;endpage
-[asuka num=1 pos=left]
+;asuka_left num: 1
 
 
 ;asuka
 「ペプシです～」
 ;endpage
-[yuuki num=3 pos=right]
+;yuuki_right num: 3
 
 
 ;yuuki
 「コカコーラだもん、ばかー！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
@@ -375,10 +375,10 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE18 buf=1 loop=false]「ペプシっ！」
+		;quake time: 500, x: 10, y: 5
+;playse num: "18"「ペプシっ！」
 ;endpage
-[yuuki num=5 pos=right]
+;yuuki_right num: 5
 
 
 ;yuuki
@@ -389,25 +389,25 @@
 ;kenji
 「二度もぶった！　俺のイケメンフェイスがゆがんじまったらどうすんだよ、お嫁とかに行けないだろ！ うわーん！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
 「うるさいわね！　そんなんで魔球が完成すると思うなひょ！」
 ;endpage
-[yuuki num=5 pos=right]
+;yuuki_right num: 5
 
 
 ;yuuki
 「思うなひょ！　ひょーだって、噛んだ噛んだー」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
 「こらしょこ、ヤジ飛ばしゃない！　あんたも座れ！　すぐ座れ！」
 ;endpage
-[yuuki num=5 pos=right]
+;yuuki_right num: 5
 
 
 ;yuuki
@@ -418,21 +418,21 @@
 ;kenji
 「ＤＪジョバンの！　グラディエイト・ジャパ～～ン！！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
 「よし、よく聞きなさいあんたたち！　だいたいあんたたちには気合いが足りない！　あれよ、えーと、根性！　あたしがそのひねくれた根性たたっ切ってやる！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
-	[playse storage=SE17 buf=1 loop=false][font size=30]
+	;playse num: "17"[font size=30]
 「ずばっ！」[deffont]
 
 ;endpage
-[yuuki num=4 pos=right]
+;yuuki_right num: 4
 
 
 ;yuuki
@@ -443,7 +443,7 @@
 ;kenji
 「シェキダン！　シェキダン！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
@@ -454,7 +454,7 @@
 ;kenji
 「はい！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
@@ -465,17 +465,17 @@
 ;kenji
 「サー、イエッサー！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
 「よし、よく聞けへっぽこ！　だいたい健二は優希ちゃんにデレデレしすぎなのよ馬鹿！　なんかあたしと優希ちゃんで態度変えてない？　あーもう、あたしがそのブサイク顔たたっ切ってやる！」
 ;endpage
-[asuka num=3 pos=left]
+;asuka_left num: 3
 
 
 ;asuka
-	[playse storage=SE17 buf=1 loop=false][font size=30]
+	;playse num: "17"[font size=30]
 「ずばっ！」[deffont]
 
 ;endpage
@@ -484,7 +484,7 @@
 ;kenji
 「やられたー」
 ;endpage
-[asuka num=5 pos=left]
+;asuka_left num: 5
 
 
 ;asuka
@@ -495,13 +495,13 @@
 ;kenji
 「お、待ってました！　ついにこの俺のとっておきのネタを披露する時が来たぜ！」
 ;endpage
-[yuuki num=5 pos=right]
+;yuuki_right num: 5
 
 
 ;yuuki
 「いいぞー！」
 ;endpage
-[asuka num=5 pos=left]
+;asuka_left num: 5
 
 
 ;asuka
@@ -510,7 +510,7 @@
 
 
 ;kenji
-		[playse storage=SE22 buf=1 loop=false][font size=30]
+		;playse num: "22"[font size=30]
 「常磐健二、脱ぎます！」[deffont]
 
 ;endpage
@@ -522,20 +522,20 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE18 buf=1 loop=false][font size=30]
+		;quake time: 500, x: 10, y: 5
+;playse num: "18"[font size=30]
 「コカコーラ！」[deffont]
 
 ;endpage
 
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -556,9 +556,9 @@
 ;endpage
 
 #△ＢＧＭ１
-[bgmopt volume=100][playbgm storage=bgm001]
+;playbgm num:"001"
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 
 
 
@@ -645,7 +645,7 @@
 ;noname
 どうなんだろうな、ホント。
 ;endpage
-[fadeInYuuki num=1 pos=center time=500]
+;yuuki num: 1
 
 
 ;yuuki
@@ -661,7 +661,7 @@
 ;kenji
 「優希、起きたのか」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -672,7 +672,7 @@
 ;kenji
 「体調は大丈夫か？」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -683,7 +683,7 @@
 ;kenji
 「初めてのくせにがぶがぶ飲むからだ」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -694,7 +694,7 @@
 ;kenji
 「えぇ、まだ飲むのか？」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -715,7 +715,7 @@
 ;noname
 優希も同じ柄の缶を開けながら、俺の隣に座った。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -726,7 +726,7 @@
 ;kenji
 「んじゃあ、明日香の誕生日と今宵の美しき月を祝って」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -737,7 +737,7 @@
 ;kenji
 「うっせー」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -763,7 +763,7 @@
 ;kenji
 「ぷはーっ！」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -774,7 +774,7 @@
 ;kenji
 「喉痛ぇー」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -785,7 +785,7 @@
 ;kenji
 「でもやめられないんだよなー」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -796,7 +796,7 @@
 ;kenji
 「別になんにも。ただぼーっとしてた」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -827,7 +827,7 @@
 ;noname
 とまぁ頭では分かっているが、実際目の前にいてもそんなことは微塵も感じられないんだけどな。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -838,7 +838,7 @@
 ;noname
 優希が突然、ぽつりとそんなことを言った。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -849,7 +849,7 @@
 ;kenji
 「そうか。まぁ寮で生活してたらそうそうできるもんでもないしな」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -870,7 +870,7 @@
 ;kenji
 「サンキュな。俺だけだったら、たぶん去年と同じになってた」
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -901,7 +901,7 @@
 ;noname
 実は俺って結構Ｓなのかもしれんな、ぐへへ。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -912,7 +912,7 @@
 ;noname
 優希は、当たり前のように言い返してきた。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -924,8 +924,8 @@
 「そう思ってるなら、君がその分も生きていくべきじゃないのかい」
 ;endpage
 #ＢＧＭフェード
-[fadeoutbgm time=1000]
-[yuuki num=3 pos=center]
+;fadeoutbgm
+;yuuki num: 3
 
 
 ;yuuki
@@ -941,7 +941,7 @@
 ;noname
 俺はその目に射抜かれ、視線をそらすことすらできない。要するに、怖い。
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -952,7 +952,7 @@
 ;noname
 金縛りにあった俺の身体を、その爪は容赦なく切り裂いた。
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -963,14 +963,14 @@
 ;kenji
 「それは、どうして」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「家族の死という出来事を目の当たりにして、私はそれを受け止めた。受け止めたけど、耐えきれはしないから。だからだよ、常磐くん」
 ;endpage
 
-[fadeOutYuuki]
+;yuuki_out
 
 
 
@@ -1015,8 +1015,8 @@
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false]「優希怖えええぇぇぇ！！」
+		;quake time: 500, x: 10, y: 5
+;playse num: "20"「優希怖えええぇぇぇ！！」
 ;endpage
 
 
@@ -1027,16 +1027,16 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 [wm canskip=false]
 #☆テロップ　アウト
 [telopOut]
 #ＢＧＭスタート
-[bgmopt volume=100][playbgm storage=bgm003]
+;playbgm num:"003"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -1052,7 +1052,7 @@
 ;kenji
 「よう明日香、調子はどうだ？」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1063,7 +1063,7 @@
 ;kenji
 「もうちょっと考えて飲めよ。お前あんまり強くないんだから」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1074,7 +1074,7 @@
 ;kenji
 「言ったけど聞かなかったんだろ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1090,7 +1090,7 @@
 ;kenji
 「何に乾杯？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1101,7 +1101,7 @@
 ;kenji
 「クサいなー」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1112,7 +1112,7 @@
 ;kenji
 「だな。ではでは、今宵の美しき月を祝って」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1123,7 +1123,7 @@
 ;noname
 明日香が勢いよく缶を逆さにして、ゴクゴクと喉を鳴らして炭酸飲料を飲む。
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1134,7 +1134,7 @@
 ;kenji
 「お、いい飲みっぷり」
 ;endpage
-[asuka num=4 pos=center]
+;asuka num: 4
 
 
 ;asuka
@@ -1145,7 +1145,7 @@
 ;kenji
 「だめじゃん」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1156,7 +1156,7 @@
 ;noname
 そう言って笑いながら、先ほどまで優希がいたのと同じ場所に明日香は腰をおろした。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1167,7 +1167,7 @@
 ;kenji
 「いきなりだな。別に、ただの世間話だよ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1178,7 +1178,7 @@
 ;kenji
 「ホントだって」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1199,7 +1199,7 @@
 ;noname
 そんな馬鹿な。さっきはたしかに、俺が無神経なことを聞いたせいで、優希は怒ってたはずだ。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1215,7 +1215,7 @@
 ;noname
 どういうことだろう。怒ったフリだったのか？　いやそれこそあり得ないだろ。もしそうだとしたらアレは怖すぎだ。女優になれる。
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1226,7 +1226,7 @@
 ;kenji
 「なにって……いや別になにも」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1237,7 +1237,7 @@
 ;kenji
 「は？　告白？　誰が？」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1248,7 +1248,7 @@
 ;kenji
 「ちょ、ちょっと待てって。なぜに俺が優希に告白せねばならんのだ。Ｗｈｙ？」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1259,7 +1259,7 @@
 ;kenji
 「ほ、惚れてない」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1280,7 +1280,7 @@
 ;noname
 しかしそれを明日香に言われるとは。いささかショックだ。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1291,7 +1291,7 @@
 ;kenji
 「ああ、本当にただの世間話だから、そう詮索しないでくれ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1302,7 +1302,7 @@
 ;kenji
 「なんだ、そんなに気になんのか」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1313,7 +1313,7 @@
 ;kenji
 「……似てるか？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1339,7 +1339,7 @@
 ;kenji
 「優希のお兄さんはまだ生きてるし、元気らしいじゃないか」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1365,7 +1365,7 @@
 ;noname
 ホントだよ？
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1376,7 +1376,7 @@
 ;kenji
 「同情……」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1412,7 +1412,7 @@
 ;noname
 まぁよくわからんけど。
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1438,7 +1438,7 @@
 ;noname
 俺はシリアスな空気が苦手なんだ。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1449,7 +1449,7 @@
 ;kenji
 「なし崩しに二次会とかになったら、そうなっちまうかもしれないだろ」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1460,14 +1460,14 @@
 ;kenji
 「よくねー。さっさと片付けて帰るぞ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
 「はいはい、わかってますよー」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -1484,7 +1484,7 @@
 ;noname
 屋上を出る前にふと思い立って、先を行く明日香を呼び止める。
 ;endpage
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -1497,10 +1497,10 @@
 ;endpage
 
 #☆明日香表情変化
-[asuka num=1 pos=center][wm]
-[asuka num=5 pos=center][wm]
+;asuka num: 1[wm]
+;asuka num: 5[wm]
 
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1510,7 +1510,7 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェードアウト　黒
-[FadeOutBlack]
+;cb_fade bg:"black"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -1528,13 +1528,13 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
 #☆ジャンプ
-[jump storage=12.ks]
+;jump file: "scenario/12.pon"
 
 

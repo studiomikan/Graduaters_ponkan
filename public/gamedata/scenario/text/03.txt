@@ -14,9 +14,9 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　青
-[changeMessageFrameColor color=blue]
+;set_to_blue
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -53,7 +53,7 @@
 
 
 ;noname
-[playse storage=SE14 buf=1 loop=false]そうこう言っているうちにカチンと音がして、鍵が外れた。
+;playse num: "14"そうこう言っているうちにカチンと音がして、鍵が外れた。
 ;endpage
 
 
@@ -83,7 +83,7 @@
 
 
 ;noname
-[playse storage=SE15 buf=1 loop=false]さっさと中に入ってしまった明日香に続いて、俺も窓をくぐる。
+;playse num: "15"さっさと中に入ってしまった明日香に続いて、俺も窓をくぐる。
 ;endpage
 
 
@@ -149,9 +149,10 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #△ＢＧＭ１
-[bgmopt volume=100][playbgm storage=bgm001]
+;playbgm num:"001"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -165,7 +166,7 @@
 ;noname
 廊下へ出ると、さっきはよく見えなかった景色が幾分マシになった。
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -186,7 +187,7 @@
 ;noname
 寮は結構きれいなくせに、こういうところは割と手抜きだな。美術部から文句とかこないんだろうか。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -197,7 +198,7 @@
 ;kenji
 「どこって？」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -223,7 +224,7 @@
 ;kenji
 「とりあえず教室行ってみるか。そこ以外思いつかん」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -234,7 +235,7 @@
 ;kenji
 「えーってなんだよ、えーって」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -245,7 +246,7 @@
 ;kenji
 「期待ハズレとはなんだコンチクショウ。これでも一生懸命考えたんだぞ、コンマ５秒くらい」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -260,11 +261,12 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　教室
-[cb2 storage=class]
+;cb_move bg: "black"
+;cb_move bg: "class"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 #△教室ドア
-[playse storage=SE08 buf=1 loop=false]
+;playse num: "08"
 
 
 
@@ -276,7 +278,7 @@
 ;kenji
 「っていうか針金で開くのか、この教室の鍵……」
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -292,7 +294,7 @@
 ;noname
 我が校のセキュリティにそこはかとなく不安を感じるのは俺だけか。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -313,7 +315,7 @@
 ;noname
 机の配置などは昼間と変わらないのに、暗いというだけでなんとなく神秘的な雰囲気になっている気がする。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -324,7 +326,7 @@
 ;kenji
 「アレってなんだよ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -335,7 +337,7 @@
 ;kenji
 「出そうって……何が」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -346,7 +348,7 @@
 ;kenji
 「い、言えば……？」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -357,7 +359,7 @@
 ;kenji
 「な、お、おま、冗談でもそういうこと言うんじゃねーよ！」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -368,7 +370,7 @@
 ;kenji
 「そ、そそそそんなわけないだろ！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -394,7 +396,7 @@
 ;kenji
 「うっせーよ馬鹿！　知ってんだから、こういうとこに連れてくんのはやめろよな」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -405,7 +407,7 @@
 ;kenji
 「あー、いやー、むしろここから一人で帰るほうが怖いといいますかー」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -416,7 +418,7 @@
 ;kenji
 「そうやって意識させるのもやめてくれ！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -427,7 +429,7 @@
 ;kenji
 「俺はお前のオモチャじゃねぇっつーの……」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -438,7 +440,7 @@
 ;kenji
 「なんで驚くんだよ！　ひどい奴だなお前！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -449,7 +451,7 @@
 ;kenji
 「たぶんかよ……自信もって冗談だと言ってくれよ……」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -461,7 +463,7 @@
 「は、ハゲっ？！」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 #『あ、鼻毛出てるよ』と言うくらいにさらっと気にしてることを言ってから、明日香は教室に並ぶ机を物色し始めた。
 
@@ -474,7 +476,7 @@
 ;kenji
 「うう……ハゲてないもん……ハゲないもん……」
 ;endpage
-[fadeInAsuka num=3 pos=center time=500]
+;asuka num: 3
 
 
 ;asuka
@@ -485,7 +487,7 @@
 ;kenji
 「あんたでしょーがっ。っていうか、なにしてんだよ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -497,7 +499,7 @@
 「いやいやいや、だからって人の机を勝手にあさるなよ」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 
 
 
@@ -514,7 +516,7 @@
 ;noname
 決して机の中に見られたらマズイものが入っているからではありません。ホントです。
 ;endpage
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -525,7 +527,7 @@
 ;kenji
 「そりゃまだ学校始まったばっかだし」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -537,7 +539,7 @@
 「いや、普通学校に持ってこないだろ……」
 ;endpage
 
-[fadeOutAsuka]
+;asuka_out
 #△#ＢＧＭフェードアウト
 
 
@@ -552,20 +554,20 @@
 ;endpage
 
 #△ＢＧＭ２
-[bgmopt volume=100][playbgm storage=bgm002]
-[fadeInAsuka num=5 pos=center time=500]
+;playbgm num:"002"
+;asuka num: 5
 
 
 ;asuka
-	[playse storage=SE21 buf=1 loop=false][font size=30]
+	;playse num: "21"[font size=30]
 「エロ本みっけ！」[deffont]
 
 ;endpage
 
 
 ;kenji
-		[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false][font size=30]
+		;quake time: 500, x: 10, y: 5
+;playse num: "20"[font size=30]
 「えええええええ」[deffont]
 
 ;endpage
@@ -579,7 +581,7 @@
 ;kenji
 「マジかよ……いやまさかホントにあるとは……」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -590,7 +592,7 @@
 ;kenji
 「しかも読むのかよ！」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -601,7 +603,7 @@
 ;kenji
 「見ません」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -622,7 +624,7 @@
 ;noname
 ただとなりに女の子がいる状態で女の子のハダカを見るっていうのは、その、ねぇ。わかりますよね？
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -633,7 +635,7 @@
 ;kenji
 「な、なんだよ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -644,7 +646,7 @@
 ;kenji
 「突然何を言い出すんだバカチン」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -655,7 +657,7 @@
 ;kenji
 「だからって聞くな」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -666,7 +668,7 @@
 ;kenji
 「………………」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -682,7 +684,7 @@
 ;noname
 何する気だこいつ。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -693,7 +695,7 @@
 ;kenji
 「……なに？」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -702,7 +704,7 @@
 
 
 ;noname
-[playse storage=SE20 buf=1 loop=false]いきなり目の前に現れたのは……巨乳美人ナース！
+;playse num: "20"いきなり目の前に現れたのは……巨乳美人ナース！
 ;endpage
 
 
@@ -714,7 +716,7 @@
 ;noname
 慌てて視線をそらす。見たいけど見れない。見たらなんか色々言われるに違いない。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -725,7 +727,7 @@
 ;kenji
 「してねぇよ！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -734,14 +736,14 @@
 
 
 ;noname
-[playse storage=SE21 buf=1 loop=false]お次に現れたのは、貧乳ロリっ娘！
+;playse num: "21"お次に現れたのは、貧乳ロリっ娘！
 ;endpage
 
 
 ;kenji
 「だからやめろって。ってか二冊目かよ……」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -752,7 +754,7 @@
 ;kenji
 「ぶ、分析すんな」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -769,17 +771,17 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #□#明日香　０　アウト
 [layopt layer=1 page=fore visible=false]
 #☆テロップ　アウト
 [telopOut]
 #△ＢＧＭ１
-[bgmopt volume=100][playbgm storage=bgm001]
+;playbgm num:"001"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-[fadeInAsuka num=1 pos=center time=500]
+;asuka num: 1
 
 
 ;asuka
@@ -800,7 +802,7 @@
 ;noname
 明日香はさきほど見つけたエロ本二冊を持っていなかった。食べたのか？
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -811,7 +813,7 @@
 ;kenji
 「いらんわい！」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -822,7 +824,7 @@
 ;kenji
 「勘弁してくれ……で、結局どうしたんだ？」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -833,7 +835,7 @@
 ;kenji
 「な、なんつーむごいことを……」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -844,7 +846,7 @@
 ;kenji
 「おもしろいものないかなーとか言って勝手にあさったくせに……」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -860,7 +862,7 @@
 ;noname
 エロ本の持ち主よ、すまん。南無三。ご愁傷様。俺じゃどうしようもないです。
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -871,7 +873,7 @@
 ;kenji
 「まぁ夜だとはいえ学校だし。そうそうおもしろいものもないだろ」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -892,7 +894,7 @@
 ;noname
 あ、やばい、なんか嫌な予感が。
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -903,7 +905,7 @@
 ;kenji
 「あい」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -919,7 +921,7 @@
 ;kenji
 「屋上ったって、あそこは立ち入り禁止だろ？」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -930,7 +932,7 @@
 ;kenji
 「いやまぁ、そうかもしれんが。でも鍵とか閉まってるだろ」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -941,7 +943,7 @@
 ;kenji
 「ほんと大丈夫なのか、うちの学校……」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -956,7 +958,8 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
-[cb2 storage=hall]
+;cb_move bg: "black"
+;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -975,7 +978,7 @@
 ;kenji
 「屋上って、この上か？」
 ;endpage
-[fadeInAsuka num=2 pos=center time=500]
+;asuka num: 2
 
 
 ;asuka
@@ -991,7 +994,7 @@
 ;kenji
 「な、なんか真っ暗なのは気のせいか」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1002,7 +1005,7 @@
 ;kenji
 「そりゃ見ればわかるんだが……」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1013,7 +1016,7 @@
 ;kenji
 「こここここ怖くなんてありませんよ？」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1044,7 +1047,7 @@
 ;kenji
 「怖くなんてないＺＥ☆」
 ;endpage
-[asuka num=2 pos=center]
+;asuka num: 2
 
 
 ;asuka
@@ -1055,7 +1058,7 @@
 ;kenji
 「無理」
 ;endpage
-[asuka num=1 pos=center]
+;asuka num: 1
 
 
 ;asuka
@@ -1066,7 +1069,7 @@
 ;kenji
 「んなこと言ったって、怖いものは怖いし無理なものは無理だコンチクショウ」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1077,7 +1080,7 @@
 ;kenji
 「ば、馬鹿！　やめんか恥ずかしい！」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1103,7 +1106,7 @@
 ;kenji
 「い、行ってやろうじゃないかコンチクショウ。目ン玉かっぽじってよーく見てろ」
 ;endpage
-[asuka num=5 pos=center]
+;asuka num: 5
 
 
 ;asuka
@@ -1118,9 +1121,9 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #○フェードアウト　黒
-[FadeOutBlack]
+;cb_fade bg:"black"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -1203,8 +1206,8 @@
 
 
 ;asuka
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false]
+;quake time: 500, x: 10, y: 5
+;playse num: "20"
 [font size=30]
 「わーーーーーーっ！！」[deffont]
 
@@ -1212,8 +1215,8 @@
 
 
 ;kenji
-[quake time=500 timemode=ms hmax=10 vmax=50]
-[playse storage=SE20 buf=1 loop=false]「ぎゃーーーーーっ！！　なンだ、どした、びびびびびってなんかないぞ、さぁ来やがれコンチクショウ！」
+;quake time: 500, x: 10, y: 5
+;playse num: "20"「ぎゃーーーーーっ！！　なンだ、どした、びびびびびってなんかないぞ、さぁ来やがれコンチクショウ！」
 ;endpage
 
 
@@ -1299,9 +1302,9 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△屋上ドア
-[playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
+;playse num: "11"
 #○フェードアウト　１０００　ｆ　白
-[FadeOutWhite time=1000 canskip=false]
+;cb_fade bg:"white", canskip: false
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -1370,9 +1373,9 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェードアウト　１０００　白
-[FadeOutWhite time=1000]
+;cb_fade bg:"white"
 #○フェードアウト　１０００　黒
-[FadeOutBlack time=1000]
+;cb_fade bg:"black"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -1390,11 +1393,11 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-[telopIn]
+;telop
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
 #☆ジャンプ
-[jump storage=4.ks]
+;jump file: "scenario/04.pon"
 
 

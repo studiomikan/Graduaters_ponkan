@@ -12,9 +12,9 @@
 
 
 #☆ミニロゴ１
-[intermission1]
+
 #☆フレームカラー　青
-[changeMessageFrameColor color=blue]
+;set_to_blue
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -30,13 +30,13 @@
 ;endpage
 
 #△屋上ドア
-[playse storage=SE10 buf=1 loop=false][playse storage=SE11 buf=2 loop=false]
+;playse num: "11"
 #○フェードアウト　白
-[FadeOutWhite]
+;cb_fade bg:"white"
 #○フェード　屋上
-[cb storage=roof]
+;cb_fade bg: "roof"
 #△ＢＧＭ１
-[bgmopt volume=100][playbgm storage=bgm001]
+;playbgm num:"001"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -60,7 +60,7 @@
 ;kenji
 「おっす、優希」
 ;endpage
-[fadeInYuuki num=2 pos=center time=500]
+;yuuki num: 2
 
 
 ;yuuki
@@ -71,7 +71,7 @@
 ;kenji
 「あれ、そうなのか。それにしては明るいな。やっぱり床が濡れてるせいか」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -82,7 +82,7 @@
 ;kenji
 「さぁ、そもそもコンクリの建物でも雨漏りってすんのか？」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -93,7 +93,7 @@
 ;kenji
 「じゃあとりあえず大丈夫なんじゃね？　雨漏りしてるとこなんて見たことないし」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -104,7 +104,7 @@
 ;noname
 言いながら、優希は屋上の入り口を一瞥する。たぶん、明日香の姿を探しているのだろう。
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -115,7 +115,7 @@
 ;kenji
 「あー、明日香は観たいドラマがあるそうだ」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -131,7 +131,7 @@
 ;kenji
 「へぇ、優希は観なくてもいいのか？　そのドラマ」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -172,7 +172,7 @@
 ;kenji
 「今日ちょっと用事があって、昼間に病院に行ってきたんだ。ここの近くの大病院」
 ;endpage
-[yuuki num=1 pos=center]
+;yuuki num: 1
 
 
 ;yuuki
@@ -185,10 +185,10 @@
 ;endpage
 
 ;fadeout_meslay
-[fadeoutbgm time=700]
+;fadeoutbgm
 [fadeoutblack time=700]
 ;fadein_meslay
-#[fadeOutYuuki]
+#;yuuki_out
 
 
 
@@ -222,11 +222,11 @@
 ;endpage
 
 ;fadeout_meslay
-[cb storage=roof]
+;cb_fade bg: "roof"
 ;fadein_meslay
 
 
-[fadeInYuuki num=5 pos=center time=500]
+;yuuki num: 5
 
 
 ;yuuki
@@ -237,7 +237,7 @@
 ;kenji
 「ああ、はじめは間違えたかと思った。まぁ、こういうこともあるのかって納得したけども」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -253,25 +253,25 @@
 ;noname
 悲しいのとも寂しいのとも違う、苦しいと言わんばかりの表情。
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「あの日は、家族で車で出かけて、その帰りだった。今からだいたい２年前かな」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「正面衝突する直前に、兄さんは私をかばって重傷を負った。おかげで私は、無傷とはいかなかったけどちょっとした怪我ですんだ」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「兄さんはそれから３日間、生死の狭間をさまよった。意識を取り戻したときにはもうああなってた。兄さんは記憶を失って、その心だけが子供になってしまった」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
@@ -282,7 +282,7 @@
 ;noname
 そこまで言って、優希の表情がいつものやわらかいものに戻る。
 ;endpage
-[yuuki num=5 pos=center]
+;yuuki num: 5
 
 
 ;yuuki
@@ -293,14 +293,14 @@
 ;kenji
 「なるほどね……すまんな」
 ;endpage
-[yuuki num=2 pos=center]
+;yuuki num: 2
 
 
 ;yuuki
 「いいよ、別に」
 ;endpage
 
-[fadeOutYuuki]
+;yuuki_out
 
 
 
@@ -371,13 +371,13 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #△ＢＧＭフェードアウト
-[fadeoutbgm time=1000]
+;fadeoutbgm
 #☆テロップ　イン
-[telopIn]
+;telop
 #○フェードアウト　１０００　ｆ　黒
-[FadeOutBlack time=1000 canskip=false]
+;cb_fade bg:"black", canskip: false
 
 #☆ジャンプ
-[jump storage=14.ks]
+;jump file: "scenario/14.pon"
 
 
