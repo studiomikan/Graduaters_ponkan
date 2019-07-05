@@ -1,239 +1,243 @@
-#
 #	Graduaters!　～グラディエイターズ！～
-#
 
 *start
 
 #■ラジオ１
 
-
-
-[wait time=1000 canskip=false]
+;wait time: 1000, canskip: false
 #☆ラジオメッセージ　イン
-[fadeInRadioMessage]
 
-
+;set_to_radio_blue
+;fadein_meslay
 
 ;noname
 「ある日、ある少年が、ある少女に出会いましたー」
 ;endpage
 
-
 ;noname
 「少年の趣味はエロＤＶＤ集めー。少女の趣味はただぼーっと過ごすことー」
 ;endpage
-
 
 ;noname
 「二人は強烈な出会いを経てー、強烈に惹かれ合ったらおもしろかったけどー、だーがしかしそんなことはなかったー」
 ;endpage
 
-
 ;noname
 「少年の強烈な趣味を少女が知ったときー、少女は少年を見据えてこう言ったー」
 ;endpage
 
-
 ;noname
-;playse num: "20"[font size=30]
-「無毛はねーわ」[deffont]
+;playse num: "20"
+
+;fontsize size: 30
+
+「無毛はねーわ」
+;reset_font
 
 ;endpage
 
 #△ＢＧＭ２
 ;playbgm num:"002"
 
-
-
 ;noname
-[jumpMessageFrame]
+;radio_mes_jump1
 「ＤＪジョバンのー！！　グラディエイト・ジャパン！！」
-;endpage
 
+;endpage
 
 ;noname
 「はいはい皆さんこんばんはー、今日もやってまいりました『グラディエイト・ジャパン』のお時間でーす」
-;endpage
 
+;endpage
 
 ;noname
-[moveComboMessage]
-「おらおら始めんぞー、一発抜きたての兄ちゃんも、メイク落としたすっぴんね―ちゃんも、さっさとラジオの前に集まれコンチクショウ！」[wm canskip=false]
-;endpage
 
+;radio_mes_combo1
+「おらおら始めんぞー、一発抜きたての兄ちゃんも、メイク落としたすっぴんね―ちゃんも、さっさとラジオの前に集まれコンチクショウ！」
+;waitmove canskip: false
+
+;endpage
 
 ;noname
 「お届けするのはー！　あるときはみんなのアイドル！　またあるときは頼れる兄貴！　またあるときは下ネタ大好き親父！　しかしてその実体は！」
+
 ;endpage
 
-
 ;noname
+
 ;quake time: 500, x: 10, y: 5
-;playse num: "20"[font size=30]
+;playse num: "20"
+
+;fontsize size: 30
+
 「ＤＪジョーーーーーゥバン！！」
 ;endpage
 
-
 ;noname
-[jumpMessageFrame]
+;radio_mes_jump1
 「へーい、ってことでね、今日も始まりましたラジオ『グラディエイト・ジャパン』お届けするのはおなじみＤＪジョバンでーす」
-;endpage
 
+;endpage
 
 ;noname
 「えー、リスナーのお前ら最近どうよ？　学生はガッコはじまってメンドクセ―とか言ってんじゃねーだろーなー？　えー？」
-;endpage
 
+;endpage
 
 ;noname
 「けどなー、一つだけ言ってやるぞー、ありがたいお言葉を言ってやるから、耳の穴かっぽじってついでに耳かきしてよーーーっく聞けよー？」
+
 ;endpage
 
-
 ;noname
+
 ;quake time: 500, x: 10, y: 5
-;playse num: "20"[font size=30]
-「あまったれんな糞ガキどもが！！」[deffont]
+;playse num: "20"
+
+;fontsize size: 30
+
+「あまったれんな糞ガキどもが！！」
+;reset_font
 
 ;endpage
 
-
 ;noname
-[jumpMessageFrame]
+
+;radio_mes_jump1
 「えー、というわけでね、さっそく行ってみましょう、ふつおたのコーナー！！」
 ;endpage
-
 
 ;noname
 「えーこのコーナーではリスナーのみなさまから届いたお便りを云々、あーもうめんどくさいからカットね、はい」
 ;endpage
 
-
 ;noname
-[jumpMessageFrame]
+;radio_mes_jump1
+
 ;playse num: "22"「それではまず一通目のお便り！　じゃじゃん！」
 ;endpage
 
-
 ;noname
-[moveMessageFrame lr=right ud=down]
+;radio_mes_right
 「あ、そういえばジョバンってショパンに似てね？　ＤＪショパン！　あー、あんまかっこよくねぇな」
+
 ;endpage
 
-
 ;noname
-[replaceMessageFrame]
+
+;radio_mes_center
 「どーもＤＪジョバンです！」
 ;endpage
-
 
 ;noname
 「最初のお便りは、ＲＮ『仮面ライダー１０２号』さんからのお便りでーっす！」
 ;endpage
 
-
 ;noname
 「『ジョバンさんこんばんは』はーいこんばんは『僕は最近ちょっと悪いことしています』おー悪いこと、タバコ？　万引き？　シンナー？　『それは夜の学校に忍び込むことです』けっ、なんだそんなことかよ」
 ;endpage
 
-
 ;noname
-「『うちの学校はちょっと古い学校なので、窓の鍵を簡単に開けられるんです』なるほど、来るもの拒まずの[ruby text="ひら"]開けた学校なんだな！　え、[ruby text="ひら"]開けた女の子もいっぱいたりする？　ハーレム？」
+「『うちの学校はちょっと古い学校なので、窓の鍵を簡単に開けられるんです』なるほど、来るもの拒まずの開けた学校なんだな！　え、開けた女の子もいっぱいたりする？　ハーレム？」
 ;endpage
-
 
 ;noname
 「『そういう窓から忍び込んで、人の机をあさったりとか、屋上で遊んだりしています』ふんふん『でも僕は本当はこんなことしたくないんです』」
 ;endpage
 
-
 ;noname
-[upMessageFrame]
+;radio_mes_top
+
 ;playse num: "24"「な、なんだってー！！」
 ;endpage
 
-
 ;noname
-[replaceMessageFrame]
+;radio_mes_center
 「『幼なじみの女の子に、いいじゃん行こう行こうと脅されて、仕方なくついていってるのです。幼なじみは強引な性格で、僕はいつも振り回されて困っています』」
-;endpage
 
+;endpage
 
 ;noname
 「なるほどなるほど、オイコラちょいジャンプしてみろや、おぉ金もってんじゃんよこしなクズって関係なんだな、なるほどなるほど」
-;endpage
 
+;endpage
 
 ;noname
 「『ジョバンさん、幼なじみのいう突拍子もない思いつきに振り回されないためにはどうしたらいいでしょうか？』とゆーね、相談のお便りでーす」
+
 ;endpage
 
-
 ;noname
-[downMessageFrame]
+
+;radio_mes_bottom
 「はー、なるほどねー、イケイケ気質の幼なじみねー。えーと仮面ライダー１０２号さんはそれが嫌なんだねー」
 ;endpage
 
-
 ;noname
-[replaceMessageFrame]
+;radio_mes_center
 「よーしじゃあジョバンがズバッとアドバイスしちゃうよー！　もうね、マスコミが政治家を糾弾するときみたいにズバッと！」
-;endpage
-
-
-;noname
-;playse num: "20"[font size=30]
-「あきらめろ」[deffont]
 
 ;endpage
 
+;noname
+
+;playse num: "20"
+;fontsize size: 30
+
+「あきらめろ」
+
+;reset_font
+
+;endpage
 
 ;noname
-;playse num: "21"[jumpMessageFrame]
+;playse num: "21"
+;radio_mes_jump1
 「はいかいけーつ！　いやっふぉおおー！」
 ;endpage
-
 
 ;noname
 「いやだってね、だいたい『幼なじみ』ってのはね、アレなの、ステータスなの、わかる？　君は生まれたときから他の人より一歩先にいんの、ね？　なのにさー、そーゆー贅沢ってよくないよ、うん」
 ;endpage
 
-
 ;noname
 「ほら君にもの心当たりがあるっしょー？　クラスのやつらから『お前ら付き合ってんの』とか『あの子紹介してくれよ』とかなー、んなこと知るかよコンチクショウ」
 ;endpage
 
-
 ;noname
-[jumpMessageFrame]
+;radio_mes_jump1
 「はーい！　ということでね、今日もズバッと解決しちゃったよジョバン！　お前らも何か悩みがあったらじゃんじゃん応募してくれよー！　してくれないとこのラジオ終わっちまうから！」
+
 ;endpage
 
-
 ;noname
-「それじゃーひとまずＣＭだぁ、周波数はこのままで[ruby text="ヨ"]４[ruby text="ロ"]６[ruby text="シ"]４[ruby text="ク"]９」
+「それじゃーひとまずＣＭだぁ、周波数はこのままで４６４９」
+
 ;endpage
 
-
 ;noname
-[font size=30]
-;playse num: "20"「シェキダン！！」[deffont]
+
+;fontsize size: 30
+
+;playse num: "20"「シェキダン！！」
+
+;reset_font
 
 ;endpage
 
 #☆ラジオメッセージ　アウト
+
 ;fadeout_meslay
-[eval exp="f.flagLetter = false"]
 
 #☆テロップ　イン
 ;telop
-#;telop
+;telop
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
+
 ;cb_fade bg:"black", canskip: false
 
 #☆ジャンプ
 ;jump file: "scenario/05.pon"
-
 

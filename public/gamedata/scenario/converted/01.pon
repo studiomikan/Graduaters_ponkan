@@ -1,93 +1,77 @@
-#
 #	Graduaters!　～グラディエイターズ！～
-#
 
 *start
 
 #■現在　冒頭
 
-
-
 #☆ウェイト　ｆ　２０００
-[wait time=2000 canskip=false]
+;wait time: 2000, canskip: false
 
 #☆フレームカラー　オレンジ
+
 ;set_to_orange
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-
 ;noname
 人間、誰しも人に言えない秘密を持っていると、俺は思う。
 ;endpage
-
 
 ;noname
 実はあの子のことが好きなんだーとか、ちょっと悪いことしたことあるーとか、まぁそういうの。
 ;endpage
 
-
 ;noname
 その数が多かろうと少なかろうと、内容が深刻だろうとどうでもいいことだろうと、その人にとってはそれなりに大事だからこそ秘密にしているわけだ。
 ;endpage
 
-
 ;noname
-というわけで、当然ながら俺、[ruby text="と　き"]常[ruby text="　わ"]磐[ruby text="　　け　ん"]健[ruby text="　　じ"]二にも、秘密ってのがある。
+というわけで、当然ながら俺、常磐健二にも、秘密ってのがある。
 ;endpage
-
 
 ;noname
 一つ目は、寮の自室の本棚、辞書のケースの中にあるＤＶＤ。
 ;endpage
 
-
 ;noname
 親からの少ない仕送りをやりくりし、少しずつだが確実に増やしていった秘蔵のコレクションだ。
 ;endpage
-
 
 ;noname
 たまに寮の悪友どもが借りていったりする。料金は二泊三日で２００円。レンタル料は次のＤＶＤの購入資源となるので、割とみんな積極的に借りに来る。
 ;endpage
 
-
 ;noname
 二つ目は、実はカナヅチで泳げないこと。
 ;endpage
-
 
 ;noname
 一応言い訳をしておくと、子供のころ、家族で海に来ていた俺はおぼれて死にかけたのだ。
 ;endpage
 
-
 ;noname
 いやマジで。嘘でも冗談でもなく、丸一日意識がなかったというから恐ろしい。よく死ななかったな俺。
 ;endpage
-
 
 ;noname
 で、それからというもの、さっぱり泳げなくなったというわけだ。
 ;endpage
 
-
 ;noname
 理由があるとはいえ、この年齢で泳げないっていうのは結構恥ずかしい。幸い、うちの学校では水泳の授業はないので、なんとか三年間隠し通すことができた。
 ;endpage
 
-
 ;noname
 そして三つ目。
 ;endpage
-
 
 ;noname
 俺は割としょっちゅう、学生寮を抜け出して、夜の学校に忍び込んでいる――
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #☆#テロップ　イン
 #☆#テロップ　アウト
@@ -96,178 +80,162 @@
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-
-
 ;noname
 息を潜めて、周りの様子をうかがう。人の気配はなさそうだ。
 ;endpage
-
 
 ;noname
 時刻は午後９時少し前。寮も門限をすぎ、教職員も全員帰宅したころ。
 ;endpage
 
-
 ;noname
 ;playse num: "15"一階の美術室の窓をガタガタと揺らして鍵を開け、学校へ忍び込む。
-;endpage
 
+;endpage
 
 ;noname
 今日は宿直の先生もいないはずなので、忍び込みさえすれば安全だ。
-;endpage
 
+;endpage
 
 ;noname
 安全なのだが……
+
 ;endpage
 
 #△走る
 ;playse num: "13" loop: true
 
-
-
 ;kenji
 「はぁ、はぁ、はぁ……」
 ;endpage
-
 
 ;noname
 チクショウ。安全なのは間違いないが、よりによって今日、しかもこんな時間に呼び出すとは、あいつも何を考えてるんだ。
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #○移動　廊下
 ;cb_move bg: "black"
+
 ;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
-
-
 
 ;noname
 美術室を出て、廊下を走る。
 ;endpage
 
-
 ;noname
 待ち合わせの時間まであと少しあるはずだが、あいつは遅刻に厳しい。
 ;endpage
-
 
 ;noname
 遅れようものなら俺の意見なんて片っ端から無視、きっととんでもない注文をつけてくるに違いないのだ。
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #○移動　廊下
 ;cb_move bg: "black"
+
 ;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-
-
 ;kenji
 「はぁ、はぁ、はぁ……」
 ;endpage
-
 
 ;noname
 廊下を抜け、階段を二段とばしで駆け上がる。
 ;endpage
 
-
 ;noname
 限界の近い両足に力をこめ、上を目指す。
 ;endpage
-
 
 ;noname
 呼び出しのメールに気づいたのがついさっき。寮長の目をごまかして寮を抜けだし、ここへ来るまでほぼ全力疾走だ。
 ;endpage
 
-
 ;noname
 肺がきしむ。
 ;endpage
-
 
 ;noname
 両足はすでに乳酸漬けだ。
 ;endpage
 
-
 ;kenji
 「はぁ、はぁ、はぁ……」
 ;endpage
-
 
 ;noname
 でも、それでも、急ぐ、急ぐ、急ぐ――
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #○移動　黒
 ;cb_move bg: "black"
 #☆メッセージフレーム　イン
+
 ;fadein_meslay
-
-
 
 ;noname
 たぶん、教室にはいないだろう。
-;endpage
 
+;endpage
 
 ;noname
 あいつがいるとしたら、おそらく四階のさらに上。
-;endpage
 
+;endpage
 
 ;kenji
 「屋、上……！」
-;endpage
 
+;endpage
 
 ;noname
 四階の階段に作られた、立ち入り禁止の柵を跳び越える。
-;endpage
 
+;endpage
 
 ;noname
 残りの階段を一気に駆け上がり、屋上へのドアを開けた――
+
 ;endpage
 
 #△止まる
 ;stopse
 #△屋上ドア
+
 ;playse num: "11"
 #○フェード　白
 ;cb_fade bg: "white"
 #☆#ウェイト　１０００
-[wait time=2000 canskip=false]
 
-
+;wait time: 2000, canskip: false
 
 ;noname
 ドアを開けたとたん、視界が真っ白に染まる。
+
 ;endpage
-
-
 
 ;noname
+
 ;playse num: "09"パンッ！
 ;endpage
-
 
 ;noname
 この音は…クラッカー？
 ;endpage
-
 
 ;asuka
 「健二」
@@ -276,8 +244,6 @@
 #☆視界回復　７５パーセント
 [whiteView opacity=192 storage=chara_A02]
 
-
-
 ;noname
 視界が徐々に戻ってゆく。
 ;endpage
@@ -285,28 +251,21 @@
 #☆視界回復　５０パーセント
 [whiteView opacity=128 storage=chara_A02]
 
-
-
 ;noname
 そして彼女は、そこにいた。
 ;endpage
-
 
 ;asuka
 「卒業おめでとう、健二」
 ;endpage
 
-
-
 ;noname
 まぶしくて、明日香の顔がよく見えない。
 ;endpage
 
-
 ;noname
 ――ああ、やけに廊下が明るいと思ったら。
 ;endpage
-
 
 ;noname
 今夜は、月がこんなにきれいじゃないか――
@@ -316,7 +275,8 @@
 [endWhiteView]
 
 #○フェードアウト　１５００　ｆ　白
-[FadeOutWhite time=1500 canskip=false]
+
+;cb_fade bg:"white", time: 1500, canskip: false
 
 #○フェードアウト　１５００　ｆ　黒
 [FadeOutBlack time=1500 canskip=false]
@@ -324,5 +284,4 @@
 #☆ジャンプ
 ;jump file: "scenario/02.pon"
 [s]
-
 

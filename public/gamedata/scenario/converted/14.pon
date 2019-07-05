@@ -1,183 +1,194 @@
-#
 #	Graduaters!　～グラディエイターズ！～
-#
 
 *start
 
 #■ラジオ３
 
-[wait time=1000 canskip=false]
-
+;wait time: 1000, canskip: false
 
 #☆ラジオメッセージ　イン
-[fadeInRadioMessage]
+
+;set_to_radio_blue
+;fadein_meslay
 
 #△ＢＧＭ２
-;playbgm num:"002"
 
+;playbgm num:"002"
 
 ;noname
 「たったーらたらったー♪　たったーらたらったー♪」
+
 ;endpage
 
-
 ;noname
+
 ;quake time: 500, x: 10, y: 5
-;playse num: "20"[font size=30]
-「ＤＪジョーーーーバンの！　『グラディエイト・ジャパン』！！」[deffont]
+;playse num: "20"
+
+;fontsize size: 30
+
+「ＤＪジョーーーーバンの！　『グラディエイト・ジャパン』！！」
+;reset_font
 
 ;endpage
 
-
 ;noname
-[jumpMessageFrame]
+
+;radio_mes_jump1
 「さーて始まりました今ニホンでモットもホットでアットホームなラジオ『グラディエイト・ジャパン』のお時間でーす！」
 ;endpage
 
-
 ;noname
 ;quake time: 500, x: 10, y: 5
-[upMessageFrame]
+
+;radio_mes_top
 ;playse num: "20"「ぉ伝えするのはー、みんなのーアイドルぅー！　ＤＪえぇぇぇジョォオオオオオバンッ！」
+
 ;endpage
 
-
 ;noname
-[replaceMessageFrame]
+
+;radio_mes_center
 「はーいということでね、たまにはマジメに始めてみましたねーコレ、ジョバン根はマジメだからねー」
 ;endpage
 
-
 ;playse num: "21"
 ;noname
-[jumpMessageFrame]
+
+;radio_mes_jump1
 「冗談でーす！」
 ;endpage
-
 
 ;noname
 「ジョバンさー、むかーし昔、こーんなちっちゃかったころにね、仲のいい女の子がいたんだけどー」
 ;endpage
 
-
 ;noname
-[upMessageFrame]
+;radio_mes_top
 「え、いきなり自分語りするなって？　はっ、いいじゃねーかコンチクショウ！　ジョバンだってたまには自分のことも話したいんだぜＨＡＨＡＨＡ！」
+
 ;endpage
 
-
 ;noname
-[replaceMessageFrame]
+
+;radio_mes_center
 「えーっと、で、なんだっけ？　その女の子？　まぁ家が近所だったんだけど、よくお互いの家を行き来したりしてたのさー。いわゆる幼なじみってヤツだねー。つまりジョバン人生の勝ち組ってやつさー！」
 ;endpage
-
 
 ;noname
 「とまぁね、仲良かったわけだけどね、ジョバン不思議なことにその子のお父さん見たことなかったのさー」
 ;endpage
 
-
 ;noname
-[downMessageFrame]
+;radio_mes_bottom
 「あれだねぇ、子供って残酷だよねぇ。『ねぇねぇお父さんは？』とかいっぱい聞いたねー。もう聞いて聞いて聞きまくったねぇ。政治家の辞職の理由を問いただすマスコミ並だったねぇ」
+
 ;endpage
 
-
 ;noname
-[replaceMessageFrame]
+
+;radio_mes_center
 「女の子のお母さんもジョバンのお母さんもお兄ちゃんも答えてくれなかったから、ジョバン直接女の子に聞いたんだねー、そしたら女の子はこう言ったんだー！」
 ;endpage
 
-
 ;noname
 ;playse num: "24"「『お父さんは、お星様になったんだって』」
+
 ;endpage
 
-
 ;noname
-[jumpMessageFrame]
+
+;radio_mes_jump1
 「Ｏｈなんて定番の言い訳！　ジョバンすべてを瞬間的に察したよー、そしてすごく泣きそうになったよー、あのころは純情だったんだー」
 ;endpage
 
-
 ;noname
 ;quake time: 500, x: 10, y: 5
-[font size=30]
-;playse num: "20"「だからなんだって話ー！」[deffont]
+
+;fontsize size: 30
+
+;playse num: "20"「だからなんだって話ー！」
+
+;reset_font
 
 ;endpage
-
 
 ;noname
-[moveComboMessage]
+;radio_mes_combo1
 「よーしテンションあがってきたぁぁぁあああ！　最初のお便りー！　ＲＮ『仮面ライダー１０２号』さーん！　ってお前お便りしすぎだコンチクショウ！」
-;endpage
 
+;endpage
 
 ;noname
 「『ジョバンさんおはこんばんちは』はーいおはこんばんちは！　『例のごとく知り合いの女の子が変なんです』ふむふむ、変ってお前失礼だなー」
-;endpage
 
+;endpage
 
 ;noname
 「『なんでも彼女はさっさと飛び降りて死んじゃいたいらしいんですが、自分のせいで幼児退行したお兄さんが入院しているのでできないそうです。こーゆーときはどう声をかけたらいいですか？』」
-;endpage
 
+;endpage
 
 ;noname
 「えー、とまぁ、なんとも深刻なお便りをよこしやがりましたー、仮面ライダー１０２号さんでーす。えーと、なに、この女の子になんて言えばいいのかー、だっけ？」
+
 ;endpage
 
-
 ;noname
+
 ;quake time: 500, x: 10, y: 5
-[font size=30]
-;playse num: "20"「そんなんわかるか！」[deffont]
+
+;fontsize size: 30
+
+;playse num: "20"「そんなんわかるか！」
+;reset_font
 
 ;endpage
 
-
 ;noname
-[moveComboMessage]
+
+;radio_mes_combo1
 「いぇーい！　ひゃっほーう！」
 ;endpage
-
 
 ;noname
 「え、ていうかね、そんなんこんなお便り一枚でわかるかってんだよコンチクショウ。ちったぁ自分で考えなこのショッカーの手先め」
 ;endpage
 
-
 ;noname
 「っていうかこの番組はそーゆーこと話す場所じゃないの、ジョバンがおもしろおかしく話すとこなの、ＯＫ？」
 ;endpage
 
-
 ;noname
-[jumpMessageFrame]
+;radio_mes_jump1
 「はーい！　ってことでね、ＣＭ明けはボイスドラマ『少女と屋上と時々ジョバン』をお送りするぜーぃ！　今のうちに耳かきしとけよ！」
-;endpage
 
+;endpage
 
 ;noname
-;playse num: "20"[font size=30]
-「ゲッダン！」[deffont]
+
+;playse num: "20"
+;fontsize size: 30
+
+「ゲッダン！」
+
+;reset_font
 
 ;endpage
-
 
 #☆ラジオメッセージ　アウト
+
 ;fadeout_meslay
-[eval exp="f.flagLetter = false"]
+
 #☆テロップ　イン
 ;telop
 #△ＢＧＭフェードアウト
+
 ;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
 ;cb_fade bg:"black", canskip: false
 
-
 #☆ジャンプ
-;jump file: "scenario/15.pon"
 
+;jump file: "scenario/15.pon"
 

@@ -109,6 +109,11 @@
   ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
+;macro name: "kenji_yuki"
+  ;echo_name name: "健二・優希"
+  ;cmdsc ch: "\n", command: "br"
+;endmacro
+
 
 #-------------------------------------------------------------------
 # 行末
@@ -441,6 +446,11 @@
   ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
+# 全員退場
+;macro name: "every_out"
+  ;clear_name
+  ;chara_out name: "asuka,yuuki"
+;endmacro
 
 #-------------------------------------------------------------------
 # トランジション：ホワイトアウト
@@ -493,7 +503,7 @@
 ;macro name: "cb_fade"
   ;pretrans
   ;cb bg: "&mp.bg"
-  ;trans time: 1000, method: "crossfade"
+  ;trans time: "&mp.time != null ? mp.time : 1000", method: "crossfade"
   ;waittrans "canskip": true
 ;endmacro
 
@@ -504,7 +514,7 @@
 ;macro name: "cb_move"
   ;pretrans
   ;cb bg: "&mp.bg"
-  ;trans time: 1000, method: "univ", rule: "rule/move.png"
+  ;trans time: "&mp.time != null ? mp.time : 1000", method: "univ", rule: "rule/move.png"
   ;waittrans "canskip": true
 ;endmacro
 
@@ -515,10 +525,16 @@
 ;macro name: "cb_time"
   ;pretrans
   ;cb bg: "&mp.bg"
-  ;trans time: 1000, method: "univ", rule: "rule/time.png", vague: 128
+  ;trans time: "&mp.time != null ? mp.time : 1000", method: "univ", rule: "rule/time.png", vague: 128
   ;waittrans "canskip": true
 ;endmacro
 
+#-------------------------------------------------------------------
+# 演出：ハートビート
+#-------------------------------------------------------------------
+;macro name: "heartbeat"
+  -alert("TODO: Make macro 'heartbeat'");
+;endmacro
 
 
 ;return

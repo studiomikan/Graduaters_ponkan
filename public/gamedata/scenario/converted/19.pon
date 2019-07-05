@@ -1,168 +1,153 @@
-#
 #	Graduaters!　～グラディエイターズ！～
-#
 
 *start
 
 #■さよならジョバン
 
-
-
 #☆フレームカラー　オレンジ
 ;set_to_orange
 #○フェード　教室
+
 ;cb_fade bg: "class"
 #△ＢＧＭ３
 ;playbgm num:"003"
 #☆メッセージフレーム　イン
+
 ;fadein_meslay
-
-
 
 ;kenji
 「ふぅ」
-;endpage
 
+;endpage
 
 ;noname
-愛用の多機能音楽プレイヤーの[ruby text="・"]録[ruby text="・"]音停止ボタンを押し、俺は一息つく。
-;endpage
+愛用の多機能音楽プレイヤーの録音停止ボタンを押し、俺は一息つく。
 
+;endpage
 
 ;noname
 明日香がトイレに行ったので、俺は三年の教室の窓際で待っていた。
-;endpage
 
+;endpage
 
 ;noname
 手に持ったプレイヤーから、小さなメモリーカードを抜き出す。
-;endpage
 
+;endpage
 
 ;noname
 この小さなメモリの中に、大量の音が詰め込まれているというのだから不思議だ。
+
 ;endpage
-
-
 
 ;noname
 でも、その大量の音も、もう俺には必要ない。
-;endpage
 
+;endpage
 
 ;kenji
 「おおう、寒っ」
-;endpage
 
+;endpage
 
 ;noname
 少しだけ開けた窓から、冷たい風が入り込んできた。
-;endpage
 
+;endpage
 
 ;noname
 風が汗ばんだ身体を冷やす。同時に気持ちも落ち着いてくる。
-;endpage
 
+;endpage
 
 ;noname
 俺は明日香と優希のことを考える。
-;endpage
 
+;endpage
 
 ;noname
 それから、優希のお兄さんと、俺の兄さんのことを考える。
-;endpage
 
+;endpage
 
 ;noname
 答えは見つからない。
-;endpage
 
+;endpage
 
 ;noname
 それでも、幸せになることを決めた。
-;endpage
 
+;endpage
 
 ;noname
 そのために、まず一つ、強くなろう。
-;endpage
 
+;endpage
 
 ;asuka num: 2
-
-
-;asuka
 「健二」
 ;endpage
-
 
 ;noname
 手の中でメモリをもてあそんでいると、ちょうど明日香が帰ってきた。少し目元が赤い。泣いていたのだろうか。
 ;endpage
 
-
 ;kenji
 「もういいのか？」
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「うん」
-;endpage
 
+;endpage
 
 ;kenji
 「顔赤いぞ」
+
 ;endpage
+
 ;asuka num: 3
-
-
-;asuka
 「気付いても言うな、馬鹿」
 ;endpage
-
 
 ;noname
 そう言って俺の肩を叩く。うん、恋人同士のじゃれあい。
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「行こ、健二」
-;endpage
 
+;endpage
 
 ;kenji
 「おう」
-;endpage
 
+;endpage
 
 #;noname
 俺はメモリを窓の外に投げ捨てる。さよならジョバン、グッバイブラザー。
+
 ;endpage
+
 ;noname
 俺は返事をして立ち上がりながら、窓からメモリーカードを投げ捨てた。
+
 ;endpage
-
-
 
 ;noname
 小さなメモリーカードは闇にまぎれて、すぐに見えなくなる。
-;endpage
 
+;endpage
 
 ;noname
 俺は小さく口にする。さよならジョバン、グッバイブラザー。
+
 ;endpage
-
-
 
 ;noname
 そうして俺たちは、今度こそ、俺たちの学校を後にした。
+
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -174,5 +159,4 @@
 [eval exp="sf.gameClearFlag = true"]
 
 [jump storage=title.ks target=*title_back_from_ending]
-
 

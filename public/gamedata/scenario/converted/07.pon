@@ -1,6 +1,4 @@
-#
 #	Graduaters!　～グラディエイターズ！～
-#
 #	現在：かくれんぼ二回目・健二発見、鬼交代
 #		健二　明日香
 
@@ -8,282 +6,244 @@
 
 #■現在：かくれんぼ二回目・健二発見、鬼交代
 
-
-
 #☆ミニロゴ１
 
 #☆フレームカラー　オレンジ
 ;set_to_orange
 #☆メッセージフレーム　イン
+
 ;fadein_meslay
 #△歩く
 ;playse num: "12" loop: true
-
-
 
 ;noname
 カツン……カツン……
 ;endpage
 
-
 ;kenji
-		（っ！　明日香か……？）
+（っ！　明日香か……？）
 ;endpage
-
 
 ;noname
 片耳だけにつけていたイヤホンを外し、身構える。
 ;endpage
-
 
 ;noname
 ついさっき隠れたばかりなのに、もう見つかったのか……？
 ;endpage
 
 #△止まる
+
 ;stopse
 
-
-
 ;kenji
-		（教室の前で止まった……やっぱり見つかったか？）
+（教室の前で止まった……やっぱり見つかったか？）
+
 ;endpage
 
 #☆メッセージフレーム　アウト
 #;fadeout_meslay
 #△教室ドア
+
 ;playse num: "08"
 #○フェード　教室
 #;cb_fade bg: "class"
 #☆メッセージフレーム　イン
-#;fadein_meslay
+;fadein_meslay
 
 ;asuka num: 2
-
-
-;asuka
 「……健二ー、いるー？」
 ;endpage
 
-
 ;kenji
-		（いませーん）
+（いませーん）
 ;endpage
-
 
 ;noname
 明日香は中まで入ってこず、入り口から呼びかけてきた。
 ;endpage
 
-
 ;noname
 ……よし、これなら、黙っていれば見つからないかもしれない。
 ;endpage
+
 ;asuka num: 1
-
-
-;asuka
 「………………えー、こほん」
+
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「将来の夢。２年１組、常磐健二」
 ;endpage
-
 
 ;noname
 え……作文？　二年ってことは去年か？　そんなもん書いたっけ？
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「僕の将来の夢は、一人で泳げるようになることです。僕は去年、溺れてしまってから泳げません。なので、将来は上手に泳げるようになりたいです」
+
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「それから、かわいいお嫁さんをもらって、子供は二人ほしいです。男の子と女の子がいいです」
 ;endpage
-
 
 ;kenji
 「ちょ、ちょちょちょちょ明日香ー！！」
 ;endpage
 
 #○移動　廊下
+
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
 #△ＢＧＭ１
+
 ;playbgm num:"001"
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
 ;asuka num: 2
-
-
-;asuka
 「だめじゃん、健二。最初の呼びかけで自己申告しないと」
-;endpage
 
+;endpage
 
 ;kenji
-		;quake time: 500, x: 10, y: 5
+
+;quake time: 500, x: 10, y: 5
 「だ、だからってそんなもん引っぱり出してくるんじゃねぇよ！」
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「いやそれがさー、寮の部屋を掃除してたらさー、引き出しの奥からアルバムとかと一緒に出てきてさー、懐かしくってつい持って来ちゃった☆」
-;endpage
 
+;endpage
 
 ;kenji
 「来ちゃった☆じゃねーよ。絶対わざとだろ。計画的犯行だろ。酒のつまみだとか思ってるだろ」
+
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「だってこういうのは、将来見つけちゃったときに、うわーなつかしー恥ずかしーってやるために書くんだよ」
 ;endpage
-
 
 ;kenji
 「いや、小学２年生はそんなこと考えないだろ……」
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「いいじゃん、恥ずかしがらなくても。かわいいかわいい」
-;endpage
 
+;endpage
 
 ;kenji
 「かわいい言うな。っていうか、なんで明日香がそんなの持ってるんだよ」
+
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「あー、なんでだったかなー……たしか、健二の鞄から勝手に出して……」
 ;endpage
-
 
 ;kenji
 「そういうの、窃盗って言って罪になるんだぜ……」
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「めんごめんご」
-;endpage
 
+;endpage
 
 ;kenji
 「めんご言うな。死語だ馬鹿たれ」
+
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「あたしの中ではまだ生きてるからいいの、めんごくん」
 ;endpage
 
-
 ;kenji
-		;playse num: "22"[font size=30]
-「めんごくん？！　擬人化？！」[deffont]
+;playse num: "22"
+
+;fontsize size: 30
+
+「めんごくん？！　擬人化？！」
+;reset_font
 
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「マスコットキャラ。身長２メートル５０センチ」
 ;endpage
-
 
 ;kenji
 「うゎでか！　そんなマスコットかわいくねぇよ！」
 ;endpage
+
 ;asuka num: 3
-
-
-;asuka
 「口癖は『すみませんでした』」
-;endpage
 
+;endpage
 
 ;kenji
 「めんごくんなのに……めんご使おうよ……」
+
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「ごめん、嘘」
 ;endpage
-
 
 ;kenji
 「ですよねー」
 ;endpage
+
 ;asuka num: 1
-
-
-;asuka
 「あ、間違えた。めんご、嘘」
-;endpage
 
+;endpage
 
 ;kenji
 「いや、もういいから」
+
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「で、『将来の夢は泳げるようになること』の健二くんは、泳げるようになったのかな？」
 ;endpage
-
 
 ;kenji
 「その話題掘りかえすのかよ……泳げませんがなにか問題でも」
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「幽霊は克服できたのにねー。犬でも犬かきで泳げるし、つまり健二は犬以下ってこと？　うちのクロより下ってことだね！」
+
 ;endpage
+
 ;asuka num: 5
+;playse num: "22"
 
+;fontsize size: 30
 
-;asuka
-	;playse num: "22"[font size=30]
-「やーいやーい！」[deffont]
+「やーいやーい！」
+;reset_font
 
 ;endpage
-
 
 ;kenji
 「子供かお前は……」
+
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「ばーぶー」
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #☆テロップ　イン
 ;telop
@@ -293,129 +253,113 @@
 #☆テロップ　アウト
 [telopOut]
 #☆メッセージフレーム　イン
+
 ;fadein_meslay
 
 ;asuka num: 1
-
-
-;asuka
 「それにしても、お互い見つかるの早すぎない？」
 ;endpage
-
 
 ;kenji
 「そうだな。でもま、変なところに隠れて見つけてもらえなかったらアレだし」
 ;endpage
+
 ;asuka num: 1
-
-
-;asuka
 「んー、まぁそうかー」
-;endpage
 
+;endpage
 
 ;kenji
 「で、どうすんの？　まだ続けんの？」
+
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「続けるに決まってんじゃん！　次はあたしが隠れる番だからねー、覚悟しときなー」
 ;endpage
-
 
 ;kenji
 「はいはい、じゃあここで待ってればいいんだな」
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「うん、きっかり５分経ってから捜してよ」
-;endpage
 
+;endpage
 
 ;kenji
 「あいよ」
+
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「きっかり５分だからねー！」
 ;endpage
 
 ;asuka_out
 
-
-
 ;noname
 最後に念をおしてから、明日香は廊下を走っていった。
+
 ;endpage
 
 ;asuka num: 2
-
-
 
 ;noname
 と、思ったら帰って来た。
 ;endpage
+
 ;asuka num: 2
-
-
-;asuka
 「言い忘れてた。健二」
-;endpage
 
+;endpage
 
 ;kenji
 「なんだ？」
+
 ;endpage
+
 ;asuka num: 5
-
-
-;asuka
 「泳げないの、健二の場合はしょうがないんだから、気にしなくていいと思うよ。さっきは変に言っちゃってごめんね。じゃ！」
 ;endpage
 
 ;asuka_out
 
-
-
 ;noname
 早口で言うと、明日香は今度こそ廊下の向こうへと消えていった。
-;endpage
 
+;endpage
 
 ;noname
 あいつ、わざわざそれだけ伝えに来たのか。
-;endpage
 
+;endpage
 
 ;kenji
 「まったく。なら最初から言うなっての、馬鹿」
-;endpage
 
+;endpage
 
 ;noname
 俺はついゆるんでしまった頬を引き締めながら、廊下の壁にもたれかかった。ポケットから音楽プレイヤーを取り出す。
-;endpage
 
+;endpage
 
 ;noname
 てか５分って割と長くね？
+
 ;endpage
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
+
 ;telop
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
+
 ;cb_fade bg:"black", canskip: false
 
 ;jump file: "scenario/08.pon"
-
 
