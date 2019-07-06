@@ -20,32 +20,26 @@
 
 ;kenji
 「おい、ほんとに大丈夫なのか？」
-
 ;endpage
 
 ;noname
 あたりの様子をうかがいながら、小声で隣の明日香に話しかける。
-
 ;endpage
 
 ;asuka
 「だいじょぶだいじょぶ、心配ないって」
-
 ;endpage
 
 ;noname
 そう言って、明日香は美術室の窓をガタガタと揺らす。
-
 ;endpage
 
 ;kenji
 「ってかそんなんで開くのかよ」
-
 ;endpage
 
 ;asuka
 「開くの。ここは鍵が壊れてるから、こうやってれば……」
-
 ;endpage
 
 ;noname
@@ -75,67 +69,54 @@
 
 ;noname
 ;playse num: "15"さっさと中に入ってしまった明日香に続いて、俺も窓をくぐる。
-
 ;endpage
 
 ;noname
 美術室の中は暗く、隣にいるであろう明日香の姿もよく見えない。
-
 ;endpage
 
 ;asuka
 「当たり前だけど……静かね」
-
 ;endpage
 
 ;kenji
 「そりゃそうだろう」
-
 ;endpage
 
 ;asuka
 「とりあえず窓しめて、健二」
-
 ;endpage
 
 ;kenji
 「あいよ、クローズざドアー」
-
 ;endpage
 
 ;noname
 お、今の発音は我ながらＧＯＯＤだった、などと馬鹿なことを思いながら（自慢じゃないが英語はできない）、音を立てないように気をつけてゆっくり窓を閉じる。
-
 ;endpage
 
 ;noname
 そうしている間に、明日香はとっとと教室を出ようとしていた。
-
 ;endpage
 
 ;kenji
 「ちょ、待ってくれよ、置いてくなって」
-
 ;endpage
 
 ;asuka
 「どうしたの？　あ、もしかして怖いのー？」
-
 ;endpage
 
 ;kenji
 「ち、ちげぇよ馬鹿！」
-
 ;endpage
 
 ;asuka
 「はいはい。いいから、早く行こ」
-
 ;endpage
 
 ;kenji
 「あ、だから待てって！」
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -160,22 +141,18 @@
 
 ;asuka num: 1
 「んー、美術室は端っこだし、窓も少ないからかなー」
-
 ;endpage
 
 ;kenji
 「かもな」
-
 ;endpage
 
 ;noname
 確かに美術室には他の教室より古いし、通気性とかまったく考慮されてない感じではある。
-
 ;endpage
 
 ;noname
 寮は結構きれいなくせに、こういうところは割と手抜きだな。美術部から文句とかこないんだろうか。
-
 ;endpage
 
 ;asuka num: 1
@@ -188,27 +165,22 @@
 
 ;asuka num: 2
 「ほら、せっかく夜の学校に忍び込んだんだから、何かしないと損じゃんか」
-
 ;endpage
 
 ;kenji
 「って言われてもなぁ……」
-
 ;endpage
 
 ;noname
 学校の中でどこと言われても、場所は限られてるし。ぶっちゃけ乗り気じゃない俺に話を振るな明日香。
-
 ;endpage
 
 ;noname
 でもまぁ、行くとしたら……
-
 ;endpage
 
 ;kenji
 「とりあえず教室行ってみるか。そこ以外思いつかん」
-
 ;endpage
 
 ;asuka num: 1
@@ -221,12 +193,10 @@
 
 ;asuka num: 1
 「いや、あたしも教室以外思いつかなかったから聞いたのに、期待ハズレだなーと思って」
-
 ;endpage
 
 ;kenji
 「期待ハズレとはなんだコンチクショウ。これでも一生懸命考えたんだぞ、コンマ５秒くらい」
-
 ;endpage
 
 ;asuka num: 2
@@ -252,12 +222,10 @@
 
 ;noname
 二階に上がり、普段授業を受けている教室に入る。
-
 ;endpage
 
 ;kenji
 「っていうか針金で開くのか、この教室の鍵……」
-
 ;endpage
 
 ;asuka num: 1
@@ -274,22 +242,18 @@
 
 ;asuka num: 2
 「教室の中もそれなりに明るいねぇ」
-
 ;endpage
 
 ;kenji
 「そうだな」
-
 ;endpage
 
 ;noname
 目が慣れてきたのもあるだろうが、教室の中は美術室ほど暗くはなく、十分に見える明るさだった。
-
 ;endpage
 
 ;noname
 机の配置などは昼間と変わらないのに、暗いというだけでなんとなく神秘的な雰囲気になっている気がする。
-
 ;endpage
 
 ;asuka num: 1
@@ -302,12 +266,10 @@
 
 ;asuka num: 2
 「出そうだね」
-
 ;endpage
 
 ;kenji
 「出そうって……何が」
-
 ;endpage
 
 ;asuka num: 2
@@ -320,12 +282,10 @@
 
 ;asuka num: 5
 「オ・バ・ケ」
-
 ;endpage
 
 ;kenji
 「な、お、おま、冗談でもそういうこと言うんじゃねーよ！」
-
 ;endpage
 
 ;asuka num: 2
@@ -338,27 +298,22 @@
 
 ;asuka num: 5
 「あはは、昔から苦手だったもんねー、そういう話」
-
 ;endpage
 
 ;noname
 ぐっ。悔しいが、明日香の言うとおりなのだ。
-
 ;endpage
 
 ;noname
 オバケ、幽霊、コックリさん、トイレの花子さんその他もろもろ。意識しないでいるとそうでもないのだが、いったん気になるとどうしても怖くなってしまう。
-
 ;endpage
 
 ;noname
 正直男として情けないと思っているのだが、怖いものは怖いんだコンチクショウ！
-
 ;endpage
 
 ;kenji
 「うっせーよ馬鹿！　知ってんだから、こういうとこに連れてくんのはやめろよな」
-
 ;endpage
 
 ;asuka num: 2
@@ -371,12 +326,10 @@
 
 ;asuka num: 2
 「帰り道にオバケ出るかもしれないからね」
-
 ;endpage
 
 ;kenji
 「そうやって意識させるのもやめてくれ！」
-
 ;endpage
 
 ;asuka num: 5
@@ -389,12 +342,10 @@
 
 ;asuka num: 1
 「え、そうだったの？！」
-
 ;endpage
 
 ;kenji
 「なんで驚くんだよ！　ひどい奴だなお前！」
-
 ;endpage
 
 ;asuka num: 5
@@ -407,12 +358,10 @@
 
 ;asuka num: 2
 「あんまり細かいこと気にしてると、ハゲるよー」
-
 ;endpage
 
 ;kenji
 「は、ハゲっ？！」
-
 ;endpage
 
 ;asuka_out
@@ -429,12 +378,10 @@
 
 ;asuka num: 3
 「え、なんで泣いてるの？　誰にやられたの？」
-
 ;endpage
 
 ;kenji
 「あんたでしょーがっ。っていうか、なにしてんだよ」
-
 ;endpage
 
 ;asuka num: 2
@@ -449,17 +396,14 @@
 
 ;noname
 がさごそと机の中身を見て回る明日香。
-
 ;endpage
 
 ;noname
 どうせ言っても聞かないだろうから、俺は仕方なく自分の席に座る。
-
 ;endpage
 
 ;noname
 決して机の中に見られたらマズイものが入っているからではありません。ホントです。
-
 ;endpage
 
 ;asuka num: 1
@@ -472,12 +416,10 @@
 
 ;asuka num: 1
 「エロ本とかないかなー」
-
 ;endpage
 
 ;kenji
 「いや、普通学校に持ってこないだろ……」
-
 ;endpage
 
 ;asuka_out
@@ -502,7 +444,6 @@
 
 「エロ本みっけ！」
 ;reset_font
-
 ;endpage
 
 ;kenji
@@ -514,17 +455,14 @@
 
 「えええええええ」
 ;reset_font
-
 ;endpage
 
 ;noname
 自慢げに見せびらかす明日香の手には、『どきどき巨乳ナースの秘め事』なんてベタなタイトルの本が握られていた。
-
 ;endpage
 
 ;kenji
 「マジかよ……いやまさかホントにあるとは……」
-
 ;endpage
 
 ;asuka num: 1
@@ -537,12 +475,10 @@
 
 ;asuka num: 2
 「あ、健二も見る？」
-
 ;endpage
 
 ;kenji
 「見ません」
-
 ;endpage
 
 ;asuka num: 1
@@ -563,12 +499,10 @@
 
 ;asuka num: 1
 「………………」
-
 ;endpage
 
 ;kenji
 「な、なんだよ」
-
 ;endpage
 
 ;asuka num: 1
@@ -581,12 +515,10 @@
 
 ;asuka num: 2
 「いやー、健二だって男の子なんだから、ちょっとくらい興味あるでしょ？」
-
 ;endpage
 
 ;kenji
 「だからって聞くな」
-
 ;endpage
 
 ;asuka num: 5
@@ -599,17 +531,14 @@
 
 ;asuka num: 1
 「む、強情ね。よし」
-
 ;endpage
 
 ;noname
 そっぽを向いてダンマリを決めこむ俺の視界の外で、明日香がなにやらごそごそやっている。
-
 ;endpage
 
 ;noname
 何する気だこいつ。
-
 ;endpage
 
 ;asuka num: 2
@@ -622,7 +551,6 @@
 
 ;asuka num: 5
 「ほれ」
-
 ;endpage
 
 ;noname
@@ -640,12 +568,10 @@
 
 ;asuka num: 2
 「なにって、健二がこの本見たそうにしてたから」
-
 ;endpage
 
 ;kenji
 「してねぇよ！」
-
 ;endpage
 
 ;asuka num: 5
@@ -654,12 +580,10 @@
 
 ;noname
 ;playse num: "21"お次に現れたのは、貧乳ロリっ娘！
-
 ;endpage
 
 ;kenji
 「だからやめろって。ってか二冊目かよ……」
-
 ;endpage
 
 ;asuka num: 1
@@ -672,12 +596,10 @@
 
 ;asuka num: 5
 「つまりロリは対象外で、胸のサイズにはこだわらないと……大きさより感度ってこと？　やるねー健二！」
-
 ;endpage
 
 ;kenji
 「頼む、もうやめてくれ……」
-
 ;endpage
 
 #□#明日香　アウト
@@ -715,12 +637,10 @@
 
 ;asuka num: 5
 「ほしいの？」
-
 ;endpage
 
 ;kenji
 「いらんわい！」
-
 ;endpage
 
 ;asuka num: 2
@@ -733,12 +653,10 @@
 
 ;asuka num: 5
 「持ち主の名前を油性ペンで書いて、教卓の上に置いといた」
-
 ;endpage
 
 ;kenji
 「な、なんつーむごいことを……」
-
 ;endpage
 
 ;asuka num: 2
@@ -751,17 +669,14 @@
 
 ;asuka num: 2
 「おもしろいものが見つかったから、もっとおもしろくなるようにしただけだよー」
-
 ;endpage
 
 ;kenji
 「ひでぇ。この人ひどいですよ神様」
-
 ;endpage
 
 ;noname
 エロ本の持ち主よ、すまん。南無三。ご愁傷様。俺じゃどうしようもないです。
-
 ;endpage
 
 ;asuka num: 1
@@ -774,22 +689,18 @@
 
 ;asuka num: 1
 「そうねー……」
-
 ;endpage
 
 ;noname
 それきり、会話が途切れる。
-
 ;endpage
 
 ;noname
 明日香は両足をぷらぷらさせて、何か考えるように教室の入り口を見つめている。
-
 ;endpage
 
 ;noname
 あ、やばい、なんか嫌な予感が。
-
 ;endpage
 
 ;asuka num: 2
@@ -802,17 +713,14 @@
 
 ;asuka num: 5
 「屋上に行こう！」
-
 ;endpage
 
 ;noname
 はいきました、予感的中。そろそろ帰れると思ったのに。
-
 ;endpage
 
 ;kenji
 「屋上ったって、あそこは立ち入り禁止だろ？」
-
 ;endpage
 
 ;asuka num: 5
@@ -825,12 +733,10 @@
 
 ;asuka num: 2
 「大丈夫。あそこの鍵、わりと簡単に開くらしいから」
-
 ;endpage
 
 ;kenji
 「ほんと大丈夫なのか、うちの学校……」
-
 ;endpage
 
 ;asuka num: 5
@@ -865,17 +771,14 @@
 
 ;asuka num: 2
 「そうだよ」
-
 ;endpage
 
 ;noname
 そうなのか……しかしこれは……
-
 ;endpage
 
 ;kenji
 「な、なんか真っ暗なのは気のせいか」
-
 ;endpage
 
 ;asuka num: 1
@@ -888,12 +791,10 @@
 
 ;asuka num: 2
 「あー、健二怖いのー？」
-
 ;endpage
 
 ;kenji
 「こここここ怖くなんてありませんよ？」
-
 ;endpage
 
 ;asuka num: 1
@@ -922,12 +823,10 @@
 
 ;asuka num: 2
 「そんな何度も言い直さなくても。っていうかキモイよ。ほら、健二先に行ってきたら？」
-
 ;endpage
 
 ;kenji
 「無理」
-
 ;endpage
 
 ;asuka num: 1
@@ -940,12 +839,10 @@
 
 ;asuka num: 5
 「しょーがないなー。ほら、お手々ぎゅーしたげる、ぎゅー」
-
 ;endpage
 
 ;kenji
 「ば、馬鹿！　やめんか恥ずかしい！」
-
 ;endpage
 
 ;asuka num: 5
@@ -970,12 +867,10 @@
 
 ;asuka num: 5
 「お、がんばれ健二！」
-
 ;endpage
 
 ;kenji
 「ま、まかせろーい」
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -991,77 +886,62 @@
 
 ;noname
 柵の前に立つ。
-
 ;endpage
 
 ;noname
 屋上への階段の先は暗い……いや、気にしては駄目だ。意識しなければいいんだ。無心になれ俺。アレだ、無我の境地だ。
-
 ;endpage
 
 ;noname
 よし、行くゼ！（←裏返ってる）
-
 ;endpage
 
 ;kenji
 「し、しつれーしまーす……」
-
 ;endpage
 
 ;noname
 立ち入り禁止の柵をまたぐ。
-
 ;endpage
 
 ;asuka
 「おもしろいくらいビビってるねー」
-
 ;endpage
 
 ;kenji
 「う、うるセー」
-
 ;endpage
 
 ;noname
 ゆっくりと一段ずつ階段を上る。
-
 ;endpage
 
 ;noname
 うわ、自分の足下くらいはなんとか見えるが、マジでほとんど真っ暗だな……って、気にしたらだめだっつーに俺。
-
 ;endpage
 
 ;asuka
 「さっさと行きなよー」
-
 ;endpage
 
 ;kenji
 「こ、これでも全速力ですっ」
-
 ;endpage
 
 ;asuka
 「もー、健二かっこわるーい。あははは」
-
 ;endpage
 
 ;noname
 ビビりながらも足を進め、中間地点の踊り場に着いた。
-
 ;endpage
 
 ;noname
 階段は確かに暗いが、近くにはまぁ明日香がいるし（我ながら情けない思考）、これなら大丈夫かもしれない。
-
 ;endpage
 
 ;noname
 屋上へ向けて、さっきより少し速く階段を上る。
-
 ;endpage
 
 ;asuka
@@ -1073,94 +953,76 @@
 
 「わーーーーーーっ！！」
 ;reset_font
-
 ;endpage
 
 ;kenji
 
 ;quake time: 500, x: 10, y: 5
 ;playse num: "20"「ぎゃーーーーーっ！！　なンだ、どした、びびびびびってなんかないぞ、さぁ来やがれコンチクショウ！」
-
 ;endpage
 
 ;asuka
 「っ、なに言ってんの健二。……っぷ」
-
 ;endpage
 
 ;kenji
 「あ、あああ明日香！　おま、冗談でもそういうのやめろ！」
-
 ;endpage
 
 ;asuka
 「あはは、めんごめんご」
-
 ;endpage
 
 ;kenji
 「ったく……心臓止まっちゃったらどうすんだオイ、責任とれんのかよ」
-
 ;endpage
 
 ;asuka
 「いいからほら、あとちょっとだよ。さっさと行っちゃいなって」
-
 ;endpage
 
 ;kenji
 「ちくしょー……おぼえてろよ……」
-
 ;endpage
 
 ;noname
 気を取り直して階段を上る。さっきのやりとりで緊張が抜けたのか、少し足が軽い。
-
 ;endpage
 
 ;asuka
 「健二ー、そろそろ着いたー？」
-
 ;endpage
 
 ;kenji
 「も、もうちょい」
-
 ;endpage
 
 ;noname
 あと数段だったの階段を上りきると、目の前に現れたのは屋上へのドア。この先が屋上だろう。
-
 ;endpage
 
 ;kenji
 「着いたぞ明日香」
-
 ;endpage
 
 ;asuka
 「じゃ、どーぞお先に」
-
 ;endpage
 
 ;kenji
 「お先にってお前、ドアには鍵が……って、あれ？」
-
 ;endpage
 
 ;noname
 ドアノブを回すと、何の抵抗もなかった。
-
 ;endpage
 
 ;noname
 鍵が開いてる……？
-
 ;endpage
 
 ;noname
 俺はドアノブを捻ったまま、身体全体で押すようにして、屋上のドアを開けた――
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -1176,17 +1038,14 @@
 
 ;noname
 ――――――
-
 ;endpage
 
 ;noname
 まぶしい。
-
 ;endpage
 
 ;noname
 今度こそ本物のオバケか？　なんて思って、ああそう言えば月が明るかったなと思い出す。
-
 ;endpage
 
 #白さちょっともどり
@@ -1195,7 +1054,6 @@
 
 ;noname
 視界が戻ってゆく。
-
 ;endpage
 
 #白ささらにちょっと戻り
@@ -1204,7 +1062,6 @@
 
 ;noname
 そして、戻った視界の先、屋上には、
-
 ;endpage
 
 #☆視界回復２　０パーセント
@@ -1214,17 +1071,14 @@
 
 ;noname
 見知らぬ女の子がいた。
-
 ;endpage
 
 ;kenji
 「君……誰？」
-
 ;endpage
 
 ;noname
 女の子は驚きながらも答える。
-
 ;endpage
 
 [drawName name="？？"]

@@ -313,20 +313,46 @@
 
 # キャラクターをロード
 # name: 名前。"asuka" or "yuuki"
-# num: 画像の番号。1～5
+# num: 画像の番号。1～5, 11～25
+# pos: 画像の位置。left | center | right、省略時はcenter
 # visible: 表示非表示。省略時はtrue
+---
+  tv.posList = {
+    "left":   (1280/4)*1,
+    "center": 1280/2,
+    "right":  (1280/4)*3,
+  };
+  tv.charaInfo = {
+    "asuka01.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "asuka02.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "asuka03.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "asuka04.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "asuka05.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "yuuki01.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "yuuki02.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "yuuki03.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "yuuki04.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+    "yuuki05.png": { width: 480, height: 720, offsetX: 0, offsetY: 20 },
+  };
+---
 ;macro name: "loadchara"
   - console.log("loadchara", mp);
   ---
-    tv.file = "image/chara/" + mp.name + "0" + mp.num + ".png";
+    var imageFile = mp.name + ("00" + mp.num).substr(-2) + ".png";
+    tv.file = "image/chara/" + imageFile;
     tv.visible = mp.visible != null ? mp.visible : true;
     switch (mp.name) {
       case "asuka": tv.lay = "asuka"; break;
       case "yuuki": tv.lay = "yuuki"; break;
       default: tv.lay = "asuka"; break;
     }
+    var pos = mp.pos != null ? mp.pos : "center";
+    var info = tv.charaInfo[imageFile];
+    tv.x = tv.posList[pos] - (info.width / 2) + info.offsetX;
+    tv.y = info.offsetY;
+    console.log("loadChara", pos, tv.x, info);
   ---
-  ;image lay: "&tv.lay", file: "&tv.file", x: (1280-467)/2, y: 20, visible: "&tv.visible"
+  ;image lay: "&tv.lay", file: "&tv.file", x: "&tv.x", y: "&tv.y", visible: "&tv.visible"
 ;endmacro
 
 # 立ち絵を表示
@@ -334,43 +360,45 @@
 ;macro name: "chara_in"
   ---
     var lay = tv.lay = mp.name;
+    var pos = tv.pos = mp.pos != null ? mp.pos : "center";
     var layer = ponkan.getLayers({lay: lay})[0];
     var current = layer.imageFilePath;
     if (current == null || !layer.visible) {
       tv.action = "fadein";
+      tv.time = 1000;
     } else {
       var reg = null;
-      if (mp.name == "asuka") {
-        reg = /asuka[0-9][0-9]\.png/;
-      } else if (mp.name == "yuuki") {
-        reg = /yuuki[0-9][0-9]\.png/;
-      }
+      if (mp.name == "asuka") { reg = /asuka[0-9][0-9]\.png/; }
+      if (mp.name == "yuuki") { reg = /yuuki[0-9][0-9]\.png/; }
       var match = current.match(reg);
       if (match == null) {
+        // 新規表示時はフェードイン
         tv.action = "fadein";
+        tv.time = 1000;
       } else {
-        var newFile = mp.name + "0" + mp.num + ".png";
+        var newFile = mp.name + ("0" + mp.num).substr(-2) + ".png";
         if (newFile == match[0]) {
           tv.action = "none"; // 現在表示している立ち絵のままでOKなので何もしない
         } else {
           tv.action = "change";
+          tv.time = 200;
         }
       }
     }
-    console.log("chara_in action:", tv.action);
+    console.log("chara_in", mp.name, tv.pos, tv.action, tv.time);
   ---
-  ;if exp: "tv.action == 'change'"
+  ;if exp: "tv.action == 'change' || tv.action == 'fadein'"
     # 立ち絵入れ替え
     ;pretrans
     ;loadchara name: "&mp.name", num: "&mp.num", visible: true
-    ;trans time: 200
+    ;trans time: "&tv.time"
     ;waittrans
-  ;elsif exp: "tv.action == 'fadein'"
-    # 新規フェードイン
-    ;pretrans
-    ;loadchara name: "&mp.name", num: "&mp.num", visible: true
-    ;trans time: 500
-    ;waittrans
+  # ;elsif exp: "tv.action == 'fadein'"
+  #   # 新規フェードイン
+  #   ;pretrans
+  #   ;loadchara name: "&mp.name", num: "&mp.num", visible: true
+  #   ;trans time: 500
+  #   ;waittrans
   ;endif
 ;endmacro
 
@@ -503,7 +531,7 @@
 ;macro name: "cb_fade"
   ;pretrans
   ;cb bg: "&mp.bg"
-  ;trans time: "&mp.time != null ? mp.time : 1000", method: "crossfade"
+  ;trans time: "&mp.time != null ? mp.time : 1500", method: "crossfade"
   ;waittrans "canskip": true
 ;endmacro
 
@@ -514,7 +542,7 @@
 ;macro name: "cb_move"
   ;pretrans
   ;cb bg: "&mp.bg"
-  ;trans time: "&mp.time != null ? mp.time : 1000", method: "univ", rule: "rule/move.png"
+  ;trans time: "&mp.time != null ? mp.time : 1500", method: "univ", rule: "rule/move.png"
   ;waittrans "canskip": true
 ;endmacro
 
@@ -525,7 +553,7 @@
 ;macro name: "cb_time"
   ;pretrans
   ;cb bg: "&mp.bg"
-  ;trans time: "&mp.time != null ? mp.time : 1000", method: "univ", rule: "rule/time.png", vague: 128
+  ;trans time: "&mp.time != null ? mp.time : 1500", method: "univ", rule: "rule/time.png", vague: 128
   ;waittrans "canskip": true
 ;endmacro
 

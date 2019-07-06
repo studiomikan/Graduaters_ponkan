@@ -952,15 +952,15 @@
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-;asuka_left num: 1
+;asuka pos: "left", num: 1
 「うーん、ねぇ優希ちゃん、星とか全然見えないんだけど……」
 ;endpage
 
-;yuuki_right num: 1
+;yuuki pos: "right", num: 1
 「そうだね……今日は月が明るいから、星は見えないかも」
 ;endpage
 
-;asuka_left num: 1
+;asuka pos: "left", num: 1
 「そっかー、ちょっと残念」
 ;endpage
 
@@ -968,19 +968,19 @@
 「これ、満月なのか？」
 ;endpage
 
-;yuuki_right num: 1
+;yuuki pos: "right", num: 1
 「えーっと……うん、多分そう」
 ;endpage
 
-;asuka_left num: 2
+;asuka pos: "left", num: 2
 「へー。優希ちゃんはやっぱり詳しいの？　星座とか、天体のこと」
 ;endpage
 
-;yuuki_right num: 2
+;yuuki pos: "right", num: 2
 「それなりには詳しいと思うよ。兄さんが詳しかったから」
 ;endpage
 
-;asuka_left num: 1
+;asuka pos: "left", num: 1
 「兄？　お兄さんがいるの？」
 ;endpage
 
@@ -988,19 +988,19 @@
 「四つ上の兄が居るそうだぞ。俺と同じくらいイケメンだってさ」
 ;endpage
 
-;asuka_left num: 2
+;asuka pos: "left", num: 2
 「じゃあ、そのお兄さんに教えてもらったんだ」
 ;endpage
 
-;yuuki_right num: 2
+;yuuki pos: "right", num: 2
 「兄さんは天体好きで、昔は夜になると一緒に星を見たりとかしてたんだ」
 ;endpage
 
-;asuka_left num: 1
+;asuka pos: "left", num: 1
 「昔は？　今はもうやらないんだ」
 ;endpage
 
-;yuuki_right num: 2
+;yuuki pos: "right", num: 2
 「うん。兄さんが入院しちゃってるから……」
 ;endpage
 
@@ -1008,15 +1008,15 @@
 「え……入院？」
 ;endpage
 
-;yuuki_right num: 1
+;yuuki pos: "right", num: 1
 「えっと、ちょっと怪我をして、それで入院してるの」
 ;endpage
 
-;asuka_left num: 1
+;asuka pos: "left", num: 1
 「あ、そうなんだ……えと、ごめん」
 ;endpage
 
-;yuuki_right num: 5
+;yuuki pos: "right", num: 5
 「あはは、謝らなくてもいいよ」
 ;endpage
 

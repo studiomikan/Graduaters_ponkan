@@ -19,12 +19,10 @@
 
 ;noname
 最近ここに来るときはあまり楽しいことがないな、と俺は思った。
-
 ;endpage
 
 ;noname
 いつも通っている病院から自転車をかっ飛ばして１０分。寮の自転車置き場から直接来て、現在美術室前。
-
 ;endpage
 
 ;noname
@@ -65,17 +63,14 @@
 
 ;kenji
 「くっそ、帰宅部なめるなよコンチクショウ！」
-
 ;endpage
 
 ;noname
 今にもカクンと抜けそうな膝を奮い立たせるように叫ぶ。
-
 ;endpage
 
 ;noname
 あぁもう今更言っても仕方ないけど、こんなことなら普段から運動しとくんだった！
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -90,17 +85,14 @@
 
 ;kenji
 「はぁ……はぁ……はあ……！」
-
 ;endpage
 
 ;noname
 階段を二段飛ばしで駆け上がる。
-
 ;endpage
 
 ;noname
 急げ。
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -115,27 +107,22 @@
 
 ;noname
 たまたま行った病院で、たまたま話を聞いた。なんでもついさっき、入院患者が病室から飛び降り自殺したらしい。そのせいで入り口付近が封鎖されていた。
-
 ;endpage
 
 ;noname
 最初は優希が飛び降りたのかと思いひやっとしたが、優希なら学校のはずだ。しかしそれなら、誰が飛び降りたのか？
-
 ;endpage
 
 ;noname
 顔見知りの看護師のおばさんの言った名前は、予想通りの名前だった。
-
 ;endpage
 
 ;noname
 飛び降りたのは、三笠くん。
-
 ;endpage
 
 ;noname
 優希のお兄さん。
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -157,27 +144,22 @@
 ;kenji
 ;quake time: 500, x: 10, y: 5
 「あでっ！」
-
 ;endpage
 
 ;noname
 柵が勢いよく倒れる。ちくしょう、抜き足がひっかかっちまった。
-
 ;endpage
 
 ;noname
 くそ、あと少し、この階段を上りきれば――
-
 ;endpage
 
 ;noname
 笑う膝小僧に喝を入れる。帰宅部なめるなよ。
-
 ;endpage
 
 ;noname
 最後の力をふりしぼるようにして一気に登り切り、思い切りドアを開けた――
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -194,29 +176,25 @@
 ;cb_fade bg: "roof canskip=false"
 
 #○ズーム　屋上
-[zoomInRoof]
-#☆メッセージフレーム　イン
 
+;cb_fade bg: "tank"
+#☆メッセージフレーム　イン
 ;fadein_meslay
 
 ;noname
 そしてやはり彼女――優希は、貯水タンクの側にいた。
-
 ;endpage
 
 ;noname
 よかった、間に合った。しかしまだ安心はできない。
-
 ;endpage
 
 ;noname
 荒い呼吸と心臓を無理矢理落ち着けるように深呼吸し、いつもの笑顔の優希と向き合う。
-
 ;endpage
 
 ;kenji
 「……優希」
-
 ;endpage
 
 ;yuuki num: 2
@@ -229,12 +207,10 @@
 
 ;yuuki num: 2
 「うん。常磐くんなら、来てくれると思ってたから」
-
 ;endpage
 
 ;kenji
 「……いや、来なかったらどうするつもりだったんだよ」
-
 ;endpage
 
 ;yuuki num: 2
@@ -247,12 +223,10 @@
 
 ;yuuki num: 5
 「だよね、風邪ひいちゃったらしんどいもんね」
-
 ;endpage
 
 ;kenji
 「そうだな、ってか今日はすこし寒いな」
-
 ;endpage
 
 ;yuuki num: 5
@@ -269,12 +243,10 @@
 
 ;yuuki num: 1
 「さっき？　この時間は面会はしてないはずだけど……」
-
 ;endpage
 
 ;kenji
 「………………」
-
 ;endpage
 
 ;yuuki num: 2
@@ -287,32 +259,26 @@
 
 ;yuuki num: 1
 「うん？」
-
 ;endpage
 
 ;kenji
 「どうしてお兄さんが飛び降りる。おかしいじゃないか。お兄さんの心は正真正銘の子供だ、飛び降りる理由なんてないはずだ」
-
 ;endpage
 
 ;noname
 そう、おかしいのだ。事故の後遺症で三歳児になっている優希のお兄さんが、自らの意志で飛び降りるなんてのはあり得ない。
-
 ;endpage
 
 ;noname
 偶発的な事故の可能性もゼロじゃないが、看護婦のおばさんは『事故があった』ではなく『自殺した』と言った。それなりに根拠があってそう言ったのだろう。
-
 ;endpage
 
 ;noname
 それに、彼の病状から病室の窓は常に閉じられていて、防犯用のグッズなどを使ってロックもかけていた。
-
 ;endpage
 
 ;noname
 つまり彼は、そのロックを外し、鍵を開け、飛んだということになる。
-
 ;endpage
 
 ;yuuki num: 2
@@ -325,27 +291,22 @@
 
 ;yuuki num: 2
 「でもね、自分の意志で飛び降りちゃったんだよ、兄さんは」
-
 ;endpage
 
 ;noname
 自分の意志で飛び降りた。
-
 ;endpage
 
 ;noname
 つまりそれは、三歳児ではなく大人だったということ。
-
 ;endpage
 
 ;noname
 お兄さんは、病室の窓から身を投げ出したとき、正気に戻っていたということなのか。
-
 ;endpage
 
 ;kenji
 「でもどうしてそんな急に」
-
 ;endpage
 
 ;yuuki num: 2
@@ -358,12 +319,10 @@
 
 ;yuuki num: 2
 「私は今、死にたいんだって。両親は死んじゃったけど、でも兄さんがいるから死ぬわけにはいかないねって。ちょっと愚痴っちゃったんだ。それがきっかけだったんじゃないかな」
-
 ;endpage
 
 ;kenji
 「それは……いつのことだ？」
-
 ;endpage
 
 ;yuuki num: 2
@@ -384,7 +343,6 @@
 
 ;yuuki num: 2
 「わからない。兄さんの幼児退行は、精神的なものと身体的なもの、両方の原因が考えられるって言ってた。だから強いショックをうければ、あるいは」
-
 ;endpage
 
 ;yuuki_out
@@ -415,17 +373,14 @@
 
 ;yuuki num: 1
 「私が殺しちゃったんだ」
-
 ;endpage
 
 ;noname
 優希が、自らの兄を死に追いやったかのようではないか。
-
 ;endpage
 
 ;kenji
 「違う。優希のせいじゃない」
-
 ;endpage
 
 ;yuuki num: 5
@@ -438,7 +393,6 @@
 
 ;yuuki num: 2
 「私、ずっと死んでしまいたいって思ってた。けど死ねなかったのは、兄さんがいたから。あの事故で私をかばって、傷を負った兄さんが」
-
 ;endpage
 
 ;yuuki num: 2
@@ -447,7 +401,6 @@
 
 ;yuuki num: 2
 「私が死のうとするたびに、私をかばって傷ついた兄さんが、自分の犠牲を無駄にするのかと私を責めているように感じて、最後の一歩がどうしても踏み出せなかった」
-
 ;endpage
 
 ;yuuki num: 2
@@ -460,7 +413,6 @@
 
 ;yuuki num: 2
 「でも今になって思うよ、兄さんも苦しかったんだって。当然だよね、私となんにも変わらないもん。でも私は気づけなかった。気づかないふりをしてた」
-
 ;endpage
 
 ;yuuki_out
@@ -515,72 +467,58 @@
 
 ;yuuki num: 1
 「楽しかったよ。でも楽しくなかった。私はこんなに楽しいのに、兄さんは今も病院で一人きり。しかも私は死んでしまいたいなんて思ってる。苦しかったよ、すごくね」
-
 ;endpage
 
 ;noname
 楽しかったけど、楽しくなかった。その気持ちはよくわかった。
-
 ;endpage
 
 ;noname
 人間は、相反する二つの感情を同時に持つことができる。
-
 ;endpage
 
 ;noname
 楽しいけれどつまらない。
-
 ;endpage
 
 ;noname
 好きだけど嫌い。
-
 ;endpage
 
 ;noname
 愛してるけど憎んでる。
-
 ;endpage
 
 ;noname
 生きててほしいけど死んでほしい。
-
 ;endpage
 
 ;noname
 そんな矛盾は常日頃からよくある話で、そしてそういう感情は普通の感情よりも強く、重い。そんな感情を消し去るのは簡単じゃない。
-
 ;endpage
 
 ;kenji
 「だめだ優希、ほんと、それだけはダメだ」
-
 ;endpage
 
 ;noname
 どうしたら、彼女のその感情を消し去ることができる？
-
 ;endpage
 
 ;noname
 もう、彼女になにを言えばいいのかわからない。
-
 ;endpage
 
 ;noname
 俺はなにを言えばいいんだ？　なにを伝えればいい？　どうすれば彼女は救われる？
-
 ;endpage
 
 ;noname
 俺はまた助けられないのか？　みすみす見殺しにするのか？
-
 ;endpage
 
 ;noname
 何かあるはずだ、何か――
-
 ;endpage
 
 ;yuuki num: 5
@@ -597,12 +535,10 @@
 
 ;yuuki num: 5
 「もうわかってるかもしれないけど」
-
 ;endpage
 
 ;noname
 少し頬を赤らめながら、優希は言う。
-
 ;endpage
 
 ;yuuki num: 5
@@ -610,22 +546,18 @@
 ;endpage
 
 #ウェイト　演出
-
 ;wait time: 500, canskip: false
 
 ;noname
 ――突然の告白に、思考が止まった。
-
 ;endpage
 
 ;noname
 俺のことが、好き？
-
 ;endpage
 
 ;kenji
 「じょ、冗談だろ？」
-
 ;endpage
 
 ;yuuki num: 2
@@ -638,62 +570,50 @@
 
 ;yuuki num: 2
 「常盤くんへの想いを糧に生きてもいいかな」
-
 ;endpage
 
 ;noname
 それは、許しを請う者の言葉だった。
-
 ;endpage
 
 ;noname
 俺が『はい』と言えば、優希は許されるのか？　思いとどまるのか？　本当に？
-
 ;endpage
 
 ;noname
 俺は優希の命を支えきれるのか？　俺は優希のことが好きなのか？
-
 ;endpage
 
 ;noname
 優希は結構するどいぞ？　その嘘はバレないのか？
-
 ;endpage
 
 ;noname
 嘘？　嘘って何だよ。
-
 ;endpage
 
 ;noname
 ああ、そうか、なるほどつまり俺は――
-
 ;endpage
 
 ;noname
 俺は――
-
 ;endpage
 
 ;kenji
 「……ごめん」
-
 ;endpage
 
 ;noname
 受け入れられない。嘘はつけない。どうせ彼女にはバレる。バレれば彼女は飛ぶ。
-
 ;endpage
 
 ;noname
 でも、そもそも受け入れなかったら、そのときは――
-
 ;endpage
 
 ;yuuki
 「ありがとう、そう言うと思った。常盤くんはそういう人だからね。だから好きになったんだし、うん」
-
 ;endpage
 
 ;yuuki num: 5
@@ -707,25 +627,24 @@
 #□#優希　アウト
 
 #☆メッセージフレーム　アウト
-
 ;fadeout_meslay
 #☆鼓動
+
 ;heartbeat
 #☆メッセージフレーム　イン
-
 ;fadein_meslay
 
 ;noname
 やばい。
-
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #☆鼓動
-
 ;heartbeat
 #☆メッセージフレーム　イン
+
 ;fadein_meslay
 
 ;noname
@@ -733,56 +652,52 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-
 ;fadeout_meslay
 #☆鼓動
+
 ;heartbeat
 #☆メッセージフレーム　イン
-
 ;fadein_meslay
 
 ;noname
 優希が俺から視線を外す。
-
 ;endpage
 
 ;noname
 同時に俺は走り出す。
-
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #☆鼓動
-
 ;heartbeat
 #☆鼓動
+
 ;heartbeat
 #☆メッセージフレーム　イン
-
 ;fadein_meslay
 
 ;noname
 優希が両手を広げる。
-
 ;endpage
 
 ;noname
 疲れ切った足に力が入らない。もっとスピードを出せ。
-
 ;endpage
 
 #☆メッセージフレーム　アウト
+
 ;fadeout_meslay
 #☆鼓動
-
-;heartbeat
-#☆鼓動
 ;heartbeat
 #☆鼓動
 
+;heartbeat
+#☆鼓動
 ;heartbeat
 #☆メッセージフレーム　イン
+
 ;fadein_meslay
 
 ;kenji
@@ -800,24 +715,22 @@
 ;endpage
 
 #☆メッセージフレーム　アウト
-
 ;fadeout_meslay
 #○フェードアウト　１５００　ｆ　白
+
 ;cb_fade bg:"white", time: 1500, canskip: false
 #○ズーム　終了
-[endZoom]
+;cb_fade bg: "roof"
 #☆メッセージフレーム　イン
 
 ;fadein_meslay
 
 ;noname
 彼女の身体が闇へと投げ出される。
-
 ;endpage
 
 ;noname
 彼女を縛るものはもう、何もない。
-
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -833,12 +746,10 @@
 
 ;noname
 そうして彼女――三笠優希はこの世を去った。
-
 ;endpage
 
 ;noname
 今から約一年前、まだ寒さの残る初春。
-
 ;endpage
 
 #○フェード　白
@@ -870,7 +781,6 @@
 
 ;noname
 そして俺はオバケを怖がらなくなり、夜に学校に忍び込むことをやめた。
-
 ;endpage
 
 #☆メッセージフレーム　アウト

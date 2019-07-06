@@ -46,6 +46,7 @@ tv.meslay_mode = "orange";
   "fontsize": 28,
   "weight": "normal",
   "color": "0xFFFFFF",
+  "pitch": -2,
   "lineheight": 24,
   "linepitch": 5,
   "align": "center",
@@ -72,7 +73,7 @@ tv.meslay_mode = "orange";
 #;set_to_blue
 #;fadein_meslay
 #;jump file: "scenario/04.pon"
-;jump file: "scenario/07.pon"
+;jump file: "scenario/08.pon"
 ;s
 
 # サークルロゴ表示

@@ -33,9 +33,9 @@ output = output.replace(/\[fadeOutAsuka\]/g, ";asuka_out");
 output = output.replace(/\[fadeOutYuuki\]/g, ";yuuki_out");
 output = output.replace(/\[fadeOutBoth\]/g, ";every_out");
 output = output.replace(/\[asuka num=([0-9]) pos=center[^\]]*\]/g, ";asuka num: $1");
-output = output.replace(/\[asuka num=([0-9]) pos=left[^\]]*\]/g, ";asuka_left num: $1");
+output = output.replace(/\[asuka num=([0-9]) pos=left[^\]]*\]/g, ";asuka pos: \"left\" num: $1");
 output = output.replace(/\[yuuki num=([0-9]) pos=center[^\]]*\]/g, ";yuuki num: $1");
-output = output.replace(/\[yuuki num=([0-9]) pos=right[^\]]*\]/g, ";yuuki_right num: $1");
+output = output.replace(/\[yuuki num=([0-9]) pos=right[^\]]*\]/g, ";yuuki pos: \"right\" num: $1");
 output = output.replace(/\[FadeOutWhite time=1000 canskip=false\]/g, ";cb_fade bg:\"white\", canskip: false");
 output = output.replace(/\[FadeOutBlack time=1000 canskip=false\]/g, ";cb_fade bg:\"black\", canskip: false");
 output = output.replace(/\[FadeOutWhite time=1000\]/g, ";cb_fade bg:\"white\"");
@@ -47,6 +47,7 @@ output = output.replace(/\[FadeOutWhite time=(\d+)\]/g, ";cb_fade bg:\"white\", 
 output = output.replace(/\[fadeoutwhite time=(\d+)\]/g, ";cb_fade bg:\"white\", time: $1");
 output = output.replace(/\[FadeOutBlack time=(\d+)\]/g, ";cb_fade bg:\"black\", time: $1");
 output = output.replace(/\[fadeoutblack time=(\d+)\]/g, ";cb_fade bg:\"black\", time: $1");
+output = output.replace(/\[fadeOutBlack time=(\d+) canskip=false\]/g, ";cb_fade bg:\"black\", time: $1, canskip: false");
 output = output.replace(/\[FadeOutWhite canskip=false\]/g, ";cb_fade bg:\"white\", canskip: false");
 output = output.replace(/\[quake time=([0-9]+).+hmax=([0-9]+).+vmax=([0-9]+).+\]/g, ";quake time: $1, x: $2, y: $3");
 output = output.replace(/\[fadeoutbgm[^\]]*\]/g, ";fadeoutbgm");
@@ -89,6 +90,8 @@ output = output.replace(/\[ruby[^\]]*\]/g, "");
 output = output.replace(/\[heartbeat[^\]]*\]/g, ";heartbeat");
 output = output.replace(/\[delName[^\]]*\]/g, ";clear_name");
 output = output.replace(/\[eval exp=(\"|\')f\.flagLetter = false[^\]]*\]/g, "");
+output = output.replace(/\[zoomInRoof[^\]]*\]/g, ";cb_fade bg: \"tank\"");
+output = output.replace(/\[endZoom[^\]]*\]/g, ";cb_fade bg: \"roof\"");
 
 // output = output.replace(/\[telopIn[^\]]*\]/g, ";telop");
 output = output.replace(/;([^;]+);([^;]+)/g, ";$1\n;$2");
@@ -145,6 +148,15 @@ lines.forEach((line, index) => {
   }
 });
 lines = lines.filter(line => line != null);
+// 連続した空白行は削除
+tmp = "dummy";
+lines.forEach((line, index) => {
+  if (tmp.length === 0 && line.length === 0) {
+    lines[index - 1] = null;
+  }
+  tmp = line;
+});
+lines = lines.filter(line => line != null);
 // 連続したquakeは削除
 tmp = "dummy";
 lines.forEach((line, index) => {
@@ -158,6 +170,15 @@ lines = lines.filter(line => line != null);
 tmp = "dummy";
 lines.forEach((line, index) => {
   if (tmp.length === 0 && line.length === 0) {
+    lines[index - 1] = null;
+  }
+  tmp = line;
+});
+lines = lines.filter(line => line != null);
+// endpage前の空行を削除
+tmp = "dummy";
+lines.forEach((line, index) => {
+  if (line.startsWith(";endpage") && tmp.length === 0) {
     lines[index - 1] = null;
   }
   tmp = line;

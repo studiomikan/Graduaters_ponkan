@@ -72,7 +72,7 @@ tv.layer = {
   "fontsize": 24,
   "weight": "normal",
   "color": "0xFFFFFF",
-  "pitch": -1,
+  "pitch": -2,
   "lineheight": 30,
   "linepitch": 5,
   "align": "left",
