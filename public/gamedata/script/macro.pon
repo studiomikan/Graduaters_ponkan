@@ -37,6 +37,7 @@
     margint: 65,
   }
   ;call file: "script/system_button.pon"
+  ;glyph_init
 ;endmacro
 
 ;macro name: "set_to_blue"
@@ -54,6 +55,7 @@
     margint: 65,
   }
   ;call file: "script/system_button.pon"
+  ;glyph_init
 ;endmacro
 
 ;macro name: "set_to_radio_orange"
@@ -65,6 +67,7 @@
   ;image lay: "mes", page: "&tv.page", file: "image/message-base3.png"
   ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30,
   ;call file: "script/system_button.pon"
+  ;glyph_init_radio
 ;endmacro
 
 ;macro name: "set_to_radio_blue"
@@ -76,6 +79,29 @@
   ;image lay: "mes", page: "&tv.page", file: "image/message-base4.png"
   ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30,
   ;call file: "script/system_button.pon"
+  ;glyph_init_radio
+;endmacro
+
+;macro name: "glyph_init"
+  ;lbglyph "lay": "&tv.layer.line", "pos": "eol"
+  ;pbglyph "lay": "&tv.layer.page", "pos": "absolute", "x": 1050, "y": 720 - 50,
+;endmacro
+
+;macro name: "glyph_init_radio"
+  ;lbglyph "lay": "&tv.layer.line", "pos": "eol"
+  ;pbglyph "lay": "&tv.layer.page", "pos": "relative", "x": 600, "y": 320,
+;endmacro
+
+#-------------------------------------------------------------------
+# フォントサイズなど
+#-------------------------------------------------------------------
+- tv.macro_original_font_size = ponkan.getLayers({lay: "mes"})[0].textFontSize;
+;macro name: "fontsize"
+  ;mesopt fontsize: "&mp.size"
+;endmacro
+
+;macro name: "reset_font"
+  ;mesopt fontsize: "&tv.macro_original_font_size"
 ;endmacro
 
 

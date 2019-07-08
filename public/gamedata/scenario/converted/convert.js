@@ -184,6 +184,15 @@ lines.forEach((line, index) => {
   tmp = line;
 });
 lines = lines.filter(line => line != null);
+// noname後の空行を削除
+tmp = "dummy";
+lines.forEach((line, index) => {
+  if (line.length === "" && tmp === ";noname") {
+    lines[index] = null;
+  }
+  tmp = line;
+});
+lines = lines.filter(line => line != null);
 
 
 console.log(lines.join("\n"));

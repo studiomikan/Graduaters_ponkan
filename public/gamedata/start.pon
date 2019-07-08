@@ -73,7 +73,7 @@ tv.meslay_mode = "orange";
 #;set_to_blue
 #;fadein_meslay
 #;jump file: "scenario/04.pon"
-;jump file: "scenario/08.pon"
+;jump file: "scenario/09.pon"
 ;s
 
 # サークルロゴ表示
