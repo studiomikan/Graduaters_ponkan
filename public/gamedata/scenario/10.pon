@@ -1,0 +1,286 @@
+#	Graduaters!　～グラディエイターズ！～
+#	現在：かくれんぼ三回目・手紙発見、過去回想
+#		健二　明日香
+#		適当な廊下や教室を探すが、明日香は見つからない。
+#		もしやと思い、２年のときの教室を訪れる健二。そして手紙を発見する。
+#		『ここで誕生日会をやったこともあったよね。楽しかった』
+
+*start
+
+#■現在：かくれんぼ三回目・手紙発見、過去回想
+
+#☆ミニロゴ１
+
+#☆フレームカラー　オレンジ
+;set_to_orange
+#○フェード　廊下
+
+;cb_fade bg: "hall"
+#△ＢＧＭ１
+;playbgm num:"001"
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+
+;kenji
+「……さて」
+;endpage
+
+;noname
+そろそろ５分経ったはずだ。
+;endpage
+
+;noname
+イヤホンを外し、音楽プレイヤーにコードを巻き付けてズボンのポケットに突っ込む。
+;endpage
+
+;kenji
+「行くか」
+;endpage
+
+;noname
+隠れ場所の目星はついていない。
+;endpage
+
+;noname
+俺は明日香を捜して、あてもなく夜の校舎をさまよいはじめた。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#○移動　廊下
+
+;cb_move bg: "black"
+;cb_move bg: "hall"
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+
+;kenji
+「明日香ー」
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
+#○移動　廊下
+;cb_move bg: "black"
+;cb_move bg: "hall"
+
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;kenji
+「おーい明日香ー」
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
+#○移動　教室
+;cb_move bg: "black"
+;cb_move bg: "class"
+
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;kenji
+「ほらほら出ておいでー」
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
+#○移動　廊下
+;cb_move bg: "black"
+;cb_move bg: "hall"
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+
+;kenji
+「明日香っちー？」
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
+#○移動　教室
+;cb_move bg: "black"
+;cb_move bg: "class"
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+;kenji
+「明日香たーん……」
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
+#○移動　廊下
+;cb_move bg: "black"
+;cb_move bg: "hall"
+
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;kenji
+「どこにもいねぇじゃねーかコンチクショウ」
+;endpage
+
+;noname
+うーん、これはどうしたものか。
+;endpage
+
+;noname
+闇雲に捜すには学校という場所は広すぎる。
+;endpage
+
+;kenji
+「美術室はさっきまで俺がいたし、
+自教室はさっき行ったし……あ」
+;endpage
+
+;noname
+そうか、二年のときの教室があった。
+;endpage
+
+;noname
+よーし。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
+#○移動　教室
+;cb_move bg: "black"
+;cb_move bg: "class"
+
+#△教室ドア
+;playse num: "08"
+
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;kenji
+「おい明日香！」
+;endpage
+
+;noname
+………………
+;endpage
+
+;kenji
+「はい、ハズレっと。どうすっかなー」
+;endpage
+
+;noname
+ここにいないとなると、完全に手詰まりだ。
+;endpage
+
+;noname
+途方に暮れた俺は、適当な机の上に腰をおろした。
+;endpage
+
+;kenji
+「………………」
+;endpage
+
+;noname
+次の瞬間、目にとびこんできたのは、
+黒板に大きく書かれた矢印だった。
+チョークを寝かせて書かれている。
+;endpage
+
+;noname
+矢印の先には、カエルのキャラ物の、謎の封筒があった。
+;endpage
+
+;kenji
+「これはまた、わかりやすいヒントだな」
+;endpage
+
+;noname
+とりあえず封筒を手に取る。
+中をのぞくと、封筒とは打って変わって
+簡素なデザインの手紙が二つ折りで入っていた。
+;endpage
+
+;noname
+折りたたまれた手紙を開く。
+;endpage
+
+;asuka
+『じゃじゃん！　よくこの手紙を見つけたね！』
+;endpage
+
+;noname
+黒板にでっかくヒント書いといてなにがじゃじゃん！　だ。
+まったく。
+;endpage
+
+;asuka
+『なんとなく直接言うのは恥ずかしいし、
+ぶっちゃけガラじゃないので、手紙を書くことにします』
+;endpage
+
+;noname
+いや、手紙も十分ガラじゃないけどな。
+;endpage
+
+;noname
+読み進める。
+;endpage
+
+#☆メッセージフレーム　アウト
+
+;fadeout_meslay
+
+#☆手紙
+;set_to_letter
+
+;fadein_meslay
+
+;noname
+三年前、私たちがここに入学してから、本当にいろんなことがありました。
+;endline
+
+;noname
+学力的に結構やばかったけど、がんばって勉強して無事入学できました。そういえば健二も勉強を見てくれたよね。その節はどうもありがとう。
+;endline
+
+;noname
+健二と離ればなれになるのがイヤでした。進学しても、ずっと二人でバカなことをやって、ときどきケンカして、でもすぐ仲直りして……そんな学校生活を夢見ていました。
+;endline
+
+;noname
+そう、『二人で』。でも、二年前に新しい仲間が増えました。優希ちゃんです。
+;endline
+
+;noname
+もちろん、友達が増えてあたしは素直にうれしかった。けど、優希ちゃんが健二に惹かれていくのを見て、少しだけ焦ったりもしました。少しだけ、ね。
+;endline
+
+;noname
+そういえば、この教室で誕生日パーティをしてくれたりしたね。
+;endline
+
+;noname
+あのときは、本当にうれしくて、楽しかった。
+;endline
+
+#☆ここまで手紙
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#△ＢＧＭフェードアウト
+;fadeoutbgm
+#☆テロップ　イン
+;telop
+#○フェードアウト　１０００　ｆ　黒
+
+;cb_fade bg:"black", canskip: false
+
+;jump file: "scenario/11.pon"
+
