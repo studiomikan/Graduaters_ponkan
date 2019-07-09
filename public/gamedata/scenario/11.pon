@@ -1,0 +1,1299 @@
+#	Graduaters!　～グラディエイターズ！～
+#	過去：明日香の誕生日、健二の兄の話
+#		健二　明日香　優希
+#		夜の学校で、誕生日パーティを盛大に行う三人。
+#		大量のお菓子やら何やらを持ち込んで、ボリューム小さめでどんちゃん騒ぎ。
+#		明日香と優希はそのうち寝てしまい、健二は一人屋上で星を眺める。
+#		起きてきた優希。今日はよかったという話。
+#		自殺の話を問い詰める健二。
+#		そして優希と入れ替わりで起きてきた明日香と兄の話をする。
+*start
+
+#■過去　明日香の誕生日、健二の兄の話
+
+#☆ミニロゴ１
+
+#☆フレームカラー　青
+;set_to_blue
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+
+;kenji_yuuki
+「明日香、誕生日おめでとー！！」
+;endpage
+
+#△ＢＧＭ３
+;playbgm num:"003"
+#○フェード　教室
+
+;cb_fade bg: "class"
+
+;asuka num: 5
+「ありがとう、健二、優希ちゃん」
+;endpage
+
+;yuuki num: 5
+「おめでとう、明日香ちゃん」
+;endpage
+
+;asuka pos: "left" num: 5
+「ありがとう、優希ちゃん」
+;endpage
+
+;kenji
+「また１つおばさんに近づいたな、明日香」
+;endpage
+
+;asuka pos: "left" num: 1
+「なにか言った？」
+;endpage
+
+;kenji
+「なんでもないですごめんなさい」
+;endpage
+
+;noname
+今日は明日香の誕生日。かねてから計画していたように、
+学校でささやかなパーティを開くことになった。
+;endpage
+
+;noname
+もうすっかり２人のパシリと化した俺は、
+学校が終わってすぐに自慢の愛車（ママチャリ）で
+３往復分の食料を買出しに行かされた。
+;endpage
+
+;noname
+教室の机を集めて作ったテーブルには、
+その戦利品であるお菓子やらジュースやらが大量に並んでいる。
+;endpage
+
+;noname
+ケーキも買ってある。
+ホールケーキでこそないが、１人に３つずつもある。
+それでも優希は『少ない』と言っていたが……
+;endpage
+
+;yuuki pos: "right" num: 5
+「ほら、ケーキ食べよう、明日香ちゃん！」
+;endpage
+
+;asuka pos: "left" num: 5
+「よーし、晩ご飯我慢した分だけ食べるよー！」
+;endpage
+
+;kenji
+「太るぞ貴様らー」
+;endpage
+
+- alert("TODO 同時変更")
+;yuuki pos: "right" num: 1
+;asuka pos: "left" num: 1
+;yuuki_asuka
+「なにか言った？」
+;endpage
+
+;kenji
+「なんでもないですごめんなさい」
+;endpage
+
+;every_out
+
+;noname
+二人がケーキを至福の表情で食べるのを、
+俺は少し離れたところから眺める。
+;endpage
+
+;noname
+こうして見ていると、まるで仲のいい姉妹のようだ。
+いや、優希の背が低いという意味ではない、決して。
+;endpage
+
+;noname
+会ったばかりのころはそれなりに控えめだった優希も、
+最近は明日香の影響なのかずいぶん明るくなった。
+そしてそれに比例して俺の肩身はどんどん狭くなりつつある。
+;endpage
+
+;noname
+明日香は、優希の事情をなんとなく察しているようだ。
+;endpage
+
+;noname
+屋上を訪れたときの優希の表情から、
+なにかを感じとったのかもしれない。
+明日香は意外とそういうことに気が付くタイプだ。
+;endpage
+
+;noname
+優希はというと、今も頻繁に屋上を訪れているようだった。
+しかしあの日以来、優希が貯水タンクの側にいるところは
+見ていない。
+;endpage
+
+;noname
+……まぁとにかく。
+二人が仲良くするのはとてもいいことだ、うん。
+;endpage
+
+;noname
+あとはもう少し俺にやさしくしてほしいと願うのは
+贅沢なのでしょうか。
+;endpage
+
+;asuka num: 1
+「健二～？　ぼーっとしてないで早く食べなよ」
+;endpage
+
+;noname
+明日香が笑顔で催促してくる。
+;endpage
+
+;noname
+今は難しいこと（と悲しいこと）は忘れて、
+このひとときの宴を楽しむことにしよう。
+;endpage
+
+;playse num: "22"
+;kenji
+「１番常磐健二、脱ぎます！」
+;endpage
+
+;asuka num: 3
+;fontsize size: 30
+「脱がなくていい！」
+;reset_font
+;endpage
+
+;playse num: "17"
+;quake time: 500, x: 10, y: 5
+;kenji
+「ひぎぃっ！」
+;endpage
+
+;noname
+身体をはって盛り上げる俺。ほれぼれするね。
+でもマジで痛い。
+;endpage
+
+;both_out
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+;telop
+#△ＢＧＭフェードアウト
+;fadeoutbgm
+#☆テロップ　イン
+;cb_time bg: "black"
+;cb_time bg: "class"
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;noname
+で。
+;endpage
+
+;noname
+パーティは大いに盛り上がり、
+歌って飲んで踊って食って、
+いつの間にやらアルコールが出たりして。
+;endpage
+
+;noname
+ってか誰だ、アルコール出したの。
+明日香にアルコールは厳禁なんだぞ。
+どうなってもしらねーぞ。
+;endpage
+
+;noname
+とまぁそんな感じでてんやわんやで、
+すでに収拾のつかないレベルとなっていた。
+;endpage
+
+#△ＢＧＭ２
+;playbgm num:"002"
+
+;asuka num: 5
+「け～ん～じ～！」
+;endpage
+
+;kenji
+「なんだよ～」
+;endpage
+
+;asuka pos: "left" num: 3
+「ちょっとそこに座わりなさい！
+座れ！　すぐ座れ！　座れや！」
+;endpage
+
+;kenji
+「え～、い～よ～」
+;endpage
+
+;yuuki num: 5
+「あはは、健二くん土下座してるー、
+かっこいいー」
+;endpage
+
+;kenji
+「秘技・土下座ジャンプ！」
+;endpage
+
+;noname
+ぴょん！　ぴょん！
+;endpage
+
+;yuuki pos: "right" num: 5
+「わーすごいすごーい！」
+;endpage
+
+;asuka pos: "left" num: 3
+「そんなのどうでもいいから聞け～！」
+;endpage
+
+;kenji
+「え～やだよ～」
+;endpage
+
+;asuka pos: "left" num: 4
+「ね～聞いてよ～、ねぇねぇねぇ～」
+;endpage
+
+;kenji
+「しょうがねぇなぁ、聞くわ～、ちょお聞くわ～」
+;endpage
+
+;asuka pos: "left" num: 4
+「健二さぁ、ちゃんとあたしの話聞いてる？
+っていうか、健二は普段からいい加減すぎるのよ！」
+;endpage
+
+;kenji
+「あぁ～？　このイケメン様に向かって
+ブサイクとはなんだ～、このやろ～」
+;endpage
+
+;asuka pos: "left" num: 5
+「誰がイケメンよ、このバカ健二！」
+;endpage
+
+;playse num: "18"
+;quake time: 500, x: 10, y: 5
+;kenji
+「へぶしっ！」
+;endpage
+
+;yuuki pos: "right" num: 5
+「あはは、へぶしだってー、
+関係ないけどあたしコ〇コーラ派ー」
+;endpage
+
+;asuka pos: "left" num: 5
+「優希っち、コーラはペ〇シに決まってるでしょ～が～」
+;endpage
+
+;yuuki pos: "right" num: 1
+「えー、コカ〇ーラの方がおいしーよー」
+;endpage
+
+;asuka pos: "left" num: 1
+「ペプ〇です～」
+;endpage
+
+;yuuki pos: "right" num: 3
+「コカコー〇だもん、ばかー！」
+;endpage
+
+;asuka pos: "left" num: 3
+「ばかって言うな～！」
+;endpage
+
+;playse num: "18"
+;quake time: 500, x: 10, y: 5
+;kenji
+「ペプシっ！」
+;endpage
+
+;kenji
+「なんで俺叩かれたの？！」
+;endpage
+
+;yuuki pos: "right" num: 5
+「あはは、ペプシだってー！
+あーおかしー！」
+;endpage
+
+;kenji
+「二度もぶった！
+これ以上顔が歪んじまったらどうすんだよ、
+お嫁に行けなくなるだろ！ うわーん！」
+;endpage
+
+;asuka pos: "left" num: 3
+「うるさいわね！
+そんな調子でこれから先やっていけると思うなひょ！」
+;endpage
+
+;yuuki pos: "right" num: 5
+「思うなひょ！　ひょーだって、噛んだ噛んだー」
+;endpage
+
+;asuka pos: "left" num: 3
+「こらしょこ、ヤジ飛ばしゃない！
+あんたも座れ！　すぐ座れ！」
+;endpage
+
+;yuuki pos: "right" num: 5
+「はぁーい」
+;endpage
+
+;kenji
+「グラディエイト・ジャパ～～ン！！」
+;endpage
+
+;asuka pos: "left" num: 3
+「よし、よく聞きなさいあんたたち！
+だいたいあんたたちには気合いが足りない！　根性がない！
+あたしがそのひねくれた根性たたっ切ってやる！」
+;endpage
+
+;asuka pos: "left" num: 3
+;playse num: "17"
+;fontsize size: 30
+「ずばっ！」
+;reset_font
+;endpage
+
+;yuuki pos: "right" num: 4
+「やられたー」
+;endpage
+
+;kenji
+「シェキダン！　シェキダン！」
+;endpage
+
+;asuka pos: "left" num: 3
+「ほらそこ、シェキダンうるさい！
+ずばっときたら、やられたーでしょこのへっぽこ！
+しっかりしなさいよ！」
+;endpage
+
+;kenji
+「すみません！」
+;endpage
+
+;asuka pos: "left" num: 3
+「返事はハイでしょうがへっぽこ！」
+;endpage
+
+;kenji
+「ハイ！」
+;endpage
+
+;asuka pos: "left" num: 3
+「よく聞けへっぽこ！ あんたは優希ちゃんにデレデレしすぎ
+なのよ！　なんかあたしと優希ちゃんで態度変えてない？
+もう！　たたっ切ってやる！」
+;endpage
+
+;playse num: "17"
+;asuka pos: "left" num: 3
+;fontsize size: 30
+「ずばっ！」
+;reset_font
+;endpage
+
+;kenji
+「やられたー」
+;endpage
+
+;asuka pos: "left" num: 5
+「それでいいのよへっぽこ！
+じゃあ次は健二のネタね」
+;endpage
+
+;kenji
+「お、待ってました！
+ついにとっておきのネタを披露する時が来たぜ！」
+;endpage
+
+;yuuki pos: "right" num: 5
+「いいぞー！」
+;endpage
+
+;asuka pos: "left" num: 5
+「いえ～い！」
+;endpage
+
+;playse num: "22"
+;kenji
+;fontsize size: 30
+「脱ぎます！」
+;reset_font
+;endpage
+
+;yuuki_asuka
+「脱がなくていい！」
+;endpage
+
+;kenji
+;quake time: 500, x: 10, y: 5
+;playse num: "18"
+;fontsize size: 30
+「ぺぷし！」
+;reset_font
+;endpage
+
+;both_out
+
+#△ＢＧＭフェードアウト
+;fadeoutbgm
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+;cb_time bg: "black", time: 2000
+;wait time: 1500
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;noname
+もはやパーティなのかどつき合いなのかイジメなのか
+わからなくなった頃、まずは暴れ回っていた明日香が
+眠ってしまった。
+;endpage
+
+;noname
+続いて優希も同じようにダウン。
+起きているのは俺だけになってしまった。
+;endpage
+
+;noname
+俺はその後も一人でちびちびやっていたが、
+無防備に寝る二人を見ているとどうも落ち着かないので、
+屋上で酔いを覚ますことにした。
+;endpage
+
+#△ＢＧＭ１
+;playbgm num:"001"
+#○移動　屋上
+;cb_move bg: "roof"
+
+;kenji
+「ふぅ……いつつつつ……」
+;endpage
+
+;noname
+フェンスにもたれかかるようにして、
+そのままずるずると腰を下ろす。
+;endpage
+
+;noname
+なんか色々やった気はするが、ところどころ記憶が飛んでいる。
+節々の痛みは何が原因なのかよく覚えていない。
+;endpage
+
+;noname
+ってゆーか誰だ、酒持ち込んだのは。
+明日香にアルコールはＮＧってわかってたのに、
+チクショー。
+;endpage
+
+;noname
+……あ。明日香本人か、なるほど。
+優希は酒飲むのは初めてって言ってたしな。
+まったく……今度きつーく言っておこう。
+;endpage
+
+;noname
+あぁでも、今日は誕生日だし一日くらいならいいかな。
+きつーく言うのはまた次の機会に。
+;endpage
+
+;noname
+……ビビってなんかないよ？
+;endpage
+
+;kenji
+「ま、今日は明日香も優希も楽しそうだったし、
+よかったよかった」
+;endpage
+
+;noname
+俺自身も、こんな風に騒ぐのは久々だったので、
+結構楽しかった。
+;endpage
+
+;noname
+俺は自然と緩んでしまった表情のまま、空を見上げた。
+;endpage
+
+;noname
+優希の影響か、こうして屋上にいることがすっかり日課と
+なってしまった。最近は昼間にもここに来たりする。
+夜に比べて見つかる可能性が高いから、そう易々とはこれないんだが。
+;endpage
+
+;noname
+ただ、昼間の太陽をギラギラと反射する屋上よりも、
+夜の月に優しく照らされる屋上の方が、俺は好きだ。
+;endpage
+
+;noname
+ふと、優希はどうなのだろうと思った。
+;endpage
+
+;noname
+優希がここに来ているのは月を見るためではないし、
+あまり気分よく来ているわけではないだろう。
+;endpage
+
+;noname
+でもこの風景を気に入ってくれたら、なんて。
+;endpage
+
+;noname
+そうしたら、もしかしたら優希も
+考えを改めるんじゃないかなーなんて。
+;endpage
+
+;noname
+どうなんだろうな、ホント。
+;endpage
+
+;yuuki num: 1
+「常盤くん」
+;endpage
+
+;noname
+そんなことを考えていると、本人がちょうど屋上へやってきた。
+;endpage
+
+;kenji
+「起きたのか」
+;endpage
+
+;yuuki num: 2
+「うん」
+;endpage
+
+;kenji
+「体調は大丈夫？」
+;endpage
+
+;yuuki num: 1
+「なんか頭痛い……」
+;endpage
+
+;kenji
+「初めてのくせにがぶがぶ飲むからだぞ」
+;endpage
+
+;yuuki num: 1
+「うーん、そんなに飲んだ記憶がないんだけど……
+まぁいっか。それより、飲む？」
+;endpage
+
+;kenji
+「えぇ、まだ飲むのか？」
+;endpage
+
+;yuuki num: 2
+「違うよ、ほら、コーラ」
+;endpage
+
+;kenji
+「なんだ。んじゃもらおうかな」
+;endpage
+
+;noname
+優希から冷えて汗をかいたアルミ缶を受け取りプルタブを開けると、
+プシッと炭酸が抜ける。
+;endpage
+
+;noname
+優希も同じ柄の缶を開けながら、俺の隣に座った。
+;endpage
+
+;yuuki num: 2
+「何に乾杯する？」
+;endpage
+
+;kenji
+「んじゃあ、明日香の誕生日と、
+今夜の美しい月を祝って」
+;endpage
+
+;yuuki num: 5
+「クサいよ」
+;endpage
+
+;kenji
+「うっせー」
+;endpage
+
+;yuuki num: 2
+「まぁいっか。
+それじゃあ、明日香ちゃんの誕生日と今夜の美しい月を祝って」
+;endpage
+
+;kenji
+「乾杯」
+;endpage
+
+;noname
+カコンとアルミ缶同士を軽くぶつけて、そのまま一気にあおる。
+;endpage
+
+;noname
+炭酸が喉を焼く痛みを限界まで楽しみ、口を離した。
+;endpage
+
+;kenji
+「ぷはーっ！」
+;endpage
+
+;yuuki num: 2
+「わ、いい飲みっぷり」
+;endpage
+
+;kenji
+「喉痛ぇー」
+;endpage
+
+;yuuki num: 5
+「だめじゃん」
+;endpage
+
+;kenji
+「でもやめられないんだよなー」
+;endpage
+
+;yuuki num: 2
+「あはは。ところで、なにしてたの？」
+;endpage
+
+;kenji
+「別になんにも。ただぼーっとしてた」
+;endpage
+
+;yuuki num: 5
+「そっか」
+;endpage
+
+;noname
+そう言うと、優希もコーラを一口だけ飲んだ。
+;endpage
+
+;noname
+俺を突き落とした優希とは別人のようだな、なんて思う。
+まぁ、そんなはずはないのだけれど。
+ただの俺の身勝手な願望だ。
+;endpage
+
+;noname
+俺を突き落とした優希こそが本当の三笠優希なんだ。
+彼女の願いは、ここから飛び降りることなんだ。
+;endpage
+
+;noname
+頭では分かっている。それが俺には手の届かない、
+変えようのないことだと理解している。
+;endpage
+
+;yuuki num: 2
+「今日は楽しかった」
+;endpage
+
+;noname
+優希が突然、ぽつりとそんなことを言った。
+;endpage
+
+;yuuki num: 2
+「私、なんていうのかな、こんな賑やかなのは初めてかも」
+;endpage
+
+;kenji
+「そうか。まぁ寮で生活してたらそうそうできるもんでもないしな」
+;endpage
+
+;yuuki num: 5
+「だね。だから今日はすごく楽しかった」
+;endpage
+
+;noname
+そう言って優希は、
+心からそう思っていると言わんばかりの笑顔を向けた。
+;endpage
+
+;noname
+うん。１００点をあげたいね、その笑顔。
+;endpage
+
+;kenji
+「サンキュな。
+俺だけだったら、たぶん去年と同じで、
+ただ適当なものをプレゼントして終わりだった」
+;endpage
+
+;yuuki num: 5
+「ううん、私がこういうパーティをやりたかっただけだから」
+;endpage
+
+;noname
+そして優希は、また笑った。１００点満点の笑顔。
+;endpage
+
+;noname
+だから俺は、笑顔の優希に向かって、
+言ってやることにした。
+;endpage
+
+;kenji
+「楽しい環境に身を置けば、
+自分を傷つけることができるから？」
+;endpage
+
+;noname
+我ながら意地悪な質問。
+;endpage
+
+;yuuki num: 2
+「そうだね」
+;endpage
+
+;noname
+優希は、当たり前のように言い返してきた。
+;endpage
+
+;yuuki num: 2
+「楽しい騒ぎの中に身をおけば、あらためて認識できるから。
+兄さんや家族を犠牲にして、私は生きてるんだって」
+;endpage
+
+;kenji
+「そう思ってるなら」
+;endpage
+
+;kenji
+優希がその分も生きていくべきじゃないのか。
+;endpage
+
+#ＢＧＭフェード
+;fadeoutbgm
+
+;yuuki num: 3
+「それは違うよ、健二くん」
+;endpage
+
+;noname
+優希は、まるで獲物を狙う動物のような、
+怒りのこもった目で俺をにらみつける。
+その目に射抜かれて、視線をそらすことすらできない。
+;endpage
+
+;yuuki num: 1
+「私は、生きたいなんて思ってないもの」
+;endpage
+
+;noname
+優希の言葉が見えない刃となって、容赦なく俺を切り裂く。
+言い返す隙も与えてくれない。
+;endpage
+
+;yuuki num: 1
+「私はあの事故で、みんなと一緒に死んでしまいたかった」
+;endpage
+
+;kenji
+「それは、どうして」
+;endpage
+
+;yuuki num: 2
+「家族の死という出来事を目の当たりにして、
+私はそれを受け止めた。受け止めたけど、
+耐えきれはしないから。だからだよ、常磐くん」
+;endpage
+
+;yuuki_out
+
+;noname
+最後にいつもの表情でそれだけ言ってから、
+優希はコーラの缶を片手に屋上を後にした。
+;endpage
+
+;noname
+視線から解放された俺は、深くため息をつく。
+;endpage
+
+;noname
+頭の中では、優希の口にした言葉が
+繰り返し再生され続けていた。
+;endpage
+
+;noname
+――みんなと一緒に死んでしまいたかった。
+;endpage
+
+;noname
+優希の考えていることがわからなかった。
+わかるはずもなかった。
+俺は優希と違って、生きたいと思っているのだから。
+;endpage
+
+;noname
+俺は飛び降りるためじゃなく、
+月の光を確認するためにここにいるのだから。
+;endpage
+
+;noname
+死んでも死んでやるもんか、チクショウ。
+;endpage
+
+;kenji
+「それにしても……」
+;endpage
+
+;kenji
+「……優希、起こると怖いなぁ…………」
+;endpage
+
+;noname
+かわいいフリして割とやります、三笠優希。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#☆テロップ
+;telop
+#ＢＧＭスタート
+;playbgm num:"003"
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;asuka num: 2
+「健二」
+;endpage
+
+;noname
+いつの間にか屋上に来ていた明日香の呼びかけに、
+俺は顔を上げた。
+;endpage
+
+;kenji
+「よう明日香、調子はどうだ？」
+;endpage
+
+;asuka num: 1
+「無理。頭痛い。ちょー痛い」
+;endpage
+
+;kenji
+「もうちょっと考えて飲めよ。
+お前あんまり強くないんだから」
+;endpage
+
+;asuka num: 1
+「じゃあ健二がやめさせてくれればよかったじゃん」
+;endpage
+
+;kenji
+「言ったけど聞かなかったんだろ」
+;endpage
+
+;asuka num: 1
+「記憶にない」
+;endpage
+
+;noname
+明日香は身勝手な言い分を主張しながら、
+俺の持っているものと同じ柄の缶を差し出してきた。
+;endpage
+
+;kenji
+「何に乾杯？」
+;endpage
+
+;asuka num: 2
+「さしあたって、今夜の美しい月を祝って」
+;endpage
+
+;kenji
+「クサいなー」
+;endpage
+
+;asuka num: 5
+「うっさい。クサいくらいでいいの」
+;endpage
+
+;kenji
+「だな。では、今夜の美しい月を祝って」
+;endpage
+
+;asuka num: 5
+「乾杯！」
+;endpage
+
+;noname
+明日香が勢いよく缶を逆さにして、
+ゴクゴクと喉を鳴らして炭酸飲料を飲む。
+;endpage
+
+;asuka num: 5
+「ぷはー」
+;endpage
+
+;kenji
+「いい飲みっぷり」
+;endpage
+
+;asuka num: 4
+「喉痛いー」
+;endpage
+
+;kenji
+「だめじゃん」
+;endpage
+
+;asuka num: 5
+「あはは。でもやめらんないんだよねー」
+;endpage
+
+;noname
+そう言って笑いながら、
+先ほどまで優希がいた場所に明日香は腰をおろした。
+;endpage
+
+;asuka num: 2
+「優希ちゃんとなに話してたの？」
+;endpage
+
+;kenji
+「いきなりだな。別に、ただの世間話だよ」
+;endpage
+
+;asuka num: 2
+「ホントにー？」
+;endpage
+
+;kenji
+「ホントだって」
+;endpage
+
+;asuka num: 1
+「でも優希ちゃん、なんか随分期限がよさそうだったよ？」
+;endpage
+
+;kenji
+「え？」
+;endpage
+
+;asuka num: 1
+「なんかスキップでもしそうな感じだった」
+;endpage
+
+;kenji
+「嘘だろ？」
+;endpage
+
+;noname
+そんな馬鹿な。
+さっきはたしかに、俺が色々突っ込んで聞いたせいで、
+割と怒ってたはずだ。
+;endpage
+
+;asuka num: 2
+「どうしたのって聞いたらさ、
+健二がなんか色々言ってくれたからって」
+;endpage
+
+;kenji
+「へー……」
+;endpage
+
+;noname
+どういうことだろう。
+怒ったフリだったのか？　いやそれこそあり得ない。
+もしそうだとしたらアレは怖すぎだ。女優を目指せる。
+;endpage
+
+;asuka num: 5
+「で、優希ちゃんになにを言ったの？」
+;endpage
+
+;kenji
+「なにって……いや別になにも」
+;endpage
+
+;asuka num: 1
+「ふーん……あやしいなぁ。
+なに、もしかして告白でもしたの？」
+;endpage
+
+;kenji
+「は？　告白？　誰が？」
+;endpage
+
+;asuka num: 5
+「健二が優希ちゃんに、に決まってるでしょ。
+それでどうなの？　告白したの？」
+;endpage
+
+;kenji
+「ちょっと待て。
+なぜに俺が優希に告白せねばならんのだ」
+;endpage
+
+;asuka num: 1
+「え、だって惚れてるんでしょ？」
+;endpage
+
+;kenji
+「……惚れてない」
+;endpage
+
+;kenji
+一瞬言葉に詰まったが、否定する。
+;endpage
+
+;asuka num: 2
+「ごまかさなくてもいいのに」
+;endpage
+
+;kenji
+「ごまかしてなんかない。本当に違う」
+;endpage
+
+;noname
+たしかに俺は優希と結構よく話すし、
+周りから見たらそういう風に見えるのかもしれないが。
+それを明日香に言われるのは、いささかショックだった。
+;endpage
+
+;asuka num: 1
+「なーんだ、違うのか」
+;endpage
+
+;kenji
+「ああ。本当にただの世間話」
+;endpage
+
+;asuka num: 1
+「ふーん……」
+;endpage
+
+;kenji
+「なんだ、そんなに気になんのか」
+;endpage
+
+;asuka num: 5
+「まぁね。……ほら、優希ちゃんってさ、あたしや健二に似てるじゃん」
+;endpage
+
+;kenji
+「……似てるか？」
+;endpage
+
+;asuka num: 2
+「似てるよ。お兄ちゃんがいるとことか、
+お兄ちゃんに助けてもらったとことかさ」
+;endpage
+
+;kenji
+「――」
+;endpage
+
+;noname
+お兄ちゃんに助けてもらった――
+;endpage
+
+;noname
+それは、忘れることのできない、幼いの頃の記憶。
+海で溺れた明日香と、助けようと飛び込んだ俺。
+;endpage
+
+;noname
+勇ましく飛び込んだものの、結局俺は明日香と一緒になって溺れて。
+そして俺たちは、兄さんによって命を救われた。
+;endpage
+
+;noname
+兄さん命と引き替えに。
+;endpage
+
+;kenji
+「優希のお兄さんはまだ生きてるし、最近は元気だってさ」
+;endpage
+
+;asuka num: 2
+「……まぁ、ね。
+でも、優希ちゃんは両親も亡くしてるし、さ」
+;endpage
+
+;kenji
+「それは……まぁ」
+;endpage
+
+;noname
+俺たち三人の仲が深まったのは、
+そういった似た過去を持っていることを
+なんとなく感じ取ったからなのかもしれない。
+;endpage
+
+;noname
+だけど。俺が優希に惚れるとか惚れないとか、
+そういうのに関係するかというと、
+それは違うと俺は思った。
+;endpage
+
+;noname
+……俺ロリコンじゃないし。
+ホントだよ？
+;endpage
+
+;asuka num: 2
+「だから、健二が優希ちゃんに同情して、
+くっついちゃうかなーなんて思ってたんだけど。
+違ったみたいね」
+;endpage
+
+;kenji
+「同情……」
+;endpage
+
+;asuka num: 1
+「健二は優希に同情してる？」
+;endpage
+
+;noname
+どうなんだろう。
+;endpage
+
+;noname
+優希を守って傷ついた家族と、
+守られてなお傷つく優希を思う。
+家族を失うことの意味は、俺にもわかる。
+;endpage
+
+;noname
+だけど……
+俺はあまり、優希に同情してないような気もする。
+;endpage
+
+;noname
+たぶんそれは、根本的なところで
+俺と優希が正反対だからなのだろう。
+;endpage
+
+;noname
+死にたいという願いが上回る優希。
+生きたいという強がりが上回る俺。
+;endpage
+
+;noname
+考えてもうまく答えを出せなかった。
+;endpage
+
+;asuka num: 5
+「まぁ、どっちでもいいんだけどね！」
+;endpage
+
+;noname
+明日香は勢いよく立ち上がり、
+こちらを見て、いつものように目を細めて笑った。
+;endpage
+
+;kenji
+「うし、んじゃあ後片付けするか。
+さっさとしないと朝になっちまう」
+;endpage
+
+;noname
+俺も、しんみりした空気など最初からなかったかのように、
+勢いよく立ち上がる。
+;endpage
+
+;noname
+俺はシリアスな空気が苦手なんだ。
+;endpage
+
+;asuka num: 2
+「片付けに何時間かけるつもりなのさ」
+;endpage
+
+;kenji
+「なし崩しに二次会とかになったら、
+そうなっちまうかもしれないだろ」
+;endpage
+
+;asuka num: 5
+「あー、それいいね！」
+;endpage
+
+;kenji
+「よくねー。さっさと片付けて帰るぞ」
+;endpage
+
+;asuka num: 2
+「はいはい、わかってますよ」
+;endpage
+
+;asuka_out
+
+;noname
+空き缶片手に、明日香は俺の前を歩く。
+;endpage
+
+;kenji
+「明日香」
+;endpage
+
+;noname
+屋上を出る前にふと思い立って、先を行く明日香を呼び止める。
+;endpage
+
+;asuka num: 2
+「なぁに？」
+;endpage
+
+;kenji
+「誕生日おめでとう」
+;endpage
+
+#☆明日香表情変化
+
+;asuka num: 1
+;waitmove
+
+;asuka num: 5
+;waitmove
+
+;asuka num: 5
+「あんがと！」
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#○フェードアウト　黒
+
+;cb_fade bg:"black"
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;noname
+その後は結局、危惧していたとおり二次会が始まってしまい、
+寮に帰ったのは深夜３時を回ってからだったとさ。
+;endpage
+
+;noname
+ちゃんちゃん。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#☆テロップ　イン
+;telop
+#△ＢＧＭフェードアウト
+;fadeoutbgm
+#☆ジャンプ
+
+;jump file: "scenario/12.pon"

@@ -1,0 +1,229 @@
+#	Graduaters!　～グラディエイターズ！～
+#	現在：手紙三通目、過去回想
+#		健二　明日香
+#		美術室で、三通目の手紙を手に入れる健二。
+#		『優希ちゃんのお兄さんの話を聞いたとき、びっくりしました』
+#		『だって、あたし達ととても似ていたから』
+#		『事故にあって、優希ちゃんをかばったお兄さん』
+#		『溺れる私をかばってくれた、健二のお兄ちゃん』
+#		『事故の後遺症で、癒えない傷を負った優希のお兄さん』
+#		『そして、健二のお兄ちゃん』
+#		『とても似ているとは思いませんか？』
+
+*start
+
+#■現在：手紙三通目、過去回想
+
+#☆ミニロゴ１
+
+#☆フレームカラー　オレンジ
+;set_to_orange
+#△走る
+
+;playse num: "13" loop: true
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+#MEMO ここに幼少時代の回想とか入れてもいいかも
+
+;noname
+高校３年の春に計った５０メートル走のタイムは
+何秒だったっけ？
+;endpage
+
+;noname
+平均ちょっと上のそこそこのタイムだった気がするけど、
+もう忘れてしまった。
+;endpage
+
+;noname
+って、そんなことはどうでもいい。とにかく全力で走る。
+;endpage
+
+#☆メッセージフレーム　アウト
+
+;fadeout_meslay
+#○移動　廊下
+;cb_move bg: "black"
+;cb_move bg: "hall"
+#○移動　廊下
+;cb_move bg: "black"
+;cb_move bg: "hall"
+#○移動　黒
+;cb_move bg: "black"
+#△止まる
+;stopse
+#△教室ドア
+;playse num: "08"
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+
+;kenji
+「明日香！」
+;endpage
+
+;noname
+走ってきた勢いそのままに、美術室のドアを開く。
+;endpage
+
+;noname
+…………返事はない。
+;endpage
+
+;noname
+電気……はつけられない。
+さすがに寮から明かりが見えるのはまずい。
+目が慣れるまでは手紙も見つけられない。
+;endpage
+
+;noname
+目を閉じる。
+;endpage
+
+;kenji
+「はぁ……はぁ……はぁ……っ、ふぅ……」
+;endpage
+
+;noname
+３０秒か１分か、呼吸が落ち着くまで待った後、
+ゆっくりと目を開ける。
+;endpage
+
+;noname
+あらためて見まわした美術室の風景の中で、
+黒板に貼り付けられている手紙を見つけた。
+;endpage
+
+;kenji
+「チクショウ、まだかくれんぼ続行か。
+いいかげん疲れたぞ明日香」
+;endpage
+
+;noname
+磁石で貼り付けられた手紙を救出し、中身を取り出す。
+……出せねぇ。暗くてよく見えねぇし。
+;endpage
+
+;noname
+廊下へ出よう。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#○移動　廊下
+;cb_move bg: "hall"
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+
+;noname
+月明かりの下で封筒を開け、手紙を取り出す。
+なんかビリって音がしたけど気にしない。
+;endpage
+
+;noname
+三通目の手紙は二通目までと違って、
+唐突な文章で始まっていた。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+
+#☆手紙
+;set_to_letter
+;fadein_meslay
+
+;noname
+最初に優希ちゃんのお兄さんの話を聞いたとき、すごくびっくりした。あたしたちと似ていたから。
+;endline
+
+;noname
+事故にあって優希ちゃんをかばったお兄さん。
+;endline
+
+;noname
+溺れる私を助けてくれた健二とお兄ちゃん。
+;endline
+
+;noname
+事故の後遺症で一生の傷を負った優希ちゃんのお兄さん。
+;endline
+
+;noname
+そして、健二のお兄ちゃん。
+;endline
+
+;noname
+とても似ているとは思いませんか？
+;endline
+
+#☆ここまで手紙
+
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+
+;noname
+手紙は、書き出しと同じく唐突に終わっていた。
+;endpage
+
+;noname
+おそらくこれが最後の手紙だろう。
+しかしその文面のどこにも、次の行き先は書いていなかった。
+;endpage
+
+;noname
+でもまぁ、問題ない。きっと最後はあそこだ。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#○移動　黒
+
+;cb_move bg: "black"
+#△走る
+;playse num: "13" loop: true
+#☆メッセージフレーム　イン
+
+;fadein_meslay
+;noname
+走り出す。
+;endpage
+
+;noname
+あぁ、足が痛い。腕も痛い。
+今日はやたらと走ってばかりだ。帰宅部で運動不足なんだから、
+もうちょっと手加減してくれよチクショウ。
+;endpage
+
+;noname
+身体にむち打って階段を上る。
+;endpage
+
+;noname
+どうして――と。
+そんな言葉が頭に浮かぶ。
+;endpage
+
+;noname
+どうして明日香は、こんなことをするのだろう。
+どうして明日香が、兄さんのことを知っているのだろう。
+;endpage
+
+;noname
+どうして俺たちは、こうもすれ違ってばかりなのだろう。
+;endpage
+
+;noname
+どうして俺は、いつも失敗してばかりなのだろう。
+;endpage
+
+#☆メッセージフレーム　アウト
+;fadeout_meslay
+#△止まる
+;stopse
+#☆テロップ　イン
+;telop
+
+;jump file: "scenario/16.pon"

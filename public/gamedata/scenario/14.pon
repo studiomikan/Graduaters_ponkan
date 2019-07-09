@@ -1,0 +1,159 @@
+#	Graduaters!　～グラディエイターズ！～
+
+*start
+
+#■ラジオ３
+
+;wait time: 1000, canskip: false
+
+#☆ラジオメッセージ　イン
+
+;set_to_radio_blue
+;fadein_meslay
+
+#△ＢＧＭ２
+
+;playbgm num:"002"
+
+;noname
+「たったーらたらったー♪　たったーらたらったー♪」
+;endpage
+
+;quake time: 500, x: 10, y: 5
+;playse num: "20"
+;fontsize size: 30
+;noname
+「ＤＪジョーーーーバンの！　『グラディエイト・ジャパン』！！」
+;reset_font
+;endpage
+
+;radio_mes_jump1
+;noname
+「さーて始まりました今ニホンでモットもホットでアットホームなラジオ『グラディエイト・ジャパン』のお時間でーす！」
+;endpage
+
+;quake time: 500, x: 10, y: 5
+;playse num: "20"
+;radio_mes_top
+;noname
+「お伝えするのはー、みんなのーアイドルぅー！
+ＤＪえぇぇぇジョォオオオオオバンッ！」
+;endpage
+
+;noname
+
+;radio_mes_center
+「はーいということでね、たまにはマジメに始めてみましたねーコレ、ジョバン根はマジメだからねー」
+;endpage
+
+;playse num: "21"
+;radio_mes_jump1
+;noname
+「冗談でーす！」
+;endpage
+
+;noname
+「ジョバンさー、むかーし昔、こーんなちっちゃかったころにね、仲のいい女の子がいたんだけどー」
+;endpage
+
+;radio_mes_top
+;noname
+「いきなり自分語りするなって？　はっ、いいじゃねーかコンチクショウ！　ジョバンだってたまには自分のことも話したいんだぜぇＨＡＨＡＨＡ！」
+;endpage
+
+;radio_mes_center
+;noname
+「えーっと、で、なんだっけ？　その女の子？　まぁ家が近所だったんだけど、よくお互いの家を行き来したりしてたのさー。いわゆる幼なじみってヤツ。つまりジョバン人生の勝ち組ってやつなのさー！」
+;endpage
+
+;noname
+「とまぁね、仲良かったわけだけどね、ジョバン不思議なことにその子のお父さん見たことなかったのさー」
+;endpage
+
+;radio_mes_bottom
+;noname
+「子供って残酷だよねぇ。『ねぇねぇお父さんは？』とかいっぱい聞ちゃったよねぇ。もう聞いて聞いて聞きまくったねぇ。政治家を問いただすマスコミ並だったねぇ」
+;endpage
+
+;radio_mes_center
+;noname
+「女の子のお母さんもジョバンのお母さんもも答えてくれなかったから、ジョバン直接女の子に聞いたんだねー、そしたら女の子はこう言ったんだ」
+;endpage
+
+;playse num: "24"
+;noname
+「『お父さんは、お星様になったんだって』」
+;endpage
+
+;radio_mes_jump1
+;noname
+「なんっっって定番のごまかし方！　ジョバンすべてを瞬間的に察したよー、そしてすぐ泣きそうになったよー、あのころは純情だったんだぁねぇ」
+;endpage
+
+;quake time: 500, x: 10, y: 5
+;fontsize size: 30
+;noname
+;playse num: "20"「だからなんだって話ー！」
+;reset_font
+;endpage
+
+;noname
+;radio_mes_combo1
+「よーしテンションあがってきたぁぁぁあ！　最初のお便り！　ＲＮ『仮面ライダー１０２号』さーん！　ってお前お便り多すぎだぞコラ！」
+;endpage
+
+;noname
+「『ジョバンさんおはこんばんちは』はーいおはこんばんちは！　『例のごとく知り合いの女の子が変なんです』あー例の子ね。しかし変ってお前失礼だな」
+;endpage
+
+;noname
+「『なんでも彼女はさっさと飛び降りて死んじゃいたいらしいんですが、自分のせいで幼児退行したお兄さんが入院しているのでできないそうです。こーゆーときはどう声をかけたらいいですか？』」
+;endpage
+
+;noname
+「えー、とまぁ、なんとも深刻な相談をよこしやがりましたー、仮面ライダー１０２号さんでーす。えーと、なに、この女の子になんて言えばいいのかー、だっけ？」
+;endpage
+
+;quake time: 500, x: 10, y: 5
+;fontsize size: 30
+;playse num: "20"
+;noname
+「そんなんわかるか！」
+;reset_font
+;endpage
+
+;radio_mes_combo1
+;noname
+「いぇいいぇーい！　ひゃっほーう！」
+;endpage
+
+;noname
+「え、ていうかね、そんなんこんなお便り一枚でわかるかってんだよチクショウ。ちったぁ自分で考えなこんにゃろう」
+;endpage
+
+;noname
+「っていうかこの番組はそーゆーこと話す場所じゃないの、ジョバンがおもしろおかしく話すとこなの、ＯＫ？」
+;endpage
+
+;radio_mes_jump1
+;noname
+「はーい！　ってことでね、ＣＭ明けはボイスドラマ『少女と屋上と時々ジョバン』をお送りするぜーぃ！　今のうちにポテチとコーラ用意しとけよ！」
+;endpage
+
+;playse num: "20"
+;noname
+;fontsize size: 30
+「ゲッダン！」
+;reset_font
+;endpage
+
+#☆ラジオメッセージ　アウト
+;fadeout_meslay
+
+#☆テロップ　イン
+;telop
+#△ＢＧＭフェードアウト
+;fadeoutbgm
+
+#☆ジャンプ
+;jump file: "scenario/15.pon"
