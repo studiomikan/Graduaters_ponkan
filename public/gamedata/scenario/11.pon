@@ -23,11 +23,14 @@
 「明日香、誕生日おめでとー！！」
 ;endpage
 
+;fadeout_meslay
+
 #△ＢＧＭ３
 ;playbgm num:"003"
 #○フェード　教室
-
 ;cb_fade bg: "class"
+
+;fadein_meslay
 
 ;asuka num: 5
 「ありがとう、健二、優希ちゃん」
@@ -37,7 +40,7 @@
 「おめでとう、明日香ちゃん」
 ;endpage
 
-;asuka pos: "left" num: 5
+;asuka pos: "left", num: 5
 「ありがとう、優希ちゃん」
 ;endpage
 
@@ -45,7 +48,7 @@
 「また１つおばさんに近づいたな、明日香」
 ;endpage
 
-;asuka pos: "left" num: 1
+;asuka pos: "left", num: 1
 「なにか言った？」
 ;endpage
 
@@ -75,11 +78,11 @@
 それでも優希は『少ない』と言っていたが……
 ;endpage
 
-;yuuki pos: "right" num: 5
+;yuuki pos: "right", num: 5
 「ほら、ケーキ食べよう、明日香ちゃん！」
 ;endpage
 
-;asuka pos: "left" num: 5
+;asuka pos: "left", num: 5
 「よーし、晩ご飯我慢した分だけ食べるよー！」
 ;endpage
 
@@ -88,8 +91,8 @@
 ;endpage
 
 - alert("TODO 同時変更")
-;yuuki pos: "right" num: 1
-;asuka pos: "left" num: 1
+;yuuki pos: "right", num: 1
+;asuka pos: "left", num: 1
 ;yuuki_asuka
 「なにか言った？」
 ;endpage
@@ -222,7 +225,7 @@
 「なんだよ～」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「ちょっとそこに座わりなさい！
 座れ！　すぐ座れ！　座れや！」
 ;endpage
@@ -244,11 +247,11 @@
 ぴょん！　ぴょん！
 ;endpage
 
-;yuuki pos: "right" num: 5
+;yuuki pos: "right", num: 5
 「わーすごいすごーい！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「そんなのどうでもいいから聞け～！」
 ;endpage
 
@@ -256,7 +259,7 @@
 「え～やだよ～」
 ;endpage
 
-;asuka pos: "left" num: 4
+;asuka pos: "left", num: 4
 「ね～聞いてよ～、ねぇねぇねぇ～」
 ;endpage
 
@@ -264,7 +267,7 @@
 「しょうがねぇなぁ、聞くわ～、ちょお聞くわ～」
 ;endpage
 
-;asuka pos: "left" num: 4
+;asuka pos: "left", num: 4
 「健二さぁ、ちゃんとあたしの話聞いてる？
 っていうか、健二は普段からいい加減すぎるのよ！」
 ;endpage
@@ -274,7 +277,7 @@
 ブサイクとはなんだ～、このやろ～」
 ;endpage
 
-;asuka pos: "left" num: 5
+;asuka pos: "left", num: 5
 「誰がイケメンよ、このバカ健二！」
 ;endpage
 
@@ -284,28 +287,28 @@
 「へぶしっ！」
 ;endpage
 
-;yuuki pos: "right" num: 5
+;yuuki pos: "right", num: 5
 「あはは、へぶしだってー、
 関係ないけどあたしコ〇コーラ派ー」
 ;endpage
 
-;asuka pos: "left" num: 5
+;asuka pos: "left", num: 5
 「優希っち、コーラはペ〇シに決まってるでしょ～が～」
 ;endpage
 
-;yuuki pos: "right" num: 1
+;yuuki pos: "right", num: 1
 「えー、コカ〇ーラの方がおいしーよー」
 ;endpage
 
-;asuka pos: "left" num: 1
+;asuka pos: "left", num: 1
 「ペプ〇です～」
 ;endpage
 
-;yuuki pos: "right" num: 3
+;yuuki pos: "right", num: 3
 「コカコー〇だもん、ばかー！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「ばかって言うな～！」
 ;endpage
 
@@ -319,7 +322,7 @@
 「なんで俺叩かれたの？！」
 ;endpage
 
-;yuuki pos: "right" num: 5
+;yuuki pos: "right", num: 5
 「あはは、ペプシだってー！
 あーおかしー！」
 ;endpage
@@ -330,21 +333,21 @@
 お嫁に行けなくなるだろ！ うわーん！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「うるさいわね！
 そんな調子でこれから先やっていけると思うなひょ！」
 ;endpage
 
-;yuuki pos: "right" num: 5
+;yuuki pos: "right", num: 5
 「思うなひょ！　ひょーだって、噛んだ噛んだー」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「こらしょこ、ヤジ飛ばしゃない！
 あんたも座れ！　すぐ座れ！」
 ;endpage
 
-;yuuki pos: "right" num: 5
+;yuuki pos: "right", num: 5
 「はぁーい」
 ;endpage
 
@@ -352,20 +355,20 @@
 「グラディエイト・ジャパ～～ン！！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「よし、よく聞きなさいあんたたち！
 だいたいあんたたちには気合いが足りない！　根性がない！
 あたしがそのひねくれた根性たたっ切ってやる！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 ;playse num: "17"
 ;fontsize size: 30
 「ずばっ！」
 ;reset_font
 ;endpage
 
-;yuuki pos: "right" num: 4
+;yuuki pos: "right", num: 4
 「やられたー」
 ;endpage
 
@@ -373,7 +376,7 @@
 「シェキダン！　シェキダン！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「ほらそこ、シェキダンうるさい！
 ずばっときたら、やられたーでしょこのへっぽこ！
 しっかりしなさいよ！」
@@ -383,7 +386,7 @@
 「すみません！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「返事はハイでしょうがへっぽこ！」
 ;endpage
 
@@ -391,14 +394,14 @@
 「ハイ！」
 ;endpage
 
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 「よく聞けへっぽこ！ あんたは優希ちゃんにデレデレしすぎ
 なのよ！　なんかあたしと優希ちゃんで態度変えてない？
 もう！　たたっ切ってやる！」
 ;endpage
 
 ;playse num: "17"
-;asuka pos: "left" num: 3
+;asuka pos: "left", num: 3
 ;fontsize size: 30
 「ずばっ！」
 ;reset_font
@@ -408,7 +411,7 @@
 「やられたー」
 ;endpage
 
-;asuka pos: "left" num: 5
+;asuka pos: "left", num: 5
 「それでいいのよへっぽこ！
 じゃあ次は健二のネタね」
 ;endpage
@@ -418,11 +421,11 @@
 ついにとっておきのネタを披露する時が来たぜ！」
 ;endpage
 
-;yuuki pos: "right" num: 5
+;yuuki pos: "right", num: 5
 「いいぞー！」
 ;endpage
 
-;asuka pos: "left" num: 5
+;asuka pos: "left", num: 5
 「いえ～い！」
 ;endpage
 

@@ -134,7 +134,7 @@
 ;cb_fade bg:"black", time: 2000, canskip: false
 
 #クリアフラグ
-[eval exp="sf.gameClearFlag = true"]
+- sv.gameClearFlag = true;
 
-[jump storage=title.ks target=*title_back_from_ending]
+;jump file: title.ks
 

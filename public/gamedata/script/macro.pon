@@ -157,7 +157,7 @@
   ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
-;macro name: "kenji_yuki"
+;macro name: "kenji_yuuki"
   ;echo_name name: "健二・優希"
   ;cmdsc ch: "\n", command: "br"
 ;endmacro
