@@ -11,6 +11,9 @@ switch (tv.meslay_mode) {
   case "radio_blue":
     tv.systembutton_image_prefix = "sysbtn2";
     break;
+  case "letter":
+    tv.systembutton_image_prefix = "sysbtn1";
+    break;
 }
 
 // ボタン位置、処理内容の設定
@@ -82,6 +85,80 @@ if (tv.meslay_mode.match(/radio/)) {
         imagefile:  "image/sysbtn/sysbtn-close.png",
         x:          480 + 70,
         y:          0,
+        file:       "script/system_button.pon",
+        label:      "act_close",
+        exp:        "",
+      },
+    ]
+  }
+} else if (tv.meslay_mode.match(/letter/)) {
+  // 手紙用のボタン
+  tv.systembutton = {
+    x:            1280-380,
+    y:            720-165,
+    width:        400,
+    height:       300,
+    buttons: [
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-save.png`,
+        x:          258,
+        y:          (26 + 5) * 0,
+        file:       "script/save.pon",
+        label:      "save_start",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-load.png`,
+        x:          258,
+        y:          (26 + 5) * 1,
+        file:       "script/load.pon",
+        label:      "load_start",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-config.png`,
+        x:          258,
+        y:          (26 + 5) * 2,
+        file:      "script/config.pon",
+        label:     "config_start",
+        exp:       ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-log.png`,
+        x:          258,
+        y:          (26 + 5) * 3,
+        file:       "script/system_button.pon",
+        label:      "act_log",
+        exp:        ""
+      },
+      {
+        imagefile:  `image/sysbtn/${tv.systembutton_image_prefix}-title.png`,
+        x:          258,
+        y:          (26 + 5) * 4,
+        file:       "script/system_button.pon",
+        label:      "act_title",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-auto.png",
+        x:          0,
+        y:          (26 + 5) * 4,
+        file:       "script/system_button.pon",
+        label:      "act_auto",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-skip.png",
+        x:          32,
+        y:          (26 + 5) * 4,
+        file:       "script/system_button.pon",
+        label:      "act_skip",
+        exp:        ""
+      },
+      {
+        imagefile:  "image/sysbtn/sysbtn-close.png",
+        x:          70,
+        y:          (26 + 5) * 4,
         file:       "script/system_button.pon",
         label:      "act_close",
         exp:        "",

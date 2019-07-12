@@ -114,72 +114,73 @@
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
-
+*test
+;cb_move bg: "class"
 #☆手紙
 ;set_to_letter
 ;fadein_meslay
 
-;noname
+;letter
 はい、二つめの手紙です。よく見けたね！
 ;endline
 
-;noname
+;letter
 でもあたしはいません。嘘ついてごめんね。
 ;endline
 
-;noname
+;letter
 さて、この手紙は３年の教室に置かれているはずです。
 ;endline
 
-;noname
+;letter
 結局、３年間ずっと同じクラスだったね。なんというか、ここまでくると腐れ縁も度が過ぎてるなぁと思います。
 ;endline
 
-;noname
+;letter
 私たちはずっと一緒でした。
 ;endline
 
-;noname
+;letter
 子供のころから一緒にいて、一緒に遊んで。そしてお兄ちゃんが……健二のお兄ちゃんが死んじゃってから、まるで慰めあうように、一緒の時間が増えていったような気がします。
 ;endline
 
-;noname
+;letter
 あの事故のこと、健二はどれくらい覚えていますか？
 ;endline
 
-;noname
+;letter
 健二は今でも水がダメだし、きっと、あたしよりも色々と覚えてるんだと思います。
 ;endline
 
-;noname
+;letter
 あたしも、最初はお風呂に入るのも怖かったけど、でもいつの間にか入れるようになっちゃいました。
 ;endpage
 
-;noname
+;letter
 目に見える分かりやすい『事故の痕跡』は、それくらいだった気がします。
 ;endline
 
-;noname
-でも、健二もあたしも、そういった分かりやすいこと以外いも、目に見えないところでたくさんの傷を抱えてると思います。
-;endpage
+;letter
+でも、健二もあたしも、そういった分かりやすいこと以外にも、目に見えないところでたくさんの傷を抱えてると思います。
+;endline
 
-;noname
+;letter
 あの事故の後、健二は『あたしのせいじゃない』って言ってくれたけど……
 ;endline
 
-;noname
+;letter
 でもあたしは時々、自分の命が卑しく思えてしまうのです。ここにいちゃいけないような、健二の隣にいちゃいけないような、そんな気がするのです。
 ;endline
 
-;noname
+;letter
 だけど、他ならぬ健二が支えてくれたから、今日までがんばってこれました。
 ;endline
 
-;noname
+;letter
 もしかしたら、優希ちゃんもそうだったのかなと思います。ギリギリのところで踏ん張ってて、もうダメだって時に、健二と出会ったんだと思います。
-;endline
+;endpage
 
-;noname
+;letter
 次は美術室。かならず見つけて。
 ;endpage
 
@@ -192,8 +193,9 @@
 ;cb_move bg: "hall"
 
 #△走る
-;playse num: "13" loop: true
+;playse num: "13", loop: true
 #☆メッセージフレーム　イン
+;set_to_orange
 ;fadein_meslay
 
 ;noname

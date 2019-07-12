@@ -82,6 +82,18 @@
   ;glyph_init_radio
 ;endmacro
 
+;macro name: "set_to_letter"
+  -tv.meslay_mode = "letter"
+  -tv.page = mp.page == "back" ? "back" : "fore";
+  ;currentpage page: "&tv.page"
+  ;layopt lay: "mes", page: "&tv.page", x: (1280-800)/2, y: 0
+  ;clearcolor lay: "mes", page: "&tv.page"
+  ;image lay: "mes", page: "&tv.page", file: "image/message-base5.png"
+  ;mesopt lay: "mes", page: "&tv.page", margint: 10, marginr: 50, marginb: 10, marginl: 45, lineheight: 35,
+  ;call file: "script/system_button.pon"
+  ;glyph_init_letter
+;endmacro
+
 ;macro name: "glyph_init"
   ;lbglyph "lay": "&tv.layer.line", "pos": "eol"
   ;pbglyph "lay": "&tv.layer.page", "pos": "absolute", "x": 1050, "y": 720 - 50,
@@ -90,6 +102,11 @@
 ;macro name: "glyph_init_radio"
   ;lbglyph "lay": "&tv.layer.line", "pos": "eol"
   ;pbglyph "lay": "&tv.layer.page", "pos": "relative", "x": 600, "y": 320,
+;endmacro
+
+;macro name: "glyph_init_letter"
+  ;lbglyph "lay": "&tv.layer.line", "pos": "eol"
+  ;pbglyph "lay": "&tv.layer.page", "pos": "eol"
 ;endmacro
 
 #-------------------------------------------------------------------
@@ -125,6 +142,11 @@
   ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
+;macro name: "letter"
+  ;clear lay: "speaker"
+  ;ch text: "　"
+;endmacro
+
 ;macro name: "joban"
   ;clear lay: "speaker"
   ;cmdsc ch: "\n", command: "br"
@@ -142,8 +164,14 @@
 
 
 #-------------------------------------------------------------------
-# 行末
+# 行末、ページ末尾
 #-------------------------------------------------------------------
+;macro name: "endline"
+  ;l
+  ;br
+  ;hbr
+;endmacro
+
 ;macro name: "endpage"
   ;p
   ;hbr
