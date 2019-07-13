@@ -5,8 +5,8 @@
     <title>グラディエイターズ！</title>
     <style>
       @font-face {
-        font-family: 'han_sans';
-        src: url('./fonts/SourceHanSansJP-Medium-sub.woff') format('woff')
+        font-family: 'kosugi';
+        src: url('./fonts/Kosugi-Regular-sub.woff') format('woff')
       }
       html, body {
         margin: 0;
@@ -65,7 +65,7 @@
             y: 130,
             width: 900,
             height: 500,
-            textFontFamily: ["han_sans"],
+            textFontFamily: ["kosugi"],
             textFontWeight: "normal",
             textFontSize: 26,
             textLineHeight: 26,
@@ -119,7 +119,7 @@
       });
       WebFont.load({
         classes: false,
-        custom: { families: ["han_sans"] },
+        custom: { families: ["kosugi"] },
         active: function() {
           console.log("WebFont: ", "active.");
           ponkan.start();

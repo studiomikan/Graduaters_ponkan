@@ -42,7 +42,7 @@ tv.meslay_mode = "orange";
 ;layopt lay: "speaker", x: 200, y: 720-180, width: 200, height: 40, visible: true, autohide: true
 ;messageopt {
   "lay": "speaker",
-  "fontfamily": ["han_sans", "メイリオ", "monospace"],
+  "fontfamily": ["kosugi", "メイリオ", "monospace"],
   "fontsize": 28,
   "weight": "normal",
   "color": "0xFFFFFF",
