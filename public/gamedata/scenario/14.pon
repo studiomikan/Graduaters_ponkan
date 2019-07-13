@@ -16,7 +16,8 @@
 ;playbgm num:"002"
 
 ;noname
-「たったーらたらったー♪　たったーらたらったー♪」
+「たったーらたらったー♪
+たったーらたらったー♪」
 ;endpage
 
 ;quake time: 500, x: 10, y: 5
@@ -40,9 +41,8 @@
 ＤＪえぇぇぇジョォオオオオオバンッ！」
 ;endpage
 
-;noname
-
 ;radio_mes_center
+;noname
 「はーいということでね、たまにはマジメに始めてみましたねーコレ、ジョバン根はマジメだからねー」
 ;endpage
 
@@ -93,7 +93,8 @@
 ;quake time: 500, x: 10, y: 5
 ;fontsize size: 30
 ;noname
-;playse num: "20"「だからなんだって話ー！」
+;playse num: "20"
+「だからなんだって話ー！」
 ;reset_font
 ;endpage
 

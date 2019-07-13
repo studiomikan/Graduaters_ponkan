@@ -16,6 +16,7 @@
 #☆メッセージフレーム　イン
 
 ;fadein_meslay
+;cb_fade bg: "white"
 
 ;noname
 最近ここに来るたびに面倒ごとが起きるな、
@@ -39,6 +40,7 @@
 
 #△蹴飛ばす
 
+;quake time: 500, x: 10, y: 5
 ;kenji
 「いってぇ！」
 ;endpage
@@ -58,7 +60,7 @@
 #○移動　廊下
 ;cb_move bg: "hall"
 #△走る
-;playse num: "13" loop: true
+;playse num: "13", loop: true
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -184,7 +186,7 @@
 #○フェードアウト　１５００　ｆ　白
 ;cb_fade bg:"white", time: 1500, canskip: false
 #○フェード　ｆ　屋上
-;cb_fade bg: "roof", canskip=false
+;cb_fade bg: "roof", canskip: false
 
 #○ズーム　屋上
 ;cb_fade bg: "tank"
@@ -413,7 +415,7 @@
 
 ;yuuki num: 2
 「わかんないよ、そんなの。でも兄さんの病気は、精神的な面と
-身体的な面、両方に原因が考えられるってお医者さんが言ってた。
+身体的な面、両方に原因が考あるってお医者さんが言ってた。
 だから強いショックをうければ、こういうこともあるかもね」
 ;endpage
 
@@ -476,7 +478,11 @@
 ;endpage
 
 ;yuuki num: 2
-「私にとって兄さんは足枷でしかなかった。私は飛び立ちたいのに、傷ついた兄さんが私の足をしっかりと握って飛ばせてくれなかった。病室へ行くたび私はいらだってた。なんで生きてるのって」
+「私にとって兄さんは足枷でしかなかった。傷ついた兄さんが私の足をしっかりと握ってどこへも行けなかった」
+;endpage
+
+;yuuki num: 2
+「病室へ行くたび私はいらだってた。なんでこの人は生きてるんだって」
 ;endpage
 
 ;yuuki num: 2
@@ -797,8 +803,11 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェードアウト　１５００　ｆ　白
-
-;cb_fade bg:"white", time: 1500, canskip: false
+;pretrans
+;cb bg: "white"
+;layopt lay: "asuka,yuuki", visible: "false"
+;trans time: "&mp.time != null ? mp.time : 1500", method: "crossfade"
+;waittrans "canskip": true
 #○ズーム　終了
 ;cb_fade bg: "roof"
 #☆メッセージフレーム　イン
@@ -848,7 +857,7 @@
 ;endpage
 
 ;noname
-初めは色々な噂が飛び交ったが、数日もすると何事もなかったかのように噂は静まり、みな日常に戻っていった。
+初めはいろいろな噂が飛び交ったが、数日もすると何事もなかったかのように噂は静まり、みな日常に戻っていった。
 ;endpage
 
 ;noname

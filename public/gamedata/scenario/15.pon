@@ -20,7 +20,7 @@
 ;set_to_orange
 #△走る
 
-;playse num: "13" loop: true
+;playse num: "13", loop: true
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -159,8 +159,10 @@
 ;endline
 
 #☆ここまで手紙
+;fadeout_meslay
 
 #☆メッセージフレーム　イン
+;set_to_orange
 
 ;fadein_meslay
 
@@ -183,7 +185,7 @@
 
 ;cb_move bg: "black"
 #△走る
-;playse num: "13" loop: true
+;playse num: "13", loop: true
 #☆メッセージフレーム　イン
 
 ;fadein_meslay

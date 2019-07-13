@@ -11,20 +11,19 @@
 ;set_to_radio_blue
 ;fadein_meslay
 
-;noname
 ;quake time: 500, x: 10, y: 5
-
 ;playse num: "20"
 ;fontsize size: 30
-
+;noname
 「ＤＪジョバンの！　『グラディエイト・ジャパン』！」
+;reset_font
 ;endpage
 
 #△ＢＧＭ２
 ;playbgm num:"002"
 
-;noname
 ;radio_mes_jump1
+;noname
 「さーて今日も始まりました、悩める少年少女の味方『グラディエイト・ジャパン』！　お送りするのはおなじみ俺ー、ＤＪジョバンでーす！」
 ;endpage
 
@@ -36,31 +35,26 @@
 「そんなお前たちにジョバンがありがたーい言葉をくれてやるから、耳の穴かっぽじって耳かきもしてよーく聞けよー！」
 ;endpage
 
-;noname
-
 ;quake time: 500, x: 10, y: 5
 ;playse num: "20"
-
 ;fontsize size: 30
-
+;noname
 「卒業おめでとうだコンチクショウ！」
 ;reset_font
 ;endpage
 
-;noname
-
 ;radio_mes_jump1
+;noname
 「はーい！　ってことでね、始まりましたけどね、なんかちょっと恥ずいよジョバン！　いやーん！　あぁん！」
 ;endpage
 
-;noname
 ;radio_mes_top
+;noname
 「盛り上がってきましたぁっほーーい！」
 ;endpage
 
-;noname
-
 ;radio_mes_center
+;noname
 「Ｂｙ　ｔｈｅ　ｗａｙ！　人間誰しも人に言えない秘密を持っていると、ジョバン思うんだよね」
 ;endpage
 
@@ -68,14 +62,14 @@
 「当然ジョバンにも、色々秘密ってのがあるわけだ」
 ;endpage
 
-;noname
 ;radio_mes_jump1
+;noname
 「今日はその秘密を大・公・開！　しちゃうよー！」
 ;endpage
 
+;playse num: "22"
 ;noname
-
-;playse num: "22"「一つ目！」
+「一つ目！」
 ;endpage
 
 ;noname
@@ -87,7 +81,8 @@
 ;endpage
 
 ;noname
-;playse num: "22"「二つ目！」
+;playse num: "22"
+「二つ目！」
 ;endpage
 
 ;noname
@@ -102,9 +97,9 @@
 「いつか歌って踊って泳げるＮｅｗジョバンになってみせるゼ！　いやっほう！」
 ;endpage
 
+;playse num: "22"
 ;noname
-
-;playse num: "22"「三つ目！」
+「三つ目！」
 ;endpage
 
 ;noname
@@ -115,14 +110,14 @@
 「いやー夜の学校というのは不思議なもんで、なんというかこう自然とセンチメンタルな気分になっちゃうのよねー、あらいやだわオホホ」
 ;endpage
 
-;noname
 ;radio_mes_jump1
+;noname
 「夜な夜な集まる不思議な三人組の話は、まぁまた機会があったら話してやっから期待しとけよ！　チェケラ！」
 ;endpage
 
+;playse num: "22"
 ;noname
-
-;playse num: "22"「そして四つ目！」
+「そして四つ目！」
 ;endpage
 
 ;noname

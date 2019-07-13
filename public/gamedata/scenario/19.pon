@@ -107,10 +107,6 @@
 「おう」
 ;endpage
 
-#;noname
-俺はメモリを窓の外に投げ捨てる。さよならジョバン、グッバイブラザー。
-;endpage
-
 ;noname
 俺は返事をして立ち上がりながら、窓からメモリーカードを投げ捨てた。
 ;endpage
@@ -127,14 +123,17 @@
 そうして俺たちは、今度こそ、俺たちの学校を後にした。
 ;endpage
 
+;every_out
+
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #フェードアウト
-
 ;cb_fade bg:"black", time: 2000, canskip: false
 
 #クリアフラグ
 - sv.gameClearFlag = true;
 
-;jump file: title.ks
-
+;freeimage lay: "asuka,yuuki"
+;freeimage lay: "asuka,yuuki", page: "back"
+;layopt lay: "asuka,yuuki", visible: false
+;jump file: "scenario/title.pon"

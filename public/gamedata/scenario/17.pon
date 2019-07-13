@@ -18,7 +18,7 @@
 ;set_to_orange
 #△走る
 
-;playse num: "13" loop: true
+;playse num: "13", loop: true
 #○フェード　廊下
 ;cb_fade bg: "hall"
 #☆メッセージフレーム　イン
@@ -260,12 +260,8 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○フェードアウト　黒
-
 ;cb_fade bg:"black"
-#○ズーム　終了
-;cb_fade bg: "roof"
 #☆メッセージフレーム　イン
-
 ;fadein_meslay
 
 ;noname
@@ -329,7 +325,7 @@
 ;endpage
 
 #○フェード　ズーム屋上
-[fadeInZoomRoof]
+;cb_fade bg: "tank"
 
 ;asuka num: 1
 「もう何年もあのままなの？」
@@ -528,13 +524,8 @@
 
 ;fadeout_meslay
 #○フェード　ズーム屋上
-[backlay]
-[myZoom storage=roof layer=0  page=back visible=true top=-50 left=-100 wr=2.0 hr=2.0]
-[image layer="1" page="back" storage="chara_A01" pos=center visible="true" opacity=255]
-[trans method=crossfade time=1000]
-[wt canskip=false]
-[eval exp="f.flagZoom = true"]
-#;fadein_meslay
+;cb_fade bg: "tank"
+;fadein_meslay
 
 ;kenji
 「馬鹿言うんじゃねぇよ」
@@ -729,11 +720,8 @@
 ;endpage
 
 ;kenji
-
 ;fontsize size: 15
-
 「……好きだ」
-
 ;reset_font
 ;endpage
 
@@ -749,11 +737,9 @@
 「す？」
 ;endpage
 
-;kenji
 ;playse num: "20"
-
+;kenji
 ;fontsize size: 30
-
 「すきやき」
 ;reset_font
 ;endpage
@@ -762,23 +748,20 @@
 「ていっ！」
 ;endpage
 
-;kenji
 ;quake time: 500, x: 10, y: 5
-
-;playse num: "17"「ひぎぃ！」
+;playse num: "17"
+;kenji
+「ひぎぃ！」
 ;endpage
 
 ;asuka num: 5
 「もっかい」
 ;endpage
 
-;kenji
-
 ;playse num: "22"
 ;fontsize size: 30
-
+;kenji
 「好きだ！」
-
 ;reset_font
 ;endpage
 
@@ -976,16 +959,13 @@
 
 ;clear_name
 ;asuka num: 2
-
 ;waitmove canskip: false
 ;asuka num: 5
-
 ;waitmove canskip: false
-
+;clear
 ;asuka num: 5
 「ばーか！」
 ;endpage
-
 ;asuka_out
 
 ;noname
@@ -995,15 +975,10 @@
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #☆テロップ　イン
-
 ;telop
 #ＢＧＭフェードアウト
 ;fadeoutbgm
-#○フェードアウト　１５００　ｆ　黒
-[FadeOutBlack time=1500 canskip=false]
 #エンディング
-[call storage=ed.ks]
+-alert("TODO エンディング");
 #ジャンプ
-
 ;jump file: "scenario/18.pon"
-
