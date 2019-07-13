@@ -32,11 +32,11 @@
 
 ;fadein_meslay
 
-;asuka num: 5
+;asuka pos: "left", num: 5
 「ありがとう、健二、優希ちゃん」
 ;endpage
 
-;yuuki num: 5
+;yuuki pos: "right", num: 5
 「おめでとう、明日香ちゃん」
 ;endpage
 
@@ -90,10 +90,7 @@
 「太るぞ貴様らー」
 ;endpage
 
-- alert("TODO 同時変更")
-;yuuki pos: "right", num: 1
-;asuka pos: "left", num: 1
-;yuuki_asuka
+;yuuki_asuka ypos: "right", ynum: 1, apos: "left", anum: 1
 「なにか言った？」
 ;endpage
 
@@ -180,11 +177,10 @@
 でもマジで痛い。
 ;endpage
 
-;both_out
+;every_out
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
-;telop
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
 #☆テロップ　イン
@@ -217,7 +213,7 @@
 #△ＢＧＭ２
 ;playbgm num:"002"
 
-;asuka num: 5
+;asuka pos: "left", num: 5
 「け～ん～じ～！」
 ;endpage
 
@@ -234,7 +230,7 @@
 「え～、い～よ～」
 ;endpage
 
-;yuuki num: 5
+;yuuki pos: "right", num: 5
 「あはは、健二くん土下座してるー、
 かっこいいー」
 ;endpage
@@ -387,7 +383,7 @@
 ;endpage
 
 ;asuka pos: "left", num: 3
-「返事はハイでしょうがへっぽこ！」
+「返事はハイだろ、へっぽこ！」
 ;endpage
 
 ;kenji
@@ -395,8 +391,8 @@
 ;endpage
 
 ;asuka pos: "left", num: 3
-「よく聞けへっぽこ！ あんたは優希ちゃんにデレデレしすぎ
-なのよ！　なんかあたしと優希ちゃんで態度変えてない？
+「よく聞けへっぽこ！　あんた優希ちゃんにデレデレしすぎなのよ！
+なんかあたしと優希ちゃんで態度変えてない？
 もう！　たたっ切ってやる！」
 ;endpage
 
@@ -436,7 +432,7 @@
 ;reset_font
 ;endpage
 
-;yuuki_asuka
+;yuuki_asuka ypos: "right", ynum: 3, apos: "left", anum: 3
 「脱がなくていい！」
 ;endpage
 
@@ -448,7 +444,7 @@
 ;reset_font
 ;endpage
 
-;both_out
+;every_out
 
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
@@ -471,7 +467,7 @@
 ;endpage
 
 ;noname
-俺はその後も一人でちびちびやっていたが、
+一人でちびちびやっていたものの、
 無防備に寝る二人を見ているとどうも落ち着かないので、
 屋上で酔いを覚ますことにした。
 ;endpage
@@ -496,7 +492,7 @@
 ;endpage
 
 ;noname
-ってゆーか誰だ、酒持ち込んだのは。
+っていうか誰だ、酒持ち込んだのは。
 明日香にアルコールはＮＧってわかってたのに、
 チクショー。
 ;endpage
@@ -533,7 +529,7 @@
 ;noname
 優希の影響か、こうして屋上にいることがすっかり日課と
 なってしまった。最近は昼間にもここに来たりする。
-夜に比べて見つかる可能性が高いから、そう易々とはこれないんだが。
+夜より見つかる可能性が高いから、そう頻繁には無理だが。
 ;endpage
 
 ;noname
@@ -712,7 +708,7 @@
 ;endpage
 
 ;yuuki num: 2
-「私、なんていうのかな、こんな賑やかなのは初めてかも」
+「私、なんていうか、こんな賑やかなのは初めてかも」
 ;endpage
 
 ;kenji
@@ -777,8 +773,8 @@
 「そう思ってるなら」
 ;endpage
 
-;kenji
-優希がその分も生きていくべきじゃないのか。
+;noname
+優希がその分も生きていくべきじゃないのか、と。
 ;endpage
 
 #ＢＧＭフェード
@@ -866,8 +862,8 @@
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
-#☆テロップ
-;telop
+;cb_time bg: "black"
+;cb_time bg: "roof"
 #ＢＧＭスタート
 ;playbgm num:"003"
 #☆メッセージフレーム　イン
@@ -1266,13 +1262,14 @@
 
 ;asuka num: 1
 ;waitmove
-
 ;asuka num: 5
 ;waitmove
-
+;clear
 ;asuka num: 5
 「あんがと！」
 ;endpage
+
+;every_out
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay

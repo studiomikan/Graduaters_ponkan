@@ -42,7 +42,7 @@ tv.meslay_mode = "orange";
 ;layopt lay: "speaker", x: 200, y: 720-180, width: 200, height: 40, visible: true, autohide: true
 ;messageopt {
   "lay": "speaker",
-  "fontfamily": ["mplus", "メイリオ", "monospace"],
+  "fontfamily": ["han_sans", "メイリオ", "monospace"],
   "fontsize": 28,
   "weight": "normal",
   "color": "0xFFFFFF",
@@ -73,7 +73,7 @@ tv.meslay_mode = "orange";
 #;set_to_blue
 #;fadein_meslay
 #;jump file: "scenario/04.pon"
-;jump file: "scenario/11.pon"
+;jump file: "scenario/12.pon"
 ;s
 
 # サークルロゴ表示
