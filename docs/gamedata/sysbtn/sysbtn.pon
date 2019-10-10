@@ -1,0 +1,259 @@
+#=========================================================================================
+# システムボタン
+#
+# 「設定」の部分で使用するレイヤー、背景画像等を設定して使用してください。
+# このスクリプトを実行すると、レイヤーエイリアスに sysbtn が追加されます。
+#=========================================================================================
+
+#==========================================
+# ▼▼ 設定 ここから ▼▼
+#==========================================
+---
+var lay = 24;
+var color = "orange";
+switch (tv.mes_type) {
+  case "orange": case "orange_radio": case "letter":
+    color = "orange"
+    break;
+  case "blue": case "blue_radio":
+    color = "blue"
+    break;
+}
+tv.sysbtn_settings = {
+  // orange or blue
+  normal: {
+    lay: lay,
+    x: 1280-230,
+    y: 720-165,
+    width: 300,
+    height: 300,
+    buttons: [
+      {
+        image: "sysbtn/sysbtn-" + color + "-save.png",
+        file:  "saveload/save.pon",
+        label: "save_start",
+        x:     108,
+        y:     31 * 0,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-load.png",
+        file:  "saveload/load.pon",
+        label: "load_start",
+        exp:   "",
+        x:     108,
+        y:     31 * 1,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-config.png",
+        file:  "config/config.pon",
+        label: "config_start",
+        exp:   "",
+        x:     108,
+        y:     31 * 2,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-log.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_log",
+        exp:   "",
+        x:     108,
+        y:     31 * 3,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-title.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_title",
+        exp:   "",
+        x:     108,
+        y:     31 * 4,
+      },
+      {
+        image: "sysbtn/sysbtn-auto.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_auto",
+        exp:   "",
+        x:     0,
+        y:     0,
+      },
+      {
+        image: "sysbtn/sysbtn-skip.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_skip",
+        exp:   "",
+        x:     32,
+        y:     0,
+      },
+      {
+        image: "sysbtn/sysbtn-close.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_close",
+        exp:   "",
+        x:     70,
+        y:     0,
+      },
+    ]
+  },
+  // orange_radio or blue_radio or radio
+  bottom: {
+    lay: lay,
+    x: (1280-685)/2 + 10,
+    y: 720-40,
+    width: 1000,
+    height: 60,
+    buttons: [
+      {
+        image: "sysbtn/sysbtn-" + color + "-save.png",
+        file:  "saveload/save.pon",
+        label: "save_start",
+        x:     (110 + 5) * 0,
+        y:     0,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-load.png",
+        file:  "saveload/load.pon",
+        label: "load_start",
+        exp:   "",
+        x:     (110 + 5) * 1,
+        y:     0,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-config.png",
+        file:  "config/config.pon",
+        label: "config_start",
+        exp:   "",
+        x:     (110 + 5) * 2,
+        y:     0,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-log.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_log",
+        exp:   "",
+        x:     (110 + 5) * 3,
+        y:     0,
+      },
+      {
+        image: "sysbtn/sysbtn-" + color + "-title.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_title",
+        exp:   "",
+        x:     (110 + 5) * 4,
+        y:     0,
+      },
+      {
+        image: "sysbtn/sysbtn-auto.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_auto",
+        exp:   "",
+        x:     (110 + 5) * 5 + 10,
+        y:     2,
+      },
+      {
+        image: "sysbtn/sysbtn-skip.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_skip",
+        exp:   "",
+        x:     (110 + 5) * 5 + 10 + 32,
+        y:     2,
+      },
+      {
+        image: "sysbtn/sysbtn-close.png",
+        file:  "sysbtn/sysbtn.pon",
+        label: "act_close",
+        exp:   "",
+        x:     (110 + 5) * 5 + 10 + 70,
+        y:     2,
+      },
+    ]
+  },
+};
+switch (tv.mes_type) {
+  case "orange": case "blue":
+    tv.sysbtn = tv.sysbtn_settings.normal;
+    break;
+  default:
+    tv.sysbtn = tv.sysbtn_settings.bottom;
+    break;
+}
+---
+#==========================================
+# ▲▲ 設定 ここまで ▲▲
+#==========================================
+
+# エイリアス設定
+;layalias name: "sysbtn", lay: "&tv.sysbtn.lay"
+;clearbuttons lay: "sysbtn"
+
+# 親レイヤ指定
+;layopt {
+  lay:          "&tv.sysbtn.lay",
+  x:            "&tv.sysbtn.x",
+  y:            "&tv.sysbtn.y",
+  width:        "&tv.sysbtn.width",
+  height:       "&tv.sysbtn.height",
+  visible:      true,
+  autohide:     true,
+}
+
+# ボタン配置
+- tv.x = 0
+;layopt lay: "&tv.sysbtn.lay", visible: false
+;for loops: "&tv.sysbtn.buttons.length", indexvar: "i"
+  - tv.button = tv.sysbtn.buttons[tv.i];
+  ;imagebutton {
+    lay:          "&tv.sysbtn.lay",
+    imagefile:    "&tv.button.image",
+    x:            "&tv.button.x",
+    y:            "&tv.button.y",
+    exp:          "&tv.button.exp",
+    jump:         false,
+    call:         true,
+    file:         "&tv.button.file",
+    label:        "&tv.button.label",
+    system:       true
+  }
+;endfor
+
+;return
+;s
+
+
+# セーブ
+*act_save
+- alert('save');
+;return
+
+# ロード
+*act_load
+- alert('load');
+;return
+
+# スキップ
+*act_skip
+;startskip
+;return forcestart: true
+
+# オート
+*act_auto
+;startautomode
+;return forcestart: true
+
+# ログ
+*act_log
+;showhistory
+;return
+
+# コンフィグ
+*act_config
+- alert('config');
+;return
+
+# メッセージレイヤを隠す
+*act_close
+;hidemessages
+;return
+
+# タイトルに戻る
+*act_title
+-alert("TODO タイトルに戻る");
+;return

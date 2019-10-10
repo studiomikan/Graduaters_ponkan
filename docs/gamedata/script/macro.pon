@@ -1,0 +1,479 @@
+#-------------------------------------------------------------------
+# 基本
+#-------------------------------------------------------------------
+
+;macro name: "lbr"
+  ;linebreak
+  ;br
+;endmacro
+
+;macro name: "pcl"
+  ;pagebreak
+  ;clear
+;endmacro
+
+
+#-------------------------------------------------------------------
+# メッセージ関連
+#-------------------------------------------------------------------
+---
+// orange: オレンジ、通常
+// blue: ブルー、通常
+// orange_radio: オレンジ、ラジオ用
+// blue_radio: ブルー、ラジオ用
+// letter: 手紙
+tv.mes_type = "orange"
+---
+;macro name: "mes_orange"
+  - tv.mes_type = "orange"
+  ;image lay: "mes", file: "image/mes-orange.png"
+  ;layopt lay: "mes", x: 0, y: 720-200
+  ;mesopt lay: "mes", marginl: (1280-800)/2, marginr: (1280-800)/2, margint: 65
+  ;clear lay: "mes"
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_blue"
+  - tv.mes_type = "blue"
+  ;image lay: "mes", file: "image/mes-blue.png"
+  ;layopt lay: "mes", x: 0, y: 720-200
+  ;mesopt lay: "mes", marginl: (1280-800)/2, marginr: (1280-800)/2, margint: 65
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_orange_radio"
+  - tv.mes_type = "orange_radio"
+  ;image lay: "mes", file: "image/mes-orange-radio.png"
+  ;layopt lay: "mes", x: (1280-640)/2, y: (720-360)/2
+  ;mesopt lay: "mes", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_blue_radio"
+  - tv.mes_type = "blue_radio"
+  ;image lay: "mes", file: "image/mes-blue-radio.png"
+  ;layopt lay: "mes", x: (1280-640)/2, y: (720-360)/2
+  ;mesopt lay: "mes", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_letter"
+  - tv.mes_type = "letter"
+  ;layopt lay: "mes", x: (1280-800)/2, y: 0
+  ;image lay: "mes", file: "image/mes-letter.png"
+  ;mesopt lay: "mes", margint: 10, marginr: 50, marginb: 10, marginl: 45, lineheight: 35,
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "init_glyph"
+  ;if exp: "tv.mes_type == 'orange' || tv.mes_type == 'blue'"
+    ;lbglyph "pos": "eol"
+    ;pbglyph "pos": "absolute", "x": 1050, "y": 720 - 50,
+  ;elsif exp: "tv.mes_type == 'orange_radio' || tv.mes_type == 'orange_blue'"
+    ;lbglyph "pos": "eol"
+    ;pbglyph "pos": "relative", "x": 600, "y": 320,
+  ;else
+    ;lbglyph "pos": "eol"
+    ;pbglyph "pos": "eol"
+  ;endif
+;endmacro
+
+;macro name: "show_meslay"
+  ;layopt lay: "message, speaker, sysbtn", visible: true
+;endmacro
+
+;macro name: "hide_meslay"
+  ;layopt lay: "message, speaker, sysbtn", visible: false
+;endmacro
+
+;macro name: "fadein_meslay"
+  ;pretrans
+  ;show_meslay
+  ;clear lay: "message, speaker, sysbtn"
+  ;trans time: 300
+  ;waittrans canskip: false
+;endmacro
+
+;macro name: "fadeout_meslay"
+  ;pretrans
+  ;hide_meslay
+  ;clear lay: "message, speaker, sysbtn"
+  ;trans time: 300
+  ;waittrans canskip: false
+;endmacro
+
+
+
+;macro name: "print_name"
+  - console.log("print_name", mp);
+  ;clear lay: "speaker"
+  ;ch lay: "speaker", text: "&mp.name"
+  ;hch text: "&'【' + mp.name + '】'"
+  ;hbr
+  ;cmdsc ch: "\n", command: "br"
+  #;layopt lay: "speaker", visible: true
+;endmacro
+
+;macro name: "clear_name"
+  ;clear lay: "speaker"
+;endmacro
+
+;macro name: "noname"
+  ;clear lay: "speaker"
+;endmacro
+
+;macro name: "joban"
+  ;noname
+;endmacro
+
+;macro name: "letter"
+  ;noname
+  ;ch text: "　"
+;endmacro
+
+;macro name: "endline"
+  ;linebreak
+  ;br
+  ;hbr
+;endmacro
+
+;macro name: "endpage"
+  ;pagebreak
+  ;hbr
+  ;clear lay: "mes, speaker"
+  ;delcmdsc ch: "\n"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# キャラクター（立ち絵）関連
+#-------------------------------------------------------------------
+
+;macro name: "kenji"
+  ;print_name name: "健二"
+;endmacro
+
+---
+// データ
+tv.positionInfo = {
+  medium: {
+    left:   (1280/12)*4,
+    center: 1280/2,
+    right:  (1280/12)*8,
+  },
+  large: {
+    left:   (1280/12)*4,
+    center: 1280/2,
+    right:  (1280/12)*8,
+  }
+};
+tv.charaInfo = {
+  asuka: {
+    medium: [
+      { file: "image/chara/asuka-m-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-m-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-m-03.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-m-04.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-m-05.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+    ],
+    large: [
+      { file: "image/chara/asuka-l-01.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-l-02.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-l-03.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-l-04.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-l-05.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+    ],
+  },
+  yuuki: {
+  }
+};
+tv.nameInfo = {
+  asuka: "明日香",
+  yuuki: "優希",
+}
+---
+
+# キャラ読み込み
+# @param name キャラクターの名前。asuka or yuuki
+# @param size キャラクターのサイズ。medium or large
+# @param num キャラクターの立ち絵の番号。1～5
+# @param pos キャラクターの位置。left or center or right
+;macro name: "load_chara"
+  ---
+    var pos = tv.positionInfo[mp.size][mp.pos];
+    var chara = tv.charaInfo[mp.name][mp.size][mp.num - 1];
+    tv.lay = mp.name;
+    tv.file = chara.file;
+    tv.x = pos - (chara.width / 2) + chara.offsetX;
+    tv.y = chara.offsetY;
+  ---
+  ;image lay: "&tv.lay", file: "&tv.file", x: "&tv.x", y: "&tv.y", visible: true
+;endmacro
+
+# キャラクターの新規読み込み or 切り替え
+# 新規読み込み時は 500ms
+# 切り替え時は 200ms
+# @param name キャラクターの名前。asuka or yuuki
+# @param size キャラクターのサイズ。medium or large
+# @param num キャラクターの立ち絵の番号。1～5
+# @param pos キャラクターの位置。left or center or right
+;macro name: "chara"
+  ---
+    // レイヤーを取得して、すでに表示状態であれば入れ替え(move)
+    // 非表示 or 画像がないなら初回表示(trans)
+    var lay = mp.name;
+    var ponLayer = ponkan.getLayers({lay: lay})[0];
+    var isFirst = ponLayer.image == null || !ponLayer.visible;
+    tv.time = isFirst ? 500 : 200;
+    tv.nameText = tv.nameInfo[mp.name];
+  ---
+  ;pretrans
+  ;load_chara name: "&mp.name", size: "&mp.size", num: "&mp.num", pos: "&mp.pos"
+  ;trans time: "&tv.time"
+  ;waittrans
+  ;print_name name: "&tv.nameText"
+;endmacro
+
+# asuka
+## asuka-medium
+### asuka-medium-center
+;macro name: "asuka-m-c-1"
+  ;chara name: "asuka", size: "medium", pos: "center", num: "1"
+;endmacro
+;macro name: "asuka-m-c-2"
+  ;chara name: "asuka", size: "medium", pos: "center", num: "2"
+;endmacro
+;macro name: "asuka-m-c-3"
+  ;chara name: "asuka", size: "medium", pos: "center", num: "3"
+;endmacro
+;macro name: "asuka-m-c-4"
+  ;chara name: "asuka", size: "medium", pos: "center", num: "4"
+;endmacro
+;macro name: "asuka-m-c-5"
+  ;chara name: "asuka", size: "medium", pos: "center", num: "5"
+;endmacro
+### asuka-medium-left
+;macro name: "asuka-m-l-1"
+  ;chara name: "asuka", size: "medium", pos: "left", num: "1"
+;endmacro
+;macro name: "asuka-m-l-2"
+  ;chara name: "asuka", size: "medium", pos: "left", num: "2"
+;endmacro
+;macro name: "asuka-m-l-3"
+  ;chara name: "asuka", size: "medium", pos: "left", num: "3"
+;endmacro
+;macro name: "asuka-m-l-4"
+  ;chara name: "asuka", size: "medium", pos: "left", num: "4"
+;endmacro
+;macro name: "asuka-m-l-5"
+  ;chara name: "asuka", size: "medium", pos: "left", num: "5"
+;endmacro
+## asuka-large
+### asuka-large-center
+;macro name: "asuka-l-c-1"
+  ;chara name: "asuka", size: "large", pos: "center", num: "1"
+;endmacro
+;macro name: "asuka-l-c-2"
+  ;chara name: "asuka", size: "large", pos: "center", num: "2"
+;endmacro
+;macro name: "asuka-l-c-3"
+  ;chara name: "asuka", size: "large", pos: "center", num: "3"
+;endmacro
+;macro name: "asuka-l-c-4"
+  ;chara name: "asuka", size: "large", pos: "center", num: "4"
+;endmacro
+;macro name: "asuka-l-c-5"
+  ;chara name: "asuka", size: "large", pos: "center", num: "5"
+;endmacro
+### asuka-large-left
+;macro name: "asuka-l-l-1"
+  ;chara name: "asuka", size: "large", pos: "left", num: "1"
+;endmacro
+;macro name: "asuka-l-l-2"
+  ;chara name: "asuka", size: "large", pos: "left", num: "2"
+;endmacro
+;macro name: "asuka-l-l-3"
+  ;chara name: "asuka", size: "large", pos: "left", num: "3"
+;endmacro
+;macro name: "asuka-l-l-4"
+  ;chara name: "asuka", size: "large", pos: "left", num: "4"
+;endmacro
+;macro name: "asuka-l-l-5"
+  ;chara name: "asuka", size: "large", pos: "left", num: "5"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 効果音関係
+#-------------------------------------------------------------------
+;macro name: "playse"
+  ---
+    tv.file = "sound/se" + mp.num + ".ogg";
+    tv.loop = mp.loop != null ? mp.loop : false;
+  ---
+  ;loadsound buf: "se", "file": "&tv.file"
+  ;soundopt buf: "se", volume: 1, loop: "&tv.loop"
+  ;playsound buf: "se"
+;endmacro
+
+;macro name: "stopse"
+  ;stopsound buf: "se"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# BGM再生
+#-------------------------------------------------------------------
+;macro name: "playbgm"
+  ---
+    tv.file = "sound/bgm" + mp.num + ".ogg";
+  ---
+  ;loadsound buf: "bgm", "file": "&tv.file"
+  ;soundopt buf: "bgm", volume: 1, loop: true
+  ;playsound buf: "bgm"
+;endmacro
+
+;macro name: "stopbgm"
+  ;stopsound buf: "bgm"
+;endmacro
+
+;macro name: "fadeoutbgm"
+  ;fadeoutsound buf: "bgm", time: 1000
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出 ミニテロップイン -> アウト
+#-------------------------------------------------------------------
+;macro name: "minitelop"
+  ;layopt lay: "all", visible: false
+  # イン
+  ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
+  ;layopt lay: "telop", alpha: 0
+  ;move lay: "telop", time: 500, path: [{x: 788, y: 562, alpha: 1}], ease: "out"
+  ;waitmove canskip: false
+  ;wait time: 1000, canskip: false
+  # アウト
+  ;move lay: "telop", time: 500, path: [{x: 788-20, y: 562, alpha: 0}], ease: "out"
+  ;waitmove canskip: false
+  ;freeimage lay: "telop"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出 テロップにフェード -> ブラックアウト
+#-------------------------------------------------------------------
+;macro name: "telop"
+  # フェード
+  ;pretrans
+  ;layopt lay: "all", visible: false
+  ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
+  ;trans time: 2000
+  ;waittrans canskip: false
+  ;wait time: 200, canskip: false
+  # アウト
+  ;pretrans
+  ;image lay: "base", file: "image/black.png"
+  ;layopt lay: "telop", visible: false
+  ;trans time: 2000
+  ;waittrans canskip: false
+  ;wait time: 1000, canskip: false
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出 ラジオ
+#-------------------------------------------------------------------
+;macro name: "radio_mes_jump1"
+  ;move {
+    lay: "mes",
+    time: "75",
+    ease: "out",
+    path: [
+      {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_combo1"
+  ;move {
+    lay: "mes",
+    time: "250",
+    ease: "out",
+    type: "catmullrom",
+    path: [
+      {x: 50, y: 50, alpha: 1},
+      {x: 1280-640-50, y: 50, alpha: 1},
+      {x: 50, y: 720-315-50, alpha: 1},
+      {x: 1280-640-50, y: 720-360-50, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_top"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: (720-360)/2-50, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_right"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: 1280-640-50, y: (720-360)/2, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_bottom"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: 720-360-50, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_left"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: 50, y: (720-360)/2, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_center"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: (720-360)/2, alpha: 1} ],
+  }
+;endmacro
+
+
+
+;return
