@@ -13,7 +13,7 @@
 
 
 #☆フレームカラー　オレンジ
-;set_to_orange
+;mes_orange
 
 #○フェード　屋上
 ;cb_fade bg: "roof"

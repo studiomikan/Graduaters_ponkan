@@ -9,7 +9,7 @@
 #■現在：かくれんぼ二回目・健二発見、鬼交代
 
 #☆フレームカラー　オレンジ
-;set_to_orange
+;mes_orange
 #☆メッセージフレーム　イン
 ;fadein_meslay
 #△歩く

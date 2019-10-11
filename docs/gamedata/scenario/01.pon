@@ -2,31 +2,31 @@
 # Graduaters!　～グラディエイターズ！～
 #
 
-|オープニング
+~オープニング
 
 #☆フレームカラー　オレンジ
-;set_to_orange
-
+;mes_orange
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-;noname
+#;noname
 人間、誰しも人に言えない秘密を持っていると、俺は思う。
 ;endpage
 
 ;noname
 『実は幼馴染のあの子が好きだー』とか、
-『家だと下着一枚だー』とか、まぁ、そういう類のものだ。
+『家だと下着一枚だー』とか、まぁ、そういうの。
 ;endpage
 
 ;noname
-秘密って言っても 内容は様々だろう。
-でも、当人にとって重要なことだからこそ、
+秘密って言っても、内容はいろいろあるだろう。
+だけど、当人にとって重要なことだからこそ、
 秘密は秘密なのだ。
 ;endpage
 
 ;noname
-だからきっと、秘密のない人間なんて絵本の中にしかいない。
+だからきっと、秘密のない人間なんて
+絵本の中にしかいない……なんて、俺は思うんだ。
 ;endpage
 
 ;noname
@@ -66,7 +66,7 @@
 ;endpage
 
 ;noname
-それからというもの、どうにも水が恐ろしくなり、
+それからというもの、どうにも水が怖くて、
 さっぱり泳げなくなったというわけだ。
 ;endpage
 
@@ -78,6 +78,10 @@
 
 ;noname
 そして３つ目の秘密。
+;endpage
+
+;noname
+これは結構、重大な秘密なんだが――
 ;endpage
 
 ;noname
@@ -101,7 +105,7 @@
 
 ;noname
 時刻は午後９時少し前。
-寮も門限をすぎ、教職員も全員帰宅したころ。
+寮の門限はとっくに過ぎて、教職員も全員帰宅したころ。
 ;endpage
 
 #△着地音
@@ -114,7 +118,7 @@
 
 ;noname
 今日は宿直の先生もいないはずなので、
-忍び込みさえすれば安全だ。
+校舎に入りさえすれば安全だ。
 ;endpage
 
 ;noname
@@ -236,10 +240,9 @@
 
 #○フェード　白（屋上、明日香）
 ;pretrans
-;layopt lay: "filter", x: 0, y: 0, width: 1280, height: 720, visible: true
 ;image lay: "base", file: "image/bg-roof.png"
-;loadchara name: "asuka", num: 2
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 1.0
+;image lay: "filter", x: 0, y: 0, file: "image/bg-white.png", visible: true
+;load_chara name: "asuka", size: "medium", pos: "center", num: 2
 ;trans time: 1000
 ;waittrans canskip: false
 
@@ -264,7 +267,7 @@
 この音は……クラッカー？
 ;endpage
 
-;asuka
+;asuka-m-c-2
 「健二」
 ;endpage
 
@@ -273,7 +276,7 @@
 
 #☆視界回復　７５パーセント
 ;pretrans
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.75
+;layopt lay: "filter", alpha: 0.75
 ;trans time: 2000
 ;waittrans canskip: false
 
@@ -289,7 +292,7 @@
 
 #☆視界回復　５０パーセント
 ;pretrans
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.5
+;layopt lay: "filter", alpha: 0.5
 ;trans time: 2000
 ;waittrans canskip: false
 
@@ -301,12 +304,19 @@
 かつて彼女の指定席だった場所。
 ;endpage
 
-;asuka
+;noname
+彼女はそこにいた。
+;endpage
+
+;asuka-m-c-2
 「卒業おめでとう、健二」
 ;endpage
 
 ;noname
 あぁ、やけに廊下が明るいと思ったら。
+;endpage
+
+;noname
 今夜も、空には大きな満月が浮かんでいた。
 ;endpage
 

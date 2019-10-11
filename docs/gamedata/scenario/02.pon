@@ -73,10 +73,10 @@
 
 #■現在　かくれんぼ開始
 
-|かくれんぼ開始
+~かくれんぼ開始
 
 #☆フレームカラー　オレンジ
-;set_to_orange
+;mes_orange
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -85,7 +85,7 @@
 「……で、だ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「うん？」
 ;endpage
 
@@ -93,7 +93,7 @@
 「結局何がしたかったんだ？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「え、お祝いだよ？」
 ;endpage
 
@@ -101,7 +101,7 @@
 「お祝いって、なんのだよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「卒業の。おめでとうって言ったじゃん」
 ;endpage
 
@@ -109,7 +109,7 @@
 「あぁ言ったな、確かに言った」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「うん」
 ;endpage
 
@@ -118,7 +118,7 @@
 しかもこの時間なんだ、明日香さん？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「だってこれから忙しくなるし、
 今日は宿直の先生もいないし」
 ;endpage
@@ -152,7 +152,7 @@
 せめて呼び出すときは場所くらい書いとけよ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「え、ちゃんと書いてたじゃん」
 ;endpage
 
@@ -161,7 +161,7 @@
 アバウトすぎ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「うーん。まぁでも、ちゃんと来れたし、健二」
 ;endpage
 
@@ -170,7 +170,7 @@
 もし見つけられなかったらどうすんだよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「まぁまぁ、いいじゃん結果オーライってことで」
 ;endpage
 
@@ -178,7 +178,7 @@
 「いやまぁ、良いけどさ、せめて……」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「いいじゃんもう。まぁ、サンキュね、健二」
 ;endpage
 
@@ -207,7 +207,7 @@
 「な、なんでお礼なんだよ、気持ち悪い」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「んー、ほら、ちゃんと来てくれたから、一応」
 ;endpage
 
@@ -215,7 +215,7 @@
 「なんだそれ……」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「だって健二、最近は来てなかったじゃん」
 ;endpage
 
@@ -231,7 +231,7 @@
 「お前……まさか、今でも来てたのか？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「うん。来てたよ」
 ;endpage
 
@@ -239,7 +239,7 @@
 「一人で？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「うん。しばらく来てない時期もあったけど……
 でもほら、あたしらにとってはさ、
 やっぱ夜の学校って特別じゃん」
@@ -249,7 +249,7 @@
 「それは……」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「月が明るい日とかにはさ、
 忍び込んで教室で宿題したり、
 こうやって屋上に来たりしてたんだよ」
@@ -326,7 +326,7 @@
 「なぁ、実は結構怒ってたり？」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「なにを？」
 ;endpage
 
@@ -335,13 +335,13 @@
 怒ってんのかなーと」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「そんな、怒ってるわけないじゃん、
 なんであたしが怒ったりしないといけないの？
 馬鹿だなぁ健二は」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「あはははははは」
 ;endpage
 
@@ -354,7 +354,7 @@
 いやその、それなりに気まずかったと言いますか……」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「あはは、わかってるって。
 本気で言ってるわけじゃないし、
 そんな気にしないで」
@@ -368,7 +368,7 @@
 「いや、でも、その……悪かった」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「いいってもう。今日来てくれたから、
 それでチャラだよ」
 ;endpage
@@ -382,7 +382,7 @@
 俺もそれにならう。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「月がきれいだねー」
 ;endpage
 
@@ -390,7 +390,7 @@
 「あー、まぁ……てかなんだそれ。変なセリフ」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「実は結構詩人なのよね、あたし」
 ;endpage
 
@@ -398,7 +398,7 @@
 「はいはいそーですね」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「あぁー、なにその反応。バカにしてる？」
 ;endpage
 
@@ -427,7 +427,7 @@
 結構明るいから満月かな……なんて考えていると、
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「よーし」
 ;endpage
 
@@ -435,7 +435,7 @@
 明日香がこっちに向き直って、
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「健二。かくれんぼをしよう！」
 ;endpage
 
@@ -447,7 +447,7 @@
 「はぁ？　かくれんぼ？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「そう、かくれんぼ。昔はよくやったでしょ」
 ;endpage
 
@@ -455,7 +455,7 @@
 「昔って、それ一体いつごろの話だよ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「うーん、小学生くらい？」
 ;endpage
 
@@ -463,7 +463,7 @@
 「いや昔すぎだろ」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「いいじゃん、かくれんぼしようよかくれんぼ」
 ;endpage
 
@@ -471,7 +471,7 @@
 「嫌だ。何がうれしくてかくれんぼなんか」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「えー、いーじゃんやろーよー。
 せっかく夜の学校に忍び込んだんだから、
 何かしないと損じゃん」
@@ -481,7 +481,7 @@
 「嫌だって」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「いいからいいから」
 ;endpage
 
@@ -493,7 +493,7 @@
 まったく……こういう強引なところも昔から変わってない。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「んじゃあ鬼を決めよう！」
 ;endpage
 
@@ -503,7 +503,7 @@
 
 #どうせやる羽目になるだろうが、とりあえず異議を唱えておく。俺のプライドのために。
 
-;asuka num: 2
+;asuka-l-c-2
 「じゃあ、じゃんけんで決めようか」
 ;endpage
 
@@ -511,7 +511,7 @@
 「無視かよ。そして本当にやるのか。断固反対する」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「さっきから何言ってるの？　ほら早く」
 ;endpage
 
@@ -525,7 +525,7 @@
 尻に敷かれてるんじゃないと思いたい。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「負けた方が鬼ねー」
 ;endpage
 
@@ -533,11 +533,11 @@
 「かかってきなー」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「いくよー、じゃーんけーん」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「ぽんっ！」
 ;endpage
 
@@ -549,7 +549,7 @@
 「もちろん三回勝負だよな？」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「そんなわけないじゃん」
 ;endpage
 
@@ -557,7 +557,7 @@
 「えー」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「えーじゃない。あたしがルールだ」
 ;endpage
 
@@ -565,7 +565,7 @@
 「うわ何だこいつ。びっくりするほどワガママだ」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「あたしがルールだ」
 ;endpage
 
@@ -573,7 +573,7 @@
 「２回も言うな」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「よーし。じゃ、あたし隠れるから、
 ５分たったら探索開始ね」
 ;endpage
@@ -582,7 +582,7 @@
 「りょーかい」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「ちゃんと５分待ってからねー！」
 ;endpage
 

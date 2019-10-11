@@ -17,7 +17,7 @@
 #☆ミニロゴ１
 
 #☆フレームカラー　オレンジ
-;set_to_orange
+;mes_orange
 #△走る
 
 ;playse num: "13", loop: true
@@ -162,7 +162,7 @@
 ;fadeout_meslay
 
 #☆メッセージフレーム　イン
-;set_to_orange
+;mes_orange
 
 ;fadein_meslay
 

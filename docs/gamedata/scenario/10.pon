@@ -12,7 +12,7 @@
 #☆ミニロゴ１
 
 #☆フレームカラー　オレンジ
-;set_to_orange
+;mes_orange
 #○フェード　廊下
 
 ;cb_fade bg: "hall"

@@ -5,7 +5,7 @@
 #■さよならジョバン
 
 #☆フレームカラー　オレンジ
-;set_to_orange
+;mes_orange
 #○フェード　教室
 
 ;cb_fade bg: "class"

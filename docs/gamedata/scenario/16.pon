@@ -12,7 +12,7 @@
 #☆ミニロゴ１
 
 #☆フレームカラー　青
-;set_to_blue
+;mes_blue
 #☆メッセージフレーム　イン
 
 ;fadein_meslay

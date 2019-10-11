@@ -16,7 +16,7 @@
 #☆ミニロゴ１
 
 #☆フレームカラー　オレンジ
-;set_to_orange
+;mes_orange
 #○フェード　教室
 
 ;cb_fade bg: "class"
@@ -195,7 +195,7 @@
 #△走る
 ;playse num: "13", loop: true
 #☆メッセージフレーム　イン
-;set_to_orange
+;mes_orange
 ;fadein_meslay
 
 ;noname

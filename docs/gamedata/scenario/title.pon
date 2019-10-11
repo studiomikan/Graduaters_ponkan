@@ -12,10 +12,10 @@
 ;image lay: "base", file: "image/bg-title01.png", x: 0, y: 0, visible: true
 ;trans time: 1000
 ;waittrans
-;wait time: 1000, canskip: true
+;wait time: 1500, canskip: false
 ;pretrans
 ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
-;trans time: 1500
+;trans time: 1000
 ;waittrans
 
 # タイトルロゴ フェード->移動

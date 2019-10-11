@@ -10,29 +10,4 @@
 # ;layopt lay: "message", visible: false
 # ;wait time: 500, canskip: false
 # ;jump file: "scenario/title.pon"
-
-
-;layopt lay: "mes", visible: false
-;mes_orange
-;mes_blue
-#;mes_blue_radio
-#;mes_letter
-;fadein_meslay
-
-;image lay: "base", file: "image/bg-class.png", visible: true
-
-# @param name キャラクターの名前。asuka or yuuki
-# @param size キャラクターのサイズ。medium or large
-# @param num キャラクターの立ち絵の番号。1～5
-# @param pos キャラクターの位置。left or center or right
-# ;load_chara name: "asuka", size: "medium", num: "1", pos: "center"
-# ;print_name name: "名前"
-#;chara name: "asuka", size: "medium", num: "1", pos: "center"
-;asuka-l-c-2
-こんにちは。
-二行目。
-産業目。
-;endpage
-
-
-
+;jump file: "scenario/01.pon"
