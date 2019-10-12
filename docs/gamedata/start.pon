@@ -16,8 +16,18 @@
   ;ch text: "」"
   ;endindent
 ;endmacro
+;macro name: "speak_start2"
+  ;ch text: "『"
+  ;indent
+;endmacro
+;macro name: "speak_end2"
+  ;ch text: "』"
+  ;endindent
+;endmacro
 ;cmdsc ch: "「", command: "speak_start"
 ;cmdsc ch: "」", command: "speak_end"
+;cmdsc ch: "『", command: "speak_start2"
+;cmdsc ch: "』", command: "speak_end2"
 ;cmdsc ch: "$", command: "br"
 
 # タイトルへ
@@ -26,4 +36,4 @@
 # ;wait time: 500, canskip: false
 # ;jump file: "scenario/title.pon"
 ;mes_blue
-;jump file: "scenario/10.pon"
+;jump file: "scenario/11.pon"

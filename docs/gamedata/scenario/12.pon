@@ -117,7 +117,7 @@
 *test
 ;cb_move bg: "class"
 #☆手紙
-;set_to_letter
+;mes_letter
 ;fadein_meslay
 
 ;letter
