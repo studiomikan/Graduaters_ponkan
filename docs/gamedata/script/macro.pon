@@ -75,6 +75,15 @@ tv.mes_type = "orange"
   ;clear lay: "mes"
 ;endmacro
 
+- tv.macro_original_font_size = ponkan.getLayers({lay: "mes"})[0].textFontSize;
+;macro name: "fontsize"
+  ;mesopt fontsize: "&mp.size"
+;endmacro
+
+;macro name: "reset_font"
+  ;mesopt fontsize: "&tv.macro_original_font_size"
+;endmacro
+
 ;macro name: "init_glyph"
   ;if exp: "tv.mes_type == 'orange' || tv.mes_type == 'blue'"
     ;lbglyph "pos": "eol"
