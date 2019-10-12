@@ -25,4 +25,5 @@
 # ;layopt lay: "message", visible: false
 # ;wait time: 500, canskip: false
 # ;jump file: "scenario/title.pon"
-;jump file: "scenario/05.pon"
+;mes_blue
+;jump file: "scenario/08.pon"

@@ -28,7 +28,7 @@ tv.mes_type = "orange"
   - tv.mes_type = "orange"
   ;image lay: "mes", file: "image/mes-orange.png"
   ;layopt lay: "mes", x: 0, y: 720-200
-  ;mesopt lay: "mes", marginl: (1280-800)/2, marginr: (1280-800)/2, margint: 65
+  ;mesopt lay: "mes", marginl: (1280-800)/2+20, marginr: (1280-800)/2-20, margint: 65
   ;clear lay: "mes"
   ;call file: "sysbtn/sysbtn.pon"
   ;init_glyph
@@ -39,7 +39,7 @@ tv.mes_type = "orange"
   - tv.mes_type = "blue"
   ;image lay: "mes", file: "image/mes-blue.png"
   ;layopt lay: "mes", x: 0, y: 720-200
-  ;mesopt lay: "mes", marginl: (1280-800)/2, marginr: (1280-800)/2, margint: 65
+  ;mesopt lay: "mes", marginl: (1280-800)/2+20, marginr: (1280-800)/2-20, margint: 65
   ;call file: "sysbtn/sysbtn.pon"
   ;init_glyph
   ;clear lay: "mes"
@@ -163,13 +163,17 @@ tv.mes_type = "orange"
   ;print_name name: "健二"
 ;endmacro
 
+;macro name: "yuuki?"
+  ;print_name name: "？？"
+;endmacro
+
 ---
 // データ
 tv.positionInfo = {
   medium: {
-    left:   (1280/12)*4,
+    left:   (1280/24)*7,
     center: 1280/2,
-    right:  (1280/12)*8,
+    right:  (1280/24)*17,
   },
   large: {
     left:   (1280/12)*4,
@@ -203,11 +207,11 @@ tv.charaInfo = {
       { file: "image/chara/yuuki-m-05.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
     ],
     large: [
-      { file: "image/chara/yuuki-l-01.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-l-02.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-l-03.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-l-04.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-l-05.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-l-01.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
+      { file: "image/chara/yuuki-l-02.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
+      { file: "image/chara/yuuki-l-03.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
+      { file: "image/chara/yuuki-l-04.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
+      { file: "image/chara/yuuki-l-05.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
     ],
   }
 };
@@ -225,7 +229,7 @@ tv.getCharaInfo = function(mp) {
   var y = chara.offsetY;
   var isFirst = ponLayer.image == null || !ponLayer.visible;
   var nameText = tv.nameInfo[mp.name];
-  var isLoaded = (ponLayer.x == x) && (file == ponLayer.imageFilePath);
+  var isLoaded = (ponLayer.x == x) && (file == ponLayer.imageFilePath) && ponLayer.visible;
   return {
     lay: lay,
     file: file,
@@ -233,7 +237,8 @@ tv.getCharaInfo = function(mp) {
     y: y,
     isFirst: isFirst,
     nameText: nameText,
-    isLoaded: isLoaded
+    isLoaded: isLoaded,
+    visible: ponLayer.visible
   };
 }
 ---
@@ -253,7 +258,7 @@ tv.getCharaInfo = function(mp) {
 ;endmacro
 
 # キャラクターの新規読み込み or 切り替え + 名前表示
-# 新規読み込み時は 500ms
+# 新規読み込み時は 400ms
 # 切り替え時は 200ms
 # すでに同じ位置に同じファイルが読み込まれているときは名前表示のみ
 # @param name キャラクターの名前。asuka or yuuki
@@ -265,10 +270,9 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "chara"
   ---
     tv.chara = tv.getCharaInfo(mp);
-    tv.time = tv.chara.isFirst ? 500 : 200;
+    tv.time = tv.chara.isFirst ? 400 : 200;
     if (mp.time != null) tv.time = mp.time;
     tv.canskip = mp.canskip != null ? mp.canskip : true
-    console.log(mp.time);
   ---
   ;if exp: "!tv.chara.isLoaded"
     ;pretrans
@@ -284,6 +288,13 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "out_chara"
   ;pretrans
   ;layopt lay: "&mp.name", visible: false
+  ;trans time: "500"
+  ;waittrans
+;endmacro
+
+;macro name: "every_out"
+  ;pretrans
+  ;layopt lay: "asuka, yuuki", visible: false
   ;trans time: "500"
   ;waittrans
 ;endmacro

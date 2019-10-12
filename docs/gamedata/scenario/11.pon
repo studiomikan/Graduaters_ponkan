@@ -11,7 +11,7 @@
 
 #■過去　明日香の誕生日、健二の兄の話
 
-#☆ミニロゴ１
+~夜の誕生日パーティ
 
 #☆フレームカラー　青
 ;mes_blue
@@ -32,15 +32,15 @@
 
 ;fadein_meslay
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「ありがとう、健二、優希ちゃん」
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「おめでとう、明日香ちゃん」
 ;endpage
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「ありがとう、優希ちゃん」
 ;endpage
 
@@ -48,7 +48,7 @@
 「また１つおばさんに近づいたな、明日香」
 ;endpage
 
-;asuka pos: "left", num: 1
+;asuka-m-l-1
 「なにか言った？」
 ;endpage
 
@@ -78,11 +78,11 @@
 それでも優希は『少ない』と言っていたが……
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「ほら、ケーキ食べよう、明日香ちゃん！」
 ;endpage
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「よーし、晩ご飯我慢した分だけ食べるよー！」
 ;endpage
 
@@ -213,7 +213,7 @@
 #△ＢＧＭ２
 ;playbgm num:"002"
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「け～ん～じ～！」
 ;endpage
 
@@ -221,7 +221,7 @@
 「なんだよ～」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「ちょっとそこに座わりなさい！
 座れ！　すぐ座れ！　座れや！」
 ;endpage
@@ -230,7 +230,7 @@
 「え～、い～よ～」
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「あはは、健二くん土下座してるー、
 かっこいいー」
 ;endpage
@@ -243,11 +243,11 @@
 ぴょん！　ぴょん！
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「わーすごいすごーい！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「そんなのどうでもいいから聞け～！」
 ;endpage
 
@@ -255,7 +255,7 @@
 「え～やだよ～」
 ;endpage
 
-;asuka pos: "left", num: 4
+;asuka-m-l-4
 「ね～聞いてよ～、ねぇねぇねぇ～」
 ;endpage
 
@@ -263,7 +263,7 @@
 「しょうがねぇなぁ、聞くわ～、ちょお聞くわ～」
 ;endpage
 
-;asuka pos: "left", num: 4
+;asuka-m-l-4
 「健二さぁ、ちゃんとあたしの話聞いてる？
 っていうか、健二は普段からいい加減すぎるのよ！」
 ;endpage
@@ -273,7 +273,7 @@
 ブサイクとはなんだ～、このやろ～」
 ;endpage
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「誰がイケメンよ、このバカ健二！」
 ;endpage
 
@@ -283,28 +283,28 @@
 「へぶしっ！」
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「あはは、へぶしだってー、
 関係ないけどあたしコ〇コーラ派ー」
 ;endpage
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「優希っち、コーラはペ〇シに決まってるでしょ～が～」
 ;endpage
 
-;yuuki pos: "right", num: 1
+;yuuki-m-r-1
 「えー、コカ〇ーラの方がおいしーよー」
 ;endpage
 
-;asuka pos: "left", num: 1
+;asuka-m-l-1
 「ペプ〇です～」
 ;endpage
 
-;yuuki pos: "right", num: 3
+;yuuki-m-r-3
 「コカコー〇だもん、ばかー！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「ばかって言うな～！」
 ;endpage
 
@@ -318,7 +318,7 @@
 「なんで俺叩かれたの？！」
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「あはは、ペプシだってー！
 あーおかしー！」
 ;endpage
@@ -329,21 +329,21 @@
 お嫁に行けなくなるだろ！ うわーん！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「うるさいわね！
 そんな調子でこれから先やっていけると思うなひょ！」
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「思うなひょ！　ひょーだって、噛んだ噛んだー」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「こらしょこ、ヤジ飛ばしゃない！
 あんたも座れ！　すぐ座れ！」
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「はぁーい」
 ;endpage
 
@@ -351,20 +351,20 @@
 「グラディエイト・ジャパ～～ン！！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「よし、よく聞きなさいあんたたち！
 だいたいあんたたちには気合いが足りない！　根性がない！
 あたしがそのひねくれた根性たたっ切ってやる！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 ;playse num: "17"
 ;fontsize size: 30
 「ずばっ！」
 ;reset_font
 ;endpage
 
-;yuuki pos: "right", num: 4
+;yuuki-m-r-4
 「やられたー」
 ;endpage
 
@@ -372,7 +372,7 @@
 「シェキダン！　シェキダン！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「ほらそこ、シェキダンうるさい！
 ずばっときたら、やられたーでしょこのへっぽこ！
 しっかりしなさいよ！」
@@ -382,7 +382,7 @@
 「すみません！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「返事はハイだろ、へっぽこ！」
 ;endpage
 
@@ -390,14 +390,14 @@
 「ハイ！」
 ;endpage
 
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 「よく聞けへっぽこ！　あんた優希ちゃんにデレデレしすぎなのよ！
 なんかあたしと優希ちゃんで態度変えてない？
 もう！　たたっ切ってやる！」
 ;endpage
 
 ;playse num: "17"
-;asuka pos: "left", num: 3
+;asuka-m-l-3
 ;fontsize size: 30
 「ずばっ！」
 ;reset_font
@@ -407,7 +407,7 @@
 「やられたー」
 ;endpage
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「それでいいのよへっぽこ！
 じゃあ次は健二のネタね」
 ;endpage
@@ -417,11 +417,11 @@
 ついにとっておきのネタを披露する時が来たぜ！」
 ;endpage
 
-;yuuki pos: "right", num: 5
+;yuuki-m-r-5
 「いいぞー！」
 ;endpage
 
-;asuka pos: "left", num: 5
+;asuka-m-l-5
 「いえ～い！」
 ;endpage
 
