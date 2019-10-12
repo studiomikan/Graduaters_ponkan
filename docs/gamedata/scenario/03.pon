@@ -12,6 +12,21 @@
 
 ~初めて忍び込んだ夜
 
+# 2年前 演出
+;pretrans
+;image lay: "base", file: "image/bg-black.png", visible: true
+;image lay: "tmp1", file: "image/2years-ago.png", x: (1280-200)/2, y: (720-60)/2, visible: true
+;trans time: 1000
+;waittrans canskip: false
+;wait time: 1500, canskip: false
+;pretrans
+;layopt lay: "tmp1", visible: false
+;freeimage lay: "tmp1"
+;trans time: 1000
+;waittrans canskip: false
+;wait time: 1000, canskip: false
+
+
 #☆フレームカラー　青
 ;mes_blue
 
@@ -23,7 +38,8 @@
 ;endpage
 
 ;noname
-あたりの様子をうかがいながら、小声で隣の明日香に話しかける。
+あたりの様子をうかがいながら、
+小声で隣の明日香に話しかける。
 ;endpage
 
 ;asuka
@@ -32,7 +48,7 @@
 
 ;noname
 そう言って、明日香は美術室の窓枠をつかんで揺らす。
-立て付けの悪い窓がガタガタと音を立てる。
+立て付けの悪い窓がガタガタと音を立てた。
 ;endpage
 
 ;kenji
@@ -46,7 +62,8 @@
 
 ;noname
 ;playse num: "14"
-そうこう言っているうちにカチンと音がして、カギが外れた。
+そうこう言っているうちにカチンと音がして、
+カギが外れた。
 ;endpage
 
 ;asuka
@@ -59,7 +76,7 @@
 
 ;noname
 大丈夫なのか、うちの学校。
-カギ直すくらいはちゃんとやってほしいところ。
+カギ直すくらいはちゃんとやってほしい。
 ;endpage
 
 ;asuka
@@ -73,7 +90,8 @@
 
 ;noname
 ;playse num: "15"
-さっさと中に入ってしまった明日香に続いて、俺も窓をくぐる。
+さっさと中に入ってしまった明日香に続いて、
+俺も窓をくぐる。
 ;endpage
 
 ;noname
@@ -94,7 +112,7 @@
 ;endpage
 
 ;kenji
-「あいよ」
+「おう」
 ;endpage
 
 ;noname
@@ -103,12 +121,12 @@
 ;endpage
 
 ;noname
-と、そうしている間に、
+と、そうしているうちに、
 明日香はとっとと教室を出ようとしていた。
 ;endpage
 
 ;kenji
-「ちょ、待ってくれよ、置いてくなって」
+「ちょ、待ってくれよ、おいてくなって」
 ;endpage
 
 ;asuka
@@ -147,7 +165,7 @@
 廊下へ出ると、さっきはよく見えなかった景色が幾分マシになった。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「んー、美術室は端っこだし、窓も少ないからかなー」
 ;endpage
 
@@ -163,16 +181,17 @@
 寮は結構きれいなくせに、こういうところは割と手抜きだな。美術部から文句とかこないんだろうか。
 ;endpage
 
-;asuka num: 1
-「ねぇ健二、どこ行く？」
+;asuka-l-c-1
+「さてと。ねぇ健二、どこ行く？」
 ;endpage
 
 ;kenji
 「どこって？」
 ;endpage
 
-;asuka num: 2
-「ほら、せっかく夜の学校に忍び込んだんだから、何かしないと損じゃんか」
+;asuka-l-c-2
+「ほら、せっかく夜の学校に忍び込んだんだから、
+何かしないと損じゃん」
 ;endpage
 
 ;kenji
@@ -180,7 +199,8 @@
 ;endpage
 
 ;noname
-学校の中でどこと言われても、場所は限られてるし。ぶっちゃけ乗り気じゃない俺に話を振られてもこまる。
+学校の中でどこと言われても、場所は限られてるし。
+ぶっちゃけ乗り気じゃない俺に話を振られてもこまる。
 ;endpage
 
 ;noname
@@ -191,7 +211,7 @@
 「とりあえず教室行ってみるか。そこ以外思いつかん」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「えー」
 ;endpage
 
@@ -199,15 +219,18 @@
 「えーってなんだよ、えーって」
 ;endpage
 
-;asuka num: 1
-「いや、あたしも教室以外思いつかなかったから聞いたのに、期待ハズレだなーと思って」
+;asuka-l-c-1
+「いや、あたしも教室以外思いつかなかったから
+聞いたのに、期待ハズレだなーと思って」
 ;endpage
 
 ;kenji
-「期待ハズレとはなんだ。これでも一生懸命考えたんだぞ、コンマ2秒くらい」
+「期待ハズレとはなんだ。
+これでも一生懸命考えたんだぞ、
+コンマ2秒くらい」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「まぁいっか。とりあえず行ってみよ」
 ;endpage
 
@@ -238,19 +261,20 @@
 「っていうか針金で開くのか、この教室のカギ……」
 ;endpage
 
-;asuka num: 1
-「あれ、知らない？　体育の後とかみんなやってるよ。先生とかも」
+;asuka-l-c-1
+「あれ、知らない？
+体育の後とかみんなやってるよ。先生とかも」
 ;endpage
 
 ;kenji
-「マジか。というか教職員公認かよ」
+「マジか。というか教師公認かよ」
 ;endpage
 
 ;noname
-我が校のセキュリティにそこはかとなく不安を感じるのは俺だけだろうか。
+我が校のセキュリティに不安を感じるのは俺だけだろうか。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「教室の中もそれなりに明るいねぇ」
 ;endpage
 
@@ -259,14 +283,18 @@
 ;endpage
 
 ;noname
-目が慣れてきたのもあるだろうが、教室の中は美術室ほど暗くはなく、十分に見える明るさだった。
+目が慣れてきたのもあるだろうが、
+教室の中は美術室ほど暗くはなく、
+十分に見える明るさだった。
 ;endpage
 
 ;noname
-机の配置などは昼間と変わらないのに、暗いというだけでなんとなく神秘的な雰囲気になっている気がする。
+机の配置などは昼間と変わらないのに、
+暗いというだけでなんとなく
+神秘的な雰囲気になっている気がする。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「んー、明るいのは明るいけど、なんか、アレだねー」
 ;endpage
 
@@ -274,7 +302,7 @@
 「アレってなんだよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「出そうだね」
 ;endpage
 
@@ -282,7 +310,7 @@
 「出そうって……何が」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「そりゃ、夜の学校と言えば……」
 ;endpage
 
@@ -290,7 +318,7 @@
 「い、言えば……？」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「オ・バ・ケ」
 ;endpage
 
@@ -298,24 +326,27 @@
 「お、おまえ、あんまりそういうこと言うんじゃねーよ」
 ;endpage
 
-;asuka num: 2
-「あれ、健二ったらまだオバケが怖いのー？　おこちゃま～」
+;asuka-l-c-2
+「あれ、健二ったらまだオバケが怖いのー？
+おこちゃま～」
 ;endpage
 
 ;kenji
 「そ、そそそそんなわけないだろ」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「あはは、昔から苦手だったもんねー、そういう話」
 ;endpage
 
 ;noname
-ぐぅ……悔しいが、明日香の言うとおりだった。
+……悔しいが、明日香の言うとおりだった。
 ;endpage
 
 ;noname
-オバケ、幽霊、コックリさん、トイレの花子さん、その他いろいろな怪談。意識しないでいると大丈夫なのだが、いったん気になるとどうしても怖くなるのだ。
+オバケだとか、幽霊だとか、他にもよくある怪談とか。
+意識しないでいると大丈夫なのだが、
+いったん気になるとどうしても怖くなるのだ。
 ;endpage
 
 ;noname
@@ -323,18 +354,21 @@
 ;endpage
 
 ;kenji
-「うっせーよ馬鹿！　知ってんだから、こういうとこに連れてくんのはやめろよな」
+「うっせーよ馬鹿！　お前も知ってんだから、
+こういうとこに連れてくんのはやめろよな」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「じゃあ健二は帰る？」
 ;endpage
 
 ;kenji
-「あー、いやー、むしろここから一人で帰るほうが怖いといいますかー」
+「あー、いやー、
+むしろここから一人で帰るほうが
+怖いといいますかー」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「帰り道にオバケ出るかもしれないからね」
 ;endpage
 
@@ -342,7 +376,7 @@
 「だからやめろって！」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「嫌ー。だって健二おもしろいし」
 ;endpage
 
@@ -350,7 +384,7 @@
 「俺はお前のオモチャじゃないんだぞ……」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「え、そうだったの？！」
 ;endpage
 
@@ -358,7 +392,7 @@
 「なんで驚くんだよ！　ひどい幼馴染だな！」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「冗談冗談。たぶん」
 ;endpage
 
@@ -366,7 +400,7 @@
 「たぶんかよ……はっきり冗談だと言ってくれよ……」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「あんまり細かいこと気にしてると、ハゲるよー」
 ;endpage
 
@@ -377,22 +411,23 @@
 ;asuka_out
 
 ;noname
-さらっと気にしてることを言ってから、明日香は教室に並ぶ机を物色し始めた。
+さらっと気にしてることを言ってから、
+明日香は教室に並ぶ机を物色し始めた。
 ;endpage
 
 ;kenji
 「うう……ハゲてないもん……ハゲないもん……」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「え、なんで泣いてるの？　誰にやられたの？」
 ;endpage
 
 ;kenji
-「あんたにだよっ。っていうか、なにしてんだよ」
+「お前にだよっ。っていうか、なにしてんだよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「なにかおもしろいものないかなーと思って」
 ;endpage
 
@@ -407,14 +442,16 @@
 ;endpage
 
 ;noname
-どうせ言っても聞かないだろうから、俺は仕方なく自分の席に座る。
+どうせ言っても聞かないだろうから、
+俺は仕方なく自分の席に座る。
 ;endpage
 
 ;noname
-決して机の中に見られたらマズイものが入っているからではありません。
+決して、机の中に見られたらマズイものが
+入っているからではありません。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「んー、割とみんなきれいにしてるなー……」
 ;endpage
 
@@ -422,7 +459,7 @@
 「そりゃ、まだ新学期が始まったばっかだしなぁ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「エロ本とかないかなー」
 ;endpage
 
@@ -435,7 +472,8 @@
 ;fadeoutbgm
 
 ;asuka
-「わかんないじゃん。誰かに貸そうとして渡し損ねたとか……ん？」
+「わかんないじゃん。
+誰かに貸そうとして渡し損ねたとか……ん？」
 ;endpage
 
 ;kenji
@@ -446,7 +484,7 @@
 ;playbgm num: "002"
 ;playse num: "21"
 
-;asuka num: 5
+;asuka-l-c-5
 「エロ本みっけ！」
 ;endpage
 
@@ -457,14 +495,16 @@
 ;endpage
 
 ;noname
-自慢げに見せびらかす明日香の手には『どきどき巨乳ナースの秘め事』なんてベタなタイトルの本が握られていた。
+自慢げに見せびらかす明日香の手には
+『どきどき巨乳ナースの秘め事』なんて
+ベタなタイトルの本が握られていた。
 ;endpage
 
 ;kenji
 「マジかよ……いやまさかホントにあるとは……」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「おー、すごーい、へー……」
 ;endpage
 
@@ -472,7 +512,7 @@
 「読むのかよ！」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「あ、健二も見る？」
 ;endpage
 
@@ -480,7 +520,7 @@
 「見ません！」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「えー、ホントは見たいんでしょ？」
 ;endpage
 
@@ -488,7 +528,7 @@
 「いや、いいです……」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「………………」
 ;endpage
 
@@ -496,7 +536,7 @@
 「な、なんだよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「健二って、胸は小さいほうが良い派？」
 ;endpage
 
@@ -504,15 +544,16 @@
 「突然何を言い出すんだこのバカ」
 ;endpage
 
-;asuka num: 2
-「いやー、健二だって男の子なんだから、ちょっとくらい興味あるでしょ？」
+;asuka-l-c-2
+「いやー、健二だって男子なんだから、
+ちょっとくらい興味あるでしょ？」
 ;endpage
 
 ;kenji
 「だからって聞くな」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「いいじゃん、教えてよー。ねーねー」
 ;endpage
 
@@ -520,19 +561,20 @@
 「………………」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「む、強情ね。よし」
 ;endpage
 
 ;noname
-そっぽを向いてダンマリを決めこむ俺の視界の外で、明日香がなにやらごそごそやっている。
+そっぽを向いてダンマリを決めこむ俺の視界の外で、
+明日香がなにやらごそごそやっている。
 ;endpage
 
 ;noname
 何する気だこいつ。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「健二ー」
 ;endpage
 
@@ -540,7 +582,7 @@
 「……なに？」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「ほれ」
 ;endpage
 
@@ -554,10 +596,11 @@
 ;endpage
 
 ;noname
-慌てて視線をそらす。見たいけど見ない。見たらなんか色々言われるに違いない。
+慌てて視線をそらす。見たいけど見ない。
+見たらなんか色々と失う気がする。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「なにって、健二が見たそうにしてたから」
 ;endpage
 
@@ -565,7 +608,7 @@
 「してねぇよ！」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「はい！」
 ;endpage
 
@@ -578,7 +621,7 @@
 「だからやめろって。ってか二冊目かよ……」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「あれ、反応薄いなぁ。貧乳は外れか……」
 ;endpage
 
@@ -586,8 +629,10 @@
 「分析すんな」
 ;endpage
 
-;asuka num: 5
-「うーん、貧乳が外れなのか、あるいは胸のサイズにはこだわらないのか……あ、大きさより形ってこと？　うわ～」
+;asuka-l-c-5
+「うーん、貧乳が外れなのか、あるいは胸のサイズには
+こだわらないのか……あ、大きさより形ってこと？
+うへ～」
 ;endpage
 
 ;kenji
@@ -611,19 +656,20 @@
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-;asuka num: 1
+;asuka-l-c-1
 「んー、さすがに飽きた」
 ;endpage
 
 ;noname
-机をあらかたあさって（結局被害はあの本だけだった）、明日香は俺の机に座った。
+机をあらかたあさって（結局被害はあの本だけだった）、
+明日香は俺の机に座った。
 ;endpage
 
 ;kenji
-「あれお前、あの本どうしたんだ？」
+「あれ。お前、あの本どうしたんだ？」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「え、なに、持って帰るの？」
 ;endpage
 
@@ -631,32 +677,36 @@
 「いらんわい！」
 ;endpage
 
-;asuka num: 2
-「そうだよねー、健二は自分のコレクションがあるもんねー」
+;asuka-l-c-2
+「そうだよねー、
+健二は自分のコレクションがあるもんねー」
 ;endpage
 
 ;kenji
 「な、なんのことやら……で、結局どうしたんだ？」
 ;endpage
 
-;asuka num: 5
-「持ち主の名前を油性ペンで書いて、教卓の上に置いといた」
+;asuka-l-c-5
+「持ち主の名前を油性ペンで書いて、
+教卓の上に置いといた」
 ;endpage
 
 ;kenji
 「なんてむごいことを……」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「学校にあんなの持ってくるのが悪いってことで」
 ;endpage
 
 ;kenji
-「おもしろいものないかなーとか言って勝手にあさったくせに……」
+「おもしろいものないかなーとか言って
+勝手にあさったくせに……」
 ;endpage
 
-;asuka num: 2
-「おもしろいものが見つかったから、みんなで分かち合おうと思って」
+;asuka-l-c-2
+「おもしろいものが見つかったから、
+みんなで分かち合おうと思って」
 ;endpage
 
 ;kenji
@@ -664,18 +714,20 @@
 ;endpage
 
 ;noname
-エロ本の持ち主よ、すまん。運が悪かったと思ってあきらめてくれ……
+エロ本の持ち主、すまん。
+運が悪かったと思ってあきらめてくれ……
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「それにしても、あんまりすることもないねぇ」
 ;endpage
 
 ;kenji
-「まぁ夜だとはいえ学校だし。そうそうおもしろいものもないだろ」
+「まぁ夜だとはいえ学校だし。
+そうそうおもしろいものもないだろ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「そうねー……」
 ;endpage
 
@@ -684,14 +736,15 @@
 ;endpage
 
 ;noname
-明日香は両足をぷらぷらさせて、何か考えるように教室の入り口を見つめている。
+明日香は両足をぷらぷらさせて、
+何か考えるように教室の入り口を見つめている。
 ;endpage
 
 ;noname
 あ、やばい、なんか嫌な予感が。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「健二」
 ;endpage
 
@@ -699,7 +752,7 @@
 「嫌だ」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「屋上に行こう！」
 ;endpage
 
@@ -711,23 +764,25 @@
 「屋上って言っても、あそこは立ち入り禁止だろ？」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「だからこそ今行くんじゃない」
 ;endpage
 
 ;kenji
-「いやまぁ、そうかもしれんが。でもカギとか閉まってるだろ」
+「いやまぁ、そうかもしれんが。
+でもカギとか閉まってるだろ」
 ;endpage
 
-;asuka num: 2
-「大丈夫。あそこのカギ、わりと簡単に開くらしいんだよね」
+;asuka-l-c-2
+「大丈夫。あそこのカギ、
+わりと簡単に開くらしいんだよね」
 ;endpage
 
 ;kenji
 「ほんと大丈夫なのか、うちの学校……」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「ほら、行くよ健二！」
 ;endpage
 
@@ -748,18 +803,20 @@
 ;fadein_meslay
 
 ;noname
-階段を上り、普段は三年生のテリトリーである四階へたどりつく。
+階段を上り、
+普段は３年生のテリトリーである四階へ。
 ;endpage
 
 ;noname
-さらに上、屋上への階段の前には、立ち入り禁止と書かれた柵があった。
+さらに上、屋上への階段の前には、
+立ち入り禁止と書かれた柵があった。
 ;endpage
 
 ;kenji
 「屋上って、この上か？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「そうだよ」
 ;endpage
 
@@ -771,23 +828,23 @@
 「な、なんか真っ暗なのは気のせいか」
 ;endpage
 
-;asuka num: 1
-「ここの階段、窓がないみたいだね」
+;asuka-l-c-1
+「ここの階段、窓がないんだねー」
 ;endpage
 
 ;kenji
 「そりゃ見ればわかるんだが……」
 ;endpage
 
-;asuka num: 2
-「あー、健二怖いのー？」
+;asuka-l-c-2
+「あー、怖いのー？」
 ;endpage
 
 ;kenji
 「こ、怖くなんてありませんよ？」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「なんで敬語なのさ」
 ;endpage
 
@@ -796,7 +853,7 @@
 ;endpage
 
 ;noname
-いかん、声が裏返ってしまった。
+声が裏返った。
 ;endpage
 
 ;kenji
@@ -811,31 +868,33 @@
 「怖くなんてないぜ」
 ;endpage
 
-;asuka num: 2
-「そんな何度も言い直さなくても。っていうかキモイよ。ほら、お先にどうぞ？」
+;asuka-l-c-2
+「そんな何度も言い直さなくても。
+っていうかキモイよ。ほら、お先にどうぞ？」
 ;endpage
 
 ;kenji
 「無理」
 ;endpage
 
-;asuka num: 1
-「え、ちょ、かっこわる。しっかりしてよ健二」
+;asuka-l-c-1
+「え、ちょ、かっこわる。しっかりしてよ」
 ;endpage
 
 ;kenji
-「んなこと言ったって、怖いものは怖いし無理なものは無理だと思う」
+「怖いものは怖いし無理なものは無理だと思う」
 ;endpage
 
-;asuka num: 5
-「しょーがないなー。ほら、お手々ぎゅーしたげる、ぎゅー」
+;asuka-l-c-5
+「しょーがないなー。
+ほら、お手々ぎゅーしたげる、ぎゅー」
 ;endpage
 
 ;kenji
 「ば、馬鹿！　やめんか恥ずかしい！」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「じゃ、お一人でどうぞ」
 ;endpage
 
@@ -844,23 +903,26 @@
 ;endpage
 
 ;noname
-くそう、なんで俺がこんな目に合わなきゃいけないんだ……
+くそう、
+なんで俺がこんな目に合わなきゃいけないんだ……
 ;endpage
 
 ;noname
-しかし、ここで明日香の後ろをビクビクついて行くってのも、それはそれで非常にダサい……
+しかし、ここで明日香の後ろをビクビクついて行くのも、
+それはそれで非常にダサい……
 ;endpage
 
 ;kenji
-「い、行ってやろうじゃないかコンチクショウ。目ン玉かっぽじってよーく見てろ」
+「い、行ってやろうじゃないか、チクショー。
+目ン玉かっぽじってよーく見てろ」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「お、がんばれ健二！」
 ;endpage
 
 ;kenji
-「ま、まかせろーい」
+「ま、まかせろ～い」
 ;endpage
 
 ;asuka_out
@@ -882,11 +944,13 @@
 ;endpage
 
 ;noname
-屋上への階段の先は暗い……いや、気にしては駄目だ。意識しなければいいんだ。無心になれ俺。アレだ、無我の境地だ。
+屋上への階段の先は暗い……いや、気にしたら駄目だ。
+意識しなければいいんだ。無心になれ俺。
+アレだ、無我の境地だ。
 ;endpage
 
 ;kenji
-「し、しつれーしまーす……」
+「し、しつれいしま～す……」
 ;endpage
 
 ;noname
@@ -898,7 +962,7 @@
 ;endpage
 
 ;kenji
-「う、うるせー」
+「う、うるせ～」
 ;endpage
 
 ;noname
@@ -906,7 +970,9 @@
 ;endpage
 
 ;noname
-うわ、自分の足下くらいはなんとか見えるが、マジでほとんど真っ暗だな……って、気にしたらだめだって、俺。
+うわ、自分の足下くらいはなんとか見えるが、
+マジでほとんど真っ暗だな……って、
+気にしたらだめだって、俺。
 ;endpage
 
 ;asuka
@@ -942,15 +1008,17 @@
 ;kenji
 ;quake time: 500, x: 50, y: 10
 ;playse num: "20"
-「ぎゃーーーーーっ！！　なんだ、どした、かかかかかかってこい！」
+「ぎゃーーーーーっ！！
+なんだ、どした、ややややややんのか！」
 ;endpage
 
 ;asuka
-「っ、なに言ってんの健二。……っぷ」
+「っ、なに言ってんの健二。……ぷっ」
 ;endpage
 
 ;kenji
-「あ、あああ明日香！　おま、冗談でもそういうのやめろ！」
+「あ、あああ明日香！
+おま、冗談でもそういうのやめろ！」
 ;endpage
 
 ;asuka
@@ -958,11 +1026,13 @@
 ;endpage
 
 ;kenji
-「心臓止まっちゃったらどうすんだオイ、責任とれんのかよ」
+「心臓止まっちゃったらどうすんだオイ、
+責任とれんのかよ」
 ;endpage
 
 ;asuka
-「いいからほら、あとちょっとだよ。さっさと行っちゃいなって」
+「いいからほら、あとちょっとだよ。
+さっさと行っちゃいなって」
 ;endpage
 
 ;kenji
@@ -970,7 +1040,9 @@
 ;endpage
 
 ;noname
-気を取り直して階段を上る。さっきのやりとりで緊張が抜けたのか、少し足が軽い。
+気を取り直して階段を上る。
+さっきのやりとりで緊張が抜けたのか、
+少し足が軽い。
 ;endpage
 
 ;asuka
@@ -982,7 +1054,9 @@
 ;endpage
 
 ;noname
-あと数段だったの階段を上りきると、目の前に現れたのは屋上へのドア。この先が屋上だろう。
+あと数段だったの階段を上りきると、
+少し錆びついたドアがあった。
+この先が屋上だろう。
 ;endpage
 
 ;kenji
@@ -994,7 +1068,7 @@
 ;endpage
 
 ;kenji
-「お先にってお前、ドアにはカギが……って、あれ？」
+「お先にってお前、カギが……って、あれ？」
 ;endpage
 
 ;noname
@@ -1006,7 +1080,8 @@
 ;endpage
 
 ;noname
-俺はドアノブを捻ったまま、身体全体で押すようにして、屋上のドアを開けた――
+俺はドアノブを捻ったまま、身体全体で押すようにして、
+屋上のドアを開けた――
 ;endpage
 
 #☆メッセージフレーム　アウト
@@ -1017,10 +1092,9 @@
 
 #○フェードアウト　１０００　ｆ　白
 ;pretrans
-;layopt lay: "filter", x: 0, y: 0, width: 1280, height: 720, visible: true
+;image lay: "filter", file: "image/bg-white.png", alpha: 1.0, visible: true
 ;image lay: "base", file: "image/bg-roof.png", visible: true
-;loadchara name: "yuuki", num: 1
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 1.0
+;load_chara name: "yuuki", size: "medium", pos: "center", num: 1
 ;trans time: 1000
 ;waittrans canskip: false
 
@@ -1036,14 +1110,15 @@
 ;endpage
 
 ;noname
-今度こそ本物のオバケか？　なんて思って、ああそう言えば今日は満月だったなと思いだす。
+今度こそ本物のオバケか？　なんて思って、
+ああ、そういえば今日は満月だったなと思いだす。
 ;endpage
 
 #白さちょっともどり
 #☆視界回復２　８０パーセント
 #[whiteView opacity=204 storage=chara_B01]
 ;pretrans
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.80
+;layopt lay: "filter", alpha: 0.80
 ;trans time: 1000
 ;waittrans canskip: false
 
@@ -1054,7 +1129,7 @@
 #白ささらにちょっと戻り
 #☆視界回復２　４０パーセント
 ;pretrans
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.40
+;layopt lay: "filter", alpha: 0.40
 ;trans time: 1000
 ;waittrans canskip: false
 
@@ -1065,7 +1140,7 @@
 #☆視界回復２０パーセント
 #[whiteView opacity=0 storage=chara_B01]
 ;pretrans
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 0.20
+;layopt lay: "filter", alpha: 0.20
 ;trans time: 1000
 ;waittrans canskip: false
 
@@ -1074,14 +1149,14 @@
 ;endpage
 
 ;kenji
-「君……誰？」
+「君……だれ？」
 ;endpage
 
 ;noname
 女の子は驚いた表情のまま、ゆっくりと答える。
 ;endpage
 
-;yuuki num: 1
+;yuuki-m-c-1
 「み、三笠……三笠優希です」
 ;endpage
 
@@ -1090,17 +1165,19 @@
 
 #○フェードアウト　１０００　白
 ;pretrans
-;fillcolor lay: "filter", color: 0xFFFFFF, alpha: 1.0
-;fillcolor lay: "base", color: 0xFFFFFF, alpha: 1.0
+;layopt lay: "filter", alpha: 1.0
+;image lay: "base", file: "image/bg-white.png", visible: true
 ;trans time: 1000
 ;waittrans canskip: false
 
 ;layopt lay: "yuuki", page: "fore", visible: false
 ;layopt lay: "yuuki", page: "back", visible: false
-;layopt lay: "filter", page: "fore", visible: false
-;layopt lay: "filter", page: "back", visible: false
+;layopt lay: "filter", page: "fore", visible: false, alpha: 1.0
+;layopt lay: "filter", page: "back", visible: false, alpha: 1.0
 ;clearcolor lay: "filter", page: "fore"
 ;clearcolor lay: "filter", page: "back"
+;freeimage lay: "filter", page: "fore"
+;freeimage lay: "filter", page: "back"
 
 #○フェードアウト　１０００　黒
 ;cb_fade bg: "black"
@@ -1113,7 +1190,7 @@
 ;endpage
 
 ;noname
-今から約二年前、入学して二年目の春のことである――
+今から約２年前、入学して２年目の春のことである――
 ;endpage
 
 #☆メッセージフレーム　アウト

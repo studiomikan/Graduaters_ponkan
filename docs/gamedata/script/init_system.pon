@@ -14,8 +14,8 @@
 ;layalias name: "asuka", lay: "2"
 ;layalias name: "yuuki", lay: "3"
 ;layalias name: "filter", lay: "4"
-;layalias name: "op1", lay: "5"
-;layalias name: "op2", lay: "6"
+;layalias name: "tmp1", lay: "5"
+;layalias name: "tmp2", lay: "6"
 ;layalias name: "title1", lay: "5"
 ;layalias name: "title2", lay: "6"
 ;layalias name: "speaker", lay: "14"
@@ -56,8 +56,8 @@
   weight: "normal",
   color: "0xFFFFFF",
   pitch: 0,
-  lineheight: 26,
-  linepitch: 15,
+  lineheight: 30,
+  linepitch: 10,
   align: "left",
   shadow: true,
   shadowalpha: 0.7,
@@ -92,7 +92,7 @@
   pitch: 0,
   lineheight: 40,
   linepitch: 10,
-  align: "left",
+  align: "center",
   shadow: true,
   shadowalpha: 0.7,
   shadowangle: 0.5,

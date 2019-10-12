@@ -49,7 +49,7 @@ tv.mes_type = "orange"
   - tv.mes_type = "orange_radio"
   ;image lay: "mes", file: "image/mes-orange-radio.png"
   ;layopt lay: "mes", x: (1280-640)/2, y: (720-360)/2
-  ;mesopt lay: "mes", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30
+  ;mesopt lay: "mes", margint: 10, marginr: 40, marginb: 20, marginl: 25
   ;call file: "sysbtn/sysbtn.pon"
   ;init_glyph
   ;clear lay: "mes"
@@ -59,7 +59,7 @@ tv.mes_type = "orange"
   - tv.mes_type = "blue_radio"
   ;image lay: "mes", file: "image/mes-blue-radio.png"
   ;layopt lay: "mes", x: (1280-640)/2, y: (720-360)/2
-  ;mesopt lay: "mes", margint: 10, marginr: 30, marginb: 10, marginl: 15, lineheight: 30
+  ;mesopt lay: "mes", margint: 20, marginr: 40, marginb: 20, marginl: 25
   ;call file: "sysbtn/sysbtn.pon"
   ;init_glyph
   ;clear lay: "mes"
@@ -69,7 +69,7 @@ tv.mes_type = "orange"
   - tv.mes_type = "letter"
   ;layopt lay: "mes", x: (1280-800)/2, y: 0
   ;image lay: "mes", file: "image/mes-letter.png"
-  ;mesopt lay: "mes", margint: 10, marginr: 50, marginb: 10, marginl: 45, lineheight: 35,
+  ;mesopt lay: "mes", margint: 10, marginr: 50, marginb: 10, marginl: 45
   ;call file: "sysbtn/sysbtn.pon"
   ;init_glyph
   ;clear lay: "mes"
@@ -134,7 +134,7 @@ tv.mes_type = "orange"
 ;endmacro
 
 ;macro name: "joban"
-  ;noname
+  ;clear lay: "speaker"
 ;endmacro
 
 ;macro name: "letter"
@@ -195,6 +195,20 @@ tv.charaInfo = {
     ],
   },
   yuuki: {
+    medium: [
+      { file: "image/chara/yuuki-m-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-m-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-m-03.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-m-04.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-m-05.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+    ],
+    large: [
+      { file: "image/chara/yuuki-l-01.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-l-02.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-l-03.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-l-04.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-l-05.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
+    ],
   }
 };
 tv.nameInfo = {
@@ -275,6 +289,12 @@ tv.getCharaInfo = function(mp) {
 ;endmacro
 
 # asuka
+;macro name: "asuka"
+  ;print_name name: "明日香"
+;endmacro
+;macro name: "asuka_out"
+  ;out_chara name: "asuka"
+;endmacro
 ## asuka-medium
 ### asuka-medium-center
 ;macro name: "asuka-m-c-1"
@@ -375,6 +395,12 @@ tv.getCharaInfo = function(mp) {
 ;endmacro
 
 # yuuki
+;macro name: "yuuki"
+  ;print_name name: "優希"
+;endmacro
+;macro name: "yuuki_out"
+  ;out_chara name: "yuuki"
+;endmacro
 ## yuuki-medium
 ### yuuki-medium-center
 ;macro name: "yuuki-m-c-1"
@@ -539,13 +565,13 @@ tv.getCharaInfo = function(mp) {
   # フェード
   ;pretrans
   ;layopt lay: "all", visible: false
-  ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
+  ;image lay: "telop", file: "image/logo-title-mini.png", x: 1280-450-40, y: 720-102-40, visible: true
   ;trans time: 2000
   ;waittrans canskip: false
   ;wait time: 200, canskip: false
   # アウト
   ;pretrans
-  ;image lay: "base", file: "image/black.png"
+  ;image lay: "base", file: "image/bg-black.png"
   ;layopt lay: "telop", visible: false
   ;trans time: 2000
   ;waittrans canskip: false
@@ -573,7 +599,7 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "radio_mes_combo1"
   ;move {
     lay: "mes",
-    time: "250",
+    time: "200",
     ease: "out",
     type: "catmullrom",
     path: [

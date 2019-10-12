@@ -14,25 +14,25 @@
 ;wait time: 1000, canskip: false
 
 # 画像をキャッシュしておく
-;image lay: "op1", file: "image/op-text01.png", x: (1280-217)/2, y: (720-20)/2, visible: false
-;image lay: "op2", file: "image/op-text02.png", x: (1280-134)/2, y: (720-20)/2, visible: false
+;image lay: "tmp1", file: "image/op-text01.png", x: (1280-217)/2, y: (720-20)/2, visible: false
+;image lay: "tmp2", file: "image/op-text02.png", x: (1280-134)/2, y: (720-20)/2, visible: false
 
 # BGM再生
 ;playbgm num: "003"
-;fillcolor lay: "base", color: "0x000000", alpha: 1
+;image lay: "base", file: "image/bg-black.png", alpha: 1
 ;layopt lay: "all", visible: false
 ;layopt lay: "base", visible: true
 
 # Produced by スタジオ蜜柑
 ;pretrans
-;layopt lay: "op1", visible: true
+;layopt lay: "tmp1", visible: true
 ;trans time: 1500
 ;waittrans canskip: false
 
 ;wait time: 2000, canskip: false
 
 ;pretrans
-;layopt lay: "op1", visible: false
+;layopt lay: "tmp1", visible: false
 ;trans time: 1500
 ;waittrans canskip: false
 
@@ -40,26 +40,26 @@
 
 # Graduaters!
 ;pretrans
-;layopt lay: "op2", visible: true
+;layopt lay: "tmp2", visible: true
 ;trans time: 1500
 ;waittrans canskip: false
 
 ;wait time: 2000, canskip: false
 
 ;pretrans
-;layopt lay: "op2", visible: false
+;layopt lay: "tmp2", visible: false
 ;trans time: 1500
 ;waittrans canskip: false
 
 # whiteout
 ;pretrans
-;fillcolor lay: "base", color: "0xFFFFFF", alpha: 1
+;image lay: "base", file: "image/bg-white.png", alpha: 1
 ;trans time: 1500
 ;waittrans canskip: false
 
 # 画像リリース
-;freeimage lay: "op1,op2"
-;clearcolor lay: "op1,op2"
+;freeimage lay: "tmp1,tmp2"
+;clearcolor lay: "tmp1,tmp2"
 ;freeimage lay: "base"
 ;clearcolor lay: "base"
 
@@ -250,7 +250,7 @@
 ;endpage
 
 ;asuka-l-c-2
-「月が明るい日とかにはさ、
+「月が出てる日とかはさ、
 忍び込んで教室で宿題したり、
 こうやって屋上に来たりしてたんだよ」
 ;endpage
@@ -262,8 +262,8 @@
 ;endpage
 
 ;kenji
-「……バカだなお前。
-俺はてっきり、もうとっくにやめたもんだと思ってたぞ」
+「……バカだなお前。俺はてっきり、
+もうとっくにやめたもんだと思ってたぞ」
 ;endpage
 
 ;asuka
@@ -281,10 +281,11 @@
 ;kenji
 「はいはい」
 ;endpage
-;noname
 
 #○フェード　黒
+;fadeout_meslay
 ;cb_fade bg: "black"
+;fadein_meslay
 
 ;noname
 俺も明日香の隣へ並ぶ。
@@ -498,7 +499,8 @@
 ;endpage
 
 ;kenji
-「ぶーぶー。強引だー、横暴だー、民衆の意見も取り入れろー」
+「ぶーぶー。強引だー、横暴だー、
+我々の意見も取り入れろー」
 ;endpage
 
 #どうせやる羽目になるだろうが、とりあえず異議を唱えておく。俺のプライドのために。
@@ -546,7 +548,7 @@
 ;endpage
 
 ;kenji
-「もちろん三回勝負だよな？」
+「もちろん３回勝負だよな？」
 ;endpage
 
 ;asuka-l-c-1
@@ -589,7 +591,8 @@
 ;asuka_out
 
 ;noname
-そう言って、明日香はとっとと屋上からいなくなってしまった。
+そう言って、明日香はとっとと
+屋上からいなくなってしまった。
 ;endpage
 
 ;kenji
@@ -602,8 +605,9 @@
 ;endpage
 
 ;noname
-今ごろの時間は、多くの生徒がロビーでトランプやら麻雀やらで
-盛り上がっていることだろう。しかし俺はかくれんぼ。格差を感じる。
+今の時間帯は、多くの生徒がロビーに集まって、
+思い出話に花を咲かせていることだろう。
+しかし俺はかくれんぼ。格差を感じる。
 ;endpage
 
 ;noname
@@ -622,17 +626,17 @@
 ;endpage
 
 ;noname
-その内容がいつも楽しいことならいいのだが、
+それが毎回盛り上がる内容だったらいいんだが、
 明日香の場合は……まぁ、半々くらいだな。
 ;endpage
 
 ;noname
-二人きりのかくれんぼが楽しいとは思えないが、
+二人きりのかくれんぼが盛り上がるとは思えないが、
 幼なじみとして最後までつきあってやろう。
 ;endpage
 
 ;noname
-……そういえば、そもそも夜の学校に忍び込むというのも、
+……そういえば、そもそも夜の学校に忍び込むのも、
 明日香が言い出したことだった――
 ;endpage
 

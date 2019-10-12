@@ -5,9 +5,24 @@
 ;call file: "script/init_system.pon"
 ;call file: "script/macro.pon"
 
+#=============================================
+# カッコの自動インデント
+#=============================================
+;macro name: "speak_start"
+  ;ch text: "「"
+  ;indent
+;endmacro
+;macro name: "speak_end"
+  ;ch text: "」"
+  ;endindent
+;endmacro
+;cmdsc ch: "「", command: "speak_start"
+;cmdsc ch: "」", command: "speak_end"
+;cmdsc ch: "$", command: "br"
+
 # タイトルへ
 ~game_start_mark|グラディエイターズ！
 # ;layopt lay: "message", visible: false
 # ;wait time: 500, canskip: false
 # ;jump file: "scenario/title.pon"
-;jump file: "scenario/01.pon"
+;jump file: "scenario/05.pon"

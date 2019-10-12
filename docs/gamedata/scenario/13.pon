@@ -51,7 +51,7 @@
 「おっす、優希」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「こんばんは、常磐くん。
 珍しいね、今日は満月じゃないよ」
 ;endpage
@@ -61,7 +61,7 @@
 やっぱり床が濡れてるせいか」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「ここの屋上、あんまり水はけよくないみたいだね。
 雨漏りとか大丈夫なのかな」
 ;endpage
@@ -70,7 +70,7 @@
 「さぁ、そもそもコンクリの建物でも雨漏りってすんのか？」
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「うーん、私も知らない」
 ;endpage
 
@@ -79,7 +79,7 @@
 雨漏りしてるとこなんて見たことないし」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「そうだね」
 ;endpage
 
@@ -88,7 +88,7 @@
 たぶん、明日香の姿を探しているのだろう。
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「一人？」
 ;endpage
 
@@ -96,7 +96,7 @@
 「あー、明日香は観たいドラマがあるそうだ」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「そうなんだ。
 寮の女の子の間で流行ってるドラマがあるから、それかな」
 ;endpage
@@ -110,7 +110,7 @@
 「へぇ、優希は観なくてもいいのか？　そのドラマ」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「うーん、まぁ、観てもいいんだけど、
 今日はこっちの気分だったから」
 ;endpage
@@ -149,7 +149,7 @@
 ここの隣町の総合病院」
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「風邪？」
 ;endpage
 
@@ -217,7 +217,7 @@
 ;cb_fade bg: "roof"
 ;fadein_meslay
 
-;yuuki num: 5
+;yuuki-l-c-5
 「そっか。びっくりした？」
 ;endpage
 
@@ -226,7 +226,7 @@
 まぁ、こういうこともあるのかって納得したけども」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「そっか。ああいうことってあるんだね、残酷なことに」
 ;endpage
 
@@ -239,23 +239,23 @@
 その表情からにじみ出ているのは、苦しみ。
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「あの日は、家族で車で出かけて、その帰りだった。
 今からだいたい２年前かな」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「正面衝突する直前に兄さんは私をかばって重傷。
 おかげで私は、無傷とはいかなかったけど、軽い怪我ですんだ」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「兄さんはそれから３日間、生死の狭間をさまよった。
 意識を取り戻したときにはもうああなってた。
 兄さんは記憶を無くして、心も……子供に戻っちゃった」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「うん、まぁ、事故の後遺症ってやつだね。
 頭を打ってたし、ほかの怪我も酷くて……
 なんにしても、よくある話」
@@ -265,7 +265,7 @@
 そこまで言って、優希の表情がいつもの優しげな顔に戻る。
 ;endpage
 
-;yuuki num: 5
+;yuuki-l-c-5
 「とまぁ、そんな感じかな」
 ;endpage
 
@@ -273,7 +273,7 @@
 「なるほどね……ごめん」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「いいよ、別に」
 ;endpage
 

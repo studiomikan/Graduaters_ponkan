@@ -142,7 +142,7 @@
 贅沢なのでしょうか。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「健二～？　ぼーっとしてないで早く食べなよ」
 ;endpage
 
@@ -160,7 +160,7 @@
 「１番常磐健二、脱ぎます！」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 ;fontsize size: 30
 「脱がなくていい！」
 ;reset_font
@@ -559,7 +559,7 @@
 どうなんだろうな、ホント。
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「常盤くん」
 ;endpage
 
@@ -571,7 +571,7 @@
 「起きたのか」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「うん」
 ;endpage
 
@@ -579,7 +579,7 @@
 「体調は大丈夫？」
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「なんか頭痛い……」
 ;endpage
 
@@ -587,7 +587,7 @@
 「初めてのくせにがぶがぶ飲むからだぞ」
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「うーん、そんなに飲んだ記憶がないんだけど……
 まぁいっか。それより、飲む？」
 ;endpage
@@ -596,7 +596,7 @@
 「えぇ、まだ飲むのか？」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「違うよ、ほら、コーラ」
 ;endpage
 
@@ -613,7 +613,7 @@
 優希も同じ柄の缶を開けながら、俺の隣に座った。
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「何に乾杯する？」
 ;endpage
 
@@ -622,7 +622,7 @@
 今夜の美しい月を祝って」
 ;endpage
 
-;yuuki num: 5
+;yuuki-l-c-5
 「クサいよ」
 ;endpage
 
@@ -630,7 +630,7 @@
 「うっせー」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「まぁいっか。
 それじゃあ、明日香ちゃんの誕生日と今夜の美しい月を祝って」
 ;endpage
@@ -651,7 +651,7 @@
 「ぷはーっ！」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「わ、いい飲みっぷり」
 ;endpage
 
@@ -659,7 +659,7 @@
 「喉痛ぇー」
 ;endpage
 
-;yuuki num: 5
+;yuuki-l-c-5
 「だめじゃん」
 ;endpage
 
@@ -667,7 +667,7 @@
 「でもやめられないんだよなー」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「あはは。ところで、なにしてたの？」
 ;endpage
 
@@ -675,7 +675,7 @@
 「別になんにも。ただぼーっとしてた」
 ;endpage
 
-;yuuki num: 5
+;yuuki-l-c-5
 「そっか」
 ;endpage
 
@@ -699,7 +699,7 @@
 変えようのないことだと理解している。
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「今日は楽しかった」
 ;endpage
 
@@ -707,7 +707,7 @@
 優希が突然、ぽつりとそんなことを言った。
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「私、なんていうか、こんな賑やかなのは初めてかも」
 ;endpage
 
@@ -715,7 +715,7 @@
 「そうか。まぁ寮で生活してたらそうそうできるもんでもないしな」
 ;endpage
 
-;yuuki num: 5
+;yuuki-l-c-5
 「だね。だから今日はすごく楽しかった」
 ;endpage
 
@@ -734,7 +734,7 @@
 ただ適当なものをプレゼントして終わりだった」
 ;endpage
 
-;yuuki num: 5
+;yuuki-l-c-5
 「ううん、私がこういうパーティをやりたかっただけだから」
 ;endpage
 
@@ -756,7 +756,7 @@
 我ながら意地悪な質問。
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「そうだね」
 ;endpage
 
@@ -764,7 +764,7 @@
 優希は、当たり前のように言い返してきた。
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「楽しい騒ぎの中に身をおけば、あらためて認識できるから。
 兄さんや家族を犠牲にして、私は生きてるんだって」
 ;endpage
@@ -780,7 +780,7 @@
 #ＢＧＭフェード
 ;fadeoutbgm
 
-;yuuki num: 3
+;yuuki-l-c-3
 「それは違うよ、健二くん」
 ;endpage
 
@@ -790,7 +790,7 @@
 その目に射抜かれて、視線をそらすことすらできない。
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「私は、生きたいなんて思ってないもの」
 ;endpage
 
@@ -799,7 +799,7 @@
 言い返す隙も与えてくれない。
 ;endpage
 
-;yuuki num: 1
+;yuuki-l-c-1
 「私はあの事故で、みんなと一緒に死んでしまいたかった」
 ;endpage
 
@@ -807,7 +807,7 @@
 「それは、どうして」
 ;endpage
 
-;yuuki num: 2
+;yuuki-l-c-2
 「家族の死という出来事を目の当たりにして、
 私はそれを受け止めた。受け止めたけど、
 耐えきれはしないから。だからだよ、常磐くん」
@@ -869,7 +869,7 @@
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
-;asuka num: 2
+;asuka-l-c-2
 「健二」
 ;endpage
 
@@ -882,7 +882,7 @@
 「よう明日香、調子はどうだ？」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「無理。頭痛い。ちょー痛い」
 ;endpage
 
@@ -891,7 +891,7 @@
 お前あんまり強くないんだから」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「じゃあ健二がやめさせてくれればよかったじゃん」
 ;endpage
 
@@ -899,7 +899,7 @@
 「言ったけど聞かなかったんだろ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「記憶にない」
 ;endpage
 
@@ -912,7 +912,7 @@
 「何に乾杯？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「さしあたって、今夜の美しい月を祝って」
 ;endpage
 
@@ -920,7 +920,7 @@
 「クサいなー」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「うっさい。クサいくらいでいいの」
 ;endpage
 
@@ -928,7 +928,7 @@
 「だな。では、今夜の美しい月を祝って」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「乾杯！」
 ;endpage
 
@@ -937,7 +937,7 @@
 ゴクゴクと喉を鳴らして炭酸飲料を飲む。
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「ぷはー」
 ;endpage
 
@@ -945,7 +945,7 @@
 「いい飲みっぷり」
 ;endpage
 
-;asuka num: 4
+;asuka-l-c-4
 「喉痛いー」
 ;endpage
 
@@ -953,7 +953,7 @@
 「だめじゃん」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「あはは。でもやめらんないんだよねー」
 ;endpage
 
@@ -962,7 +962,7 @@
 先ほどまで優希がいた場所に明日香は腰をおろした。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「優希ちゃんとなに話してたの？」
 ;endpage
 
@@ -970,7 +970,7 @@
 「いきなりだな。別に、ただの世間話だよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「ホントにー？」
 ;endpage
 
@@ -978,7 +978,7 @@
 「ホントだって」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「でも優希ちゃん、なんか随分期限がよさそうだったよ？」
 ;endpage
 
@@ -986,7 +986,7 @@
 「え？」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「なんかスキップでもしそうな感じだった」
 ;endpage
 
@@ -1000,7 +1000,7 @@
 割と怒ってたはずだ。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「どうしたのって聞いたらさ、
 健二がなんか色々言ってくれたからって」
 ;endpage
@@ -1015,7 +1015,7 @@
 もしそうだとしたらアレは怖すぎだ。女優を目指せる。
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「で、優希ちゃんになにを言ったの？」
 ;endpage
 
@@ -1023,7 +1023,7 @@
 「なにって……いや別になにも」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「ふーん……あやしいなぁ。
 なに、もしかして告白でもしたの？」
 ;endpage
@@ -1032,7 +1032,7 @@
 「は？　告白？　誰が？」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「健二が優希ちゃんに、に決まってるでしょ。
 それでどうなの？　告白したの？」
 ;endpage
@@ -1042,7 +1042,7 @@
 なぜに俺が優希に告白せねばならんのだ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「え、だって惚れてるんでしょ？」
 ;endpage
 
@@ -1054,7 +1054,7 @@
 一瞬言葉に詰まったが、否定する。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「ごまかさなくてもいいのに」
 ;endpage
 
@@ -1068,7 +1068,7 @@
 それを明日香に言われるのは、いささかショックだった。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「なーんだ、違うのか」
 ;endpage
 
@@ -1076,7 +1076,7 @@
 「ああ。本当にただの世間話」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「ふーん……」
 ;endpage
 
@@ -1084,7 +1084,7 @@
 「なんだ、そんなに気になんのか」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「まぁね。……ほら、優希ちゃんってさ、あたしや健二に似てるじゃん」
 ;endpage
 
@@ -1092,7 +1092,7 @@
 「……似てるか？」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「似てるよ。お兄ちゃんがいるとことか、
 お兄ちゃんに助けてもらったとことかさ」
 ;endpage
@@ -1123,7 +1123,7 @@
 「優希のお兄さんはまだ生きてるし、最近は元気だってさ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「……まぁ、ね。
 でも、優希ちゃんは両親も亡くしてるし、さ」
 ;endpage
@@ -1149,7 +1149,7 @@
 ホントだよ？
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「だから、健二が優希ちゃんに同情して、
 くっついちゃうかなーなんて思ってたんだけど。
 違ったみたいね」
@@ -1159,7 +1159,7 @@
 「同情……」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「健二は優希に同情してる？」
 ;endpage
 
@@ -1192,7 +1192,7 @@
 考えてもうまく答えを出せなかった。
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「まぁ、どっちでもいいんだけどね！」
 ;endpage
 
@@ -1215,7 +1215,7 @@
 俺はシリアスな空気が苦手なんだ。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「片付けに何時間かけるつもりなのさ」
 ;endpage
 
@@ -1224,7 +1224,7 @@
 そうなっちまうかもしれないだろ」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「あー、それいいね！」
 ;endpage
 
@@ -1232,7 +1232,7 @@
 「よくねー。さっさと片付けて帰るぞ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「はいはい、わかってますよ」
 ;endpage
 
@@ -1250,7 +1250,7 @@
 屋上を出る前にふと思い立って、先を行く明日香を呼び止める。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「なぁに？」
 ;endpage
 
@@ -1260,12 +1260,12 @@
 
 #☆明日香表情変化
 
-;asuka num: 1
+;asuka-l-c-1
 ;waitmove
-;asuka num: 5
+;asuka-l-c-5
 ;waitmove
 ;clear
-;asuka num: 5
+;asuka-l-c-5
 「あんがと！」
 ;endpage
 

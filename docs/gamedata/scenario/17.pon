@@ -106,7 +106,7 @@
 死。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「健二」
 ;endpage
 
@@ -114,7 +114,7 @@
 「なんだよ」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「卒業おめでとう」
 ;endpage
 
@@ -122,7 +122,7 @@
 「もうそれは聞いたぞ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「あはは、そうだね、さっき言ったばっかりだった」
 ;endpage
 
@@ -138,7 +138,7 @@
 「さぁ帰るぞ明日香。優希のまねごとなんていいからさ。もう夜も遅いだろ、寮に帰って風呂入って寝ようぜ、なぁ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「だめ。あたしはまだ、健二から大事なこと聞いてない」
 ;endpage
 
@@ -150,7 +150,7 @@
 しかし、明日香はゆっくりと首を横に振った。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「お兄ちゃんの話をして、健二」
 ;endpage
 
@@ -196,7 +196,7 @@
 
 ;fadein_meslay
 
-;asuka num: 2
+;asuka-l-c-2
 「あたし知ってるんだ」
 ;endpage
 
@@ -204,7 +204,7 @@
 「……なにを」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「お兄ちゃん、死んでないんだよね」
 ;endpage
 
@@ -240,7 +240,7 @@
 夢は終わり、後に残るのは、つらい現実。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「生きてるんだね」
 ;endpage
 
@@ -248,7 +248,7 @@
 「生きてる。今でもまだ生きてる」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「でも、危ないんだよね」
 ;endpage
 
@@ -327,7 +327,7 @@
 #○フェード　ズーム屋上
 ;cb_fade bg: "tank"
 
-;asuka num: 1
+;asuka-l-c-1
 「もう何年もあのままなの？」
 ;endpage
 
@@ -335,7 +335,7 @@
 「お前、見たのか」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「うん、見た」
 ;endpage
 
@@ -363,7 +363,7 @@
 しかしそれは、俺が感じている以上に、明日香が感じているはずだ。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「意識が戻ったことは？」
 ;endpage
 
@@ -371,7 +371,7 @@
 「ない。ずっとあのままだ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「……治るの？」
 ;endpage
 
@@ -379,7 +379,7 @@
 「可能性は限りなくゼロだそうだ」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「……そっか」
 ;endpage
 
@@ -387,7 +387,7 @@
 「お前のせいじゃない、明日香。違う、絶対に」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「うん、ありがと」
 ;endpage
 
@@ -423,7 +423,7 @@
 あるいは、そう、すべてを振り切って飛んでしまうかのどちらか。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「お兄ちゃんはまだ大丈夫なの？」
 ;endpage
 
@@ -431,7 +431,7 @@
 「わからない。明日死ぬかもしれないし、あと何年も生きるかもしれない」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「そっか」
 ;endpage
 
@@ -439,7 +439,7 @@
 「明日香、そこ危ないだろ、下に降りてこい。帰ろう」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「ねぇ健二。あたしどうしたらいいのかわかんないよ」
 ;endpage
 
@@ -451,7 +451,7 @@
 何が大丈夫だというのだろう。こんな言葉じゃダメだ。こんなんじゃまた、明日香を救えない。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「お兄ちゃんはさ、子供のあたしの中ですごくかっこいい存在だったんだ。あこがれだった。でも、私があんな目にあわせちゃった」
 ;endpage
 
@@ -459,7 +459,7 @@
 「違う。明日香のせいじゃない。最初に飛び込んで、無様にもお前を助けられなかった俺が悪い。お前が気負う必要はないんだ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「ありがと。でもね、無理だよ」
 ;endpage
 
@@ -495,7 +495,7 @@
 この上明日香まで助けられないのか、俺は。馬鹿な、そんなこと許されない。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「ねぇ健二。あたしは、生きていてもいいですか？」
 ;endpage
 
@@ -563,8 +563,8 @@
 そうすれば、きっと俺たちは幸せになれるから。
 ;endpage
 
-;asuka num: 2
-#;asuka num: 2
+;asuka-l-c-2
+#;asuka-l-c-2
 
 ;asuka
 「一つ忘れてたこと、言っていいかな」
@@ -574,7 +574,7 @@
 「なんだよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「好きだよ、健二」
 ;endpage
 
@@ -602,7 +602,7 @@
 ただ一言、好きだと伝えればよかった。それができなかったのは、優希の死を目の当たりにした恐れがあったからだ。
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「ありがと、健二」
 ;endpage
 
@@ -659,7 +659,7 @@
 「……ってゆーか、馬鹿？」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「めんごめんご」
 ;endpage
 
@@ -667,7 +667,7 @@
 あまりの高さに腰を抜かしたらしい明日香を、半ば引きずり下ろすようにして助ける。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「だってさ、断られるかもーとか思うじゃん、ね、ほら。で、返事もらったら安心しちゃって」
 ;endpage
 
@@ -675,7 +675,7 @@
 「はいはい、ほんっと馬鹿だなお前。ってか恥ずかしいこと言うな馬鹿」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「ちょっと、さっきから聞いてれば馬鹿馬鹿と、健二のくせに」
 ;endpage
 
@@ -683,7 +683,7 @@
 「うっさい。馬鹿に馬鹿と言って何が悪い」
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「なにさ。その馬鹿に惚れてるんでしょ？」
 ;endpage
 
@@ -691,7 +691,7 @@
 「な、ばっかお前、惚れてるとか恥ずかしいこと言うなよ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「でもホントでしょ？」
 ;endpage
 
@@ -707,7 +707,7 @@
 「な、そ、そりゃあお前、さっき言った通りだ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「さっきって、なんて言ったの？　よく聞こえなかったなー」
 ;endpage
 
@@ -715,7 +715,7 @@
 「ぐっ……」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「ほらほら、なんて言ったの？」
 ;endpage
 
@@ -725,7 +725,7 @@
 ;reset_font
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「もっかい」
 ;endpage
 
@@ -733,7 +733,7 @@
 「ぐっ……す……す……」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「す？」
 ;endpage
 
@@ -744,7 +744,7 @@
 ;reset_font
 ;endpage
 
-;asuka num: 3
+;asuka-l-c-3
 「ていっ！」
 ;endpage
 
@@ -754,7 +754,7 @@
 「ひぎぃ！」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「もっかい」
 ;endpage
 
@@ -765,7 +765,7 @@
 ;reset_font
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「うん、あたしも、健二が好きだよ」
 ;endpage
 
@@ -777,7 +777,7 @@
 俺はそっぽを向いた。恥ずい。あれだけごまかしても恥ずい。無理。マジ勘弁。
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「あっれー、照れてるのー？」
 ;endpage
 
@@ -785,7 +785,7 @@
 「照れてなんかねぇよ馬鹿」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「あはは、かわいいなー健二は」
 ;endpage
 
@@ -793,7 +793,7 @@
 「うっせ、かわいいとか言うなコンチクショウ」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「いいじゃんいいじゃん。かわいい彼氏大いに結構ってね」
 ;endpage
 
@@ -809,7 +809,7 @@
 それにまぁ、こういうのも悪くない。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「健二」
 ;endpage
 
@@ -817,7 +817,7 @@
 「ん？」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「いいのかな、ホントに」
 ;endpage
 
@@ -875,7 +875,7 @@
 「俺、思うんだけど」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「うん」
 ;endpage
 
@@ -883,7 +883,7 @@
 「俺たちって結構苦労してきたじゃん」
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「うん」
 ;endpage
 
@@ -891,11 +891,11 @@
 「今まで苦労して、これからだって苦労するんだから、少しくらい報われたっていいと思うんだ。ってか報われないとやってらんねぇじゃん。だから、いいに決まってる」
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「うん」
 ;endpage
 
-;asuka num: 5
+;asuka-l-c-5
 「うん。サンキュ、健二」
 ;endpage
 
@@ -915,7 +915,7 @@
 多分、何も変わらない。
 ;endpage
 
-;asuka num: 2
+;asuka-l-c-2
 「ほら健二、帰ろう」
 ;endpage
 
@@ -945,7 +945,7 @@
 ふと思い立って、先を歩く明日香を呼び止める。
 ;endpage
 
-;asuka num: 1
+;asuka-l-c-1
 「なに、健二」
 ;endpage
 
@@ -958,12 +958,12 @@
 ;endpage
 
 ;clear_name
-;asuka num: 2
+;asuka-l-c-2
 ;waitmove canskip: false
-;asuka num: 5
+;asuka-l-c-5
 ;waitmove canskip: false
 ;clear
-;asuka num: 5
+;asuka-l-c-5
 「ばーか！」
 ;endpage
 ;asuka_out

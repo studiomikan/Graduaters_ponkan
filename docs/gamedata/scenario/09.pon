@@ -7,7 +7,7 @@
 ;wait time: 1000, canskip: false
 #☆ラジオメッセージ　イン
 
-;set_to_radio_blue
+;mes_blue_radio
 ;fadein_meslay
 
 ;noname
