@@ -177,6 +177,10 @@ tv.mes_type = "orange"
   ;print_name name: "？？"
 ;endmacro
 
+;macro name: "kenji_yuuki"
+  ;print_name name: "健二・優希"
+;endmacro
+
 ---
 // データ
 tv.positionInfo = {
@@ -186,9 +190,9 @@ tv.positionInfo = {
     right:  (1280/24)*17,
   },
   large: {
-    left:   (1280/12)*4,
+    left:   (1280/24)*7,
     center: 1280/2,
-    right:  (1280/12)*8,
+    right:  (1280/24)*17,
   }
 };
 tv.charaInfo = {

@@ -53,23 +53,24 @@
 ;endpage
 
 ;kenji
-「なんでもないですごめんなさい」
+「なんでもないです、ごめんなさい」
 ;endpage
 
 ;noname
-今日は明日香の誕生日。かねてから計画していたように、
+今日は明日香の誕生日。
+かねてから計画していたように、
 学校でささやかなパーティを開くことになった。
 ;endpage
 
 ;noname
 もうすっかり２人のパシリと化した俺は、
 学校が終わってすぐに自慢の愛車（ママチャリ）で
-３往復分の食料を買出しに行かされた。
+このパーティのための買出しに行かされた。
 ;endpage
 
 ;noname
 教室の机を集めて作ったテーブルには、
-その戦利品であるお菓子やらジュースやらが大量に並んでいる。
+その戦利品であるお菓子やジュースが大量に並んでいる。
 ;endpage
 
 ;noname
@@ -87,10 +88,15 @@
 ;endpage
 
 ;kenji
-「太るぞ貴様らー」
+「太るぞー」
 ;endpage
 
-;yuuki_asuka ypos: "right", ynum: 1, apos: "left", anum: 1
+;pretrans
+;load_chara name: "asuka", size: "medium", pos: "left", num: 1
+;load_chara name: "yuuki", size: "medium", pos: "right", num: 1
+;trans time: 200
+;waittrans
+;print_name name: "明日香・優希"
 「なにか言った？」
 ;endpage
 
@@ -111,9 +117,9 @@
 ;endpage
 
 ;noname
-会ったばかりのころはそれなりに控えめだった優希も、
+会ったばかりのころは大人しかった優希も、
 最近は明日香の影響なのかずいぶん明るくなった。
-そしてそれに比例して俺の肩身はどんどん狭くなりつつある。
+ただ、それに比例して俺の肩身はどんどん狭くなりつつある。
 ;endpage
 
 ;noname
@@ -152,7 +158,7 @@
 
 ;noname
 今は難しいこと（と悲しいこと）は忘れて、
-このひとときの宴を楽しむことにしよう。
+この時間を楽しむことにしよう。
 ;endpage
 
 ;playse num: "22"
@@ -213,7 +219,7 @@
 #△ＢＧＭ２
 ;playbgm num:"002"
 
-;asuka-m-l-5
+;asuka-l-l-5
 「け～ん～じ～！」
 ;endpage
 
@@ -221,7 +227,7 @@
 「なんだよ～」
 ;endpage
 
-;asuka-m-l-3
+;asuka-l-l-3
 「ちょっとそこに座わりなさい！
 座れ！　すぐ座れ！　座れや！」
 ;endpage
@@ -247,7 +253,7 @@
 「わーすごいすごーい！」
 ;endpage
 
-;asuka-m-l-3
+;asuka-l-l-3
 「そんなのどうでもいいから聞け～！」
 ;endpage
 
@@ -255,7 +261,7 @@
 「え～やだよ～」
 ;endpage
 
-;asuka-m-l-4
+;asuka-l-l-4
 「ね～聞いてよ～、ねぇねぇねぇ～」
 ;endpage
 
@@ -263,17 +269,17 @@
 「しょうがねぇなぁ、聞くわ～、ちょお聞くわ～」
 ;endpage
 
-;asuka-m-l-4
+;asuka-l-l-4
 「健二さぁ、ちゃんとあたしの話聞いてる？
 っていうか、健二は普段からいい加減すぎるのよ！」
 ;endpage
 
 ;kenji
-「あぁ～？　このイケメン様に向かって
+「あぁ～？　このイケメンに向かって
 ブサイクとはなんだ～、このやろ～」
 ;endpage
 
-;asuka-m-l-5
+;asuka-l-l-5
 「誰がイケメンよ、このバカ健二！」
 ;endpage
 
@@ -311,7 +317,7 @@
 ;playse num: "18"
 ;quake time: 500, x: 10, y: 5
 ;kenji
-「ペプシっ！」
+「ペブシっ！」
 ;endpage
 
 ;kenji
@@ -319,7 +325,7 @@
 ;endpage
 
 ;yuuki-m-r-5
-「あはは、ペプシだってー！
+「あはは、ペブシだってー！
 あーおかしー！」
 ;endpage
 
@@ -339,7 +345,7 @@
 ;endpage
 
 ;asuka-m-l-3
-「こらしょこ、ヤジ飛ばしゃない！
+「こらそこ、ヤジ飛ばしゃない！
 あんたも座れ！　すぐ座れ！」
 ;endpage
 
@@ -391,9 +397,12 @@
 ;endpage
 
 ;asuka-m-l-3
-「よく聞けへっぽこ！　あんた優希ちゃんにデレデレしすぎなのよ！
-なんかあたしと優希ちゃんで態度変えてない？
-もう！　たたっ切ってやる！」
+「よく聞けへっぽこ！
+あんた優希ちゃんにデレデレしすぎなのよ！　馬鹿！
+てかなんかあたしと優希ちゃんで態度変えてない？」
+
+;asuka-m-l-3
+「もう！　たたっ切ってやる！」
 ;endpage
 
 ;playse num: "17"
@@ -408,7 +417,7 @@
 ;endpage
 
 ;asuka-m-l-5
-「それでいいのよへっぽこ！
+「それでいいのよ！　やればできるじゃん。
 じゃあ次は健二のネタね」
 ;endpage
 
@@ -432,7 +441,12 @@
 ;reset_font
 ;endpage
 
-;yuuki_asuka ypos: "right", ynum: 3, apos: "left", anum: 3
+;pretrans
+;load_chara name: "asuka", size: "medium", pos: "left", num: 3
+;load_chara name: "yuuki", size: "medium", pos: "right", num: 3
+;trans time: 200
+;waittrans
+;print_name name: "明日香・優希"
 「脱がなくていい！」
 ;endpage
 
@@ -472,10 +486,14 @@
 屋上で酔いを覚ますことにした。
 ;endpage
 
+;fadeout_meslay
+
 #△ＢＧＭ１
 ;playbgm num:"001"
 #○移動　屋上
 ;cb_move bg: "roof"
+
+;fadein_meslay
 
 ;kenji
 「ふぅ……いつつつつ……」
@@ -488,7 +506,7 @@
 
 ;noname
 なんか色々やった気はするが、ところどころ記憶が飛んでいる。
-節々の痛みは何が原因なのかよく覚えていない。
+なぜこんなに体の節々が痛いんだろう。
 ;endpage
 
 ;noname
@@ -538,7 +556,7 @@
 ;endpage
 
 ;noname
-ふと、優希はどうなのだろうと思った。
+……ふと、優希はどうなのだろうと思った。
 ;endpage
 
 ;noname
@@ -559,7 +577,7 @@
 どうなんだろうな、ホント。
 ;endpage
 
-;yuuki-l-c-1
+;yuuki-m-c-1
 「常盤くん」
 ;endpage
 
@@ -571,7 +589,7 @@
 「起きたのか」
 ;endpage
 
-;yuuki-l-c-2
+;yuuki-m-c-2
 「うん」
 ;endpage
 
@@ -579,7 +597,7 @@
 「体調は大丈夫？」
 ;endpage
 
-;yuuki-l-c-1
+;yuuki-m-c-1
 「なんか頭痛い……」
 ;endpage
 
@@ -587,7 +605,7 @@
 「初めてのくせにがぶがぶ飲むからだぞ」
 ;endpage
 
-;yuuki-l-c-1
+;yuuki-m-c-1
 「うーん、そんなに飲んだ記憶がないんだけど……
 まぁいっか。それより、飲む？」
 ;endpage
@@ -596,7 +614,7 @@
 「えぇ、まだ飲むのか？」
 ;endpage
 
-;yuuki-l-c-2
+;yuuki-m-c-2
 「違うよ、ほら、コーラ」
 ;endpage
 
@@ -604,13 +622,15 @@
 「なんだ。んじゃもらおうかな」
 ;endpage
 
+;yuuki_out
+
 ;noname
-優希から冷えて汗をかいたアルミ缶を受け取りプルタブを開けると、
-プシッと炭酸が抜ける。
+優希から冷えて汗をかいたアルミ缶を受け取った。
+プルタブを開けると、 プシッと炭酸が抜ける。
 ;endpage
 
 ;noname
-優希も同じ柄の缶を開けながら、俺の隣に座った。
+優希も同じ柄の缶を開けながら、俺の隣に座た。
 ;endpage
 
 ;yuuki-l-c-2
@@ -631,8 +651,8 @@
 ;endpage
 
 ;yuuki-l-c-2
-「まぁいっか。
-それじゃあ、明日香ちゃんの誕生日と今夜の美しい月を祝って」
+「まぁいっか。それじゃあ、
+明日香ちゃんの誕生日と今夜の美しい月を祝って」
 ;endpage
 
 ;kenji
@@ -640,7 +660,8 @@
 ;endpage
 
 ;noname
-カコンとアルミ缶同士を軽くぶつけて、そのまま一気にあおる。
+カコンとアルミ缶同士を軽くぶつけて、
+そのまま一気にあおる。
 ;endpage
 
 ;noname
@@ -690,8 +711,15 @@
 ;endpage
 
 ;noname
-俺を突き落とした優希こそが本当の三笠優希なんだ。
-彼女の願いは、ここから飛び降りることなんだ。
+俺を突き落とした優希こそが本当の三笠優希で。
+;endpage
+
+;noname
+彼女の願いは、ここから飛び降りることなんだ、と。
+;endpage
+
+;noname
+そんな受け入れがたい願いを、俺は知っている。
 ;endpage
 
 ;noname
@@ -712,7 +740,8 @@
 ;endpage
 
 ;kenji
-「そうか。まぁ寮で生活してたらそうそうできるもんでもないしな」
+「そうか。まぁ寮生活だとなぁ。
+そうそうできるもんでもないよな」
 ;endpage
 
 ;yuuki-l-c-5
@@ -748,7 +777,7 @@
 ;endpage
 
 ;kenji
-「楽しい環境に身を置けば、
+「楽しければ楽しいほど、
 自分を傷つけることができるから？」
 ;endpage
 
@@ -808,9 +837,30 @@
 ;endpage
 
 ;yuuki-l-c-2
-「家族の死という出来事を目の当たりにして、
-私はそれを受け止めた。受け止めたけど、
-耐えきれはしないから。だからだよ、常磐くん」
+「あのね、常盤君」
+;endpage
+
+;noname
+優希は、出来の悪い生徒に説明するように、
+俺に優しく話しかける。
+;endpage
+
+;yuuki-l-c-2
+「気持ちっていうものは、これはもうどうしようもなく、
+コントロールできないものなんだよ。
+わかるでしょ？」
+;endpage
+
+;yuuki-l-c-2
+「あの日、家族みんなが死んで……私の気持ちは、
+それを受け入れた。納得した。起きたことは覆せない。
+もう、みんな帰ってこないんだって」
+;endpage
+
+;yuuki-l-c-2
+「だけどね、この先もずーっと耐えていけるかどうかも、
+自分が自分を許せるのかどうかも、また別なんだよ。
+これはもう、気持ちなんだよ、常盤くん」
 ;endpage
 
 ;yuuki_out
@@ -836,7 +886,7 @@
 ;noname
 優希の考えていることがわからなかった。
 わかるはずもなかった。
-俺は優希と違って、生きたいと思っているのだから。
+俺は優希と違って、生きたいと願っているのだから。
 ;endpage
 
 ;noname
@@ -845,7 +895,7 @@
 ;endpage
 
 ;noname
-死んでも死んでやるもんか、チクショウ。
+死んでも死んでやるもんか、チクショー。
 ;endpage
 
 ;kenji
@@ -853,12 +903,12 @@
 ;endpage
 
 ;kenji
-「……優希、起こると怖いなぁ…………」
+「……優希、怒ると怖いなぁ…………」
 ;endpage
 
-;noname
-かわいいフリして割とやります、三笠優希。
-;endpage
+#;noname
+#かわいいフリして割とやります、三笠優希。
+#;endpage
 
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
@@ -883,7 +933,7 @@
 ;endpage
 
 ;asuka-l-c-1
-「無理。頭痛い。ちょー痛い」
+「無理。頭痛い。ちょーぉ痛い」
 ;endpage
 
 ;kenji
@@ -892,7 +942,7 @@
 ;endpage
 
 ;asuka-l-c-1
-「じゃあ健二がやめさせてくれればよかったじゃん」
+「じゃあ健二が止めてくれればよかったじゃん」
 ;endpage
 
 ;kenji
@@ -979,7 +1029,7 @@
 ;endpage
 
 ;asuka-l-c-1
-「でも優希ちゃん、なんか随分期限がよさそうだったよ？」
+「でも優希ちゃん、なんか随分と機嫌がよかったよ？」
 ;endpage
 
 ;kenji
@@ -1006,7 +1056,7 @@
 ;endpage
 
 ;kenji
-「へー……」
+「ふーん……」
 ;endpage
 
 ;noname
@@ -1033,8 +1083,8 @@
 ;endpage
 
 ;asuka-l-c-5
-「健二が優希ちゃんに、に決まってるでしょ。
-それでどうなの？　告白したの？」
+「健二が、優希ちゃんに、に決まってるでしょ。
+それでどうなの？　したの？」
 ;endpage
 
 ;kenji
@@ -1050,7 +1100,7 @@
 「……惚れてない」
 ;endpage
 
-;kenji
+;noname
 一瞬言葉に詰まったが、否定する。
 ;endpage
 
@@ -1085,7 +1135,8 @@
 ;endpage
 
 ;asuka-l-c-5
-「まぁね。……ほら、優希ちゃんってさ、あたしや健二に似てるじゃん」
+「まぁね。……ほら、優希ちゃんってさ、
+あたしや健二に似てるじゃん」
 ;endpage
 
 ;kenji
@@ -1105,27 +1156,42 @@
 お兄ちゃんに助けてもらった――
 ;endpage
 
+;fadeout_meslay
+#;cb_fade bg: "black"
+;pretrans
+;image lay: "base", file: "image/bg-black.png", visible: true
+;layopt lay: "asuka", visible: false
+;trans time: 1000
+;waittrans
+;fadein_meslay
+
 ;noname
 それは、忘れることのできない、幼いの頃の記憶。
 海で溺れた明日香と、助けようと飛び込んだ俺。
 ;endpage
 
 ;noname
-勇ましく飛び込んだものの、結局俺は明日香と一緒になって溺れて。
+勇ましく飛び込んだものの、
+結局俺は明日香と一緒になって溺れて。
 そして俺たちは、兄さんによって命を救われた。
 ;endpage
 
 ;noname
-兄さん命と引き替えに。
+――兄さん命と引き替えに。
 ;endpage
 
+;fadeout_meslay
+;cb_fade bg: "roof"
+;fadein_meslay
+
 ;kenji
-「優希のお兄さんはまだ生きてるし、最近は元気だってさ」
+「優希のお兄さんはまだ生きてるし、
+最近は元気だってさ」
 ;endpage
 
 ;asuka-l-c-2
 「……まぁ、ね。
-でも、優希ちゃんは両親も亡くしてるし、さ」
+でも、優希ちゃんは両親を亡くしてるし、さ」
 ;endpage
 
 ;kenji
@@ -1145,7 +1211,7 @@
 ;endpage
 
 ;noname
-……俺ロリコンじゃないし。
+……俺、ロリコンじゃないし。
 ホントだよ？
 ;endpage
 
@@ -1247,10 +1313,11 @@
 ;endpage
 
 ;noname
-屋上を出る前にふと思い立って、先を行く明日香を呼び止める。
+屋上を出る前にふと思い立って、
+先を行く明日香を呼び止める。
 ;endpage
 
-;asuka-l-c-2
+;asuka-m-c-2
 「なぁに？」
 ;endpage
 
@@ -1260,12 +1327,21 @@
 
 #☆明日香表情変化
 
-;asuka-l-c-1
-;waitmove
-;asuka-l-c-5
-;waitmove
-;clear
-;asuka-l-c-5
+# ;asuka-l-c-1 time: 1000
+# ;asuka-l-c-5 time: 1000
+# ;clear
+
+;pretrans
+;load_chara name: "asuka", size: "medium", pos: "center", num: 1
+;trans time: 1000
+;waittrans canskip: false
+;wait time: 1000
+;pretrans
+;load_chara name: "asuka", size: "medium", pos: "center", num: 5
+;trans time: 1000
+;waittrans canskip: false
+
+;asuka-m-c-5
 「あんがと！」
 ;endpage
 
