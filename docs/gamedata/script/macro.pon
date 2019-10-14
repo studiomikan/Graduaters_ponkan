@@ -159,7 +159,7 @@ tv.mes_type = "orange"
 
 ;macro name: "endpage"
   ;pagebreak
-  ;hbr
+  #;hbr
   ;clear lay: "mes, speaker"
   ;delcmdsc ch: "\n"
 ;endmacro
@@ -724,7 +724,15 @@ tv.getCharaInfo = function(mp) {
 # 演出：ハートビート
 #-------------------------------------------------------------------
 ;macro name: "heartbeat"
-  -alert("TODO: Make macro 'heartbeat'");
+  ;playse num: "07"
+  ;pretrans
+  ;image lay: "filter", file: "image/bg-red.png", visible: true, x: 0, y: 0, alpha: 1.0
+  ;trans time: 400
+  ;waittrans
+  ;pretrans
+  ;layopt lay: "filter", visible: false
+  ;trans time: 400
+  ;waittrans
 ;endmacro
 
 

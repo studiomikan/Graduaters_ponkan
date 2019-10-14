@@ -26,5 +26,5 @@
 # ;wait time: 500, canskip: false
 # ;jump file: "scenario/title.pon"
 ;mes_blue
-;jump file: "scenario/15.pon"
+;jump file: "scenario/17.pon"
 
