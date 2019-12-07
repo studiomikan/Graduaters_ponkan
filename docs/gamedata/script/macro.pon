@@ -111,7 +111,6 @@ tv.mes_type = "orange"
   ;clear lay: "message, speaker, sysbtn"
   ;trans time: 200
   ;waittrans canskip: false
-
 ;endmacro
 
 ;macro name: "fadeout_meslay"
@@ -123,12 +122,12 @@ tv.mes_type = "orange"
 ;endmacro
 
 ;macro name: "print_name"
-  ;clear lay: "speaker"
+  ;clear lay: "mes, speaker"
   ;ch lay: "speaker", text: "&mp.name"
   ;hch text: "&'【' + mp.name + '】'"
   ;hbr
   ;cmdsc ch: "\n", command: "br"
-  #;layopt lay: "speaker", visible: true
+  ;layopt lay: "speaker", visible: true
 ;endmacro
 
 ;macro name: "clear_name"
@@ -136,12 +135,12 @@ tv.mes_type = "orange"
 ;endmacro
 
 ;macro name: "noname"
-  ;clear lay: "speaker"
+  ;clear lay: "mes, speaker"
   ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
 ;macro name: "joban"
-  ;clear lay: "speaker"
+  ;clear lay: "mes, speaker"
 ;endmacro
 
 ;macro name: "letter"
