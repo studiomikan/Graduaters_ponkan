@@ -87,10 +87,10 @@ tv.mes_type = "orange"
 ;macro name: "init_glyph"
   ;if exp: "tv.mes_type == 'orange' || tv.mes_type == 'blue'"
     ;lbglyph "pos": "eol"
-    ;pbglyph "pos": "absolute", "x": 1050, "y": 720 - 50,
-  ;elsif exp: "tv.mes_type == 'orange_radio' || tv.mes_type == 'orange_blue'"
+    ;pbglyph "pos": "absolute", x: 1053, y: 720 - 40
+  ;elsif exp: "tv.mes_type.match(/radio/)"
     ;lbglyph "pos": "eol"
-    ;pbglyph "pos": "relative", "x": 600, "y": 320,
+    ;pbglyph "pos": "relative", x: 600, y: 320
   ;else
     ;lbglyph "pos": "eol"
     ;pbglyph "pos": "eol"

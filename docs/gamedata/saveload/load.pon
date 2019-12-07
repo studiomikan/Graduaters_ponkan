@@ -290,5 +290,6 @@ PAGE:
 ;tempload num: 0, sound: false, toback: true
 ;trans method: "crossfade", time: "&tv.system.load.fadeoutTime"
 ;historyopt enabled: true
+;rclick jump: false, call: false, enabled: true
 ;return
 

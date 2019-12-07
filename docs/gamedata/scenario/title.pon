@@ -1,22 +1,34 @@
 # タイトル画面
 *title_start
-
-;loadsound buf: "system", file: "sound/se01.ogg"
 ;historyopt output: false, enabled: false
 ;rclick enabled: false
 ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
 
-
-# ブランドロゴ
+# ブランドロゴなど
 ;pretrans
-;image lay: "base", file: "image/bg-title01.png", x: 0, y: 0, visible: true
-;trans time: 1000
-;waittrans
+  ;image lay: "base", file: "image/bg-warning.png", x: 0, y: 0, visible: true
+  ;trans time: 1000
+  ;waittrans
 ;wait time: 1500, canskip: false
+
 ;pretrans
-;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
-;trans time: 1000
-;waittrans
+  ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
+  ;trans time: 1000
+  ;waittrans
+
+;pretrans
+  ;image lay: "base", file: "image/bg-title01.png", x: 0, y: 0, visible: true
+  ;trans time: 1000
+  ;waittrans
+;wait time: 1500, canskip: false
+
+*title_return_point
+;pretrans
+  ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
+  ;trans time: 1000
+  ;waittrans
+
+;loadsound buf: "system", file: "sound/se01.ogg"
 
 # タイトルロゴ フェード->移動
 ;pretrans
@@ -38,6 +50,8 @@
 ;waittrans canskip: false
 
 # ボタン
+;freeimage lay: "2-5"
+;clearcolor lay: "2-5"
 ;layopt lay: 2, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 360+80*0,
 ;layopt lay: 3, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 360+80*1
 ;layopt lay: 4, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 360+80*2
@@ -119,7 +133,7 @@ try {
 ;waittrans canskip: true
 ;wait time: 2000, canskip: false
 
-;historyopt enabled: true
+;historyopt output: true, enabled: true
 ;rclick enabled: true, jump: false, call: false
 
 ;jump file: "scenario/01.pon"

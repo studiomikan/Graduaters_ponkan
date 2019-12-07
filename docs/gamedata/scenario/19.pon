@@ -22,11 +22,13 @@
 ;endpage
 
 ;noname
-愛用の音楽プレイヤーの録音停止ボタンを押し、俺は一息つく。
+愛用の音楽プレイヤーの録音停止ボタンを押し、
+小さく溜息をはいた。
 ;endpage
 
 ;noname
-明日香がトイレに行ったので、俺は三年の教室の窓際で待っていた。
+明日香がトイレに行ったので、
+俺は三年の教室の窓際で待っていた。
 ;endpage
 
 ;noname
@@ -34,11 +36,12 @@
 ;endpage
 
 ;noname
-この小さなメモリの中に、大量の音が詰め込まれているというのだから不思議だ。
+この小さなカードの中に、
+大量の音が詰め込まれているというのだから不思議だ。
 ;endpage
 
 ;noname
-でも、その大量の音も、もう俺には必要ない。
+でも、そのたくさんの音たちも、もう俺には必要ない。
 ;endpage
 
 ;kenji
@@ -54,7 +57,7 @@
 ;endpage
 
 ;noname
-俺は明日香と優希のことを考える。
+俺は、明日香と優希のことを考える。
 ;endpage
 
 ;noname
@@ -78,7 +81,9 @@
 ;endpage
 
 ;noname
-手の中でメモリをもてあそんでいると、ちょうど明日香が帰ってきた。少し目元が赤い。泣いていたのだろうか。
+手の中でメモリーカードをもてあそんでいると、
+ちょうど明日香が帰ってきた。
+少し目元が赤い。泣いていたのだろうか。
 ;endpage
 
 ;kenji
@@ -90,7 +95,7 @@
 ;endpage
 
 ;kenji
-「顔赤いぞ」
+「目、赤いぞ」
 ;endpage
 
 ;asuka-l-c-3
@@ -110,7 +115,8 @@
 ;endpage
 
 ;noname
-俺は返事をして立ち上がりながら、窓からメモリーカードを投げ捨てた。
+俺は返事をして立ち上がりながら、
+窓からメモリーカードを投げ捨てた。
 ;endpage
 
 ;noname
@@ -118,18 +124,19 @@
 ;endpage
 
 ;noname
-俺は小さく口にする。さよならジョバン、グッバイブラザー。
+俺は小さく口にする。
+さよならジョバン、グッバイブラザー。
 ;endpage
 
 ;noname
-そうして俺たちは、今度こそ、俺たちの学校を後にした。
+そうして俺たちは、今度こそ、
+俺たちの学校を卒業した。
 ;endpage
 
 ;every_out
 
-#☆メッセージフレーム　アウト
 ;fadeout_meslay
-#フェードアウト
+;fadeoutbgm
 ;cb_fade bg:"black", time: 2000, canskip: false
 
 #クリアフラグ
@@ -138,4 +145,5 @@
 ;freeimage lay: "asuka,yuuki"
 ;freeimage lay: "asuka,yuuki", page: "back"
 ;layopt lay: "asuka,yuuki", visible: false
-;jump file: "scenario/title.pon"
+;wait time: 2000, canskip: false
+;jump file: "scenario/title.pon", label: "title_return_point"

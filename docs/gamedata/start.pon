@@ -22,9 +22,9 @@
 
 # タイトルへ
 ~game_start_mark|グラディエイターズ！
-# ;layopt lay: "message", visible: false
-# ;wait time: 500, canskip: false
-# ;jump file: "scenario/title.pon"
-;mes_blue
-;jump file: "scenario/17.pon"
+;layopt lay: "message", visible: false
+;wait time: 500, canskip: false
+;jump file: "scenario/title.pon"
+# ;mes_blue
+# ;jump file: "scenario/17.pon"
 

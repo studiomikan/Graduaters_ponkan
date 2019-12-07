@@ -277,5 +277,6 @@ PAGE:
 ;trans method: "crossfade", time: "&tv.system.save.fadeoutTime"
 ;unlockscreenshot
 ;historyopt enabled: true
+;rclick jump: false, call: false, enabled: true
 ;return
 

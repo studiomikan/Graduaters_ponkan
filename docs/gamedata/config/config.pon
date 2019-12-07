@@ -429,4 +429,5 @@ tv.lay = tv.system.config.btnLayMap[tv.varName];
 ;trans method: "crossfade", time: "&tv.system.config.fadeoutTime"
 ;waittrans canskip: false
 ;historyopt enabled: true, output: true
+;rclick jump: false, call: false, enabled: true
 ;return

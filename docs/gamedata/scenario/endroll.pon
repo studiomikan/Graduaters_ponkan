@@ -1,0 +1,27 @@
+# エンドロール
+*endroll_start
+
+;historyopt output: false, enabled: false
+;rclick enabled: false
+;layopt lay: "all", visible: false
+
+;loadvideo {
+  lay: "base",
+  file: "video/endroll.mp4",
+  x: 0,
+  y: 0,
+  width: 1280,
+  height: 720,
+  visible: true,
+  loop: false,
+  volume: "&ponkan.getSoundBuffer('bgm').gvolume"
+}
+;waitvideo canskip: false
+;wait time: 2000, canskip: false
+
+;image lay: "base", file: "image/bg-black.png"
+;rclick enabled: true
+;historyopt output: true, enabled: true
+
+;jump file: "scenario/18.pon"
+;s
