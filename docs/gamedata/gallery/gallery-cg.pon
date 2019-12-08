@@ -1,0 +1,142 @@
+---
+// if (tv.cg == null) {
+  tv.cg = {
+    lay: {
+      bg: 28,
+      window: 29,
+      bghl: 30,
+      asukahl: 31,
+      yuukihl: 32,
+    },
+    bg: null,
+    asuka: {
+      face: null,
+      distance: null,
+      pos: null,
+    },
+    yuuki: {
+      face: null,
+      distance: null,
+      pos: null,
+    },
+    btns: [
+      { text: "黒単色",       label: "on_click_bg", x: 35,       y: 42,    width: 70,  file: "image/bg-black.png" },
+      { text: "白単色",       label: "on_click_bg", x: 35+80,    y: 42,    width: 70,  file: "image/bg-white.png" },
+      { text: "廊下",         label: "on_click_bg", x: 35,       y: 42+32, width: 50,  file: "image/bg-hall.png" },
+      { text: "教室",         label: "on_click_bg", x: 35+60*1,  y: 42+32, width: 50,  file: "image/bg-class.png" },
+      { text: "屋上",         label: "on_click_bg", x: 35+60*2,  y: 42+32, width: 50,  file: "image/bg-roof.png" },
+      { text: "夜空",         label: "on_click_bg", x: 35+60*3,  y: 42+32, width: 50,  file: "image/bg-moon.png" },
+      { text: "貯水タンク",   label: "on_click_bg", x: 35,       y: 42+64, width: 110, file: "image/bg-tank.png" },
+    ],
+  }
+// }
+tv.originalMesLayNum = ponkan.messageLayerNum;
+---
+
+;freeimage lay: "&tv.cg.lay.bg"
+;layopt lay: "&tv.cg.lay.bg", visible: false
+;image lay: "&tv.cg.lay.window", file: "gallery/cg/window.png", x: 0, y: 115, visible: true
+;meslay lay: "&tv.cg.lay.window"
+;messageopt {
+  lay: "&tv.cg.lay.window",
+  fontfamily: ["GenShinGothic", "monospace"],
+  fontsize: 20,
+  weight: "normal",
+  color: "0xFFFFFF",
+  pitch: 0,
+  lineheight: 20,
+  linepitch: 12,
+  align: "left",
+  shadow: false,
+  edgewidth: 0,
+  autoreturn: false,
+  margint: 15,
+  marginr: 0,
+  marginb: 0,
+  marginl: 20
+}
+;nowait
+;clear
+◆ 背景$
+$
+$
+$
+$
+◆ 明日香$
+　表情：１　２　３　４　５$
+　距離：近　遠$
+　位置：左　中　右$
+$
+◆ 優希$
+　表情：１　２　３　４　５$
+　距離：近　遠$
+　位置：左　中　右$
+;endnowait
+;messagelay "lay": "&tv.originalMesLayNum"
+
+*draw_buttons
+;for loops: "&tv.cg.btns.length", indexvar: "i"
+  ---
+  tv.btn = tv.cg.btns[tv.i];
+  tv.onclick = `tv.clicked = ${tv.i};`;
+  tv.onclick = `tv.clickedButton = tv.cg.btns[${tv.i}];`;
+  console.log(tv.onclick)
+  ---
+  ;textbutton {
+    lay:      "&tv.cg.lay.window",
+    text:     "&tv.btn.text",
+    btnname:  "&tv.btn.text",
+    x:        "&tv.btn.x",
+    y:        "&tv.btn.y",
+    width:    "&tv.btn.width",
+    height:   30,
+    bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"],
+    bgalphas: [0.0, 0.2, 0.3],
+    onclick:  "&tv.onclick",
+    jump:     true,
+    label:    "&tv.btn.label",
+    margint:  5,
+  }
+;endfor
+
+;trans time: 200
+;waittrans canskip: false
+
+*unlockbuttons
+;unlockbuttons
+;s
+
+
+# 背景変更
+*on_click_bg
+# - console.log(tv.clicked)
+-console.log(tv.clickedButton)
+---
+tv.file = tv.clickedButton.file;
+tv.oldBtnName = tv.cg.bg != null ? tv.cg.bg.text : null;
+tv.newBtnName = tv.clickedButton.text;
+tv.cg.bg = tv.clickedButton;
+console.log(tv.oldBtnName, tv.newBtnName);
+---
+;pretrans
+# とりあえず選択中のボタンの色を戻す
+;if exp: "tv.oldBtnName != null"
+  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.oldBtnName", bgalphas: [0.0, 0.2, 0.3]
+;endif
+-console.log(tv.oldBtnName == tv.newBtnName)
+;if exp: "tv.oldBtnName == tv.newBtnName"
+  # 同じ画像が選択された -> 選択解除
+  - tv.cg.bg = null;
+  ;layopt lay: "&tv.cg.lay.bg", visible: false
+;else
+  # 違う画像が選択された
+  - tv.cg.bg = tv.clickedButton;
+  ;image lay: "&tv.cg.lay.bg", file: "&tv.file", x: 0, y: 0, visible: true
+  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.newBtnName", bgalphas: [0.3, 0.3, 0.3]
+;endif
+;flip
+;jump label: "unlockbuttons"
+#;jump label: "draw_buttons"
+
+
+

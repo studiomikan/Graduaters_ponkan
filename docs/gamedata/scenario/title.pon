@@ -17,7 +17,7 @@
   ;waittrans
 
 ;pretrans
-  ;image lay: "base", file: "image/bg-title01.png", x: 0, y: 0, visible: true
+  ;image lay: "base", file: "image/bg-brand.png", x: 0, y: 0, visible: true
   ;trans time: 1000
   ;waittrans
 ;wait time: 1500, canskip: false
@@ -30,40 +30,30 @@
 
 ;loadsound buf: "system", file: "sound/se01.ogg"
 
-# タイトルロゴ フェード->移動
-;pretrans
-;image lay: 1, file: "image/logo-title.png", visible: true, x: (1280-700)/2, y: (720-158)/2
-;trans time: 1000
-;waittrans canskip: false
-;move {
-  lay: 1,
-  time: 700,
-  path: [{x: 60, y: 60}],
-  ease: "both"
-}
-;wait time: 500, canskip: false
-
 # 背景
 ;pretrans
-;image lay: 0, file: "image/bg-title02.png"
+;image lay: 0, file: "image/bg-title.png"
 ;trans time: 1000
 ;waittrans canskip: false
 
 # ボタン
-;freeimage lay: "2-5"
-;clearcolor lay: "2-5"
-;layopt lay: 2, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 360+80*0,
-;layopt lay: 3, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 360+80*1
-;layopt lay: 4, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 360+80*2
-;layopt lay: 5, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 360+80*3
+;freeimage lay: "2-6"
+;clearcolor lay: "2-6"
+;layopt lay: 2, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*0,
+;layopt lay: 3, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*1
+;layopt lay: 4, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*2
+;layopt lay: 5, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*3
+;layopt lay: 6, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*4
 ;imagebutton lay: 2, x: 0, y: 0, imagefile: "image/btn-newgame.png", label: "newgame",
 ;imagebutton lay: 3, x: 0, y: 0, imagefile: "image/btn-loadgame.png", label: "loadgame",
 ;imagebutton lay: 4, x: 0, y: 0, imagefile: "image/btn-config.png", label: "config",
-;imagebutton lay: 5, x: 0, y: 0, imagefile: "image/btn-exit.png", label: "exit",
-;move lay: 2, time: 500, ease: "out", path: [{x: 1280-270, y: 360+80*0, alpha: 1}], delay: 0
-;move lay: 3, time: 500, ease: "out", path: [{x: 1280-270, y: 360+80*1, alpha: 1}], delay: 200
-;move lay: 4, time: 500, ease: "out", path: [{x: 1280-270, y: 360+80*2, alpha: 1}], delay: 400
-;move lay: 5, time: 500, ease: "out", path: [{x: 1280-270, y: 360+80*3, alpha: 1}], delay: 600
+;imagebutton lay: 5, x: 0, y: 0, imagefile: "image/btn-gallery.png", label: "gallery",
+;imagebutton lay: 6, x: 0, y: 0, imagefile: "image/btn-exit.png", label: "exit",
+;move lay: 2, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*0, alpha: 1}], delay: 0
+;move lay: 3, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*1, alpha: 1}], delay: 100
+;move lay: 4, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*2, alpha: 1}], delay: 200
+;move lay: 5, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*3, alpha: 1}], delay: 300
+;move lay: 6, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*4, alpha: 1}], delay: 400
 ;lockbuttons
 ;waitmove canskip: false
 
@@ -86,6 +76,16 @@
 ;soundopt buf: "system", volume: 1, loop: false
 ;playsound buf: "system", loop: false
 ;call file: "config/config.pon"
+;historyopt output: false, enabled: false
+;rclick enabled: false
+;jump label: "unlockbuttons"
+
+# Gallery
+*gallery
+;lockbuttons
+;soundopt buf: "system", volume: 1, loop: false
+;playsound buf: "system", loop: false
+;call file: "gallery/gallery.pon"
 ;historyopt output: false, enabled: false
 ;rclick enabled: false
 ;jump label: "unlockbuttons"

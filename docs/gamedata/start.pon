@@ -24,7 +24,7 @@
 ~game_start_mark|グラディエイターズ！
 ;layopt lay: "message", visible: false
 ;wait time: 500, canskip: false
-;jump file: "scenario/title.pon"
-# ;mes_blue
-# ;jump file: "scenario/17.pon"
+#;jump file: "scenario/title.pon"
+;jump file: "scenario/title.pon", label: "title_return_point"
+#;jump file: "scenario/01.pon"
 
