@@ -16,28 +16,28 @@
 「コンビニを探してるときに、
 つい相方に言ってしまったことー！」
 ;endpage
-
+~
 ;joban
 「コンビニと言えば、サークルＬ、
 ファミリーメイト、あとローションだよな！」
 ;endpage
-
+~
 ;joban
 ;radio_mes_top
 「いやローソンだろ！」
 ;endpage
-
+~
 ;joban
 「………………」
 ;endpage
-
+~
 ;joban
 ;radio_mes_center
 ;fontsize size: 15
 「うっわ、スベった」
 ;reset_font
 ;endpage
-
+~
 ;quake time: 500, x: 10, y: 5
 ;playse num: "20"
 ;fontsize size: 30
@@ -46,7 +46,7 @@
 『グラディエイト・ジャパン』！！」
 ;reset_font
 ;endpage
-
+~
 #△ＢＧＭ２
 
 ;playbgm num:"002"
@@ -56,7 +56,7 @@
 「たったーらたらったー♪
 たったーらたらったー♪」
 ;endpage
-
+~
 ;radio_mes_jump1
 ;joban
 「はーいみなさんこんばんは、
@@ -64,31 +64,31 @@
 『グラディエイト・ジャパン』の
 お時間でーす！」
 ;endpage
-
+~
 ;joban
 「さっそくですがここでお知らせでーす。
 来週からこの『グラディエイト・ジャパン』は、
 『グラビアエイト・アメリカ』にタイトルを
 変更しまーす！」
 ;endpage
-
+~
 ;radio_mes_top
 ;joban
 「嘘でーす！」
 ;endpage
-
+~
 ;radio_mes_center
 ;joban
 「はーい、っということでね、みんな騙されたかな？　
 ねー、とってもおもしろいねー、ざまーみろ！」
 ;endpage
-
+~
 ;joban
 「ってことでジョバン思うんだけどねー、
 人間ってのは自覚なしに
 他人を傷つけられる生き物だと思うんだねー」
 ;endpage
-
+~
 ;joban
 
 ;radio_mes_bottom
@@ -98,7 +98,7 @@
 さぁ大変だ！　あの鬼教師がおしり百叩きの刑を
 してくるに違いない！　ピンチだー！」
 ;endpage
-
+~
 ;radio_mes_top
 ;joban
 「しかし安心したまえ、
@@ -106,7 +106,7 @@
 女の子は隣の友達にクレヨンを借りましたー。
 かしこい！　しかしここで事件発生だ！」
 ;endpage
-
+~
 ;radio_mes_center
 ;joban
 「女の子は、友達のクレヨンを折ってしまった！　
@@ -115,7 +115,7 @@
 悪気がなかったことを話すとすぐに許してくれ
 ました」
 ;endpage
-
+~
 ;radio_mes_top
 ;joban
 「友人は本当に全然気にしていなかった！　
@@ -123,7 +123,7 @@
 とても悲しい。
 友達も、それを見てプチ悲しくなっちゃう」
 ;endpage
-
+~
 ;playse num: "20"
 ;quake time: 500, x: 10, y: 5
 ;fontsize size: 30
@@ -131,14 +131,14 @@
 「だからなんだって話ー！」
 ;reset_font
 ;endpage
-
+~
 ;radio_mes_center
 ;joban
 「さーて！　
 口もほぐれてきたところで行ってみよう！　
 ふつおたのコーナー！」
 ;endpage
-
+~
 ;radio_mes_right
 ;joban
 「ちなみにふつおたってのは
@@ -146,38 +146,38 @@
 覚えときな！　
 え、知ってる？　あっそう」
 ;endpage
-
+~
 ;radio_mes_center
 ;joban
 「では最初のお便り！　
 ラジオネーム『仮面ライダー１０２号』さん！　
 いつもありがとー！」
 ;endpage
-
+~
 ;joban
 「『ジョバンさんこんばんみ』
 はーいこんばんみ！　
 『先日のことなのですが、僕は偶然、
 友人の深刻な秘密を聞かされました』」
 ;endpage
-
+~
 ;playse num: "24"
 ;radio_mes_top
 ;joban
 「な、なんだってー！」
 ;endpage
-
+~
 ;radio_mes_center
 ;joban
 「『その内容はプライベートに関することなので伏せますが、
 なんだかちょっと深刻な内容すぎて僕の方が困ってしまいました』
 なるほど、なるほど」
 ;endpage
-
+~
 ;joban
 「『ジョバンさんには、こういう経験、ありますか？　あったなら、どう対処しましたか？　教えてください』」
 ;endpage
-
+~
 ;joban
 「んーなるほどねー、
 聞いてはいけないことを聞いてしまったと、
@@ -185,21 +185,21 @@
 うーんもちろんジョバンにもあるよ、
 こういう経験！」
 ;endpage
-
+~
 ;joban
 「こーゆーときって気まずいよねー、
 なーんかこっちが悪いことした感じになるよねー、
 だからそういうときねー、
 ジョバンはこう言うのさー」
 ;endpage
-
+~
 ;playse num: "20"
 ;fontsize size: 30
 ;joban
 「あ、急用を思い出した！」
 ;reset_font
 ;endpage
-
+~
 ;playse num: "21"
 ;radio_mes_top
 ;joban
@@ -207,7 +207,7 @@
 こういうのを戦略的撤退と呼ぶんだぜ！　
 人はそれを愛と呼ぶんだぜー！」
 ;endpage
-
+~
 ;radio_mes_center
 ;joban
 「とまぁ冗談はさておき！　
@@ -215,31 +215,31 @@
 その秘密を守る責任があるって、
 ジョバン思うんだよねー」
 ;endpage
-
+~
 ;joban
 「相手の子は君だからこそ
 話してくれたのかもしれないしー、
 漢ならその期待を裏切っちゃだめだぜ、
 仮面ライダー１０２号くーん！」
 ;endpage
-
+~
 ;joban
 「だから！　
 君は秘密にしながら今まで通り、
 自然体でいればいいとジョバンは思うぜ
 チクショー！」
 ;endpage
-
+~
 ;radio_mes_jump1
 ;joban
 「嘘でーす！」
 ;endpage
-
+~
 ;radio_mes_jump1
 ;joban
 「というのも嘘でーす！」
 ;endpage
-
+~
 ;joban
 「はーい！　ってことでラジオネーム
 『仮面ライダー１０２号』さんからのお便りでした！　
@@ -248,14 +248,14 @@
 『恋するウサギと波乗りジョバン』をお届けするぜ！　
 周波数はそのままでな！」
 ;endpage
-
+~
 ;fontsize size: 30
 ;playse num: "20"
 ;joban
 「チェケラ！」
 ;reset_font
 ;endpage
-
+~
 #☆ラジオメッセージ　アウト
 
 ;fadeout_meslay

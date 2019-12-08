@@ -25,28 +25,28 @@
 ;kenji
 「……さて」
 ;endpage
-
+~
 ;noname
 そろそろ１０分経ったはずだ。
 ;endpage
-
+~
 ;noname
 イヤホンを外し、音楽プレイヤーにコードを巻き付けて
 ズボンのポケットに突っ込む。
 ;endpage
-
+~
 ;kenji
 「行くか」
 ;endpage
-
+~
 ;noname
 隠れ場所の目星はついていない。
 ;endpage
-
+~
 ;noname
 俺は明日香を捜して、あてもなく夜の校舎をさまよいはじめた。
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 #○移動　廊下
@@ -60,7 +60,7 @@
 ;kenji
 「明日香ー」
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
@@ -74,7 +74,7 @@
 ;kenji
 「おーい明日香ー」
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
@@ -88,7 +88,7 @@
 ;kenji
 「ほらほら出ておいでー」
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
@@ -102,7 +102,7 @@
 ;kenji
 「明日香っちー？」
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
@@ -115,7 +115,7 @@
 ;kenji
 「明日香たーん……」
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
@@ -129,28 +129,28 @@
 ;kenji
 「どこにもいねぇじゃねーかチクショー」
 ;endpage
-
+~
 ;noname
 うーん、これはどうしたものか。
 ;endpage
-
+~
 ;noname
 闇雲に捜すには学校という場所は広すぎる。
 ;endpage
-
+~
 ;kenji
 「美術室はさっきまで俺がいたし、
 自クラスの教室はさっき行ったし……あ」
 ;endpage
-
+~
 ;noname
 そうか、二年のときの教室があった。
 ;endpage
-
+~
 ;noname
 よーし。
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
@@ -167,61 +167,61 @@
 ;kenji
 「おい明日香！」
 ;endpage
-
+~
 ;noname
 ………………
 ;endpage
-
+~
 ;kenji
 「はい、ハズレっと。どうすっかなー」
 ;endpage
-
+~
 ;noname
 ここにいないとなると、完全に手詰まりだ。
 ;endpage
-
+~
 ;noname
 途方に暮れた俺は、適当な机の上に腰をおろした。
 ;endpage
-
+~
 ;kenji
 「………………」
 ;endpage
-
+~
 ;noname
 次の瞬間、目にとびこんできたのは、
 黒板に大きく書かれた矢印だった。
 チョークを寝かせて書かれている。
 ;endpage
-
+~
 ;noname
 矢印の先には、有名なクマのキャラクターが描かれた
 封筒が貼り付けられていた。
 ;endpage
-
+~
 ;kenji
 「これはまた、わかりやすいヒントだな」
 ;endpage
-
+~
 ;noname
 とりあえず黒板から剥がす。
 中をのぞくと、封筒のデザインとは打って変わって
 簡素な手紙が二つ折りで入っていた。
 ;endpage
-
+~
 ;noname
 折りたたまれた手紙を開く。
 ;endpage
-
+~
 ;asuka
 『じゃじゃん！　よくこの手紙を見つけたね！』
 ;endpage
-
+~
 ;noname
 黒板にでっかくヒント書いといて
 なにが『じゃじゃん！』だ。まったく。
 ;endpage
-
+~
 ;asuka
 『
 ;indent
@@ -229,15 +229,15 @@
 ぶっちゃけガラじゃないので、手紙を書くことにします』
 ;endindent
 ;endpage
-
+~
 ;noname
 いや、手紙も十分ガラじゃないけどな。
 ;endpage
-
+~
 ;noname
 読み進める。
 ;endpage
-
+~
 #☆メッセージフレーム　アウト
 
 ;fadeout_meslay
@@ -274,7 +274,7 @@
 ;letter
 あのときは、本当に楽しかった。
 ;endpage
-
+~
 #☆ここまで手紙
 
 #☆メッセージフレーム　アウト
