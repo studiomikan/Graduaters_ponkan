@@ -256,6 +256,22 @@ tv.getCharaInfo = function(mp) {
 }
 ---
 
+# キャラ読み込み（ギャラリー用）
+# @param name キャラクターの名前。asuka or yuuki
+# @param size キャラクターのサイズ。medium or large
+# @param num キャラクターの立ち絵の番号。1～5
+# @param pos キャラクターの位置。left or center or right
+;macro name: "load_chara_for_gallery"
+  ---
+    console.log("@@@@@mstack", ponkan.conductor.script.macroStack[0])
+    console.log("@@@@@mp", mp, ponkan.resource.macroParams)
+    tv.chara = tv.getCharaInfo(mp);
+    tv.lay = tv.cg.lay[mp.name];
+    console.log("@@@@@@tv.chara", tv.chara, mp)
+  ---
+  ;image lay: "&tv.lay", file: "&tv.chara.file", x: "&tv.chara.x", y: "&tv.chara.y", visible: true
+;endmacro
+
 # キャラ読み込み
 # @param name キャラクターの名前。asuka or yuuki
 # @param size キャラクターのサイズ。medium or large

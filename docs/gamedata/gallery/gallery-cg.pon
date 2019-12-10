@@ -3,23 +3,25 @@
   tv.cg = {
     lay: {
       bg: 28,
-      window: 29,
-      bghl: 30,
-      asukahl: 31,
-      yuukihl: 32,
+      asuka: 29,
+      yuuki: 30,
+      window: 31,
     },
     bg: null,
-    asuka: {
-      face: null,
-      distance: null,
-      pos: null,
-    },
-    yuuki: {
-      face: null,
-      distance: null,
-      pos: null,
+    chara: {
+      asuka: {
+        num: null,
+        size: null,
+        pos: null,
+      },
+      yuuki: {
+        num: null,
+        size: null,
+        pos: null,
+      },
     },
     btns: [
+      // CG
       { text: "黒単色",       label: "on_click_bg", x: 35,       y: 42,    width: 70,  file: "image/bg-black.png" },
       { text: "白単色",       label: "on_click_bg", x: 35+80,    y: 42,    width: 70,  file: "image/bg-white.png" },
       { text: "廊下",         label: "on_click_bg", x: 35,       y: 42+32, width: 50,  file: "image/bg-hall.png" },
@@ -27,6 +29,17 @@
       { text: "屋上",         label: "on_click_bg", x: 35+60*2,  y: 42+32, width: 50,  file: "image/bg-roof.png" },
       { text: "夜空",         label: "on_click_bg", x: 35+60*3,  y: 42+32, width: 50,  file: "image/bg-moon.png" },
       { text: "貯水タンク",   label: "on_click_bg", x: 35,       y: 42+64, width: 110, file: "image/bg-tank.png" },
+      // 明日香
+      { text: "１", label: "on_click_chara", x: 95+40*0, y: 202,    width: 30, name: "asuka", num: 1 },
+      { text: "２", label: "on_click_chara", x: 95+40*1, y: 202,    width: 30, name: "asuka", num: 2 },
+      { text: "３", label: "on_click_chara", x: 95+40*2, y: 202,    width: 30, name: "asuka", num: 3 },
+      { text: "４", label: "on_click_chara", x: 95+40*3, y: 202,    width: 30, name: "asuka", num: 4 },
+      { text: "５", label: "on_click_chara", x: 95+40*4, y: 202,    width: 30, name: "asuka", num: 5 },
+      { text: "近", label: "on_click_chara", x: 95+40*0, y: 202+32, width: 30, name: "asuka", size: "medium" },
+      { text: "遠", label: "on_click_chara", x: 95+40*1, y: 202+32, width: 30, name: "asuka", size: "large" },
+      { text: "左", label: "on_click_chara", x: 95+40*0, y: 202+64, width: 30, name: "asuka", pos: "left" },
+      { text: "中", label: "on_click_chara", x: 95+40*1, y: 202+64, width: 30, name: "asuka", pos: "center" },
+      { text: "右", label: "on_click_chara", x: 95+40*2, y: 202+64, width: 30, name: "asuka", pos: "right" },
     ],
   }
 // }
@@ -63,9 +76,9 @@ $
 $
 $
 ◆ 明日香$
-　表情：１　２　３　４　５$
-　距離：近　遠$
-　位置：左　中　右$
+　表情：$
+　距離：$
+　位置：$
 $
 ◆ 優希$
 　表情：１　２　３　４　５$
@@ -107,12 +120,76 @@ $
 ;s
 
 
+# 立ち絵の変更
+*on_click_chara
+# - console.log(tv.clicked)
+---
+// # キャラ読み込み
+// # @param name キャラクターの名前。asuka or yuuki
+// # @param size キャラクターのサイズ。medium or large
+// # @param num キャラクターの立ち絵の番号。1～5
+// # @param pos キャラクターの位置。left or center or right
+console.log(tv.clickedButton)
+var clicked = tv.clickedButton;
+var name = tv.clickedButton.name;
+var size = tv.clickedButton.size;
+var num = tv.clickedButton.num;
+var pos = tv.clickedButton.pos;
+var chara = tv.cg.chara[name];
+// 選択済みのボタンを押下したときは、選択を解除する。
+var unselect =
+  (size != null && size == chara.size) ||
+  (num != null && num == chara.num);
+  (pos != null && pos == chara.pos);
+// 選択が変更されたときは、それ以外のボタンの選択を解除する。
+var oldBtnName = null;
+if (!unselect) {
+  if (size != null && chara.size != null) oldBtnName = tv.cg.btns.filter((btn) => btn.size == chara.size)[0].text;
+  if (num != null && chara.num != null) oldBtnName = tv.cg.btns.filter((btn) => btn.num == chara.num)[0].text;
+  if (pos != null && chara.pos != null) oldBtnName = tv.cg.btns.filter((btn) => btn.pos == chara.pos)[0].text;
+}
+// 立ち絵の状態を更新
+if (size != null) chara.size = size;
+if (num != null) chara.num = num;
+if (pos != null) chara.pos = pos;
+
+tv.visible = chara.size != null && chara.num != null && chara.pos != null;
+tv.name = name;
+tv.gchara = chara;
+tv.unselect = unselect;
+tv.oldBtnName = oldBtnName;
+---
+;pretrans
+
+;if exp: "tv.unselect"
+  # 選択済みのボタンが押下されたので、選択解除する
+  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.clickedButton.text", bgalphas: [0.0, 0.2, 0.3]
+;else
+  # 別のボタンに変更する
+  # 古い選択を解除する
+  ;if exp: "tv.oldBtnName"
+    ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.oldBtnName", bgalphas: [0.0, 0.2, 0.3]
+  ;endif
+  # クリックされたボタンを選択状態にする
+  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.clickedButton.text", bgalphas: [0.3, 0.3, 0.3]
+;endif
+
+# キャラクターの更新
+;if exp: "tv.visible"
+  - console.log("@@@@@tv.gchara", tv.gchara)
+  ;load_chara_for_gallery name: "&tv.name", size: "&tv.gchara.size", num: "&tv.gchara.num", pos: "&tv.gchara.pos"
+;else
+  ;layopt lay: "&tv.name", visible: false
+;endif
+
+;flip
+;jump label: "unlockbuttons"
+
+
 # 背景変更
 *on_click_bg
-# - console.log(tv.clicked)
--console.log(tv.clickedButton)
 ---
-tv.file = tv.clickedButton.file;
+console.log(tv.clickedButton)
 tv.oldBtnName = tv.cg.bg != null ? tv.cg.bg.text : null;
 tv.newBtnName = tv.clickedButton.text;
 tv.cg.bg = tv.clickedButton;
@@ -131,12 +208,9 @@ console.log(tv.oldBtnName, tv.newBtnName);
 ;else
   # 違う画像が選択された
   - tv.cg.bg = tv.clickedButton;
-  ;image lay: "&tv.cg.lay.bg", file: "&tv.file", x: 0, y: 0, visible: true
+  ;image lay: "&tv.cg.lay.bg", file: "&tv.cg.bg.file", x: 0, y: 0, visible: true
   ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.newBtnName", bgalphas: [0.3, 0.3, 0.3]
 ;endif
 ;flip
 ;jump label: "unlockbuttons"
-#;jump label: "draw_buttons"
-
-
 
