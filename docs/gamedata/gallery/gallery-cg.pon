@@ -22,24 +22,45 @@
     },
     btns: [
       // CG
-      { text: "黒単色",       label: "on_click_bg", x: 35,       y: 42,    width: 70,  file: "image/bg-black.png" },
-      { text: "白単色",       label: "on_click_bg", x: 35+80,    y: 42,    width: 70,  file: "image/bg-white.png" },
-      { text: "廊下",         label: "on_click_bg", x: 35,       y: 42+32, width: 50,  file: "image/bg-hall.png" },
-      { text: "教室",         label: "on_click_bg", x: 35+60*1,  y: 42+32, width: 50,  file: "image/bg-class.png" },
-      { text: "屋上",         label: "on_click_bg", x: 35+60*2,  y: 42+32, width: 50,  file: "image/bg-roof.png" },
-      { text: "夜空",         label: "on_click_bg", x: 35+60*3,  y: 42+32, width: 50,  file: "image/bg-moon.png" },
-      { text: "貯水タンク",   label: "on_click_bg", x: 35,       y: 42+64, width: 110, file: "image/bg-tank.png" },
+      { text: "黒単色",     btnName: "黒単色",     label: "on_click_bg", x: 35,       y: 42,    width: 70,  file: "image/bg-black.png" },
+      { text: "白単色",     btnName: "白単色",     label: "on_click_bg", x: 35+80,    y: 42,    width: 70,  file: "image/bg-white.png" },
+      { text: "廊下",       btnName: "廊下",       label: "on_click_bg", x: 35,       y: 42+32, width: 50,  file: "image/bg-hall.png" },
+      { text: "教室",       btnName: "教室",       label: "on_click_bg", x: 35+60*1,  y: 42+32, width: 50,  file: "image/bg-class.png" },
+      { text: "屋上",       btnName: "屋上",       label: "on_click_bg", x: 35+60*2,  y: 42+32, width: 50,  file: "image/bg-roof.png" },
+      { text: "夜空",       btnName: "夜空",       label: "on_click_bg", x: 35+60*3,  y: 42+32, width: 50,  file: "image/bg-moon.png" },
+      { text: "貯水タンク", btnName: "貯水タンク", label: "on_click_bg", x: 35,       y: 42+64, width: 110, file: "image/bg-tank.png" },
       // 明日香
-      { text: "１", label: "on_click_chara", x: 95+40*0, y: 202,    width: 30, name: "asuka", num: 1 },
-      { text: "２", label: "on_click_chara", x: 95+40*1, y: 202,    width: 30, name: "asuka", num: 2 },
-      { text: "３", label: "on_click_chara", x: 95+40*2, y: 202,    width: 30, name: "asuka", num: 3 },
-      { text: "４", label: "on_click_chara", x: 95+40*3, y: 202,    width: 30, name: "asuka", num: 4 },
-      { text: "５", label: "on_click_chara", x: 95+40*4, y: 202,    width: 30, name: "asuka", num: 5 },
-      { text: "近", label: "on_click_chara", x: 95+40*0, y: 202+32, width: 30, name: "asuka", size: "medium" },
-      { text: "遠", label: "on_click_chara", x: 95+40*1, y: 202+32, width: 30, name: "asuka", size: "large" },
-      { text: "左", label: "on_click_chara", x: 95+40*0, y: 202+64, width: 30, name: "asuka", pos: "left" },
-      { text: "中", label: "on_click_chara", x: 95+40*1, y: 202+64, width: 30, name: "asuka", pos: "center" },
-      { text: "右", label: "on_click_chara", x: 95+40*2, y: 202+64, width: 30, name: "asuka", pos: "right" },
+      { text: "１", btnName: "asuka_１", label: "on_click_chara", x: 105+40*0, y: 202,    width: 30, name: "asuka", num: 1 },
+      { text: "２", btnName: "asuka_２", label: "on_click_chara", x: 105+40*1, y: 202,    width: 30, name: "asuka", num: 2 },
+      { text: "３", btnName: "asuka_３", label: "on_click_chara", x: 105+40*2, y: 202,    width: 30, name: "asuka", num: 3 },
+      { text: "４", btnName: "asuka_４", label: "on_click_chara", x: 105+40*3, y: 202,    width: 30, name: "asuka", num: 4 },
+      { text: "５", btnName: "asuka_５", label: "on_click_chara", x: 105+40*4, y: 202,    width: 30, name: "asuka", num: 5 },
+      { text: "近", btnName: "asuka_近", label: "on_click_chara", x: 105+40*0, y: 202+32, width: 30, name: "asuka", size: "large" },
+      { text: "遠", btnName: "asuka_遠", label: "on_click_chara", x: 105+40*1, y: 202+32, width: 30, name: "asuka", size: "medium" },
+      { text: "左", btnName: "asuka_左", label: "on_click_chara", x: 105+40*0, y: 202+64, width: 30, name: "asuka", pos: "left" },
+      { text: "中", btnName: "asuka_中", label: "on_click_chara", x: 105+40*1, y: 202+64, width: 30, name: "asuka", pos: "center" },
+      { text: "右", btnName: "asuka_右", label: "on_click_chara", x: 105+40*2, y: 202+64, width: 30, name: "asuka", pos: "right" },
+      // 優希
+      { text: "１", btnName: "yuuki_１", label: "on_click_chara", x: 105+40*0, y: 362,    width: 30, name: "yuuki", num: 1 },
+      { text: "２", btnName: "yuuki_２", label: "on_click_chara", x: 105+40*1, y: 362,    width: 30, name: "yuuki", num: 2 },
+      { text: "３", btnName: "yuuki_３", label: "on_click_chara", x: 105+40*2, y: 362,    width: 30, name: "yuuki", num: 3 },
+      { text: "４", btnName: "yuuki_４", label: "on_click_chara", x: 105+40*3, y: 362,    width: 30, name: "yuuki", num: 4 },
+      { text: "５", btnName: "yuuki_５", label: "on_click_chara", x: 105+40*4, y: 362,    width: 30, name: "yuuki", num: 5 },
+      { text: "近", btnName: "yuuki_近", label: "on_click_chara", x: 105+40*0, y: 362+32, width: 30, name: "yuuki", size: "large" },
+      { text: "遠", btnName: "yuuki_遠", label: "on_click_chara", x: 105+40*1, y: 362+32, width: 30, name: "yuuki", size: "medium" },
+      { text: "左", btnName: "yuuki_左", label: "on_click_chara", x: 105+40*0, y: 362+64, width: 30, name: "yuuki", pos: "left" },
+      { text: "中", btnName: "yuuki_中", label: "on_click_chara", x: 105+40*1, y: 362+64, width: 30, name: "yuuki", pos: "center" },
+      { text: "右", btnName: "yuuki_右", label: "on_click_chara", x: 105+40*2, y: 362+64, width: 30, name: "yuuki", pos: "right" },
+      // { text: "１", label: "on_click_chara", x: 105+40*0, y: 362,    width: 30, name: "yuuki", num: 1 },
+      // { text: "２", label: "on_click_chara", x: 105+40*1, y: 362,    width: 30, name: "yuuki", num: 2 },
+      // { text: "３", label: "on_click_chara", x: 105+40*2, y: 362,    width: 30, name: "yuuki", num: 3 },
+      // { text: "４", label: "on_click_chara", x: 105+40*3, y: 362,    width: 30, name: "yuuki", num: 4 },
+      // { text: "５", label: "on_click_chara", x: 105+40*4, y: 362,    width: 30, name: "yuuki", num: 5 },
+      // { text: "近", label: "on_click_chara", x: 105+40*0, y: 362+32, width: 30, name: "yuuki", size: "large" },
+      // { text: "遠", label: "on_click_chara", x: 105+40*1, y: 362+32, width: 30, name: "yuuki", size: "medium" },
+      // { text: "左", label: "on_click_chara", x: 105+40*0, y: 362+64, width: 30, name: "yuuki", pos: "left" },
+      // { text: "中", label: "on_click_chara", x: 105+40*1, y: 362+64, width: 30, name: "yuuki", pos: "center" },
+      // { text: "右", label: "on_click_chara", x: 105+40*2, y: 362+64, width: 30, name: "yuuki", pos: "right" },
     ],
   }
 // }
@@ -68,8 +89,8 @@ tv.originalMesLayNum = ponkan.messageLayerNum;
   marginb: 0,
   marginl: 20
 }
-;nowait
 ;clear
+;nowait
 ◆ 背景$
 $
 $
@@ -81,9 +102,9 @@ $
 　位置：$
 $
 ◆ 優希$
-　表情：１　２　３　４　５$
-　距離：近　遠$
-　位置：左　中　右$
+　表情：$
+　距離：$
+　位置：$
 ;endnowait
 ;messagelay "lay": "&tv.originalMesLayNum"
 
@@ -91,14 +112,12 @@ $
 ;for loops: "&tv.cg.btns.length", indexvar: "i"
   ---
   tv.btn = tv.cg.btns[tv.i];
-  tv.onclick = `tv.clicked = ${tv.i};`;
   tv.onclick = `tv.clickedButton = tv.cg.btns[${tv.i}];`;
-  console.log(tv.onclick)
   ---
   ;textbutton {
     lay:      "&tv.cg.lay.window",
     text:     "&tv.btn.text",
-    btnname:  "&tv.btn.text",
+    btnname:  "&tv.btn.btnName",
     x:        "&tv.btn.x",
     y:        "&tv.btn.y",
     width:    "&tv.btn.width",
@@ -122,14 +141,7 @@ $
 
 # 立ち絵の変更
 *on_click_chara
-# - console.log(tv.clicked)
 ---
-// # キャラ読み込み
-// # @param name キャラクターの名前。asuka or yuuki
-// # @param size キャラクターのサイズ。medium or large
-// # @param num キャラクターの立ち絵の番号。1～5
-// # @param pos キャラクターの位置。left or center or right
-console.log(tv.clickedButton)
 var clicked = tv.clickedButton;
 var name = tv.clickedButton.name;
 var size = tv.clickedButton.size;
@@ -139,19 +151,28 @@ var chara = tv.cg.chara[name];
 // 選択済みのボタンを押下したときは、選択を解除する。
 var unselect =
   (size != null && size == chara.size) ||
-  (num != null && num == chara.num);
+  (num != null && num == chara.num) ||
   (pos != null && pos == chara.pos);
-// 選択が変更されたときは、それ以外のボタンの選択を解除する。
 var oldBtnName = null;
-if (!unselect) {
-  if (size != null && chara.size != null) oldBtnName = tv.cg.btns.filter((btn) => btn.size == chara.size)[0].text;
-  if (num != null && chara.num != null) oldBtnName = tv.cg.btns.filter((btn) => btn.num == chara.num)[0].text;
-  if (pos != null && chara.pos != null) oldBtnName = tv.cg.btns.filter((btn) => btn.pos == chara.pos)[0].text;
+if (unselect) {
+  if (size != null) chara.size = null;
+  if (num != null) chara.num = null;
+  if (pos != null) chara.pos = null;
+} else {
+  // 選択が変更されたときは、それ以外のボタンの選択を解除する。
+  var getOldBtnName = function(key) {
+    var btns = tv.cg.btns.filter((btn) => btn.name == name && btn[key] == chara[key])
+    if (btns.length > 0) return btns[0].btnName;
+    else return null;
+  }
+  if (size != null && chara.size != null) oldBtnName = getOldBtnName("size");
+  if (num != null && chara.num != null)   oldBtnName = getOldBtnName("num");
+  if (pos != null && chara.pos != null)   oldBtnName = getOldBtnName("pos");
+  // 立ち絵の状態を更新
+  if (size != null) chara.size = size;
+  if (num != null) chara.num = num;
+  if (pos != null) chara.pos = pos;
 }
-// 立ち絵の状態を更新
-if (size != null) chara.size = size;
-if (num != null) chara.num = num;
-if (pos != null) chara.pos = pos;
 
 tv.visible = chara.size != null && chara.num != null && chara.pos != null;
 tv.name = name;
@@ -163,7 +184,7 @@ tv.oldBtnName = oldBtnName;
 
 ;if exp: "tv.unselect"
   # 選択済みのボタンが押下されたので、選択解除する
-  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.clickedButton.text", bgalphas: [0.0, 0.2, 0.3]
+  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.clickedButton.btnName", bgalphas: [0.0, 0.2, 0.3]
 ;else
   # 別のボタンに変更する
   # 古い選択を解除する
@@ -171,15 +192,14 @@ tv.oldBtnName = oldBtnName;
     ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.oldBtnName", bgalphas: [0.0, 0.2, 0.3]
   ;endif
   # クリックされたボタンを選択状態にする
-  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.clickedButton.text", bgalphas: [0.3, 0.3, 0.3]
+  ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.clickedButton.btnName", bgalphas: [0.3, 0.3, 0.3]
 ;endif
 
 # キャラクターの更新
 ;if exp: "tv.visible"
-  - console.log("@@@@@tv.gchara", tv.gchara)
   ;load_chara_for_gallery name: "&tv.name", size: "&tv.gchara.size", num: "&tv.gchara.num", pos: "&tv.gchara.pos"
 ;else
-  ;layopt lay: "&tv.name", visible: false
+  ;layopt lay: "&tv.cg.lay[tv.name]", visible: false
 ;endif
 
 ;flip
@@ -189,18 +209,15 @@ tv.oldBtnName = oldBtnName;
 # 背景変更
 *on_click_bg
 ---
-console.log(tv.clickedButton)
-tv.oldBtnName = tv.cg.bg != null ? tv.cg.bg.text : null;
-tv.newBtnName = tv.clickedButton.text;
+tv.oldBtnName = tv.cg.bg != null ? tv.cg.bg.btnName : null;
+tv.newBtnName = tv.clickedButton.btnName;
 tv.cg.bg = tv.clickedButton;
-console.log(tv.oldBtnName, tv.newBtnName);
 ---
 ;pretrans
 # とりあえず選択中のボタンの色を戻す
 ;if exp: "tv.oldBtnName != null"
   ;textbuttonopt lay: "&tv.cg.lay.window", btnname: "&tv.oldBtnName", bgalphas: [0.0, 0.2, 0.3]
 ;endif
--console.log(tv.oldBtnName == tv.newBtnName)
 ;if exp: "tv.oldBtnName == tv.newBtnName"
   # 同じ画像が選択された -> 選択解除
   - tv.cg.bg = null;
