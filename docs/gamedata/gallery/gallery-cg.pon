@@ -1,75 +1,87 @@
+# 背景
+- tv.gallery.currentTab = "cg";
+;pretrans
+;stopsound buf: "bgm"
+;call file: "gallery/gallery.pon", label: "hide_layers"
+;call file: "gallery/gallery.pon", label: "draw_bg"
+;call file: "gallery/gallery.pon", label: "draw_header"
+
 ---
-// if (tv.cg == null) {
-  tv.cg = {
-    lay: {
-      bg: 28,
-      asuka: 29,
-      yuuki: 30,
-      window: 31,
+tv.gallery.cg = tv.cg = {
+  lay: {
+    bg: 28,
+    asuka: 29,
+    yuuki: 30,
+    window: 31,
+    note: 32,
+  },
+  bg: null,
+  chara: {
+    asuka: {
+      num: null,
+      size: null,
+      pos: null,
     },
-    bg: null,
-    chara: {
-      asuka: {
-        num: null,
-        size: null,
-        pos: null,
-      },
-      yuuki: {
-        num: null,
-        size: null,
-        pos: null,
-      },
+    yuuki: {
+      num: null,
+      size: null,
+      pos: null,
     },
-    btns: [
-      // CG
-      { text: "黒単色",     btnName: "黒単色",     label: "on_click_bg", x: 35,       y: 42,    width: 70,  file: "image/bg-black.png" },
-      { text: "白単色",     btnName: "白単色",     label: "on_click_bg", x: 35+80,    y: 42,    width: 70,  file: "image/bg-white.png" },
-      { text: "廊下",       btnName: "廊下",       label: "on_click_bg", x: 35,       y: 42+32, width: 50,  file: "image/bg-hall.png" },
-      { text: "教室",       btnName: "教室",       label: "on_click_bg", x: 35+60*1,  y: 42+32, width: 50,  file: "image/bg-class.png" },
-      { text: "屋上",       btnName: "屋上",       label: "on_click_bg", x: 35+60*2,  y: 42+32, width: 50,  file: "image/bg-roof.png" },
-      { text: "夜空",       btnName: "夜空",       label: "on_click_bg", x: 35+60*3,  y: 42+32, width: 50,  file: "image/bg-moon.png" },
-      { text: "貯水タンク", btnName: "貯水タンク", label: "on_click_bg", x: 35,       y: 42+64, width: 110, file: "image/bg-tank.png" },
-      // 明日香
-      { text: "１", btnName: "asuka_１", label: "on_click_chara", x: 105+40*0, y: 202,    width: 30, name: "asuka", num: 1 },
-      { text: "２", btnName: "asuka_２", label: "on_click_chara", x: 105+40*1, y: 202,    width: 30, name: "asuka", num: 2 },
-      { text: "３", btnName: "asuka_３", label: "on_click_chara", x: 105+40*2, y: 202,    width: 30, name: "asuka", num: 3 },
-      { text: "４", btnName: "asuka_４", label: "on_click_chara", x: 105+40*3, y: 202,    width: 30, name: "asuka", num: 4 },
-      { text: "５", btnName: "asuka_５", label: "on_click_chara", x: 105+40*4, y: 202,    width: 30, name: "asuka", num: 5 },
-      { text: "近", btnName: "asuka_近", label: "on_click_chara", x: 105+40*0, y: 202+32, width: 30, name: "asuka", size: "large" },
-      { text: "遠", btnName: "asuka_遠", label: "on_click_chara", x: 105+40*1, y: 202+32, width: 30, name: "asuka", size: "medium" },
-      { text: "左", btnName: "asuka_左", label: "on_click_chara", x: 105+40*0, y: 202+64, width: 30, name: "asuka", pos: "left" },
-      { text: "中", btnName: "asuka_中", label: "on_click_chara", x: 105+40*1, y: 202+64, width: 30, name: "asuka", pos: "center" },
-      { text: "右", btnName: "asuka_右", label: "on_click_chara", x: 105+40*2, y: 202+64, width: 30, name: "asuka", pos: "right" },
-      // 優希
-      { text: "１", btnName: "yuuki_１", label: "on_click_chara", x: 105+40*0, y: 362,    width: 30, name: "yuuki", num: 1 },
-      { text: "２", btnName: "yuuki_２", label: "on_click_chara", x: 105+40*1, y: 362,    width: 30, name: "yuuki", num: 2 },
-      { text: "３", btnName: "yuuki_３", label: "on_click_chara", x: 105+40*2, y: 362,    width: 30, name: "yuuki", num: 3 },
-      { text: "４", btnName: "yuuki_４", label: "on_click_chara", x: 105+40*3, y: 362,    width: 30, name: "yuuki", num: 4 },
-      { text: "５", btnName: "yuuki_５", label: "on_click_chara", x: 105+40*4, y: 362,    width: 30, name: "yuuki", num: 5 },
-      { text: "近", btnName: "yuuki_近", label: "on_click_chara", x: 105+40*0, y: 362+32, width: 30, name: "yuuki", size: "large" },
-      { text: "遠", btnName: "yuuki_遠", label: "on_click_chara", x: 105+40*1, y: 362+32, width: 30, name: "yuuki", size: "medium" },
-      { text: "左", btnName: "yuuki_左", label: "on_click_chara", x: 105+40*0, y: 362+64, width: 30, name: "yuuki", pos: "left" },
-      { text: "中", btnName: "yuuki_中", label: "on_click_chara", x: 105+40*1, y: 362+64, width: 30, name: "yuuki", pos: "center" },
-      { text: "右", btnName: "yuuki_右", label: "on_click_chara", x: 105+40*2, y: 362+64, width: 30, name: "yuuki", pos: "right" },
-      // { text: "１", label: "on_click_chara", x: 105+40*0, y: 362,    width: 30, name: "yuuki", num: 1 },
-      // { text: "２", label: "on_click_chara", x: 105+40*1, y: 362,    width: 30, name: "yuuki", num: 2 },
-      // { text: "３", label: "on_click_chara", x: 105+40*2, y: 362,    width: 30, name: "yuuki", num: 3 },
-      // { text: "４", label: "on_click_chara", x: 105+40*3, y: 362,    width: 30, name: "yuuki", num: 4 },
-      // { text: "５", label: "on_click_chara", x: 105+40*4, y: 362,    width: 30, name: "yuuki", num: 5 },
-      // { text: "近", label: "on_click_chara", x: 105+40*0, y: 362+32, width: 30, name: "yuuki", size: "large" },
-      // { text: "遠", label: "on_click_chara", x: 105+40*1, y: 362+32, width: 30, name: "yuuki", size: "medium" },
-      // { text: "左", label: "on_click_chara", x: 105+40*0, y: 362+64, width: 30, name: "yuuki", pos: "left" },
-      // { text: "中", label: "on_click_chara", x: 105+40*1, y: 362+64, width: 30, name: "yuuki", pos: "center" },
-      // { text: "右", label: "on_click_chara", x: 105+40*2, y: 362+64, width: 30, name: "yuuki", pos: "right" },
-    ],
-  }
-// }
+  },
+  btns: [
+    // CG
+    { text: "黒単色",     btnName: "黒単色",     label: "on_click_bg", x: 35,       y: 42,    width: 70,  file: "image/bg-black.png", note: "背景画像を変更します。" },
+    { text: "白単色",     btnName: "白単色",     label: "on_click_bg", x: 35+80,    y: 42,    width: 70,  file: "image/bg-white.png", note: "背景画像を変更します。" },
+    { text: "廊下",       btnName: "廊下",       label: "on_click_bg", x: 35,       y: 42+32, width: 50,  file: "image/bg-hall.png",  note: "背景画像を変更します。" },
+    { text: "教室",       btnName: "教室",       label: "on_click_bg", x: 35+60*1,  y: 42+32, width: 50,  file: "image/bg-class.png", note: "背景画像を変更します。" },
+    { text: "屋上",       btnName: "屋上",       label: "on_click_bg", x: 35+60*2,  y: 42+32, width: 50,  file: "image/bg-roof.png",  note: "背景画像を変更します。" },
+    { text: "夜空",       btnName: "夜空",       label: "on_click_bg", x: 35+60*3,  y: 42+32, width: 50,  file: "image/bg-moon.png",  note: "背景画像を変更します。" },
+    { text: "貯水タンク", btnName: "貯水タンク", label: "on_click_bg", x: 35,       y: 42+64, width: 110, file: "image/bg-tank.png",  note: "背景画像を変更します。" },
+    // 明日香
+    { text: "１", btnName: "asuka_１", label: "on_click_chara", x: 105+40*0, y: 202,    width: 30, name: "asuka", num: 1,         note: "明日香の表情差分を変更します。" },
+    { text: "２", btnName: "asuka_２", label: "on_click_chara", x: 105+40*1, y: 202,    width: 30, name: "asuka", num: 2,         note: "明日香の表情差分を変更します。" },
+    { text: "３", btnName: "asuka_３", label: "on_click_chara", x: 105+40*2, y: 202,    width: 30, name: "asuka", num: 3,         note: "明日香の表情差分を変更します。" },
+    { text: "４", btnName: "asuka_４", label: "on_click_chara", x: 105+40*3, y: 202,    width: 30, name: "asuka", num: 4,         note: "明日香の表情差分を変更します。" },
+    { text: "５", btnName: "asuka_５", label: "on_click_chara", x: 105+40*4, y: 202,    width: 30, name: "asuka", num: 5,         note: "明日香の表情差分を変更します。" },
+    { text: "近", btnName: "asuka_近", label: "on_click_chara", x: 105+40*0, y: 202+32, width: 30, name: "asuka", size: "large",  note: "明日香の距離を変更します。" },
+    { text: "遠", btnName: "asuka_遠", label: "on_click_chara", x: 105+40*1, y: 202+32, width: 30, name: "asuka", size: "medium", note: "明日香の距離を変更します。" },
+    { text: "左", btnName: "asuka_左", label: "on_click_chara", x: 105+40*0, y: 202+64, width: 30, name: "asuka", pos: "left",    note: "明日香の表示位置を変更します。" },
+    { text: "中", btnName: "asuka_中", label: "on_click_chara", x: 105+40*1, y: 202+64, width: 30, name: "asuka", pos: "center",  note: "明日香の表示位置を変更します。" },
+    { text: "右", btnName: "asuka_右", label: "on_click_chara", x: 105+40*2, y: 202+64, width: 30, name: "asuka", pos: "right",   note: "明日香の表示位置を変更します。" },
+    // 優希
+    { text: "１", btnName: "yuuki_１", label: "on_click_chara", x: 105+40*0, y: 362,    width: 30, name: "yuuki", num: 1,         note: "優希の表情差分を変更します。" },
+    { text: "２", btnName: "yuuki_２", label: "on_click_chara", x: 105+40*1, y: 362,    width: 30, name: "yuuki", num: 2,         note: "優希の表情差分を変更します。" },
+    { text: "３", btnName: "yuuki_３", label: "on_click_chara", x: 105+40*2, y: 362,    width: 30, name: "yuuki", num: 3,         note: "優希の表情差分を変更します。" },
+    { text: "４", btnName: "yuuki_４", label: "on_click_chara", x: 105+40*3, y: 362,    width: 30, name: "yuuki", num: 4,         note: "優希の表情差分を変更します。" },
+    { text: "５", btnName: "yuuki_５", label: "on_click_chara", x: 105+40*4, y: 362,    width: 30, name: "yuuki", num: 5,         note: "優希の表情差分を変更します。" },
+    { text: "近", btnName: "yuuki_近", label: "on_click_chara", x: 105+40*0, y: 362+32, width: 30, name: "yuuki", size: "large",  note: "優希の距離を変更します。" },
+    { text: "遠", btnName: "yuuki_遠", label: "on_click_chara", x: 105+40*1, y: 362+32, width: 30, name: "yuuki", size: "medium", note: "優希の距離を変更します。" },
+    { text: "左", btnName: "yuuki_左", label: "on_click_chara", x: 105+40*0, y: 362+64, width: 30, name: "yuuki", pos: "left",    note: "優希の表示位置を変更します。" },
+    { text: "中", btnName: "yuuki_中", label: "on_click_chara", x: 105+40*1, y: 362+64, width: 30, name: "yuuki", pos: "center",  note: "優希の表示位置を変更します。" },
+    { text: "右", btnName: "yuuki_右", label: "on_click_chara", x: 105+40*2, y: 362+64, width: 30, name: "yuuki", pos: "right",   note: "優希の表示位置を変更します。" },
+  ],
+}
 tv.originalMesLayNum = ponkan.messageLayerNum;
+tv.onMouseEnter = function(btnName) {
+  // console.log("onMouseEnter");
+  var btn = tv.cg.btns.filter((btn) => btn.btnName == btnName)[0];
+  var lay = ponkan.foreLayers[tv.cg.lay.note];
+  lay.clearText();
+  lay.addText(btn.note);
+};
+tv.onMouseLeave = function() {
+  // console.log("onMouseLeave");
+  var lay = ponkan.foreLayers[tv.cg.lay.note];
+  lay.clearText();
+}
 ---
+
+;rclick jump: false, call: false, enabled: false
 
 ;freeimage lay: "&tv.cg.lay.bg"
 ;layopt lay: "&tv.cg.lay.bg", visible: false
 ;image lay: "&tv.cg.lay.window", file: "gallery/cg/window.png", x: 0, y: 115, visible: true
+;layopt lay: "&tv.cg.lay.window", autohide: true
 ;meslay lay: "&tv.cg.lay.window"
 ;messageopt {
   lay: "&tv.cg.lay.window",
@@ -106,6 +118,23 @@ $
 　距離：$
 　位置：$
 ;endnowait
+
+;layopt lay: "&tv.cg.lay.note", x: 20, y: 619, width: 400, height: 30, visible: true
+;messageopt {
+  lay: "&tv.cg.lay.note",
+  fontfamily: ["GenShinGothic", "monospace"],
+  fontsize: 18,
+  weight: "normal",
+  color: "0xFFFFFF",
+  pitch: 0,
+  lineheight: 18,
+  linepitch: 12,
+  align: "left",
+  shadow: false, edgewidth: 0,
+  autoreturn: false,
+  margint: 0, marginr: 0, marginb: 0, marginl: 0
+}
+;clear lay: "&tv.cg.lay.note"
 ;messagelay "lay": "&tv.originalMesLayNum"
 
 *draw_buttons
@@ -113,6 +142,8 @@ $
   ---
   tv.btn = tv.cg.btns[tv.i];
   tv.onclick = `tv.clickedButton = tv.cg.btns[${tv.i}];`;
+  tv.onenter = `tv.onMouseEnter("${tv.btn.btnName}")`;
+  tv.onleave = `tv.onMouseLeave()`;
   ---
   ;textbutton {
     lay:      "&tv.cg.lay.window",
@@ -125,17 +156,21 @@ $
     bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"],
     bgalphas: [0.0, 0.2, 0.3],
     onclick:  "&tv.onclick",
+    onenter:  "&tv.onenter",
+    onleave:  "&tv.onleave",
     jump:     true,
     label:    "&tv.btn.label",
     margint:  5,
   }
 ;endfor
 
+*trans
 ;trans time: 200
 ;waittrans canskip: false
 
 *unlockbuttons
 ;unlockbuttons
+;rclick jump: true, call: false, label: "on_rclick", enabled: true
 ;s
 
 
@@ -231,3 +266,16 @@ tv.cg.bg = tv.clickedButton;
 ;flip
 ;jump label: "unlockbuttons"
 
+# ウィンドウ表示・非表示
+*on_rclick
+;layopt lay: "&tv.gallery.lay.header", visible: false
+;layopt lay: "&tv.cg.lay.window", visible: false
+;layopt lay: "&tv.cg.lay.note", visible: false
+;rclick jump: true, call: false, label: "on_rclick_exit", enabled: true
+;waitclick
+*on_rclick_exit
+- ponkan.conductor.clearAllEventHandler();
+;layopt lay: "&tv.gallery.lay.header", visible: true
+;layopt lay: "&tv.cg.lay.window", visible: true
+;layopt lay: "&tv.cg.lay.note", visible: true
+;jump label: "unlockbuttons"

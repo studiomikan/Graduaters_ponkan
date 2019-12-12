@@ -1,0 +1,83 @@
+- tv.gallery.currentTab = "movie";
+;pretrans
+;stopsound buf: "bgm"
+;call file: "gallery/gallery.pon", label: "hide_layers"
+;call file: "gallery/gallery.pon", label: "draw_bg"
+;call file: "gallery/gallery.pon", label: "draw_header"
+
+---
+tv.gallery.movie = tv.movie = {
+  lay: {
+    btns: 28,
+    filter: tv.gallery.lay.header + 1,
+    video: tv.gallery.lay.header + 2
+  },
+}
+---
+
+;rclick jump: false, call: false, enabled: false
+
+;messageopt {
+  lay: "&tv.movie.lay.btns",
+  fontfamily: ["GenShinGothic", "monospace"],
+  fontsize: 14,
+  weight: "normal",
+  color: "0xFFFFFF",
+  pitch: 0,
+  lineheight: 20,
+  linepitch: 12,
+  align: "left",
+  shadow: false,
+  edgewidth: 0,
+  autoreturn: false,
+  margint: 15,
+  marginr: 0,
+  marginb: 0,
+  marginl: 20
+}
+
+*draw_buttons
+;layopt lay:"&tv.movie.lay.btns", x: 0, y: 0, width: 1280, height: 720, visible: true
+;imagebutton lay:"&tv.movie.lay.btns", imagefile: "gallery/movie/thumb01.png", x: 440, y: 222, jump: true, label: "on_click_button"
+;nowait
+;clear lay:"&tv.movie.lay.btns"
+;textlocate lay:"&tv.movie.lay.btns", x: 445, y: 195
+;ch lay:"&tv.movie.lay.btns", text: "エンディング"
+;endnowait
+
+*trans
+;trans time: 200
+;waittrans canskip: false
+
+
+*unlockbuttons
+;unlockbuttons
+;s
+
+
+*on_click_button
+;pretrans
+;image lay: "&tv.movie.lay.filter", file: "image/bg-black.png", x: 0, y: 0, visible: true
+;trans time: 500
+;waittrans canskip: false
+
+;loadvideo {
+  lay: "&tv.movie.lay.video",
+  file: "video/endroll.mp4",
+  x: 0,
+  y: 0,
+  width: 1280,
+  height: 720,
+  visible: true,
+  loop: false,
+  volume: "&ponkan.getSoundBuffer('bgm').gvolume"
+}
+;waitvideo canskip: true
+;freevideo lay: "&tv.movie.lay.video"
+;pretrans
+;layopt lay: "&tv.movie.lay.filter", visible: false
+;layopt lay: "&tv.movie.lay.video", visible: false
+;trans time: 500
+;waittrans canskip: false
+;jump label: "unlockbuttons"
+

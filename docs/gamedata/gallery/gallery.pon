@@ -1,23 +1,55 @@
 *gallery_start
 ;tempsave num: 0
+;historyopt output: false, enabled: false
+;rclick enabled: false
 
 ---
 tv.gallery = {
   lay: {
     base: 26,
-    header: 39,
+    header: 37,
   },
   currentTab: "cg",
 };
 ---
 
-# 背景
-;pretrans
+# CGギャラリーの表示
+;jump file: "gallery/gallery-cg.pon"
 
+
+*exit
+;tempload num: 0, sound: false, toback: true
+;lockbuttons page: "fore"
+;lockbuttons page: "back"
+;trans time: 200
+;waittrans canskip: false
+;rclick jump: false, call: false, enabled: false
+;return
+
+*hide_layers
+---
+var layers = [tv.gallery.lay.header];
+[tv.gallery.cg, tv.gallery.sound, tv.gallery.movie,].forEach((page) => {
+  if (page && page.lay) {
+    Object.keys(page.lay).forEach((key) => {
+      layers.push(page.lay[key]);
+    });
+  }
+})
+tv.lay = layers.join(',');
+---
+;layopt lay: "&tv.lay", visible: false
+;freeimage lay: "&tv.lay"
+;clearbuttons lay: "&tv.lay"
+;return
+
+*draw_bg
 ;image lay: "&tv.gallery.lay.base", file: "gallery/bg.png", x: 0, y: 0, visible: true,
-;image lay: "&tv.gallery.lay.header", file: "gallery/header.png", x: 0, y: 0, visible: true,
+;return
 
-# 閉じるボタン
+*draw_header
+;image lay: "&tv.gallery.lay.header", file: "gallery/header.png", x: 0, y: 0, visible: true,
+;clearbuttons lay: "&tv.gallery.lay.header"
 ;imagebutton {
   lay:       "&tv.gallery.lay.header",
   imagefile: "gallery/close_button.png",
@@ -27,31 +59,19 @@ tv.gallery = {
   file:      "gallery/gallery.pon",
   label:     "exit"
 }
+# タブ
+;if exp: "tv.gallery.currentTab === 'cg'"
+  ;childimage  lay:"&tv.gallery.lay.header", file: "gallery/btn-cg-selected.png",    x: 470-3, y: 20
+  ;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-sound.png",     x: 590-3, y: 20, jump: true, file: "gallery/gallery-sound.pon"
+  ;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-movie.png",     x: 710-3, y: 20, jump: true, file: "gallery/gallery-movie.pon"
+;elsif exp: "tv.gallery.currentTab === 'sound'"
+  ;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-cg.png",        x: 470-3, y: 20, jump: true, file: "gallery/gallery-cg.pon"
+  ;childimage  lay:"&tv.gallery.lay.header", file: "gallery/btn-sound-selected.png", x: 590-3, y: 20
+  ;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-movie.png",     x: 710-3, y: 20, jump: true, file: "gallery/gallery-movie.pon"
+;else
+  ;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-cg.png",        x: 470-3, y: 20, jump: true, file: "gallery/gallery-cg.pon"
+  ;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-sound.png",     x: 590-3, y: 20, jump: true, file: "gallery/gallery-sound.pon"
+  ;childimage  lay:"&tv.gallery.lay.header", file: "gallery/btn-movie-selected.png", x: 710-3, y: 20
+;endif
 
-# 画面上部のタブ
-# TODO: 選択中のタブは固定表示
-;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-cg.png",    x: 470-3, y: 20, jump: true, file: "gallery/gallery.pon", label: "exit"
-;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-sound.png", x: 590-3, y: 20, jump: true, file: "gallery/gallery.pon", label: "exit"
-;imagebutton lay:"&tv.gallery.lay.header", imagefile: "gallery/btn-movie.png", x: 710-3, y: 20, jump: true, file: "gallery/gallery.pon", label: "exit"
-
-# TODO: タブで切り替え
-
-# CGギャラリーの表示
-;jump file: "gallery/gallery-cg.pon"
-
-
-
-#;trans time: 200
-#;waittrans canskip: false
-#
-#;unlockbuttons
-;s
-
-
-*exit
-;tempload num: 0, sound: false, toback: true
-;lockbuttons page: "fore"
-;lockbuttons page: "back"
-;trans time: 200
-;waittrans canskip: false
 ;return

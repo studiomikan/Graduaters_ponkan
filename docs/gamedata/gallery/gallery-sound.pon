@@ -1,0 +1,95 @@
+# 背景
+- tv.gallery.currentTab = "sound";
+;pretrans
+;stopsound buf: "bgm"
+;call file: "gallery/gallery.pon", label: "hide_layers"
+;call file: "gallery/gallery.pon", label: "draw_bg"
+;call file: "gallery/gallery.pon", label: "draw_header"
+
+---
+tv.gallery.sound = tv.sound = {
+  lay: {
+    btns: 28,
+  },
+  sounds: [
+    // BGM
+    { text: "BGM1 : Moody",  x: 0, y: 33*0, width: 180, file: "sound/bgm001.ogg" },
+    { text: "BGM2 : Upbeat", x: 0, y: 33*1, width: 180, file: "sound/bgm002.ogg" },
+    { text: "BGM3 : Breezy", x: 0, y: 33*2, width: 180, file: "sound/bgm003.ogg" },
+    // SE 1列目
+
+    // SE 2列目
+  ],
+}
+---
+
+;rclick jump: false, call: false, enabled: false
+
+*draw_buttons
+;layopt lay: "&tv.sound.lay.btns", x: 80, y: 100, width: 500, height: 500, visible: true
+;messageopt {
+  lay: "&tv.sound.lay.btns",
+  fontfamily: ["GenShinGothic", "monospace"],
+  fontsize: 20,
+  weight: "normal",
+  color: "0xFFFFFF",
+  pitch: 0,
+  lineheight: 18,
+  linepitch: 12,
+  align: "left",
+  shadow: false, edgewidth: 0,
+  autoreturn: false,
+  margint: 0, marginr: 0, marginb: 0, marginl: 0
+}
+;clear lay: "&tv.sound.lay.btns"
+;messagelay "lay": "&tv.originalMesLayNum"
+;for loops: "&tv.sound.sounds.length", indexvar: "i"
+  ---
+  tv.s = tv.sound.sounds[tv.i]
+  tv.onclick = `tv.clickedIndex = ${tv.i}`;
+  ---
+  ;textbutton {
+    lay:      "&tv.sound.lay.btns",
+    text:     "&tv.s.text",
+    btnname:  "&tv.s.text",
+    x:        "&tv.s.x",
+    y:        "&tv.s.y",
+    width:    "&tv.s.width",
+    height:   30,
+    bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"],
+    bgalphas: [0.0, 0.2, 0.3],
+    onclick:  "&tv.onclick",
+    jump:     true,
+    label:    "on_click_sound",
+    align:    "left",
+    margint:  5,
+    marginl:  5,
+  }
+;endfor
+
+
+*trans
+;trans time: 200
+;waittrans canskip: false
+
+*unlockbuttons
+;unlockbuttons
+;s
+
+
+*on_click_sound
+---
+var s = tv.sound.sounds[tv.clickedIndex];
+console.log(s);
+tv.file = s.file;
+---
+;stopsound buf: "bgm"
+;loadsound buf: "bgm", "file": "&tv.file"
+;soundopt  buf: "bgm", volume: 1, loop: true
+;playsound buf: "bgm"
+;jump label: "unlockbuttons"
+
+
+*stop_sound
+;jump
+
