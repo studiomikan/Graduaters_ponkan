@@ -4,6 +4,7 @@
 -tv.meslay_mode = "orange";
 ;call file: "script/init_system.pon"
 ;call file: "script/macro.pon"
+;call file: "plugin/audio-spectrum-plugin.pon"
 
 #=============================================
 # カッコの自動インデント

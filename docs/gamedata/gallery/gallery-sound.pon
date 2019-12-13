@@ -1,7 +1,7 @@
 # 背景
 - tv.gallery.currentTab = "sound";
 ;pretrans
-;stopsound buf: "bgm"
+;call file: "gallery/gallery-sound.pon", label: "stop_sound"
 ;call file: "gallery/gallery.pon", label: "hide_layers"
 ;call file: "gallery/gallery.pon", label: "draw_bg"
 ;call file: "gallery/gallery.pon", label: "draw_header"
@@ -10,6 +10,7 @@
 tv.gallery.sound = tv.sound = {
   lay: {
     btns: 28,
+    spectrum: 29,
   },
   sounds: [
     // BGM
@@ -67,6 +68,8 @@ tv.gallery.sound = tv.sound = {
   }
 ;endfor
 
+*draw_spectrum
+;layopt lay: "&tv.sound.lay.spectrum", x: 550, y: 160, visible: true
 
 *trans
 ;trans time: 200
@@ -84,12 +87,17 @@ console.log(s);
 tv.file = s.file;
 ---
 ;stopsound buf: "bgm"
+;free_audio_spectrum
+
 ;loadsound buf: "bgm", "file": "&tv.file"
 ;soundopt  buf: "bgm", volume: 1, loop: true
+;init_audio_spectrum buf: "bgm", lay: "&tv.sound.lay.spectrum"
 ;playsound buf: "bgm"
 ;jump label: "unlockbuttons"
 
 
 *stop_sound
-;jump
+;stopsound buf: "bgm"
+;free_audio_spectrum
+;return
 

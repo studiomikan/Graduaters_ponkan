@@ -1,6 +1,6 @@
 - tv.gallery.currentTab = "movie";
 ;pretrans
-;stopsound buf: "bgm"
+;call file: "gallery/gallery-sound.pon", label: "stop_sound"
 ;call file: "gallery/gallery.pon", label: "hide_layers"
 ;call file: "gallery/gallery.pon", label: "draw_bg"
 ;call file: "gallery/gallery.pon", label: "draw_header"
