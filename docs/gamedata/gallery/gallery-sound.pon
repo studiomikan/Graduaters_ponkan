@@ -10,21 +10,62 @@
 tv.gallery.sound = tv.sound = {
   lay: {
     btns: 28,
-    spectrum: 29,
+    window: 29,
+    spectrum: 30,
   },
+  repeat: false,
+  repeatOne: false,
+  shuffle: false,
   sounds: [
     // BGM
-    { text: "BGM1 : Moody",  x: 0, y: 33*0, width: 180, file: "sound/bgm001.ogg" },
-    { text: "BGM2 : Upbeat", x: 0, y: 33*1, width: 180, file: "sound/bgm002.ogg" },
-    { text: "BGM3 : Breezy", x: 0, y: 33*2, width: 180, file: "sound/bgm003.ogg" },
+    { text: "BGM1: Moody",  x: 0, y: 33*0, width: 170, file: "sound/bgm001.ogg", selected: false },
+    { text: "BGM2: Upbeat", x: 0, y: 33*1, width: 170, file: "sound/bgm002.ogg", selected: false },
+    { text: "BGM3: Breezy", x: 0, y: 33*2, width: 170, file: "sound/bgm003.ogg", selected: false },
     // SE 1列目
-
+    { text: "SE01",  x: 180, y: 33*0,  width: 80, file: "sound/se01.ogg", selected: false },
+    { text: "SE02",  x: 180, y: 33*1,  width: 80, file: "sound/se02.ogg", selected: false },
+    { text: "SE03",  x: 180, y: 33*2,  width: 80, file: "sound/se03.ogg", selected: false },
+    { text: "SE04",  x: 180, y: 33*3,  width: 80, file: "sound/se04.ogg", selected: false },
+    { text: "SE05",  x: 180, y: 33*4,  width: 80, file: "sound/se05.ogg", selected: false },
+    { text: "SE06",  x: 180, y: 33*5,  width: 80, file: "sound/se06.ogg", selected: false },
+    { text: "SE07",  x: 180, y: 33*6,  width: 80, file: "sound/se07.ogg", selected: false },
+    { text: "SE08",  x: 180, y: 33*7,  width: 80, file: "sound/se08.ogg", selected: false },
+    { text: "SE09",  x: 180, y: 33*8,  width: 80, file: "sound/se09.ogg", selected: false },
+    { text: "SE10",  x: 180, y: 33*9,  width: 80, file: "sound/se10.ogg", selected: false },
+    { text: "SE11",  x: 180, y: 33*10, width: 80, file: "sound/se11.ogg", selected: false },
+    { text: "SE12",  x: 180, y: 33*11, width: 80, file: "sound/se12.ogg", selected: false },
     // SE 2列目
+    { text: "SE13",  x: 270, y: 33*0,  width: 80, file: "sound/se13.ogg", selected: false },
+    { text: "SE14",  x: 270, y: 33*1,  width: 80, file: "sound/se14.ogg", selected: false },
+    { text: "SE15",  x: 270, y: 33*2,  width: 80, file: "sound/se15.ogg", selected: false },
+    { text: "SE16",  x: 270, y: 33*3,  width: 80, file: "sound/se16.ogg", selected: false },
+    { text: "SE17",  x: 270, y: 33*4,  width: 80, file: "sound/se17.ogg", selected: false },
+    { text: "SE18",  x: 270, y: 33*5,  width: 80, file: "sound/se18.ogg", selected: false },
+    { text: "SE19",  x: 270, y: 33*6,  width: 80, file: "sound/se19.ogg", selected: false },
+    { text: "SE20",  x: 270, y: 33*7,  width: 80, file: "sound/se20.ogg", selected: false },
+    { text: "SE21",  x: 270, y: 33*8,  width: 80, file: "sound/se21.ogg", selected: false },
+    { text: "SE22",  x: 270, y: 33*9,  width: 80, file: "sound/se22.ogg", selected: false },
+    { text: "SE23",  x: 270, y: 33*10, width: 80, file: "sound/se23.ogg", selected: false },
+    { text: "SE24",  x: 270, y: 33*11, width: 80, file: "sound/se24.ogg", selected: false },
   ],
+  playlist: [
+  ],
+  preSound: null,
+  currentSound: null,
+  getRepeatBtnImg: function() {
+    return "gallery/sound/btn-repeat" + (this.repeat ? "-selected" : "") + ".png"
+  },
+  getRepeatOneBtnImg: function() {
+    return "gallery/sound/btn-repeat-one" + (this.repeatOne ? "-selected" : "") + ".png"
+  },
+  getShuffleBtnImg: function() {
+    return "gallery/sound/btn-shuffle" + (this.shuffle ? "-selected" : "") + ".png"
+  },
 }
 ---
 
 ;rclick jump: false, call: false, enabled: false
+
 
 *draw_buttons
 ;layopt lay: "&tv.sound.lay.btns", x: 80, y: 100, width: 500, height: 500, visible: true
@@ -69,7 +110,11 @@ tv.gallery.sound = tv.sound = {
 ;endfor
 
 *draw_spectrum
-;layopt lay: "&tv.sound.lay.spectrum", x: 550, y: 160, visible: true
+;layopt lay: "&tv.sound.lay.spectrum", x: 550, y: 160, visible: false
+
+*draw_window
+;call label: "draw_window_subroutine"
+
 
 *trans
 ;trans time: 200
@@ -82,22 +127,142 @@ tv.gallery.sound = tv.sound = {
 
 *on_click_sound
 ---
-var s = tv.sound.sounds[tv.clickedIndex];
-console.log(s);
-tv.file = s.file;
----
-;stopsound buf: "bgm"
-;free_audio_spectrum
+var s = tv.clickedSound = tv.sound.sounds[tv.clickedIndex];
+s.selected = !s.selected; // まずは選択を反転
+tv.stopSoundFlag = false;
+tv.sound.preSound = tv.sound.currentSound;
 
-;loadsound buf: "bgm", "file": "&tv.file"
-;soundopt  buf: "bgm", volume: 1, loop: true
-;init_audio_spectrum buf: "bgm", lay: "&tv.sound.lay.spectrum"
+if (tv.sound.currentSound != null && tv.sound.currentSound.text == s.text) {
+  // 再生中の曲がクリックされた場合、曲を停止する。
+  tv.stopSoundFlag = true;
+  tv.sound.currentSound = null;
+} else {
+  // 再生中ではない曲がクリックされた場合
+  if (s.selected) {
+    // 選択状態になったなら、クリックされた曲を再生
+    tv.stopSoundFlag = true;
+    tv.sound.currentSound = s;
+  } else {
+    // 未選択状態になったのなら、選択状態の変更以外には何もしない。
+    tv.stopSoundFlag = false;
+  }
+}
+// プレイリストを更新しておく。
+tv.sound.playlist = tv.sound.sounds.filter((s) => s.selected);
+console.log('clickedSound', s);
+console.log('currentSound', tv.sound.currentSound);
+console.log('playlist', tv.sound.playlist);
+---
+# ボタンの状態の更新
+;if exp: "tv.clickedSound.selected"
+  ;textbuttonopt lay: "&tv.sound.lay.btns", btnname: "&tv.clickedSound.text", bgalphas: [0.3, 0.3, 0.3]
+;else
+  ;textbuttonopt lay: "&tv.sound.lay.btns", btnname: "&tv.clickedSound.text", bgalphas: [0.0, 0.2, 0.3]
+;endif
+
+# 停止フラグが経っていたら曲を停止
+;if exp: "tv.stopSoundFlag"
+  ;stopsound buf: "bgm"
+;endif
+
+# クリックされた曲が新しく再生する曲なら、再生
+;if exp: "tv.sound.currentSound != null && tv.sound.currentSound == tv.clickedSound"
+  ;call label: "play_current_sound"
+;endif
+;jump label: "unlockbuttons"
+
+
+*draw_window_subroutine
+;freeimage lay: "&tv.sound.lay.window",
+;image lay: "&tv.sound.lay.window", file: "gallery/sound/window.png", x: 440, y: 600, visible: true
+;clearbuttons lay: "&tv.sound.lay.window",
+;imagebutton lay:"&tv.sound.lay.window", imagefile: "gallery/sound/btn-rewind.png",   x: 20,  y: 10, jump: true, label: "on_click_rewind"
+;imagebutton lay:"&tv.sound.lay.window", imagefile: "gallery/sound/btn-play.png",     x: 80,  y: 10, jump: true, label: "on_click_play"
+;imagebutton lay:"&tv.sound.lay.window", imagefile: "gallery/sound/btn-stop.png",     x: 140, y: 10, jump: true, label: "on_click_stop"
+;imagebutton lay:"&tv.sound.lay.window", imagefile: "gallery/sound/btn-forward.png",  x: 200, y: 10, jump: true, label: "on_click_forward"
+;imagebutton lay:"&tv.sound.lay.window", imagefile: "&tv.sound.getRepeatBtnImg()",    x: 280, y: 22, jump: true, label: "on_click_repeat"
+;imagebutton lay:"&tv.sound.lay.window", imagefile: "&tv.sound.getRepeatOneBtnImg()", x: 315, y: 22, jump: true, label: "on_click_repeat_one"
+;imagebutton lay:"&tv.sound.lay.window", imagefile: "&tv.sound.getShuffleBtnImg()",   x: 350, y: 22, jump: true, label: "on_click_shuffle"
+;return
+
+*redraw_window
+;pretrans
+;call label: "draw_window_subroutine"
+;flip
+;return
+
+*on_click_rewind
+;jump label: "unlockbuttons"
+
+*on_click_play
 ;playsound buf: "bgm"
 ;jump label: "unlockbuttons"
 
+*on_click_stop
+;stopsound buf: "bgm"
+;jump label: "unlockbuttons"
+
+*on_click_forward
+;jump label: "unlockbuttons"
+
+*on_click_repeat
+-tv.sound.repeat = !tv.sound.repeat
+-tv.sound.repeatOne = false
+;call label: "redraw_window"
+;jump label: "unlockbuttons"
+
+*on_click_repeat_one
+-tv.sound.repeatOne = !tv.sound.repeatOne
+-tv.sound.repeat = false
+;call label: "redraw_window"
+;jump label: "unlockbuttons"
+
+*on_click_shuffle
+-tv.sound.shuffle = !tv.sound.shuffle
+;call label: "redraw_window"
+;jump label: "unlockbuttons"
+
+*on_sound_stop
+-console.log('on_sound_stop')
+---
+---
+;if exp: "tv.sound.repeat"
+  # 次の曲を再生
+;elsif exp: "tv.sound.repeatOne"
+  # 同じ曲を再生
+  ;stopsound buf: "bgm"
+  ;free_audio_spectrum
+  ;playsound buf: "bgm"
+;elsif exp: "tv.sound.shuffle"
+  # シャッフル再生
+;endif
+;jump label: "unlockbuttons"
+
+*play_current_sound
+;stopsound buf: "bgm"
+;free_audio_spectrum
+;loadsound buf: "bgm", "file": "&tv.sound.currentSound.file"
+;soundopt  buf: "bgm", volume: 1, loop: false
+# ;setsoundstop buf: "bgm", jump: true, label: "on_sound_stop"
+;init_audio_spectrum {
+  buf: "bgm",
+  lay: "&tv.sound.lay.spectrum",
+  type: "solid",
+  options: {
+    fftSize: 128,
+    barWidth: 14,
+    margin: 1,
+  },
+}
+;layopt lay: "&tv.sound.lay.spectrum", visible: true
+;playsound buf: "bgm"
+;return
 
 *stop_sound
 ;stopsound buf: "bgm"
 ;free_audio_spectrum
+;if exp: "tv.sound"
+  ;layopt lay: "&tv.sound.lay.spectrum", visible: false
+;endif
 ;return
 
