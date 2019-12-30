@@ -56,6 +56,7 @@ tv.gallery.movie = tv.movie = {
 
 
 *on_click_button
+;lockbuttons
 ;pretrans
 ;image lay: "&tv.movie.lay.filter", file: "image/bg-black.png", x: 0, y: 0, visible: true
 ;trans time: 500

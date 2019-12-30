@@ -243,6 +243,7 @@ tv.oldBtnName = oldBtnName;
 
 # 背景変更
 *on_click_bg
+;lockbuttons
 ---
 tv.oldBtnName = tv.cg.bg != null ? tv.cg.bg.btnName : null;
 tv.newBtnName = tv.clickedButton.btnName;
@@ -268,6 +269,7 @@ tv.cg.bg = tv.clickedButton;
 
 # ウィンドウ表示・非表示
 *on_rclick
+;lockbuttons
 ;layopt lay: "&tv.gallery.lay.header", visible: false
 ;layopt lay: "&tv.cg.lay.window", visible: false
 ;layopt lay: "&tv.cg.lay.note", visible: false

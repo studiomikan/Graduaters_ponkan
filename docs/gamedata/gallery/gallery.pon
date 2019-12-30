@@ -18,6 +18,7 @@ tv.gallery = {
 
 
 *exit
+;call file: "gallery/gallery-sound.pon", label: "stop_sound"
 ;tempload num: 0, sound: false, toback: true
 ;lockbuttons page: "fore"
 ;lockbuttons page: "back"
