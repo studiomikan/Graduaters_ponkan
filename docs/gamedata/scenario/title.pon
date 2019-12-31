@@ -23,6 +23,8 @@
 ;wait time: 1500, canskip: false
 
 *title_return_point
+;historyopt output: false, enabled: false
+;rclick enabled: false
 ;pretrans
   ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
   ;trans time: 1000
@@ -95,15 +97,18 @@
 ;lockbuttons
 ;soundopt buf: "system", volume: 1, loop: false
 ;playsound buf: "system", loop: false
----
-try {
-  if (window.confirm("ゲームを終了しますか？")) {
+-if (tv.system == null) tv.system = {};
+-tv.system.dialogMessage = "ゲームを終了しますか？";
+;call file: "dialog/confirm_dialog.pon", label: "show_dialog"
+;if exp: "tv.system.dialogResult"
+  ---
+  try {
     window.close();
+  } catch (e) {
+    console.error(e);
   }
-} catch (e) {
-  console.error(e);
-}
----
+  ---
+;endif
 ;jump label: "unlockbuttons"
 
 

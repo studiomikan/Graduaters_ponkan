@@ -67,6 +67,7 @@ tv.sysbtn_settings = {
         onclick: "",
         x:       108,
         y:       31 * 4,
+        jump:    true,
       },
       {
         image:   "sysbtn/sysbtn-auto.png",
@@ -257,5 +258,17 @@ switch (tv.mes_type) {
 
 # タイトルに戻る
 *act_title
--alert("TODO タイトルに戻る");
+-if (tv.system == null) tv.system = {};
+-tv.system.dialogMessage = "タイトル画面に戻りますか？";
+;call file: "dialog/confirm_dialog.pon", label: "show_dialog"
+;if exp: "tv.system.dialogResult"
+  ;pretrans
+  ;layopt lay: "all", visible: false
+  ;freeimage lay: "all"
+  ;clearcolor lay: "all"
+  ;trans time: 400
+  ;waittrans canskip: false
+  -ponkan.returnSubroutine();
+  ;jump file: "scenario/title.pon", label: "title_return_point"
+;endif
 ;return
