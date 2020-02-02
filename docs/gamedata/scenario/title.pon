@@ -35,6 +35,7 @@
 # 背景
 ;pretrans
 ;image lay: 0, file: "image/bg-title.png"
+;call label: "draw_version"
 ;trans time: 1000
 ;waittrans canskip: false
 
@@ -123,6 +124,7 @@
 ;freeimage lay: "all",
 ;clearbuttons lay: "all"
 ;clearcolor lay: "all"
+;clear lay: "all"
 
 ## ホワイトアウト
 ;layopt lay: 0, x: 0, y: 0, width: 1280, height: 720, visible: true
@@ -144,3 +146,25 @@
 ;jump file: "scenario/01.pon"
 ;s
 
+
+# バージョン番号を出す
+*draw_version
+;messageopt {
+  lay: 0,
+  fontfamily: ["GenShinGothic", "monospace"],
+  fontsize: 16,
+  weight: "normal",
+  color: "0xFFFFFF",
+  pitch: 0,
+  lineheight: 16,
+  linepitch: 5,
+  align: "left",
+  shadow: false,
+  edgewidth: 0,
+  autoreturn: false,
+  margint: 0, marginr: 0, marginb: 0, marginl: 0
+}
+;clear lay: 0
+;locate lay: 0, x: 10, y: 720 - 26
+;ch lay: 0, text: "&'Version ' + ponkan.config.gameVersion"
+;return
