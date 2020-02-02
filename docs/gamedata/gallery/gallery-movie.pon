@@ -51,7 +51,7 @@ tv.gallery.movie = tv.movie = {
 
 
 *unlockbuttons
-;unlockbuttons
+;unlockbuttons lay: "&[tv.gallery.lay.header, tv.movie.lay.btns].join(',')"
 ;s
 
 

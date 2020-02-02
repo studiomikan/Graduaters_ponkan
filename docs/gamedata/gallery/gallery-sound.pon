@@ -143,7 +143,7 @@ tv.gallery.sound = tv.sound = {
 ;waittrans canskip: false
 
 *unlockbuttons
-;unlockbuttons
+;unlockbuttons lay: "&[tv.gallery.lay.header, tv.sound.lay.btns, tv.sound.lay.window].join(',')"
 ;s
 
 *draw_window_subroutine

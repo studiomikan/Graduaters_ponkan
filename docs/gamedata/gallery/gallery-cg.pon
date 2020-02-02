@@ -169,7 +169,7 @@ $
 ;waittrans canskip: false
 
 *unlockbuttons
-;unlockbuttons
+;unlockbuttons lay: "&[tv.gallery.lay.header, tv.cg.lay.window].join(',')"
 ;rclick jump: true, call: false, label: "on_rclick", enabled: true
 ;s
 
