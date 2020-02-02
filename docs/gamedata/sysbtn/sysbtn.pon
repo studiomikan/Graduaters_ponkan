@@ -268,6 +268,9 @@ switch (tv.mes_type) {
   ;clearcolor lay: "all"
   ;trans time: 400
   ;waittrans canskip: false
+  ;stopsound buf: "bgm"
+  ;stopsound buf: "se"
+  ;stopsound buf: "system"
   -ponkan.returnSubroutine();
   ;jump file: "scenario/title.pon", label: "title_return_point"
 ;endif
