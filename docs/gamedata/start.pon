@@ -26,6 +26,6 @@
 ;layopt lay: "message", visible: false
 ;wait time: 500, canskip: false
 #;jump file: "scenario/title.pon"
-;jump file: "scenario/title.pon", label: "title_return_point"
-#;jump file: "scenario/01.pon"
+# ;jump file: "scenario/title.pon", label: "title_return_point"
+;jump file: "scenario/01.pon"
 

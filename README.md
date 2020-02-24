@@ -1,2 +1,2 @@
-# Graduaters-ponkan3
-Graduaters on Ponkan3
+# Graduaters-ponkan
+Graduaters on Ponkan
