@@ -78,6 +78,7 @@
 }
 #;image lay: "mes", file: "sysimage/message.png"
 ;fillcolor lay: "message", color: 0x000000, alpha: 0.75
+# ;textspeed unread: 20, read: 20
 ;clear lay: "all"
 
 
@@ -155,7 +156,6 @@ for (var i = 1; i < 15; i++) { frames.push({"x": 256 - 16 * i, "y": 0}); }
   height: 16,
   frames: "&tv.pageBreakFrames"
 }
-
 
 
 #=============================================
