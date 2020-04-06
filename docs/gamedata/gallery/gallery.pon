@@ -24,6 +24,7 @@ tv.gallery = {
 ;lockbuttons page: "back"
 ;trans time: 200
 ;waittrans canskip: false
+;historyopt output: true, enabled: true
 ;rclick jump: false, call: false, enabled: false
 ;return
 

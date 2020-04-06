@@ -58,7 +58,7 @@
   fontsize: 26,
   weight: "normal",
   color: "0xFFFFFF",
-  pitch: 0,
+  pitch: -2,
   lineheight: 30,
   linepitch: 10,
   align: "left",
@@ -68,7 +68,7 @@
   shadowblur: 5,
   shadowcolor: "0x000000",
   shadowdistance: 2,
-  edgewidth: 0,
+  edgewidth: 1.5,
   edgecolor: "0x000000",
   autoreturn: true,
   margint: 20,
@@ -85,7 +85,7 @@
 #=============================================
 # 発言者の名前表示のレイヤー
 #=============================================
-;layopt lay: "speaker", x: 200, y: 720-200, width: 200, height: 40, visible: false, autohide: true
+;layopt lay: "speaker", x: 200, y: 720-200, width: 200, height: 60, visible: false, autohide: true
 ;messageopt {
   lay: "speaker",
   fontfamily: ["GenShinGothic", "monospace"],
@@ -102,7 +102,7 @@
   shadowblur: 5,
   shadowcolor: "0x000000",
   shadowdistance: 2,
-  edgewidth: 0,
+  edgewidth: 1,
   edgecolor: "0x000000",
   autoreturn: true,
   margint: 0,

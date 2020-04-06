@@ -32,7 +32,7 @@ tv.system.save = {
 #==========================================
 
 ;tempsave num: 0
-;historyopt enabled: false
+;historyopt enabled: false, output: false
 ;lockscreenshot
 ;rclick enabled: false
 ;backlay
@@ -63,7 +63,7 @@ tv.system.save.fadeoutTime = tv.system.save.transTime;
 
 # ボタン用レイヤの設定
 ;layopt lay: "&tv.system.save.btnLay", x: 0, y: 0, width: 1280, height: 720, visible: true
-;mesopt lay: "&tv.system.save.btnLay", color: 0x000000
+;mesopt lay: "&tv.system.save.btnLay", color: 0x000000, shadow: false, edge: false
 ;clear lay: "&tv.system.save.btnLay"
 ;clearbuttons lay: "&tv.system.save.btnLay"
 
@@ -72,11 +72,14 @@ tv.system.save.fadeoutTime = tv.system.save.transTime;
 ;meslay lay: "&tv.system.save.textLay"
 ;clear lay: "&tv.system.save.textLay"
 ;mesopt {
+  lay: "&tv.system.save.textLay",
   fontfamily: ["GenShinGothic", "monospace"],
   fontsize: 18,
   lineheight: 18,
   align: "left",
   color: 0x000000,
+  shadow: false,
+  edge: false,
   autoreturn: false,
   margint: 0, marginr: 0, marginb: 0, marginl: 0
 }
@@ -132,12 +135,12 @@ tv.system.save.fadeoutTime = tv.system.save.transTime;
     y:    "&tv.y + 10",
     alpha: 1
   }
-  ;mesopt fontsize: 14, lineheight: 14, color: 0x000000
+  ;mesopt fontsize: 14, lineheight: 14, color: 0x000000, shadow: false, edge: false
   ;locate x: "&tv.x + 251", y: "&tv.y + 10"
   = "No." + (tv.saveNum + 1)
   ;locate x: "&tv.x + 251 + 50", y: "&tv.y + 10"
   = tv.saveInfo.date
-  ;mesopt fontsize: 16, lineheight: 16, color: 0x000000
+  ;mesopt fontsize: 16, lineheight: 16, color: 0x000000, shadow: false, edge: false
   ;locate x: "&tv.x + 251", y: "&tv.y + 44"
   = tv.saveInfo.comment
   ;locate x: "&tv.x + 251", y: "&tv.y + 78"
@@ -167,6 +170,7 @@ tv.pageButtonY = 20;
 ---
 ;mesopt {
   fontsize: 24, lineheight: 24, color: 0xFFFFFF,
+  shadow: false, edge: false,
   margint: 0, marginr: 0, marginb: 0, marginl: 0
 }
 ;locate x: "&tv.pageButtonX", y: "&tv.pageButtonY"
@@ -183,6 +187,10 @@ PAGE:
     tv.bgalphas = [0.50, 0.85, 0.9];
   }
   ---
+  ;mesopt {
+    lay: "&tv.system.save.btnLay",
+    fontsize: 20, lineheight: 20, color: 0x000000, shadow: false, edge: false
+  }
   ;textbutton {
     lay:    "&tv.system.save.btnLay",
     text:   "&'' + (tv.i + 1)",
@@ -193,6 +201,7 @@ PAGE:
     bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"],
     bgalphas: "&tv.bgalphas",
     onclick:  "&tv.onClick",
+    margint: 3,
     jump:   true,
     label:  "on_click_page_button"
   }
@@ -276,7 +285,7 @@ PAGE:
 ;tempload num: 0, sound: false, toback: true
 ;trans method: "crossfade", time: "&tv.system.save.fadeoutTime"
 ;unlockscreenshot
-;historyopt enabled: true
+;historyopt enabled: true, output: true
 ;rclick jump: false, call: false, enabled: true
 ;return
 
