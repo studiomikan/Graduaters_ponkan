@@ -27,13 +27,26 @@
         }
       ]
     },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "packElevateHelper": false,
+      "runAfterFinish": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "menuCategory": false
+    },
     "mac": {
       "category": "your.app.category.type"
     }
   },
   "devDependencies": {
-    "electron": "^6.0.10",
-    "electron-builder": "^21.2.0",
-    "http-server": "^0.11.1"
+    "electron": "^8.2.1",
+    "electron-builder": "^22.4.1",
+    "http-server": "^0.12.1"
   }
 }

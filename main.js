@@ -14,12 +14,12 @@ function createWindow () {
     useContentSize: true,
     titleBarStyle: "hidden",
     // webPreferences: {
-    //   preload: path.join(__dirname, 'public/preload.js')
+    //   preload: path.join(__dirname, 'docs/preload.js')
     // }
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('public/index.html')
+  mainWindow.loadFile('docs/index.html')
   mainWindow.setMenu(null);
 
   // Open the DevTools.
