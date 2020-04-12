@@ -1,5 +1,5 @@
 {
-  "name": "graduaters",
+  "name": "Graduaters!",
   "version": "1.0.0",
   "description": "Graduaters! for web",
   "main": "main.js",
@@ -15,8 +15,9 @@
   },
   "build": {
     "appId": "net.studiomikan.ponkan.template",
-    "productName": "PonkanTemplate",
+    "productName": "Graduaters!",
     "win": {
+      "icon": "build/icon.ico",
       "target": [
         {
           "target": "nsis",
@@ -34,6 +35,7 @@
       "allowToChangeInstallationDirectory": true,
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico",
+      "installerSidebar": "build/installerSidebar.bmp",
       "packElevateHelper": false,
       "runAfterFinish": false,
       "createDesktopShortcut": true,
@@ -41,7 +43,7 @@
       "menuCategory": false
     },
     "mac": {
-      "category": "your.app.category.type"
+      "category": "public.app-category.games"
     }
   },
   "devDependencies": {

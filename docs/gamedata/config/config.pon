@@ -184,7 +184,7 @@ tv.system.config.fadeoutTime = tv.system.config.transTime;
 # ボタン用レイヤの設定
 ;if exp: "tv.system.config.drawTarget.indexOf('initlayers') >= 0"
   ;layopt lay: "&tv.system.config.btnLay", x: 0, y: 0, width: 1280, height: 24, visible: true
-  ;mesopt lay: "&tv.system.config.btnLay", color: 0x000000, fontsize: 20, lineheight: 20, shadow: false, edge: false
+  ;mesopt lay: "&tv.system.config.btnLay", color: 0x000000, fontsize: 20, lineheight: 20, shadow: false, edge: false, fontfamily: ["GenShinGothic", "monospace"]
   ;clear lay: "&tv.system.config.btnLay"
   ;clearbuttons lay: "&tv.system.config.btnLay"
 ;endif
