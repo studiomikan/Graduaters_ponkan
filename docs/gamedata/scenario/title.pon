@@ -121,10 +121,11 @@
 
 ;pretrans
 ;layopt lay: "all", visible: false
-;freeimage lay: "all",
+;freeimage lay: "all"
 ;clearbuttons lay: "all"
 ;clearcolor lay: "all"
 ;clear lay: "all"
+;call file: "script/init_system2.pon"
 
 ## ホワイトアウト
 ;layopt lay: 0, x: 0, y: 0, width: 1280, height: 720, visible: true
