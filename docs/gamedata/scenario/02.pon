@@ -20,7 +20,7 @@
 # BGM再生
 ;playbgm num: "003"
 ;image lay: "base", file: "image/bg-black.png", alpha: 1
-;layopt lay: "all", visible: false
+;layopt lay: "all", exclude: "system", visible: false
 ;layopt lay: "base", visible: true
 
 # Produced by スタジオ蜜柑

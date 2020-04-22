@@ -120,11 +120,11 @@
 ;playsound buf: "system", loop: false
 
 ;pretrans
-;layopt lay: "all", visible: false
-;freeimage lay: "all"
-;clearbuttons lay: "all"
-;clearcolor lay: "all"
-;clear lay: "all"
+;layopt lay: "all", exclude:"system", visible: false
+;freeimage lay: "all", exclude:"system"
+;clearbuttons lay: "all", exclude:"system"
+;clearcolor lay: "all", exclude:"system"
+;clear lay: "all", exclude:"system"
 ;call file: "script/init_system2.pon"
 
 ## ホワイトアウト

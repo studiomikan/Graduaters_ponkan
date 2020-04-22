@@ -7,6 +7,7 @@ IF NOT EXIST "ponkan" (
   git checkout -b develop origin/develop
 )
 cd ponkan
+git checkout .
 git pull
 call npm install
 call npm run build

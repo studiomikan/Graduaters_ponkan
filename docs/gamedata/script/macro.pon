@@ -581,7 +581,7 @@ tv.getCharaInfo = function(mp) {
 # 演出 ミニテロップイン -> アウト
 #-------------------------------------------------------------------
 ;macro name: "minitelop"
-  ;layopt lay: "all", visible: false
+  ;layopt lay: "all", exclude: "system", visible: false
   # イン
   ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
   ;layopt lay: "telop", alpha: 0
@@ -601,7 +601,7 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "telop"
   # フェード
   ;pretrans
-  ;layopt lay: "all", visible: false
+  ;layopt lay: "all", exclude: "system", visible: false
   ;image lay: "telop", file: "image/logo-title-mini.png", x: 1280-450-40, y: 720-102-40, visible: true
   ;trans time: 2000
   ;waittrans canskip: false
@@ -754,7 +754,7 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "whiteout"
   ;pretrans
   ;image lay: "base", file: "image/bg-white.png", visible: true
-  ;layopt lay: "all", visible: false
+  ;layopt lay: "all", exclude: "system", visible: false
   ;layopt lay: "base", visible: true
   ;trans time: 1500
   ;waittrans canskip: true
@@ -767,7 +767,7 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "blackout"
   ;pretrans
   ;image lay: "base", file: "image/bg-black.png", visible: true
-  ;layopt lay: "all", visible: false
+  ;layopt lay: "all", exclude: "system", visible: false
   ;layopt lay: "base", visible: true
   ;trans time: 1500
   ;waittrans canskip: true

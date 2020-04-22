@@ -3,7 +3,7 @@
 
 ;historyopt output: false, enabled: false
 ;rclick enabled: false
-;layopt lay: "all", visible: false
+;layopt lay: "all", exclude: "system", visible: false
 
 ;loadvideo {
   lay: "base",

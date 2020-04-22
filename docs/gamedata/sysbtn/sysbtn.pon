@@ -264,8 +264,8 @@ switch (tv.mes_type) {
 ;if exp: "tv.system.dialogResult"
   ;pretrans
   ;layopt lay: "all", visible: false
-  ;freeimage lay: "all"
-  ;clearcolor lay: "all"
+  ;freeimage lay: "all", exclude: "system"
+  ;clearcolor lay: "all", exclude: "system"
   ;trans time: 400
   ;waittrans canskip: false
   ;stopsound buf: "bgm"

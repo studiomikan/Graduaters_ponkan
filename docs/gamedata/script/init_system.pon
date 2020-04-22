@@ -23,6 +23,7 @@
 ;layalias name: "title2", lay: "6"
 ;layalias name: "speaker", lay: "14"
 ;layalias name: "sysbtn", lay: "15"
+;layalias name: "system", lay: "automode,linebreak,pagebreak"
 
 
 #=============================================
@@ -79,7 +80,7 @@
 #;image lay: "mes", file: "sysimage/message.png"
 ;fillcolor lay: "message", color: 0x000000, alpha: 0.75
 # ;textspeed unread: 20, read: 20
-;clear lay: "all"
+;clear lay: "message"
 
 
 #=============================================
