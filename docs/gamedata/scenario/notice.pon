@@ -1,0 +1,35 @@
+# ゲーム起動時のスプラッシュなど
+*notice_start
+;historyopt output: false, enabled: false
+;rclick enabled: false
+;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
+
+# ブランドロゴ
+;pretrans
+  ;image lay: "base", file: "image/bg-brand.png", x: 0, y: 0, visible: true
+  ;trans time: 700
+;waittrans
+;wait time: 1500, canskip: false
+;pretrans
+  ;clearbuttons lay: "base"
+  ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
+  ;trans time: 700
+;waittrans
+
+# 注意書き
+;pretrans
+  ;image lay: "base", file: "image/bg-warning.png", x: 0, y: 0, visible: true
+  ;imagebutton lay: "base", imagefile: "image/btn-gamestart.png", x: 500, y: 565, label: "on_click_gamestart"
+  ;trans time: 700
+;waittrans
+;unlockbuttons
+;s
+
+*on_click_gamestart
+;pretrans
+  ;clearbuttons lay: "base"
+  ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
+  ;trans time: 700
+  ;waittrans
+
+;return

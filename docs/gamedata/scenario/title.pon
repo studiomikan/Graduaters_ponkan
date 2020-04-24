@@ -4,62 +4,38 @@
 ;rclick enabled: false
 ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
 
-# ブランドロゴなど
-;pretrans
-  ;image lay: "base", file: "image/bg-warning.png", x: 0, y: 0, visible: true
-  ;trans time: 1000
-  ;waittrans
-;wait time: 1500, canskip: false
-
-;pretrans
-  ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
-  ;trans time: 1000
-  ;waittrans
-
-;pretrans
-  ;image lay: "base", file: "image/bg-brand.png", x: 0, y: 0, visible: true
-  ;trans time: 1000
-  ;waittrans
-;wait time: 1500, canskip: false
-
 *title_return_point
-;historyopt output: false, enabled: false
-;rclick enabled: false
 ;pretrans
-  ;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
-  ;trans time: 1000
-  ;waittrans
+;image lay: "base", file: "image/bg-black.png", x: 0, y: 0, visible: true
+;trans time: 1000
+;waittrans
 
 ;loadsound buf: "system", file: "sound/se01.ogg"
 
-# 背景
+# タイトル描画
+## 背景
 ;pretrans
 ;image lay: 0, file: "image/bg-title.png"
 ;call label: "draw_version"
-;trans time: 1000
-;waittrans canskip: false
 
-# ボタン
-;freeimage lay: "2-6"
-;clearcolor lay: "2-6"
-;layopt lay: 2, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*0,
-;layopt lay: 3, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*1
-;layopt lay: 4, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*2
-;layopt lay: 5, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*3
-;layopt lay: 6, width: 220, height: 40, visible: true, alpha: 0, x: 1280-10, y: 200+80*4
-;imagebutton lay: 2, x: 0, y: 0, imagefile: "image/btn-newgame.png", label: "newgame",
-;imagebutton lay: 3, x: 0, y: 0, imagefile: "image/btn-loadgame.png", label: "loadgame",
-;imagebutton lay: 4, x: 0, y: 0, imagefile: "image/btn-config.png", label: "config",
-;imagebutton lay: 5, x: 0, y: 0, imagefile: "image/btn-gallery.png", label: "gallery",
-;imagebutton lay: 6, x: 0, y: 0, imagefile: "image/btn-exit.png", label: "exit",
-;move lay: 2, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*0, alpha: 1}], delay: 0
-;move lay: 3, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*1, alpha: 1}], delay: 100
-;move lay: 4, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*2, alpha: 1}], delay: 200
-;move lay: 5, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*3, alpha: 1}], delay: 300
-;move lay: 6, time: 500, ease: "out", path: [{x: 1280-270, y: 200+80*4, alpha: 1}], delay: 400
+## ボタン
+;freeimage lay: "2"
+;clearcolor lay: "2"
+;clearbuttons lay: "2"
+;layopt lay: "2", visible: true, width: 1280, height: 720, x: 0, y: 0
+;imagebutton lay: "2", x: 1280-270, y: 200+80*0, imagefile: "image/btn-newgame.png",  label: "newgame",
+;imagebutton lay: "2", x: 1280-270, y: 200+80*1, imagefile: "image/btn-loadgame.png", label: "loadgame",
+;imagebutton lay: "2", x: 1280-270, y: 200+80*2, imagefile: "image/btn-config.png",   label: "config",
+;imagebutton lay: "2", x: 1280-270, y: 200+80*3, imagefile: "image/btn-gallery.png",  label: "gallery",
+;imagebutton lay: "2", x: 1280-270, y: 200+80*4, imagefile: "image/btn-exit.png",     label: "exit",
 ;lockbuttons
 ;waitmove canskip: false
 
+## Trans
+;trans time: 700
+;waittrans canskip: false
+
+# ボタンロック解除
 *unlockbuttons
 ;unlockbuttons
 ;s
@@ -151,7 +127,7 @@
 # バージョン番号を出す
 *draw_version
 ;messageopt {
-  lay: 0,
+  lay: "base",
   fontfamily: ["GenShinGothic", "monospace"],
   fontsize: 16,
   weight: "normal",
@@ -165,7 +141,7 @@
   autoreturn: false,
   margint: 0, marginr: 0, marginb: 0, marginl: 0
 }
-;clear lay: 0
-;locate lay: 0, x: 10, y: 720 - 26
-;ch lay: 0, text: "&'Version ' + ponkan.config.gameVersion"
+;clear lay: "base"
+;locate lay: "base", x: 10, y: 720 - 26
+;ch lay: "base", text: "&'Version ' + ponkan.config.gameVersion"
 ;return

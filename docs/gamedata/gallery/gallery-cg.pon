@@ -101,8 +101,9 @@ tv.onMouseLeave = function() {
   marginb: 0,
   marginl: 20
 }
-;clear
+;clear lay: "&tv.cg.lay.window"
 ;nowait
+;delcmdsc ch: "\n"
 ◆ 背景$
 $
 $
