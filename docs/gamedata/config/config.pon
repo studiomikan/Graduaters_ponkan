@@ -121,7 +121,11 @@ var exObj = {
     skipMode:         function(value) { ponkan.canSkipUnreadPart = value; },
     bgmVolume:        function(value) { ponkan.getSoundBuffer("bgm").gvolume = value; },
     seVolume:         function(value) { ponkan.getSoundBuffer("se").gvolume = value; },
-    systemVolume:     function(value) { ponkan.getSoundBuffer("system").gvolume = value; },
+    systemVolume:     function(value) {
+      ponkan.getSoundBuffer("system1").gvolume = value;
+      ponkan.getSoundBuffer("system2").gvolume = value;
+      ponkan.getSoundBuffer("system3").gvolume = value;
+    },
     scaleMode: function(mode, width, height) {
       ponkan.scaleMode = mode;
       if (ponkan.scaleMode === Ponkan.ScaleMode.FIXED) {

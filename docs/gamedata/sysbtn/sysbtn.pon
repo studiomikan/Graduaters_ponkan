@@ -198,6 +198,12 @@ switch (tv.mes_type) {
   autohide:     true,
 }
 
+# 効果音
+# buf: "system3" を常用するので、他のシーンで使わないこと
+;loadsound buf: "system3", file: "sound/se01.ogg"
+;soundopt  buf: "system3", volume: 1, loop: false
+
+
 # ボタン配置
 - tv.x = 0
 ;layopt lay: "&tv.sysbtn.lay", visible: false
@@ -213,7 +219,8 @@ switch (tv.mes_type) {
     call:         true,
     file:         "&tv.button.file",
     label:        "&tv.button.label",
-    system:       true
+    system:       true,
+    clickbuf:     "system3",
   }
 ;endfor
 

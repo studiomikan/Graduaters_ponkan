@@ -30,8 +30,11 @@
 # 音声バッファのエイリアス設定
 #=============================================
 ;bufalias name: "bgm", buf: 0
-;bufalias name: "system", buf: 1
-;bufalias name: "se", buf: 2
+;bufalias name: "se", buf: 1
+;bufalias name: "system", buf: 2
+;bufalias name: "system1", buf: 2
+;bufalias name: "system2", buf: 3
+;bufalias name: "system3", buf: 4
 
 
 #=============================================
@@ -64,12 +67,12 @@
   linepitch: 10,
   align: "left",
   shadow: true,
-  shadowalpha: 0.7,
-  shadowangle: 0.5,
-  shadowblur: 5,
+  shadowalpha: 0.8,
+  shadowangle: Math.PI / 4,
+  shadowblur: 1,
   shadowcolor: "0x000000",
-  shadowdistance: 2,
-  edgewidth: 1.5,
+  shadowdistance: 3,
+  edgewidth: 2,
   edgecolor: "0x000000",
   autoreturn: true,
   margint: 20,
@@ -98,12 +101,12 @@
   linepitch: 10,
   align: "center",
   shadow: true,
-  shadowalpha: 0.7,
-  shadowangle: 0.5,
-  shadowblur: 5,
+  shadowalpha: 0.8,
+  shadowangle: Math.PI / 4,
+  shadowblur: 1,
   shadowcolor: "0x000000",
-  shadowdistance: 2,
-  edgewidth: 1,
+  shadowdistance: 3,
+  edgewidth: 2,
   edgecolor: "0x000000",
   autoreturn: true,
   margint: 0,

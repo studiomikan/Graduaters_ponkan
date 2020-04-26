@@ -10,7 +10,10 @@
 ;trans time: 1000
 ;waittrans
 
-;loadsound buf: "system", file: "sound/se01.ogg"
+;loadsound buf: "system1", file: "sound/se00.ogg"
+;loadsound buf: "system2", file: "sound/se01.ogg"
+;soundopt  buf: "system1", volume: 1, loop: false
+;soundopt  buf: "system2", volume: 1, loop: false
 
 # タイトル描画
 ## 背景
@@ -23,11 +26,11 @@
 ;clearcolor lay: "2"
 ;clearbuttons lay: "2"
 ;layopt lay: "2", visible: true, width: 1280, height: 720, x: 0, y: 0
-;imagebutton lay: "2", x: 1280-270, y: 200+80*0, imagefile: "image/btn-newgame.png",  label: "newgame",
-;imagebutton lay: "2", x: 1280-270, y: 200+80*1, imagefile: "image/btn-loadgame.png", label: "loadgame",
-;imagebutton lay: "2", x: 1280-270, y: 200+80*2, imagefile: "image/btn-config.png",   label: "config",
-;imagebutton lay: "2", x: 1280-270, y: 200+80*3, imagefile: "image/btn-gallery.png",  label: "gallery",
-;imagebutton lay: "2", x: 1280-270, y: 200+80*4, imagefile: "image/btn-exit.png",     label: "exit",
+;imagebutton lay: "2", x: 1280-270, y: 200+80*0, imagefile: "image/btn-newgame.png",  label: "newgame",  enterbuf: "system1"
+;imagebutton lay: "2", x: 1280-270, y: 200+80*1, imagefile: "image/btn-loadgame.png", label: "loadgame", enterbuf: "system1"
+;imagebutton lay: "2", x: 1280-270, y: 200+80*2, imagefile: "image/btn-config.png",   label: "config",   enterbuf: "system1"
+;imagebutton lay: "2", x: 1280-270, y: 200+80*3, imagefile: "image/btn-gallery.png",  label: "gallery",  enterbuf: "system1"
+;imagebutton lay: "2", x: 1280-270, y: 200+80*4, imagefile: "image/btn-exit.png",     label: "exit",     enterbuf: "system1"
 ;lockbuttons
 ;waitmove canskip: false
 
@@ -44,16 +47,16 @@
 # Load Game
 *loadgame
 ;lockbuttons
-;soundopt buf: "system", volume: 1, loop: false
-;playsound buf: "system", loop: false
+;soundopt buf: "system2", volume: 1, loop: false
+;playsound buf: "system2", loop: false
 ;call file: "saveload/load.pon"
 ;jump label: "unlockbuttons"
 
 # Config
 *config
 ;lockbuttons
-;soundopt buf: "system", volume: 1, loop: false
-;playsound buf: "system", loop: false
+;soundopt buf: "system2", volume: 1, loop: false
+;playsound buf: "system2", loop: false
 ;call file: "config/config.pon"
 ;historyopt output: false, enabled: false
 ;rclick enabled: false
@@ -62,8 +65,8 @@
 # Gallery
 *gallery
 ;lockbuttons
-;soundopt buf: "system", volume: 1, loop: false
-;playsound buf: "system", loop: false
+;soundopt buf: "system2", volume: 1, loop: false
+;playsound buf: "system2", loop: false
 ;call file: "gallery/gallery.pon"
 ;historyopt output: false, enabled: false
 ;rclick enabled: false
@@ -72,8 +75,8 @@
 # Exit
 *exit
 ;lockbuttons
-;soundopt buf: "system", volume: 1, loop: false
-;playsound buf: "system", loop: false
+;soundopt buf: "system2", volume: 1, loop: false
+;playsound buf: "system2", loop: false
 -if (tv.system == null) tv.system = {};
 -tv.system.dialogMessage = "ゲームを終了しますか？";
 ;call file: "dialog/confirm_dialog.pon", label: "show_dialog"
@@ -92,8 +95,8 @@
 # New Game
 *newgame
 ;lockbuttons
-;soundopt buf: "system", volume: 1, loop: false
-;playsound buf: "system", loop: false
+;soundopt buf: "system2", volume: 1, loop: false
+;playsound buf: "system2", loop: false
 
 ;pretrans
 ;layopt lay: "all", exclude:"system", visible: false

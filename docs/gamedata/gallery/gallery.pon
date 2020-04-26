@@ -44,6 +44,7 @@ tv.lay = layers.join(',');
 ;layopt lay: "&tv.lay", visible: false
 ;freeimage lay: "&tv.lay"
 ;clearbuttons lay: "&tv.lay"
+;clear lay: "&tv.lay"
 ;return
 
 *draw_bg
