@@ -1,0 +1,152 @@
+#-------------------------------------------------------------------
+# メッセージ関連
+#-------------------------------------------------------------------
+---
+// orange: オレンジ、通常
+// blue: ブルー、通常
+// orange_radio: オレンジ、ラジオ用
+// blue_radio: ブルー、ラジオ用
+// letter: 手紙
+tv.mes_type = "orange"
+---
+;macro name: "mes_orange"
+  - tv.mes_type = "orange"
+  ;image lay: "mes", file: "image/mes-orange.png"
+  ;layopt lay: "mes", x: 0, y: 720-200
+  ;mesopt lay: "mes", marginl: (1280-800)/2+20, marginr: (1280-800)/2-20, margint: 65, shadow: true, edge: true
+  ;clear lay: "mes"
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_blue"
+  - tv.mes_type = "blue"
+  ;image lay: "mes", file: "image/mes-blue.png"
+  ;layopt lay: "mes", x: 0, y: 720-200
+  ;mesopt lay: "mes", marginl: (1280-800)/2+20, marginr: (1280-800)/2-20, margint: 65, shadow: true, edge: true
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_orange_radio"
+  - tv.mes_type = "orange_radio"
+  ;image lay: "mes", file: "image/mes-orange-radio.png"
+  ;layopt lay: "mes", x: (1280-640)/2, y: (720-360)/2
+  ;mesopt lay: "mes", margint: 10, marginr: 40, marginb: 20, marginl: 25, shadow: true, edge: true
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_blue_radio"
+  - tv.mes_type = "blue_radio"
+  ;image lay: "mes", file: "image/mes-blue-radio.png"
+  ;layopt lay: "mes", x: (1280-640)/2, y: (720-360)/2
+  ;mesopt lay: "mes", margint: 20, marginr: 40, marginb: 20, marginl: 25, shadow: true, edge: true
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+;macro name: "mes_letter"
+  - tv.mes_type = "letter"
+  ;layopt lay: "mes", x: (1280-1000)/2, y: 0
+  ;image lay: "mes", file: "image/mes-letter.png"
+  ;mesopt lay: "mes", margint: 20, marginr: 100, marginb: 20, marginl: 100, shadow: true, edge: true
+  ;call file: "sysbtn/sysbtn.pon"
+  ;init_glyph
+  ;clear lay: "mes"
+;endmacro
+
+- tv.macro_original_font_size = ponkan.getLayers({lay: "mes"})[0].textFontSize;
+;macro name: "fontsize"
+  ;mesopt fontsize: "&mp.size"
+;endmacro
+
+;macro name: "reset_font"
+  ;mesopt fontsize: "&tv.macro_original_font_size"
+;endmacro
+
+;macro name: "init_glyph"
+  ;if exp: "tv.mes_type == 'orange' || tv.mes_type == 'blue'"
+    ;lbglyph "pos": "eol"
+    ;pbglyph "pos": "absolute", x: 1053, y: 720 - 40
+  ;elsif exp: "tv.mes_type.match(/radio/)"
+    ;lbglyph "pos": "eol"
+    ;pbglyph "pos": "relative", x: 600, y: 320
+  ;else
+    ;lbglyph "pos": "eol"
+    ;pbglyph "pos": "eol"
+  ;endif
+;endmacro
+
+;macro name: "show_meslay"
+  ;layopt lay: "message, speaker, sysbtn", visible: true
+;endmacro
+
+;macro name: "hide_meslay"
+  ;layopt lay: "message, speaker, sysbtn", visible: false
+;endmacro
+
+;macro name: "fadein_meslay"
+  ;pretrans
+  ;show_meslay
+  ;clear lay: "message, speaker, sysbtn"
+  ;trans time: 200
+  ;waittrans canskip: false
+;endmacro
+
+;macro name: "fadeout_meslay"
+  ;pretrans
+  ;hide_meslay
+  ;clear lay: "message, speaker, sysbtn"
+  ;trans time: 200
+  ;waittrans canskip: false
+;endmacro
+
+;macro name: "print_name"
+  ;clear lay: "mes, speaker"
+  ;ch lay: "speaker", text: "&mp.name"
+  ;hch text: "&'【' + mp.name + '】'"
+  ;hbr
+  ;cmdsc ch: "\n", command: "br"
+  ;layopt lay: "speaker", visible: true
+;endmacro
+
+;macro name: "clear_name"
+  ;clear lay: "speaker"
+;endmacro
+
+;macro name: "noname"
+  ;clear lay: "mes, speaker"
+  ;cmdsc ch: "\n", command: "br"
+;endmacro
+
+;macro name: "joban"
+  ;clear lay: "mes, speaker"
+;endmacro
+
+;macro name: "letter"
+  ;clear lay: "speaker"
+  ;nowait
+  ;ch text: "　"
+  ;endnowait
+;endmacro
+
+;macro name: "endline"
+  ;linebreak
+  ;br
+  ;hbr
+;endmacro
+
+;macro name: "endpage"
+  ;pagebreak
+  #;hbr
+  ;clear lay: "mes, speaker"
+  ;delcmdsc ch: "\n"
+;endmacro
+
+
+;return

@@ -1,0 +1,214 @@
+#-------------------------------------------------------------------
+# 基本
+#-------------------------------------------------------------------
+
+;macro name: "lbr"
+  ;linebreak
+  ;br
+;endmacro
+
+;macro name: "pcl"
+  ;pagebreak
+  ;clear
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出 ミニテロップイン -> アウト
+#-------------------------------------------------------------------
+;macro name: "minitelop"
+  ;layopt lay: "all", exclude: "system", visible: false
+  # イン
+  ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
+  ;layopt lay: "telop", alpha: 0
+  ;move lay: "telop", time: 500, path: [{x: 788, y: 562, alpha: 1}], ease: "out"
+  ;waitmove canskip: false
+  ;wait time: 1000, canskip: false
+  # アウト
+  ;move lay: "telop", time: 500, path: [{x: 788-20, y: 562, alpha: 0}], ease: "out"
+  ;waitmove canskip: false
+  ;freeimage lay: "telop"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出 テロップにフェード -> ブラックアウト
+#-------------------------------------------------------------------
+;macro name: "telop"
+  # フェード
+  ;pretrans
+  ;layopt lay: "all", exclude: "system", visible: false
+  ;image lay: "telop", file: "image/logo-title-mini.png", x: 1280-450-40, y: 720-102-40, visible: true
+  ;trans time: 2000
+  ;waittrans canskip: false
+  ;wait time: 200, canskip: false
+  # アウト
+  ;pretrans
+  ;image lay: "base", file: "image/bg-black.png"
+  ;layopt lay: "telop", visible: false
+  ;trans time: 2000
+  ;waittrans canskip: false
+  ;wait time: 1000, canskip: false
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出 ラジオ
+#-------------------------------------------------------------------
+;macro name: "radio_mes_jump1"
+  ;move {
+    lay: "mes",
+    time: "75",
+    ease: "out",
+    path: [
+      {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_combo1"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "catmullrom",
+    path: [
+      {x: 50, y: 50, alpha: 1},
+      {x: 1280-640-50, y: 50, alpha: 1},
+      {x: 50, y: 720-315-50, alpha: 1},
+      {x: 1280-640-50, y: 720-360-50, alpha: 1},
+      {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
+    ],
+  }
+;endmacro
+
+;macro name: "radio_mes_top"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: (720-360)/2-50, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_right"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: 1280-640-50, y: (720-360)/2, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_bottom"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: 720-360-50, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_left"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: 50, y: (720-360)/2, alpha: 1} ],
+  }
+;endmacro
+
+;macro name: "radio_mes_center"
+  ;move {
+    lay: "mes",
+    time: "200",
+    ease: "out",
+    type: "liner",
+    path: [ {x: (1280-640)/2, y: (720-360)/2, alpha: 1} ],
+  }
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 背景変更：フェード
+#-------------------------------------------------------------------
+;macro name: "cb_fade"
+  ;pretrans
+  ;image lay: "base", file: "&'image/bg-' + mp.bg + '.png'", visible: true
+  ;trans time: "&mp.time != null ? mp.time : 1000", method: "crossfade"
+  ;waittrans "canskip": true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 背景変更：移動
+#-------------------------------------------------------------------
+;macro name: "cb_move"
+  ;pretrans
+  ;image lay: "base", file: "&'image/bg-' + mp.bg + '.png'", visible: true
+  ;trans time: "&mp.time != null ? mp.time : 1000", method: "univ", rule: "rule/move.png"
+  ;waittrans "canskip": true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 背景変更：時間経過
+#-------------------------------------------------------------------
+;macro name: "cb_time"
+  ;pretrans
+  ;image lay: "base", file: "&'image/bg-' + mp.bg + '.png'", visible: true
+  ;trans time: "&mp.time != null ? mp.time : 1000", method: "univ", rule: "rule/time.png", vague: 128
+  ;waittrans "canskip": true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 演出：ハートビート
+#-------------------------------------------------------------------
+;macro name: "heartbeat"
+  ;playse num: "07"
+  ;pretrans
+  ;image lay: "filter", file: "image/bg-red.png", visible: true, x: 0, y: 0, alpha: 1.0
+  ;trans time: 400
+  ;waittrans
+  ;pretrans
+  ;layopt lay: "filter", visible: false
+  ;trans time: 400
+  ;waittrans
+;endmacro
+
+
+#-------------------------------------------------------------------
+# トランジション：ホワイトアウト
+#-------------------------------------------------------------------
+;macro name: "whiteout"
+  ;pretrans
+  ;image lay: "base", file: "image/bg-white.png", visible: true
+  ;layopt lay: "all", exclude: "system", visible: false
+  ;layopt lay: "base", visible: true
+  ;trans time: 1500
+  ;waittrans canskip: true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# トランジション：ブラックアウト
+#-------------------------------------------------------------------
+;macro name: "blackout"
+  ;pretrans
+  ;image lay: "base", file: "image/bg-black.png", visible: true
+  ;layopt lay: "all", exclude: "system", visible: false
+  ;layopt lay: "base", visible: true
+  ;trans time: 1500
+  ;waittrans canskip: true
+;endmacro
+
+
+;return

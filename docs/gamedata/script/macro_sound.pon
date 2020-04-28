@@ -1,0 +1,40 @@
+#-------------------------------------------------------------------
+# 効果音関係
+#-------------------------------------------------------------------
+;macro name: "playse"
+  ---
+    tv.file = "sound/se" + mp.num + ".ogg";
+    tv.loop = mp.loop != null ? mp.loop : false;
+  ---
+  ;loadsound buf: "se", "file": "&tv.file"
+  ;soundopt buf: "se", volume: 1, loop: "&tv.loop"
+  ;playsound buf: "se"
+;endmacro
+
+;macro name: "stopse"
+  ;stopsound buf: "se"
+;endmacro
+
+
+#-------------------------------------------------------------------
+# BGM再生
+#-------------------------------------------------------------------
+;macro name: "playbgm"
+  ---
+    tv.file = "sound/bgm" + mp.num + ".ogg";
+  ---
+  ;loadsound buf: "bgm", "file": "&tv.file"
+  ;soundopt buf: "bgm", volume: 1, loop: true
+  ;playsound buf: "bgm"
+;endmacro
+
+;macro name: "stopbgm"
+  ;stopsound buf: "bgm"
+;endmacro
+
+;macro name: "fadeoutbgm"
+  ;fadeoutsound buf: "bgm", time: 1000
+;endmacro
+
+
+;return
