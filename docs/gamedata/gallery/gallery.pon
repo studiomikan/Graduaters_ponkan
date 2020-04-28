@@ -20,14 +20,18 @@ tv.gallery = {
 
 *exit
 ;call file: "gallery/gallery-sound.pon", label: "stop_sound"
+;pretrans
 ;tempload num: 0, sound: false, toback: true
+# ;call label: "hide_layers"
+# ;layopt lay: "&tv.gallery.lay.base", visible: false,
 ;lockbuttons page: "fore"
 ;lockbuttons page: "back"
 ;trans time: 200
 ;waittrans canskip: false
-;historyopt output: true, enabled: true
+;historyopt output: false, enabled: false
 ;rclick jump: false, call: false, enabled: false
-;return
+;jump file: "scenario/title.pon", label: "unlockbuttons"
+
 
 *hide_layers
 ---

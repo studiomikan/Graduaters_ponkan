@@ -67,10 +67,7 @@
 ;lockbuttons
 ;soundopt buf: "system2", volume: 1, loop: false
 ;playsound buf: "system2", loop: false
-;call file: "gallery/gallery.pon"
-;historyopt output: false, enabled: false
-;rclick enabled: false
-;jump label: "unlockbuttons"
+;jump file: "gallery/gallery.pon"
 
 # Exit
 *exit
