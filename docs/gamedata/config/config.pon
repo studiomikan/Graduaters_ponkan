@@ -30,6 +30,7 @@ tv.system.config = {
   transTime: 200,
 
   // 各値の最小値・最大値の設定
+  // 右に行くほど小さくしたい場合は reverse: true にすること。
   values: {
     // 未読テキストスピードの値一覧
     unreadTextSpeed: { min: 0, max: 50, reverse: true },

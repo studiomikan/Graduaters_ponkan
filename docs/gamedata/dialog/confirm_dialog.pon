@@ -19,7 +19,7 @@
 if (tv.system == null) tv.system = {};
 tv.system.dialog = {
   // ダイアログを表示するレイヤー
-  baseLay: 39,
+  lay: 39,
 
   // テキストを表示する位置の設定
   text: {
@@ -60,17 +60,17 @@ tv.system.dialog = {
 #==========================================
 
 ;lockbuttons lay: "all", page: "fore"
-;clear lay: "&tv.system.dialog.baseLay"
-;clearbuttons lay: "&tv.system.dialog.baseLay"
+;clear lay: "&tv.system.dialog.lay"
+;clearbuttons lay: "&tv.system.dialog.lay"
 
 ;image {
-  lay:      "&tv.system.dialog.baseLay",
+  lay:      "&tv.system.dialog.lay",
   file:     "&tv.system.dialog.bg.file",
   x:        "&(ponkan.config.width - tv.system.dialog.bg.width) / 2",
   y:        "&(ponkan.config.height - tv.system.dialog.bg.height) / 2",
 }
 ;imagebutton {
-  lay:       "&tv.system.dialog.baseLay",
+  lay:       "&tv.system.dialog.lay",
   imagefile: "&tv.system.dialog.yes.file",
   x:         "&tv.system.dialog.yes.x",
   y:         "&tv.system.dialog.yes.y",
@@ -79,7 +79,7 @@ tv.system.dialog = {
   label:    "dialog_return",
 }
 ;imagebutton {
-  lay:       "&tv.system.dialog.baseLay",
+  lay:       "&tv.system.dialog.lay",
   imagefile: "&tv.system.dialog.no.file",
   x:         "&tv.system.dialog.no.x",
   y:         "&tv.system.dialog.no.y",
@@ -90,21 +90,25 @@ tv.system.dialog = {
 
 ;nowait
 ;mesopt {
-  lay:      "&tv.system.dialog.baseLay",
+  lay:      "&tv.system.dialog.lay",
   color:    0x000000,
   align:    "center",
   fontsize: 26
 }
-;locate lay: "&tv.system.dialog.baseLay", x: "&tv.system.dialog.text.centerX", y: "&tv.system.dialog.text.centerY"
-;ch lay: "&tv.system.dialog.baseLay", text: "&tv.system.dialogMessage"
+;locate lay: "&tv.system.dialog.lay", x: "&tv.system.dialog.text.centerX", y: "&tv.system.dialog.text.centerY"
+;ch lay: "&tv.system.dialog.lay", text: "&tv.system.dialogMessage"
 ;endnowait
-;layopt lay: "&tv.system.dialog.baseLay", visible: true
-;unlockbuttons lay: "&tv.system.dialog.baseLay"
+;layopt lay: "&tv.system.dialog.lay", visible: true, alpha: 0
+;move lay: "&tv.system.dialog.lay", time: 200, path: [{ alpha: 1 }]
+;waitmove lay: "&tv.system.dialog.lay", canskip: false
+;unlockbuttons lay: "&tv.system.dialog.lay"
 ;s
 
 *dialog_return
-;lockbuttons lay: "&tv.system.dialog.baseLay"
-;layopt lay: "&tv.system.dialog.baseLay", visible: false
+;lockbuttons lay: "&tv.system.dialog.lay"
+;move lay: "&tv.system.dialog.lay", time: 200, path: [{ alpha: 0 }]
+;waitmove lay: "&tv.system.dialog.lay", canskip: false
+;layopt lay: "&tv.system.dialog.lay", visible: false
 -tv.system.dialogMessage = "";
 ;rclick enabled: true
 ;return

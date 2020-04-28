@@ -265,6 +265,8 @@ switch (tv.mes_type) {
 
 # タイトルに戻る
 *act_title
+;lockbuttons lay: "&tv.sysbtn.lay", page: "fore"
+;locksystembutton lay: "&tv.sysbtn.lay", page: "fore"
 -if (tv.system == null) tv.system = {};
 -tv.system.dialogMessage = "タイトル画面に戻りますか？";
 ;call file: "dialog/confirm_dialog.pon", label: "show_dialog"
@@ -281,4 +283,6 @@ switch (tv.mes_type) {
   -ponkan.returnSubroutine();
   ;jump file: "scenario/title.pon", label: "title_return_point"
 ;endif
+;unlockbuttons lay: "&tv.sysbtn.lay", page: "fore"
+;unlocksystembutton lay: "&tv.sysbtn.lay", page: "fore"
 ;return
