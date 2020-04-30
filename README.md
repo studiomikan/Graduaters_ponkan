@@ -1,6 +1,8 @@
-# Graduaters-ponkan
+# Graduaters!
 
-Graduaters on Ponkan
+ノベルゲーム『Graduaters!』のソースコードです。
+
+このゲームは、ノベルゲームエンジン[Ponkan](https://github.com/studiomikan/ponkan)で作成されています。
 
 ## Develop
 

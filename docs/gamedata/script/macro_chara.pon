@@ -17,6 +17,11 @@
 ---
 // データ
 tv.positionInfo = {
+  small: {
+    left:   (1280/24)*7,
+    center: 1280/2,
+    right:  (1280/24)*17,
+  },
   medium: {
     left:   (1280/24)*7,
     center: 1280/2,
@@ -30,6 +35,14 @@ tv.positionInfo = {
 };
 tv.charaInfo = {
   asuka: {
+    // TODO smallの整備
+    small: [
+      { file: "image/chara/asuka-s-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-s-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-s-03.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-s-04.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/asuka-s-05.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+    ],
     medium: [
       { file: "image/chara/asuka-m-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
       { file: "image/chara/asuka-m-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
@@ -46,6 +59,13 @@ tv.charaInfo = {
     ],
   },
   yuuki: {
+    small: [
+      { file: "image/chara/yuuki-s-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-s-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-s-03.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-s-04.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+      { file: "image/chara/yuuki-s-05.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
+    ],
     medium: [
       { file: "image/chara/yuuki-m-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
       { file: "image/chara/yuuki-m-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
@@ -66,6 +86,18 @@ tv.nameInfo = {
   asuka: "明日香",
   yuuki: "優希",
 };
+
+// キャラ情報取得
+// {
+//   lay:      レイヤー番号,
+//   file:     画像ファイル,
+//   x:        x座標,
+//   y:        y座標,
+//   isFirst:  新規読み込みかどうか,
+//   nameText: 名前表示のテキスト,
+//   isLoaded: 画像が読み込み済みかどうか,
+//   visible:  表示状態
+// }
 tv.getCharaInfo = function(mp) {
   var lay = mp.name;
   var ponLayer = ponkan.getLayers({lay: lay})[0];
@@ -131,7 +163,7 @@ tv.getCharaInfo = function(mp) {
   ---
     tv.chara = tv.getCharaInfo(mp);
     tv.time = tv.chara.isFirst ? 400 : 200;
-    if (mp.time != null) tv.time = mp.time;
+    if (mp.time != null) { tv.time = mp.time; }
     tv.canskip = mp.canskip != null ? mp.canskip : true
   ---
   ;if exp: "!tv.chara.isLoaded"
@@ -143,6 +175,40 @@ tv.getCharaInfo = function(mp) {
   ;print_name name: "&tv.chara.nameText"
 ;endmacro
 
+# キャラクターをスライドしながら表示する。
+# 新規表示のみ考慮。入れ替えはできない。
+# また、名前は表示しない。
+# @param name キャラクターの名前。asuka or yuuki
+# @param size キャラクターのサイズ。medium or large
+# @param num キャラクターの立ち絵の番号。1～5
+# @param pos キャラクターの位置。left or center or right
+# @param time 表示時間。省略可能。
+# @param canskip 省略可能
+# @param from 登場する方向。left or right
+;macro name: "slide_in_chara"
+  ---
+    tv.chara = tv.getCharaInfo(mp);
+    tv.time = mp.time != null ? mp.time : 400;
+    tv.canskip = mp.canskip != null ? mp.canskip : true
+    tv.from = mp.from != null ? mp.from : "left";
+    // load_charaで読み込んだ位置が最終表示地点。
+    // その位置へ右からスライドしてくるようにする。
+    tv.toX = tv.chara.x
+    tv.toY = tv.chara.y
+    tv.fromX = tv.chara.x + (tv.from == "left" ? -70 : 70);
+    tv.fromY = tv.chara.y;
+    tv.path = [{ x: tv.chara.x, y: tv.chara.y, alpha: 1.0 }];
+  ---
+  ;pretrans
+  ;load_chara name: "&mp.name", size: "&mp.size", num: "&mp.num", pos: "&mp.pos"
+  # load_charaで表示した位置の調整
+  ;layopt lay: "&mp.name", x: "&tv.fromX", y: "&tv.fromY", visible: true
+  ;move lay: "&mp.name", time: "&tv.time", ease: "none", path: "&tv.path"
+  ;trans time: "&tv.time",
+  ;waittrans canskip: "&tv.canskip"
+  ;stopmove lay: "&mp.name", canskip: "&tv.canskip"
+;endmacro
+
 # キャラクターをフェードで非表示にする
 # @param name キャラクターの名前。asuka or yuuki
 ;macro name: "out_chara"
@@ -152,6 +218,7 @@ tv.getCharaInfo = function(mp) {
   ;waittrans
 ;endmacro
 
+# すべてのキャラクターをフェードで非表示にする
 ;macro name: "every_out"
   ;pretrans
   ;layopt lay: "asuka, yuuki", visible: false
@@ -159,7 +226,8 @@ tv.getCharaInfo = function(mp) {
   ;waittrans
 ;endmacro
 
-# asuka
+
+# 明日香を表示するマクロ
 ;macro name: "asuka"
   ;print_name name: "明日香"
 ;endmacro

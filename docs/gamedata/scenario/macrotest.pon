@@ -1,0 +1,26 @@
+#
+# Graduaters!　～グラディエイターズ！～
+#
+*start
+~マクロテスト
+
+#☆フレームカラー　オレンジ
+;mes_orange
+#☆メッセージフレーム　イン
+;fadein_meslay
+
+;noname
+マクロテスト。
+;endpage
+
+# ;chara name: "asuka", size: "medium", pos: "center", num: "1"
+;slide_in_chara name: "asuka", size: "medium", pos: "center", num: "1"
+
+;noname
+おわり。
+;endpage
+
+;layopt lay: "asuka", visible: false
+
+;jump label: "start"
+;s
