@@ -17,11 +17,6 @@
 ---
 // データ
 tv.positionInfo = {
-  small: {
-    left:   (1280/24)*7,
-    center: 1280/2,
-    right:  (1280/24)*17,
-  },
   medium: {
     left:   (1280/24)*7,
     center: 1280/2,
@@ -31,18 +26,15 @@ tv.positionInfo = {
     left:   (1280/24)*7,
     center: 1280/2,
     right:  (1280/24)*17,
-  }
+  },
+  xlarge: {
+    left:   (1280/24)*8,
+    center: 1280/2,
+    right:  (1280/24)*16,
+  },
 };
 tv.charaInfo = {
   asuka: {
-    // TODO smallの整備
-    small: [
-      { file: "image/chara/asuka-s-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/asuka-s-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/asuka-s-03.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/asuka-s-04.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/asuka-s-05.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-    ],
     medium: [
       { file: "image/chara/asuka-m-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
       { file: "image/chara/asuka-m-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
@@ -57,15 +49,15 @@ tv.charaInfo = {
       { file: "image/chara/asuka-l-04.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
       { file: "image/chara/asuka-l-05.png", width: 640, height: 960, offsetX: 0, offsetY: 0 },
     ],
+    xlarge: [
+      { file: "image/chara/asuka-xl-01.png", width: 1000, height: 1500, offsetX: 0, offsetY: -150 },
+      { file: "image/chara/asuka-xl-02.png", width: 1000, height: 1500, offsetX: 0, offsetY: -150 },
+      { file: "image/chara/asuka-xl-03.png", width: 1000, height: 1500, offsetX: 0, offsetY: -150 },
+      { file: "image/chara/asuka-xl-04.png", width: 1000, height: 1500, offsetX: 0, offsetY: -150 },
+      { file: "image/chara/asuka-xl-05.png", width: 1000, height: 1500, offsetX: 0, offsetY: -150 },
+    ],
   },
   yuuki: {
-    small: [
-      { file: "image/chara/yuuki-s-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-s-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-s-03.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-s-04.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-      { file: "image/chara/yuuki-s-05.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
-    ],
     medium: [
       { file: "image/chara/yuuki-m-01.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
       { file: "image/chara/yuuki-m-02.png", width: 480, height: 720, offsetX: 0, offsetY: 0 },
@@ -79,6 +71,13 @@ tv.charaInfo = {
       { file: "image/chara/yuuki-l-03.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
       { file: "image/chara/yuuki-l-04.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
       { file: "image/chara/yuuki-l-05.png", width: 640, height: 960, offsetX: 0, offsetY: -15 },
+    ],
+    xlarge: [
+      { file: "image/chara/yuuki-xl-01.png", width: 1000, height: 1500, offsetX: 0, offsetY: -200 },
+      { file: "image/chara/yuuki-xl-02.png", width: 1000, height: 1500, offsetX: 0, offsetY: -200 },
+      { file: "image/chara/yuuki-xl-03.png", width: 1000, height: 1500, offsetX: 0, offsetY: -200 },
+      { file: "image/chara/yuuki-xl-04.png", width: 1000, height: 1500, offsetX: 0, offsetY: -200 },
+      { file: "image/chara/yuuki-xl-05.png", width: 1000, height: 1500, offsetX: 0, offsetY: -200 },
     ],
   }
 };
@@ -100,9 +99,12 @@ tv.nameInfo = {
 // }
 tv.getCharaInfo = function(mp) {
   var lay = mp.name;
+  var size = mp.size == null ? "medium" : mp.size;
+  var num = mp.num == null ? 1 : mp.num;
+
   var ponLayer = ponkan.getLayers({lay: lay})[0];
-  var chara = tv.charaInfo[mp.name][mp.size][mp.num - 1];
-  var pos = tv.positionInfo[mp.size][mp.pos];
+  var chara = tv.charaInfo[mp.name][size][num - 1];
+  var pos = tv.positionInfo[size][mp.pos == null ? "center" : mp.pos];
   var file = chara.file;
   var x = pos - (chara.width / 2) + chara.offsetX;
   var y = chara.offsetY;
@@ -140,12 +142,14 @@ tv.getCharaInfo = function(mp) {
 # @param size キャラクターのサイズ。medium or large
 # @param num キャラクターの立ち絵の番号。1～5
 # @param pos キャラクターの位置。left or center or right
+# @param alpha
 ;macro name: "load_chara"
   ---
     tv.chara = tv.getCharaInfo(mp);
+    tv.alpha = mp.alpha == null ? 1 : 0;
   ---
   ;if exp:"!tv.chara.isLoaded"
-    ;image lay: "&tv.chara.lay", file: "&tv.chara.file", x: "&tv.chara.x", y: "&tv.chara.y", visible: true
+    ;image lay: "&tv.chara.lay", file: "&tv.chara.file", x: "&tv.chara.x", y: "&tv.chara.y", visible: true, alpha: "&tv.alpha"
   ;endif
 ;endmacro
 
@@ -179,7 +183,6 @@ tv.getCharaInfo = function(mp) {
 # 新規表示のみ考慮。入れ替えはできない。
 # また、名前は表示しない。
 # @param name キャラクターの名前。asuka or yuuki
-# @param size キャラクターのサイズ。medium or large
 # @param num キャラクターの立ち絵の番号。1～5
 # @param pos キャラクターの位置。left or center or right
 # @param time 表示時間。省略可能。
@@ -188,25 +191,28 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "slide_in_chara"
   ---
     tv.chara = tv.getCharaInfo(mp);
-    tv.time = mp.time != null ? mp.time : 400;
+    tv.time = mp.time != null ? mp.time : 600;
     tv.canskip = mp.canskip != null ? mp.canskip : true
     tv.from = mp.from != null ? mp.from : "left";
     // load_charaで読み込んだ位置が最終表示地点。
-    // その位置へ右からスライドしてくるようにする。
+    // その位置へ左右からスライドしてくるようにする。
     tv.toX = tv.chara.x
     tv.toY = tv.chara.y
     tv.fromX = tv.chara.x + (tv.from == "left" ? -70 : 70);
     tv.fromY = tv.chara.y;
-    tv.path = [{ x: tv.chara.x, y: tv.chara.y, alpha: 1.0 }];
+    tv.path = [{ x: tv.toX, y: tv.toY, alpha: 1.0 }];
   ---
-  ;pretrans
-  ;load_chara name: "&mp.name", size: "&mp.size", num: "&mp.num", pos: "&mp.pos"
-  # load_charaで表示した位置の調整
-  ;layopt lay: "&mp.name", x: "&tv.fromX", y: "&tv.fromY", visible: true
-  ;move lay: "&mp.name", time: "&tv.time", ease: "none", path: "&tv.path"
-  ;trans time: "&tv.time",
-  ;waittrans canskip: "&tv.canskip"
-  ;stopmove lay: "&mp.name", canskip: "&tv.canskip"
+  # ;pretrans
+  # ;load_chara name: "&mp.name", size: "&mp.size", num: "&mp.num", pos: "&mp.pos"
+  # ;layopt lay: "&mp.name", x: "&tv.fromX", y: "&tv.fromY", visible: true
+  # ;move lay: "&mp.name", time: "&tv.time", ease: "out", path: "&tv.path"
+  # ;trans time: "&tv.time",
+  # ;waittrans canskip: "&tv.canskip"
+  # ;stopmove lay: "&mp.name", canskip: "&tv.canskip"
+  ;load_chara name: "&mp.name", size: "&mp.size", num: "&mp.num", pos: "&mp.pos", alpha: 0
+  ;layopt lay: "&mp.name", x: "&tv.fromX", y: "&tv.fromY", visible: true, alpha: 0
+  ;move lay: "&mp.name", time: "&tv.time", ease: "out", path: "&tv.path"
+  ;waitmove lay: "&mp.name", canskip: "&tv.canskip"
 ;endmacro
 
 # キャラクターをフェードで非表示にする
@@ -224,6 +230,47 @@ tv.getCharaInfo = function(mp) {
   ;layopt lay: "asuka, yuuki", visible: false
   ;trans time: "500"
   ;waittrans
+;endmacro
+
+# キャラクターをスライドしながら非表示にする。
+# @param name キャラクターの名前。asuka or yuuki
+# @param time 表示時間。省略可能。
+# @param canskip 省略可能
+# @param to 退場する方向。left or right
+;macro name: "slide_out_chara"
+  ---
+    var ponLayer = ponkan.getLayers({lay: mp.name})[0];
+    tv.time = mp.time != null ? mp.time : 600;
+    tv.canskip = mp.canskip != null ? mp.canskip : true
+    var to = mp.to != null ? mp.to : "right";
+    // 現在位置から左右へスライドしていくようにする。
+    var toX = ponLayer.x + (to == "left" ? -70 : 70);
+    var toY = ponLayer.y;
+    tv.path = [{ x: toX, y: toY, alpha: 0 }];
+  ---
+  # ;pretrans
+  # ;move page: "fore", lay: "&mp.name", time: "&tv.time", ease: "out", path: "&tv.path"
+  # ;layopt lay: "&mp.name", visible: false
+  # ;trans time: "&tv.time",
+  # ;waittrans canskip: "&tv.canskip"
+  # ;stopmove lay: "&mp.name", canskip: "&tv.canskip"
+  ;move lay: "&mp.name", time: "&tv.time", ease: "out", path: "&tv.path"
+  ;waitmove lay: "&mp.name", canskip: "&tv.canskip"
+  ;layopt lay: "&mp.name", visible: false, alpha: 1.0
+;endmacro
+
+# キャラクターを上下に揺らす
+# @param name キャラクターの名前。asuka or yuuki
+;macro name: "up_down_chara"
+  ---
+    var ponLayer = ponkan.getLayers({lay: mp.name})[0];
+    tv.path = [
+      { x: ponLayer.x, y: ponLayer.y + 40 },
+      { x: ponLayer.x, y: ponLayer.y },
+    ];
+  ---
+  ;move lay: "&mp.name", time: "500", ease: "both", path: "&tv.path"
+  ;waitmove lay: "&mp.name", canskip: true
 ;endmacro
 
 
@@ -332,6 +379,55 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "asuka-l-r-5"
   ;chara name: "asuka", size: "large", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
+## asuka-xlarge
+### asuka-xlarge-center
+;macro name: "asuka-xl-c-1"
+  ;chara name: "asuka", size: "xlarge", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-c-2"
+  ;chara name: "asuka", size: "xlarge", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-c-3"
+  ;chara name: "asuka", size: "xlarge", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-c-4"
+  ;chara name: "asuka", size: "xlarge", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-c-5"
+  ;chara name: "asuka", size: "xlarge", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+### asuka-xlarge-left
+;macro name: "asuka-xl-l-1"
+  ;chara name: "asuka", size: "xlarge", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-l-2"
+  ;chara name: "asuka", size: "xlarge", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-l-3"
+  ;chara name: "asuka", size: "xlarge", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-l-4"
+  ;chara name: "asuka", size: "xlarge", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-l-5"
+  ;chara name: "asuka", size: "xlarge", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+### asuka-xlarge-right
+;macro name: "asuka-xl-r-1"
+  ;chara name: "asuka", size: "xlarge", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-r-2"
+  ;chara name: "asuka", size: "xlarge", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-r-3"
+  ;chara name: "asuka", size: "xlarge", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-r-4"
+  ;chara name: "asuka", size: "xlarge", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "asuka-xl-r-5"
+  ;chara name: "asuka", size: "xlarge", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
 
 # yuuki
 ;macro name: "yuuki"
@@ -438,7 +534,55 @@ tv.getCharaInfo = function(mp) {
 ;macro name: "yuuki-l-r-5"
   ;chara name: "yuuki", size: "large", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-
+## yuuki-xlarge
+### yuuki-xlarge-center
+;macro name: "yuuki-xl-c-1"
+  ;chara name: "yuuki", size: "xlarge", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-c-2"
+  ;chara name: "yuuki", size: "xlarge", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-c-3"
+  ;chara name: "yuuki", size: "xlarge", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-c-4"
+  ;chara name: "yuuki", size: "xlarge", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-c-5"
+  ;chara name: "yuuki", size: "xlarge", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+### yuuki-xlarge-left
+;macro name: "yuuki-xl-l-1"
+  ;chara name: "yuuki", size: "xlarge", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-l-2"
+  ;chara name: "yuuki", size: "xlarge", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-l-3"
+  ;chara name: "yuuki", size: "xlarge", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-l-4"
+  ;chara name: "yuuki", size: "xlarge", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-l-5"
+  ;chara name: "yuuki", size: "xlarge", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+### yuuki-xlarge-right
+;macro name: "yuuki-xl-r-1"
+  ;chara name: "yuuki", size: "xlarge", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-r-2"
+  ;chara name: "yuuki", size: "xlarge", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-r-3"
+  ;chara name: "yuuki", size: "xlarge", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-r-4"
+  ;chara name: "yuuki", size: "xlarge", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
+;macro name: "yuuki-xl-r-5"
+  ;chara name: "yuuki", size: "xlarge", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
+;endmacro
 
 
 ;return
