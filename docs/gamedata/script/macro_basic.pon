@@ -66,7 +66,7 @@
       {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
       {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
     ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_combo1"
@@ -82,7 +82,7 @@
       {x: 1280-640-50, y: 720-360-50, alpha: 1},
       {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
     ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_top"
@@ -92,7 +92,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: (1280-640)/2, y: (720-360)/2-50, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_right"
@@ -102,7 +102,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: 1280-640-50, y: (720-360)/2, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_bottom"
@@ -112,7 +112,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: (1280-640)/2, y: 720-360-50, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_left"
@@ -122,7 +122,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: 50, y: (720-360)/2, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_center"
@@ -132,7 +132,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: (1280-640)/2, y: (720-360)/2, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 
@@ -208,6 +208,37 @@
   ;layopt lay: "base", visible: true
   ;trans time: 1500
   ;waittrans canskip: true
+;endmacro
+
+
+#-------------------------------------------------------------------
+# 上下にバーを出す
+#   16:9 -> 1280x720
+#   21:9 -> 1280x540
+#   720-540=180
+#-------------------------------------------------------------------
+;macro name: "narrow_view_filter"
+  ;layopt lay: "filter1", width: 1280, height: 100, x: 0, y: -100, visible: true, alpha: 0
+  ;layopt lay: "filter2", width: 1280, height: 100, x: 0, y: 720, visible: true, alpha: 0
+  ;fillcolor lay: "filter1, filter2", color: 0x000000
+  ;move lay: "filter1", time: 700, ease: "out", path: [ { y: 0, alpha: 1 } ]
+  ;move lay: "filter2", time: 700, ease: "out", path: [ { y: 720 - 100, alpha: 1 } ]
+  ;waitmove lay: "filter1", canskip: true
+  ;waitmove lay: "filter2", canskip: true
+;endmacro
+
+;macro name: "fadeout_narrow_view"
+  ;move lay: "filter1", time: 1000, ease: "out", path: [ { alpha: 0 } ]
+  ;move lay: "filter2", time: 1000, ease: "out", path: [ { alpha: 0 } ]
+  ;waitmove lay: "filter1", canskip: true
+  ;waitmove lay: "filter2", canskip: true
+  ;clear_narrow_view
+;endmacro
+
+;macro name: "clear_narrow_view"
+  ;layopt lay: "filter1", visible: false, alpha: 1
+  ;layopt lay: "filter2", visible: false, alpha: 1
+  ;clearcolor lay: "filter1, filter2"
 ;endmacro
 
 

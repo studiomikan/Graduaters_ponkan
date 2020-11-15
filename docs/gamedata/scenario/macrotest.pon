@@ -1,0 +1,60 @@
+#
+# Graduaters!　～グラディエイターズ！～
+#
+*start
+~マクロテスト
+
+;mes_orange
+;cb_move bg: "hall"
+;fadein_meslay
+
+;noname
+マクロテスト。
+;endpage
+
+;narrow_view_filter
+;pb
+;fadeout_narrow_view
+;pb
+
+;asuka-xl-c-2
+;pb
+;asuka-xl-l-2
+;pb
+;asuka-xl-r-2
+;pb
+;every_out
+
+;yuuki-xl-c-2
+;pb
+;yuuki-xl-l-2
+;pb
+;yuuki-xl-r-2
+;pb
+;every_out
+
+# ;chara name: "asuka", size: "medium", pos: "center", num: "1"
+;slide_in_chara name: "asuka", size: "large", pos: "center", num: "1", from: "left"
+;pb
+;up_down_chara name: "asuka"
+;pb
+;slide_out_chara name: "asuka", pos: "center", to: "right"
+;pb
+
+;slide_in_chara name: "yuuki", size: "xlarge", pos: "center", num: "1", from: "right"
+;pb
+;up_down_chara name: "yuuki"
+;pb
+;slide_out_chara name: "yuuki", pos: "center", to: "left"
+;pb
+
+
+
+;noname
+おわり。
+;endpage
+
+;layopt lay: "asuka", visible: false
+
+;jump label: "start"
+;s

@@ -14,7 +14,7 @@ for (var i = 1; i < 15; i++) { frames.push({x: 256 - 16 * i, y: 0}); }
 ;image {
   lay: "linebreak",
   file: "sysimage/linebreak.png"
-}
+};
 ;frameanim {
   lay: "linebreak",
   loop: true,
@@ -23,7 +23,7 @@ for (var i = 1; i < 15; i++) { frames.push({x: 256 - 16 * i, y: 0}); }
   height: 16,
   frames: "&tv.lineBreakFrames"
 }
-
+;
 
 #=============================================
 # ページ末グリフの設定
@@ -37,7 +37,7 @@ for (var i = 1; i < 15; i++) { frames.push({"x": 256 - 16 * i, "y": 0}); }
 ;image {
   lay: "pagebreak",
   file: "sysimage/pagebreak.png"
-}
+};
 ;frameanim {
   lay: "pagebreak",
   loop: true,
@@ -45,7 +45,7 @@ for (var i = 1; i < 15; i++) { frames.push({"x": 256 - 16 * i, "y": 0}); }
   width: 16,
   height: 16,
   frames: "&tv.pageBreakFrames"
-}
+};
 
 
 #=============================================
@@ -57,7 +57,7 @@ for (var i = 1; i < 15; i++) { frames.push({"x": 256 - 16 * i, "y": 0}); }
   x: 10,
   y: 10,
   visible: false
-}
+};
 ;image lay: "automode", file: "sysimage/automode.png"
 
 ;return

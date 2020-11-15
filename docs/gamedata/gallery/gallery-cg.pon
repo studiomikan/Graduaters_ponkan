@@ -100,7 +100,7 @@ tv.onMouseLeave = function() {
   marginr: 0,
   marginb: 0,
   marginl: 20
-}
+};
 ;clear lay: "&tv.cg.lay.window"
 ;nowait
 ;delcmdsc ch: "\n"
@@ -134,7 +134,7 @@ $
   shadow: false, edgewidth: 0,
   autoreturn: false,
   margint: 0, marginr: 0, marginb: 0, marginl: 0
-}
+};
 ;clear lay: "&tv.cg.lay.note"
 ;messagelay "lay": "&tv.originalMesLayNum"
 
@@ -162,7 +162,7 @@ $
     jump:     true,
     label:    "&tv.btn.label",
     margint:  5,
-  }
+  };
 ;endfor
 
 *trans
