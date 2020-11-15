@@ -66,7 +66,7 @@
       {x: (1280-640)/2, y: (720-360)/2 - 75, alpha: 1},
       {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
     ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_combo1"
@@ -82,7 +82,7 @@
       {x: 1280-640-50, y: 720-360-50, alpha: 1},
       {x: (1280-640)/2, y: (720-360)/2, alpha: 1},
     ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_top"
@@ -92,7 +92,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: (1280-640)/2, y: (720-360)/2-50, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_right"
@@ -102,7 +102,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: 1280-640-50, y: (720-360)/2, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_bottom"
@@ -112,7 +112,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: (1280-640)/2, y: 720-360-50, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_left"
@@ -122,7 +122,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: 50, y: (720-360)/2, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 ;macro name: "radio_mes_center"
@@ -132,7 +132,7 @@
     ease: "out",
     type: "liner",
     path: [ {x: (1280-640)/2, y: (720-360)/2, alpha: 1} ],
-  }
+  };
 ;endmacro
 
 

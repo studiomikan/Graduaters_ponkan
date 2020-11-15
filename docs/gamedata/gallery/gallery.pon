@@ -66,7 +66,7 @@ tv.lay = layers.join(',');
   jump:      true,
   file:      "gallery/gallery.pon",
   label:     "exit"
-}
+};
 # タブ
 ;if exp: "tv.gallery.currentTab === 'cg'"
   ;childimage  lay:"&tv.gallery.lay.header", file: "gallery/btn-cg-selected.png",    x: 470-3, y: 20

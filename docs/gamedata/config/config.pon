@@ -166,7 +166,7 @@ tv.system.config.fadeoutTime = tv.system.config.transTime;
   visible: false,
   x: 0,
   y: 0
-}
+};
 ;layopt lay: "&tv.system.config.baseLay", visible: true
 
 # ボタン用レイヤの設定
@@ -190,7 +190,7 @@ tv.system.config.fadeoutTime = tv.system.config.transTime;
   lay: "&tv.system.config.sliderValueLay",
   color: 0xFFFFFF, fontsize: 14, lineheight: 14, shadow: false, edge: false, fontfamily: ["GenShinGothic", "monospace"],
   align: "right", margint: 0, marginr: 0, marginb: 0, marginl: 0,
-}
+};
 ;clear lay: "&tv.system.config.sliderValueLay"
 
 # ボタンの設置
@@ -232,7 +232,7 @@ tv.skipAllAlphas = ponkan.canSkipUnreadPart ? [1, 1, 1] : [0.5, 0.7, 1];
   width: 120, height: 24,
   onclick: "ponkan.canSkipUnreadPart = false",
   jump: true, label: "onclick_skip_mode",
-}
+};
 ## すべて
 ;textbutton {
   lay: "&tv.system.config.btnLay", btnname: "skipAllBtn",
@@ -241,7 +241,7 @@ tv.skipAllAlphas = ponkan.canSkipUnreadPart ? [1, 1, 1] : [0.5, 0.7, 1];
   width: 120, height: 24,
   onclick: "ponkan.canSkipUnreadPart = true",
   jump: true, label: "onclick_skip_mode",
-}
+};
 
 # BGM
 ---
@@ -287,7 +287,7 @@ if (ponkan.scaleMode == Ponkan.ScaleMode.FULLSCREEN) {
   bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.fullScreenBtnAlphas",
   onclick: "ponkan.scaleMode = Ponkan.ScaleMode.FULLSCREEN",
   jump: true, label: "onclick_screen_scale",
-}
+};
 ## ウィンドウサイズ
 ;textbutton {
   lay: "&tv.system.config.btnLay", btnname: "fitWindowBtn",
@@ -296,7 +296,7 @@ if (ponkan.scaleMode == Ponkan.ScaleMode.FULLSCREEN) {
   bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.fitWindowBtnAlphas",
   onclick: "ponkan.scaleMode = Ponkan.ScaleMode.FIT",
   jump: true, label: "onclick_screen_scale",
-}
+};
 ## 1280x720
 ;textbutton {
   lay: "&tv.system.config.btnLay", btnname: "fixedScale1280Btn",
@@ -305,7 +305,7 @@ if (ponkan.scaleMode == Ponkan.ScaleMode.FULLSCREEN) {
   bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.fixedScale1280BtnAlphas",
   onclick: "ponkan.scaleMode = Ponkan.ScaleMode.FIX; ponkan.setFixedScaleSize(1280, 720);",
   jump: true, label: "onclick_screen_scale",
-}
+};
 ## 1920x1080
 ;textbutton {
   lay: "&tv.system.config.btnLay", btnname: "fixedScale1920Btn",
@@ -314,7 +314,7 @@ if (ponkan.scaleMode == Ponkan.ScaleMode.FULLSCREEN) {
   bgcolors: ["0xFFFFFF", "0xFFFFFF", "0xFFFFFF"], bgalphas: "&tv.fixedScale1920BtnAlphas",
   onclick: "ponkan.scaleMode = Ponkan.ScaleMode.FIX; ponkan.setFixedScaleSize(1920, 1080);",
   jump: true, label: "onclick_screen_scale",
-}
+};
 
 # コンフィグ画面の閉じるボタン
 ;imagebutton {
@@ -324,7 +324,7 @@ if (ponkan.scaleMode == Ponkan.ScaleMode.FULLSCREEN) {
   y:         23,
   jump:      true,
   label:     "exit"
-}
+};
 
 # スライダーの値を表示
 - tv.system.config.updateSliderValueText();
@@ -371,7 +371,7 @@ if (ponkan.scaleMode == Ponkan.ScaleMode.FULLSCREEN) {
   back:   "config/slider-back.png",
   fore:   "config/slider-fore.png",
   button: "config/slider-button.png",
-}
+};
 ;endnowait
 ;return
 ;s
@@ -386,21 +386,21 @@ if (ponkan.scaleMode == Ponkan.ScaleMode.FULLSCREEN) {
   ;textbuttonopt {
     lay: "&tv.system.config.btnLay", btnname: "skipAlreadyReadBtn",
     bgcolors: [0xFFFFFF, 0xFFFFFF, 0xFFFFFF], bgalphas: [0.5, 0.7, 1.0]
-  }
+  };
   ;textbuttonopt {
     lay: "&tv.system.config.btnLay", btnname: "skipAllBtn",
     bgcolors: [0xFFFFFF, 0xFFFFFF, 0xFFFFFF], bgalphas: [1, 1, 1]
-  }
+  };
 ;else
   # 既読のみスキップが選択された
   ;textbuttonopt {
     lay: "&tv.system.config.btnLay", btnname: "skipAlreadyReadBtn",
     bgcolors: [0xFFFFFF, 0xFFFFFF, 0xFFFFFF], bgalphas: [1, 1, 1]
-  }
+  };
   ;textbuttonopt {
     lay: "&tv.system.config.btnLay", btnname: "skipAllBtn",
     bgcolors: [0xFFFFFF, 0xFFFFFF, 0xFFFFFF], bgalphas: [0.5, 0.7, 1.0]
-  }
+  };
 ;endif
 ;jump label: "unlock_config_buttons"
 ;s

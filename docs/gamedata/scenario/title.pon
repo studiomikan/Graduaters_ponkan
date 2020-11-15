@@ -140,7 +140,7 @@
   edgewidth: 0,
   autoreturn: false,
   margint: 0, marginr: 0, marginb: 0, marginl: 0
-}
+};
 ;clear lay: "base"
 ;locate lay: "base", x: 10, y: 720 - 26
 ;ch lay: "base", text: "&'Version ' + ponkan.config.gameVersion"

@@ -34,7 +34,7 @@ tv.gallery.movie = tv.movie = {
   marginr: 0,
   marginb: 0,
   marginl: 20
-}
+};
 
 *draw_buttons
 ;layopt lay:"&tv.movie.lay.btns", x: 0, y: 0, width: 1280, height: 720, visible: true
@@ -72,7 +72,7 @@ tv.gallery.movie = tv.movie = {
   visible: true,
   loop: false,
   volume: "&ponkan.getSoundBuffer('bgm').gvolume"
-}
+};
 ;waitvideo canskip: true
 ;freevideo lay: "&tv.movie.lay.video"
 ;pretrans

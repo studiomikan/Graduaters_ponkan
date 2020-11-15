@@ -31,17 +31,22 @@
 ;pb
 ;yuuki-xl-r-2
 ;pb
+;every_out
 
 # ;chara name: "asuka", size: "medium", pos: "center", num: "1"
 ;slide_in_chara name: "asuka", size: "large", pos: "center", num: "1", from: "left"
-
 ;pb
-
 ;up_down_chara name: "asuka"
-
+;pb
+;slide_out_chara name: "asuka", pos: "center", to: "right"
 ;pb
 
-;slide_out_chara name: "asuka", pos: "center", to: "right"
+;slide_in_chara name: "yuuki", size: "xlarge", pos: "center", num: "1", from: "right"
+;pb
+;up_down_chara name: "yuuki"
+;pb
+;slide_out_chara name: "yuuki", pos: "center", to: "left"
+;pb
 
 
 

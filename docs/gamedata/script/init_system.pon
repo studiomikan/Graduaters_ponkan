@@ -56,7 +56,7 @@
   width: 1240,
   height: 680,
   visible: false
-}
+};
 ;messageopt {
   lay: "message",
   fontfamily: ["GenShinGothic", "monospace"],
@@ -80,7 +80,7 @@
   marginr: 20,
   marginb: 20,
   marginl: 20
-}
+};
 #;image lay: "mes", file: "sysimage/message.png"
 ;fillcolor lay: "message", color: 0x000000, alpha: 0.75
 # ;textspeed unread: 20, read: 20
@@ -114,7 +114,7 @@
   marginr: 0,
   marginb: 0,
   marginl: 0
-}
+};
 
 ;call file: "script/init_system2.pon"
 

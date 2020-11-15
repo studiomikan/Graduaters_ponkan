@@ -100,7 +100,7 @@ tv.gallery.sound = tv.sound = {
   shadow: false, edgewidth: 0,
   autoreturn: false,
   margint: 0, marginr: 0, marginb: 0, marginl: 0
-}
+};
 ;clear lay: "&tv.sound.lay.btns"
 ;messagelay "lay": "&tv.originalMesLayNum"
 ;for loops: "&tv.sound.sounds.length", indexvar: "i"
@@ -124,7 +124,7 @@ tv.gallery.sound = tv.sound = {
     align:    "left",
     margint:  5,
     marginl:  5,
-  }
+  };
 ;endfor
 ;clear lay: "&tv.sound.lay.playing"
 ;image lay: "&tv.sound.lay.playing", file: "gallery/sound/playing.png", x: 0, y: 0, visible: false
@@ -393,7 +393,7 @@ if (tv.sound.shuffle) {
     barWidth: 14,
     margin: 1,
   },
-}
+};
 ;layopt lay: "&tv.sound.lay.spectrum", visible: true
 ---
 tv.x = tv.sound.btnsX + tv.sound.currentSound.x - 25;

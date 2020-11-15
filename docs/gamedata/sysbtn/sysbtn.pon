@@ -196,7 +196,7 @@ switch (tv.mes_type) {
   height:       "&tv.sysbtn.height",
   visible:      true,
   autohide:     true,
-}
+};
 
 # 効果音
 # buf: "system3" を常用するので、他のシーンで使わないこと
@@ -221,7 +221,7 @@ switch (tv.mes_type) {
     label:        "&tv.button.label",
     system:       true,
     clickbuf:     "system3",
-  }
+  };
 ;endfor
 
 ;return
