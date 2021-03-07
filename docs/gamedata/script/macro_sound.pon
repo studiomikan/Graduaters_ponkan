@@ -37,4 +37,23 @@
 ;endmacro
 
 
+#-------------------------------------------------------------------
+# 各効果音のショートカット
+#-------------------------------------------------------------------
+;macro name: "se開錠"
+  ;playse num: "14"
+;endmacro
+
+;macro name: "se着地"
+  ;playse num: "15"
+;endmacro
+
+;macro name: "se屋上ドア"
+  ;playse num: "10"
+;endmacro
+
+;macro name: "se走る"
+  ;playse num: "13", loop: true
+;endmacro
+
 ;return

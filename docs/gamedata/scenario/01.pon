@@ -14,40 +14,41 @@
 ;endpage
 ~
 ;noname
-『実は幼馴染のあの子が好きだー』とか、
-『家だと下着一枚だー』とか、まぁ、そういうの。
+『実は幼馴染のあの子が好きだ』とか、
+『家だと下着一枚だ』とか、まぁ、そういうの。
 ;endpage
 ~
 ;noname
-秘密って言っても、内容はいろいろあるだろう。
-だけど、当人にとって重要なことだからこそ、
-秘密は秘密なのだ。
+秘密と一口にいっても色々だ。
+くだらない、とるに足らないようなものから、
+誰にも話せないようなものまで。
+;endpage
+~
+;noname
+ただ、どちらにしても秘密っていうのは
+当人にとってはそれなりの意味持っているもので。
 ;endpage
 ~
 ;noname
 だからきっと、秘密のない人間なんて
-絵本の中にしかいない……なんて、俺は思うんだ。
+それこそ絵本の中にしかいない……
+俺はそう思うんだ。
 ;endpage
 ~
 ;noname
 というわけで、
-俺、常磐健二にも、秘密ってものがある。
+俺、常磐健二にも、いくつか秘密ってものがある。
 ;endpage
 ~
 ;noname
-一つ目は、寮の自室の本棚、
+一つ目は、学生寮の自室の本棚、
 辞書の奥に隠されたＤＶＤのコレクション。
 ;endpage
 ~
 ;noname
-親からの少ない仕送りをやりくりし、
-少しずつだが確実に増やしていった秘蔵のコレクションだ。
-;endpage
-~
-;noname
-たまに寮の悪友どもが借りていったりする。
-料金は二泊三日で２００円。
-レンタル料は次のＤＶＤの購入資源となるので、割と好評。
+少ない仕送りをやりくりして入手した秘蔵の品々だ。
+たまに寮の悪友どもが借りていったりするが、
+レンタル料金はしっかり払ってもらっている。
 ;endpage
 ~
 ;noname
@@ -60,20 +61,20 @@
 ;endpage
 ~
 ;noname
-その時のことはぼんやりとしか覚えていないが、
+溺れた時のことはぼんやりとしか覚えていないが、
 どうやら俺は死にかけた、らしい。
-丸一日以上、意識がなかったというから恐ろしい。
+丸一日以上も意識がなかったというから恐ろしい。
 ;endpage
 ~
 ;noname
-それからというもの、どうにも水が怖くて、
+それからというもの、どうにも水が恐ろしくて、
 さっぱり泳げなくなったというわけだ。
 ;endpage
 ~
 ;noname
 理由があるとはいえ、もう高校を卒業しようという年齢で、
-まったく泳げないってのは結構恥ずかしいものだ。
-幸い、うちの学校は水泳の授業がないので、隠し通した。
+一切泳げないってのは結構恥ずかしいものだ。
+うちの学校は水泳の授業がないので、三年間隠し通した。
 ;endpage
 ~
 ;noname
@@ -81,20 +82,19 @@
 ;endpage
 ~
 ;noname
-これは結構、重大な秘密なんだが――
+これは結構、重大な秘密なんだが……
 ;endpage
 ~
 ;noname
-俺は割としょっちゅう、
-学生寮を抜け出して、夜の学校に忍び込んでいる――
+俺は割としょっちゅう、学生寮を抜け出して、
+夜の学校に忍び込んでいる――
 ;endpage
 ~
+
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
-
 #☆ミニテロップ
 ;minitelop
-
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
@@ -105,20 +105,26 @@
 ~
 ;noname
 時刻は午後九時少し前。
-寮の門限はとっくに過ぎて、教職員も全員帰宅したころ。
+寮の門限はとっくに過ぎて、
+教職員も全員帰宅したころ。
 ;endpage
 ~
-#△着地音
-;playse num: "15"
-
+;se開錠
 ;noname
-一階の美術室の窓をガタガタと揺らして鍵を開け、
-学校へ忍び込む。
+鍵が壊れかけている美術室の窓をガタガタと揺らす。
+しばらくすると、カチリと音がした。
+;endpage
+~
+;美術室_移動
+;se着地
+;noname
+音を立てないようゆっくりと窓をあけ、
+滑り込むようにして校舎に侵入する。
 ;endpage
 ~
 ;noname
 今日は宿直の先生もいないはずなので、
-校舎に入りさえすれば安全だ。
+校舎中に入りさえすれば安全だ。
 ;endpage
 ~
 ;noname
@@ -126,14 +132,14 @@
 ;endpage
 ~
 #;△走る
-;playse num: "13", loop: true
+;se走る
 
 ;kenji
 「はぁ、はぁ、はぁ……」
 ;endpage
 ~
 ;noname
-チクショー、よりによって今日、
+ちくしょう、よりによって今日、
 しかもこんな時間に呼び出すとは……
 あいつも何を考えてるんだ。
 ;endpage
@@ -142,7 +148,8 @@
 ;fadeout_meslay
 
 #○移動　廊下
-;cb_move bg: "hall"
+;黒_移動
+;廊下_移動
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -166,8 +173,8 @@
 ;fadeout_meslay
 
 #○移動　廊下
-;cb_move bg: "black"
-;cb_move bg: "hall"
+;黒_移動
+;廊下_移動
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -183,7 +190,7 @@
 ~
 ;noname
 呼び出しのメールに気づいてから、
-寮長の目をごまかして寮を抜けだし、
+なんとか寮長の目をごまかして寮を抜けだし、
 ここへ来るまでほぼ全力疾走だ。
 ;endpage
 ~
@@ -203,7 +210,7 @@
 ;fadeout_meslay
 
 #○移動　黒
-;cb_move bg: "black"
+;黒_移動
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -226,25 +233,25 @@
 ~
 ;noname
 残りの階段を一気に駆け上がり、
-屋上へのドアを開けた――
+そのままの勢いで、屋上へのドアを開けた――
 ;endpage
 ~
 #☆メッセージフレーム　アウト
 ;fadeout_meslay
 
-#△止まる
+#△SE停止
 ;stopse
 
 #△屋上ドア
-;playse num: "10"
+;se屋上ドア
 
 #○フェード　白（屋上、明日香）
 ;pretrans
-;image lay: "base", file: "image/bg-roof.png"
+;image lay: "base", file: "image/bg-roof1.png"
 ;image lay: "filter", x: 0, y: 0, file: "image/bg-white.png", visible: true
 ;load_chara name: "asuka", size: "medium", pos: "center", num: 2
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans
 
 #☆;ウェイト　１０００
 ;wait time: 1000, canskip: false
@@ -253,7 +260,7 @@
 ;fadein_meslay
 
 ;noname
-ドアを開けたとたん、視界が真っ白に染まる。
+ドアを開けたとたん、眩しさに視界が白く染まる。
 ;endpage
 ~
 #△クラッカー
@@ -278,7 +285,7 @@
 ;pretrans
 ;layopt lay: "filter", alpha: 0.75
 ;trans time: 2000
-;waittrans canskip: false
+;waittrans
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
@@ -294,14 +301,14 @@
 ;pretrans
 ;layopt lay: "filter", alpha: 0.5
 ;trans time: 2000
-;waittrans canskip: false
+;waittrans
 
 #☆メッセージフレーム　イン
 ;fadein_meslay
 
 ;noname
 屋上のフェンスの近く。
-かつて彼女の指定席だった場所。
+かつては彼女の指定席だった場所。
 ;endpage
 ~
 ;noname
@@ -312,6 +319,17 @@
 「卒業おめでとう、健二」
 ;endpage
 ~
+
+;fadeout_meslay
+
+;pretrans
+;layopt lay: "asuka", visible: false
+;image lay: "base", file: "image/bg-sky2.png"
+;trans time: 1000
+;waittrans
+
+;fadein_meslay
+
 ;noname
 あぁ、やけに廊下が明るいと思ったら。
 ;endpage

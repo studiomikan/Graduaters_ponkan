@@ -67,6 +67,32 @@
   ;cb_time bg: "class1-dark"
 ;endmacro
 
+# 美術室
+;macro name: "美術室"
+  ;cb_fade bg: "class2"
+;endmacro
+
+;macro name: "美術室_移動"
+  ;cb_move bg: "class2"
+;endmacro
+
+;macro name: "美術室_時間経過"
+  ;cb_time bg: "class2"
+;endmacro
+
+# 暗い美術室
+;macro name: "暗い美術室"
+  ;cb_fade bg: "class2-dark"
+;endmacro
+
+;macro name: "暗い美術室_移動"
+  ;cb_move bg: "class2-dark"
+;endmacro
+
+;macro name: "暗い美術室_時間経過"
+  ;cb_time bg: "class2-dark"
+;endmacro
+
 # 廊下
 ;macro name: "廊下"
   ;cb_fade bg: "hall1"
