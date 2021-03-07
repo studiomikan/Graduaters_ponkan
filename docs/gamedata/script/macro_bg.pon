@@ -1,0 +1,200 @@
+#-------------------------------------------------------------------
+# 背景
+#-------------------------------------------------------------------
+
+# 黒
+;macro name: "黒"
+  ;cb_fade bg: "black"
+;endmacro
+
+;macro name: "黒_移動"
+  ;cb_move bg: "black"
+;endmacro
+
+;macro name: "黒_時間経過"
+  ;cb_time bg: "black"
+;endmacro
+
+# 白
+;macro name: "白"
+  ;cb_fade bg: "white"
+;endmacro
+
+;macro name: "白_移動"
+  ;cb_move bg: "white"
+;endmacro
+
+;macro name: "白_時間経過"
+  ;cb_time bg: "white"
+;endmacro
+
+# 赤
+;macro name: "赤"
+  ;cb_fade bg: "red"
+;endmacro
+
+;macro name: "赤_移動"
+  ;cb_move bg: "red"
+;endmacro
+
+;macro name: "赤_時間経過"
+  ;cb_time bg: "red"
+;endmacro
+
+# 教室
+;macro name: "教室"
+  ;cb_fade bg: "class1"
+;endmacro
+
+;macro name: "教室_移動"
+  ;cb_move bg: "class1"
+;endmacro
+
+;macro name: "教室_時間経過"
+  ;cb_time bg: "class1"
+;endmacro
+
+# 暗い教室
+;macro name: "暗い教室"
+  ;cb_fade bg: "class1-dark"
+;endmacro
+
+;macro name: "暗い教室_移動"
+  ;cb_move bg: "class1-dark"
+;endmacro
+
+;macro name: "暗い教室_時間経過"
+  ;cb_time bg: "class1-dark"
+;endmacro
+
+# 廊下
+;macro name: "廊下"
+  ;cb_fade bg: "hall1"
+;endmacro
+
+;macro name: "廊下_移動"
+  ;cb_move bg: "hall1"
+;endmacro
+
+;macro name: "廊下_時間経過"
+  ;cb_time bg: "hall1"
+;endmacro
+
+# 暗い廊下
+;macro name: "暗い廊下"
+  ;cb_fade bg: "hall1-dark"
+;endmacro
+
+;macro name: "暗い廊下_移動"
+  ;cb_move bg: "hall1-dark"
+;endmacro
+
+;macro name: "暗い廊下_時間経過"
+  ;cb_time bg: "hall1-dark"
+;endmacro
+
+# 階段
+;macro name: "階段"
+  ;cb_fade bg: "stairs"
+;endmacro
+
+;macro name: "階段_移動"
+  ;cb_move bg: "stairs"
+;endmacro
+
+;macro name: "階段_時間経過"
+  ;cb_time bg: "stairs"
+;endmacro
+
+# 暗い階段
+;macro name: "暗い階段"
+  ;cb_fade bg: "stairs-dark"
+;endmacro
+
+;macro name: "暗い階段_移動"
+  ;cb_move bg: "stairs-dark"
+;endmacro
+
+;macro name: "暗い階段_時間経過"
+  ;cb_time bg: "stairs-dark"
+;endmacro
+
+# 屋上扉
+;macro name: "屋上扉"
+  ;cb_fade bg: "hall2"
+;endmacro
+
+;macro name: "屋上扉_移動"
+  ;cb_move bg: "hall2"
+;endmacro
+
+;macro name: "屋上扉_時間経過"
+  ;cb_time bg: "hall2"
+;endmacro
+
+# 暗い屋上扉
+;macro name: "暗い屋上扉"
+  ;cb_fade bg: "hall2-dark"
+;endmacro
+
+;macro name: "暗い屋上扉_移動"
+  ;cb_move bg: "hall2-dark"
+;endmacro
+
+;macro name: "暗い屋上扉_時間経過"
+  ;cb_time bg: "hall2-dark"
+;endmacro
+
+# 屋上
+;macro name: "屋上"
+  ;cb_fade bg: "roof1"
+;endmacro
+
+;macro name: "屋上_移動"
+  ;cb_move bg: "roof1"
+;endmacro
+
+;macro name: "屋上_時間経過"
+  ;cb_time bg: "roof1"
+;endmacro
+
+# 暗い屋上
+;macro name: "暗い屋上"
+  ;cb_fade bg: "roof1-dark"
+;endmacro
+
+;macro name: "暗い屋上_移動"
+  ;cb_move bg: "roof1-dark"
+;endmacro
+
+;macro name: "暗い屋上_時間経過"
+  ;cb_time bg: "roof1-dark"
+;endmacro
+
+# 空
+;macro name: "空"
+  ;cb_fade bg: "sky1"
+;endmacro
+
+;macro name: "空_移動"
+  ;cb_move bg: "sky1"
+;endmacro
+
+;macro name: "空_時間経過"
+  ;cb_time bg: "sky1"
+;endmacro
+
+# 月
+;macro name: "月"
+  ;cb_fade bg: "sky2"
+;endmacro
+
+;macro name: "月_移動"
+  ;cb_move bg: "sky2"
+;endmacro
+
+;macro name: "月_時間経過"
+  ;cb_time bg: "sky2"
+;endmacro
+
+;return

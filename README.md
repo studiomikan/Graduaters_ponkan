@@ -21,3 +21,12 @@ REM セーブマークがちゃんとついてるかどうかのチェック
 cd tools
 node check-savemark.js
 ```
+
+## 素材
+
+以下のサイトで配布されているフリー素材を利用しています。
+
+- きまぐれアフター 様
+  - http://www5d.biglobe.ne.jp/~gakai/index.htm
+- 空彩～コレクション～ 様
+  - http://loo.sakura.ne.jp/sozai_m.html

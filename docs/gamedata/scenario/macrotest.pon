@@ -5,17 +5,74 @@
 ~マクロテスト
 
 ;mes_orange
-;cb_move bg: "hall"
 ;fadein_meslay
 
 ;noname
 マクロテスト。
 ;endpage
 
-;narrow_view_filter
-;pb
-;fadeout_narrow_view
-;pb
+# ;cb_fade bg: "hall"
+;narrow_view
+
+;noname
+フェード背景。
+;endpage
+
+;赤
+;黒
+;白
+;教室
+;暗い教室
+;廊下
+;暗い廊下
+;階段
+;暗い階段
+;屋上扉
+;暗い屋上扉
+;屋上
+;暗い屋上
+;空
+;月
+
+;noname
+移動背景。
+;endpage
+
+;赤_移動
+;黒_移動
+;白_移動
+;教室_移動
+;暗い教室_移動
+;廊下_移動
+;暗い廊下_移動
+;階段_移動
+;暗い階段_移動
+;屋上扉_移動
+;暗い屋上扉_移動
+;屋上_移動
+;暗い屋上_移動
+;空_移動
+;月_移動
+
+;noname
+時間経過背景。
+;endpage
+
+;赤_時間経過
+;黒_時間経過
+;白_時間経過
+;教室_時間経過
+;暗い教室_時間経過
+;廊下_時間経過
+;暗い廊下_時間経過
+;階段_時間経過
+;暗い階段_時間経過
+;屋上扉_時間経過
+;暗い屋上扉_時間経過
+;屋上_時間経過
+;暗い屋上_時間経過
+;空_時間経過
+;月_時間経過
 
 ;asuka-xl-c-2
 ;pb
@@ -48,7 +105,7 @@
 ;slide_out_chara name: "yuuki", pos: "center", to: "left"
 ;pb
 
-
+;fadeout_narrow_view
 
 ;noname
 おわり。

@@ -1,4 +1,5 @@
 ;call file: "script/macro_basic.pon"
+;call file: "script/macro_bg.pon"
 ;call file: "script/macro_message.pon"
 ;call file: "script/macro_chara.pon"
 ;call file: "script/macro_sound.pon"

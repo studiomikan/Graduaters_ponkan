@@ -217,7 +217,7 @@
 #   21:9 -> 1280x540
 #   720-540=180
 #-------------------------------------------------------------------
-;macro name: "narrow_view_filter"
+;macro name: "narrow_view"
   ;layopt lay: "filter1", width: 1280, height: 100, x: 0, y: -100, visible: true, alpha: 0
   ;layopt lay: "filter2", width: 1280, height: 100, x: 0, y: 720, visible: true, alpha: 0
   ;fillcolor lay: "filter1, filter2", color: 0x000000
