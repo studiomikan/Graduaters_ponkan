@@ -90,7 +90,7 @@ tv.mes_type = "orange"
   ;layopt lay: "message, speaker, sysbtn", visible: false
 ;endmacro
 
-;macro name: "fadein_meslay"
+;macro name: "メッセージ枠フェードイン"
   ;pretrans
   ;show_meslay
   ;clear lay: "message, speaker, sysbtn"
@@ -98,7 +98,7 @@ tv.mes_type = "orange"
   ;waittrans canskip: false
 ;endmacro
 
-;macro name: "fadeout_meslay"
+;macro name: "メッセージ枠フェードアウト"
   ;pretrans
   ;hide_meslay
   ;clear lay: "message, speaker, sysbtn"
@@ -124,7 +124,7 @@ tv.mes_type = "orange"
   ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
-;macro name: "joban"
+;macro name: "ジョバン"
   ;clear lay: "mes, speaker"
 ;endmacro
 

@@ -24,7 +24,7 @@
 ;playbgm num:"001"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 『あたしは三年の教室にいるよ。早くきてね』
@@ -34,7 +34,7 @@
 明日香からの手紙は、そんな文章で終わっていた。
 ;endpage
 ~
-;kenji
+;健二
 「結局なんなんだ、この手紙は」
 ;endpage
 ~
@@ -55,7 +55,7 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○移動　廊下
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
@@ -66,7 +66,7 @@
 ;cb_move bg: "black"
 ;cb_move bg: "class"
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 #△教室ドア
 ;playse num: "08"
@@ -75,7 +75,7 @@
 最初に明日香を見つけた教室に再びやってくる。
 ;endpage
 ~
-;kenji
+;健二
 「んー、やっぱりいないかー」
 ;endpage
 ~
@@ -93,7 +93,7 @@
 手紙を拾い、教卓のすぐ近くの席に腰かける。
 ;endpage
 ~
-;kenji
+;健二
 「うわなんだこいつ、置き勉しすぎだろ。
 机に収まりきってねぇじゃん」
 ;endpage
@@ -113,12 +113,12 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 *test
 ;cb_move bg: "class"
 #☆手紙
 ;mes_letter
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;letter
 はい、二つめの手紙です。よく見けたね！
@@ -188,7 +188,7 @@
 #☆ここまで手紙
 
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○移動　廊下
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
@@ -197,7 +197,7 @@
 ;playse num: "13", loop: true
 #☆メッセージフレーム　イン
 ;mes_orange
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 手紙を読み終えてすぐに、俺は美術室に向けて走り出す。
@@ -241,7 +241,7 @@
 #△止まる
 ;stopse
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
 #☆テロップ　イン

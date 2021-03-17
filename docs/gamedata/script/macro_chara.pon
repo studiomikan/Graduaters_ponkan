@@ -2,15 +2,15 @@
 # キャラクター（立ち絵）関連
 #-------------------------------------------------------------------
 
-;macro name: "kenji"
+;macro name: "健二"
   ;print_name name: "健二"
 ;endmacro
 
-;macro name: "yuuki?"
+;macro name: "？？"
   ;print_name name: "？？"
 ;endmacro
 
-;macro name: "kenji_yuuki"
+;macro name: "健二・優希"
   ;print_name name: "健二・優希"
 ;endmacro
 
@@ -275,312 +275,312 @@ tv.getCharaInfo = function(mp) {
 
 
 # 明日香を表示するマクロ
-;macro name: "asuka"
+;macro name: "明日香"
   ;print_name name: "明日香"
 ;endmacro
-;macro name: "asuka_out"
+;macro name: "明日香_退場"
   ;out_chara name: "asuka"
 ;endmacro
 ## asuka-medium
 ### asuka-medium-center
-;macro name: "asuka-m-c-1"
+;macro name: "明日香_中_中央_1"
   ;chara name: "asuka", size: "medium", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-c-2"
+;macro name: "明日香_中_中央_2"
   ;chara name: "asuka", size: "medium", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-c-3"
+;macro name: "明日香_中_中央_3"
   ;chara name: "asuka", size: "medium", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-c-4"
+;macro name: "明日香_中_中央_4"
   ;chara name: "asuka", size: "medium", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-c-5"
+;macro name: "明日香_中_中央_5"
   ;chara name: "asuka", size: "medium", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### asuka-medium-left
-;macro name: "asuka-m-l-1"
+;macro name: "明日香_中_左_1"
   ;chara name: "asuka", size: "medium", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-l-2"
+;macro name: "明日香_中_左_2"
   ;chara name: "asuka", size: "medium", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-l-3"
+;macro name: "明日香_中_左_3"
   ;chara name: "asuka", size: "medium", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-l-4"
+;macro name: "明日香_中_左_4"
   ;chara name: "asuka", size: "medium", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-l-5"
+;macro name: "明日香_中_左_5"
   ;chara name: "asuka", size: "medium", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### asuka-medium-right
-;macro name: "asuka-m-r-1"
+;macro name: "明日香_中_右_1"
   ;chara name: "asuka", size: "medium", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-r-2"
+;macro name: "明日香_中_右_2"
   ;chara name: "asuka", size: "medium", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-r-3"
+;macro name: "明日香_中_右_3"
   ;chara name: "asuka", size: "medium", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-r-4"
+;macro name: "明日香_中_右_4"
   ;chara name: "asuka", size: "medium", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-m-r-5"
+;macro name: "明日香_中_右_5"
   ;chara name: "asuka", size: "medium", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ## asuka-large
 ### asuka-large-center
-;macro name: "asuka-l-c-1"
+;macro name: "明日香_大_中央_1"
   ;chara name: "asuka", size: "large", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-c-2"
+;macro name: "明日香_大_中央_2"
   ;chara name: "asuka", size: "large", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-c-3"
+;macro name: "明日香_大_中央_3"
   ;chara name: "asuka", size: "large", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-c-4"
+;macro name: "明日香_大_中央_4"
   ;chara name: "asuka", size: "large", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-c-5"
+;macro name: "明日香_大_中央_5"
   ;chara name: "asuka", size: "large", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### asuka-large-left
-;macro name: "asuka-l-l-1"
+;macro name: "明日香_大_左_1"
   ;chara name: "asuka", size: "large", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-l-2"
+;macro name: "明日香_大_左_2"
   ;chara name: "asuka", size: "large", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-l-3"
+;macro name: "明日香_大_左_3"
   ;chara name: "asuka", size: "large", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-l-4"
+;macro name: "明日香_大_左_4"
   ;chara name: "asuka", size: "large", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-l-5"
+;macro name: "明日香_大_左_5"
   ;chara name: "asuka", size: "large", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### asuka-large-right
-;macro name: "asuka-l-r-1"
+;macro name: "明日香_大_右_1"
   ;chara name: "asuka", size: "large", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-r-2"
+;macro name: "明日香_大_右_2"
   ;chara name: "asuka", size: "large", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-r-3"
+;macro name: "明日香_大_右_3"
   ;chara name: "asuka", size: "large", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-r-4"
+;macro name: "明日香_大_右_4"
   ;chara name: "asuka", size: "large", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-l-r-5"
+;macro name: "明日香_大_右_5"
   ;chara name: "asuka", size: "large", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ## asuka-xlarge
 ### asuka-xlarge-center
-;macro name: "asuka-xl-c-1"
+;macro name: "明日香_特大-中央-1"
   ;chara name: "asuka", size: "xlarge", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-c-2"
+;macro name: "明日香_特大-中央-2"
   ;chara name: "asuka", size: "xlarge", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-c-3"
+;macro name: "明日香_特大-中央-3"
   ;chara name: "asuka", size: "xlarge", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-c-4"
+;macro name: "明日香_特大-中央-4"
   ;chara name: "asuka", size: "xlarge", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-c-5"
+;macro name: "明日香_特大-中央-5"
   ;chara name: "asuka", size: "xlarge", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### asuka-xlarge-left
-;macro name: "asuka-xl-l-1"
+;macro name: "明日香_特大-左-1"
   ;chara name: "asuka", size: "xlarge", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-l-2"
+;macro name: "明日香_特大-左-2"
   ;chara name: "asuka", size: "xlarge", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-l-3"
+;macro name: "明日香_特大-左-3"
   ;chara name: "asuka", size: "xlarge", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-l-4"
+;macro name: "明日香_特大-左-4"
   ;chara name: "asuka", size: "xlarge", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-l-5"
+;macro name: "明日香_特大-左-5"
   ;chara name: "asuka", size: "xlarge", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### asuka-xlarge-right
-;macro name: "asuka-xl-r-1"
+;macro name: "明日香_特大-右-1"
   ;chara name: "asuka", size: "xlarge", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-r-2"
+;macro name: "明日香_特大-右-2"
   ;chara name: "asuka", size: "xlarge", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-r-3"
+;macro name: "明日香_特大-右-3"
   ;chara name: "asuka", size: "xlarge", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-r-4"
+;macro name: "明日香_特大-右-4"
   ;chara name: "asuka", size: "xlarge", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "asuka-xl-r-5"
+;macro name: "明日香_特大-右-5"
   ;chara name: "asuka", size: "xlarge", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 
 # yuuki
-;macro name: "yuuki"
+;macro name: "優希"
   ;print_name name: "優希"
 ;endmacro
-;macro name: "yuuki_out"
+;macro name: "優希_退場"
   ;out_chara name: "yuuki"
 ;endmacro
 ## yuuki-medium
 ### yuuki-medium-center
-;macro name: "yuuki-m-c-1"
+;macro name: "優希_中_中央_1"
   ;chara name: "yuuki", size: "medium", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-c-2"
+;macro name: "優希_中_中央_2"
   ;chara name: "yuuki", size: "medium", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-c-3"
+;macro name: "優希_中_中央_3"
   ;chara name: "yuuki", size: "medium", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-c-4"
+;macro name: "優希_中_中央_4"
   ;chara name: "yuuki", size: "medium", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-c-5"
+;macro name: "優希_中_中央_5"
   ;chara name: "yuuki", size: "medium", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### yuuki-medium-left
-;macro name: "yuuki-m-l-1"
+;macro name: "優希_中_左_1"
   ;chara name: "yuuki", size: "medium", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-l-2"
+;macro name: "優希_中_左_2"
   ;chara name: "yuuki", size: "medium", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-l-3"
+;macro name: "優希_中_左_3"
   ;chara name: "yuuki", size: "medium", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-l-4"
+;macro name: "優希_中_左_4"
   ;chara name: "yuuki", size: "medium", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-l-5"
+;macro name: "優希_中_左_5"
   ;chara name: "yuuki", size: "medium", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### yuuki-medium-right
-;macro name: "yuuki-m-r-1"
+;macro name: "優希_中_右_1"
   ;chara name: "yuuki", size: "medium", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-r-2"
+;macro name: "優希_中_右_2"
   ;chara name: "yuuki", size: "medium", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-r-3"
+;macro name: "優希_中_右_3"
   ;chara name: "yuuki", size: "medium", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-r-4"
+;macro name: "優希_中_右_4"
   ;chara name: "yuuki", size: "medium", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-m-r-5"
+;macro name: "優希_中_右_5"
   ;chara name: "yuuki", size: "medium", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ## yuuki-large
 ### yuuki-large-center
-;macro name: "yuuki-l-c-1"
+;macro name: "優希_大_中央_1"
   ;chara name: "yuuki", size: "large", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-c-2"
+;macro name: "優希_大_中央_2"
   ;chara name: "yuuki", size: "large", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-c-3"
+;macro name: "優希_大_中央_3"
   ;chara name: "yuuki", size: "large", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-c-4"
+;macro name: "優希_大_中央_4"
   ;chara name: "yuuki", size: "large", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-c-5"
+;macro name: "優希_大_中央_5"
   ;chara name: "yuuki", size: "large", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### yuuki-large-left
-;macro name: "yuuki-l-l-1"
+;macro name: "優希_大_左_1"
   ;chara name: "yuuki", size: "large", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-l-2"
+;macro name: "優希_大_左_2"
   ;chara name: "yuuki", size: "large", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-l-3"
+;macro name: "優希_大_左_3"
   ;chara name: "yuuki", size: "large", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-l-4"
+;macro name: "優希_大_左_4"
   ;chara name: "yuuki", size: "large", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-l-5"
+;macro name: "優希_大_左_5"
   ;chara name: "yuuki", size: "large", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### yuuki-large-right
-;macro name: "yuuki-l-r-1"
+;macro name: "優希_大_右_1"
   ;chara name: "yuuki", size: "large", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-r-2"
+;macro name: "優希_大_右_2"
   ;chara name: "yuuki", size: "large", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-r-3"
+;macro name: "優希_大_右_3"
   ;chara name: "yuuki", size: "large", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-r-4"
+;macro name: "優希_大_右_4"
   ;chara name: "yuuki", size: "large", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-l-r-5"
+;macro name: "優希_大_右_5"
   ;chara name: "yuuki", size: "large", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ## yuuki-xlarge
 ### yuuki-xlarge-center
-;macro name: "yuuki-xl-c-1"
+;macro name: "優希_特大-中央-1"
   ;chara name: "yuuki", size: "xlarge", pos: "center", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-c-2"
+;macro name: "優希_特大-中央-2"
   ;chara name: "yuuki", size: "xlarge", pos: "center", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-c-3"
+;macro name: "優希_特大-中央-3"
   ;chara name: "yuuki", size: "xlarge", pos: "center", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-c-4"
+;macro name: "優希_特大-中央-4"
   ;chara name: "yuuki", size: "xlarge", pos: "center", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-c-5"
+;macro name: "優希_特大-中央-5"
   ;chara name: "yuuki", size: "xlarge", pos: "center", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### yuuki-xlarge-left
-;macro name: "yuuki-xl-l-1"
+;macro name: "優希_特大-左-1"
   ;chara name: "yuuki", size: "xlarge", pos: "left", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-l-2"
+;macro name: "優希_特大-左-2"
   ;chara name: "yuuki", size: "xlarge", pos: "left", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-l-3"
+;macro name: "優希_特大-左-3"
   ;chara name: "yuuki", size: "xlarge", pos: "left", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-l-4"
+;macro name: "優希_特大-左-4"
   ;chara name: "yuuki", size: "xlarge", pos: "left", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-l-5"
+;macro name: "優希_特大-左-5"
   ;chara name: "yuuki", size: "xlarge", pos: "left", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 ### yuuki-xlarge-right
-;macro name: "yuuki-xl-r-1"
+;macro name: "優希_特大-右-1"
   ;chara name: "yuuki", size: "xlarge", pos: "right", num: "1", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-r-2"
+;macro name: "優希_特大-右-2"
   ;chara name: "yuuki", size: "xlarge", pos: "right", num: "2", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-r-3"
+;macro name: "優希_特大-右-3"
   ;chara name: "yuuki", size: "xlarge", pos: "right", num: "3", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-r-4"
+;macro name: "優希_特大-右-4"
   ;chara name: "yuuki", size: "xlarge", pos: "right", num: "4", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
-;macro name: "yuuki-xl-r-5"
+;macro name: "優希_特大-右-5"
   ;chara name: "yuuki", size: "xlarge", pos: "right", num: "5", canskip: "&mp.canskip", time: "&mp.time"
 ;endmacro
 

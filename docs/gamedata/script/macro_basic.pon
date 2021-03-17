@@ -22,11 +22,11 @@
   ;image lay: "telop", file: "image/logo-title-mini.png", x: 788+20, y: 562, visible: true
   ;layopt lay: "telop", alpha: 0
   ;move lay: "telop", time: 500, path: [{x: 788, y: 562, alpha: 1}], ease: "out"
-  ;waitmove canskip: false
+  ;waitmove canskip: true
   ;wait time: 1000, canskip: false
   # アウト
   ;move lay: "telop", time: 500, path: [{x: 788-20, y: 562, alpha: 0}], ease: "out"
-  ;waitmove canskip: false
+  ;waitmove canskip: true
   ;freeimage lay: "telop"
 ;endmacro
 
@@ -40,14 +40,14 @@
   ;layopt lay: "all", exclude: "system", visible: false
   ;image lay: "telop", file: "image/logo-title-mini.png", x: 1280-450-40, y: 720-102-40, visible: true
   ;trans time: 2000
-  ;waittrans canskip: false
+  ;waittrans canskip: true
   ;wait time: 200, canskip: false
   # アウト
   ;pretrans
   ;image lay: "base", file: "image/bg-black.png"
   ;layopt lay: "telop", visible: false
   ;trans time: 2000
-  ;waittrans canskip: false
+  ;waittrans canskip: true
   ;wait time: 1000, canskip: false
 ;endmacro
 

@@ -17,13 +17,13 @@
 ;image lay: "base", file: "image/bg-black.png", visible: true
 ;image lay: "tmp1", file: "image/2years-ago.png", x: (1280-200)/2, y: (720-60)/2, visible: true
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 ;wait time: 1500, canskip: false
 ;pretrans
 ;layopt lay: "tmp1", visible: false
 ;freeimage lay: "tmp1"
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 ;wait time: 1000, canskip: false
 
 
@@ -31,9 +31,9 @@
 ;mes_blue
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「おい、ほんとに大丈夫なのか？」
 ;endpage
 ~
@@ -42,7 +42,7 @@
 小声で隣の明日香に話しかける。
 ;endpage
 ~
-;asuka
+;明日香
 「だいじょぶだいじょぶ、心配ないって」
 ;endpage
 ~
@@ -51,11 +51,11 @@
 立て付けの悪い窓がガタガタと音を立てた。
 ;endpage
 ~
-;kenji
+;健二
 「ってか、そんなんで開くのかよ」
 ;endpage
 ~
-;asuka
+;明日香
 「開くんだって。
 ここ、鍵壊れてるから、こうやってれば……」
 ;endpage
@@ -66,11 +66,11 @@
 鍵が外れた。
 ;endpage
 ~
-;asuka
+;明日香
 「ほーらね」
 ;endpage
 ~
-;kenji
+;健二
 「うわ、ホントに開いちまったよ」
 ;endpage
 ~
@@ -79,12 +79,12 @@
 鍵直すくらいはちゃんとやってほしい。
 ;endpage
 ~
-;asuka
+;明日香
 「ほら、行くよ健二。
 もたもたしてると見つかっちゃう」
 ;endpage
 ~
-;kenji
+;健二
 「ちょ、明日香、待てって」
 ;endpage
 ~
@@ -99,19 +99,19 @@
 すぐ近くにいるはずの明日香の姿もよく見えない。
 ;endpage
 ~
-;asuka
+;明日香
 「当たり前だけど……静かね」
 ;endpage
 ~
-;kenji
+;健二
 「そりゃそうだろう」
 ;endpage
 ~
-;asuka
+;明日香
 「とりあえず窓しめて、健二」
 ;endpage
 ~
-;kenji
+;健二
 「おう」
 ;endpage
 ~
@@ -125,28 +125,28 @@
 明日香はとっとと教室を出ようとしていた。
 ;endpage
 ~
-;kenji
+;健二
 「ちょ、待ってくれよ、おいてくなって」
 ;endpage
 ~
-;asuka
+;明日香
 「どうしたの？　あ、もしかして怖いのー？」
 ;endpage
 ~
-;kenji
+;健二
 「ちげぇよ馬鹿！」
 ;endpage
 ~
-;asuka
+;明日香
 「はいはい。いいから、早く行こ」
 ;endpage
 ~
-;kenji
+;健二
 「あ、だから待てって！」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　廊下
 ;cb_move bg: "hall"
@@ -155,9 +155,9 @@
 ;playbgm num: "001"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「お、廊下は割と明るいな」
 ;endpage
 ~
@@ -165,11 +165,11 @@
 廊下へ出ると、さっきはよく見えなかった景色が幾分マシになった。
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「んー、美術室は端っこだし、窓も少ないからかなー」
 ;endpage
 ~
-;kenji
+;健二
 「かもな」
 ;endpage
 ~
@@ -181,20 +181,20 @@
 寮は結構きれいなくせに、こういうところは割と手抜きだな。美術部から文句とかこないんだろうか。
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「さてと。ねぇ健二、どこ行く？」
 ;endpage
 ~
-;kenji
+;健二
 「どこって？」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「ほら、せっかく夜の学校に忍び込んだんだから、
 何かしないと損じゃん」
 ;endpage
 ~
-;kenji
+;健二
 「って言われてもなぁ……」
 ;endpage
 ~
@@ -207,48 +207,48 @@
 でもまぁ、行くとしたら……
 ;endpage
 ~
-;kenji
+;健二
 「とりあえず教室行ってみるか。そこ以外思いつかん」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「えー」
 ;endpage
 ~
-;kenji
+;健二
 「えーってなんだよ、えーって」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「いや、あたしも教室以外思いつかなかったから
 聞いたのに、期待ハズレだなーと思って」
 ;endpage
 ~
-;kenji
+;健二
 「期待ハズレとはなんだ。
 これでも一生懸命考えたんだぞ、
 コンマ2秒くらい」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「まぁいっか。とりあえず行ってみよ」
 ;endpage
 ~
-;kenji
+;健二
 「って、だから置いていくなって！」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　教室
 ;cb_move bg: "black"
 ;cb_move bg: "class"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 #△教室ドア
 ;playse num: "08"
@@ -257,16 +257,16 @@
 二階に上がり、普段授業を受けている教室に入る。
 ;endpage
 ~
-;kenji
+;健二
 「っていうか針金で開くのか、この教室の鍵……」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「あれ、知らない？
 体育の後とかみんなやってるよ。先生とかも」
 ;endpage
 ~
-;kenji
+;健二
 「マジか。というか教師公認かよ」
 ;endpage
 ~
@@ -274,11 +274,11 @@
 我が校のセキュリティに不安を感じるのは俺だけだろうか。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「教室の中もそれなりに明るいねぇ」
 ;endpage
 ~
-;kenji
+;健二
 「そうだな」
 ;endpage
 ~
@@ -294,48 +294,48 @@
 神秘的な雰囲気になっている気がする。
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「んー、明るいのは明るいけど、なんか、アレだねー」
 ;endpage
 ~
-;kenji
+;健二
 「アレってなんだよ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「出そうだね」
 ;endpage
 ~
-;kenji
+;健二
 「出そうって……何が」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「そりゃ、夜の学校と言えば……」
 ;endpage
 ~
-;kenji
+;健二
 「い、言えば……？」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「オ・バ・ケ」
 ;endpage
 ~
-;kenji
+;健二
 「お、おまえ、あんまりそういうこと言うんじゃねーよ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「あれ、健二ったらまだオバケが怖いのー？
 おこちゃま～」
 ;endpage
 ~
-;kenji
+;健二
 「そ、そそそそんなわけないだろ」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「あはは、昔から苦手だったもんねー、そういう話」
 ;endpage
 ~
@@ -353,89 +353,89 @@
 正直情けないとは思っているが、怖いものは怖い。
 ;endpage
 ~
-;kenji
+;健二
 「うっせーよ馬鹿！　お前も知ってんだから、
 こういうとこに連れてくんのはやめろよな」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「じゃあ健二は帰る？」
 ;endpage
 ~
-;kenji
+;健二
 「あー、いやー、
 むしろここから一人で帰るほうが
 怖いといいますかー」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「帰り道にオバケ出るかもしれないからね」
 ;endpage
 ~
-;kenji
+;健二
 「だからやめろって！」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「嫌ー。だって健二おもしろいし」
 ;endpage
 ~
-;kenji
+;健二
 「俺はお前のオモチャじゃないんだぞ……」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「え、そうだったの？！」
 ;endpage
 ~
-;kenji
+;健二
 「なんで驚くんだよ！　ひどい幼馴染だな！」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「冗談冗談。たぶん」
 ;endpage
 ~
-;kenji
+;健二
 「たぶんかよ……はっきり冗談だと言ってくれよ……」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「あんまり細かいこと気にしてると、ハゲるよー」
 ;endpage
 ~
-;kenji
+;健二
 「は、ハゲっ？！」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 ;noname
 さらっと気にしてることを言ってから、
 明日香は教室に並ぶ机を物色し始めた。
 ;endpage
 ~
-;kenji
+;健二
 「うう……ハゲてないもん……ハゲないもん……」
 ;endpage
 ~
-;asuka-l-c-3
+;明日香_大_中央_3
 「え、なんで泣いてるの？　誰にやられたの？」
 ;endpage
 ~
-;kenji
+;健二
 「お前にだよっ。っていうか、なにしてんだよ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「なにかおもしろいものないかなーと思って」
 ;endpage
 ~
-;kenji
+;健二
 「いやいやいや、だからって人の机を勝手にあさるなよ」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 ;noname
 がさごそと机の中身を見て回る明日香。
@@ -451,32 +451,32 @@
 入っているからではありません。
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「んー、割とみんなきれいにしてるなー……」
 ;endpage
 ~
-;kenji
+;健二
 「そりゃ、まだ新学期が始まったばっかだしなぁ」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「エロ本とかないかなー」
 ;endpage
 ~
-;kenji
+;健二
 「いや、学校に持ってこないだろ……」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 ;fadeoutbgm
 
-;asuka
+;明日香
 「わかんないじゃん。
 誰かに貸そうとして渡し損ねたとか……ん？」
 ;endpage
 ~
-;kenji
+;健二
 「どうした？」
 ;endpage
 ~
@@ -484,13 +484,13 @@
 ;playbgm num: "002"
 ;playse num: "21"
 
-;asuka-l-c-5
+;明日香_大_中央_5
 「エロ本みっけ！」
 ;endpage
 ~
 ;playse num: "20"
 ;quake time: 500, x: 50, y: 10
-;kenji
+;健二
 「えええええええ」
 ;endpage
 ~
@@ -500,68 +500,68 @@
 ベタなタイトルの本が握られていた。
 ;endpage
 ~
-;kenji
+;健二
 「マジかよ……いやまさかホントにあるとは……」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「おー、すごーい、へー……」
 ;endpage
 ~
-;kenji
+;健二
 「読むのかよ！」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「あ、健二も見る？」
 ;endpage
 ~
-;kenji
+;健二
 「見ません！」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「えー、ホントは見たいんでしょ？」
 ;endpage
 ~
-;kenji
+;健二
 「いや、いいです……」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「………………」
 ;endpage
 ~
-;kenji
+;健二
 「な、なんだよ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「健二って、胸は小さいほうが良い派？」
 ;endpage
 ~
-;kenji
+;健二
 「突然何を言い出すんだこのバカ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「いやー、健二だって男子なんだから、
 ちょっとくらい興味あるでしょ？」
 ;endpage
 ~
-;kenji
+;健二
 「だからって聞くな」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「いいじゃん、教えてよー。ねーねー」
 ;endpage
 ~
-;kenji
+;健二
 「………………」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「む、強情ね。よし」
 ;endpage
 ~
@@ -574,15 +574,15 @@
 何する気だこいつ。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「健二ー」
 ;endpage
 ~
-;kenji
+;健二
 「……なに？」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「ほれ」
 ;endpage
 ~
@@ -591,7 +591,7 @@
 いきなり目の前に現れたのは……巨乳ナース！
 ;endpage
 ~
-;kenji
+;健二
 「ななななにしてんだこの！」
 ;endpage
 ~
@@ -600,15 +600,15 @@
 見たらなんか色々と失う気がする。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「なにって、健二が見たそうにしてたから」
 ;endpage
 ~
-;kenji
+;健二
 「してねぇよ！」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「はい！」
 ;endpage
 ~
@@ -617,33 +617,33 @@
 お次に現れたのは、水着の貧乳美少女！
 ;endpage
 ~
-;kenji
+;健二
 「だからやめろって。ってか二冊目かよ……」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「あれ、反応薄いなぁ。貧乳は外れか……」
 ;endpage
 ~
-;kenji
+;健二
 「分析すんな」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「うーん、貧乳が外れなのか、あるいは胸のサイズには
 こだわらないのか……あ、大きさより形ってこと？
 うへ～」
 ;endpage
 ~
-;kenji
+;健二
 「頼む、もうやめてくれ……」
 ;endpage
 ~
 ;fadeoutbgm
-;asuka_out
+;明日香_退場
 
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #〇時間経過
 ;cb_time bg: "black"
@@ -654,9 +654,9 @@
 ;playbgm num: "001"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;asuka-l-c-1
+;明日香_大_中央_1
 「んー、さすがに飽きた」
 ;endpage
 ~
@@ -665,51 +665,51 @@
 明日香は俺の机に座った。
 ;endpage
 ~
-;kenji
+;健二
 「あれ。お前、あの本どうしたんだ？」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「え、なに、持って帰るの？」
 ;endpage
 ~
-;kenji
+;健二
 「いらんわい！」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「そうだよねー、
 健二は自分のコレクションがあるもんねー」
 ;endpage
 ~
-;kenji
+;健二
 「な、なんのことやら……で、結局どうしたんだ？」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「持ち主の名前を油性ペンで書いて、
 教卓の上に置いといた」
 ;endpage
 ~
-;kenji
+;健二
 「なんてむごいことを……」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「学校にあんなの持ってくるのが悪いってことで」
 ;endpage
 ~
-;kenji
+;健二
 「おもしろいものないかなーとか言って
 勝手にあさったくせに……」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「おもしろいものが見つかったから、
 みんなで分かち合おうと思って」
 ;endpage
 ~
-;kenji
+;健二
 「ひでぇ。慈悲のかけらもない」
 ;endpage
 ~
@@ -718,16 +718,16 @@
 運が悪かったと思ってあきらめてくれ……
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「それにしても、あんまりすることもないねぇ」
 ;endpage
 ~
-;kenji
+;健二
 「まぁ夜だとはいえ学校だし。
 そうそうおもしろいものもないだろ」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「そうねー……」
 ;endpage
 ~
@@ -744,15 +744,15 @@
 あ、やばい、なんか嫌な予感が。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「健二」
 ;endpage
 ~
-;kenji
+;健二
 「嫌だ」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「屋上に行こう！」
 ;endpage
 ~
@@ -760,47 +760,47 @@
 はいきました。そろそろ帰れると思ったのに。
 ;endpage
 ~
-;kenji
+;健二
 「屋上って言っても、あそこは立ち入り禁止だろ？」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「だからこそ今行くんじゃない」
 ;endpage
 ~
-;kenji
+;健二
 「いやまぁ、そうかもしれんが。
 でも鍵とか閉まってるだろ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「大丈夫。あそこの鍵、
 わりと簡単に開くらしいんだよね」
 ;endpage
 ~
-;kenji
+;健二
 「ほんと大丈夫なのか、うちの学校……」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「ほら、行くよ健二！」
 ;endpage
 ~
-;kenji
+;健二
 「あ、ちょ、待てって！」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　廊下
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 階段を上り、
@@ -812,11 +812,11 @@
 立ち入り禁止と書かれた柵があった。
 ;endpage
 ~
-;kenji
+;健二
 「屋上って、この上か？」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「そうだよ」
 ;endpage
 ~
@@ -824,31 +824,31 @@
 そうなのか……しかしこれは……
 ;endpage
 ~
-;kenji
+;健二
 「な、なんか真っ暗なのは気のせいか」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「ここの階段、窓がないんだねー」
 ;endpage
 ~
-;kenji
+;健二
 「そりゃ見ればわかるんだが……」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「あー、怖いのー？」
 ;endpage
 ~
-;kenji
+;健二
 「こ、怖くなんてありませんよ？」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「なんで敬語なのさ」
 ;endpage
 ~
-;kenji
+;健二
 「怖くなんてないゼ」
 ;endpage
 ~
@@ -856,49 +856,49 @@
 声が裏返った。
 ;endpage
 ~
-;kenji
+;健二
 「怖くなんてないヨ」
 ;endpage
 ~
-;kenji
+;健二
 「ごめん、今のなし」
 ;endpage
 ~
-;kenji
+;健二
 「怖くなんてないぜ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「そんな何度も言い直さなくても。
 っていうかキモイよ。ほら、お先にどうぞ？」
 ;endpage
 ~
-;kenji
+;健二
 「無理」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「え、ちょ、かっこわる。しっかりしてよ」
 ;endpage
 ~
-;kenji
+;健二
 「怖いものは怖いし無理なものは無理だと思う」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「しょーがないなー。
 ほら、お手々ぎゅーしたげる、ぎゅー」
 ;endpage
 ~
-;kenji
+;健二
 「ば、馬鹿！　やめんか恥ずかしい！」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「じゃ、お一人でどうぞ」
 ;endpage
 ~
-;kenji
+;健二
 「ぐっ……」
 ;endpage
 ~
@@ -912,23 +912,23 @@
 それはそれで非常にダサい……
 ;endpage
 ~
-;kenji
+;健二
 「い、行ってやろうじゃないか、ちくしょう。
 目ン玉かっぽじってよーく見てろ」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「お、がんばれ健二！」
 ;endpage
 ~
-;kenji
+;健二
 「ま、まかせろ～い」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
@@ -937,7 +937,7 @@
 ;cb_fade bg: "black"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 柵の前に立つ。
@@ -949,7 +949,7 @@
 アレだ、無我の境地だ。
 ;endpage
 ~
-;kenji
+;健二
 「し、しつれいしま～す……」
 ;endpage
 ~
@@ -957,11 +957,11 @@
 立ち入り禁止の柵をまたぐ。
 ;endpage
 ~
-;asuka
+;明日香
 「おもしろいくらいビビってるねー」
 ;endpage
 ~
-;kenji
+;健二
 「う、うるせ～」
 ;endpage
 ~
@@ -975,19 +975,19 @@
 気にしたらだめだって、俺。
 ;endpage
 ~
-;asuka
+;明日香
 「さっさと行きなよー」
 ;endpage
 ~
-;kenji
+;健二
 「こ、これでも全速力ですっ」
 ;endpage
 ~
-;asuka
+;明日香
 「もー、健二かっこわるーい。あははは」
 ;endpage
 ~
-;kenji
+;健二
 「笑うなっ」
 ;endpage
 ~
@@ -1000,42 +1000,42 @@
 ;endpage
 ~
 ;quake time: 500, x: 50, y: 10
-;asuka
+;明日香
 ;playse num: "20"
 「わーーーーーーっ！！」
 ;endpage
 ~
-;kenji
+;健二
 ;quake time: 500, x: 50, y: 10
 ;playse num: "20"
 「ぎゃーーーーーっ！！
 なんだ、どした、ややややややんのか！」
 ;endpage
 ~
-;asuka
+;明日香
 「っ、なに言ってんの健二。……ぷっ」
 ;endpage
 ~
-;kenji
+;健二
 「あ、あああ明日香！
 おま、冗談でもそういうのやめろ！」
 ;endpage
 ~
-;asuka
+;明日香
 「あはは、ごめんごめん」
 ;endpage
 ~
-;kenji
+;健二
 「心臓止まっちゃったらどうすんだオイ、
 責任とれんのかよ」
 ;endpage
 ~
-;asuka
+;明日香
 「いいからほら、あとちょっとだよ。
 さっさと行っちゃいなって」
 ;endpage
 ~
-;kenji
+;健二
 「ちくしょー……おぼえてろよ……」
 ;endpage
 ~
@@ -1045,11 +1045,11 @@
 少し足が軽い。
 ;endpage
 ~
-;asuka
+;明日香
 「健二ー、まだー？」
 ;endpage
 ~
-;kenji
+;健二
 「も、もうちょい」
 ;endpage
 ~
@@ -1059,15 +1059,15 @@
 この先が屋上だろう。
 ;endpage
 ~
-;kenji
+;健二
 「着いたぞ明日香」
 ;endpage
 ~
-;asuka
+;明日香
 「じゃ、どーぞお先に」
 ;endpage
 ~
-;kenji
+;健二
 「お先にってお前、鍵が……って、あれ？」
 ;endpage
 ~
@@ -1085,7 +1085,7 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #△屋上ドア
 ;playse num: "10"
@@ -1099,7 +1099,7 @@
 ;waittrans canskip: false
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 ――――――
@@ -1148,7 +1148,7 @@
 見知らぬ女の子がいた。
 ;endpage
 ~
-;kenji
+;健二
 「君……だれ？」
 ;endpage
 ~
@@ -1156,12 +1156,12 @@
 女の子は驚いた表情のまま、ゆっくりと答える。
 ;endpage
 ~
-;yuuki-m-c-1
+;優希_中_中央_1
 「み、三笠……三笠優希です」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○フェードアウト　１０００　白
 ;pretrans
@@ -1183,7 +1183,7 @@
 ;cb_fade bg: "black"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 この日、俺たちは初めて学校へ忍び込み、そして優希と出会った。
@@ -1194,7 +1194,7 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #☆テロップ　イン
 ;telop

@@ -15,9 +15,9 @@
 ;playbgm num:"003"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「ふぅ」
 ;endpage
 ~
@@ -44,7 +44,7 @@
 でも、そのたくさんの音たちも、もう俺には必要ない。
 ;endpage
 ~
-;kenji
+;健二
 「おおう、寒っ」
 ;endpage
 ~
@@ -76,7 +76,7 @@
 そのために、まず一つ、強くなろう。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「健二」
 ;endpage
 ~
@@ -86,19 +86,19 @@
 少し目元が赤い。泣いていたのだろうか。
 ;endpage
 ~
-;kenji
+;健二
 「もういいのか？」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「うん」
 ;endpage
 ~
-;kenji
+;健二
 「目、赤いぞ」
 ;endpage
 ~
-;asuka-l-c-3
+;明日香_大_中央_3
 「気付いても言うな、馬鹿」
 ;endpage
 ~
@@ -106,11 +106,11 @@
 そう言って俺の肩を叩く。うん、恋人同士のじゃれあい。
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「行こ、健二」
 ;endpage
 ~
-;kenji
+;健二
 「おう」
 ;endpage
 ~
@@ -135,7 +135,7 @@
 ~
 ;every_out
 
-;fadeout_meslay
+;メッセージ枠フェードアウト
 ;fadeoutbgm
 ;cb_fade bg:"black", time: 2000, canskip: false
 

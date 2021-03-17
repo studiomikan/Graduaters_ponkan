@@ -15,7 +15,7 @@
   visible: true,
   loop: false,
   volume: "&ponkan.getSoundBuffer('bgm').gvolume"
-}
+};
 ;waitvideo canskip: false
 ;wait time: 2000, canskip: false
 

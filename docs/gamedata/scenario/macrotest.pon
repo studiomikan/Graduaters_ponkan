@@ -5,7 +5,7 @@
 ~マクロテスト
 
 ;mes_orange
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 マクロテスト。
@@ -74,19 +74,19 @@
 ;空_時間経過
 ;月_時間経過
 
-;asuka-xl-c-2
+;明日香_特大-中央-2
 ;pb
-;asuka-xl-l-2
+;明日香_特大-左-2
 ;pb
-;asuka-xl-r-2
+;明日香_特大-右-2
 ;pb
 ;every_out
 
-;yuuki-xl-c-2
+;優希_特大-中央-2
 ;pb
-;yuuki-xl-l-2
+;優希_特大-左-2
 ;pb
-;yuuki-xl-r-2
+;優希_特大-右-2
 ;pb
 ;every_out
 

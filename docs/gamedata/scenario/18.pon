@@ -11,7 +11,7 @@
 #☆ラジオメッセージ　イン
 
 ;mes_blue_radio
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;quake time: 500, x: 10, y: 5
 ;playse num: "20"
@@ -172,7 +172,7 @@
 「また会う日まで。グッバイブラザー！」
 ;endpage
 ~
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 ;telop
 ;fadeoutbgm

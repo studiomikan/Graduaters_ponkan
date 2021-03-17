@@ -18,9 +18,9 @@
 ;playbgm num:"001"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「……さて」
 ;endpage
 ~
@@ -33,7 +33,7 @@
 ズボンのポケットに突っ込む。
 ;endpage
 ~
-;kenji
+;健二
 「行くか」
 ;endpage
 ~
@@ -46,85 +46,85 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○移動　廊下
 
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「明日香ー」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　廊下
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「おーい明日香ー」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　教室
 ;cb_move bg: "black"
 ;cb_move bg: "class"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「ほらほら出ておいでー」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　廊下
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「明日香っちー？」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　教室
 ;cb_move bg: "black"
 ;cb_move bg: "class"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
-;kenji
+;メッセージ枠フェードイン
+;健二
 「明日香たーん……」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　廊下
 ;cb_move bg: "black"
 ;cb_move bg: "hall"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「どこにもいねぇじゃねーかちくしょう」
 ;endpage
 ~
@@ -136,7 +136,7 @@
 闇雲に捜すには学校という場所は広すぎる。
 ;endpage
 ~
-;kenji
+;健二
 「美術室はさっきまで俺がいたし、
 自クラスの教室はさっき行ったし……あ」
 ;endpage
@@ -150,7 +150,7 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #○移動　教室
 ;cb_move bg: "black"
@@ -160,9 +160,9 @@
 ;playse num: "08"
 
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「おい明日香！」
 ;endpage
 ~
@@ -170,7 +170,7 @@
 ………………
 ;endpage
 ~
-;kenji
+;健二
 「はい、ハズレっと。どうすっかなー」
 ;endpage
 ~
@@ -182,7 +182,7 @@
 途方に暮れた俺は、適当な机の上に腰をおろした。
 ;endpage
 ~
-;kenji
+;健二
 「………………」
 ;endpage
 ~
@@ -197,7 +197,7 @@
 封筒が貼り付けられていた。
 ;endpage
 ~
-;kenji
+;健二
 「これはまた、わかりやすいヒントだな」
 ;endpage
 ~
@@ -211,7 +211,7 @@
 折りたたまれた手紙を開く。
 ;endpage
 ~
-;asuka
+;明日香
 『じゃじゃん！　よくこの手紙を見つけたね！』
 ;endpage
 ~
@@ -220,7 +220,7 @@
 なにが『じゃじゃん！』だ。まったく。
 ;endpage
 ~
-;asuka
+;明日香
 『
 ;indent
 なんとなく直接言うのは恥ずかしいし、
@@ -238,12 +238,12 @@
 ~
 #☆メッセージフレーム　アウト
 
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #☆手紙
 ;mes_letter
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;letter
 三年前、私たちがここに入学してから、本当にいろんなことがありました。
@@ -276,7 +276,7 @@
 #☆ここまで手紙
 
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
 #☆テロップ　イン

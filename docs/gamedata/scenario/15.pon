@@ -14,7 +14,7 @@
 
 ;playse num: "13", loop: true
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 #MEMO ここに幼少時代の回想とか入れてもいいかも
 
@@ -34,7 +34,7 @@
 ~
 #☆メッセージフレーム　アウト
 
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○移動　廊下
 ;cb_move bg: "hall"
 #○移動　廊下
@@ -48,9 +48,9 @@
 ;playse num: "08"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「明日香！」
 ;endpage
 ~
@@ -72,7 +72,7 @@
 目を閉じる。
 ;endpage
 ~
-;kenji
+;健二
 「はぁ……はぁ……はぁ……っ、ふぅ……」
 ;endpage
 ~
@@ -86,7 +86,7 @@
 黒板に貼り付けられている手紙を見つけた。
 ;endpage
 ~
-;kenji
+;健二
 「ちくしょう、まだかくれんぼ続行か。
 いいかげん疲れたぞ明日香」
 ;endpage
@@ -101,12 +101,12 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○移動　廊下
 ;cb_move bg: "hall"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 月明かりの下で封筒を開け、手紙を取り出す。
@@ -119,11 +119,11 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #☆手紙
 ;mes_letter
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;letter
 最初に優希ちゃんのお兄さんの話を聞いたとき、すごくびっくりした。あたしたちと似ていたから。
@@ -150,12 +150,12 @@
 ;endline
 
 #☆ここまで手紙
-;fadeout_meslay
+;メッセージ枠フェードアウト
 
 #☆メッセージフレーム　イン
 ;mes_orange
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 手紙は、書き出しと同じく唐突に終わっていた。
@@ -171,7 +171,7 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○移動　黒
 
 ;cb_move bg: "black"
@@ -179,7 +179,7 @@
 ;playse num: "13", loop: true
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 ;noname
 走り出す。
 ;endpage
@@ -213,7 +213,7 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #△止まる
 ;stopse
 #☆テロップ　イン

@@ -23,9 +23,9 @@
 ;cb_fade bg: "hall"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「はぁ……はぁ……はぁ……」
 ;endpage
 ~
@@ -41,12 +41,12 @@
 だとしたら神様は意地が悪い。
 ;endpage
 ~
-;kenji
+;健二
 「帰宅部、を、なめるなよ！」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○移動　廊下
 
 ;cb_move bg: "black"
@@ -59,7 +59,7 @@
 
 ;cb_move bg: "black"
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 最後の力を振り絞って階段を上りきり、
@@ -67,7 +67,7 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #△止まる
 ;stopse
 #△屋上ドア
@@ -77,14 +77,14 @@
 ;cb_fade bg:"white", time: 1500, canskip: false
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 瞬間、視界が白に染まり――
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○フェード　屋上
 
 ;cb_fade bg: "roof"
@@ -92,7 +92,7 @@
 ;cb_fade bg: "tank"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 ――そして彼女は、そこにいた。
@@ -110,27 +110,27 @@
 死。
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「健二」
 ;endpage
 ~
-;kenji
+;健二
 「なんだよ」
 ;endpage
 ~
-;asuka-m-c-5
+;明日香_中_中央_5
 「卒業おめでとう」
 ;endpage
 ~
-;kenji
+;健二
 「もうそれは聞いたぞ」
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「あはは、そうだね、さっき言ったばっかりだった」
 ;endpage
 ~
-;kenji
+;健二
 「そうだぞ、もうボケたのか？
 しっかりしてくれよ、はは」
 ;endpage
@@ -141,18 +141,18 @@
 それでも明日香は、一応笑ってくれた。
 ;endpage
 ~
-;kenji
+;健二
 「さぁ帰るぞ明日香。
 優希のまねごとなんていいからさ。もう夜も遅いだろ、
 寮に帰って風呂入って寝ようぜ、なぁ」
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「だめ。あたしはまだ、
 健二から大事なこと聞いてない」
 ;endpage
 ~
-;kenji
+;健二
 「大事なことってなんだよ、
 ほら、帰ってから聞いてやるからさ」
 ;endpage
@@ -161,27 +161,27 @@
 しかし、明日香はゆっくりと首を横に振った。
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「お兄ちゃんの話をして、健二」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #☆鼓動
 ;heartbeat
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 ――お兄ちゃんの話。
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-#;fadeout_meslay
+#;メッセージ枠フェードアウト
 #☆鼓動
 #;heartbeat
 #☆メッセージフレーム　イン
-#;fadein_meslay
+#;メッセージ枠フェードイン
 
 ;noname
 なんでそんなこと聞くんだ。
@@ -196,30 +196,30 @@
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #☆鼓動
 ;heartbeat
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;asuka-m-c-2
+;明日香_中_中央_2
 「あたし知ってるんだ」
 ;endpage
 ~
-;kenji
+;健二
 「……なにを」
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「お兄ちゃん、死んでないんだよね」
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #☆鼓動
 ;heartbeat
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 ――ああ、そうか。もうわかっちゃったのか。
@@ -243,27 +243,27 @@
 夢は覚めて、後に残るのは、つらい現実だけ。
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「生きてるんだね」
 ;endpage
 ~
 ;wait time: 800
 
-;kenji
+;健二
 「生きてる。今でもまだ生きてる」
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「でも、危ないんだよね」
 ;endpage
 ~
-;kenji
+;健二
 「……あぁ…………」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○フェードアウト　黒
 ;pretrans
 ;image lay: "base", file: "image/bg-black.png", visible: true
@@ -271,7 +271,7 @@
 ;trans time: 1000
 ;waittrans
 #☆メッセージフレーム　イン
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 深呼吸する。
@@ -350,19 +350,19 @@
 だから、兄さんは死んだことにした。
 ;endpage
 ~
-;fadeout_meslay
+;メッセージ枠フェードアウト
 ;cb_fade bg: "tank"
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;asuka-m-c-1
+;明日香_中_中央_1
 「もう何年もあのままなの？」
 ;endpage
 ~
-;kenji
+;健二
 「お前、会ったのか」
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「うん」
 ;endpage
 ~
@@ -397,31 +397,31 @@
 明日香にのしかかっているはずだった。
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「意識が戻ったことは？」
 ;endpage
 ~
-;kenji
+;健二
 「ない。ずっとあのままだ」
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「……治るの？」
 ;endpage
 ~
-;kenji
+;健二
 「可能性は限りなくゼロだそうだ」
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「……そっか」
 ;endpage
 ~
-;kenji
+;健二
 「お前のせいじゃない、明日香。違う、絶対に」
 ;endpage
 ~
-;asuka-m-c-5
+;明日香_中_中央_5
 「うん、ありがと」
 ;endpage
 ~
@@ -475,29 +475,29 @@
 すべてを投げ出して、飛んでしまうか。
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「お兄ちゃんは、まだ、大丈夫なの？」
 ;endpage
 ~
-;kenji
+;健二
 「わからない。
 明日死ぬかもしれないし、
 あと何年も生きるかもしれない」
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「そっか」
 ;endpage
 ~
-;kenji
+;健二
 「明日香、そこ危ないだろ、下に降りてこい。帰ろう」
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「ねぇ健二。あたしどうしたらいいのかわかんないよ」
 ;endpage
 ~
-;kenji
+;健二
 「大丈夫、大丈夫だから」
 ;endpage
 ~
@@ -507,23 +507,23 @@
 こんなんじゃまた、明日香を救えない。
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「お兄ちゃんはさ。あたしの中で、
 すごくかっこいい存在だったんだ。
 あこがれだった。でも、私があんな風にしちゃった」
 ;endpage
 ~
-;kenji
+;健二
 「違う。明日香のせいじゃない。最初に飛び込んで、
 無様にもお前を助けられなかった俺が悪い。
 お前がそんな風に思う必要はないんだ」
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「ありがと。でもね、無理だよ」
 ;endpage
 ~
-;kenji
+;健二
 「まて明日香、お前、
 ホント飛び降りたりすんなよ、マジで、な？」
 ;endpage
@@ -572,7 +572,7 @@
 許されるわけがない。
 ;endpage
 ~
-;asuka-m-c-1
+;明日香_中_中央_1
 「ねぇ健二。あたしは、生きていてもいいのかな」
 ;endpage
 ~
@@ -585,13 +585,13 @@
 『あたしは、死んでもいいですか』
 ;endpage
 ~
-;fadeout_meslay
+;メッセージ枠フェードアウト
 ;pretrans
 ;image lay: "base", file: "image/bg-white.png", visible: true
 ;layopt lay: "asuka", visible: false
 ;trans time: 1000
 ;waittrans
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 助けるとか助けないとか、
@@ -606,15 +606,15 @@
 そんなこと、決まってる。
 ;endpage
 ~
-;fadeout_meslay
+;メッセージ枠フェードアウト
 ;pretrans
 ;image lay: "base", file: "image/bg-tank.png", visible: true
 ;load_chara name: "asuka", size: "medium", pos: "center", num: 1
 ;trans time: 1000
 ;waittrans
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「馬鹿なことを言うなよ」
 ;endpage
 ~
@@ -622,13 +622,13 @@
 俺は――
 ;endpage
 ~
-;kenji
+;健二
 「お前が罪悪感を感じるとか感じないとか、
 俺だって同じように思っているとか、
 兄さんが生きるとか死ぬとか！　なんだそれ！」
 ;endpage
 ~
-;kenji
+;健二
 「そんなことはどうだっていい！」
 ;endpage
 ~
@@ -637,11 +637,11 @@
 そんなことは許さない。
 ;endpage
 ~
-;kenji
+;健二
 「俺は明日香に生きていてほしい！」
 ;endpage
 ~
-;kenji
+;健二
 「それじゃあダメかよ！」
 ;endpage
 ~
@@ -649,7 +649,7 @@
 俺は、明日香を苦痛の中に引き留める。
 ;endpage
 ~
-;kenji
+;健二
 「だから、兄さんが死ぬまで、
 死んでからもずっと、生き続けろ。
 俺も一緒に手伝う」
@@ -668,15 +668,15 @@
 でも、そんな日々の中で、幸せになれる。
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「一つ忘れてたこと、言っていいかな」
 ;endpage
 ~
-;kenji
+;健二
 「なんだよ」
 ;endpage
 ~
-;asuka-m-c-2
+;明日香_中_中央_2
 「好きだよ、健二」
 ;endpage
 ~
@@ -688,7 +688,7 @@
 なぜなら、答えは決まっているから。
 ;endpage
 ~
-;kenji
+;健二
 「俺も、好きだ」
 ;endpage
 ~
@@ -716,7 +716,7 @@
 すげぇカッコ悪いけど……
 ;endpage
 ~
-;asuka-m-c-5
+;明日香_中_中央_5
 「ありがと、健二」
 ;endpage
 ~
@@ -729,13 +729,13 @@
 カッコ悪くても、これが俺だ。
 ;endpage
 ~
-;fadeout_meslay
+;メッセージ枠フェードアウト
 ;pretrans
 ;image lay: "base", file: "image/bg-moon.png", visible: true
 ;layopt lay: "asuka", visible: false
 ;trans time: 1000
 ;waittrans
-;fadein_meslay
+;メッセージ枠フェードイン
 
 ;noname
 ふと見上げた空に、星は見えない。
@@ -763,7 +763,7 @@
 ~
 #☆メッセージフレーム　アウト
 
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #○フェードアウト　１５００　ｆ　白
 ;cb_fade bg:"white", time: 1500, canskip: false
 ;wait time: 800, canskip: false
@@ -779,13 +779,13 @@
 ;cb_fade bg: "roof"
 #☆メッセージフレーム　イン
 
-;fadein_meslay
+;メッセージ枠フェードイン
 
-;kenji
+;健二
 「……ってゆーか、馬鹿？」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「めんごめんご」
 ;endpage
 ~
@@ -794,35 +794,35 @@
 半ば引きずり下ろすようにして助ける。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「だってさ、断られるかもーとか思うじゃん、ね、ほら。
 で、返事もらったら安心しちゃって」
 ;endpage
 ~
-;kenji
+;健二
 「はいはい、ほんっと馬鹿だなお前。
 ってか恥ずかしいこと言うな馬鹿」
 ;endpage
 ~
-;asuka-l-c-3
+;明日香_大_中央_3
 「ちょっと、さっきから聞いてれば馬鹿馬鹿と、
 健二のくせに」
 ;endpage
 ~
-;kenji
+;健二
 「うっさい。馬鹿に馬鹿と言って何が悪い」
 ;endpage
 ~
-;asuka-l-c-3
+;明日香_大_中央_3
 「なにさ。その馬鹿に惚れてるんでしょ？」
 ;endpage
 ~
-;kenji
+;健二
 「な、ばっかお前、
 惚れてるとか恥ずかしいこと言うなよ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「でもホントのことでしょ？」
 ;endpage
 ~
@@ -834,49 +834,49 @@
 これはひょっとして、催促してるのか？
 ;endpage
 ~
-;kenji
+;健二
 「そ、そりゃあお前、さっき言った通りだ」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「さっきって、なんて言ったの？
 よく聞こえなかったなー」
 ;endpage
 ~
-;kenji
+;健二
 「おまっ……」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「ほらほら、なんて言ったの？」
 ;endpage
 ~
-;kenji
+;健二
 ;fontsize size: 15
 「……好きだ」
 ;reset_font
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「もっかい」
 ;endpage
 ~
-;kenji
+;健二
 「ぐっ……す……す……」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「す？」
 ;endpage
 ~
 ;playse num: "20"
-;kenji
+;健二
 ;fontsize size: 30
 「すきやき」
 ;reset_font
 ;endpage
 ~
-;asuka-l-c-3
+;明日香_大_中央_3
 ;fontsize size: 30
 「ていっ！」
 ;reset_font
@@ -884,26 +884,26 @@
 ~
 ;quake time: 500, x: 10, y: 5
 ;playse num: "17"
-;kenji
+;健二
 「ひぎぃ！」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「もっかい」
 ;endpage
 ~
 ;playse num: "22"
 ;fontsize size: 30
-;kenji
+;健二
 「好きだ！」
 ;reset_font
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「うん、あたしも、健二が好きだよ」
 ;endpage
 ~
-;kenji
+;健二
 「………………」
 ;endpage
 ~
@@ -912,27 +912,27 @@
 あれだけごまかしてもダメだ。無理。マジ勘弁。
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「あっれ～、照れてるの～？」
 ;endpage
 ~
-;kenji
+;健二
 「照れてなんかねぇよ馬鹿」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「あはは、かわいいなぁ健二は」
 ;endpage
 ~
-;kenji
+;健二
 「うっせ、かわいいとか言うなちくしょう」
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「いいじゃん。かわいい彼氏、大歓迎！」
 ;endpage
 ~
-;kenji
+;健二
 「はぁ……」
 ;endpage
 ~
@@ -945,15 +945,15 @@
 それにまぁ、こういうのも悪くない。
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「健二」
 ;endpage
 ~
-;kenji
+;健二
 「ん？」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「いいのかな、ホントに」
 ;endpage
 ~
@@ -961,7 +961,7 @@
 明日香が、貯水タンクを見上げて言った。
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 ;noname
 かつてそこから飛び降りた、
@@ -1026,30 +1026,30 @@
 そんな馬鹿な話があってたまるか。
 ;endpage
 ~
-;kenji
+;健二
 「俺、思うんだけど」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「うん」
 ;endpage
 ~
-;kenji
+;健二
 「俺たちって、まぁ、
 いくつか苦労もしてきたわけじゃん」
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「うん」
 ;endpage
 ~
-;kenji
+;健二
 「今まで苦労して、これからだって苦労するんだから、
 少しくらい報われたっていいと思うんだ。
 ってか報われないとやってらんねぇじゃん」
 ;endpage
 ~
-;kenji
+;健二
 「だから、いいに決まってる」
 ;endpage
 ~
@@ -1058,15 +1058,15 @@
 でも、自分で口にして、すんなりと受け入れられた。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「うん」
 ;endpage
 ~
-;asuka-l-c-5
+;明日香_大_中央_5
 「うん。サンキュ、健二」
 ;endpage
 ~
-;kenji
+;健二
 「どういたしまして」
 ;endpage
 ~
@@ -1083,7 +1083,7 @@
 多分、何も変わらない。
 ;endpage
 ~
-;asuka-l-c-2
+;明日香_大_中央_2
 「ほら健二、帰ろう」
 ;endpage
 ~
@@ -1091,11 +1091,11 @@
 いままで通り、俺たちは俺たちのままだ。
 ;endpage
 ~
-;kenji
+;健二
 「ああ、帰ろう」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 ;noname
 そうだ、いつか明日香と二人で、
@@ -1107,7 +1107,7 @@
 あれだ、赤信号と同じだ。違うか。
 ;endpage
 ~
-;kenji
+;健二
 「明日香」
 ;endpage
 ~
@@ -1115,11 +1115,11 @@
 ふと思い立って、先を歩く明日香を呼び止める。
 ;endpage
 ~
-;asuka-l-c-1
+;明日香_大_中央_1
 「なに、健二」
 ;endpage
 ~
-;kenji
+;健二
 「卒業おめでとう、明日香。
 これからもよろしく。あと、好きだぞ」
 ;endpage
@@ -1133,22 +1133,22 @@
 ;load_chara name: "asuka", size: "large", pos: "center", num: 5
 ;trans time: 1500
 ;waittrans canskip: false
-;fadein_meslay
+;メッセージ枠フェードイン
 ;clear
 ;wait time: 500
 
-;asuka-l-c-5
+;明日香_大_中央_5
 「ばーか！」
 ;endpage
 ~
-;asuka_out
+;明日香_退場
 
 ;noname
 そうして俺たちは、屋上を後にした。
 ;endpage
 ~
 #☆メッセージフレーム　アウト
-;fadeout_meslay
+;メッセージ枠フェードアウト
 #☆テロップ　イン
 ;telop
 #ＢＧＭフェードアウト
