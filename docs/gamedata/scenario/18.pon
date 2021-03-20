@@ -14,7 +14,7 @@
 ;メッセージ枠フェードイン
 
 ;quake time: 500, x: 10, y: 5
-;playse num: "20"
+;se爆発
 ;fontsize size: 30
 ;noname
 「ＤＪジョバンの！　『グラディエイト・ジャパン』！」
@@ -38,7 +38,7 @@
 ;endpage
 ~
 ;quake time: 500, x: 10, y: 5
-;playse num: "20"
+;se爆発
 ;fontsize size: 30
 ;noname
 「卒業おめでとうだコノヤロウ！」

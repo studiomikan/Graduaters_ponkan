@@ -1157,7 +1157,7 @@
 ;endpage
 ~
 ;メッセージ枠フェードアウト
-#;cb_fade bg: "black"
+#;黒
 ;pretrans
 ;image lay: "base", file: "image/bg-black.png", visible: true
 ;layopt lay: "asuka", visible: false

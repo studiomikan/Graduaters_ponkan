@@ -39,7 +39,7 @@
 ;endpage
 ~
 ;quake time: 500, x: 10, y: 5
-;playse num: "20"
+;se爆発
 ;fontsize size: 30
 ;ジョバン
 「ＤＪジョーーーーバンの！
@@ -124,7 +124,7 @@
 友達も、それを見てプチ悲しくなっちゃう」
 ;endpage
 ~
-;playse num: "20"
+;se爆発
 ;quake time: 500, x: 10, y: 5
 ;fontsize size: 30
 ;ジョバン
@@ -193,7 +193,7 @@
 ジョバンはこう言うのさー」
 ;endpage
 ~
-;playse num: "20"
+;se爆発
 ;fontsize size: 30
 ;ジョバン
 「あ、急用を思い出した！」
@@ -250,7 +250,7 @@
 ;endpage
 ~
 ;fontsize size: 30
-;playse num: "20"
+;se爆発
 ;ジョバン
 「チェケラ！」
 ;reset_font
