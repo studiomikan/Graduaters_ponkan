@@ -36,13 +36,13 @@
 ガタガタ……ガタガタ……
 ;endpage
 ~
-;playse num: "14"
+;se開錠
 ;健二
 「……よし、開いた」
 ;endpage
 ~
 
-;playse num: "15"
+;se着地
 ;noname
 開いた窓から美術室に滑り込み、すばやく窓を閉める。
 ;endpage
@@ -70,9 +70,9 @@
 ;endpage
 ~
 #△ＢＧＭ２
-;playbgm num: "002"
+;bgm2
 
-;playse num: "20"
+;se爆発
 ;quake time:500, x: 10, y: 50
 ;健二
 「うわああぁぁぁあ！　でたぁぁああ！！？」
@@ -170,10 +170,10 @@
 #☆#ウェイト　５００
 ;wm canskip: false
 #○移動　教室
-;cb_move bg: "class"
+;暗い教室_移動
 #△ＢＧＭ３
 ;stopbgm
-;playbgm num: "003"
+;bgm3
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 
@@ -432,8 +432,8 @@
 #☆メッセージフレーム　アウト
 ;メッセージ枠フェードアウト
 #○移動　廊下
-;cb_move bg: "black"
-;cb_move bg: "hall"
+;黒_移動
+;暗い階段_移動
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 
@@ -529,12 +529,12 @@
 #☆メッセージフレーム　アウト
 ;メッセージ枠フェードアウト
 #○移動　教室
-;cb_move bg: "black"
-;cb_move bg: "class"
+;黒_移動
+;暗い教室_移動
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 #△教室ドア
-;playse num: "08"
+;se教室ドア
 
 ;健二
 「こらっ、そこで何してる！」
@@ -578,7 +578,7 @@
 ;waittrans canskip: false
 
 ;quake time: 500, y: 10, x: 50
-;playse num: "20"
+;se爆発
 ;健二
 「ふ、ふざけんなー！」
 ;endpage
@@ -655,9 +655,9 @@
 #☆メッセージフレーム　アウト
 ;メッセージ枠フェードアウト
 #○移動　廊下->黒
-;cb_move bg: "black"
-;cb_move bg: "hall"
-;cb_move bg: "black"
+;黒_移動
+;暗い階段_移動
+;黒_移動
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 
@@ -735,7 +735,7 @@
 ;endpage
 ~
 #△走る
-;playse num: "13", loop: true
+;se走る
 
 ;noname
 カツン……カツン……カツン……！
@@ -803,7 +803,7 @@
 ;endpage
 ~
 #△ＢＧＭ２
-;playbgm num: "002"
+;bgm2
 
 ;quake time: 500, y: 10, x: 50
 ;健二
@@ -838,7 +838,7 @@
 「ん？　どうしたの、健二？」
 ;endpage
 ~
-;playse num: "20"
+;se爆発
 ;quake time: 500, y:10, x: 50
 ;健二
 「あああああ明日香ーー！！！」
@@ -955,7 +955,7 @@
 #○移動　屋上
 ;cb_move bg: "roof"
 #△ＢＧＭ１
-;playbgm num: "001"
+;bgm1
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 
@@ -1361,7 +1361,7 @@
 #△ＢＧＭフェードアウト
 ;fadeoutbgm
 #○フェードアウト　１０００　ｆ　黒
-;cb_fade bg: "black"
+;黒
 
 #☆ジャンプ
 ;jump file: "scenario/07.pon"

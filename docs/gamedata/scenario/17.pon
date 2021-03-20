@@ -18,7 +18,7 @@
 ;mes_orange
 #△走る
 
-;playse num: "13", loop: true
+;se走る
 #○フェード　廊下
 ;cb_fade bg: "hall"
 #☆メッセージフレーム　イン
@@ -49,15 +49,15 @@
 ;メッセージ枠フェードアウト
 #○移動　廊下
 
-;cb_move bg: "black"
-;cb_move bg: "hall"
+;黒_移動
+;暗い階段_移動
 #○移動　廊下
 
-;cb_move bg: "black"
-;cb_move bg: "hall"
+;黒_移動
+;暗い階段_移動
 #○移動　黒
 
-;cb_move bg: "black"
+;黒_移動
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 
@@ -869,7 +869,7 @@
 「す？」
 ;endpage
 ~
-;playse num: "20"
+;se爆発
 ;健二
 ;fontsize size: 30
 「すきやき」

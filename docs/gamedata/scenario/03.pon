@@ -61,7 +61,7 @@
 ;endpage
 ~
 ;noname
-;playse num: "14"
+;se開錠
 そうこう言っているうちにカチンと音がして、
 鍵が外れた。
 ;endpage
@@ -89,7 +89,7 @@
 ;endpage
 ~
 ;noname
-;playse num: "15"
+;se着地
 さっさと中に入ってしまった明日香に続いて、
 俺も窓をくぐる。
 ;endpage
@@ -149,10 +149,10 @@
 ;メッセージ枠フェードアウト
 
 #○移動　廊下
-;cb_move bg: "hall"
+;暗い階段_移動
 
 #△ＢＧＭ１
-;playbgm num: "001"
+;bgm1
 
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
@@ -244,14 +244,14 @@
 ;メッセージ枠フェードアウト
 
 #○移動　教室
-;cb_move bg: "black"
-;cb_move bg: "class"
+;黒_移動
+;暗い教室_移動
 
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 
 #△教室ドア
-;playse num: "08"
+;se教室ドア
 
 ;noname
 二階に上がり、普段授業を受けている教室に入る。
@@ -481,14 +481,14 @@
 ;endpage
 ~
 #△ＢＧＭ２
-;playbgm num: "002"
+;bgm2
 ;playse num: "21"
 
 ;明日香_大_中央_5
 「エロ本みっけ！」
 ;endpage
 ~
-;playse num: "20"
+;se爆発
 ;quake time: 500, x: 50, y: 10
 ;健二
 「えええええええ」
@@ -586,7 +586,7 @@
 「ほれ」
 ;endpage
 ~
-;playse num: "20"
+;se爆発
 ;noname
 いきなり目の前に現れたのは……巨乳ナース！
 ;endpage
@@ -651,7 +651,7 @@
 
 #△ＢＧＭ１
 ;stopbgm
-;playbgm num: "001"
+;bgm1
 
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
@@ -796,8 +796,8 @@
 ;メッセージ枠フェードアウト
 
 #○移動　廊下
-;cb_move bg: "black"
-;cb_move bg: "hall"
+;黒_移動
+;暗い階段_移動
 
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
@@ -934,7 +934,7 @@
 ;fadeoutbgm
 
 #○フェードアウト　黒
-;cb_fade bg: "black"
+;黒
 
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
@@ -1001,13 +1001,13 @@
 ~
 ;quake time: 500, x: 50, y: 10
 ;明日香
-;playse num: "20"
+;se爆発
 「わーーーーーーっ！！」
 ;endpage
 ~
 ;健二
 ;quake time: 500, x: 50, y: 10
-;playse num: "20"
+;se爆発
 「ぎゃーーーーーっ！！
 なんだ、どした、ややややややんのか！」
 ;endpage
@@ -1088,15 +1088,15 @@
 ;メッセージ枠フェードアウト
 
 #△屋上ドア
-;playse num: "10"
+;se屋上ドア
 
 #○フェードアウト　１０００　ｆ　白
 ;pretrans
 ;image lay: "filter", file: "image/bg-white.png", alpha: 1.0, visible: true
-;image lay: "base", file: "image/bg-roof.png", visible: true
+;image lay: "base", file: "image/bg-roof1.png", visible: true
 ;load_chara name: "yuuki", size: "medium", pos: "center", num: 1
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
@@ -1120,7 +1120,7 @@
 ;pretrans
 ;layopt lay: "filter", alpha: 0.80
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 
 ;noname
 視界が戻っていく。
@@ -1131,7 +1131,7 @@
 ;pretrans
 ;layopt lay: "filter", alpha: 0.40
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 
 ;noname
 そして、戻った視界の先、屋上には、
@@ -1142,7 +1142,7 @@
 ;pretrans
 ;layopt lay: "filter", alpha: 0.20
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 
 ;noname
 見知らぬ女の子がいた。
@@ -1168,7 +1168,7 @@
 ;layopt lay: "filter", alpha: 1.0
 ;image lay: "base", file: "image/bg-white.png", visible: true
 ;trans time: 1000
-;waittrans canskip: false
+;waittrans canskip: true
 
 ;layopt lay: "yuuki", page: "fore", visible: false
 ;layopt lay: "yuuki", page: "back", visible: false
@@ -1180,17 +1180,18 @@
 ;freeimage lay: "filter", page: "back"
 
 #○フェードアウト　１０００　黒
-;cb_fade bg: "black"
+;黒
 
 #☆メッセージフレーム　イン
 ;メッセージ枠フェードイン
 
 ;noname
-この日、俺たちは初めて学校へ忍び込み、そして優希と出会った。
+この日、俺たちは初めて学校へ忍び込み、
+そして優希と出会った。
 ;endpage
 ~
 ;noname
-今から約二年前、入学して二年目の春のことである――
+今から約二年前、進級したばかりの春の出来事だった――
 ;endpage
 ~
 #☆メッセージフレーム　アウト

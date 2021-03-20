@@ -60,13 +60,12 @@ tv.mes_type = "orange"
   ;clear lay: "mes"
 ;endmacro
 
-- tv.macro_original_font_size = ponkan.getLayers({lay: "mes"})[0].textFontSize;
 ;macro name: "fontsize"
   ;mesopt fontsize: "&mp.size"
 ;endmacro
 
 ;macro name: "reset_font"
-  ;mesopt fontsize: "&tv.macro_original_font_size"
+  ;mesopt fontsize: "&tv.defaultFontSize"
 ;endmacro
 
 ;macro name: "init_glyph"
@@ -126,6 +125,7 @@ tv.mes_type = "orange"
 
 ;macro name: "ジョバン"
   ;clear lay: "mes, speaker"
+  ;cmdsc ch: "\n", command: "br"
 ;endmacro
 
 ;macro name: "letter"

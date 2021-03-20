@@ -18,7 +18,7 @@
 ;image lay: "tmp2", file: "image/op-text02.png", x: (1280-134)/2, y: (720-20)/2, visible: false
 
 # BGM再生
-;playbgm num: "003"
+;bgm3
 ;image lay: "base", file: "image/bg-black.png", alpha: 1
 ;layopt lay: "all", exclude: "system", visible: false
 ;layopt lay: "base", visible: true

@@ -38,6 +38,21 @@
 
 
 #-------------------------------------------------------------------
+# 各BGMのショートカット
+#-------------------------------------------------------------------
+;macro name: "bgm1"
+  ;playbgm num: '001'
+;endmacro
+
+;macro name: "bgm2"
+  ;playbgm num: '002'
+;endmacro
+
+;macro name: "bgm3"
+  ;playbgm num: '003'
+;endmacro
+
+#-------------------------------------------------------------------
 # 各効果音のショートカット
 #-------------------------------------------------------------------
 ;macro name: "se開錠"
@@ -48,12 +63,20 @@
   ;playse num: "15"
 ;endmacro
 
+;macro name: "se教室ドア"
+  ;playse num: "08"
+;endmacro
+
 ;macro name: "se屋上ドア"
   ;playse num: "10"
 ;endmacro
 
 ;macro name: "se走る"
   ;playse num: "13", loop: true
+;endmacro
+
+;macro name: "se爆発"
+  ;playse num: "20"
 ;endmacro
 
 ;return

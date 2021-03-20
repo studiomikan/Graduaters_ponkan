@@ -57,10 +57,11 @@
   height: 680,
   visible: false
 };
+- tv.defaultFontSize = 26;
 ;messageopt {
   lay: "message",
   fontfamily: ["GenShinGothic", "monospace"],
-  fontsize: 26,
+  fontsize: "&tv.defaultFontSize",
   weight: "normal",
   color: "0xFFFFFF",
   pitch: -2,
