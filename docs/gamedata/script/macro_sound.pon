@@ -79,4 +79,12 @@
   ;playse num: "20"
 ;endmacro
 
+;macro name: "seジャジャン"
+  ;playse num: "22"
+;endmacro
+
+;macro name: "seガーン"
+  ;playse num: "24"
+;endmacro
+
 ;return

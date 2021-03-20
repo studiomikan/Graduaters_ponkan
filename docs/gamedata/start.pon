@@ -17,8 +17,18 @@
   ;ch text: "」"
   ;endindent
 ;endmacro
+;macro name: "speak2_start"
+  ;ch text: "『"
+  ;indent
+;endmacro
+;macro name: "speak2_end"
+  ;ch text: "』"
+  ;endindent
+;endmacro
 ;cmdsc ch: "「", command: "speak_start"
 ;cmdsc ch: "」", command: "speak_end"
+;cmdsc ch: "『", command: "speak2_start"
+;cmdsc ch: "』", command: "speak2_end"
 ;cmdsc ch: "$", command: "br"
 
 # タイトルへ
