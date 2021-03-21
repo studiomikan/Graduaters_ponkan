@@ -687,7 +687,7 @@
 ;endpage
 ~
 #△歩く
-;playse num: "12", loop: true
+;se歩く
 
 ;noname
 カツン……カツン……カツン……
@@ -717,7 +717,7 @@
 ;endpage
 ~
 #△歩く
-;playse num: "12", loop: true
+;se歩く
 
 ;noname
 カツン……カツン……カツン……

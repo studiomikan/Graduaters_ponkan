@@ -39,6 +39,6 @@
 # ;call file: "scenario/notice.pon"
 # ;jump file: "scenario/title.pon"
 # ;jump file: "scenario/01.pon"
-;jump file: "scenario/04.pon"
+;jump file: "scenario/05.pon"
 # ;jump file: "scenario/macrotest.pon"
 

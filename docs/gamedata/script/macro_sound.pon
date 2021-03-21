@@ -71,6 +71,10 @@
   ;playse num: "10"
 ;endmacro
 
+;macro name: "se歩く"
+  ;playse num: "12", loop: true
+;endmacro
+
 ;macro name: "se走る"
   ;playse num: "13", loop: true
 ;endmacro

@@ -188,7 +188,7 @@
 #○フェードアウト　１５００　ｆ　白
 ;cb_fade bg:"white", time: 1500, canskip: false
 #○フェード　ｆ　屋上
-;cb_fade bg: "roof", canskip: false
+;暗い屋上, canskip: false
 
 #○ズーム　屋上
 ;cb_fade bg: "tank"
